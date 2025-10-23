@@ -1,0 +1,94 @@
+RTS 3 – Rules, game descriptions and the
+likelihood of winning
+Applies to:
+Gaming (including bingo), lotteries and betting on virtual events
+RTS aim 3
+To enable customers to make informed decisions about whether to gamble based on their chances of
+winning, the way the game, lottery or event works, the prizes or payouts on offer and the current state of
+multi-state games or events.
+RTS requirement 3A
+An explanation of the applicable rules must be easily available to the customer before they commit to
+gamble. The content including artwork and text must be accurate, and sufficient to explain all of the
+applicable rules and how to participate. All reasonable steps must be taken to ensure that the content is
+understandable.
+RTS implementation guidance 3A
+a. Explanatory content includes information in artwork and text displayed within the virtual event, in
+‘help’ or ‘how to play’ pages, or other supporting material.
+b. Links to the information should be prominently placed, for example on home pages for gaming
+sections, game selection pages or menus, or within individual games, so that customers can easily
+locate them.
+c. As a minimum, restricted display devices should provide explanatory content via a menu item or
+other link.
+d. The following items provide guidelines on the type of explanatory content that may be relevant and
+should be considered for inclusion:
+i. the name of the game, lottery or virtual event
+ii. the applicable rules, including clear descriptions of what constitutes a winning outcome
+iii. restrictions on play or betting, such as any play duration limits, maximum wins, etc
+iv. the number of decks or frequency of shuffles in virtual card games
+v. whether there are contributions to jackpots (progressives) and the way in which the jackpot
+operates, for example, whether the jackpot is won by achieving a particular outcome
+vi. instructions on how to interact with the game
+vii. rules pertaining to metamorphosis of games, for example, the number and type of tokens that
+need to be collected in order to qualify for a feature or bonus round and the rules and
+behaviour of the bonus round
+viii. the rules for entering a single lottery draw or a series of lottery draws and the frequency of the
+draws.
+RTS requirement 3B
+Where relevant, as the game or event progresses, information that may reasonably be expected to enable
+the customer to understand the current state must be displayed.
+RTS implementation guidance 3B
+The following items provide guidelines on the type of information that may be relevant.
+a. Where a game builds up a collection of tokens (symbols etc), the current number collected.
+b. An indication of which rules are currently relevant, such as displaying ‘bonus round’ or other feature
+labels.
+c. This requirement does not apply to lotteries.
+RTS requirement 3C
+For each virtual event, game (including bingo), or lottery, information that may reasonably be expected to
+enable the customer to make an informed decision about his or her chances of winning must be easily
+available before the customer commits to gamble. Information must include:
+i. a description of the way the game works and the way in which winners are determined and prizes
+allocated
+ii. house edge (or margin)
+iii. the return to player (RTP) percentage or
+iv. the probability (likelihood) of winning events occurring.
+RTS implementation guidance 3C
+a. The following items provide further guidance on acceptable types of information about the likelihood
+of winning:
+i. for types of peer-to-peer games where the likelihood of winning may depend on skill and/or the
+actions of other participants, a description of the way the game works and how winners are
+determined will be sufficient
+ii. for bingo, and some types of lottery or other games where it is not possible to determine the
+likelihood of winning because it depends on the eventual number of participants, a description
+of the way in which prizes are allocated will be sufficient
+iii. the average theoretical return to player percentage. Where an event (other than peer- to-peer)
+involves an element of skill, return to player percentage should be calculated using either the
+auto-play strategy or a standard/published strategy
+iv. the house edge, margin or over-round, for example for a virtual race
+v. the probability of each winning event occurring, or such information as may reasonably be
+expected to allow the customer to calculate the probability that the event will occur. The nature
+of some games may mean that the game itself provides sufficient information, for example, the
+likelihood of rolling a six on a six-sided die would not require further explanation.
+vi. The odds displayed in virtual event betting should reflect the probability of each event occurring
+as closely as possible.
+b. Information may be included in artwork and text displayed within the virtual game or event, in ‘help’ or
+‘how to play’ pages, or other supporting material.
+c. Information should be easily accessible, for example by placing links on home pages for gaming or
+virtual event sections, game selection pages or menus, or within individual games.
+RTS requirement 3D
+For each virtual event, game (including bingo), or lottery, content describing the potential prizes and
+payouts or the means by which these are calculated or determined must be easily available before the
+customer commits to gamble.
+RTS implementation guidance 3D
+a. Information should be made available about the amounts that customers may potentially win, for
+example in the form of pay-tables, or by showing the odds paid for particular outcomes.
+b. For peer-to-peer games where the prize is determined based on the actions of the participants, a
+description of the way the game works and the rake or commission taken will be sufficient.
+c. For lotteries and other types of events where the potential amount or prize paid out may not be
+known before the customer commits to gamble, describing the way in which the prize amount is
+determined will be sufficient.
+d. Information may be included in artwork and text displayed within the virtual event, in ‘help’ or ‘how to
+play’ pages, or other supporting material.
+e. Information should be easily accessible, for example by placing links on home pages for gaming
+sections, game selection pages or menus, or within individual games.
+f. Displays of jackpot amounts that change over time (progressives) should be updated as frequently
+as practicable, particularly after the amount has been reset following a win.

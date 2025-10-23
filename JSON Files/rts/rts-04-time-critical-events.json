@@ -1,0 +1,140 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Time-Critical Events",
+  "document_reference": "RTS Aim 4",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Gaming (including bingo), lotteries and betting on virtual events",
+  "aim": {
+    "aim_id": "RTS_AIM_4",
+    "aim_number": 4,
+    "aim_title": "Time-Critical Events",
+    "aim_description": "To reduce the risk that customers are unfairly disadvantaged by technical factors that may affect speed of response, and to ensure customers are made aware of the risk"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_4A",
+      "requirement_number": "4A",
+      "title": "Assessment and Mitigation of Speed-Related Risks",
+      "requirement_type": "mandatory",
+      "full_text": "Where speed of interaction has a significant effect on the customer's chance of winning, operators must assess the level of risk and demonstrate to the Commission that they are taking reasonable steps to reduce the risk to customers.",
+      "implementation_guidance": {
+        "full_text": "Examples of possible approaches include: estimating the degree of network latency (delay) a customer is experiencing and displaying regularly updated information to the customer about any disadvantage that they may be operating under (for example high, medium, low); applying a handicapping system based on estimated performance and/or system latency; treating winning responses that arrive within a period of time as simultaneous and implementing a policy on how simultaneous wins are to be dealt with.",
+        "key_points": [
+          "When speed of interaction significantly affects chance of winning, operators must assess risk",
+          "Must demonstrate to Commission that reasonable steps are taken to reduce risk",
+          "Approach 1: Estimate and display network latency to customer (high/medium/low)",
+          "Approach 2: Apply handicapping system based on performance/latency",
+          "Approach 3: Treat responses within time period as simultaneous with policy for simultaneous wins"
+        ],
+        "risk_assessment_required": "Yes - when speed of interaction has significant effect on winning chances",
+        "demonstration_required": "Yes - must demonstrate to UKGC that reasonable steps are taken",
+        "example_mitigation_approaches": [
+          {
+            "approach": "Network Latency Display",
+            "description": "Estimate degree of network latency customer is experiencing",
+            "implementation": "Display regularly updated information about disadvantage (high, medium, low)"
+          },
+          {
+            "approach": "Handicapping System",
+            "description": "Apply handicapping based on estimated performance and/or system latency",
+            "implementation": "Adjust game mechanics to compensate for technical disadvantages"
+          },
+          {
+            "approach": "Simultaneous Response Treatment",
+            "description": "Treat winning responses arriving within a time period as simultaneous",
+            "implementation": "Implement policy on how simultaneous wins are dealt with"
+          }
+        ]
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "lotteries",
+        "betting_on_virtual_events"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 4A"
+    },
+    {
+      "requirement_id": "RTS_4B",
+      "requirement_number": "4B",
+      "title": "Customer Information About Technical Disadvantages",
+      "requirement_type": "mandatory",
+      "full_text": "For time-critical events, the customer should be informed that they might be at a disadvantage because of technical issues such as slower network speeds, or slower end user device performance.",
+      "implementation_guidance": {
+        "full_text": "Information should be included in game descriptions, rules, 'help' or 'how to play' pages.",
+        "key_points": [
+          "Customers must be informed they might be at disadvantage due to technical issues",
+          "Technical issues include: slower network speeds, slower device performance",
+          "Information must be included in game descriptions, rules, help, or how to play pages"
+        ],
+        "technical_factors_to_disclose": [
+          "Slower network speeds",
+          "Slower end user device performance"
+        ],
+        "disclosure_locations": [
+          "Game descriptions",
+          "Rules",
+          "Help pages",
+          "How to play pages"
+        ],
+        "warning_purpose": "Ensure customers aware they might be disadvantaged by technical factors beyond their control"
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "lotteries",
+        "betting_on_virtual_events"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 4B"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Protect customers from unfair disadvantages due to technical factors affecting speed of interaction",
+    "enforcement_priority": "Medium-High - important for fair gambling where speed matters",
+    "testing_requirements": "Operators must demonstrate risk assessment and mitigation measures to UKGC",
+    "key_principles": [
+      "Speed-related risks must be assessed where speed affects winning chances",
+      "Reasonable mitigation steps must be taken and demonstrated",
+      "Customers must be informed of potential technical disadvantages",
+      "Multiple mitigation approaches available (latency display, handicapping, simultaneous treatment)"
+    ]
+  },
+  "related_requirements": [
+    "RTS 3 - Rules and Game Descriptions",
+    "RTS 5 - Result Determination",
+    "RTS 7 - Generation of Random Outcomes"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 3 - Rules and Game Descriptions",
+      "RTS 5 - Result Determination"
+    ]
+  },
+  "use_cases": {
+    "typical_scenarios": [
+      "Real-time multiplayer games where quick responses give advantage",
+      "Live dealer games where timing affects outcomes",
+      "Speed-based skill games",
+      "Time-limited betting windows"
+    ],
+    "less_relevant_for": [
+      "Slots and other games where timing doesn't affect outcome",
+      "Turn-based games with no time pressure",
+      "Standard lottery draws"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

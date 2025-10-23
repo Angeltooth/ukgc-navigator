@@ -1,0 +1,938 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 6.5",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "People Controls",
+  "control": {
+    "control_id": "ISO_27001_A_6.5",
+    "control_number": "A 6.5",
+    "control_title": "Responsibilities After Termination or Change of Employment",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure information security responsibilities remain valid and are enforced after personnel termination or role change",
+    "control_objective": "Define, communicate, and enforce information security responsibilities that persist after termination or change of employment"
+  },
+  "iso_27001_definition": {
+    "official_text": "Information security responsibilities and duties that remain valid after termination or change of employment should be defined, enforced and communicated to relevant personnel and other interested parties.",
+    "key_requirements": [
+      "Responsibilities after termination defined",
+      "Responsibilities after role change defined",
+      "Responsibilities communicated to personnel",
+      "Responsibilities communicated to interested parties",
+      "Responsibilities enforced",
+      "Applied to employees and contractors",
+      "Applied to third parties and suppliers",
+      "Documented in employment contracts"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control protecting organization information and assets after personnel depart or change roles",
+    "scope": [
+      "Confidentiality obligations post-employment",
+      "Non-disclosure requirements",
+      "Asset return requirements",
+      "Access revocation procedures",
+      "Ongoing liability for breaches",
+      "Role and responsibility handover",
+      "Third-party and contractor obligations",
+      "Legal enforceability of requirements"
+    ],
+    "key_outcome": "Personnel and departing employees understand and comply with ongoing security obligations"
+  },
+  "prerequisites": {
+    "description": "Before implementing termination responsibilities control, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Information Security Policy",
+        "description": "Documented information security policy",
+        "rationale": "Policy must be communicated as basis for ongoing responsibilities",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      },
+      {
+        "prerequisite": "HR Policies",
+        "description": "Documented HR and personnel policies",
+        "rationale": "Termination responsibilities integrated into HR processes",
+        "reference": "ISO 27001 A 6 - Personnel"
+      },
+      {
+        "prerequisite": "Legal and HR Resources",
+        "description": "Access to legal counsel and HR professionals",
+        "rationale": "Contract clauses must be legally valid and enforceable",
+        "reference": "Professional expertise required"
+      },
+      {
+        "prerequisite": "Onboarding Process",
+        "description": "Established process for new hire onboarding",
+        "rationale": "Contracts signed and communicated during onboarding",
+        "reference": "ISO 27001 A 6.1 - Screening"
+      }
+    ]
+  },
+  "termination_responsibilities_overview": {
+    "definition": "Information security obligations that remain binding on individuals after they leave organization or change employment role",
+    "scope": {
+      "applies_to": [
+        "Employees leaving organization",
+        "Employees changing roles within organization",
+        "Contractors ending engagement",
+        "Third-party suppliers and vendors",
+        "Temporary staff and casual workers"
+      ],
+      "applies_after": [
+        "Final day of employment",
+        "Transfer to new role",
+        "Contract termination",
+        "Project completion"
+      ]
+    },
+    "common_responsibilities": [
+      "Maintain confidentiality of proprietary information",
+      "Not disclose confidential information to unauthorized parties",
+      "Not use confidential information for personal benefit",
+      "Return all company-owned assets",
+      "Not retain copies of confidential information",
+      "Comply with non-compete agreements if applicable",
+      "Comply with non-solicitation agreements if applicable",
+      "Cooperate with investigations or audits",
+      "Comply with data protection requirements",
+      "Protect customer information"
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_6.5_REQ_1",
+      "requirement": "Define Post-Termination Information Security Responsibilities",
+      "description": "Clearly identify and document what information security responsibilities continue after employment ends",
+      "details": {
+        "responsibilities_to_define": [
+          "Confidentiality obligations - continuing indefinitely",
+          "Non-disclosure commitments - scope and duration",
+          "Asset return requirements - what must be returned",
+          "Information destruction - what must be destroyed",
+          "Access removal - when and how access is revoked",
+          "Cooperation obligations - willingness to cooperate on investigations",
+          "Liability for breaches - potential consequences of violations",
+          "Non-disparagement - protecting organization reputation",
+          "Intellectual property - ownership of work product"
+        ],
+        "factors_by_role": [
+          "Executive/management roles - broader obligations",
+          "Technical roles with system access - stricter requirements",
+          "Customer-facing roles - enhanced confidentiality",
+          "General staff - baseline obligations"
+        ],
+        "duration": [
+          "Indefinite obligations - confidentiality usually lifetime",
+          "Time-limited obligations - non-compete (typically 6-12 months)",
+          "Ongoing obligations - cooperation with audits/investigations"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_2",
+      "requirement": "Include Responsibilities in Employment Contracts",
+      "description": "Incorporate defined responsibilities into employment contracts",
+      "details": {
+        "contract_elements": [
+          "Clear statement of confidentiality obligations",
+          "Definition of confidential information",
+          "Scope of non-disclosure",
+          "Duration of obligations",
+          "Consequences of breaching obligations",
+          "Company assets and their return",
+          "Intellectual property ownership",
+          "Non-compete clause (if applicable)",
+          "Non-solicitation clause (if applicable)",
+          "Governing law and jurisdiction"
+        ],
+        "legal_requirements": [
+          "Drafted by or reviewed by legal counsel",
+          "Compliant with employment law",
+          "Enforceable and reasonable",
+          "Clear and unambiguous language",
+          "Signed by employee",
+          "Copy retained in personnel file"
+        ],
+        "documentation": [
+          "Employment contract template",
+          "Contractor/third-party agreements",
+          "Specific clauses that address security"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_3",
+      "requirement": "Engage Legal and HR Professionals",
+      "description": "Obtain professional advice on contract validity and enforceability",
+      "details": {
+        "legal_review": [
+          "Employment law attorney reviews contracts",
+          "Ensures compliance with applicable laws",
+          "Confirms clauses are enforceable",
+          "Identifies potential legal risks",
+          "Reviews for industry standards"
+        ],
+        "hr_collaboration": [
+          "HR advises on practical implementation",
+          "HR processes onboarding and offboarding",
+          "HR communicates responsibilities to staff",
+          "HR maintains records of signed contracts",
+          "HR manages transitions and role changes"
+        ],
+        "best_practice": "Maintain ongoing relationship with legal counsel for annual review and updates"
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_4",
+      "requirement": "Communicate Responsibilities During Onboarding",
+      "description": "Ensure new personnel understand post-employment obligations",
+      "details": {
+        "onboarding_process": [
+          "Present employment contract to new hire",
+          "Explain post-employment security responsibilities",
+          "Review confidentiality obligations",
+          "Review asset ownership and return requirements",
+          "Explain consequences of violations",
+          "Have employee sign and date contract",
+          "Provide copy to employee",
+          "Retain signed copy in personnel file"
+        ],
+        "communication_elements": [
+          "Written employment contract",
+          "Verbal explanation of key points",
+          "Q&A opportunity for clarification",
+          "Security awareness training covering responsibilities",
+          "Reference to information security policy"
+        ],
+        "documentation": [
+          "Signed contract in personnel file",
+          "Date of contract signing recorded",
+          "Employee acknowledgment of understanding",
+          "Copy provided to employee"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_5",
+      "requirement": "Communicate Responsibilities During Role Changes",
+      "description": "Reinforce obligations when employee changes roles within organization",
+      "details": {
+        "role_change_process": [
+          "Discuss new role and access requirements",
+          "Review confidentiality obligations in new role",
+          "Clarify responsibilities for new role",
+          "Document any expanded responsibilities",
+          "Update contract or sign acknowledgment if needed",
+          "Provide training on new role responsibilities"
+        ],
+        "affected_scenarios": [
+          "Promotion to higher role",
+          "Transfer to different department",
+          "Change to role with greater access",
+          "Move to role with compliance responsibilities"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_6",
+      "requirement": "Manage Personnel Termination Process",
+      "description": "Execute formal offboarding process protecting organization security",
+      "details": {
+        "offboarding_steps": [
+          "Notify HR, IT, and security of termination",
+          "Schedule exit interview",
+          "Revoke system access immediately or at end of day",
+          "Collect company-owned assets (badge, equipment, keys)",
+          "Review access logs for suspicious activity",
+          "Change shared passwords and encryption keys",
+          "Remove email and document access",
+          "Retrieve company mobile devices",
+          "Conduct exit interview with employee",
+          "Communicate post-employment obligations",
+          "Obtain signed acknowledgment of responsibilities",
+          "Provide written summary of ongoing obligations"
+        ],
+        "timing": [
+          "Access revocation - immediate or end of business day",
+          "Exit interview - on last day or before",
+          "Asset collection - on last day",
+          "Log review - within 24 hours",
+          "Notification - before termination if possible"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_7",
+      "requirement": "Transfer Roles and Responsibilities",
+      "description": "Ensure orderly handover of duties to prevent gaps",
+      "details": {
+        "handover_process": [
+          "Identify roles and responsibilities of departing person",
+          "Identify successor for each responsibility",
+          "Plan transition timeline",
+          "Document current state of work",
+          "Provide training to successor",
+          "Transition access and permissions gradually",
+          "Maintain audit trail of transitions",
+          "Verify successor is ready before departure",
+          "Document completion of handover"
+        ],
+        "responsibilities_to_transfer": [
+          "Project assignments and status",
+          "System administration duties",
+          "Compliance monitoring responsibilities",
+          "On-call or escalation duties",
+          "Vendor relationships and contracts",
+          "Decision-making authorities"
+        ],
+        "documentation": [
+          "Handover checklist",
+          "Knowledge transfer notes",
+          "Access transfer log",
+          "Completion verification"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_8",
+      "requirement": "Apply to Third Parties and Suppliers",
+      "description": "Extend obligations to contractors, consultants, and vendors",
+      "details": {
+        "applicable_third_parties": [
+          "Contractors and consultants",
+          "Temporary workers and staffing",
+          "Interns and trainees",
+          "Vendors and suppliers",
+          "Service providers",
+          "Offshore development partners"
+        ],
+        "contract_management": [
+          "Contracts include confidentiality clauses",
+          "Contracts address post-engagement obligations",
+          "Contracts address data handling",
+          "Contracts address asset return",
+          "Contracts reviewed by legal counsel",
+          "Contracts signed before engagement"
+        ],
+        "enforcement": [
+          "Monitor compliance with obligations",
+          "Include audit rights in contracts",
+          "Address breaches in contract",
+          "Escalate breaches appropriately"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_9",
+      "requirement": "Enforce Post-Termination Responsibilities",
+      "description": "Take action to ensure continuing compliance with obligations",
+      "details": {
+        "enforcement_mechanisms": [
+          "Legal contracts with enforceable clauses",
+          "Clear consequences for violations",
+          "Monitoring for violations",
+          "Investigation of suspected breaches",
+          "Legal action when appropriate",
+          "Communication of legal rights"
+        ],
+        "specific_actions": [
+          "Monitor former employee activities",
+          "Review for unauthorized use of information",
+          "Check for competitive activity",
+          "Verify asset returns",
+          "Track confidentiality breaches",
+          "Pursue legal remedies for violations"
+        ],
+        "documentation": [
+          "Record of any violations detected",
+          "Investigation findings",
+          "Legal actions taken",
+          "Resolutions achieved"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_10",
+      "requirement": "Develop Topic-Specific HR Policy",
+      "description": "Create documented policy addressing termination and change of employment",
+      "details": {
+        "policy_elements": [
+          "Scope - who policy applies to",
+          "Objectives - what policy is trying to achieve",
+          "Responsibilities - who does what",
+          "Key responsibilities post-employment",
+          "Onboarding process and contract signing",
+          "Offboarding process and procedures",
+          "Access revocation procedures",
+          "Asset return procedures",
+          "Exit interview process",
+          "Handover requirements",
+          "Communication to departing employees",
+          "Enforcement approach",
+          "Training and awareness"
+        ],
+        "related_procedures": [
+          "Onboarding procedure",
+          "Offboarding procedure",
+          "Access revocation procedure",
+          "Asset management procedure",
+          "Exit interview procedure"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.5_REQ_11",
+      "requirement": "Maintain Documentation",
+      "description": "Keep records of contracts and termination activities",
+      "details": {
+        "documents_to_maintain": [
+          "Employment contract template",
+          "Signed employment contracts for all employees",
+          "Contractor and third-party agreements",
+          "HR policy on termination responsibilities",
+          "Onboarding checklists",
+          "Offboarding checklists",
+          "Exit interview notes",
+          "Access revocation records",
+          "Asset return records",
+          "Handover documentation"
+        ],
+        "personnel_file": [
+          "Signed contract",
+          "Date of signature",
+          "Onboarding checklist",
+          "Acknowledgment of responsibilities",
+          "Offboarding checklist",
+          "Exit interview form",
+          "Final access revocation record"
+        ],
+        "retention": [
+          "Retain contracts during employment",
+          "Retain records for period after termination",
+          "Typical retention: 3-6 years minimum"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Develop topic-specific HR policy",
+        "detail": "Document policy on responsibilities after termination or role change"
+      },
+      {
+        "step": 2,
+        "action": "Identify post-employment responsibilities",
+        "detail": "Define specific security obligations continuing after employment"
+      },
+      {
+        "step": 3,
+        "action": "Engage legal counsel",
+        "detail": "Have attorney review and draft employment contract clauses"
+      },
+      {
+        "step": 4,
+        "action": "Engage HR department",
+        "detail": "Collaborate with HR on implementation and enforcement"
+      },
+      {
+        "step": 5,
+        "action": "Create employment contract template",
+        "detail": "Develop standardized contract with security responsibilities"
+      },
+      {
+        "step": 6,
+        "action": "Create onboarding procedure",
+        "detail": "Document process for signing contracts and communicating responsibilities"
+      },
+      {
+        "step": 7,
+        "action": "Create offboarding procedure",
+        "detail": "Document termination process with security controls"
+      },
+      {
+        "step": 8,
+        "action": "Implement with new hires",
+        "detail": "Begin using contract template with all new employees"
+      },
+      {
+        "step": 9,
+        "action": "Update existing employees",
+        "detail": "Have existing employees sign updated contracts (if not already signed)"
+      },
+      {
+        "step": 10,
+        "action": "Train HR and management",
+        "detail": "Ensure HR and managers understand and follow procedures"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 6.5",
+    "checklist": [
+      {
+        "item": "Develop topic-specific HR policy",
+        "status": "required"
+      },
+      {
+        "item": "Define post-employment security responsibilities",
+        "status": "required"
+      },
+      {
+        "item": "Draft employment contract clauses",
+        "status": "required"
+      },
+      {
+        "item": "Have contracts reviewed by legal counsel",
+        "status": "required"
+      },
+      {
+        "item": "Create employment contract template",
+        "status": "required"
+      },
+      {
+        "item": "Create onboarding procedure",
+        "status": "required"
+      },
+      {
+        "item": "Create offboarding procedure",
+        "status": "required"
+      },
+      {
+        "item": "Implement contracts with all new employees",
+        "status": "required"
+      },
+      {
+        "item": "Have existing employees sign contracts",
+        "status": "required"
+      },
+      {
+        "item": "Document and communicate responsibilities to employees",
+        "status": "required"
+      },
+      {
+        "item": "Train HR and management on procedures",
+        "status": "required"
+      },
+      {
+        "item": "Maintain signed contracts in personnel files",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with termination responsibilities",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No employment contracts in place",
+        "description": "Personnel lack written employment contracts with security clauses",
+        "root_cause": [
+          "Small organization or startup culture",
+          "Belief that 'everyone knows and trusts each other'",
+          "Cost avoidance of legal review",
+          "Informal or family business environment",
+          "Misconception that written contracts damage relationships"
+        ],
+        "impact": "No legal basis for enforcing security obligations, cannot pursue legal action for breaches, non-compliance with ISO 27001",
+        "prevention": [
+          "Implement employment contracts as standard practice",
+          "Have legal counsel draft or review contracts",
+          "Require contracts for all employees",
+          "Include security-specific clauses",
+          "Ensure all parties understand legal value"
+        ],
+        "requirement": "Employment contracts with security obligations are mandatory for compliance"
+      },
+      {
+        "rank": 2,
+        "mistake": "HR team not aware of or following procedures",
+        "description": "HR not executing onboarding/offboarding procedures correctly",
+        "root_cause": [
+          "HR not trained on procedures",
+          "No documented procedures in place",
+          "HR unaware of security requirements",
+          "No accountability or audit of HR activities",
+          "Inconsistent application across staff"
+        ],
+        "impact": "Some employees lack signed contracts, access not revoked promptly, assets not returned, no evidence of communication",
+        "prevention": [
+          "Document onboarding and offboarding procedures",
+          "Train all HR staff on procedures",
+          "Create checklists for each process",
+          "Conduct pre-audit verification with HR",
+          "Assign responsibility and accountability",
+          "Audit HR activities regularly"
+        ],
+        "best_practice": "Pre-audit check that all HR team members understand and execute procedures correctly"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document version control and maintenance issues",
+        "description": "Contract templates or policies not current or properly maintained",
+        "root_cause": [
+          "No version control process",
+          "Outdated contract template in use",
+          "Legal changes not incorporated",
+          "No regular review schedule",
+          "Multiple versions in circulation",
+          "Comments left in final documents"
+        ],
+        "impact": "Contracts may not reflect current legal requirements, non-enforceable clauses, inconsistent application",
+        "prevention": [
+          "Maintain document version control",
+          "Review contracts annually with legal counsel",
+          "Update for legal or regulatory changes",
+          "Remove draft comments from final versions",
+          "Standardize version numbering",
+          "Archive old versions properly"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 6.5 audit",
+    "audit_areas": [
+      {
+        "area": "1. Employment Contract Review",
+        "description": "Verify employment contracts include security responsibilities",
+        "checks": [
+          "Contract template exists and is documented",
+          "Template includes confidentiality clauses",
+          "Template addresses post-employment obligations",
+          "Template covers asset ownership and return",
+          "Template includes non-disclosure provisions",
+          "Contract language is clear and enforceable",
+          "Current employees have signed contracts",
+          "Contracts are retained in personnel files"
+        ],
+        "best_practice": "Sample review of active contracts against template"
+      },
+      {
+        "area": "2. Legal Review and Validity",
+        "description": "Verify contracts have been reviewed for legal enforceability",
+        "checks": [
+          "Contracts reviewed by legal counsel",
+          "Evidence of legal review documented",
+          "Clauses are enforceable under applicable law",
+          "Clauses are reasonable and not overly broad",
+          "Jurisdiction and governing law specified",
+          "Signature blocks completed"
+        ]
+      },
+      {
+        "area": "3. Defined Responsibilities",
+        "description": "Verify post-employment responsibilities are clearly defined",
+        "checks": [
+          "Confidentiality obligations defined",
+          "Non-disclosure requirements specified",
+          "Asset return requirements documented",
+          "Duration of obligations specified",
+          "Consequences of violations stated",
+          "Responsibilities communicated in writing"
+        ]
+      },
+      {
+        "area": "4. Communication to Personnel",
+        "description": "Verify personnel aware of post-employment responsibilities",
+        "checks": [
+          "Employees provided with signed contract copy",
+          "Contract reviewed during onboarding",
+          "Responsibilities explained in writing",
+          "Employees acknowledge understanding",
+          "Training covers post-employment obligations",
+          "Exit communications reinforce ongoing duties"
+        ]
+      },
+      {
+        "area": "5. Onboarding Process",
+        "description": "Verify contracts signed and communicated during onboarding",
+        "checks": [
+          "Documented onboarding procedure",
+          "Contract signing included in onboarding",
+          "Date of contract signing recorded",
+          "Copy provided to employee",
+          "Copy retained in personnel file",
+          "Onboarding checklist completed",
+          "New hires have signed contracts"
+        ]
+      },
+      {
+        "area": "6. Offboarding Process",
+        "description": "Verify termination process includes responsibility communication",
+        "checks": [
+          "Documented offboarding procedure",
+          "Exit interview conducted",
+          "Post-employment obligations reviewed at exit",
+          "Written summary provided to departing employee",
+          "Departing employee acknowledges understanding",
+          "Access revocation documented",
+          "Asset return documented",
+          "Exit records complete"
+        ]
+      },
+      {
+        "area": "7. Third Party Agreements",
+        "description": "Verify contractors and third parties have similar obligations",
+        "checks": [
+          "Contractor agreements include security clauses",
+          "Supplier agreements address confidentiality",
+          "Third-party agreements reviewed by legal",
+          "Post-engagement obligations documented",
+          "Agreements signed before engagement"
+        ]
+      },
+      {
+        "area": "8. Documentation and Records",
+        "description": "Verify documentation maintained",
+        "checks": [
+          "Personnel files contain signed contracts",
+          "Onboarding records maintained",
+          "Offboarding records maintained",
+          "Exit interview notes retained",
+          "Handover records documented",
+          "Version control of contract templates",
+          "HR policy documented"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, personnel with access to RNG systems, customer funds, or regulatory information must remain bound by security obligations after employment",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Integrity Systems",
+        "responsibility_requirements": [
+          "Personnel with RNG access must maintain confidentiality of systems and methodologies",
+          "Non-disclosure of game algorithms or RNG implementation details",
+          "Ongoing obligation to not disclose methodologies to competitors",
+          "Cooperation with integrity audits post-employment"
+        ]
+      },
+      {
+        "system": "Customer Data and Payments",
+        "responsibility_requirements": [
+          "Indefinite confidentiality of customer personal data",
+          "Non-disclosure of customer financial information",
+          "Obligation not to use customer data for personal benefit",
+          "Compliance with data protection regulations indefinitely"
+        ]
+      },
+      {
+        "system": "Regulatory Compliance",
+        "responsibility_requirements": [
+          "Ongoing confidentiality of compliance monitoring results",
+          "Non-disclosure of regulatory audit findings",
+          "Cooperation with regulatory investigations",
+          "Obligation to report violations to appropriate authorities"
+        ]
+      },
+      {
+        "system": "Proprietary Processes",
+        "responsibility_requirements": [
+          "Non-disclosure of proprietary gaming processes",
+          "Non-compete obligations preventing direct competitor work",
+          "Intellectual property ownership of work product",
+          "Non-solicitation of customers or employees"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must have enforceable contracts with all personnel defining ongoing information security responsibilities after employment termination or role change"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Protect organization information and assets by ensuring security obligations continue and are enforceable after personnel depart or change roles",
+    "enforcement_priority": "High - personnel departures pose significant risk if obligations not properly defined and enforced",
+    "key_principles": [
+      "Post-employment obligations clearly defined",
+      "Obligations documented in binding contracts",
+      "Contracts legally reviewed and enforceable",
+      "All personnel sign contracts",
+      "Responsibilities communicated during onboarding",
+      "Responsibilities reinforced during offboarding",
+      "Handover process ensures responsibility continuity",
+      "Third parties and suppliers subject to same obligations",
+      "Enforcement mechanisms in place",
+      "Records maintained in personnel files"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 6.5 Responsibilities After Termination or Change of Employment, implement",
+    "requirements": [
+      {
+        "requirement": "Develop HR policy",
+        "detail": "Document policy on post-employment security responsibilities"
+      },
+      {
+        "requirement": "Define specific responsibilities",
+        "detail": "List what security obligations continue after employment"
+      },
+      {
+        "requirement": "Draft employment contracts",
+        "detail": "Create template including security responsibility clauses"
+      },
+      {
+        "requirement": "Legal review",
+        "detail": "Have attorney review and approve contract language"
+      },
+      {
+        "requirement": "Engage HR",
+        "detail": "Collaborate with HR on implementation"
+      },
+      {
+        "requirement": "Create onboarding procedure",
+        "detail": "Document process for signing contracts"
+      },
+      {
+        "requirement": "Create offboarding procedure",
+        "detail": "Document termination process with security controls"
+      },
+      {
+        "requirement": "Implement with all employees",
+        "detail": "All personnel have signed contracts"
+      },
+      {
+        "requirement": "Communicate responsibilities",
+        "detail": "Personnel understand post-employment obligations"
+      },
+      {
+        "requirement": "Train HR team",
+        "detail": "HR understands and executes procedures"
+      },
+      {
+        "requirement": "Maintain records",
+        "detail": "Signed contracts in personnel files"
+      },
+      {
+        "requirement": "Apply to third parties",
+        "detail": "Contractors and suppliers have similar obligations"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 6.1 - Screening",
+      "ISO 27001 A 6.2 - Terms and conditions of employment",
+      "ISO 27001 A 6.3 - Information security awareness, education and training",
+      "ISO 27001 A 6.4 - Discipline process",
+      "ISO 27001 A 5.1 - Policies for information security"
+    ]
+  },
+  "best_practices": {
+    "contract_best_practices": [
+      "Have employment contracts reviewed by qualified employment law attorney",
+      "Ensure clauses are enforceable and reasonable",
+      "Include specific examples of confidential information",
+      "Specify duration of post-employment obligations",
+      "Clearly state consequences of violations",
+      "Address intellectual property ownership",
+      "Include dispute resolution mechanisms",
+      "Update contracts annually for legal compliance"
+    ],
+    "process_best_practices": [
+      "Implement contracts with all new employees immediately",
+      "Ensure existing employees sign contracts",
+      "Create checklist for onboarding process",
+      "Create checklist for offboarding process",
+      "Train HR team on proper execution",
+      "Document contract signing date in personnel file",
+      "Provide copy to employee",
+      "Retain signed original in personnel file"
+    ],
+    "communication_best_practices": [
+      "Review contract terms during onboarding",
+      "Explain confidentiality obligations clearly",
+      "Discuss consequences of violations",
+      "Answer employee questions",
+      "Reinforce obligations during exit interviews",
+      "Provide written summary at termination",
+      "Explain ongoing legal obligations",
+      "Clarify enforcement mechanisms"
+    ],
+    "enforcement_best_practices": [
+      "Include legal consequences in contract",
+      "Monitor for potential violations",
+      "Investigate suspected breaches",
+      "Take legal action when appropriate",
+      "Maintain records of any violations",
+      "Communicate enforcement approach"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "high_risk_roles": [
+      {
+        "role": "RNG and Game System Personnel",
+        "risk": "Critical - access to game integrity systems and algorithms",
+        "obligations": [
+          "Indefinite confidentiality of RNG methodologies",
+          "Non-disclosure of game algorithms or calculations",
+          "Non-compete preventing work at competitor for 12 months",
+          "Cooperation with integrity audits post-employment",
+          "Return of all system documentation and tools"
+        ]
+      },
+      {
+        "role": "Customer Data Handlers",
+        "risk": "Critical - access to personal and financial data",
+        "obligations": [
+          "Indefinite confidentiality of customer information",
+          "Non-disclosure of financial data",
+          "Compliance with data protection obligations",
+          "Cooperation with data breach investigations",
+          "Non-solicitation of customers"
+        ]
+      },
+      {
+        "role": "Compliance and Audit Personnel",
+        "risk": "High - access to sensitive audit and regulatory information",
+        "obligations": [
+          "Confidentiality of audit findings",
+          "Non-disclosure of regulatory positions",
+          "Cooperation with ongoing investigations",
+          "Non-disparagement of organization"
+        ]
+      }
+    ],
+    "regulatory_expectations": [
+      "Employment contracts for all personnel with security clauses",
+      "Specific confidentiality provisions for RNG and game systems",
+      "Data protection obligations for customer information handlers",
+      "Non-compete clauses for critical technical roles",
+      "Documented onboarding with contract signing",
+      "Documented offboarding with responsibility reinforcement",
+      "Evidence of HR team understanding procedures"
+    ],
+    "audit_readiness": [
+      "All employees have signed current employment contracts",
+      "Contracts reviewed and approved by legal counsel",
+      "Onboarding records show contract signing for recent hires",
+      "Offboarding records show exit communications",
+      "HR team trained and executing procedures",
+      "Personnel files contain signed contracts",
+      "Third-party and contractor agreements in place"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 6.5",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-6.5-responsibilities-after-termination-or-change-of-employment.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

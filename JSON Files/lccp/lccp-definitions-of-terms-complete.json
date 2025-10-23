@@ -1,0 +1,395 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Licence Conditions and Codes of Practice (LCCP) - Definition of Terms",
+  "document_reference": "LCCP-DOT-2024",
+  "last_updated": "2025-10-21",
+  "jurisdiction_scope": "Great Britain (England, Scotland, Wales)",
+  
+  "document_overview": {
+    "purpose": "Provides standardized definitions of key terms used throughout the LCCP documents and gambling regulatory framework",
+    "structure": "Alphabetically organized reference definitions used by operators, licence holders, and regulators",
+    "application_basis": "Gambling Act 2005, technical standards, and Commission guidance",
+    "compliance_obligation": "Operators must interpret LCCP provisions using these standardized definitions",
+    "enforcement": "Misinterpretation of defined terms leading to non-compliance may result in enforcement action"
+  },
+
+  "definition_categories": [
+    {
+      "category_id": "technical_terms",
+      "category_name": "Technical and System Terms",
+      "description": "Definitions relating to technical systems, random number generation, and software"
+    },
+    {
+      "category_id": "gambling_activities",
+      "category_name": "Gambling Activities and Game Types",
+      "description": "Definitions of different gambling activities, games, and betting types"
+    },
+    {
+      "category_id": "lottery_terms",
+      "category_name": "Lottery-Specific Terms",
+      "description": "Definitions specific to lottery operations"
+    },
+    {
+      "category_id": "customer_experience",
+      "category_name": "Customer Experience and Accessibility",
+      "description": "Definitions relating to how customers interact with gambling services"
+    },
+    {
+      "category_id": "regulatory_concepts",
+      "category_name": "Regulatory and Operational Concepts",
+      "description": "Definitions of regulatory and operational concepts"
+    }
+  ],
+
+  "definitions": [
+    {
+      "term_id": "compensated_games",
+      "term": "Compensated games or events",
+      "category": "technical_terms",
+      "definition": "Games or virtual events that adjust the likelihood of winning outcomes occurring based on previous payouts or intake",
+      "alternative_terminology": ["Adaptive behaviour", "Percentage compensation"],
+      "regulatory_significance": "Compensated games must comply with RNG and fairness requirements; any compensation mechanisms must be disclosed to customers",
+      "compliance_note": "Commission technical standards specify requirements for compensated games to ensure fairness and prevent harm"
+    },
+
+    {
+      "term_id": "easily_accessible",
+      "term": "Easily accessible",
+      "category": "customer_experience",
+      "definition": "Facilities or information that is either on the screen, or can be intuitively accessed via efficient navigation or other means",
+      "context_of_use": "Used in relation to responsible gambling information, self-exclusion options, and customer protection tools",
+      "regulatory_significance": "Operators must ensure all required information and tools are easily accessible to customers; this is a mandatory requirement for many provisions",
+      "compliance_action": "Test accessibility of all customer-facing information and tools; use intuitive navigation; avoid burying important information behind multiple clicks; ensure accessible on all device types"
+    },
+
+    {
+      "term_id": "game",
+      "term": "Game",
+      "category": "gambling_activities",
+      "definition": "A game of chance as defined in section 6(2) of the Gambling Act 2005",
+      "legal_basis": "Gambling Act 2005, section 6(2)",
+      "regulatory_significance": "Broad definition that covers casino games, gaming machines, bingo, and other games of chance; excludes games of pure skill",
+      "operator_responsibility": "Operators must ensure all games offered comply with LCCP requirements for game fairness, RNG certification, and customer protection"
+    },
+
+    {
+      "term_id": "gambling",
+      "term": "Gambling",
+      "category": "gambling_activities",
+      "definition": "The Gambling Act 2005 defines gambling as: gaming (within the meaning of section 6), betting (within the meaning of section 9), and participating in a lottery (within the meaning of section 14 and subject to section 15)",
+      "legal_basis": "Gambling Act 2005, sections 6, 9, 14, 15",
+      "three_activity_types": [
+        {
+          "activity": "Gaming",
+          "definition": "Games of chance, typically casino games, bingo, gaming machines",
+          "regulation": "Subject to gaming licence requirements"
+        },
+        {
+          "activity": "Betting",
+          "definition": "Betting on outcomes of events or virtual events",
+          "regulation": "Subject to betting licence requirements"
+        },
+        {
+          "activity": "Lottery",
+          "definition": "Lottery tickets and lottery participation",
+          "regulation": "Subject to lottery licence requirements"
+        }
+      ],
+      "regulatory_significance": "Broad definition determines scope of LCCP application; activities outside this definition not regulated as gambling"
+    },
+
+    {
+      "term_id": "gaming_session",
+      "term": "Gaming session",
+      "category": "customer_experience",
+      "definition": "The playing of any of the applicable gambling activities (for example bingo or casino games); commences when a player starts playing a game for real money and ends when a player exits a game",
+      "start_trigger": "Player starts playing any gambling activity for real money",
+      "end_trigger": "Player exits the game",
+      "regulatory_significance": "Important for determining when responsible gambling controls apply; affects time-tracking and session monitoring requirements",
+      "compliance_note": "Gaming session defined separately from 'free play' or 'play-for-free' sessions which do not constitute gaming sessions for regulatory purposes"
+    },
+
+    {
+      "term_id": "high_frequency_lottery",
+      "term": "High frequency lottery",
+      "category": "lottery_terms",
+      "definition": "A lottery in which any draw takes place less than one hour after a draw in a previous lottery promoted on behalf of the same non-commercial society or local authority or as part of the same multiple lottery scheme",
+      "frequency_indicator": "Draw interval less than 60 minutes",
+      "regulatory_significance": "High frequency lotteries subject to enhanced customer interaction and problem gambling prevention requirements",
+      "applicable_requirements": "Provisions 3.2.11 and 3.4.3 apply with enhanced monitoring for high frequency lottery operators"
+    },
+
+    {
+      "term_id": "instant_lottery",
+      "term": "Instant lottery",
+      "category": "lottery_terms",
+      "definition": "A lottery in which every draw takes place either before, or at the point of, purchase of tickets by participants in the lottery",
+      "draw_timing": "Draw results available immediately at point of purchase or before purchase",
+      "regulatory_significance": "Instant lotteries distinguished from subscription and low-frequency lotteries; subject to separate age verification and customer interaction requirements",
+      "compliance_note": "Instant win lotteries (e.g., digital scratchcards) also fall within this definition"
+    },
+
+    {
+      "term_id": "lottery_ticket",
+      "term": "Lottery ticket",
+      "category": "lottery_terms",
+      "definition": "As described by section 253 of the Gambling Act 2005, including: a lottery ticket which is sent by post following entry by means of remote communication, and a message sent or displayed to a person electronically in a manner which enables him to retain the message electronically or print it",
+      "legal_basis": "Gambling Act 2005, section 253",
+      "includes": [
+        "Physical lottery tickets",
+        "Tickets sent by post following remote entry",
+        "Electronic messages/records retainable by participant"
+      ],
+      "regulatory_significance": "Broad definition encompasses traditional and remote lottery participation methods"
+    },
+
+    {
+      "term_id": "mapping",
+      "term": "Mapping",
+      "category": "technical_terms",
+      "definition": "The process of selecting an outcome using the result from a Random Number Generator (RNG). For example, the result from a RNG is mapped to a reel strip symbol",
+      "process_steps": [
+        "RNG generates random number result",
+        "Result mapped to game outcome (e.g., reel symbol, card value)",
+        "Mapped outcome displayed to player"
+      ],
+      "technical_requirement": "Mapping process must be fair, transparent, and comply with Commission technical standards",
+      "compliance_action": "Operators must document mapping algorithms and demonstrate compliance with RNG and fairness requirements"
+    },
+
+    {
+      "term_id": "peer_to_peer_gambling",
+      "term": "Peer-to-peer gambling",
+      "category": "gambling_activities",
+      "definition": "A type of gambling where customers gamble against each other rather than against the house. For example, equal chance gaming such as poker or peer-to-peer betting through betting exchanges",
+      "examples": [
+        "Poker between players",
+        "Peer-to-peer betting exchanges",
+        "Player-versus-player gaming"
+      ],
+      "regulatory_significance": "P2P gambling subject to specific requirements in provisions 3.1.1 regarding network operator, domestic player contracts, and dispute handling",
+      "distinct_from": "House-based gaming where operator provides the game and retains the house advantage"
+    },
+
+    {
+      "term_id": "play_for_free",
+      "term": "Play-for-free",
+      "category": "customer_experience",
+      "definition": "Also known as play-for-fun; demonstration version of a real money game where the customer is not staking or winning any money or money's worth",
+      "alternative_terminology": ["Play-for-fun", "Demo play"],
+      "key_distinction": "Not constitutes 'gaming session' as defined; no real money involved",
+      "regulatory_significance": "Play-for-free options offered by operators but not subject to same staking/betting limits as real money gaming; does require age verification for some jurisdictions",
+      "compliance_note": "Operators must clearly distinguish play-for-free from real money gambling to avoid customer confusion"
+    },
+
+    {
+      "term_id": "progressive_jackpot",
+      "term": "Progressive or progressive jackpot",
+      "category": "gambling_activities",
+      "definition": "An incremental prize that increases as a result of contributions from the monies staked within a game from pre-set base value",
+      "mechanism": [
+        "Prize starts at pre-set base value",
+        "Increases with each stake placed in game",
+        "Won when player achieves winning combination",
+        "Resets to base value after win"
+      ],
+      "regulatory_significance": "Progressive jackpots must be transparent to customers; operators must clearly communicate base value, increment rate, and current level",
+      "compliance_action": "Display current progressive amount clearly; inform customer of base value; ensure fairness of winning condition"
+    },
+
+    {
+      "term_id": "random_number_generator",
+      "term": "Random Number Generator (RNG)",
+      "category": "technical_terms",
+      "definition": "Refers to any item of hardware or software which is used to generate random numbers with the intended property of statistical randomness",
+      "regulatory_significance": "Critical to fairness of all games of chance; must be certified and tested according to Commission technical standards",
+      "compliance_requirements": [
+        "RNG must produce statistically random outcomes",
+        "RNG must be certified by independent laboratory per Commission standards",
+        "RNG implementation must be tested and approved",
+        "RNG must be regularly audited and re-certified",
+        "Operators must document RNG certification and testing"
+      ],
+      "technical_standards_reference": "Commission RTS-01 to RTS-17 specify RNG requirements"
+    },
+
+    {
+      "term_id": "restricted_display_device",
+      "term": "Restricted display device",
+      "category": "technical_terms",
+      "definition": "A device such as a mobile phone which has limited space on which to display information, when used to access gambling facilities that the operator intends a customer to use by means of such a device",
+      "examples": ["Mobile phones", "Smartwatches", "Tablets with limited screen space"],
+      "operator_obligation": "Operators must ensure responsible gambling tools remain fully accessible on restricted display devices despite space limitations",
+      "compliance_requirement": "Players must have ability to use all required tools (financial limits, self-exclusion, time-outs) directly via mobile/restricted device without requiring login to desktop version",
+      "prohibited_practice": "Cannot require customer to switch to desktop website version to access responsible gambling tools; doing so creates unreasonable barriers and may prevent mobile users accessing protection"
+    },
+
+    {
+      "term_id": "scaling",
+      "term": "Scaling",
+      "category": "technical_terms",
+      "definition": "The process used to convert the output from a RNG into the format required to produce a result for a particular gambling product. To illustrate, an RNG may produce a result of between one and 100,000 but these possible outcomes need to be scaled to the potential game outcomes of, for example, between 1-52 to correspond to a standard pack of cards",
+      "process_steps": [
+        "RNG produces raw numerical output (e.g., 1-100,000)",
+        "Output converted/scaled to match game outcome space (e.g., 1-52 for cards)",
+        "Scaled result corresponds to specific game outcome"
+      ],
+      "regulatory_significance": "Scaling process must be fair and not bias outcomes toward any particular result",
+      "compliance_action": "Document scaling algorithm; ensure uniform distribution across game outcomes; test and verify fairness"
+    },
+
+    {
+      "term_id": "seeding",
+      "term": "Seeding",
+      "category": "technical_terms",
+      "definition": "The process used to determine the initial state of the RNG",
+      "regulatory_significance": "Seeding must be truly random and non-predictable to ensure RNG independence and fairness",
+      "compliance_requirement": "Seed sources must not be predictable or subject to operator control; typically uses system entropy or third-party randomness sources",
+      "technical_standards_reference": "Commission technical standards specify approved seeding methods"
+    },
+
+    {
+      "term_id": "slots",
+      "term": "Slots",
+      "category": "gambling_activities",
+      "definition": "Casino games of a reel-based type (includes games that have non-traditional reels)",
+      "variants": [
+        "Traditional three-reel slots",
+        "Multi-reel slots (5+ reels)",
+        "Video slots with non-traditional reel layouts",
+        "Virtual reel displays"
+      ],
+      "regulatory_significance": "Slots subject to gaming machine technical standards and RNG requirements",
+      "compliance_note": "Term includes both mechanical and virtual reel-based games regardless of visual representation"
+    },
+
+    {
+      "term_id": "subscription_lottery",
+      "term": "Subscription lottery",
+      "category": "lottery_terms",
+      "definition": "A series of lotteries (other than instant lotteries) promoted on behalf of the same non-commercial society or local authority in respect of which participants pay for participation in one or more future lotteries by regular subscription over a fixed or indefinite period",
+      "key_features": [
+        "Series of lotteries (not instant)",
+        "Regular subscription-based entry",
+        "Fixed or indefinite subscription period",
+        "Single society or authority promotion"
+      ],
+      "regulatory_significance": "Subscription lotteries subject to specific age verification (provision 3.2.13) requiring verification before subscription or purchase",
+      "compliance_note": "Participants must verify age before being able to make subscription commitment"
+    },
+
+    {
+      "term_id": "telephone_gambling",
+      "term": "Telephone gambling",
+      "category": "customer_experience",
+      "definition": "Gambling which takes place via a telephone, without the use of visual displays, by interaction with a customer service agent or an automated system, such as intelligent voice recognition systems or touch tone",
+      "delivery_methods": [
+        "Live telephone conversation with operator agent",
+        "Automated voice recognition systems",
+        "Touch-tone telephone systems (DTMF)"
+      ],
+      "regulatory_significance": "Telephone gambling subject to customer protection requirements including identity verification and responsible gambling information provision",
+      "compliance_note": "No visual displays means information must be conveyed verbally; operators must ensure responsible gambling information provided orally"
+    },
+
+    {
+      "term_id": "third_party_software",
+      "term": "Third party software",
+      "category": "technical_terms",
+      "definition": "Software that is separately available from the core software product and is designed to add optional features. Includes additional software, supplied, or used, by the gambling operator, or player, which was not part of the basic package",
+      "examples": [
+        "Plugins or extensions adding features to gambling platform",
+        "Optional player tools (odds calculators, tracking systems)",
+        "Add-on modules for specific games"
+      ],
+      "regulatory_significance": "Third party software must comply with technical standards and not compromise fairness, security, or responsible gambling tools",
+      "compliance_action": "Operators must conduct due diligence on third-party software; ensure compatibility with LCCP requirements; maintain audit trail"
+    },
+
+    {
+      "term_id": "virtual",
+      "term": "Virtual",
+      "category": "gambling_activities",
+      "definition": "As described by section 353(3) of the Gambling Act 2005. Virtual event and virtual game are to be construed accordingly",
+      "legal_basis": "Gambling Act 2005, section 353(3)",
+      "regulatory_significance": "Covers virtual events and games that simulate real events or outcomes; subject to same regulatory requirements as real events/games",
+      "examples": [
+        "Virtual horse racing (simulated race not based on real race)",
+        "Virtual football matches",
+        "Simulated sporting events"
+      ],
+      "compliance_note": "Virtual events must use RNG and comply with fairness requirements; outcomes cannot be predetermined or based on real event outcomes"
+    }
+  ],
+
+  "cross_references": {
+    "defined_terms_in_lccp_provisions": [
+      {
+        "provision": "3.2.11 - Remote age verification SR code",
+        "uses_definitions": ["gaming_session", "easily_accessible", "play_for_free"]
+      },
+      {
+        "provision": "3.4.3 - Remote customer interaction SR code",
+        "uses_definitions": ["gaming_session"]
+      },
+      {
+        "provision": "3.2.13 - Remote lottery age verification SR code",
+        "uses_definitions": ["instant_lottery", "high_frequency_lottery", "subscription_lottery"]
+      },
+      {
+        "provision": "3.1.1 - Peer to peer gaming",
+        "uses_definitions": ["peer_to_peer_gambling", "gambling"]
+      },
+      {
+        "provision": "8.1.1 - Licensed status display",
+        "uses_definitions": ["restricted_display_device"]
+      }
+    ]
+  },
+
+  "compliance_framework": {
+    "key_principles": [
+      "Definitions are standardized across all LCCP documents",
+      "Operators must interpret LCCP requirements using these definitions",
+      "Terms have specific legal or regulatory meaning distinct from common usage",
+      "Certain definitions derive directly from Gambling Act 2005",
+      "Technical definitions reflect Commission technical standards"
+    ],
+    
+    "usage_approach": [
+      "Refer to these definitions when interpreting LCCP provisions",
+      "Apply definitions consistently across all licensed activities",
+      "Use technical definitions to guide system design and compliance",
+      "Cross-reference definition with applicable provisions",
+      "Seek clarification from Commission if interpretation unclear"
+    ]
+  },
+
+  "references_and_guidance": {
+    "external_legislation": [
+      "Gambling Act 2005 - Section 6 (Gaming)",
+      "Gambling Act 2005 - Section 9 (Betting)",
+      "Gambling Act 2005 - Section 14 (Lotteries)",
+      "Gambling Act 2005 - Section 253 (Lottery tickets)",
+      "Gambling Act 2005 - Section 353(3) (Virtual events)"
+    ],
+    
+    "commission_publications": [
+      "Commission technical standards (RTS-01 to RTS-17)",
+      "RNG certification and testing requirements",
+      "Commission guidance on customer experience and accessibility"
+    ]
+  },
+
+  "usage_notes": {
+    "mcp_integration": "This JSON enables MCP queries such as: 'What is the definition of peer-to-peer gambling?', 'What does easily accessible mean?', 'Which provisions use the definition of gaming session?', 'What are the RNG requirements?'",
+    "filter_capabilities": "Query by: term, category, legal basis, regulatory significance, related provisions",
+    "reference_support": "Provides standardized definitions for use across all LCCP documents and compliance interpretations",
+    "lookup_purpose": "Serves as reference document when interpreting LCCP provisions and understanding technical/regulatory concepts"
+  }
+}

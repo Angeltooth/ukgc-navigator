@@ -1,0 +1,71 @@
+ISO 27001 Secure Authentication
+
+ISO 27001 Annex A 8.5 Secure Authentication is an ISO 27001 control that looks to make sure you have controls in place to ensure people who are access information are who they say they are.
+Purpose
+
+The purpose of ISO 27001 Annex A 8.5 Secure Authentication is to ensure a user or an entity is securely authenticated, when access to systems, applications and services is granted.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.5 as:
+Secure authentication technologies and procedures should be implemented based on information access restrictions and the topic-specific policy on access control.
+Implementation Guide
+
+Authentication is about someone proving who they say they are. Our ability to be sure that the person requesting access is the actual person.
+the act or process of establishing identity and verifying permission to access an electronic device or computer network (often used attributively):
+password authentication;
+biometric authentication;
+authentication credentials.
+Dictionary.Com
+So we are going to work out who needs access to what, put in place our access restrictions and then provide them with a means to let us know they are who they say they are so we can grant them the access.
+The way we prove it is based on there concepts. You prove who you are by either
+Something you know
+Something you have
+Something you are
+Something you know
+
+This is the most common type of authentication and the easiest to implement. The main example of this is the use of the password or passphrase. People need to know the password to be able to gain access. The downside to this is that passwords are easy to get or guess and easy for people to lose, share or write down.
+Something you have
+
+You will have seen this in the way that banks issue you with key pad devices. They may be physical or virtual but you need to device to be able to access the random fast changing code. This is a strong form of authentication and often used with something you know, ie a password.
+Something you are
+
+Something you are relies on a specific characteristic that is unique to you. This could be your finger print or a scan of your eye ball. This type of authentication is called bio metric and is the most secure yet the most costly and complicated to implement. Think about the Apple touch authentication that uses you finger print or your iPhone that can unlock by scanning your face.
+Multi-factor authentication
+
+Multi-factor authentication is the most secure method where a combination of two or more authentication methods are used.
+Authentication Based on Risk
+
+You are going to implement your information classification scheme, do your risk assessment and work out the level of authentication that is appropriate to you based on that. Usually the most stringent form of authentication is applied to the highest level classification of data.
+Authentication Process
+
+There is general guidance that applies to the authentication processes. Things that are worth considering.
+A no brainer is we don’t allow access to information until authentication completes.
+We put in place measures to prevent brute force attacks and to report on unsuccesful logon attempts. We set thresholds that would trigger alerts and notifications and raise information security events that we manage when those thresholds are breached.
+If we rely on passwords we do not show them as clear text when being entered and we do not transmit them or store them in clear text.
+We also consider auto logging out after a set time of inactivity.
+How to pass the audit
+
+Time needed: 1 day, 2 hours and 15 minutes
+How to comply with ISO 27001 Annex A 8.5
+Have policies and procedures in place
+Write, approve, implement and communicate the documentation required for secure authentication.
+Assess your access requirements and perform a risk assessment
+Have an asset management process that includes an asset register. For each asset type perform a risk assessment.
+Implement controls proportionate to the risk posed
+Based on the risk assessment implement the appropriate access controls to mitigate the risk
+Keep records
+For audit purposes you will keep records. Examples of the records to keep include changes, updates, monitoring, review and audits.
+Test the controls that you have to make sure they are working
+Perform internal audits that include the testing of the controls to ensure that they are working.
+Top 3 Mistakes People Make
+
+The top 3 mistakes people make for ISO 27001 Annex A 8.5 are
+1. Password management is flaky
+
+This usual things here that go wrong are when people always use the same default passwords for users. They set it and then the user doesn’t change it. Ideally set a new ‘starting’ password for each users. We see these then being shared over email or text in clear text. If you simply must do this then consider sending user names and passwords over different channels. If email gets compromised having the user name and passwords in emails means people have an easy hop then to breach your other systems.
+2. Authentication is weak
+
+Having weak authentication, like little to no requirements on the type of password people use, means life is easy for everyone but these are also easy to compromise, breach, hack, guess. There has to be a balance. Having no passwords or easy default passwords that never expire is one approach but try to find a middle ground. If you are not NASA then bio metrics maybe overkill, I get it. Be sure to have something.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

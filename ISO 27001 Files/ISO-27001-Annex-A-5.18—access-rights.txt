@@ -1,0 +1,59 @@
+ISO 27001 Access Rights
+
+ISO 27001 Annex A 5.18 Access Rights is an ISO 27001 control that requires an organisation to mange the full life cycle of access rights based on the topic specific policy and rules of access control.
+Purpose
+
+The purpose of ISO 27001 Annex A 5.18 is a preventive control that ensures access to information and other associated assets is defined and authorised according to the business requirements.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 5.18 as:
+Access rights to information and other associated assets should be provisioned, reviewed, modified and removed in accordance with the organisation’s topic-specific policy on and rules for access control.
+ISO 27001:2022 Annex A 5.18 Access Rights
+Implementation Guide
+
+Managing access rights is a straightforward process and easy to get right. Consider the following in your process.
+You want to get the authorisation from the asset owner
+Access will be granted based on policy and business requirements
+We separate out the person making the request for access from the person granting access. This is called segregation of duty.
+Access rights are provided for as long as needed and removed when no longer required.
+Access rights are removed when a person leaves the organisation.
+Suppliers and third parties that require access are provided the temporary access they need for the time they need it before it is removed.
+Access is provided after it has been authorised and not before. We do not grant access then go back and complete the process for audit purposes.
+Records of who have access to what are maintained and managed.
+Reviews of access are carried out regularly and more frequently for privileged accounts. We keep records of access reviews.
+General considerations
+
+Role based access is a great mechanism for managing access and should be considered.
+Cloning accounts should be avoided. It is easy when creating new accounts to clone accounts. It is not that should not do it but if you do do it take great care with it. We have seen this go badly wrong and all users end up with super user access.
+How to comply
+
+To comply with ISO 27001 Annex A 5.18 you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to
+Implement a process for creating, updating and removing access rights
+How to pass the audit
+
+To pass an audit of ISO 27001 Annex A 5.18 you are going to make sure that you have followed the steps above in how to comply.
+What will an audit check?
+
+The audit is going to check a number of areas. Lets go through the most common
+1. That you have not done something stupid
+
+The auditor is going to check the rules, procedures and access control methodology and make sure you followed them. As with everything having documented evidence of anything you can is going to be your friend. So practical things like asset registers, access control procedures that you can evidence are in operation, reviews of access. Work through recent hires for example and ensure the processes were followed and look for the gotchas. Is there an approval audit trail. When you log into the system that was approved does the users access match what was requested.
+The easiest win for an auditor is get you to show them the admin accounts on what ever system you are using and then explain the accounts that are in the admin group. 9 out of 10 times there are admin accounts in here you forgot about, are for people that left or you are unsure yourself what the account is. Instant problem. Check now.
+2. That you have rules, processes and you have followed them and have trained people
+
+This is obvious but they are going to look that you have documented what you say you do, that you follow it and that you have trained people. The biggest gotcha here is having people with accounts that have left. In other words you didn’t have or follow a leaver process and so people’s access remain even though their contract has ended.
+3. Documentation
+
+They are going to look at audit trails and all your documentation and see that is classified and labelled. All the documents that you show them, as a minimum if they are confidential should be labelled as such. Is the document up to date. Has it been reviewed in the last 12 months. Does the version control match. Doing anything else would be a massive own goal.
+Top 3 Mistakes People Make
+
+The top 3 Mistakes People Make For ISO 27001 Annex A 5.18 are
+1. People have left but they still have an account
+
+Make sure that access to systems is up to date and that people or third parties that have left no longer have access or accounts.
+2. Third parties have open access and account they do not need
+
+Third parties should follow process and the process should be to grant access to them when the access required and remove it when it is not. It should not be open and continual access. Consider the example where you need a third party to fix something. You would grant access to allow the fix and then remove it. You would not have open ended access granted.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

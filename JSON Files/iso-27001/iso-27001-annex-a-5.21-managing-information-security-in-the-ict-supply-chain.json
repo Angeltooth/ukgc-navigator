@@ -1,0 +1,876 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.21",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.21",
+    "control_number": "A 5.21",
+    "control_title": "Managing Information Security in the ICT Supply Chain",
+    "control_type": "Preventive control",
+    "control_purpose": "To manage information security risks associated with ICT products and services supply chain",
+    "control_objective": "Establish processes and procedures to manage security risks throughout ICT product and service acquisitions and supply chain"
+  },
+  "iso_27001_definition": {
+    "official_text": "Processes and procedures should be defined and implemented to manage the information security risks associated with the ICT products and services supply chain.",
+    "key_requirements": [
+      "Processes defined for ICT supply chain security",
+      "Procedures defined for ICT supply chain security",
+      "Information security risks of ICT supply chain identified and assessed",
+      "Acquisition processes include security requirements",
+      "Supplier propagation of security requirements through their supply chain",
+      "Monitoring and validation of security requirements"
+    ]
+  },
+  "ict_supply_chain_overview": {
+    "definition": "ICT (Information and Communications Technology) supply chain includes all products, services, and components that enable modern computing infrastructure",
+    "scope": [
+      "Cloud services and cloud platforms",
+      "Software and applications",
+      "Hardware and devices",
+      "Network infrastructure",
+      "Operating systems",
+      "Firmware and BIOS",
+      "Third-party components and libraries",
+      "Open source software",
+      "SaaS platforms",
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)"
+    ],
+    "risk_context": "Supply chain represents expanded risk surface - vulnerabilities can enter through components, subcontractors, and development pipeline",
+    "key_principle": "Cannot assume products are secure - must verify and validate throughout acquisition and deployment",
+    "buildup_approach": "Build on existing best practices for information security, project management, quality management and engineering"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.21_REQ_1",
+      "requirement": "Define Information Security Requirements for Product/Service Acquisition",
+      "description": "Establish information security requirements that must be met by ICT products and services being acquired",
+      "details": {
+        "requirement_types": [
+          "Functional security requirements (encryption, access control)",
+          "Configuration security requirements (secure defaults)",
+          "Certification requirements (Common Criteria, FIPS)",
+          "Testing requirements (vulnerability assessment, penetration testing)",
+          "Documentation requirements (security documentation, threat models)",
+          "Update and patching requirements",
+          "Support and maintenance requirements"
+        ],
+        "documentation": "Security requirements documented and communicated to suppliers",
+        "baseline": "Start with industry standards and organizational needs"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_2",
+      "requirement": "Require Suppliers to Propagate Security Requirements",
+      "description": "Suppliers must flow down security requirements to their suppliers and subcontractors",
+      "details": {
+        "requirement": "Suppliers contractually obligated to require their suppliers meet same security standards",
+        "chain": "Security requirements propagated through entire supply chain",
+        "documentation": "Supplier confirms security requirements passed to subcontractors",
+        "verification": "Request evidence that subcontractors meet requirements",
+        "responsibility": "Supplier responsible for security of their entire supply chain"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_3",
+      "requirement": "Request and Understand Software Components",
+      "description": "Identify and understand all software components used in products and services",
+      "details": {
+        "component_inventory": [
+          "Third-party libraries and frameworks",
+          "Open source components",
+          "Commercial software",
+          "Custom developed components",
+          "Firmware and operating system base"
+        ],
+        "documentation": "Product suppliers provide Software Bill of Materials (SBOM)",
+        "details_needed": [
+          "Component name and version",
+          "Supplier/source of component",
+          "License type",
+          "Known vulnerabilities",
+          "Component maintenance status"
+        ],
+        "purpose": "Identify potential supply chain security risks"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_4",
+      "requirement": "Understand Product Security Functions",
+      "description": "Understand security features available in products and how to configure for security",
+      "details": {
+        "security_functions": [
+          "Authentication mechanisms",
+          "Encryption capabilities",
+          "Access control features",
+          "Audit logging",
+          "Key management",
+          "Secure communication protocols",
+          "Security configuration options"
+        ],
+        "configuration": "Understand how to configure product securely",
+        "hardening": "Know hardening guides and secure deployment procedures",
+        "defaults": "Understand default security posture and necessary changes"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_5",
+      "requirement": "Implement Monitoring and Validation of Security Requirements",
+      "description": "Monitor and validate that suppliers meet agreed security requirements",
+      "details": {
+        "monitoring_activities": [
+          "Periodic security assessments",
+          "Vulnerability scanning",
+          "Penetration testing",
+          "Code review (where applicable)",
+          "Configuration review",
+          "Incident tracking",
+          "Compliance verification"
+        ],
+        "validation": "Verify requirements being met in practice",
+        "frequency": "Based on risk and product criticality",
+        "documentation": "Maintain records of monitoring and validation activities"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_6",
+      "requirement": "Identify and Document Critical Products and Services",
+      "description": "Identify ICT products and services critical to operations and document their importance",
+      "details": {
+        "criticality_assessment": [
+          "Impact if unavailable",
+          "Impact if compromised",
+          "Data sensitivity accessed",
+          "Role in critical systems",
+          "Complexity of replacement"
+        ],
+        "documentation": "Critical products listed and classified",
+        "focus": "Apply enhanced security requirements to critical products",
+        "examples": [
+          "RNG software is critical",
+          "Payment processing platform is critical",
+          "Customer data storage is critical",
+          "Game integrity systems are critical"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_7",
+      "requirement": "Ensure Supply Chain Traceability for Critical Components",
+      "description": "Trace origin and path of critical products and components through supply chain",
+      "details": {
+        "traceability_elements": [
+          "Component origin and supplier",
+          "Manufacturing location and process",
+          "Distribution path to organization",
+          "Handling and storage",
+          "Installation and deployment",
+          "Version and build traceability"
+        ],
+        "purpose": "Enable rapid response if supply chain compromise detected",
+        "documentation": "Maintain traceability records for critical components",
+        "risk": "Prevents undetected insertion of compromised components"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_8",
+      "requirement": "Obtain Assurance Products Function as Expected",
+      "description": "Verify and validate that ICT products function as expected and intended",
+      "details": {
+        "assurance_activities": [
+          "Functional testing to verify claimed features",
+          "Security feature testing",
+          "Interoperability testing",
+          "Performance testing",
+          "Behavior validation against documentation",
+          "Testing of security functions"
+        ],
+        "purpose": "Ensure product meets functional and security requirements",
+        "testing": "Conduct testing during acquisition and periodically after deployment"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_9",
+      "requirement": "Obtain Assurance Products Meet Security Levels",
+      "description": "Verify and validate that products meet required security standards and levels",
+      "details": {
+        "assurance_mechanisms": [
+          "Certifications (Common Criteria, FIPS, etc.)",
+          "Third-party security assessments",
+          "Vulnerability assessments",
+          "Penetration testing",
+          "Security audit reports",
+          "Threat modeling documentation"
+        ],
+        "validation": "Independently verify claimed security levels",
+        "independence": "Use third-party assessments where appropriate",
+        "ongoing": "Periodically revalidate security levels"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_10",
+      "requirement": "Establish Rules for Sharing Information about Issues",
+      "description": "Define rules for sharing information about security issues, compromises, and vulnerabilities",
+      "details": {
+        "information_sharing": [
+          "Vulnerability disclosure procedures",
+          "Incident notification requirements",
+          "Breach notification procedures",
+          "Communication of security updates",
+          "Sharing of threat intelligence"
+        ],
+        "confidentiality": "Balance information sharing with confidentiality",
+        "timing": "Establish timeframes for notifying stakeholders",
+        "escalation": "Define when and to whom issues escalated"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_11",
+      "requirement": "Manage Product and Component Lifecycle",
+      "description": "Establish processes for managing ICT product and component lifecycles and associated risks",
+      "details": {
+        "lifecycle_stages": [
+          "Acquisition and evaluation",
+          "Deployment and implementation",
+          "Maintenance and updates",
+          "Security patching",
+          "End of life planning",
+          "Replacement and migration",
+          "Decommissioning and disposal"
+        ],
+        "lifecycle_risks": [
+          "Vulnerability discovery",
+          "Support ending",
+          "Vendor acquisition/change",
+          "Obsolescence",
+          "Compatibility issues",
+          "Security patch availability"
+        ],
+        "planning": "Plan for component end-of-life and replacement"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_12",
+      "requirement": "Address Component Availability and Security Risks",
+      "description": "Address risks associated with component and product availability throughout lifecycle",
+      "details": {
+        "availability_risks": [
+          "Vendor going out of business",
+          "Product becoming unsupported",
+          "Supply shortage",
+          "Discontinuation",
+          "Long lead times"
+        ],
+        "mitigation": [
+          "Vendor financial stability assessment",
+          "Support contract commitments",
+          "Identify alternative suppliers",
+          "Plan for product replacement",
+          "Maintain inventory of critical components",
+          "Establish migration procedures"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_13",
+      "requirement": "Consider Alternate Suppliers and Transfer Procedures",
+      "description": "Identify alternative suppliers and plan for transferring to alternatives if needed",
+      "details": {
+        "alternate_suppliers": [
+          "Identify backup suppliers for critical products",
+          "Evaluate alternate suppliers for security",
+          "Maintain relationships with alternatives",
+          "Test switchover procedures"
+        ],
+        "transfer_planning": [
+          "Document data migration procedures",
+          "Plan for system configuration transfer",
+          "Establish testing procedures for alternate",
+          "Document lessons learned from current supplier"
+        ],
+        "timing": "Plan transfers before vendor failure, not after"
+      }
+    },
+    {
+      "requirement_id": "A_5.21_REQ_14",
+      "requirement": "Acquire from Reputable Sources",
+      "description": "Acquire ICT products and services from reputable and established suppliers",
+      "details": {
+        "vetting_criteria": [
+          "Supplier reputation and track record",
+          "Financial stability",
+          "Security posture and certifications",
+          "Customer references",
+          "Years in business",
+          "Geographic location and jurisdiction",
+          "Industry experience"
+        ],
+        "due_diligence": "Conduct background research on suppliers before engagement",
+        "risk": "Purchasing from unknown or questionable sources introduces supply chain risk"
+      }
+    }
+  ],
+  "ict_acquisition_process": {
+    "description": "Process for acquiring ICT products and services with security considerations",
+    "stages": [
+      {
+        "stage": 1,
+        "name": "Requirements Definition",
+        "description": "Define functional and security requirements for product/service",
+        "activities": [
+          "Define functional requirements",
+          "Define security requirements",
+          "Identify criticality level",
+          "Determine certification needs",
+          "Document requirements"
+        ]
+      },
+      {
+        "stage": 2,
+        "name": "Supplier Evaluation",
+        "description": "Evaluate suppliers against security and business criteria",
+        "activities": [
+          "Identify candidate suppliers",
+          "Conduct financial stability assessment",
+          "Verify certifications and credentials",
+          "Check references",
+          "Assess security posture",
+          "Request security documentation"
+        ]
+      },
+      {
+        "stage": 3,
+        "name": "Contract Negotiation",
+        "description": "Negotiate agreement including security requirements",
+        "activities": [
+          "Negotiate contract terms",
+          "Include security requirements",
+          "Define audit rights",
+          "Establish SLAs",
+          "Address lifecycle and end-of-life"
+        ]
+      },
+      {
+        "stage": 4,
+        "name": "Product Evaluation",
+        "description": "Evaluate product meets requirements before deployment",
+        "activities": [
+          "Verify software components (SBOM)",
+          "Test security functions",
+          "Conduct security assessment",
+          "Validate certifications",
+          "Perform penetration testing if needed"
+        ]
+      },
+      {
+        "stage": 5,
+        "name": "Deployment",
+        "description": "Deploy product securely in production",
+        "activities": [
+          "Configure securely per hardening guide",
+          "Change default credentials",
+          "Enable security features",
+          "Integrate with monitoring",
+          "Document configuration"
+        ]
+      },
+      {
+        "stage": 6,
+        "name": "Ongoing Monitoring",
+        "description": "Monitor product security during operation",
+        "activities": [
+          "Track security updates",
+          "Periodically assess security",
+          "Monitor for vulnerabilities",
+          "Track vendor support status",
+          "Plan for updates and patches"
+        ]
+      },
+      {
+        "stage": 7,
+        "name": "Lifecycle Management",
+        "description": "Manage product through lifecycle to end-of-life",
+        "activities": [
+          "Plan for product replacement",
+          "Maintain vendor relationship",
+          "Plan for data migration",
+          "Evaluate alternatives",
+          "Execute end-of-life transition"
+        ]
+      }
+    ]
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish ICT Supply Chain Policy",
+        "detail": "Document organization's approach to managing ICT supply chain security"
+      },
+      {
+        "step": 2,
+        "action": "Define Security Requirements Framework",
+        "detail": "Establish baseline security requirements for ICT products/services by category"
+      },
+      {
+        "step": 3,
+        "action": "Identify Critical ICT Products and Services",
+        "detail": "Assess and classify ICT products by criticality"
+      },
+      {
+        "step": 4,
+        "action": "Develop ICT Acquisition Process",
+        "detail": "Define process including security evaluation and requirements"
+      },
+      {
+        "step": 5,
+        "action": "Inventory Current ICT Products/Services",
+        "detail": "Document all ICT products, versions, suppliers, and components"
+      },
+      {
+        "step": 6,
+        "action": "Assess Current Suppliers and Products",
+        "detail": "Evaluate existing suppliers and products against requirements"
+      },
+      {
+        "step": 7,
+        "action": "Establish Monitoring and Validation Program",
+        "detail": "Implement ongoing assessment of supplier and product security"
+      },
+      {
+        "step": 8,
+        "action": "Create SBOM (Software Bill of Materials) Process",
+        "detail": "Establish process for obtaining and managing component information"
+      },
+      {
+        "step": 9,
+        "action": "Develop Vulnerability Management Process",
+        "detail": "Establish process for tracking and remediating component vulnerabilities"
+      },
+      {
+        "step": 10,
+        "action": "Plan Lifecycle and Alternate Suppliers",
+        "detail": "Identify lifecycle risks and alternate suppliers for critical products"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.21",
+    "checklist": [
+      {
+        "item": "Establish ICT supply chain policy",
+        "status": "required"
+      },
+      {
+        "item": "Define security requirements for product acquisition",
+        "status": "required"
+      },
+      {
+        "item": "Identify critical ICT products and services",
+        "status": "required"
+      },
+      {
+        "item": "Develop ICT acquisition process",
+        "status": "required"
+      },
+      {
+        "item": "Inventory current ICT products and suppliers",
+        "status": "required"
+      },
+      {
+        "item": "Request software bill of materials (SBOM)",
+        "status": "required"
+      },
+      {
+        "item": "Establish supplier agreements with security requirements",
+        "status": "required"
+      },
+      {
+        "item": "Conduct security assessments of critical products",
+        "status": "required"
+      },
+      {
+        "item": "Implement monitoring and validation program",
+        "status": "required"
+      },
+      {
+        "item": "Establish vulnerability management process",
+        "status": "required"
+      },
+      {
+        "item": "Plan lifecycle management and end-of-life",
+        "status": "required"
+      },
+      {
+        "item": "Identify alternate suppliers",
+        "status": "required"
+      },
+      {
+        "item": "Document all procedures",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with ICT supply chain management",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No contracts or requirements with ICT suppliers",
+        "description": "Operating with ICT suppliers without defining security requirements",
+        "root_cause": [
+          "Assumption products are secure out of box",
+          "Focus on functionality over security",
+          "Lack of procurement process",
+          "No security expertise in acquisition"
+        ],
+        "impact": "Insecure products deployed, no recourse if issues found",
+        "prevention": "Require security requirements in all ICT product acquisition",
+        "action": "Define and communicate security requirements to all suppliers"
+      },
+      {
+        "rank": 2,
+        "mistake": "No knowledge of what's in products (components)",
+        "description": "Unknown software components and dependencies in products",
+        "root_cause": [
+          "Not requesting SBOM from suppliers",
+          "No component inventory",
+          "No vulnerability tracking for components",
+          "Focus on product level, not component level"
+        ],
+        "impact": "Unknown vulnerabilities, inability to respond to component exploits",
+        "prevention": "Request SBOM from all critical product suppliers",
+        "example": "Vulnerable open source component in critical application undetected"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control is wrong",
+        "description": "Poor documentation of ICT products and supply chain",
+        "issues": [
+          "Product inventory not maintained",
+          "Supplier information outdated",
+          "Security requirements not documented",
+          "SBOM not tracked",
+          "Alternate suppliers not identified"
+        ],
+        "prevention": [
+          "Maintain current ICT product inventory",
+          "Track supplier information",
+          "Document security requirements",
+          "Maintain SBOM records",
+          "Document alternate suppliers"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.21 audit",
+    "audit_areas": [
+      {
+        "area": "1. ICT Acquisition Process",
+        "description": "Verify security requirements included in acquisition process",
+        "checks": [
+          "Process documented for ICT product acquisition",
+          "Security requirements defined for products",
+          "Supplier agreements include security terms",
+          "Critical products identified and classified",
+          "Security evaluation conducted for critical products"
+        ]
+      },
+      {
+        "area": "2. Component and Dependency Knowledge",
+        "description": "Verify understanding of product components",
+        "checks": [
+          "SBOM obtained from critical product suppliers",
+          "Software components documented",
+          "Open source components identified",
+          "Third-party library inventory maintained",
+          "Component versions tracked"
+        ]
+      },
+      {
+        "area": "3. Security Function Understanding",
+        "description": "Verify understanding of product security features",
+        "checks": [
+          "Security functions documented",
+          "Configuration guides obtained",
+          "Hardening procedures defined",
+          "Default security understood",
+          "Testing of security features performed"
+        ]
+      },
+      {
+        "area": "4. Monitoring and Validation",
+        "description": "Verify ongoing monitoring of product security",
+        "checks": [
+          "Monitoring activities documented",
+          "Security assessments conducted",
+          "Vulnerability scanning results available",
+          "Compliance verified periodically",
+          "Findings documented and remediated"
+        ]
+      },
+      {
+        "area": "5. Lifecycle Management",
+        "description": "Verify lifecycle management of ICT products",
+        "checks": [
+          "Product versions tracked",
+          "End-of-life dates documented",
+          "Replacement planning in progress",
+          "Update management process",
+          "Alternate suppliers identified"
+        ]
+      },
+      {
+        "area": "6. Documentation Quality",
+        "description": "Review documentation completeness",
+        "checks": [
+          "Product inventory current",
+          "Supplier information documented",
+          "Security requirements documented",
+          "SBOM records maintained",
+          "Assessment results archived"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "ICT supply chain management critical for ensuring all software, hardware, and services supporting gambling systems meet security requirements",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Software",
+        "ict_supply_chain_requirements": [
+          "Request SBOM and component documentation from RNG suppliers",
+          "Verify all components have known security status",
+          "Conduct security assessment of RNG software",
+          "Verify cryptographic components certified",
+          "Test RNG security functions",
+          "Document configuration for secure deployment",
+          "Plan for component end-of-life and updates",
+          "Identify alternative RNG providers"
+        ]
+      },
+      {
+        "system": "Customer Data Processing Platform",
+        "ict_supply_chain_requirements": [
+          "Request SBOM from application suppliers",
+          "Identify and track encryption components",
+          "Monitor for vulnerabilities in dependencies",
+          "Assess security of data handling components",
+          "Plan updates for vulnerable components",
+          "Document secure configuration"
+        ]
+      },
+      {
+        "system": "Cloud/Hosting Infrastructure",
+        "ict_supply_chain_requirements": [
+          "Understand cloud platform components and architecture",
+          "Verify security functions of cloud platform",
+          "Assess cloud provider's supplier security",
+          "Verify geographic location of components",
+          "Understand data storage and encryption",
+          "Plan for cloud provider changes or alternatives"
+        ]
+      },
+      {
+        "system": "Communication Networks",
+        "ict_supply_chain_requirements": [
+          "Request SBOM for network devices and software",
+          "Verify encryption and security components",
+          "Understand network device firmware supply chain",
+          "Monitor for vulnerabilities in network components",
+          "Plan for firmware updates and patches"
+        ]
+      },
+      {
+        "system": "Compliance and Reporting Systems",
+        "ict_supply_chain_requirements": [
+          "Verify data integrity components",
+          "Understand audit logging implementation",
+          "Assess security of reporting database",
+          "Monitor for compliance-related vulnerabilities"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must manage ICT supply chain risks through defined acquisition processes, component tracking, security assessments, and ongoing monitoring for all critical ICT products and services"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Identify and manage security risks in ICT supply chain through acquisition processes, component knowledge, security validation, and lifecycle management",
+    "enforcement_priority": "High - supply chain vulnerabilities can impact all critical systems",
+    "key_principles": [
+      "Define security requirements before product acquisition",
+      "Require suppliers to flow down security requirements",
+      "Obtain and understand software components (SBOM)",
+      "Understand product security features and configuration",
+      "Conduct security assessments of critical products",
+      "Monitor and validate ongoing compliance",
+      "Identify critical products and manage lifecycle",
+      "Trace components and products through supply chain",
+      "Maintain vulnerability awareness for components",
+      "Plan for product end-of-life and alternatives",
+      "Acquire from reputable sources",
+      "Build on existing security practices"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.21 Managing Information Security in the ICT Supply Chain, implement",
+    "requirements": [
+      {
+        "requirement": "Establish ICT supply chain policy",
+        "detail": "Documented policy on managing ICT supply chain security"
+      },
+      {
+        "requirement": "Define security requirements for acquisition",
+        "detail": "Security requirements included in all product/service acquisitions"
+      },
+      {
+        "requirement": "Identify critical ICT products",
+        "detail": "Assess and classify ICT products by criticality"
+      },
+      {
+        "requirement": "Inventory ICT products and components",
+        "detail": "Maintain inventory of products, versions, and components"
+      },
+      {
+        "requirement": "Request SBOM from suppliers",
+        "detail": "Obtain Software Bill of Materials for critical products"
+      },
+      {
+        "requirement": "Establish supplier agreements",
+        "detail": "Include security requirements in supplier contracts"
+      },
+      {
+        "requirement": "Assess product security",
+        "detail": "Conduct security assessments of critical products"
+      },
+      {
+        "requirement": "Monitor security compliance",
+        "detail": "Implement ongoing monitoring of supplier/product security"
+      },
+      {
+        "requirement": "Manage vulnerabilities",
+        "detail": "Track and remediate vulnerabilities in products/components"
+      },
+      {
+        "requirement": "Plan lifecycle and alternatives",
+        "detail": "Plan for end-of-life and identify alternate suppliers"
+      },
+      {
+        "requirement": "Document procedures",
+        "detail": "Comprehensive documentation with version control"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "prerequisite_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 5.19 - Information security in supplier relationships",
+      "ISO 27001 A 5.20 - Addressing information security within supplier agreements"
+    ],
+    "cross_references": [
+      "Supplier Relationships (A 5.19) - overall supplier management",
+      "Supplier Agreements (A 5.20) - establishing security terms",
+      "ICT Supply Chain (A 5.21) - specific focus on ICT products/services"
+    ]
+  },
+  "best_practices": {
+    "acquisition_best_practices": [
+      "Define security requirements before solicitation",
+      "Include security evaluation in RFP process",
+      "Request SBOM during procurement",
+      "Conduct security reference checks",
+      "Evaluate reputable sources",
+      "Include security in contract negotiation"
+    ],
+    "component_management_best_practices": [
+      "Maintain SBOM for all critical products",
+      "Track component versions",
+      "Subscribe to vendor security advisories",
+      "Monitor component vulnerability databases",
+      "Plan for component updates",
+      "Establish update/patch process"
+    ],
+    "assessment_best_practices": [
+      "Conduct pre-deployment security assessment",
+      "Test security functions before production",
+      "Perform periodic re-assessment",
+      "Document assessment findings",
+      "Remediate identified issues",
+      "Use independent assessments where possible"
+    ],
+    "lifecycle_best_practices": [
+      "Track product support end dates",
+      "Plan replacement before end-of-support",
+      "Maintain vendor relationships",
+      "Identify alternate suppliers proactively",
+      "Test switchover procedures",
+      "Document migration procedures"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "high_risk_ict_products": [
+      {
+        "product_type": "RNG Software",
+        "risk": "Game fairness integrity",
+        "supply_chain_focus": [
+          "Cryptographic components source and certification",
+          "Development team vetting",
+          "Testing laboratory independence",
+          "Component traceability"
+        ]
+      },
+      {
+        "product_type": "Customer Data Platform",
+        "risk": "Payment card data compromise",
+        "supply_chain_focus": [
+          "Encryption component security",
+          "Secure coding practices",
+          "Third-party library vulnerability tracking",
+          "Regular security updates"
+        ]
+      },
+      {
+        "product_type": "Cloud Infrastructure",
+        "risk": "Data breach via platform",
+        "supply_chain_focus": [
+          "Understand cloud platform components",
+          "Geographic distribution and redundancy",
+          "Data persistence and deletion",
+          "API security"
+        ]
+      }
+    ],
+    "regulatory_expectations": [
+      "UKGC expects rigorous ICT supply chain management",
+      "Component-level awareness expected for critical systems",
+      "Regular security assessment of ICT products",
+      "Documented procedures for acquisition and lifecycle",
+      "Compliance approach should detail ICT supply chain management for critical systems"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.21",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.21-managing-information-security-in-the-ict-supply-chain.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

@@ -1,0 +1,944 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 8.1",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_8.1",
+    "control_number": "A 8.1",
+    "control_title": "User Endpoint Device Security",
+    "control_type": "Preventive control",
+    "control_purpose": "To protect information and systems from risks introduced by using endpoint devices",
+    "control_objective": "Implement technical and administrative controls to secure endpoint devices that store, process, or transmit information"
+  },
+  "iso_27001_definition": {
+    "official_text": "Controls should be implemented to ensure that information and information systems can be accessed and used by authorized users in a controlled manner. Control implementations should include but not be limited to: technical measures to protect against physical and logical unauthorized access, and measures to secure information when the systems are not in use.",
+    "key_requirements": [
+      "Endpoint devices inventory maintained",
+      "Risk assessment of endpoints completed",
+      "Technical controls implemented",
+      "Encryption deployed on devices",
+      "Antivirus and antimalware protection",
+      "Configuration management baseline",
+      "Access controls enforced",
+      "Monitoring and logging enabled",
+      "Personnel trained on secure use",
+      "Physical security controls implemented"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control protecting information on endpoint devices against unauthorized access, malware, theft, and data loss",
+    "scope": [
+      "Desktop computers",
+      "Laptop computers",
+      "Smartphones and mobile devices",
+      "Tablets",
+      "POS terminals",
+      "IoT devices",
+      "Connected peripherals",
+      "Remote access devices",
+      "Bring Your Own Device (BYOD)"
+    ],
+    "key_outcome": "All endpoint devices secure and compliant with security requirements"
+  },
+  "prerequisites": {
+    "description": "Before implementing endpoint device security, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Asset Management Process",
+        "description": "Complete inventory of all endpoint devices",
+        "rationale": "Must know what devices exist to protect them",
+        "reference": "ISO 27001 A 5.9 - Inventory of information and other associated assets"
+      },
+      {
+        "prerequisite": "Risk Assessment",
+        "description": "Assessment of risks to endpoint devices",
+        "rationale": "Controls selected based on identified risks",
+        "reference": "ISO 27001 A 5.2 - Information security risk assessment"
+      },
+      {
+        "prerequisite": "Information Classification",
+        "description": "Classification of information on devices",
+        "rationale": "Protection level based on data sensitivity",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "User Awareness Training",
+        "description": "Personnel trained on secure device use",
+        "rationale": "Users critical to endpoint security",
+        "reference": "ISO 27001 A 6.3 - Information security awareness, education and training"
+      }
+    ]
+  },
+  "endpoint_device_overview": {
+    "definition": "All user devices and systems that connect to organization networks, store data, or process sensitive information",
+    "challenges": [
+      "Device diversity and heterogeneity",
+      "Mobile device vulnerabilities",
+      "Malware and ransomware threats",
+      "Loss or theft of devices",
+      "Unauthorized access",
+      "Data exposure from unencrypted devices",
+      "Personal device management complexity",
+      "Patching and update challenges",
+      "User resistance to security controls"
+    ],
+    "protection_principle": "Layered security controls on all endpoint devices"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_8.1_REQ_1",
+      "requirement": "Develop Endpoint Device Security Policy",
+      "description": "Create documented policy for endpoint device management",
+      "details": {
+        "policy_elements": [
+          "Scope - what devices covered",
+          "Approved device types",
+          "Security baseline requirements",
+          "Encryption requirements",
+          "Antivirus and antimalware requirements",
+          "Patch and update management",
+          "Physical security requirements",
+          "Backup and recovery",
+          "Incident reporting",
+          "BYOD policy if applicable",
+          "Roles and responsibilities",
+          "Compliance monitoring",
+          "Exceptions and approvals"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_2",
+      "requirement": "Maintain Endpoint Device Inventory",
+      "description": "Create and maintain complete asset register",
+      "details": {
+        "inventory_elements": [
+          "Device type and model",
+          "Serial number",
+          "Owner or user assignment",
+          "Location",
+          "Operating system and version",
+          "Installation date",
+          "Assigned software",
+          "Security baseline compliance",
+          "Support and end-of-life date"
+        ],
+        "inventory_management": [
+          "Centralized asset management system",
+          "Regular inventory verification",
+          "Tracking of new devices",
+          "Removal of decommissioned devices",
+          "BYOD tracking if applicable",
+          "Automated discovery where possible"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_3",
+      "requirement": "Implement Encryption on Endpoint Devices",
+      "description": "Deploy encryption to protect data at rest",
+      "details": {
+        "encryption_requirements": [
+          "Full disk or volume encryption",
+          "Encryption of sensitive data files",
+          "Encryption of portable media",
+          "Strong encryption algorithms",
+          "Encryption key management",
+          "Backup of encryption keys",
+          "Encryption verification"
+        ],
+        "encryption_approach": [
+          "Built-in OS encryption (BitLocker, FileVault)",
+          "Third-party encryption solutions",
+          "Hardware-based encryption",
+          "Transparent encryption implementation",
+          "User-friendly setup and recovery"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_4",
+      "requirement": "Deploy Antivirus and Antimalware Protection",
+      "description": "Install and maintain malware protection",
+      "details": {
+        "protection_requirements": [
+          "Antivirus software on all endpoints",
+          "Real-time scanning enabled",
+          "Current virus/malware definitions",
+          "Automatic updates configured",
+          "Quarantine capabilities",
+          "Removal and remediation",
+          "Alerting on detection"
+        ],
+        "implementation": [
+          "Centralized deployment",
+          "Automatic definition updates",
+          "Real-time protection enabled",
+          "Scheduled scans",
+          "Monitoring and reporting",
+          "Incident response capability"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_5",
+      "requirement": "Implement Configuration Management",
+      "description": "Establish and enforce secure baseline configurations",
+      "details": {
+        "configuration_standards": [
+          "CIS Benchmarks or DISA STIGs",
+          "OS hardening standards",
+          "Security baseline documentation",
+          "Standard image for deployment",
+          "Approved software list",
+          "Disabled unnecessary services",
+          "Firewall enabled",
+          "Access control settings"
+        ],
+        "configuration_management": [
+          "Configuration management tools",
+          "Automated baseline enforcement",
+          "Compliance checking",
+          "Non-compliance remediation",
+          "Regular updates to baselines"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_6",
+      "requirement": "Implement Endpoint Device Management",
+      "description": "Deploy EDM tools for centralized management",
+      "details": {
+        "edm_capabilities": [
+          "Device inventory management",
+          "Remote software deployment",
+          "Patch and update management",
+          "Configuration enforcement",
+          "Compliance monitoring",
+          "Remote lock functionality",
+          "Remote wiping capability",
+          "Mobile device management for phones/tablets",
+          "Application management",
+          "Reporting and alerting"
+        ],
+        "edm_implementation": [
+          "Select appropriate platform",
+          "Pilot deployment",
+          "Full rollout",
+          "User training",
+          "Policy enforcement",
+          "Regular updates and maintenance"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_7",
+      "requirement": "Implement Data Loss Prevention",
+      "description": "Control movement of sensitive data",
+      "details": {
+        "dlp_controls": [
+          "Restrict USB device usage",
+          "Monitor data movement",
+          "Prevent unauthorized downloads",
+          "Control cloud storage access",
+          "Block unauthorized email",
+          "Prevent screen capture",
+          "Restrict printing",
+          "Monitor for data exfiltration"
+        ],
+        "dlp_approach": [
+          "Classify sensitive data",
+          "Define protection rules",
+          "Deploy monitoring tools",
+          "Alert on violations",
+          "Block or quarantine violations",
+          "Incident investigation"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_8",
+      "requirement": "Implement Patch and Update Management",
+      "description": "Ensure devices current with security patches",
+      "details": {
+        "patch_management": [
+          "Establish patch management policy",
+          "Regular security patch testing",
+          "Timely patch deployment",
+          "Critical patch rapid deployment",
+          "Verification of patch installation",
+          "Rollback procedures if needed",
+          "Monitoring and reporting"
+        ],
+        "update_frequency": [
+          "Critical patches - within days",
+          "High priority - within weeks",
+          "Medium priority - within month",
+          "Regular updates - as planned"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_9",
+      "requirement": "Implement Access Controls on Endpoints",
+      "description": "Control who can access endpoint devices",
+      "details": {
+        "access_controls": [
+          "Strong passwords or PINs",
+          "Multi-factor authentication",
+          "Screen lock after idle time",
+          "Logout on disconnect",
+          "User account controls",
+          "Privileged access management",
+          "USB port restrictions",
+          "Bluetooth restrictions",
+          "WiFi security"
+        ],
+        "implementation": [
+          "Enforce through group policy",
+          "Device management tools",
+          "BIOS/firmware controls",
+          "Operating system settings",
+          "User education and enforcement"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_10",
+      "requirement": "Implement Monitoring and Logging",
+      "description": "Track device security status and events",
+      "details": {
+        "monitoring_elements": [
+          "Security event logging",
+          "Access logging",
+          "Software installation tracking",
+          "Encryption status verification",
+          "Patch compliance monitoring",
+          "Vulnerability scanning",
+          "Behavioral analysis for threats",
+          "Alerting on anomalies"
+        ],
+        "reporting": [
+          "Device compliance dashboards",
+          "Vulnerability reports",
+          "Incident tracking",
+          "Trend analysis",
+          "Management summaries"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_11",
+      "requirement": "Implement Physical Security Controls",
+      "description": "Protect endpoint devices from physical threats",
+      "details": {
+        "physical_controls": [
+          "Screen privacy protectors",
+          "Device auto-lock after idle",
+          "Cable locks for stationary devices",
+          "Locked storage for portable devices",
+          "Removal of asset tags or descriptive labels",
+          "Device locator/tracking for portable devices",
+          "Secure shredders for home use",
+          "Clear desk policy when away"
+        ],
+        "home_office_controls": [
+          "Lockable storage for devices",
+          "Secured workspace if possible",
+          "Shredder for documents",
+          "Privacy screens",
+          "Cable locks where applicable"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_12",
+      "requirement": "Manage Backup and Recovery",
+      "description": "Establish backup procedures for endpoint devices",
+      "details": {
+        "backup_strategy": [
+          "Regular backup schedule",
+          "Backup media secured and encrypted",
+          "Off-site backup copies",
+          "Testing of recovery procedures",
+          "Documented recovery steps",
+          "Retention per policy"
+        ],
+        "backup_approach": [
+          "Cloud backup services",
+          "Network attached storage",
+          "External drives with encryption",
+          "Hybrid approach combining methods"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_13",
+      "requirement": "Manage BYOD and Personal Devices",
+      "description": "Control security of bring-your-own-device",
+      "details": {
+        "byod_policy": [
+          "Clear approval process",
+          "Allowed device types",
+          "Required security controls",
+          "Data access restrictions",
+          "Encryption mandatory",
+          "Malware protection required",
+          "Patch level requirements",
+          "Company data segmentation",
+          "Wipe capability limited or unavailable",
+          "Alternative: provide company device"
+        ],
+        "byod_challenges": [
+          "Limited management capability",
+          "Legal restrictions on monitoring",
+          "User privacy concerns",
+          "Heterogeneous device environment",
+          "Complex support requirements"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_14",
+      "requirement": "Train Personnel on Endpoint Security",
+      "description": "Educate users on secure device practices",
+      "details": {
+        "training_content": [
+          "Endpoint security policy",
+          "Approved devices only",
+          "Encryption importance",
+          "Antivirus updates",
+          "Patch management",
+          "Password security",
+          "Multi-factor authentication",
+          "Physical security practices",
+          "Unattended device risks",
+          "Data handling on devices",
+          "Incident reporting",
+          "Clean desk policy",
+          "Remote work security",
+          "BYOD if applicable"
+        ],
+        "training_delivery": [
+          "Initial training for new users",
+          "Annual refresher training",
+          "Awareness campaigns",
+          "Department-specific training",
+          "Update training for policy changes"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.1_REQ_15",
+      "requirement": "Monitor and Verify Compliance",
+      "description": "Verify endpoint security controls effective",
+      "details": {
+        "monitoring_activities": [
+          "Device compliance scanning",
+          "Encryption status verification",
+          "Antivirus status checking",
+          "Patch compliance monitoring",
+          "Configuration compliance audit",
+          "Physical security observation",
+          "Incident tracking and analysis",
+          "Sample user interviews"
+        ],
+        "audit_procedures": [
+          "Request employee screen share",
+          "Verify antivirus running",
+          "Check encryption status",
+          "Review patch level",
+          "Physical environment assessment",
+          "Ask to demonstrate controls"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Develop endpoint device policy",
+        "detail": "Document security requirements for devices"
+      },
+      {
+        "step": 2,
+        "action": "Create asset inventory",
+        "detail": "Catalog all endpoint devices"
+      },
+      {
+        "step": 3,
+        "action": "Conduct risk assessment",
+        "detail": "Identify device security risks"
+      },
+      {
+        "step": 4,
+        "action": "Select EDM platform",
+        "detail": "Choose endpoint device management tool"
+      },
+      {
+        "step": 5,
+        "action": "Deploy encryption",
+        "detail": "Enable full disk encryption on all devices"
+      },
+      {
+        "step": 6,
+        "action": "Deploy antivirus",
+        "detail": "Install malware protection on all endpoints"
+      },
+      {
+        "step": 7,
+        "action": "Implement EDM",
+        "detail": "Deploy device management platform"
+      },
+      {
+        "step": 8,
+        "action": "Configure baseline",
+        "detail": "Establish secure configuration standard"
+      },
+      {
+        "step": 9,
+        "action": "Train personnel",
+        "detail": "Education on endpoint security"
+      },
+      {
+        "step": 10,
+        "action": "Monitor compliance",
+        "detail": "Verify controls working"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 8.1",
+    "checklist": [
+      {
+        "item": "Develop endpoint device policy",
+        "status": "required"
+      },
+      {
+        "item": "Create device asset inventory",
+        "status": "required"
+      },
+      {
+        "item": "Conduct device risk assessment",
+        "status": "required"
+      },
+      {
+        "item": "Deploy encryption on devices",
+        "status": "required"
+      },
+      {
+        "item": "Deploy antivirus and antimalware",
+        "status": "required"
+      },
+      {
+        "item": "Implement configuration baseline",
+        "status": "required"
+      },
+      {
+        "item": "Deploy endpoint device management tool",
+        "status": "required"
+      },
+      {
+        "item": "Implement patch management",
+        "status": "required"
+      },
+      {
+        "item": "Implement access controls",
+        "status": "required"
+      },
+      {
+        "item": "Implement DLP controls",
+        "status": "required"
+      },
+      {
+        "item": "Implement monitoring and logging",
+        "status": "required"
+      },
+      {
+        "item": "Train personnel",
+        "status": "required"
+      },
+      {
+        "item": "Conduct compliance monitoring",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with endpoint security",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Devices not encrypted",
+        "description": "Endpoint devices in use without full disk encryption",
+        "root_cause": [
+          "Assumption encryption too complex",
+          "Performance concerns",
+          "User resistance",
+          "Cost avoidance",
+          "Lack of awareness"
+        ],
+        "impact": "Lost or stolen device exposes all data, regulatory violations, data breach",
+        "prevention": [
+          "Mandate encryption on all devices",
+          "Built-in OS encryption simplifies deployment",
+          "Technical controls enforce requirement",
+          "Monitor and verify encryption enabled"
+        ],
+        "requirement": "Encryption is not optional - must be deployed"
+      },
+      {
+        "rank": 2,
+        "mistake": "Allowing personal devices without controls",
+        "description": "BYOD permitted without security requirements",
+        "root_cause": [
+          "Cost savings pressure",
+          "User preference for personal devices",
+          "Lack of IT support",
+          "Misunderstanding of risks",
+          "Belief personal device is secure"
+        ],
+        "impact": "Increased attack surface, unmanaged devices, data breaches, compliance violations",
+        "prevention": [
+          "Mandatory security requirements if BYOD allowed",
+          "VPN for network access",
+          "Device compliance checking",
+          "Consider providing company device instead",
+          "Limited access for personal devices"
+        ],
+        "best_practice": "Provide company devices to eliminate complexity"
+      },
+      {
+        "rank": 3,
+        "mistake": "No device inventory or management",
+        "description": "Unknown devices connecting to systems",
+        "root_cause": [
+          "No asset management process",
+          "No inventory tracking",
+          "Shadow IT devices",
+          "BYOD not tracked",
+          "Legacy devices forgotten"
+        ],
+        "impact": "Unknown device risks, unmanaged security, compliance gaps, audit failures",
+        "prevention": [
+          "Complete device inventory",
+          "Automated discovery tools",
+          "Regular inventory audits",
+          "EDM platform deployment",
+          "Network access controls"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 8.1 audit",
+    "audit_areas": [
+      {
+        "area": "1. Endpoint Device Policy",
+        "description": "Verify documented policy exists",
+        "checks": [
+          "Policy document current",
+          "Covers approved device types",
+          "Technical requirements specified",
+          "Encryption required",
+          "Antivirus required",
+          "Patching specified",
+          "BYOD policy if applicable"
+        ]
+      },
+      {
+        "area": "2. Asset Inventory",
+        "description": "Verify complete device inventory",
+        "checks": [
+          "Asset register exists",
+          "All endpoints documented",
+          "Device type recorded",
+          "Owner assigned",
+          "Location tracked",
+          "BYOD devices included",
+          "Regular updates maintained"
+        ]
+      },
+      {
+        "area": "3. Encryption Verification",
+        "description": "Verify encryption on devices",
+        "checks": [
+          "Encryption enabled on sample devices",
+          "Full disk encryption verified",
+          "Screen sharing to verify status",
+          "Non-compliance identified",
+          "Remediation process"
+        ]
+      },
+      {
+        "area": "4. Antivirus and Antimalware",
+        "description": "Verify protection deployed",
+        "checks": [
+          "Antivirus installed",
+          "Real-time scanning enabled",
+          "Definitions current",
+          "Auto-update configured",
+          "Screen share verification"
+        ]
+      },
+      {
+        "area": "5. Configuration Management",
+        "description": "Verify secure baselines",
+        "checks": [
+          "Baseline documented",
+          "Deployment process",
+          "Firewall enabled",
+          "Unnecessary services disabled",
+          "Current configuration"
+        ]
+      },
+      {
+        "area": "6. Patch Management",
+        "description": "Verify patches deployed",
+        "checks": [
+          "Patch management policy",
+          "Patch schedule",
+          "Compliance monitoring",
+          "Testing procedures",
+          "Recent patch history"
+        ]
+      },
+      {
+        "area": "7. Access Controls",
+        "description": "Verify access protection",
+        "checks": [
+          "Strong password policy",
+          "Multi-factor authentication",
+          "Screen lock configured",
+          "Idle timeout set",
+          "User verification"
+        ]
+      },
+      {
+        "area": "8. Training and Awareness",
+        "description": "Verify personnel trained",
+        "checks": [
+          "Training materials",
+          "Training records",
+          "User understanding",
+          "Awareness campaigns",
+          "Recent training"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, endpoint devices accessing RNG systems, game systems, or customer data require strict security controls",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Systems Access",
+        "device_requirements": [
+          "Company-provided devices only",
+          "Full encryption mandatory",
+          "Antivirus and EDM deployed",
+          "VPN for remote access",
+          "Multi-factor authentication",
+          "Restricted to authorized personnel"
+        ]
+      },
+      {
+        "system": "Customer Data Systems",
+        "device_requirements": [
+          "Encryption mandatory",
+          "Current antivirus required",
+          "EDM platform monitoring",
+          "Data Loss Prevention controls",
+          "Audit logging enabled",
+          "Restricted USB and removable media"
+        ]
+      },
+      {
+        "system": "Compliance and Audit Systems",
+        "device_requirements": [
+          "Secured devices required",
+          "Encryption of regulatory data",
+          "Access controls enforced",
+          "Monitoring and logging",
+          "Secure destruction before reuse"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must maintain complete inventory of endpoint devices and implement layered technical controls including encryption, antivirus, EDM, and access controls"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Protect information and systems from risks introduced by endpoint devices through layered security controls",
+    "enforcement_priority": "Critical - endpoints often target for attacks and source of data breaches",
+    "key_principles": [
+      "Complete inventory of all endpoint devices",
+      "Full disk encryption on all devices",
+      "Current antivirus and antimalware",
+      "Endpoint device management platform",
+      "Secure configuration baseline",
+      "Patch management and updates",
+      "Access control enforcement",
+      "Data Loss Prevention controls",
+      "Monitoring and compliance verification",
+      "Personnel training and awareness",
+      "Regular security audits"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 8.1 User Endpoint Device Security, implement",
+    "requirements": [
+      {
+        "requirement": "Develop policy",
+        "detail": "Endpoint device security policy documented"
+      },
+      {
+        "requirement": "Inventory devices",
+        "detail": "Complete asset register of all endpoints"
+      },
+      {
+        "requirement": "Risk assessment",
+        "detail": "Identify device security risks"
+      },
+      {
+        "requirement": "Deploy encryption",
+        "detail": "Full disk encryption on all devices"
+      },
+      {
+        "requirement": "Deploy antivirus",
+        "detail": "Malware protection on all endpoints"
+      },
+      {
+        "requirement": "Implement baseline",
+        "detail": "Secure configuration standard"
+      },
+      {
+        "requirement": "Deploy EDM",
+        "detail": "Endpoint device management platform"
+      },
+      {
+        "requirement": "Implement patch management",
+        "detail": "Regular security patch deployment"
+      },
+      {
+        "requirement": "Implement access controls",
+        "detail": "Strong authentication and access restrictions"
+      },
+      {
+        "requirement": "Train personnel",
+        "detail": "User education on secure practices"
+      },
+      {
+        "requirement": "Monitor compliance",
+        "detail": "Verify controls working and effective"
+      },
+      {
+        "requirement": "Document all controls",
+        "detail": "Complete evidence trail for audit"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.9 - Inventory of information and other associated assets",
+      "ISO 27001 A 5.12 - Classification of information",
+      "ISO 27001 A 6.3 - Information security awareness, education and training",
+      "ISO 27001 A 6.7 - Remote working",
+      "ISO 27001 A 8.10 - Encryption",
+      "ISO 27001 A 8.13 - Information backup"
+    ]
+  },
+  "best_practices": {
+    "inventory_best_practices": [
+      "Automate device discovery",
+      "Regular inventory audits",
+      "Track BYOD devices",
+      "Monitor for shadow IT",
+      "Maintain device lifecycle records"
+    ],
+    "technical_best_practices": [
+      "Mandate full disk encryption on all devices",
+      "Deploy EDM platform for centralized management",
+      "Implement data loss prevention",
+      "Automate patch deployment",
+      "Enforce strong configuration baseline",
+      "Enable logging and monitoring"
+    ],
+    "access_best_practices": [
+      "Multi-factor authentication on sensitive access",
+      "Strong password policies",
+      "Screen lock after short idle",
+      "Principle of least privilege",
+      "Separate admin and user accounts"
+    ],
+    "user_best_practices": [
+      "Comprehensive training for all users",
+      "Regular awareness campaigns",
+      "Clean desk policy",
+      "Never leave device unattended logged in",
+      "Report suspicious activity",
+      "Secure physical environment"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "high_risk_roles": [
+      {
+        "role": "RNG Developers and Testers",
+        "device_requirements": "Company device only, encryption mandatory, no personal device use"
+      },
+      {
+        "role": "Game System Administrators",
+        "device_requirements": "Company device, full encryption, EDM managed, MFA required"
+      },
+      {
+        "role": "Customer Service",
+        "device_requirements": "Encryption mandatory, antivirus current, DLP controls"
+      },
+      {
+        "role": "Compliance and Audit",
+        "device_requirements": "Secured device, encryption, logging enabled, strict access controls"
+      }
+    ],
+    "regulatory_expectations": [
+      "Complete device inventory with assigned ownership",
+      "Mandatory encryption on all devices",
+      "Current antivirus and threat protection",
+      "Automated device management and monitoring",
+      "Regular compliance verification",
+      "Personnel training documentation",
+      "Incident response procedures"
+    ],
+    "audit_readiness": [
+      "Asset inventory documented and current",
+      "Encryption status verified on sample devices",
+      "Antivirus status confirmed",
+      "EDM platform operational",
+      "Personnel trained and aware",
+      "Compliance monitoring records",
+      "Audit logs and reports"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 8.1",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-8.1-user-endpoint-device-security.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

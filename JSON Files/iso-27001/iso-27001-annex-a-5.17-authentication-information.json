@@ -1,0 +1,857 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.17",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.17",
+    "control_number": "A 5.17",
+    "control_title": "Authentication Information",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure proper entity authentication and prevent failures of authentication processes",
+    "control_objective": "Control allocation and management of authentication information throughout its lifecycle to ensure only authorized entities gain access to systems and resources"
+  },
+  "iso_27001_definition": {
+    "official_text": "Allocation and management of authentication information should be controlled by a management process, including advising personnel on the appropriate handling of authentication information.",
+    "key_requirements": [
+      "Allocation of authentication information controlled by management process",
+      "Management of authentication information controlled by management process",
+      "Personnel advised on appropriate handling of authentication information",
+      "Lifecycle of authentication information managed"
+    ]
+  },
+  "authentication_information_overview": {
+    "definition": "Authentication information is the information used to gain access to systems and resources",
+    "purpose": "Proves identity of entity accessing systems - primary mechanism to ensure only authorized entities gain access",
+    "scope": [
+      "Passwords",
+      "PINs",
+      "Biometric data",
+      "Tokens",
+      "Cards",
+      "Multi-factor authentication components",
+      "Cryptographic keys",
+      "Security questions",
+      "One-time passwords"
+    ],
+    "relationship_to_identity": "Works in conjunction with identity management (A 5.16) - identity is the account, authentication information proves you are that account",
+    "importance": "Authentication information is fundamental to access control - restricting access requires authentication to prove entity requesting access is authorized"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.17_REQ_1",
+      "requirement": "Implement Management Process for Authentication Information",
+      "description": "Authentication information allocation and management controlled by formal management process",
+      "details": {
+        "scope": [
+          "Creating authentication information",
+          "Allocating authentication information",
+          "Updating authentication information",
+          "Changing authentication information",
+          "Revoking authentication information",
+          "Removing authentication information"
+        ],
+        "key_point": "Must be a managed, controlled process - not ad hoc or informal"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_2",
+      "requirement": "Generate Temporary Authentication Information for First Use",
+      "description": "When accounts are created, temporary authentication information should be generated for first-time use",
+      "details": {
+        "approach": "Consider automatic generation of temporary passwords",
+        "benefits": "More efficient than manual creation, reduces human error",
+        "requirements": [
+          "Temporary authentication information is hard to guess",
+          "Temporary authentication information is unique for each person",
+          "Temporary information must be changed on first use - mandatory change enforced",
+          "Temporary passwords never reused across multiple users"
+        ],
+        "first_login_requirement": "User must be forced to change temporary credentials immediately upon first login"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_3",
+      "requirement": "Verify Identity Before Allocation",
+      "description": "Check and verify identity of person making request and person being given new, updated or replacement credentials",
+      "details": {
+        "verification_requirement": "Do not give access to 'any old Tom, Dick or Harry' - verify identity appropriately",
+        "parties_to_verify": [
+          "Requestor (person requesting the credentials)",
+          "Recipient (person receiving the credentials)"
+        ],
+        "same_person": "Requestor and recipient may or may not be same person - verify appropriately for context",
+        "process_integration": "Verification should be integrated into approval process from identity management control"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_4",
+      "requirement": "Transmit Authentication Information Securely",
+      "description": "When sending authentication information to people, use secure methods",
+      "details": {
+        "prohibited_methods": [
+          "Do not send via unencrypted email",
+          "Do not send via clear text communication",
+          "Do not send through unsecured channels"
+        ],
+        "required_approach": "Use secure delivery methods appropriate for sensitivity level",
+        "examples": [
+          "Encrypted email",
+          "Secure portal",
+          "In-person delivery",
+          "Secure SMS with encryption",
+          "Temporary secure link"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_5",
+      "requirement": "Obtain User Acknowledgment of Receipt",
+      "description": "Users acknowledge they have received authentication information",
+      "details": {
+        "requirement": "User must confirm receipt - do not assume delivery means receipt",
+        "documentation": "Maintain record of acknowledgment",
+        "purpose": "Verify user has received information and responsibility transfers to user"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_6",
+      "requirement": "Maintain Records of Allocated Authentication Information",
+      "description": "Keep records of what authentication information has been allocated and managed",
+      "details": {
+        "records_to_maintain": [
+          "Record of allocation",
+          "Date allocated",
+          "To whom allocated",
+          "When changed",
+          "When revoked",
+          "When removed"
+        ],
+        "protection": "Protect the record itself - authentication information records are sensitive",
+        "access_control": "Limit access to allocation records",
+        "security": "Encrypt records containing authentication information references"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_7",
+      "requirement": "Change Default Passwords Immediately",
+      "description": "If vendor or supplier provides default passwords, PINs or authentication information, change immediately",
+      "details": {
+        "requirement": "Do not use any default authentication information provided by vendors",
+        "timing": "Change must happen immediately - before any production use",
+        "reason": "Default credentials are publicly available and discoverable - security risk",
+        "examples": [
+          "Database default credentials",
+          "Application default passwords",
+          "System default PINs",
+          "Device default authentication"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_8",
+      "requirement": "Implement Strong Password Requirements",
+      "description": "Where passwords are used, implement strong password requirements",
+      "details": {
+        "strength_requirements": [
+          "Passwords not easy to guess",
+          "Passwords not based on dictionary words",
+          "Passwords not based on information someone could find out",
+          "Minimum length specified and enforced"
+        ],
+        "guidance": "Avoid common/predictable patterns - no birthdays, names, dictionary words",
+        "minimum_length": "Standard requires minimum length (guidance on specific length varies by organization)",
+        "note": "Dictionary phrases can actually be strong passwords but require specific composition rules"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_9",
+      "requirement": "Prevent Password Reuse Across Systems",
+      "description": "Ideally, authentication information not reused across different systems",
+      "details": {
+        "principle": "Each system should have unique authentication information",
+        "rationale": "If one system is compromised, other systems remain secure",
+        "best_practice": "Promote unique credentials for each system",
+        "implementation": "Password managers can assist with unique credential management"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_10",
+      "requirement": "Include Policy in Employment Contracts",
+      "description": "Contracts of employment include obligation to follow authentication information rules",
+      "details": {
+        "contract_clause": "Employment contract explicitly includes requirements to",
+        "obligations": [
+          "Not share authentication information",
+          "Not leave credentials unattended",
+          "Report compromise immediately",
+          "Follow password policies",
+          "Change default credentials",
+          "Protect authentication information"
+        ],
+        "consequences": "Contract should include consequences of violating authentication policies"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_11",
+      "requirement": "User Responsibility for Authentication Information",
+      "description": "Users have responsibility for their own authentication information",
+      "details": {
+        "user_responsibilities": [
+          "Not to share passwords or secret authentication information",
+          "Not to write down passwords in unprotected locations",
+          "Not to leave credentials unattended",
+          "Report compromise or suspected compromise immediately",
+          "Follow strong password requirements",
+          "Use unique authentication information for each system",
+          "Change authentication information when required"
+        ],
+        "employer_obligation": "Advise personnel on appropriate handling of authentication information"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_12",
+      "requirement": "Immediate Action on Compromise",
+      "description": "If authentication information is compromised or suspected compromised, change immediately",
+      "details": {
+        "trigger_events": [
+          "Suspected compromise",
+          "Known breach",
+          "Unauthorized access detected",
+          "User reports compromise",
+          "Security incident investigation",
+          "Password leak in external breach"
+        ],
+        "response": "Change authentication information immediately upon notification",
+        "process": "Have emergency change process for urgent credential changes",
+        "communication": "Notify user of compromise and forced change"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_13",
+      "requirement": "Support Alternative Authentication Methods",
+      "description": "Accept that other authentication methods exist beyond passwords",
+      "details": {
+        "alternatives": [
+          "Tokens (hardware and software)",
+          "Smart cards",
+          "Biometrics (fingerprint, facial recognition)",
+          "Multi-factor authentication",
+          "Single sign-on",
+          "Public key infrastructure",
+          "One-time passwords"
+        ],
+        "flexibility": "Standard accepts these alternatives",
+        "rationale": "Passwords alone are increasingly inadequate for security",
+        "implementation": "Encourage and implement multi-factor authentication where possible"
+      }
+    },
+    {
+      "requirement_id": "A_5.17_REQ_14",
+      "requirement": "Balance Password Change Frequency",
+      "description": "Find balance on password change frequency based on risk and business need",
+      "details": {
+        "consideration": "Frequent password changes can reduce security (users write them down, use predictable changes)",
+        "standard_acknowledgment": "ISO acknowledges this - scenario where frequent changes not required is acceptable",
+        "approach": "Base frequency on:",
+        "frequency_factors": [
+          "Risk level of system",
+          "Business requirements",
+          "User behavior",
+          "Incident history"
+        ],
+        "documentation": "Be able to justify password change frequency to auditor",
+        "flexibility": "Forced frequent changes not absolute requirement if risk-justified"
+      }
+    }
+  ],
+  "password_management_system_guidance": {
+    "description": "Recommended capabilities for password management systems",
+    "capabilities": [
+      {
+        "capability": "User Selection and Change",
+        "requirement": "Users allowed to select and change their own passwords",
+        "detail": "Provides user autonomy while maintaining control"
+      },
+      {
+        "capability": "Enforce Strong Passwords",
+        "requirement": "Enforce strong passwords according to policy",
+        "detail": "System validates against organization's strength requirements"
+      },
+      {
+        "capability": "Mandatory First Change",
+        "requirement": "Force users to change passwords at first use",
+        "detail": "Ensure temporary passwords not retained"
+      },
+      {
+        "capability": "Force Changes on Events",
+        "requirement": "Force password changes as required by security events",
+        "detail": "After security incident, after compromise, after admin override"
+      },
+      {
+        "capability": "Prevent Password Reuse",
+        "requirement": "Prevent re-use of previous passwords",
+        "detail": "Maintain history of previous passwords, prevent cycling"
+      },
+      {
+        "capability": "Block Common Passwords",
+        "requirement": "Prevent use of common passwords",
+        "detail": "Check against dictionary of commonly used passwords"
+      },
+      {
+        "capability": "Compromised Password Detection",
+        "requirement": "Take account of compromised accounts and prevent use",
+        "detail": "Check against known breach databases, prevent known-compromised passwords"
+      },
+      {
+        "capability": "Password Display Control",
+        "requirement": "Do not display passwords on screen when entered",
+        "detail": "Mask password input with asterisks or dots"
+      },
+      {
+        "capability": "No Clear Text Storage",
+        "requirement": "Do not store or send passwords in clear text",
+        "detail": "All password storage encrypted, all transmission encrypted"
+      },
+      {
+        "capability": "Password Encryption",
+        "requirement": "Passwords encrypted in storage",
+        "detail": "Use strong hashing algorithms (bcrypt, scrypt, argon2)"
+      },
+      {
+        "capability": "Secure Transmission",
+        "requirement": "Passwords transmitted over encrypted channels",
+        "detail": "HTTPS, TLS, encrypted protocols only"
+      }
+    ]
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish Authentication Information Policy",
+        "detail": "Document requirements for authentication information allocation and management"
+      },
+      {
+        "step": 2,
+        "action": "Define Password/Authentication Requirements",
+        "detail": "Specify strength requirements, minimum length, change frequency, alternative methods"
+      },
+      {
+        "step": 3,
+        "action": "Implement Identity Verification Process",
+        "detail": "Define how to verify requestor and recipient identity before allocation"
+      },
+      {
+        "step": 4,
+        "action": "Establish Secure Delivery Mechanism",
+        "detail": "Implement secure method for transmitting authentication information to users"
+      },
+      {
+        "step": 5,
+        "action": "Implement Temporary Credential Generation",
+        "detail": "Automate generation of unique temporary credentials with mandatory first-use change"
+      },
+      {
+        "step": 6,
+        "action": "Select and Deploy Password Management System",
+        "detail": "Implement system with required capabilities for password management"
+      },
+      {
+        "step": 7,
+        "action": "Change All Default Credentials",
+        "detail": "Identify and change all default passwords, PINs, credentials from vendors"
+      },
+      {
+        "step": 8,
+        "action": "Establish Record-Keeping System",
+        "detail": "Implement system to track allocation and management of authentication information"
+      },
+      {
+        "step": 9,
+        "action": "Create Emergency Change Process",
+        "detail": "Define process for immediate credential changes upon compromise"
+      },
+      {
+        "step": 10,
+        "action": "Train Personnel",
+        "detail": "Train all staff on authentication information handling, password requirements, reporting"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.17",
+    "checklist": [
+      {
+        "item": "Implement authentication information policy and process",
+        "status": "required"
+      },
+      {
+        "item": "Define and enforce strong password requirements",
+        "status": "required"
+      },
+      {
+        "item": "Implement identity verification before allocation",
+        "status": "required"
+      },
+      {
+        "item": "Establish secure delivery of authentication information",
+        "status": "required"
+      },
+      {
+        "item": "Implement automatic unique temporary credentials",
+        "status": "required"
+      },
+      {
+        "item": "Require mandatory password change on first login",
+        "status": "required"
+      },
+      {
+        "item": "Change all vendor default credentials",
+        "status": "required"
+      },
+      {
+        "item": "Implement password management system with required capabilities",
+        "status": "required"
+      },
+      {
+        "item": "Maintain allocation records",
+        "status": "required"
+      },
+      {
+        "item": "Establish emergency credential change process",
+        "status": "required"
+      },
+      {
+        "item": "Document user responsibilities in employment contracts",
+        "status": "required"
+      },
+      {
+        "item": "Train all personnel on requirements",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with authentication information",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Sharing authentication information",
+        "description": "People share authentication information when they should not, resulting in shared accounts and compromised access control",
+        "root_cause": [
+          "Lazy administration - easier to share than create separate account",
+          "Temporary solution becomes permanent",
+          "No enforcement of policy against sharing",
+          "No alternative for access need"
+        ],
+        "impact": "Access control breaks down - cannot track who did what, accountability lost",
+        "prevention": "Create separate identities and authentication information for each user",
+        "correct_approach": "One user to one unique identity - enforce always",
+        "audit_risk": "High - auditors look for account sharing"
+      },
+      {
+        "rank": 2,
+        "mistake": "Temporary passwords always the same",
+        "description": "Organization reuses same temporary password across all new user onboarding",
+        "example": "Sending 'P@ssw0rd' as temporary password to every new hire",
+        "root_cause": [
+          "Manual process with standard template",
+          "No automation of unique temporary credential generation",
+          "Simplicity over security"
+        ],
+        "impact": "If anyone learns temporary password pattern, can access multiple accounts",
+        "prevention": "Automate unique temporary credential generation for each user",
+        "best_practice": "Each user receives cryptographically unique temporary credential",
+        "audit_risk": "High - easy for auditor to identify"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control is wrong",
+        "description": "Poor documentation and version control of authentication policies and procedures",
+        "issues": [
+          "Policies not updated after changes",
+          "Version numbers don't match across references",
+          "No evidence of review in 12 months",
+          "Comments left in final documents",
+          "Multiple versions of same policy in circulation"
+        ],
+        "prevention": [
+          "Maintain document version control",
+          "Match version numbers across all references",
+          "Evidence regular review (12 months)",
+          "Remove comments from final documents"
+        ],
+        "impact": "Shows lack of control and organization",
+        "audit_risk": "Massive own goal - signals poor information security management"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.17 audit",
+    "audit_areas": [
+      {
+        "area": "1. Verify Processes Are Followed",
+        "description": "Auditor checks that authentication information allocation and management process is documented and followed",
+        "checks": [
+          "Policy documented for authentication information management",
+          "Process documented for allocation of authentication information",
+          "Process documented for management of authentication information",
+          "Approval and allocation process evidence in operation",
+          "Recent hires have authentication information allocation documentation",
+          "Temporary passwords are unique and forced to change on first login",
+          "Verification of identity occurred before allocation",
+          "Authentication information transmitted securely",
+          "No default passwords in use",
+          "Audit trail of allocation and changes maintained"
+        ],
+        "best_practice": "Maintain documented evidence of all authentication processes",
+        "test_audit_trail": "Auditor may ask to see recent user setup and confirm temporary password was unique and changed on first login"
+      },
+      {
+        "area": "2. Verify Rules and Procedures",
+        "description": "Verify documented procedures exist, are followed, and personnel are trained",
+        "checks": [
+          "Password policy documented and current",
+          "Authentication procedures documented and current",
+          "Password strength requirements specified",
+          "Password change requirements documented",
+          "Procedures are followed in practice",
+          "Personnel trained on requirements",
+          "User responsibilities documented in employment contracts",
+          "No account sharing or policy violations",
+          "Emergency change process documented and usable"
+        ],
+        "biggest_gotcha": "Finding people share accounts because they had to - no alternative access method",
+        "red_flag": "Personnel untrained on password policy"
+      },
+      {
+        "area": "3. System Configuration Verification",
+        "description": "Verify systems are configured to enforce authentication requirements",
+        "checks": [
+          "Password manager system enforces strong passwords",
+          "Temporary passwords forced to change at first login",
+          "Password reuse prevention configured",
+          "Compromised password detection enabled",
+          "Passwords not displayed on screen during entry",
+          "Passwords not stored in clear text",
+          "Passwords encrypted in storage",
+          "Transmission encrypted",
+          "Password history maintained",
+          "Common password list implemented"
+        ]
+      },
+      {
+        "area": "4. Documentation and Records",
+        "description": "Review authentication information records and documentation",
+        "checks": [
+          "Allocation records maintained",
+          "Records protected and access controlled",
+          "Documentation classified and labeled appropriately",
+          "Documentation up to date and reviewed in last 12 months",
+          "Version control accurate",
+          "No old versions in circulation",
+          "Comments removed from final documents"
+        ],
+        "warning": "Poor documentation is a massive own goal"
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Authentication information is critical to protecting all gambling systems - proves identity of users accessing systems and resources",
+    "specific_requirements": [
+      {
+        "system": "Sensitive Customer Information Systems",
+        "authentication_requirements": [
+          "Strong authentication required for all customer data access (multi-factor where possible)",
+          "Temporary credentials generated uniquely for each user",
+          "Mandatory change of temporary credentials on first login",
+          "Secure transmission of all authentication information",
+          "No default passwords - all vendor defaults changed immediately",
+          "Audit trail of all authentication information allocation and changes",
+          "User acknowledgment of receipt for authentication information",
+          "Immediate credential change on compromise",
+          "No sharing of authentication information for customer data access"
+        ]
+      },
+      {
+        "system": "Random Number Generation Systems",
+        "authentication_requirements": [
+          "Enhanced authentication for RNG system access (multi-factor authentication mandatory)",
+          "Complex passwords with strong enforcement",
+          "Frequent credential rotation for RNG access",
+          "Time-limited tokens or certificates for RNG system access",
+          "Biometric or hardware token authentication where possible",
+          "Immediate revocation of RNG access credentials if compromise suspected",
+          "Separate authentication for RNG testing vs. production access",
+          "Audit trail of all RNG authentication events"
+        ]
+      },
+      {
+        "system": "Game State and Results Storage",
+        "authentication_requirements": [
+          "Authentication information for read vs. write access differentiated",
+          "Strong authentication for write access to game results",
+          "Time-limited credentials for administrative access",
+          "Biometric or multi-factor authentication for sensitive game state access",
+          "Separate credentials for different system roles",
+          "Audit trail of authentication for all game state access",
+          "Immediate credential change for suspected compromise"
+        ]
+      },
+      {
+        "system": "System Access Points and Entry/Exit Controls",
+        "authentication_requirements": [
+          "Multi-factor authentication at system access points",
+          "Service account authentication controlled and monitored",
+          "API authentication tokens with limited lifetime",
+          "Separate credentials for remote vs. local access",
+          "Immediate revocation of compromised access credentials",
+          "Audit trail of all system access authentications"
+        ]
+      },
+      {
+        "system": "Communication Networks",
+        "authentication_requirements": [
+          "Network access authentication for all personnel",
+          "VPN authentication with multi-factor if remote access",
+          "Service account authentication for network services",
+          "Certificate-based authentication where possible",
+          "Unique credentials for each network connection type",
+          "Immediate credential revocation per leaver process"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must implement comprehensive authentication information management for all critical systems with strong password requirements, secure allocation processes, and audit trails across all system types"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Control and manage authentication information throughout its lifecycle to ensure only authorized entities access systems and resources",
+    "enforcement_priority": "Critical - authentication is primary control for access to all systems and data",
+    "key_principles": [
+      "Strong authentication information requirements enforced",
+      "Unique temporary credentials for each user",
+      "Mandatory change of temporary credentials at first use",
+      "Secure transmission of all authentication information",
+      "Identity verification before allocation",
+      "No default passwords - all vendor defaults changed immediately",
+      "No sharing of authentication information",
+      "Immediate change upon compromise",
+      "User responsibility emphasized and contracted",
+      "Support for alternative authentication methods",
+      "Balanced password change frequency based on risk",
+      "Comprehensive audit trail of all lifecycle events"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.17 Authentication Information, implement the following",
+    "requirements": [
+      {
+        "requirement": "Implement process for creating, updating and removing authentication information",
+        "detail": "Formal documented process covering all lifecycle stages"
+      },
+      {
+        "requirement": "Define strong password/authentication requirements",
+        "detail": "Specify strength, minimum length, composition rules, change frequency"
+      },
+      {
+        "requirement": "Generate unique temporary credentials for first use",
+        "detail": "Automate unique temporary credential generation with mandatory first-use change"
+      },
+      {
+        "requirement": "Verify identity before allocation",
+        "detail": "Verify both requestor and recipient appropriately"
+      },
+      {
+        "requirement": "Transmit authentication information securely",
+        "detail": "Use secure delivery methods, not email or clear text"
+      },
+      {
+        "requirement": "Obtain user acknowledgment of receipt",
+        "detail": "Confirm user received and understands authentication information"
+      },
+      {
+        "requirement": "Change all vendor default credentials",
+        "detail": "Identify and change all default passwords immediately"
+      },
+      {
+        "requirement": "Implement password management system",
+        "detail": "Deploy system with enforced strong passwords and required capabilities"
+      },
+      {
+        "requirement": "Maintain allocation records",
+        "detail": "Track all allocation and management of authentication information"
+      },
+      {
+        "requirement": "Document responsibilities in employment contracts",
+        "detail": "Include user obligations for authentication information handling"
+      },
+      {
+        "requirement": "Train all personnel",
+        "detail": "Educate users on password requirements, sharing prohibitions, reporting obligations"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "prerequisite_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 5.16 - Identity management"
+    ],
+    "dependent_controls": [
+      "ISO 27001 A 5.15 - Access control",
+      "ISO 27001 A 5.18 - Access rights",
+      "ISO 27001 A 6.5 - Responsibilities after termination or change of employment"
+    ],
+    "related_iso_controls": [
+      "ISO 27001 A 8.2 - Privileged access rights",
+      "ISO 27001 A 8.3 - Information access restriction",
+      "ISO 27001 A 8.5 - Secure authentication",
+      "ISO 27001 A 8.7 - Cryptographic controls"
+    ],
+    "cross_references": [
+      "Identity Management (A 5.16) - manages identities that require authentication information",
+      "Access Control (A 5.15) - uses authentication information to enforce access decisions",
+      "Access Rights (A 5.18) - assigns rights to authenticated identities",
+      "Secure Authentication (A 8.5) - implements authentication mechanisms"
+    ]
+  },
+  "best_practices": {
+    "allocation_best_practices": [
+      "Automate temporary credential generation - ensure uniqueness",
+      "Verify identity appropriately before allocation",
+      "Use secure delivery methods - never email or clear text",
+      "Obtain user acknowledgment of receipt",
+      "Maintain detailed allocation records",
+      "Document business justification for each allocation"
+    ],
+    "password_best_practices": [
+      "Enforce minimum complexity (uppercase, lowercase, numbers, symbols)",
+      "Enforce minimum length (12+ characters recommended)",
+      "Do not force frequent changes unless risk justifies",
+      "Use password manager for unique credentials per system",
+      "Prevent password reuse across accounts",
+      "Educate users on strong password creation",
+      "Support multi-factor authentication"
+    ],
+    "user_responsibility_best_practices": [
+      "Include requirements in employment contracts",
+      "Train on password protection and handling",
+      "Educate on consequences of sharing credentials",
+      "Establish clear reporting process for compromise",
+      "Promote use of password managers",
+      "Regular reminders about authentication policies"
+    ],
+    "incident_response_best_practices": [
+      "Have emergency credential change process",
+      "Change credentials immediately on suspected compromise",
+      "Notify user of forced change and reason",
+      "Reset password to temporary, force change on next login",
+      "Investigate how compromise occurred",
+      "Check for unauthorized access during compromise window"
+    ],
+    "system_configuration_best_practices": [
+      "Implement all password manager capabilities listed",
+      "Enforce strong passwords at creation",
+      "Enforce temporary password change at first login",
+      "Prevent common and compromised passwords",
+      "Maintain password history for reuse prevention",
+      "Encrypt all passwords in storage and transmission",
+      "Log significant authentication events",
+      "Enable monitoring for unusual authentication patterns"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "high_risk_areas": [
+      {
+        "area": "Customer Data Access Authentication",
+        "risk": "Weak authentication for customer data systems could allow unauthorized access to payment information and personal data",
+        "control": "Multi-factor authentication for all customer data access, strong enforcement of complex passwords, audit trail of all access"
+      },
+      {
+        "area": "RNG System Authentication",
+        "risk": "Compromised RNG access could allow manipulation of game outcomes",
+        "control": "Enhanced multi-factor authentication, time-limited tokens, biometric authentication for RNG access"
+      },
+      {
+        "area": "Shared Accounts",
+        "risk": "Multiple people using same credentials breaks accountability and access control",
+        "control": "Strictly enforce one user to one authentication information - create separate credentials rather than sharing"
+      },
+      {
+        "area": "Weak Temporary Passwords",
+        "risk": "Reused temporary passwords could be known to multiple users",
+        "control": "Automate unique temporary credential generation for each user"
+      },
+      {
+        "area": "Default Credentials",
+        "risk": "Vendor default credentials publicly available and easily discovered",
+        "control": "Identify all default credentials in use, change immediately, audit regularly"
+      }
+    ],
+    "regulatory_expectations": [
+      "UKGC expects strong authentication for all critical systems",
+      "Multi-factor authentication recommended for high-risk access",
+      "Audit trail of all authentication allocation and use",
+      "Compliance approach should document authentication for each critical system",
+      "Password policies must be documented and enforced",
+      "User training and contracts must emphasize authentication responsibilities"
+    ]
+  },
+  "frequently_asked_questions": {
+    "policies_required": {
+      "question": "What policies do I need for ISO 27001 Annex A 5.17 Authentication Information?",
+      "answer": "You will need the ISO 27001 Access Control Policy Template plus authentication-specific policies covering password requirements, allocation procedures, user responsibilities, and incident response"
+    },
+    "importance": {
+      "question": "Why is ISO 27001 Authentication Information important?",
+      "answer": "Authentication information is the primary mechanism for proving identity and controlling access to systems and resources. Without proper authentication information management, access control fails and accountability is lost. It is fundamental to protecting all information assets"
+    },
+    "certification_requirement": {
+      "question": "Do I have to satisfy ISO 27001 Annex A 5.17 for ISO 27001 Certification?",
+      "answer": "Yes. While Annex A clauses are for consideration in Statement of Applicability, there is no valid reason to exclude authentication information. It is fundamental to any information security control framework and is explicitly required for ISO 27001 certification"
+    },
+    "write_policies_yourself": {
+      "question": "Can I write policies for ISO 27001 Annex A 5.17 myself?",
+      "answer": "Yes, you can write policies yourself. You will need a copy of the standard and approximately 5 days of focused time. It would be advantageous to have background in information security management systems. Multiple supporting documents are required in addition to the policy"
+    },
+    "templates_availability": {
+      "question": "Where can I get templates for ISO 27001 Annex A 5.17?",
+      "answer": "ISO 27001 templates supporting authentication information are available in ISO 27001 Toolkits"
+    },
+    "implementation_difficulty": {
+      "question": "How hard is ISO 27001 Annex A 5.17?",
+      "answer": "ISO 27001 Authentication Information is challenging due to extensive documentation requirements and system configuration needs. Templates are recommended to fast-track implementation"
+    },
+    "implementation_timeline": {
+      "question": "How long will ISO 27001 Annex A 5.17 take me?",
+      "answer": "From scratch with full implementation: 1 to 3 months. With proper templates, toolkit, and risk management approach: less than 1 day"
+    },
+    "implementation_cost": {
+      "question": "What will ISO 27001 Annex A 5.17 cost me?",
+      "answer": "If done yourself: free but 1-3 months of resource time (opportunity cost). With toolkit and templates: minimal cost but significant time savings and better quality"
+    }
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.17",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.17-authentication-information.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

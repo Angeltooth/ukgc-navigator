@@ -1,0 +1,102 @@
+ISO 27001 Authentication Information
+
+ISO 27001 Annex A 5.17 Authentication Information is an ISO 27001 control that requires an organisation to mange the full life cycle of authentication information.
+Authentication information is the information that is used to gain access to systems and resources.
+ISO 27001 Annex A 5.17 wants this to be managed. Which seems sensible.
+Purpose
+
+The purpose of ISO 27001 Annex A 5.17 is a preventive control that ensures proper entity authentication and prevents failures of authentication processes.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 5.17 as:
+Allocation and management of authentication information should be controlled by a management process, including advising personnel on the appropriate handling of authentication information.
+Allocating the authentication information
+
+When it comes to creating the passwords and pins that will be used you may want to consider generating them automatically. This can make the process more efficient. To consider is
+Creating temporary authentication information for first time use
+Making sure the temporary authentication is hard to guess and unique for each person
+That it must be changed on first use.
+We do not want to give access to any old Tom, Dick or Harry so you will have a way to check and verify the identity of any person making the request and any person being given new, updated or replacement credentials. They may, or may not, be the same person.
+When we send authentication information to people we are going to do it in a secure way. We are not going to email it or send it in clear text where possible.
+The standard wants a step where the user acknowledges that they have received this information.
+We keep a record of what we have allocated and what we have managed and we protect that record.
+Lastly if a vendor or supplier provides for default passwords, pins and authentication information we change that immediately.
+What is the user responsible for?
+
+Users do have some responsibility. They are not to share their passwords or secret authentication information.
+If there is a compromise or a leak then the information and credentials are change immediately that you are notified.
+Strong passwords, where passwords are used are implemented. This means passwords should not be easy to guess, or be based on something someone could guess or find out. The example is not to use dictionary words or combinations of. This is actually bullshit as the use of dictionary words to make up a phrase would be an ideal password but the standard thinks it knows better.
+Passwords have a minimum length according to the standard which is pure genius as any word has a minimum length. It gives no guidance so choose wisely.
+Ideally we do not reuse password across different systems.
+Contracts of employment include the obligation to follow these rules.
+Guidance on a password management system
+
+General guidance on password management systems, which ever you choose, would be
+Users are allowed to select and change their own passwords
+They enforce strong passwords according to best practice
+They force users to change passwords at first use
+They force password changes as required such as after a security incident
+Ideally they prevent re-use of previous passwords
+They prevent the use of common passwords
+Where possible they take account of compromised accounts and passwords and prevent their use
+They do not display passwords on the screen when being entered
+They do not store or send passwords in clear text
+Passwords should be encrypted
+Exceptions
+
+There are many ways in which the standard is still old fashioned and a little out of date. You see this come up a lot where it tells you what to do and then says, but in the real world we know you cannot, so do not.
+Some exceptions would be that clearly, other ways to authenticate other than passwords are acceptable. Consider tokens, card, biometrics.
+Contrary to the standard there is an argument to not frequently change passwords. It does acknowledge this as a scenario which is good. It is about finding the balance for you based on risk and business need and being able to argue that with an auditor.
+How to comply
+
+To comply with ISO 27001 Annex A 5.17 you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to
+Implement a process for creating, updating and removing authentication information
+How to pass an audit
+
+To pass an audit of ISO 27001 Annex A 5.17 you are going to make sure that you have followed the steps above in how to comply.
+What the auditor will check
+
+The audit is going to check a number of areas. Lets go through the most common
+1. That you have not done something stupid
+
+The auditor is going to check the rules, procedures and access control methodology and make sure you followed them. As with everything having documented evidence of anything you can is going to be your friend. So practical things like authentication information registers, encrypted passwords, approval and allocation processes that you can evidence are in operation. Work through recent hires for example and ensure the processes were followed and look for the gotchas. Is there an approval audit trail. When you log into the system that was approved does the users access match what was requested.
+2. That you have rules, processes and you have followed them and have trained people
+
+This is obvious but they are going to look that you have documented what you say you do, that you follow it and that you have trained people.
+3. Documentation
+
+They are going to look at audit trails and all your documentation and see that is classified and labelled. All the documents that you show them, as a minimum if they are confidential should be labelled as such. Is the document up to date. Has it been reviewed in the last 12 months. Does the version control match. Doing anything else would be a massive own goal.
+Top 3 Mistakes People Make
+
+The top 3 Mistakes People Make For ISO 27001 Annex A 5.17 are
+1. Share authentication information
+
+There are circumstances where people know share authentication information and they do not need to. This is usually just lazy admin. The sharing of accounts where it doesn’t and should be needed.
+2. Your temporary passwords are always the same
+
+Giving first time passwords and making them unique may be a little tricky so often people rely on one password they always send out. Something like P@assw@rd. Do not do this.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.
+FAQ
+
+What policies do I need for ISO 27001 Annex A 5.17 Authentication Information?
+For ISO 27001 Annex A 5.17 Authentication Information you will need the ISO 27001 Access Control Policy Template
+Why is ISO 27001 Authentication Information Important?
+ISO 27001 Annex A 5.17 Authentication Information is important because you are trying to protect things and a primary way to protect them is to restrict access. To grant access you need something to have the access. This is the identity / account. To ensure that only it has the access you want it to authenticate. This is the authentication information.
+Are there free templates for ISO 27001 Annex A 5.17?
+There are templates that support ISO 27001 Annex A 5.17 located in the ISO 27001 Toolkit.
+Do I have to satisfy ISO 27001 Annex A 5.17 for ISO 27001 Certification?
+Yes. Whilst the ISO 27001 Annex A clauses are for consideration to be included in your Statement of Applicability there is no reason we can think of that would allow you to exclude ISO 27001 Annex A 5.17. Authentication Information is a fundamental part of your control framework and any management system. It is explicitly required for ISO 27001.
+Can I write polices for ISO 27001 Annex A 5.17 myself?
+Yes. You can write the policies for ISO 27001 Annex A 5.17 yourself. You will need a copy of the standard and approximately 5 days of time to do it. It would be advantageous to have a background in information security management systems. There are a number of documents you will require as well as the policy for identity management.
+Where can I get templates for ISO 27001 Annex A 5.17?
+ISO 27001 templates that support ISO 27001 Annex A 5.17 are located in the ISO 27001 Toolkit.
+How hard is ISO 27001 Annex A 5.17?
+ISO 27001 Annex A 5.17 is hard. The documentation required is extensive. We would recommend templates to fast track your implementation.
+How long will ISO 27001 Annex A 5.17 take me?
+ISO 27001 Annex A 5.17 will take approximately 1 to 3 month to complete if you are starting from nothing and doing a full implementation. With the right risk management approach and an ISO 27001 Toolkit it should take you less than 1 day.
+How much will ISO 27001 Annex A 5.17 cost me?
+The cost of ISO 27001 Annex A 5.17 will depend how you go about it. If you do it yourself it will be free but will take you about 1 to 3 months so the cost is lost opportunity cost as you tie up resource doing something that can easily be downloaded and managed via risk management.
+What are the identity management principles?
+The principles on identity management is one user to one identity where possible. You should avoid multiple users using the same account.

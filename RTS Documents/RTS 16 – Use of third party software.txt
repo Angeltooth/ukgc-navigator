@@ -1,0 +1,35 @@
+RTS 16 – Use of third party software
+Applies to:
+Peer-to-peer gambling
+RTS aim 16
+To make customers in peer-to-peer gambling aware that they may be gambling against a software
+program (designed to automatically participate in gambling within certain parameters, sometimes
+referred to as a bot), or a human aided by third party software.
+RTS requirement 16A
+Where peer-to-peer customers may be gambling against programs deployed by other customers to
+play on their behalf, or customers assisted by third party software, information should be made
+available that describes that this is possible, and if it is against the operator’s terms and conditions,
+how to report suspected use.
+RTS implementation guidance 16A
+a. The warning and information about how to complain should be included in game descriptions,
+rules, terms and conditions, ‘help’, ‘how to play’ or other general product information pages.
+b. The warning should also inform customers that if they use a program to gamble on their behalf,
+other customers may be able to exploit it.
+RTS requirement 16B
+Operators must make it clear to players whether the use of third party software is permitted and if so
+which types. Operators that prohibit certain types of third party software must implement measures
+intended to deter, prevent, and detect their use.
+RTS implementation guidance 16B
+Clear, accessible information about the types of software that are permitted or prohibited should be
+included within terms and conditions and the players guide3 , as a minimum. This does not have to
+be an extensive list but could be a description of the key features of the software.
+RTS requirement 16C
+Where operators use programs to participate in gambling on their behalf in peer-to-peer gambling,
+easily accessible information must be displayed, which clearly informs customers that the operator
+uses this kind of software.
+RTS implementation guidance 16C
+a. Peer-to-peer gambling operators that use software to gamble on their behalf (for example,
+poker robots) should display a notice to customers on the home pages or screens and in the
+game description, ‘help’ or ‘how to play/bet’ pages or screens.
+b. As a minimum, restricted display devices should provide a link to further information on
+gambling pages/screens or in ‘help’, ‘about’ or ‘how to bet/play’ pages or screens.

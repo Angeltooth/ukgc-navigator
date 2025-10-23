@@ -1,0 +1,111 @@
+Remote working is a work arrangement where employees perform their duties from a location other than a traditional office. This could be their home, a coffee shop, a co-working space, or any other location with a suitable internet connection. In ISO 27001 this is known as ISO27001:2022 Annex A 6.7 Remote Working. It is one of the 93 ISO 27001 Annex A controls. 
+The requirement is for security measures to be implemented when personnel are working remotely to protect information when it is outside the organisation’s premises.
+Key Takeaways
+
+If you work fully remotely then many of the ISO 27001 physical security controls do not apply to you
+Remote working security can be addressed with technical controls
+People need to be educated on working remotely
+Benefits of implementing Remote Working
+
+The main benefit is that it allows you to mitigate the risk of remote working. Remote working poses unique challenges as you do not control the physical environment so the risks need to be assessed and appropriate controls implemented. The benefits of implementing ISO 27001 Remote Working include:
+Reduced risk of data breach due to remote working
+Improved compliance and meet the needs of laws and regulations that require remote working controls to be place
+Protection of confidential information
+Building trust with employees and third parties
+Reputation Protection because in the event of a breach having effective remote working controls in place will reduce the potential for fines and reduce the PR impact of an event.
+How to implement ISO 27001 Remote Working
+
+You are going to have to:
+implement a topic specific policy for remote working
+ensure that the information security for workers that are operating remotely is in place
+show that what you implement complies with local laws
+demonstrate that what you implement complies with local regulations
+ensure that it meets the needs of the organisation
+show that it addresses the organisational risks
+This is whenever people work from a location outside of your organisations premises. This includes the old fashioned terms of teleworking and telecommuting as well as flexible workplace, fully remote, virtual work environment. They all relate, in essence, to the same thing. You will check local laws and regulations as not all recommendations and guidance can be applied every where. It is after all, general guidance.
+ISO 27001 Remote Working Policy
+
+You will need to implement a topic specific policy for remote working.
+Information security implications of remote working
+
+The security risks associated with remote working include:
+Data breaches
+Cyberattacks
+Fraud
+Employee productivity loss
+Employee burnout
+Mitigating the security risks associated with remote working
+
+Organisations can mitigate the security risks associated with remote working by taking a number of steps, including:
+Implementing a remote working policy
+Implementing a remote working procedure
+Providing secure devices and applications to remote workers
+Ensuring that remote workers use strong passwords and authentication methods
+Educating remote workers about information security risks
+Monitoring and auditing remote working activities
+Physical security
+
+There are physical security considerations for remote working that include rules and associated mechanisms: such as lockable storage, filing cabinets, shredders, printers, transportation of physical media, clear desk, and disposal of media.
+Consider the person and what they are doing, doing a mini risk assessment to understand the risks they are posed and then work to implement controls to mitigate those risks.
+Good examples include remote printing. Not everyone will need to remote print but for those that do you can consider providing a company printer as well as a shredder.
+Will the person have access to printed information, or letters and correspondence such as bank statements or contracts. Perhaps they will have to keep physical media. In this scenario we would consider providing lockable storage.
+It may be the case, but not always, that people will have a home office. We can think about if having a lock is advisable based on what they do and access.
+Be sensible and be practical.
+Communication security
+
+Based on the need for remote access to organisation systems and the classification of information to be processed, stored and / or transmitted you will consider the communications security requirements. This will be driven by and in conjunction with your IT and technical teams.
+Remote access technology
+
+Consider how the remote access will be implemented such as the use of VPN or virtual desktops. How the protection technology will be implemented such as firewalls and protection against malware. How deploying and initialising, managing and patching of devices will be performed. Technology requirements can be satisfied by engaging with your IT teams.
+Unique unauthorised access
+
+Unique to remote working is the threat posed by unauthorised access by friends and family members or from people / persons in public places. There may or may not be measures you need to put in place for this. People consider things like privacy screens or providing guidance on how best to position yourself and work in a public space. Guidance on taking and making calls can be provided that include not having confidential conversations in public places where people can be easily overheard. We have all been on a train when someone reads out their bank details or slags off a colleague on the phone. Don’t be that person.
+Training
+
+You will provide training on the ISO 27001 remote working policy and procedures. This will include guidance on how to work securely in a remote environment.
+Backup and business continuity
+
+Your backup and business continuity plans and processes will take into account remote working and the associated challenges. Consider things like mobile devices and if you do in fact back them up, or not.
+Insurance
+
+Often overlooked, you will ensure that you have appropriate insurance arrangements in place to cover remote working and the risks that it poses.
+Audit and security monitoring
+
+As part of your internal audit programme you will be performing remote audits for remote workers to check that they are operating in line with policy and process. This usually involves a remote interview over camera to view the working practices.
+How to pass the audit
+
+To comply with ISO 27001 Annex A 6.7 Remote Working you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to:
+Write, sign off, implement and communicate your topic specific policy on remote working
+Write, sign off, implement and communicate your remote working procedures
+Consider the risks of physical security and provide assets that can mitigate the risk such as screen protectors, lockable cupboards, home shredders
+Implement communications technology that allows people to connect, use and communicate in the work environment
+Provide on going training and awareness of the risks and mitigations associated with remote working
+Consider the level to which remote working backup will or will not be implemented
+Ensure that appropriate insurance is in place
+Ensure that work environments meet all health and safety laws as well as local laws and regulations
+Implement a process of internal audit that checks that the appropriate controls are in place and effective and where they are not follow the continual improvement process to address the risks
+To pass an audit of ISO 27001 Annex A 6.7 you are going to make sure that you have followed the steps above in how to comply.
+What the auditor will check
+
+The audit is going to check a number of areas for compliance with ISO 27001 Annex A 6.7. Lets go through them
+1. That you have conducted audits of remote working
+
+Remote working provides a unique challenge as it allows working in uncontrolled environments. As part of your risk assessment you will have selected the controls that you need based on risk. As part of your governance you will audit those controls based on the risk and at least annually to ensure that they are effective and operating as intended. You will keep records or audit as well as audit report and evidence that the audit reports were communicated to the right people. Where controls were seen to be in effective you will have evidence of continual improvement and risk management to show how you manage the nonconformity.
+2. That you have appropriate technical controls in place
+
+Due to the risks associated with remote working you will have evidenced that you have considered and chosen appropriate technologies to mitigate the risks. The audit will check the controls, that they appropriate, proportionate and in control. Evidence of reports, monitors and measures will be examined.
+3. That people are aware of their responsibilities
+
+The audit is going to check for documented processes, documented topic specific policy and these have been communicated and people have been trained on what is required of them.
+Top 3 Mistakes People Make
+
+In my experience, the top 3 mistakes people make for ISO 27001 Annex A 6.7 Remote Working are
+1. You have no evidence that anything actually happened
+
+You need to keep records and minutes of everything. You need a paper trail to show it was done. Make sure you have updated communication plans and training plans on remote working. For the controls that you have implemented be able to sure the management monitors, reports and metrics. If it isn’t written down it didn’t happen.
+2. One or more members of your team haven’t done what they should have done
+
+Prior to the audit check that all members of the team have done what they should have. Do they know where the process documents are in relation to remote working? Do a pre audit as close to the audit as you can that checks the remote workers that will be involved. Assuming they are doing the right thing is a recipe for disaster. Check!
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

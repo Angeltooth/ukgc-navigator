@@ -1,0 +1,802 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.35",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.35",
+    "control_number": "A 5.35",
+    "control_title": "Independent Review of Information Security",
+    "control_type": "Detective and Evaluative control",
+    "control_purpose": "To ensure that the organization's approach to managing information security remains suitable, adequate, and effective",
+    "control_objective": "Review the organization's approach to managing information security and its implementation independently at planned intervals to identify improvement opportunities and verify effectiveness"
+  },
+  "iso_27001_definition": {
+    "official_text": "The organisation's approach to managing information security and its implementation including people, processes and technologies should be reviewed independently at planned intervals, or when significant changes occur.",
+    "key_requirements": [
+      "Information security management approach reviewed independently",
+      "Implementation reviewed (people, processes, technologies)",
+      "Reviews conducted at planned intervals",
+      "Reviews conducted when significant changes occur",
+      "Reviewer independence maintained",
+      "Findings documented and reported",
+      "Corrective actions implemented based on findings"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Evaluative control ensuring information security management systems remain effective, suitable, and adequate",
+    "scope": [
+      "Information security policies and procedures",
+      "Implementation of controls (people, processes, technologies)",
+      "Effectiveness of security measures",
+      "Alignment with business objectives",
+      "Compliance with regulatory requirements"
+    ],
+    "independence_requirement": "Reviews must be conducted by personnel independent of the area being reviewed to ensure impartial assessment"
+  },
+  "prerequisites": {
+    "description": "Before conducting independent reviews, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Information Security Management System",
+        "description": "Documented ISMS with policies, procedures, and controls",
+        "rationale": "Cannot review what doesn't exist or isn't documented",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      },
+      {
+        "prerequisite": "Documented Controls",
+        "description": "All implemented controls documented and in operation",
+        "rationale": "Reviews assess implementation and effectiveness",
+        "reference": "ISO 27001 Annex A - All controls"
+      },
+      {
+        "prerequisite": "Corrective Action Process",
+        "description": "Process to implement corrective actions from review findings",
+        "rationale": "Review findings must be acted upon to drive improvement",
+        "reference": "ISO 27001 Clause 10.2 - Corrective Action"
+      },
+      {
+        "prerequisite": "Management Review Process",
+        "description": "Mechanism for reporting review findings to management",
+        "rationale": "Findings must reach appropriate decision-makers",
+        "reference": "ISO 27001 Clause 9.3 - Management Review"
+      }
+    ]
+  },
+  "independent_review_overview": {
+    "definition": "Systematic examination of information security management approach and implementation by personnel independent of operational responsibilities",
+    "scope": {
+      "management_approach": [
+        "Information security policies",
+        "Security governance structure",
+        "Risk management approach",
+        "Roles and responsibilities",
+        "Resource allocation"
+      ],
+      "implementation": [
+        "Technical controls (technologies)",
+        "Process controls (procedures and workflows)",
+        "People controls (training, awareness, competence)",
+        "Operational effectiveness",
+        "Control alignment with policy"
+      ]
+    },
+    "independence_definition": "Reviewer has no direct authority over or responsibility for the area being reviewed and brings objective perspective"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.35_REQ_1",
+      "requirement": "Establish Independent Review Policy and Process",
+      "description": "Create documented policy and process for conducting independent reviews",
+      "details": {
+        "policy_elements": [
+          "Objective: ensure suitability, adequacy, and effectiveness of ISMS",
+          "Scope: what will be reviewed (full ISMS or specific areas)",
+          "Frequency: planned intervals (typically annual minimum)",
+          "Reviewer requirements: independence, competence",
+          "Process for conducting reviews",
+          "Documentation and reporting requirements",
+          "Process for implementing findings"
+        ],
+        "reference": "ISO 27001 Clause 9.2 - Internal audit guidance applies"
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_2",
+      "requirement": "Plan Periodic Independent Reviews",
+      "description": "Develop review plan covering all critical information security areas",
+      "details": {
+        "planning_elements": [
+          "At least one comprehensive review annually covering full ISMS",
+          "Can include mix of internal and external reviews",
+          "Planned intervals documented",
+          "Schedule communicated to organization",
+          "Resources allocated for reviews"
+        ],
+        "scope_planning": [
+          "All Annex A controls or subset based on risk",
+          "Policy compliance",
+          "Implementation effectiveness",
+          "Personnel competence",
+          "Technology and systems functioning",
+          "Process adherence"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_3",
+      "requirement": "Ensure Reviewer Independence",
+      "description": "Select reviewers who are independent of areas being reviewed",
+      "details": {
+        "independence_criteria": [
+          "No direct authority over the area being reviewed",
+          "No responsibility for policies/procedures being reviewed",
+          "No conflict of interest in review findings",
+          "Brings objective perspective to assessment"
+        ],
+        "reviewer_qualifications": [
+          "Competence in information security",
+          "Understanding of ISO 27001 requirements",
+          "Knowledge of organization's operations",
+          "Audit or review experience preferred",
+          "Training on review methodology"
+        ],
+        "reviewer_sources": [
+          "Internal personnel from other departments",
+          "External auditors or consultants",
+          "Combination of internal and external reviewers",
+          "Qualified professionals with no operational responsibility"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_4",
+      "requirement": "Conduct Comprehensive Review",
+      "description": "Execute independent review examining information security management approach and implementation",
+      "details": {
+        "review_areas": [
+          "Information security policies - current, relevant, adequate",
+          "Information security governance - roles, responsibilities, accountability",
+          "Risk assessment and treatment - process effectiveness",
+          "Information security controls - implemented, effective, maintained",
+          "Personnel competence and awareness",
+          "Technical infrastructure and systems",
+          "Process adherence and compliance",
+          "Third-party and supplier management",
+          "Incident management and response",
+          "Change management for security"
+        ],
+        "review_methods": [
+          "Document review and analysis",
+          "Interviews with key personnel",
+          "Observation of processes",
+          "Testing of controls",
+          "System and technology assessment",
+          "Compliance verification"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_5",
+      "requirement": "Assess Suitability, Adequacy, and Effectiveness",
+      "description": "Evaluate information security approach against organizational needs and requirements",
+      "details": {
+        "suitability": {
+          "definition": "Controls appropriate for organization's business context and risk profile",
+          "assessment": [
+            "Controls aligned with business objectives",
+            "Coverage appropriate for identified risks",
+            "Approach matches organization size and complexity",
+            "Resources allocated appropriately"
+          ]
+        },
+        "adequacy": {
+          "definition": "Sufficient controls in place to manage identified information security risks",
+          "assessment": [
+            "All significant risks addressed",
+            "Control objectives clearly defined",
+            "Policies cover all required areas",
+            "Gaps identified and documented"
+          ]
+        },
+        "effectiveness": {
+          "definition": "Controls operating as designed to achieve objectives",
+          "assessment": [
+            "Controls implemented and operating",
+            "Objectives being achieved",
+            "Monitoring data shows effectiveness",
+            "Personnel following procedures",
+            "Incidents within acceptable levels"
+          ]
+        }
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_6",
+      "requirement": "Identify Improvement Opportunities",
+      "description": "Determine areas for enhancement based on review findings",
+      "details": {
+        "improvement_sources": [
+          "Controls not operating as designed",
+          "Gaps in coverage",
+          "Emerging threats not addressed",
+          "New technologies or processes",
+          "Changes in regulatory environment",
+          "Industry best practices",
+          "Incident trends or patterns",
+          "Personnel feedback and suggestions"
+        ],
+        "improvement_prioritization": [
+          "Critical - must address immediately",
+          "High - should address within months",
+          "Medium - address within year",
+          "Low - consider for future implementation"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_7",
+      "requirement": "Document Review Findings",
+      "description": "Create comprehensive report documenting review results",
+      "details": {
+        "report_contents": [
+          "Review scope and objectives",
+          "Review period and dates",
+          "Reviewers and their qualifications",
+          "Methodology used",
+          "Areas examined",
+          "Findings: strengths and weaknesses",
+          "Controls operating as designed",
+          "Controls requiring improvement",
+          "Gaps identified",
+          "Recommendations for action",
+          "Priority assessment for recommendations",
+          "Conclusions about suitability, adequacy, effectiveness",
+          "Date and reviewer signatures"
+        ],
+        "documentation_level": "Detailed enough to support corrective action process"
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_8",
+      "requirement": "Report to Management",
+      "description": "Communicate review findings to appropriate management level",
+      "details": {
+        "reporting_recipients": [
+          "Information security management",
+          "Senior management",
+          "Executive/top management as appropriate",
+          "Board or governing body if necessary"
+        ],
+        "reporting_mechanism": [
+          "Management Review meeting",
+          "Formal report presentation",
+          "Executive summary with detailed findings",
+          "Scheduled board or committee meeting"
+        ],
+        "reporting_frequency": [
+          "Formal report following each review",
+          "Summary at management review meetings",
+          "Updates on corrective action implementation"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_9",
+      "requirement": "Implement Corrective Actions",
+      "description": "Act on review findings to address identified gaps and improvements",
+      "details": {
+        "corrective_action_process": [
+          "Root cause analysis for each finding",
+          "Corrective action plan developed",
+          "Responsibility assigned",
+          "Timeline established",
+          "Resources allocated",
+          "Progress monitored",
+          "Effectiveness verified",
+          "Changes documented"
+        ],
+        "action_tracking": [
+          "Incident and corrective action log",
+          "Risk register (if risk identified)",
+          "Change management system",
+          "Management review follow-up"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.35_REQ_10",
+      "requirement": "Conduct Reviews When Significant Changes Occur",
+      "description": "Perform additional independent reviews triggered by major organizational or security changes",
+      "details": {
+        "trigger_events": [
+          "Significant change in business operations",
+          "New business ventures or markets",
+          "Entry into new jurisdictions",
+          "Changes in regulatory environment or laws",
+          "Major security incidents",
+          "Significant changes to security controls",
+          "Significant organizational restructuring",
+          "Major technology changes or implementations",
+          "Merger, acquisition, or divestiture",
+          "Changes in threat landscape"
+        ],
+        "response": [
+          "Assess need for independent review",
+          "Conduct focused review on affected areas",
+          "Update risk assessments",
+          "Adjust controls as needed",
+          "Report findings to management"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Develop Independent Review Policy",
+        "detail": "Document policy covering scope, frequency, reviewer requirements, and process"
+      },
+      {
+        "step": 2,
+        "action": "Create Review Procedure",
+        "detail": "Develop detailed procedure for conducting reviews based on ISO 27001 Clause 9.2 and ISO/IEC 27007/27008 guidance"
+      },
+      {
+        "step": 3,
+        "action": "Develop Review Plan",
+        "detail": "Create annual review plan covering full ISMS at minimum"
+      },
+      {
+        "step": 4,
+        "action": "Identify Reviewers",
+        "detail": "Select qualified, independent personnel to conduct reviews (internal or external)"
+      },
+      {
+        "step": 5,
+        "action": "Train Reviewers",
+        "detail": "Provide training on review methodology, ISO 27001 requirements, and organizational ISMS"
+      },
+      {
+        "step": 6,
+        "action": "Conduct First Review",
+        "detail": "Execute comprehensive independent review of information security management system"
+      },
+      {
+        "step": 7,
+        "action": "Document Findings",
+        "detail": "Create detailed report of review findings, strengths, weaknesses, and recommendations"
+      },
+      {
+        "step": 8,
+        "action": "Report to Management",
+        "detail": "Present findings to management and document decisions"
+      },
+      {
+        "step": 9,
+        "action": "Implement Corrective Actions",
+        "detail": "Address findings through corrective action process"
+      },
+      {
+        "step": 10,
+        "action": "Schedule Ongoing Reviews",
+        "detail": "Plan periodic reviews at least annually with trigger-based additional reviews"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.35",
+    "checklist": [
+      {
+        "item": "Develop independent review policy and process",
+        "status": "required"
+      },
+      {
+        "item": "Create independent review procedure",
+        "status": "required"
+      },
+      {
+        "item": "Develop annual review plan",
+        "status": "required"
+      },
+      {
+        "item": "Identify independent reviewers",
+        "status": "required"
+      },
+      {
+        "item": "Train reviewers on process and requirements",
+        "status": "required"
+      },
+      {
+        "item": "Conduct comprehensive independent review",
+        "status": "required"
+      },
+      {
+        "item": "Document review findings in report",
+        "status": "required"
+      },
+      {
+        "item": "Report findings to management",
+        "status": "required"
+      },
+      {
+        "item": "Implement corrective actions",
+        "status": "required"
+      },
+      {
+        "item": "Schedule and conduct ongoing reviews",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with independent reviews",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Reviews not actually independent",
+        "description": "Internal personnel conducting self-assessments rather than true independent reviews",
+        "root_cause": [
+          "Cost savings by avoiding external auditors",
+          "Misunderstanding of independence requirement",
+          "Using security manager to review own work",
+          "Insufficient personnel to assign reviewers",
+          "Pressure to get favorable results"
+        ],
+        "impact": "Lack of objective perspective, biases in findings, missed issues, no real value from review",
+        "prevention": "Use truly independent reviewers - external auditors, qualified consultants, or personnel from unrelated departments",
+        "requirement": "Reviewer must have no authority over or responsibility for area being reviewed"
+      },
+      {
+        "rank": 2,
+        "mistake": "Reviews conducted but findings not acted upon",
+        "description": "Review completed but recommendations not implemented or tracked",
+        "root_cause": [
+          "No formal process to act on findings",
+          "No accountability for corrective actions",
+          "Cost or resource constraints",
+          "Disagreement with findings",
+          "Review findings not elevated to decision-makers"
+        ],
+        "impact": "Review provides no improvement, repeat findings in next review, wasted effort, no value demonstration",
+        "prevention": [
+          "Formal corrective action process",
+          "Report findings to senior management",
+          "Track actions and outcomes",
+          "Periodic follow-up verification",
+          "Document decisions and rationale"
+        ],
+        "best_practice": "Include follow-up on previous corrective actions in next review"
+      },
+      {
+        "rank": 3,
+        "mistake": "Reviews not conducted at all or infrequently",
+        "description": "No regular independent reviews or reviews conducted inconsistently",
+        "root_cause": [
+          "No formal plan or schedule",
+          "Resource constraints",
+          "Misunderstanding of requirement",
+          "Low priority in organization",
+          "Fear of findings"
+        ],
+        "impact": "Cannot demonstrate effectiveness, missed opportunities for improvement, control decay over time, audit findings",
+        "prevention": [
+          "Schedule at least annual comprehensive review",
+          "Budget resources for reviews",
+          "Add to annual planning cycle",
+          "Automate scheduling and reminders",
+          "Use both internal and external resources"
+        ],
+        "requirement": "At minimum annual comprehensive review required"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.35 audit",
+    "audit_areas": [
+      {
+        "area": "1. Review Policy and Procedure Documentation",
+        "description": "Verify documented policy and procedure for independent reviews",
+        "checks": [
+          "Policy document exists and is current",
+          "Policy defines scope and objectives",
+          "Policy specifies review frequency",
+          "Procedure describes review methodology",
+          "Reviewer independence requirements documented",
+          "Roles and responsibilities clearly defined",
+          "Policy addresses all required elements from ISO 27001 Clause 9.2"
+        ],
+        "best_practice": "Policy clearly explains independence requirement and methodology"
+      },
+      {
+        "area": "2. Evidence of Planned Reviews",
+        "description": "Verify reviews are planned and scheduled",
+        "checks": [
+          "Annual review plan documented",
+          "Plan identifies scope of each review",
+          "Plan identifies reviewers",
+          "Timeframes specified",
+          "Resources allocated",
+          "Previous reviews conducted on schedule"
+        ],
+        "biggest_gotcha": "No documented plan - reviews may be missed or inconsistent"
+      },
+      {
+        "area": "3. Reviewer Independence Verification",
+        "description": "Verify reviewers are truly independent of reviewed areas",
+        "checks": [
+          "Reviewers identified and documented",
+          "Reviewers have no authority over reviewed area",
+          "Reviewers have no responsibility for reviewed policies/controls",
+          "No obvious conflicts of interest",
+          "Reviewers qualified and competent",
+          "External auditors used or internal staff from different departments",
+          "Documentation of independence assessment"
+        ],
+        "warning": "Reviewer bias invalidates entire review - must be truly independent"
+      },
+      {
+        "area": "4. Review Execution and Findings",
+        "description": "Verify reviews are actually conducted and findings documented",
+        "checks": [
+          "Review reports exist",
+          "Reports dated and reference review period",
+          "Reports identify reviewers",
+          "Reports document scope of review",
+          "Reports describe methodology used",
+          "Findings documented (strengths and weaknesses)",
+          "Assessment of suitability, adequacy, effectiveness",
+          "Recommendations for improvement identified",
+          "Priority levels assigned to recommendations"
+        ]
+      },
+      {
+        "area": "5. Management Reporting",
+        "description": "Verify review findings reported to appropriate management",
+        "checks": [
+          "Review findings communicated to management",
+          "Reports presented to senior/top management",
+          "Management review meeting minutes include review discussion",
+          "Findings documented in management review records",
+          "Management responses or decisions documented"
+        ],
+        "best_practice": "Formal presentation to executive or board level"
+      },
+      {
+        "area": "6. Corrective Action Implementation",
+        "description": "Verify findings acted upon through corrective action process",
+        "checks": [
+          "Corrective action log updated with review findings",
+          "Corrective actions planned for identified issues",
+          "Responsibility assigned for each action",
+          "Timelines established",
+          "Progress tracked",
+          "Effectiveness verification conducted",
+          "Changes implemented and documented"
+        ]
+      },
+      {
+        "area": "7. Trigger-Based Reviews",
+        "description": "Verify additional reviews conducted when significant changes occur",
+        "checks": [
+          "Process defined for identifying trigger events",
+          "Documentation of significant changes",
+          "Assessment of need for additional reviews",
+          "Evidence of reviews conducted for major changes",
+          "Updates to policies/controls from reviews documented"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Independent reviews are essential for verifying that gambling operator security controls remain effective and aligned with regulatory requirements",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Integrity Systems",
+        "review_requirements": [
+          "Independent verification of RNG controls effectiveness",
+          "Assessment of game outcome integrity controls",
+          "Review of tamper-evident controls",
+          "Verification of audit logging",
+          "Assessment of segregation of duties"
+        ]
+      },
+      {
+        "system": "Customer Data Protection",
+        "review_requirements": [
+          "Independent assessment of access controls",
+          "Verification of encryption implementation",
+          "Review of incident response procedures",
+          "Assessment of data retention and disposal",
+          "Verification of customer privacy controls"
+        ]
+      },
+      {
+        "system": "Compliance and Regulatory Controls",
+        "review_requirements": [
+          "Independent verification of AML/KYC procedures",
+          "Assessment of problem gambling controls",
+          "Review of license compliance monitoring",
+          "Verification of responsible gambling controls",
+          "Assessment of regulatory reporting procedures"
+        ]
+      },
+      {
+        "system": "Operational Continuity",
+        "review_requirements": [
+          "Assessment of business continuity procedures",
+          "Review of disaster recovery controls",
+          "Verification of backup and recovery processes",
+          "Assessment of crisis management readiness"
+        ]
+      }
+    ],
+    "compliance_requirement": "UKGC expects operators to conduct independent reviews at least annually demonstrating that information security controls remain suitable, adequate, and effective for protecting customers, ensuring game integrity, and maintaining regulatory compliance"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Ensure information security management approach and implementation remain suitable, adequate, and effective through independent, objective assessment",
+    "enforcement_priority": "Critical - demonstrates continuous improvement and control effectiveness to regulators",
+    "key_principles": [
+      "Reviews must be independent with no reviewer bias",
+      "At least annual comprehensive review required",
+      "Scope includes people, processes, and technologies",
+      "Assessment addresses suitability, adequacy, and effectiveness",
+      "Findings documented and reported to management",
+      "Corrective actions implemented based on findings",
+      "Additional reviews triggered by significant changes",
+      "Reviews feed into continual improvement process",
+      "Provides evidence of effective ISMS to auditors and regulators"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.35 Independent Review of Information Security, implement",
+    "requirements": [
+      {
+        "requirement": "Document independent review policy",
+        "detail": "Policy defining scope, frequency, methodology, and independence requirements"
+      },
+      {
+        "requirement": "Create review procedure",
+        "detail": "Detailed procedure for conducting reviews aligned with ISO 27001 9.2 guidance"
+      },
+      {
+        "requirement": "Develop annual review plan",
+        "detail": "Schedule of planned reviews covering full ISMS"
+      },
+      {
+        "requirement": "Identify independent reviewers",
+        "detail": "External auditors, qualified consultants, or truly independent internal personnel"
+      },
+      {
+        "requirement": "Verify reviewer competence",
+        "detail": "Reviewers qualified in information security and ISO 27001"
+      },
+      {
+        "requirement": "Conduct annual review",
+        "detail": "Execute comprehensive review examining all areas of ISMS"
+      },
+      {
+        "requirement": "Document review findings",
+        "detail": "Formal report with detailed findings, assessment, and recommendations"
+      },
+      {
+        "requirement": "Report to management",
+        "detail": "Present findings to senior/top management with documented decisions"
+      },
+      {
+        "requirement": "Implement corrective actions",
+        "detail": "Act on findings through formal corrective action process"
+      },
+      {
+        "requirement": "Conduct trigger-based reviews",
+        "detail": "Perform additional reviews when significant changes occur"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_standards": [
+      "ISO/IEC 27007 - Guidelines for information security management systems auditing",
+      "ISO/IEC TS 27008 - Guidelines for auditing information security controls"
+    ],
+    "related_iso_controls": [
+      "ISO 27001 Clause 9.2 - Internal audit (provides methodological guidance)",
+      "ISO 27001 Clause 9.3 - Management review (reporting mechanism)",
+      "ISO 27001 Clause 10.1 - Continual improvement (outcome of reviews)",
+      "ISO 27001 Clause 10.2 - Corrective action (response to findings)"
+    ]
+  },
+  "best_practices": {
+    "planning_best_practices": [
+      "Schedule annual comprehensive review covering full ISMS",
+      "Include mix of internal and external reviews",
+      "Plan quarterly or semi-annual focused reviews",
+      "Document review schedule in annual planning",
+      "Allocate resources and budget for reviews"
+    ],
+    "execution_best_practices": [
+      "Use qualified external auditors for full independence",
+      "Provide reviewers with current ISMS documentation",
+      "Conduct interviews with key personnel",
+      "Test control implementation through observation and sampling",
+      "Assess recent incidents and security events",
+      "Review changes implemented since last review"
+    ],
+    "reporting_best_practices": [
+      "Provide executive summary and detailed findings",
+      "Use clear language understandable to management",
+      "Prioritize recommendations by impact and urgency",
+      "Include assessment of suitability, adequacy, effectiveness",
+      "Identify quick wins and long-term improvements",
+      "Present formally to senior management"
+    ],
+    "follow_up_best_practices": [
+      "Establish clear corrective action ownership",
+      "Set specific timelines for remediation",
+      "Track implementation with status updates",
+      "Verify effectiveness of corrective actions",
+      "Report on progress at management reviews",
+      "Include follow-up in next review scope"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "review_focus_areas": [
+      {
+        "area": "RNG and Game Integrity",
+        "focus": "Independent verification that RNG controls ensure game fairness and integrity"
+      },
+      {
+        "area": "Customer Protection",
+        "focus": "Assessment of controls protecting customer data, payments, and privacy"
+      },
+      {
+        "area": "Regulatory Compliance",
+        "focus": "Verification of compliance with UKGC requirements for AML, KYC, responsible gambling"
+      },
+      {
+        "area": "Operational Resilience",
+        "focus": "Assessment of business continuity and incident response capabilities"
+      }
+    ],
+    "regulatory_expectations": [
+      "Annual comprehensive independent review of all information security controls",
+      "External auditors used for full independence and credibility",
+      "Review findings documented and reported to board/senior management",
+      "Corrective actions implemented and tracked",
+      "Review demonstrates suitability of controls for gambling context",
+      "Evidence of ongoing improvement based on review findings"
+    ],
+    "audit_readiness": [
+      "Maintain records of all reviews conducted",
+      "Ensure reviewer independence documented",
+      "Keep review reports and management presentations",
+      "Document corrective action follow-up",
+      "Track improvements implemented based on reviews",
+      "Demonstrate annual review cycle consistency"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.35",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.35-independent-review-of-information-security.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

@@ -1,0 +1,50 @@
+RTS 1 – Customer account information
+Applies to:
+All gambling – except subscription lotteries.
+RTS aim 1
+To provide customers with easily accessible information about their current balances and facilities that
+enable them to review previous gambling and account transactions.
+RTS requirement 1A
+Where customers hold a credit or debit balance, the pages or screens used for gambling and to move
+money into and out of accounts must display the customer’s current account balance, in the currency of
+their account for example dollars, euros or pounds sterling, whenever that customer is logged in. Where it
+is not practical to display current balance from gambling screens then easily accessible links to this
+information must be provided.
+RTS implementation guidance 1A
+a. Gambling pages and screens include virtual game pages, sports betting coupons, poker and other
+virtual gaming ‘tables’.
+b. For telephone betting this information is to be delivered at the customer’s request by the customer
+service agent or automated response system.
+RTS requirement 1B
+Customers must have easy access to at least three months account and gambling history without having
+to contact the licensee. A minimum of 12 months of gambling and account history must be made available
+on request. The ability to request this information should be made clear to customers and be provided as
+soon as is practicable.
+a. The gambling and account history should include:
+i. credit and debit information such as deposits, withdrawals, movement of funds between
+products, payments off credit accounts, entry fee deductions, and bonus information, as
+appropriate
+ii. bets placed, the results of bets, winnings paid
+iii. for gaming (including bingo) full or summarised gaming information should be available, for
+example, £10 taken into game, £100 turned over, £3 taken away from game. Where detailed
+historic game information may not necessarily be directly available to customers, as a
+minimum, customers must have easy access to details of the last game played and
+summarised information for previous activities
+iv. where customers are able to move funds between gambling products, account information and
+statements should clearly display movement of funds into and out of products
+v. an option for customers to use their own defined time period or to select from a range of time
+periods. A summary total for the period selected should be displayed (at least on the first
+screen or page if the transactions span multiple screens).
+b. For telephone betting and restricted display devices, where customers demonstrate that they also
+have access to websites – by registering online or using other online products – it is acceptable to
+provide access to statements via these websites, otherwise customers should be sent a regular copy
+of their statement via email, fax or post unless they elect not to receive this information. Customers
+should be sent a statement on request, even if they have opted out of receiving regular statements.
+RTS requirement 1C
+Customers must be able to access information about their net deposits.
+RTS implementation guidance 1C
+Net deposits are defined as the running total of all deposits minus the sum of all withdrawals for the
+lifetime of the account. This should be displayed at an account level so the figure represents the net
+position of all payment methods. Where full account lifetime history is not possible then, as a minimum, the
+net deposits should be displayed from 1 April 2018, or the account opening date if after 1 April 2018.
+Information which explains the net deposit figure, including the timeframe it covers, should be provided.

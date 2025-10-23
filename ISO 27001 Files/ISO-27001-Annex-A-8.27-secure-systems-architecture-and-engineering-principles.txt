@@ -1,0 +1,61 @@
+ISO 27001 Secure Systems Architecture and Engineering Principles
+
+ISO 27001 Annex A 8.27 Secure Systems Architecture and Engineering Principles is an ISO 27001 control that requires an organisation to design security into all architecture layers in the development lifecycle. You may hear the term – ‘security by design and default’.
+Purpose
+
+ISO 27001 Annex A 8.27 is a preventive control to ensure information systems are securely designed, implemented and operated within the development life cycle.
+Definition
+
+ISO 27001 defines ISO 27001 Annex A 8.27 as:
+Principles for engineering secure systems should be established, documented, maintained and applied to any information system development activities.
+
+Implementation Guide
+What I am going to do is show you want the ISO 27001 standard expects in the implementation for you to achieve ISO 27001 certification. These are on the whole, no brainers, common sense and what you would expect but let us take a look anyway.
+Security Engineering Principles
+
+You are going to establish, document and apply information security principles and activities. This will be designed into all architecture layers such as the business, data, application, network and technology layers.
+It will include:
+Security Controls – the full range of controls required to protect against identified threats
+Security Events – the capability of controls to protect from, respond to and detect security events
+Business Process Specifics – controls required by particular business controls such as digital signature, encryption or integrity checking
+Application – where the controls are applied
+Integration – how the controls work together
+Considerations
+
+The principles will take account of the need to integrate with a security architecture, technical architecture, capability of the organisation, costs, time, complexity and current good practices when agreeing the principles.
+Techniques
+
+Secure system engineering techniques include
+Security architecture principles such as – least privilege, security by default, security by design, defence in depth
+Design reviews focussed on security
+Documentation of controls
+Documentation of controls that do not meet requirements
+System Hardening
+Tamper resistance
+Segregation
+Secure Virtualisation
+Zero Trust
+
+Zero Trust as a principle is something you will consider and demonstrate and examples are
+Not relying only on network perimeter security
+Using the phrase ‘never trust always verify’ for access to information
+Encrypting information end to end
+Not trusting anything inside or outside a network and treating it as if it came from an open and external network
+Using least privilege for access control
+Authenticating and validating requests for information systems, always, based on authentication information, user identities, data classification.
+Enforcing strong / multi factor authentication
+Third party developers
+
+This control applies in equal measure to third party developers and should be enforced via contract or legally binding agreements and alignment between the third party and the outsourced developer should be in place.
+Reviews
+
+Reviews should be in place to ensure controls and principles are appropriate and effective.
+Secure Development Policy
+
+If you are developing software then the first step is to create, or download, your secure development policy. The secure development policy set’s out what you do for information security in the context of software and systems development. It does not set out how you do it, as how you do it is covered in your processes.
+The ISO 27001 Template is the quickest way to do this but you can also take a look and write it yourself.
+ ISO 27001 Secure Development Policy Template
+For more detail on software development read –ISO 27001 Annex A 8.25 Secure Development Life Cycle We cover it in more detail in that guide.
+Conclusion
+
+This control is very specific to those that do development and is a very technical control. You will require the input of specialist technical resources across multiple, relevant domains. The advice is to document everything.

@@ -1,0 +1,150 @@
+ISO 27001 Application Security Requirements
+
+ISO 27001 Annex A 8.26 Application Security Requirements is an ISO 27001 control that requires us to identify, specify and approve information security requirements when we develop or acquire applications.
+Purpose
+
+ISO 27001 Annex A 8.26 is a preventive control to ensure all information security requirements are identified and addressed when developing or acquiring applications.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.26 as:
+Information security requirements should be identified, specified and approved when developing or acquiring applications.
+Implementation Guide
+
+Whilst I am a software engineering degree educated and time served professional, I am not in the business of telling you how to develop either systems or software. These are professions in their own right. Time has moved on. What I am going to do is show you what the ISO 27001 standard expects in the implementation for you to achieve ISO 27001 certification. These are on the whole, no brainers, common sense and what you would expect but let us take a look anyway.
+
+Secure Development Policy
+
+If you are developing software then the first step is to create, or download, your secure development policy. The secure development policy set’s out what you do for information security in the context of software and systems development. It does not set out how you do it, as how you do it is covered in your processes.
+Identifying and Specifying Application Security Requirements
+
+The requirements of the application security are going to be specific to you but the standard makes recommendations on what to consider and decide if applicable or not. From this list, and others, choose what is applicable and be in a position to defend if something is on the list and you do not have it, why you do not have it.
+Access Control
+Information Classification
+Segregation of Duty and Access
+Resilience such as ability to repel malicious attacks
+Legal, regulatory and contractual Requirements
+Privacy
+Data Protection
+Protection of data that is processed, stored or transmitted
+Input Validation
+Output Validation
+Use and Restrictions on ‘open text’ fields allowing unrestricted input
+Logging and Monitoring
+Non Reputation
+The requirements of other Annex A controls on your Statement Of Applicability (SOA)
+Transactional Services
+
+Additional guidance is given for consideration in situations where you have applications that offer transactional services between organisations and partners.
+Those requirements include the above and in addition:
+Authorisation Processes and Levels
+Non Repudation
+Physical Transfers of Media and Documents
+Data Retention Periods
+Insurance
+Contractual Requirements
+End of Contract / Relationship
+Payment and Ordering Applications
+
+Payments on card are covered under the PCI DSS so if this is something you do then this is a standard that will apply and be checked as being in place.
+You should follow all legal and regulatory requirements for this kind of data and this is covered extensively in laws and regulations. Seek the help of a legal professional if you are unsure to understand what those requirements are.
+From an ISO27001 perspective the appropriate implementation of cryptography will be considered but know that requirements are greater than ISO27001 in this space.
+Implementation Checklist
+
+Application Security Requirements ISO 27001 Annex A 8.26 Implementation Checklist
+1. Secure Coding Practices
+
+Implement secure coding guidelines (e.g., OWASP Top 10) and conduct regular code reviews to minimise vulnerabilities during development.
+Developers may lack sufficient training in secure coding practices.
+Provide mandatory secure coding training and integrate security checks into the development lifecycle.
+2. Input Validation
+
+Ensure all application inputs are validated to prevent injection attacks (e.g., SQL injection, cross-site scripting).
+Identifying all potential input points and crafting effective validation rules can be complex.
+Employ a combination of whitelisting, blacklisting, and regular expression validation, using automated testing tools where possible.
+3. Authentication and Authorisation
+
+Implement robust authentication mechanisms (e.g., multi-factor authentication) and granular authorisation controls to restrict access to sensitive data and functionalities.
+Balancing strong security with user experience can be difficult.
+Implement role-based access control (RBAC) and consider user-friendly MFA methods like time-based one-time passwords (TOTP).
+4. Data Protection
+
+Encrypt sensitive data at rest and in transit using strong cryptographic algorithms.
+Key management can be complex and requires careful planning.
+Implement a robust key management system (KMS) and follow best practices for key generation, storage, and rotation.
+5. Session Management
+
+Implement secure session management mechanisms to prevent session hijacking and other related attacks.
+Maintaining session state securely while ensuring performance can be tricky.
+Use short session timeouts, regenerate session IDs after login, and employ secure cookies.
+6. Error Handling
+
+Implement proper error handling to avoid revealing sensitive information to attackers.
+Developers may inadvertently expose sensitive data in error messages.
+Implement generic error messages and log detailed error information securely for later analysis.
+7. Logging and Monitoring
+
+Implement comprehensive logging and monitoring of application activity to detect and respond to security incidents.
+Analysing large volumes of log data can be overwhelming.
+Use Security Information and Event Management (SIEM) systems to automate log analysis and alert on suspicious activity.
+8. Vulnerability Management
+
+Conduct regular vulnerability scanning and penetration testing to identify and remediate security weaknesses in applications.
+Keeping up with the latest vulnerabilities and patching them promptly can be resource-intensive.
+Prioritise patching based on risk and implement a robust vulnerability management process.
+9. Application Security Testing
+
+Integrate security testing (e.g., static and dynamic analysis) into the software development lifecycle (SDLC).
+Integrating security testing into the SDLC can slow down development.
+Automate security testing as much as possible and train developers on how to address security issues early in the development process.
+10. Third-Party Components
+
+Ensure that any third-party libraries or components used in applications are secure and up-to-date.
+Tracking and managing vulnerabilities in third-party components can be difficult.
+Use software composition analysis (SCA) tools to identify and manage vulnerabilities in third-party components and establish a process for patching them promptly.
+Audit Checklist
+
+Application Security Requirements ISO 27001 Annex A 8.26 Audit Checklist
+1. Secure Coding Practices
+
+Verify that secure coding guidelines (e.g., OWASP Top 10) are defined, communicated, and followed by developers.
+Review secure coding standards documentation, examine code samples for adherence, interview developers about their understanding and application of secure coding practices, and perform static code analysis.
+2. Input Validation
+
+Check if input validation is implemented for all application inputs to prevent injection attacks.
+Review application documentation, examine code for input validation routines, perform penetration testing to attempt injection attacks, and review vulnerability scanning reports related to input validation.
+3. Authentication and Authorisation
+
+Assess the strength of authentication mechanisms and the effectiveness of authorisation controls.
+Review authentication and authorisation policies, examine configuration settings for authentication systems, perform penetration testing to attempt unauthorised access, and review user access logs.
+4. Data Protection
+
+Verify that sensitive data is encrypted at rest and in transit.
+Review data encryption policies, examine database and network configurations, review key management procedures, and perform vulnerability scans to check for unencrypted data.
+5. Session Management
+
+Check the implementation of secure session management mechanisms.
+Review session management policies, examine application code for session management routines, perform penetration testing to attempt session hijacking, and review session timeout configurations.
+6. Error Handling
+
+Verify that error handling practices do not reveal sensitive information.
+Review error handling procedures, examine application code for error handling routines, perform testing to trigger errors and observe the information displayed, and review application logs for sensitive data exposure in error messages.
+7. Logging and Monitoring
+
+Assess the comprehensiveness of logging and monitoring of application activity.
+Review logging and monitoring policies, examine log configuration settings, review security information and event management (SIEM) system configurations, and analyse log data for suspicious activity.
+8. Vulnerability Management
+
+Verify that regular vulnerability scanning and penetration testing are conducted and that identified vulnerabilities are remediated.
+Review vulnerability scanning and penetration testing schedules and reports, examine vulnerability remediation records, and interview IT staff about the vulnerability management process.
+9. Application Security Testing
+
+Check if security testing is integrated into the software development lifecycle (SDLC).
+Review the SDLC documentation, examine security testing plans and reports, interview developers and testers about their roles in security testing, and observe security testing activities.
+10. Third-Party Components
+
+Verify that third-party libraries and components are managed securely.
+Review third-party component management policies, examine software composition analysis (SCA) reports, interview IT staff about the process for patching third-party components, and review vulnerability scanning results for third-party components.
+Conclusion
+
+There is actually nothing specific in this control that is not covered in other controls. This control basically says, yes, all the other controls apply to applications as well.
+It is telling you, just because you are buying applications or building them, don’t discount the wider requirements of Annex A.

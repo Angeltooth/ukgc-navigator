@@ -1,0 +1,67 @@
+ISO 27001 Managing Information Security In The ICT Supply Chain
+
+ISO 27001 Annex A 5.21 Managing information security in the ICT supply chain is an ISO 27001 control that requires an organisation to manage the risks associated the ICT products and services supply chain.
+What is ICT?
+
+ICT, or information and communications technology (or technologies), is the infrastructure and components that enable modern computing.
+Purpose
+
+The purpose of ISO 27001 Annex A 5.21 is a preventive control that ensures you maintain an agreed level of information security in supplier relationships.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 5.21 as:
+Processes and procedures should be defined and implemented to manage the information security risks associated with the ICT products and services supply chain.
+Implementation Guide
+
+We discussed above that ICT means information and communications technology and we would include cloud services in that.
+When we implement we are looking to build on existing best practices for information security, project management, quality management and engineering and not to replace those practices.
+You are going to have to ensure that:
+you have information security requirements when acquiring products or services
+your suppliers propagate your security requirements through ‘their’ supply chain if they sub contract
+you request, and understand, of product suppliers, what software components they use
+you request and understand product security functions and how to configure it to be secure
+you implement monitoring and validation of security requirements in your suppliers
+you identify and document critical products and services
+critical components and their origin can be traced through the supply chain
+you have assurance products are functioning as expected
+you have assurance products meet required security levels
+you have rules for sharing information including issues and compromises
+you have process for managing component lifecycles, availability and associated security risks
+you have considered alternate suppliers and how to transfer to them if needed
+It is always best and goes without saying, or it should, that you will acquire your products and services from reputable sources.
+How to comply
+
+To comply with ISO 27001 Annex A 5.21 you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to
+Implement a topic specific policy
+Implement an supplier management process
+Include in your supplier management process supplier acquisition and supplier transfer
+Implement an ISO 27001 supplier register
+Have agreements with all suppliers that cover information security requirements
+Have information security assurances for critical suppliers as a minimum and ideally all relevant suppliers
+How to pass the audit
+
+To pass an audit of ISO 27001 Annex A 5.21 Managing information security in the ICT supply chain you are going to make sure that you have followed the steps above in how to comply.
+What an auditor will check
+
+The audit is going to check a number of areas. Lets go through the most common
+1. That you have a supplier agreements in place
+
+The auditor is going to check that you have agreements in place with suppliers that cover the information security requirements. It will check that those agreements are in date and cover the products and / or services acquired.
+2. That you have an ISO 27001 Supplier Register
+
+You will need an ISO 27001 Supplier Register to  record and manage your suppliers. Make sure it is up to date and reflects your reality.
+3. Documentation
+
+They are going to look at audit trails and all your documentation and see that is classified and labelled. All the documents that you show them, as a minimum if they are confidential should be labelled as such. Is the document up to date. Has it been reviewed in the last 12 months. Does the version control match.
+Top 3 Mistakes People Make
+
+The top 3 Mistakes People Make For ISO 27001 Annex A 5.21 are
+1. You have no contracts or legal terms with a supplier
+
+Make sure that there is a contract, agreement, terms of business or some legal mechanism for engaging with suppliers and you have a copy, it is in date and covers what you are using.
+2. You have no assurance they are doing the right thing for information security
+
+Make sure you have done your security assessment and can place your hands on an in date certificate such as an ISO 27001 Certification for assurance they are doing the right thing. It needs to be in date a cover the products and / or services you have acquired and are using form the supplier.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

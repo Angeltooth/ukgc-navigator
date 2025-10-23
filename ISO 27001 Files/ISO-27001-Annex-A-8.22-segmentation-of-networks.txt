@@ -1,0 +1,71 @@
+ISO 27001 Segregation of networks
+
+ISO 27001 Annex A 8.22 Segregation of networks is an ISO 27001 control that requires us group information services and then put those groups on different networks. Ideally it wants information services, users and information systems on different networks but it is a little more nuanced than that, let’s take a look.
+Purpose
+
+ISO 27001 Annex A 8.22 is a preventive control to split the network in security boundaries and to control traffic between them based on business needs.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.22 as:
+Groups of information services, users and information systems should be segregated in the organisation’s networks.
+Implementation Guide
+
+This control is really looking at large and complex networks. On the most part for small organisations you are going to have your main office network, possibly a public network, potentially a wifi network that ideally will be treated as public and operational networks will be handled by cloud service providers who you no doubt use. Still, let’s look at little more at the guidance.
+At no point would this guide look to tell you how to implement a network and at all times I would say that you clearly need the services of a trained, experienced, network professional whose advice you should follow. As long as they adhere to the principles, you will be fine.
+Choosing Network Domains
+
+Breaking a network into domains is not something to do lightly. Every time you introduce a new domain you introduce a management overhead which you counter balance against the risk. Consider for the network domains things like trust levels, use, criticality, geography. There are many ways to crack an egg.
+Take your time and think about this logically.
+Network Types
+
+The standard clearly is not only talking about physical wired networks but also virtual networks.
+Network Perimeter
+
+The area to focus on is the network boundary, this is the perimeter of the network. This is the part that protects the access into the main network. Like the door to a house. It should be secured. Where doors have keys you will consider firewalls, filtering, routing.
+Who can gain access through the perimeter will take into consideration Access Control and the topic specific policy on Access Control.
+To implement this you want a well defined boundary with well defined and implemented controls in place.
+Wireless Networks
+
+Where ever possible I would recommend that wireless networks are only ever used for public services, non critical data and traffic. It may be the case that you have to use them but they do come with a lot of disadvantages and challenges. You can potentially overcome them with compensating controls such as VPN, encrypted traffic and such like but they really want separating from the main networks. Take care when implementing wireless networks but do keep them segregated.
+Access to networks and services
+
+For this we consider what can and should be accessed and then have appropriate policy and process in place around that access.
+ISO 27001 Annex A 5.15 Access Control
+ISO 27001 Annex A 5.18 Access Rights
+Authentication
+
+The requirements on authentication for accessing services should be set.
+ISO 27001 Annex A 5.17 Authentication Information
+Authorisation
+
+Procedures that determine who is allowed to access networks and services are to be put in place.
+ISO 27001 Annex A 5.15 Access Control
+Technical Controls
+
+The network management and technical controls as well as the processes to access connections and services will be in place.
+ISO 27001 Annex A 8.20 Network Security
+Access Types
+
+How access is carried out such as physical network, wireless network, VPN will be determined.
+Monitoring and Logging
+
+Recording the time, location and other appropriate logging attributes of users that access networks and services will be in place.
+ISO 27001 Annex A 8.16 Monitoring Activities
+Security Features
+
+The security features of networks will be identified and implemented as well as documented. Consider here things like encryption, connection controls, cacheing, restrictive access. Firewalls, private networks, intrusion detection are also to be considered.
+Network Security Professional
+
+All in all you should work what a network security professional to work out the best solution for you and your needs. Your requirement is to identify, document, implement, monitor and review it.
+What will an auditor check?
+
+The audit is going to check a number of areas. Lets go through the main ones
+1. That you have documentation
+
+What this means is that you need to show that you have documented your network, document your security implementation and put in place appropriate segregation.
+2. That you have have implemented Segregation of Networks appropriately
+
+They will look at systems to seek evidence of that it is implement appropriately. They will want to see evidence of the controls that in place and that they are operating. Network diagrams will be expected to be in place and reviewed.
+3. That you have conducted internal audits
+
+The audit will want to see that you have tested the controls and evidenced that they are operating. This is usually in the form of the required internal audits. They will check the records and outputs of those internal audits.

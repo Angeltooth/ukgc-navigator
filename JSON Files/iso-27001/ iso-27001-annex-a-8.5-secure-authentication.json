@@ -1,0 +1,865 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 8.5",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_8.5",
+    "control_number": "A 8.5",
+    "control_title": "Secure Authentication",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure users and entities accessing systems are correctly and securely authenticated",
+    "control_objective": "Implement secure authentication technologies and procedures based on access restrictions and risk assessment"
+  },
+  "iso_27001_definition": {
+    "official_text": "Secure authentication technologies and procedures should be implemented based on information access restrictions and the topic-specific policy on access control.",
+    "key_requirements": [
+      "Authentication required for access",
+      "Secure authentication technologies deployed",
+      "Authentication procedures documented",
+      "Risk-based authentication strength",
+      "Multi-factor authentication for sensitive access",
+      "Protection of authentication credentials",
+      "Monitoring of authentication attempts",
+      "Prevention of brute force attacks",
+      "Secure credential transmission",
+      "Credential storage protection"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control verifying user identity before granting system and data access",
+    "scope": [
+      "System access and login",
+      "Application access",
+      "Service authentication",
+      "Remote access and VPN",
+      "Administrative functions",
+      "Sensitive data access",
+      "Cloud service access",
+      "API authentication"
+    ],
+    "key_outcome": "Only authenticated authorized users can access systems and information"
+  },
+  "prerequisites": {
+    "description": "Before implementing secure authentication, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Access Control Policy",
+        "description": "Policy defining who should access what",
+        "rationale": "Authentication needed to verify identity before access granted",
+        "reference": "ISO 27001 A 5.15 - Access control"
+      },
+      {
+        "prerequisite": "Information Classification",
+        "description": "Information classified by sensitivity",
+        "rationale": "Authentication strength based on data classification",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "Risk Assessment",
+        "description": "Identified risks and threats",
+        "rationale": "Authentication strength proportionate to risk",
+        "reference": "ISO 27001 A 5.2 - Information security risk assessment"
+      },
+      {
+        "prerequisite": "Identity Management",
+        "description": "User identity creation and management",
+        "rationale": "Identities must exist to authenticate",
+        "reference": "ISO 27001 A 5.16 - Identity management"
+      }
+    ]
+  },
+  "authentication_overview": {
+    "definition": "Process of verifying that users and entities are who they claim to be",
+    "authentication_factors": [
+      "Something You Know - passwords, PINs, security questions",
+      "Something You Have - tokens, cards, physical devices, one-time codes",
+      "Something You Are - biometrics, fingerprints, facial recognition, iris scan",
+      "Somewhere You Are - location-based authentication",
+      "Something You Do - behavioral biometrics, typing patterns"
+    ],
+    "authentication_levels": [
+      "Single-Factor Authentication (SFA) - one method only",
+      "Multi-Factor Authentication (MFA) - two or more methods",
+      "Risk-Based Authentication - strength varies by risk"
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_8.5_REQ_1",
+      "requirement": "Develop Secure Authentication Policy",
+      "description": "Create documented policy for authentication requirements",
+      "details": {
+        "policy_elements": [
+          "Authentication requirement - who and what",
+          "Risk-based approach - authentication strength by classification",
+          "Multi-factor authentication requirements",
+          "Password policy if applicable",
+          "Biometric authentication if used",
+          "Token or device requirements",
+          "Remote access authentication",
+          "Administrative access requirements",
+          "Credential management",
+          "Credential transmission security",
+          "Brute force protection",
+          "Session management",
+          "Auto-logout after inactivity",
+          "Failed attempt handling",
+          "Roles and responsibilities"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_2",
+      "requirement": "Implement Something You Know Authentication",
+      "description": "Deploy password or knowledge-based authentication",
+      "details": {
+        "password_requirements": [
+          "Minimum length (14+ characters recommended)",
+          "Character complexity (uppercase, lowercase, numbers, symbols)",
+          "No dictionary words or common phrases",
+          "No reuse of recent passwords",
+          "Periodic password expiration (90 days or risk-based)",
+          "Initial password different from default",
+          "Password uniqueness requirement"
+        ],
+        "password_protection": [
+          "Never transmitted in clear text",
+          "Never stored in clear text",
+          "Hashed using strong algorithms (bcrypt, scrypt, PBKDF2, Argon2)",
+          "Salted hashes required",
+          "Masked when entering",
+          "Timeout during entry",
+          "Not logged or displayed"
+        ],
+        "best_practices": [
+          "Use passphrases instead of passwords",
+          "Educate users on strong passwords",
+          "Consider passkeys or passwordless authentication",
+          "Password manager support"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_3",
+      "requirement": "Implement Something You Have Authentication",
+      "description": "Deploy token or device-based authentication",
+      "details": {
+        "hardware_tokens": [
+          "Hardware security keys",
+          "Physical token devices",
+          "Smart cards",
+          "USB authentication devices"
+        ],
+        "software_tokens": [
+          "Mobile authenticator apps",
+          "Time-based one-time passwords (TOTP)",
+          "HMAC-based one-time passwords (HOTP)",
+          "Push notifications"
+        ],
+        "characteristics": [
+          "Unique to individual user",
+          "Time-limited or single-use codes",
+          "Cannot be intercepted or reused",
+          "Loss or theft managed through process",
+          "Backup tokens or recovery codes"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_4",
+      "requirement": "Implement Something You Are Authentication",
+      "description": "Deploy biometric authentication if appropriate",
+      "details": {
+        "biometric_types": [
+          "Fingerprint recognition",
+          "Facial recognition",
+          "Iris or retinal scanning",
+          "Voice recognition",
+          "Palm or hand recognition"
+        ],
+        "characteristics": [
+          "Unique to individual",
+          "Difficult to spoof",
+          "Cannot be forgotten",
+          "Privacy and regulatory considerations",
+          "Accuracy and false rejection rates",
+          "Environmental factors may affect"
+        ],
+        "considerations": [
+          "Privacy impact assessment required",
+          "User consent and opt-out",
+          "Data protection compliance (GDPR)",
+          "Secure storage of biometric templates",
+          "Fallback authentication method"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_5",
+      "requirement": "Implement Multi-Factor Authentication",
+      "description": "Deploy MFA for sensitive systems and data",
+      "details": {
+        "mfa_requirements": [
+          "Required for administrative access",
+          "Required for sensitive data access",
+          "Required for RNG system access",
+          "Required for customer data access",
+          "Required for remote access",
+          "Optional for standard systems based on risk"
+        ],
+        "mfa_combinations": [
+          "Password + one-time code (OTP)",
+          "Password + hardware token",
+          "Password + biometric",
+          "Biometric + hardware token",
+          "Multiple biometric factors"
+        ],
+        "implementation": [
+          "Support major authenticator platforms",
+          "Recovery codes for account lockout",
+          "Backup authentication methods",
+          "User enrollment process",
+          "Fallback for lost devices"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_6",
+      "requirement": "Base Authentication on Risk and Classification",
+      "description": "Match authentication strength to data sensitivity",
+      "details": {
+        "risk_based_approach": [
+          "Public data - single factor acceptable",
+          "Internal data - strong single or weak MFA",
+          "Confidential data - strong MFA required",
+          "Restricted/Secret data - strongest MFA + additional controls"
+        ],
+        "strength_assessment": [
+          "Evaluate threat level",
+          "Consider access location",
+          "Assess user role and privilege",
+          "Factor in incident history",
+          "Account for regulatory requirements"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_7",
+      "requirement": "Protect Credential Transmission",
+      "description": "Secure authentication credentials during transmission",
+      "details": {
+        "transmission_security": [
+          "HTTPS/TLS encryption for all authentication",
+          "No credentials in URLs or query strings",
+          "No credentials in clear text emails or logs",
+          "Secure connection before authentication",
+          "Certificate pinning for sensitive systems",
+          "VPN for remote authentication"
+        ],
+        "storage_security": [
+          "No passwords stored in documents",
+          "No credentials in application code",
+          "Credentials encrypted if stored",
+          "Secure credential vaults for service accounts",
+          "No default credentials in systems"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_8",
+      "requirement": "Implement Brute Force Attack Prevention",
+      "description": "Protect against password guessing attacks",
+      "details": {
+        "prevention_measures": [
+          "Account lockout after failed attempts",
+          "Lockout duration (15-30 minutes typical)",
+          "Progressive delays between attempts",
+          "CAPTCHA after multiple failures",
+          "Rate limiting on login attempts",
+          "Alerting on repeated failures"
+        ],
+        "monitoring": [
+          "Log failed authentication attempts",
+          "Alert on threshold breaches",
+          "Track patterns and trends",
+          "Investigate suspicious activity",
+          "Automated response to attack patterns"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_9",
+      "requirement": "Implement Session Management",
+      "description": "Manage authenticated user sessions",
+      "details": {
+        "session_controls": [
+          "Session timeouts on inactivity",
+          "Maximum session duration limits",
+          "Auto-logout after timeout",
+          "Session identification and tracking",
+          "Unique session tokens",
+          "Encrypted session data",
+          "Logout functionality"
+        ],
+        "inactivity_timeouts": [
+          "Public/non-sensitive systems - 30-60 minutes",
+          "Standard systems - 15-30 minutes",
+          "Sensitive systems - 5-15 minutes",
+          "Administrative access - 5 minutes or less"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_10",
+      "requirement": "Manage Initial and Changed Credentials",
+      "description": "Securely handle credential creation and updates",
+      "details": {
+        "initial_credential_process": [
+          "Unique passwords per user",
+          "Different from any default",
+          "Delivered securely (separate channels)",
+          "User name via one channel",
+          "Password via different channel",
+          "Temporary initial password",
+          "User required to change on first login",
+          "Verification that change occurred"
+        ],
+        "credential_change_process": [
+          "User-initiated password changes",
+          "Verification of current password",
+          "Enforcement of new password requirements",
+          "No reuse of recent passwords",
+          "Notification of change",
+          "No compromise in process"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_11",
+      "requirement": "Implement Monitoring and Logging",
+      "description": "Track authentication events and anomalies",
+      "details": {
+        "logging_requirements": [
+          "Log successful authentication",
+          "Log failed authentication attempts",
+          "Record user ID and system",
+          "Record date and time",
+          "Record access origin/IP address",
+          "Log MFA success or failure",
+          "Log account lockout events",
+          "Log password changes"
+        ],
+        "monitoring_activities": [
+          "Alert on multiple failed attempts",
+          "Alert on unusual access patterns",
+          "Alert on off-hours access",
+          "Alert on access from new locations",
+          "Alert on impossible travel scenarios",
+          "Automated threat detection"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.5_REQ_12",
+      "requirement": "Train Personnel on Authentication",
+      "description": "Educate users on secure authentication",
+      "details": {
+        "training_content": [
+          "Authentication importance",
+          "Password security practices",
+          "Never share credentials",
+          "Protecting credentials",
+          "Recognizing phishing",
+          "Using authenticators safely",
+          "Reporting security concerns",
+          "What to do if compromised"
+        ],
+        "training_delivery": [
+          "Initial onboarding training",
+          "Annual refresher training",
+          "Awareness campaigns",
+          "Role-specific training",
+          "Incident-triggered training"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Develop authentication policy",
+        "detail": "Document authentication requirements and standards"
+      },
+      {
+        "step": 2,
+        "action": "Conduct risk assessment",
+        "detail": "Identify authentication needs by system and data"
+      },
+      {
+        "step": 3,
+        "action": "Select authentication technologies",
+        "detail": "Choose appropriate methods and tools"
+      },
+      {
+        "step": 4,
+        "action": "Deploy authentication system",
+        "detail": "Implement selected authentication platform"
+      },
+      {
+        "step": 5,
+        "action": "Implement MFA",
+        "detail": "Enable multi-factor for sensitive systems"
+      },
+      {
+        "step": 6,
+        "action": "Configure password policies",
+        "detail": "Set strength and expiration requirements"
+      },
+      {
+        "step": 7,
+        "action": "Configure session management",
+        "detail": "Set timeout and duration limits"
+      },
+      {
+        "step": 8,
+        "action": "Implement logging and monitoring",
+        "detail": "Enable authentication event tracking"
+      },
+      {
+        "step": 9,
+        "action": "Train personnel",
+        "detail": "User education on authentication"
+      },
+      {
+        "step": 10,
+        "action": "Monitor and verify",
+        "detail": "Ongoing compliance and security"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 8.5",
+    "checklist": [
+      {
+        "item": "Develop authentication policy",
+        "status": "required"
+      },
+      {
+        "item": "Conduct risk assessment for systems",
+        "status": "required"
+      },
+      {
+        "item": "Establish password requirements",
+        "status": "required"
+      },
+      {
+        "item": "Deploy authentication system",
+        "status": "required"
+      },
+      {
+        "item": "Implement multi-factor authentication",
+        "status": "required"
+      },
+      {
+        "item": "Configure brute force protection",
+        "status": "required"
+      },
+      {
+        "item": "Implement session management",
+        "status": "required"
+      },
+      {
+        "item": "Configure logging and monitoring",
+        "status": "required"
+      },
+      {
+        "item": "Manage initial and changed credentials",
+        "status": "required"
+      },
+      {
+        "item": "Protect credential transmission",
+        "status": "required"
+      },
+      {
+        "item": "Train personnel",
+        "status": "required"
+      },
+      {
+        "item": "Monitor and audit compliance",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with authentication",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Weak or poorly managed passwords",
+        "description": "Default passwords not changed, weak policies, shared credentials",
+        "root_cause": [
+          "No password policy enforcement",
+          "Shared service account passwords",
+          "Default credentials never changed",
+          "Users not changing initial passwords",
+          "Passwords transmitted in clear text",
+          "Same passwords across systems"
+        ],
+        "impact": "Easy account compromise, unauthorized access, data breach",
+        "prevention": [
+          "Enforce strong password policies",
+          "Require password change on first login",
+          "No default passwords",
+          "Unique passwords per system",
+          "Secure credential transmission",
+          "Eliminate shared passwords"
+        ]
+      },
+      {
+        "rank": 2,
+        "mistake": "No multi-factor authentication",
+        "description": "MFA not implemented for sensitive systems",
+        "root_cause": [
+          "User resistance to MFA",
+          "Perceived complexity",
+          "Cost considerations",
+          "Legacy system limitations",
+          "Lack of awareness of importance"
+        ],
+        "impact": "Stolen credentials compromise accounts, increased breach risk",
+        "prevention": [
+          "Mandate MFA for admin and sensitive access",
+          "Use simple MFA methods (authenticator apps)",
+          "Provide recovery options",
+          "User education and support",
+          "Risk-based MFA implementation"
+        ]
+      },
+      {
+        "rank": 3,
+        "mistake": "Document version control issues",
+        "description": "Policy not current or properly controlled",
+        "root_cause": [
+          "No version control process",
+          "Multiple conflicting versions",
+          "No review schedule",
+          "Comments left in final documents",
+          "No approval process"
+        ],
+        "impact": "Inconsistent implementation, audit failures, confusion",
+        "prevention": [
+          "Implement version control",
+          "Annual review schedule",
+          "Single approved version",
+          "Remove draft comments",
+          "Document approval"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 8.5 audit",
+    "audit_areas": [
+      {
+        "area": "1. Authentication Policy",
+        "description": "Verify documented policy",
+        "checks": [
+          "Policy document current",
+          "Risk-based approach",
+          "MFA requirements specified",
+          "Password requirements specified",
+          "Session management defined",
+          "Monitoring requirements"
+        ]
+      },
+      {
+        "area": "2. Password Implementation",
+        "description": "Verify strong passwords",
+        "checks": [
+          "Password complexity requirements",
+          "Minimum length enforced",
+          "Expiration policy",
+          "No reuse of recent passwords",
+          "Encryption of stored passwords",
+          "Secure transmission"
+        ]
+      },
+      {
+        "area": "3. Multi-Factor Authentication",
+        "description": "Verify MFA deployed",
+        "checks": [
+          "MFA enabled for admin access",
+          "MFA for sensitive systems",
+          "Authentication factor types",
+          "Recovery procedures",
+          "User enrollment"
+        ]
+      },
+      {
+        "area": "4. Access Verification",
+        "description": "Test authentication controls",
+        "checks": [
+          "Authentication required for access",
+          "Credentials verified before granting access",
+          "Failed attempts handled",
+          "Account lockout working",
+          "Session timeouts functioning"
+        ]
+      },
+      {
+        "area": "5. Logging and Monitoring",
+        "description": "Verify events tracked",
+        "checks": [
+          "Authentication events logged",
+          "Failed attempts recorded",
+          "Log retention adequate",
+          "Monitoring for anomalies",
+          "Alerting on suspicious activity"
+        ]
+      },
+      {
+        "area": "6. Credential Management",
+        "description": "Verify secure handling",
+        "checks": [
+          "Initial password process",
+          "Unique per user",
+          "Secure delivery",
+          "User change on first login",
+          "No default passwords remaining"
+        ]
+      },
+      {
+        "area": "7. Brute Force Protection",
+        "description": "Verify attack prevention",
+        "checks": [
+          "Account lockout after failures",
+          "Lockout duration",
+          "Alerting on repeated failures",
+          "Rate limiting",
+          "CAPTCHA or delays"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, strong authentication essential for protecting RNG systems, customer accounts, and financial transactions",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Systems",
+        "authentication": [
+          "Multi-factor authentication mandatory",
+          "Strong password policy minimum 16 characters",
+          "Hardware token or authenticator app",
+          "Administrative access MFA enforced",
+          "Session timeout 5 minutes or less"
+        ]
+      },
+      {
+        "system": "Customer Account Systems",
+        "authentication": [
+          "MFA required for account access",
+          "Password complexity enforced",
+          "Session timeouts for customers",
+          "Brute force protection",
+          "Fraud detection monitoring"
+        ]
+      },
+      {
+        "system": "Financial and Payment Systems",
+        "authentication": [
+          "Strong MFA required",
+          "Hardware tokens preferred",
+          "Session timeout 5-10 minutes",
+          "PCI DSS compliance",
+          "Enhanced monitoring"
+        ]
+      },
+      {
+        "system": "Compliance and Regulatory Systems",
+        "authentication": [
+          "MFA for audit and compliance access",
+          "Strong password requirements",
+          "Administrative access MFA",
+          "Comprehensive logging"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must implement strong authentication including MFA for critical systems, with secure credential management and comprehensive monitoring"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Verify user identity before granting system and data access",
+    "enforcement_priority": "Critical - authentication foundation of access control",
+    "key_principles": [
+      "Risk-based authentication strength",
+      "Multi-factor for sensitive systems",
+      "Strong password requirements",
+      "Secure credential transmission and storage",
+      "Session management and timeouts",
+      "Brute force attack prevention",
+      "Comprehensive logging and monitoring",
+      "Regular credential rotation",
+      "User training and awareness"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 8.5 Secure Authentication, implement",
+    "requirements": [
+      {
+        "requirement": "Develop policy",
+        "detail": "Secure authentication policy"
+      },
+      {
+        "requirement": "Risk assessment",
+        "detail": "Identify authentication needs by system"
+      },
+      {
+        "requirement": "Strong passwords",
+        "detail": "Complexity and length requirements"
+      },
+      {
+        "requirement": "Deploy authentication system",
+        "detail": "Implement authentication platform"
+      },
+      {
+        "requirement": "Implement MFA",
+        "detail": "Multi-factor for critical systems"
+      },
+      {
+        "requirement": "Protect credentials",
+        "detail": "Secure transmission and storage"
+      },
+      {
+        "requirement": "Session management",
+        "detail": "Timeouts and duration limits"
+      },
+      {
+        "requirement": "Brute force protection",
+        "detail": "Account lockout and rate limiting"
+      },
+      {
+        "requirement": "Logging and monitoring",
+        "detail": "Track authentication events"
+      },
+      {
+        "requirement": "Train users",
+        "detail": "Education on authentication"
+      },
+      {
+        "requirement": "Manage credentials",
+        "detail": "Secure initial and changed passwords"
+      },
+      {
+        "requirement": "Verify compliance",
+        "detail": "Test and audit controls"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.15 - Access control",
+      "ISO 27001 A 5.16 - Identity management",
+      "ISO 27001 A 5.17 - Authentication information",
+      "ISO 27001 A 8.2 - Privileged access rights",
+      "ISO 27001 A 8.3 - Information access restrictions"
+    ]
+  },
+  "best_practices": {
+    "password_best_practices": [
+      "Enforce minimum 16 character passwords",
+      "Require complexity (upper, lower, number, symbol)",
+      "Implement 90-day expiration",
+      "No reuse of last 12 passwords",
+      "Never show password in clear text",
+      "Never transmit in clear text",
+      "Hash with strong algorithms (Argon2, bcrypt)",
+      "Support passphrase authentication"
+    ],
+    "mfa_best_practices": [
+      "Require for administrative access",
+      "Require for sensitive data access",
+      "Support multiple authenticator types",
+      "Provide recovery codes",
+      "Allow backup authentication",
+      "User-friendly implementation",
+      "Educate users on setup and use"
+    ],
+    "session_best_practices": [
+      "Set appropriate timeout (5-30 minutes by risk)",
+      "Auto-logout on inactivity",
+      "Absolute session maximum",
+      "Unique session identifiers",
+      "Encrypted session storage",
+      "Logout functionality available"
+    ],
+    "monitoring_best_practices": [
+      "Log all authentication events",
+      "Alert on multiple failed attempts",
+      "Track unusual patterns",
+      "Monitor privileged access",
+      "Analyze trends and incidents",
+      "Regular log review"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "authentication_levels": [
+      {
+        "level": "Critical Systems",
+        "systems": "RNG, game systems, payments",
+        "requirement": "MFA with hardware token or authenticator + strong password"
+      },
+      {
+        "level": "Sensitive Systems",
+        "systems": "Customer data, compliance, audit",
+        "requirement": "MFA with authenticator app + 14+ character password"
+      },
+      {
+        "level": "Standard Systems",
+        "systems": "Internal tools, office systems",
+        "requirement": "Strong password + optional MFA"
+      }
+    ],
+    "regulatory_expectations": [
+      "Multi-factor authentication for privileged access",
+      "Strong password policies documented",
+      "Secure credential transmission (HTTPS/TLS)",
+      "Session management with appropriate timeouts",
+      "Brute force attack prevention",
+      "Comprehensive authentication logging",
+      "Training and user awareness"
+    ],
+    "audit_readiness": [
+      "Authentication policy documented",
+      "MFA enabled on critical systems",
+      "Password policy enforced",
+      "Authentication logs available",
+      "Monitoring alerts configured",
+      "User training documentation"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 8.5",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-8.5-secure-authentication.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

@@ -1,0 +1,88 @@
+RTS 14 – Responsible product design
+Applies to:
+In respect of requirements RTS 14A and 14B – All gambling.
+In respect of requirement RTS 14C – Casino (excluding peer-to-peer poker).
+In respect of requirement RTS 14D – Slots.
+In respect of requirement RTS 14E and 14F – Casino.
+In respect of requirement RTS 14G – Casino (excluding slots and peer-to-peer poker).
+RTS aim 14
+To ensure that products are designed responsibly and to minimise the likelihood that they exploit or
+encourage problem gambling behaviour.
+RTS requirement 14A
+Gambling products must not actively encourage customers to chase their losses, increase their stake
+or increase the amount they have decided to gamble, or continue to gamble after they have indicated
+that they wish to stop.
+RTS implementation guidance 14A
+a. By actively encourage, we mean the inclusion of specific features, functions or information that
+could reasonably be expected to encourage a greater likelihood of the behaviours described
+occurring. For example:
+i. the amount of funds taken into a product should not be topped up without the customer
+choosing to do so on each occasion, for example, when a customer buys-in at a poker
+table they should have to choose to purchase more chips to play at the table, automatic
+re-buys should not be provided
+ii. written or graphical information should not encourage customers to try to win back their
+losses
+iii. customers who have chosen to exit a game should not be encouraged to continue playing
+by, for example, being offered a free game.
+b. This requirement is not intended to prevent operators from offering special features or well-
+known games such as blackjack that allow customers to increase their stake on the occurrence
+of specific events (for example, split).
+RTS requirement 14B
+Consumers must not be given the option to cancel their withdrawal request.
+RTS implementation guidance 14B
+Once a customer has made a request to withdraw funds, they should not be given the option to
+deposit using these funds. Operators should make the process to withdraw funds as frictionless as
+possible.
+RTS requirement 14C
+The gambling system must not offer functionality which facilitates playing multiple slots games at the
+same time.
+RTS implementation guidance 14C
+a. Operators are not permitted to offer functionality designed to allow players to play multiple slots
+at the same time. This includes, but is not limited to, split screen or multi-screen functionality.
+b. Combining multiple slots titles in a way which facilitates simultaneous play is not permitted.
+RTS requirement 14D
+It must be a minimum of 2.5 seconds from the time a game is started until the next game cycle can
+be commenced. It must always be necessary to release and then depress the 'start button’ or take
+equivalent action to commence a game cycle.
+RTS implementation guidance 14D
+A game cycle starts when a player depresses the ‘start button’ or takes equivalent action to initiate
+the game and ends when all money or money’s worth staked or won during the game has been
+either lost or delivered to, or made available for collection by the player and the start button or
+equivalent becomes available to initiate the next game.
+A player should commit to each game cycle individually, continued contact with a button, key or
+screen should not initiate a new game cycle.
+RTS requirement 14E
+The gambling system must not permit a customer to reduce the time until the result is presented.
+RTS implementation guidance 14E
+a. Features such as turbo, quick spin and slam stop are not permitted. This is not intended to be
+an exhaustive list but to illustrate the types of features the requirement is referring to.
+b. This applies to all remote games, regardless of game cycle speed.
+c. This requirement does not apply to bonus and/or feature games where an additional stake is
+not wagered.
+d. This requirement does not prohibit the ‘scratch-all’ and/or ’reveal-all’ feature.
+e. This requirement does not prohibit games where the customer will lose their stake unless they
+take action to end the game.
+RTS requirement 14F
+The gambling system must not celebrate a return which is less than or equal to the total stake
+gambled.
+RTS implementation guidance 14F
+a. By ‘celebrate’ we mean the use of auditory or visual effects that are associated with a win are
+not permitted for returns which are less than or equal to last total amount staked.
+b. The following items provide guidelines for reasonable steps to inform the customer of the result
+of their game cycle:
+i. Display of total amount awarded.
+ii. Winning lines displayed for a short period of time that will be considered sufficient to
+inform the customer of the result. This implementation should not override any of the
+display requirements (as set out in RTS 7E).
+iii. Brief sound to indicate the result of the game and transfer to player balance.
+RTS requirement 14G
+It must be a minimum of 5 seconds from the time a game is started until the next game cycle can be
+commenced. It must always be necessary to release and then depress the 'start button’ or take
+equivalent action to commence a game cycle.
+RTS implementation guidance 14G
+A game cycle starts when a player depresses the ‘start button’ or takes equivalent action to initiate
+the game and ends when all money or money’s worth staked or won during the game has been
+either lost or delivered to, or made available for collection by the player and the start button or
+equivalent becomes available to initiate the next game.
+A player should commit to each game cycle individually, continued contact with a button, key or
+screen should not initiate a new game cycle.

@@ -1,0 +1,909 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 7.14",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_7.14",
+    "control_number": "A 7.14",
+    "control_title": "Secure Disposal or Re-Use of Equipment",
+    "control_type": "Preventive control",
+    "control_purpose": "To prevent leakage of sensitive information from equipment being disposed of or reused",
+    "control_objective": "Verify sensitive data and licensed software are removed or securely overwritten before equipment disposal or reuse"
+  },
+  "iso_27001_definition": {
+    "official_text": "Items of equipment containing storage media should be verified to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+    "key_requirements": [
+      "Equipment containing storage media identified",
+      "Sensitive data removal process established",
+      "Secure data overwriting procedure",
+      "Licensed software removal",
+      "Verification of data removal",
+      "Equipment reuse or disposal documented",
+      "Certificates of destruction",
+      "Asset tag and label removal",
+      "Audit trail maintained"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control preventing data leakage from discarded or reused equipment",
+    "scope": [
+      "Desktop computers",
+      "Laptop computers",
+      "Servers and storage systems",
+      "Mobile devices",
+      "Printers and multifunction devices",
+      "USB drives and portable storage",
+      "Network equipment",
+      "Backup systems",
+      "Any equipment with storage media"
+    ],
+    "key_outcome": "No sensitive data recoverable from disposed or reused equipment"
+  },
+  "prerequisites": {
+    "description": "Before implementing equipment disposal control, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Information Classification",
+        "description": "Classification scheme for sensitive data",
+        "rationale": "Must know what data needs secure removal",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "Asset Management",
+        "description": "Complete asset inventory and tracking",
+        "rationale": "Must know which equipment contains storage media",
+        "reference": "ISO 27001 A 5.9 - Inventory of information and other associated assets"
+      },
+      {
+        "prerequisite": "Storage Media Management",
+        "description": "Storage media lifecycle management procedures",
+        "rationale": "Equipment disposal aligns with media management",
+        "reference": "ISO 27001 A 7.10 - Storage media"
+      },
+      {
+        "prerequisite": "Risk Assessment",
+        "description": "Risk assessment for equipment data exposure",
+        "rationale": "Controls proportionate to risks",
+        "reference": "ISO 27001 A 5.2 - Information security risk assessment"
+      }
+    ]
+  },
+  "equipment_disposal_overview": {
+    "definition": "Process of securely removing all data from equipment before reuse or disposal to prevent unauthorized recovery",
+    "challenges": [
+      "Data recovery from discarded media",
+      "Incomplete data deletion",
+      "Licensed software removal",
+      "Asset identification information",
+      "Multiple storage locations on equipment",
+      "Verification of complete removal",
+      "Encryption key destruction",
+      "Backup data on equipment"
+    ],
+    "protection_principle": "Secure overwrite or physical destruction - no data recoverable"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_7.14_REQ_1",
+      "requirement": "Develop Equipment Disposal Policy",
+      "description": "Create documented policy for equipment disposal and reuse",
+      "details": {
+        "policy_elements": [
+          "Scope - equipment covered",
+          "Equipment end-of-life determination",
+          "Reuse vs disposal decision criteria",
+          "Data removal requirements",
+          "Secure wiping procedures",
+          "Licensed software handling",
+          "Asset tag and label removal",
+          "Professional destruction services",
+          "Verification procedures",
+          "Documentation requirements",
+          "Donation and resale procedures",
+          "Roles and responsibilities",
+          "Audit trails and records",
+          "Exceptions and approvals"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_2",
+      "requirement": "Establish Equipment Lifecycle Process",
+      "description": "Define process for tracking equipment through lifecycle",
+      "details": {
+        "lifecycle_stages": [
+          "Procurement and deployment",
+          "Active use and operation",
+          "End-of-life determination",
+          "Data removal preparation",
+          "Reuse or disposal",
+          "Final destruction if needed",
+          "Audit and record closure"
+        ],
+        "documentation": [
+          "Equipment inventory record",
+          "Deployment date and location",
+          "Data on equipment assessment",
+          "End-of-life decision",
+          "Removal procedure performed",
+          "Verification completed",
+          "Destruction certificate if applicable"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_3",
+      "requirement": "Identify Equipment Containing Storage Media",
+      "description": "Determine which equipment has storage media requiring data removal",
+      "details": {
+        "equipment_types": [
+          "Computers with hard drives or SSDs",
+          "Servers with storage arrays",
+          "Mobile devices with internal storage",
+          "Printers and multifunction devices",
+          "USB drives and portable storage",
+          "Network equipment with memory",
+          "Backup systems and appliances",
+          "Security devices with storage"
+        ],
+        "assessment": [
+          "Review equipment inventory",
+          "Identify storage media type",
+          "Assess data sensitivity on equipment",
+          "Document storage locations",
+          "Plan removal procedure"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_4",
+      "requirement": "Develop Secure Data Removal Procedures",
+      "description": "Create documented procedures for removing data from equipment",
+      "details": {
+        "removal_methods": [
+          "Secure erasure software - multiple overwrite passes",
+          "NIST-approved wiping standards",
+          "Full disk wiping before reuse",
+          "Encryption key destruction",
+          "BIOS/firmware clearing",
+          "Physical destruction as alternative"
+        ],
+        "procedure_elements": [
+          "Equipment identification and tagging",
+          "Data backup if needed",
+          "Disconnection from network",
+          "Removal of network credentials",
+          "Running secure erasure tool",
+          "Verification of erasure",
+          "Encryption key destruction",
+          "Documentation of completion",
+          "Final inspection"
+        ],
+        "standards": [
+          "NIST SP 800-88 Guidelines for Media Sanitization",
+          "NIST SP 800-135 Recommendation for Existing Application-Specific",
+          "Industry standards for wiping",
+          "Certification requirements where needed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_5",
+      "requirement": "Handle Licensed Software",
+      "description": "Remove or transfer licensed software appropriately",
+      "details": {
+        "software_considerations": [
+          "Operating system licenses",
+          "Application software licenses",
+          "Security software licenses",
+          "Database licenses",
+          "Specialized software"
+        ],
+        "handling_options": [
+          "Remove license through proper uninstall",
+          "Deactivate/unregister if required by license",
+          "Transfer license if terms allow",
+          "Document license termination",
+          "Retain license documentation",
+          "Verify deregistration successful"
+        ],
+        "documentation": [
+          "License inventory",
+          "Transfer or termination record",
+          "Verification of removal",
+          "Retention of license keys if needed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_6",
+      "requirement": "Remove Asset Identification Information",
+      "description": "Strip identifying labels and tags from equipment",
+      "details": {
+        "identification_removal": [
+          "Asset tags",
+          "Serial number labels",
+          "Department stickers",
+          "Owner identification",
+          "Location labels",
+          "Barcode or QR codes",
+          "Any company branding"
+        ],
+        "importance": [
+          "Prevents tracing to original owner",
+          "Reduces resale tracking",
+          "Protects organization privacy",
+          "Meets data protection requirements"
+        ],
+        "documentation": [
+          "Record removal before disposal",
+          "Photograph if required",
+          "Document in asset records"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_7",
+      "requirement": "Verify Data Removal Completeness",
+      "description": "Confirm all sensitive data successfully removed",
+      "details": {
+        "verification_methods": [
+          "Run disk analysis tools",
+          "Verify no recoverable data",
+          "Test on sample drives",
+          "Certification by removal tool",
+          "Physical inspection",
+          "Third-party verification",
+          "Professional assessment"
+        ],
+        "verification_elements": [
+          "No readable files",
+          "No recoverable file fragments",
+          "No hidden partitions",
+          "No backup data",
+          "Encryption keys destroyed",
+          "Boot sectors wiped"
+        ],
+        "documentation": [
+          "Verification report",
+          "Completion certificate",
+          "Audit trail of process",
+          "Date and time verified"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_8",
+      "requirement": "Manage Equipment Reuse",
+      "description": "Process for reusing equipment internally or externally",
+      "details": {
+        "reuse_process": [
+          "Data removal completed and verified",
+          "Licensed software removed or transferred",
+          "Asset tags and labels removed",
+          "Equipment tested and functional",
+          "Redeployed to new user or location",
+          "Updated in asset management system",
+          "New data control established"
+        ],
+        "reuse_documentation": [
+          "Removal verification",
+          "New user/location assignment",
+          "Updated asset record",
+          "User training if needed",
+          "Data handling agreement"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_9",
+      "requirement": "Manage Equipment Disposal",
+      "description": "Process for secure disposal of equipment",
+      "details": {
+        "disposal_options": [
+          "Professional destruction service",
+          "Certified e-waste recycler",
+          "Data destruction company",
+          "Physical destruction",
+          "Charitable donation after data removal",
+          "Resale after verification"
+        ],
+        "professional_destruction": [
+          "Select certified destruction vendor",
+          "Contract specifying data destruction",
+          "Secure transportation",
+          "Witnessed destruction if sensitive",
+          "Certificate of destruction",
+          "Chain of custody documentation"
+        ],
+        "disposal_process": [
+          "Equipment end-of-life determination",
+          "Data removal and verification",
+          "Removal of identifying information",
+          "Selection of disposal method",
+          "Preparation for pickup",
+          "Transportation security",
+          "Destruction or recycling",
+          "Documentation and records"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_10",
+      "requirement": "Manage Donation and Resale",
+      "description": "Process for donating or reselling equipment",
+      "details": {
+        "donation_process": [
+          "Data removal and verification completed",
+          "Licensed software removed",
+          "Asset tags and labels removed",
+          "Equipment functional and tested",
+          "Selection of charitable recipient",
+          "Donation documentation",
+          "Tax record if applicable",
+          "Verification of proper use"
+        ],
+        "resale_process": [
+          "Data removal and verification",
+          "Licensed software removed",
+          "Asset tags and labels removed",
+          "Equipment refurbished if needed",
+          "Testing and certification",
+          "Market value determination",
+          "Resale through reputable channel",
+          "Documentation of sale",
+          "Proceeds tracking"
+        ],
+        "requirements": [
+          "Certified data removal must be performed",
+          "Verification and documentation",
+          "Professional assessment recommended",
+          "Liability waiver if appropriate",
+          "Proper handling of proceeds"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_11",
+      "requirement": "Maintain Documentation and Audit Trail",
+      "description": "Keep comprehensive records of equipment disposal",
+      "details": {
+        "documentation": [
+          "Equipment inventory record",
+          "End-of-life decision and date",
+          "Data removal procedure used",
+          "Verification results",
+          "Licensed software termination",
+          "Asset tag removal confirmation",
+          "Disposal or reuse outcome",
+          "Destruction certificate if applicable",
+          "Final audit record"
+        ],
+        "record_retention": [
+          "Maintain for minimum 3-6 years",
+          "Retention per policy",
+          "Secure storage of records",
+          "Audit trail completeness",
+          "Retrievable for investigation"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_12",
+      "requirement": "Train Personnel on Procedures",
+      "description": "Educate staff on equipment disposal requirements",
+      "details": {
+        "training_content": [
+          "Equipment disposal policy",
+          "Data removal importance",
+          "Secure erasure procedures",
+          "Licensed software requirements",
+          "Asset tag removal",
+          "Verification procedures",
+          "Documentation requirements",
+          "Incident reporting",
+          "Consequences of improper disposal"
+        ],
+        "training_delivery": [
+          "Initial training for IT staff",
+          "Annual awareness training",
+          "Role-specific training",
+          "Procedure updates when needed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.14_REQ_13",
+      "requirement": "Monitor and Audit Compliance",
+      "description": "Verify equipment disposal procedures are followed",
+      "details": {
+        "monitoring_activities": [
+          "Review disposal procedures regularly",
+          "Audit sample of disposed equipment",
+          "Verify data removal completeness",
+          "Check documentation completeness",
+          "Confirm third-party compliance",
+          "Track incident reports",
+          "Assess procedure effectiveness"
+        ],
+        "audit_procedures": [
+          "Request vendor audit reports",
+          "Verify destruction certificates",
+          "Sample check resold equipment",
+          "Physical inspection of processes",
+          "Interview staff on procedures"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Develop equipment disposal policy",
+        "detail": "Document procedures for disposal and reuse"
+      },
+      {
+        "step": 2,
+        "action": "Assess equipment inventory",
+        "detail": "Identify equipment with storage media"
+      },
+      {
+        "step": 3,
+        "action": "Select data removal tools",
+        "detail": "Choose secure erasure software and methods"
+      },
+      {
+        "step": 4,
+        "action": "Select destruction vendors",
+        "detail": "Identify certified e-waste and destruction companies"
+      },
+      {
+        "step": 5,
+        "action": "Develop removal procedure",
+        "detail": "Document step-by-step data removal process"
+      },
+      {
+        "step": 6,
+        "action": "Develop verification procedure",
+        "detail": "Document verification of data removal"
+      },
+      {
+        "step": 7,
+        "action": "Train IT staff",
+        "detail": "Train team on procedures"
+      },
+      {
+        "step": 8,
+        "action": "Test procedures",
+        "detail": "Verify procedures work correctly"
+      },
+      {
+        "step": 9,
+        "action": "Document disposal",
+        "detail": "Maintain complete records"
+      },
+      {
+        "step": 10,
+        "action": "Monitor compliance",
+        "detail": "Verify procedures followed"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 7.14",
+    "checklist": [
+      {
+        "item": "Develop equipment disposal policy",
+        "status": "required"
+      },
+      {
+        "item": "Identify equipment with storage media",
+        "status": "required"
+      },
+      {
+        "item": "Develop data removal procedure",
+        "status": "required"
+      },
+      {
+        "item": "Select secure erasure tools",
+        "status": "required"
+      },
+      {
+        "item": "Develop verification procedure",
+        "status": "required"
+      },
+      {
+        "item": "Identify destruction vendors",
+        "status": "required"
+      },
+      {
+        "item": "Handle licensed software removal",
+        "status": "required"
+      },
+      {
+        "item": "Remove asset identification",
+        "status": "required"
+      },
+      {
+        "item": "Train personnel",
+        "status": "required"
+      },
+      {
+        "item": "Document all disposals",
+        "status": "required"
+      },
+      {
+        "item": "Obtain destruction certificates",
+        "status": "required"
+      },
+      {
+        "item": "Monitor compliance",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with equipment disposal",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Donating or selling equipment without secure data removal",
+        "description": "Equipment given away or sold with data intact or inadequately wiped",
+        "root_cause": [
+          "Assumption deleting files is sufficient",
+          "No removal procedure in place",
+          "Time pressure to dispose quickly",
+          "Cost avoidance of proper removal",
+          "Lack of awareness of data recovery"
+        ],
+        "impact": "Data breach from recovered equipment, regulatory violations, sensitive data exposure",
+        "prevention": [
+          "Mandatory secure data removal before any disposal",
+          "Verification of removal before disposition",
+          "Training on data removal importance",
+          "No shortcuts or exceptions"
+        ],
+        "requirement": "Data must be securely removed or equipment physically destroyed"
+      },
+      {
+        "rank": 2,
+        "mistake": "Equipment accumulated in storage without disposal",
+        "description": "Old equipment kept indefinitely instead of being disposed of",
+        "root_cause": [
+          "No end-of-life determination process",
+          "Uncertainty about disposal procedures",
+          "Perceived value or 'might need someday'",
+          "Lack of accountability",
+          "No inventory of stored equipment"
+        ],
+        "impact": "Accumulated data breach risk, regulatory non-compliance, wasted storage",
+        "prevention": [
+          "Establish equipment lifecycle policy",
+          "Regular disposal schedule",
+          "Clear end-of-life criteria",
+          "Management oversight",
+          "Inventory of all equipment"
+        ],
+        "best_practice": "Dispose of equipment promptly following procedures"
+      },
+      {
+        "rank": 3,
+        "mistake": "No documentation or audit trail",
+        "description": "Equipment disposed of without records or verification",
+        "root_cause": [
+          "No documentation requirement",
+          "Informal disposal process",
+          "Assumption third parties will handle",
+          "No tracking of disposals",
+          "No audit procedures"
+        ],
+        "impact": "No evidence of proper disposal, regulatory violations, liability",
+        "prevention": [
+          "Document all disposals",
+          "Maintain destruction certificates",
+          "Keep audit trail",
+          "Verify third-party compliance",
+          "Regular audits of compliance"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 7.14 audit",
+    "audit_areas": [
+      {
+        "area": "1. Equipment Disposal Policy",
+        "description": "Verify documented policy exists",
+        "checks": [
+          "Policy document current",
+          "Data removal requirements specified",
+          "Licensed software handling",
+          "Asset tag removal",
+          "Verification procedures",
+          "Destruction vendors specified",
+          "Documentation requirements"
+        ]
+      },
+      {
+        "area": "2. Equipment Inventory",
+        "description": "Verify storage media equipment identified",
+        "checks": [
+          "Inventory of equipment",
+          "Storage media type documented",
+          "End-of-life tracking",
+          "Data sensitivity assessed"
+        ]
+      },
+      {
+        "area": "3. Data Removal Procedures",
+        "description": "Verify secure removal procedures",
+        "checks": [
+          "Procedure documented",
+          "Removal tools specified",
+          "Encryption key destruction",
+          "Multi-pass overwrite if used",
+          "Testing of procedure"
+        ]
+      },
+      {
+        "area": "4. Verification Procedures",
+        "description": "Verify data removal verified",
+        "checks": [
+          "Verification method defined",
+          "Tools used for verification",
+          "Verification records",
+          "Completeness verified"
+        ]
+      },
+      {
+        "area": "5. Vendor Selection",
+        "description": "Verify destruction vendors certified",
+        "checks": [
+          "Vendors certified",
+          "Contracts reviewed",
+          "Security requirements specified",
+          "References checked"
+        ]
+      },
+      {
+        "area": "6. Disposal Documentation",
+        "description": "Verify destruction certificates",
+        "checks": [
+          "Certificates of destruction",
+          "Chain of custody",
+          "Equipment identification",
+          "Method of destruction",
+          "Date and time",
+          "Certifying official"
+        ]
+      },
+      {
+        "area": "7. Donation or Resale",
+        "description": "Verify data removal for reuse",
+        "checks": [
+          "Data removal before donation",
+          "Verification of removal",
+          "Asset tags removed",
+          "Licensed software removed",
+          "Documentation"
+        ]
+      },
+      {
+        "area": "8. Training and Awareness",
+        "description": "Verify staff trained",
+        "checks": [
+          "Training materials",
+          "Training records",
+          "Personnel understanding",
+          "Compliance awareness"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, equipment containing RNG algorithms, game code, or customer data requires secure destruction",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Systems",
+        "disposal_requirements": [
+          "Equipment with RNG code - destruction only, no reuse or resale",
+          "Game development systems - secure wiping if reused internally",
+          "Development tools and code - certified destruction",
+          "Testing systems - thorough data removal"
+        ]
+      },
+      {
+        "system": "Customer Data Systems",
+        "disposal_requirements": [
+          "Customer data servers - certified destruction or secure wiping",
+          "Payment processing systems - destruction or secure sanitization",
+          "Database servers - encryption key destruction mandatory",
+          "Backup systems - complete data removal verified"
+        ]
+      },
+      {
+        "system": "Compliance Systems",
+        "disposal_requirements": [
+          "Audit systems - data removal verified",
+          "Compliance monitoring - secure disposal",
+          "Regulatory records - retention requirements met"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must verify all sensitive data securely removed or destroyed before equipment disposal or reuse, with documented certificates of destruction for critical systems"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Prevent data leakage from disposed or reused equipment through secure data removal and destruction",
+    "enforcement_priority": "Critical - improper disposal major source of data breaches",
+    "key_principles": [
+      "Complete inventory of equipment with storage media",
+      "Secure data removal before any reuse or disposal",
+      "Verification of complete data removal",
+      "Licensed software removal or transfer",
+      "Asset identification information removal",
+      "Destruction certificates for sensitive equipment",
+      "Professional destruction services for critical data",
+      "Comprehensive documentation and audit trail",
+      "Training for all IT personnel",
+      "Regular monitoring and verification"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 7.14 Secure Disposal or Re-Use of Equipment, implement",
+    "requirements": [
+      {
+        "requirement": "Develop policy",
+        "detail": "Equipment disposal and data removal policy"
+      },
+      {
+        "requirement": "Inventory equipment",
+        "detail": "Identify all equipment with storage media"
+      },
+      {
+        "requirement": "Develop removal procedure",
+        "detail": "Secure data removal process"
+      },
+      {
+        "requirement": "Select tools and vendors",
+        "detail": "Approved erasure tools and destruction vendors"
+      },
+      {
+        "requirement": "Develop verification",
+        "detail": "Verify complete data removal"
+      },
+      {
+        "requirement": "Handle software licenses",
+        "detail": "Remove or properly transfer"
+      },
+      {
+        "requirement": "Remove identification",
+        "detail": "Strip asset tags and labels"
+      },
+      {
+        "requirement": "Train personnel",
+        "detail": "IT staff trained on procedures"
+      },
+      {
+        "requirement": "Document disposals",
+        "detail": "Complete records of all removals"
+      },
+      {
+        "requirement": "Obtain certificates",
+        "detail": "Destruction certificates from vendors"
+      },
+      {
+        "requirement": "Monitor compliance",
+        "detail": "Verify procedures followed"
+      },
+      {
+        "requirement": "No undisclosed data",
+        "detail": "Verify no recovery possible"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.9 - Inventory of information and other associated assets",
+      "ISO 27001 A 5.12 - Classification of information",
+      "ISO 27001 A 7.10 - Storage media",
+      "ISO 27001 A 8.1 - User endpoint devices",
+      "ISO 27001 A 8.10 - Encryption"
+    ]
+  },
+  "best_practices": {
+    "disposal_best_practices": [
+      "Use professional destruction companies for sensitive equipment",
+      "Require certificates of destruction",
+      "Witness destruction for highly sensitive data",
+      "Maintain chain of custody",
+      "Document all disposals",
+      "Regular audit of vendors"
+    ],
+    "data_removal_best_practices": [
+      "Use certified secure erasure software",
+      "Follow NIST standards",
+      "Multiple overwrite passes",
+      "Encryption key destruction",
+      "Verification of removal",
+      "Testing on sample equipment"
+    ],
+    "reuse_best_practices": [
+      "Mandatory data removal before reuse",
+      "Complete verification",
+      "Remove all identification",
+      "Remove licensed software",
+      "Test functionality",
+      "Updated asset records"
+    ],
+    "documentation_best_practices": [
+      "Complete audit trail",
+      "Destruction certificates",
+      "Removal verification reports",
+      "Equipment identification records",
+      "Retention for 3+ years"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_equipment": [
+      {
+        "equipment": "RNG systems and servers",
+        "disposal": "Destruction only - no reuse or resale"
+      },
+      {
+        "equipment": "Game development systems",
+        "disposal": "Secure destruction or internal reuse with verified removal"
+      },
+      {
+        "equipment": "Customer data servers",
+        "disposal": "Certified destruction required"
+      },
+      {
+        "equipment": "Payment systems",
+        "disposal": "Destruction or certified sanitization"
+      }
+    ],
+    "regulatory_expectations": [
+      "Documented equipment disposal policy",
+      "Secure data removal procedures",
+      "Verification and certification",
+      "Professional destruction services",
+      "Complete audit trail and documentation",
+      "Training for IT personnel",
+      "Regular compliance monitoring"
+    ],
+    "audit_readiness": [
+      "Policy and procedures documented",
+      "Destruction certificates on file",
+      "Equipment inventory",
+      "Removal verification records",
+      "Staff training documentation",
+      "Regular audits conducted"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 7.14",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-7.14-secure-disposal-or-re-use-of-equipment.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

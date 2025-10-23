@@ -1,0 +1,181 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Use of Third Party Software",
+  "document_reference": "RTS Aim 16",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Peer-to-peer gambling",
+  "aim": {
+    "aim_id": "RTS_AIM_16",
+    "aim_number": 16,
+    "aim_title": "Use of Third Party Software",
+    "aim_description": "To make customers in peer-to-peer gambling aware that they may be gambling against a software program (designed to automatically participate in gambling within certain parameters, sometimes referred to as a bot), or a human aided by third party software"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_16A",
+      "requirement_number": "16A",
+      "title": "Information About Bots and Third Party Software",
+      "requirement_type": "mandatory",
+      "full_text": "Where peer-to-peer customers may be gambling against programs deployed by other customers to play on their behalf, or customers assisted by third party software, information should be made available that describes that this is possible, and if it is against the operator's terms and conditions, how to report suspected use.",
+      "implementation_guidance": {
+        "full_text": "The warning and information about how to complain should be included in game descriptions, rules, terms and conditions, 'help', 'how to play' or other general product information pages. The warning should also inform customers that if they use a program to gamble on their behalf, other customers may be able to exploit it.",
+        "key_points": [
+          "Where customers may be gambling against bots or software-assisted players, inform them",
+          "Describe that this is possible",
+          "If against terms and conditions, explain how to report suspected use",
+          "Include warning in game descriptions, rules, terms, help pages",
+          "Warn that using bots may be exploitable by other customers"
+        ],
+        "information_requirements": [
+          "Describe that customers may be gambling against programs (bots) deployed by others",
+          "Describe that customers may be gambling against software-assisted humans",
+          "If against terms and conditions, explain how to report suspected use"
+        ],
+        "disclosure_locations": [
+          "Game descriptions",
+          "Rules",
+          "Terms and conditions",
+          "Help pages",
+          "How to play pages",
+          "Other general product information pages"
+        ],
+        "additional_warning": {
+          "content": "If customers use a program to gamble on their behalf, other customers may be able to exploit it",
+          "purpose": "Deter use of bots by highlighting vulnerability"
+        }
+      },
+      "applies_to": [
+        "peer_to_peer_gambling",
+        "poker",
+        "peer_to_peer_betting"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 16A"
+    },
+    {
+      "requirement_id": "RTS_16B",
+      "requirement_number": "16B",
+      "title": "Clarity on Permitted and Prohibited Software",
+      "requirement_type": "mandatory",
+      "full_text": "Operators must make it clear to players whether the use of third party software is permitted and if so which types. Operators that prohibit certain types of third party software must implement measures intended to deter, prevent, and detect their use.",
+      "implementation_guidance": {
+        "full_text": "Clear, accessible information about the types of software that are permitted or prohibited should be included within terms and conditions and the players guide, as a minimum. This does not have to be an extensive list but could be a description of the key features of the software.",
+        "key_points": [
+          "Must make clear whether third party software use is permitted",
+          "If permitted, specify which types",
+          "If prohibited, must implement measures to deter, prevent, and detect use",
+          "Include information in terms and conditions and players guide (minimum)",
+          "Can describe key features rather than extensive list"
+        ],
+        "clarity_requirements": {
+          "permitted_software": "Make clear if permitted and which types",
+          "prohibited_software": "Make clear if prohibited"
+        },
+        "enforcement_measures": {
+          "when_required": "Operators that prohibit certain types of third party software",
+          "actions": [
+            "Implement measures to deter use",
+            "Implement measures to prevent use",
+            "Implement measures to detect use"
+          ]
+        },
+        "disclosure_requirements": {
+          "minimum_locations": [
+            "Terms and conditions",
+            "Players guide"
+          ],
+          "content_format": "Clear, accessible information about types of software permitted or prohibited",
+          "detail_level": "Does not require extensive list - can describe key features"
+        }
+      },
+      "applies_to": [
+        "peer_to_peer_gambling",
+        "poker",
+        "peer_to_peer_betting"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 16B"
+    },
+    {
+      "requirement_id": "RTS_16C",
+      "requirement_number": "16C",
+      "title": "Operator Disclosure of Own Bot Use",
+      "requirement_type": "mandatory",
+      "full_text": "Where operators use programs to participate in gambling on their behalf in peer-to-peer gambling, easily accessible information must be displayed, which clearly informs customers that the operator uses this kind of software.",
+      "implementation_guidance": {
+        "full_text": "Peer-to-peer gambling operators that use software to gamble on their behalf (for example, poker robots) should display a notice to customers on the home pages or screens and in the game description, 'help' or 'how to play/bet' pages or screens. As a minimum, restricted display devices should provide a link to further information on gambling pages/screens or in 'help', 'about' or 'how to bet/play' pages or screens.",
+        "key_points": [
+          "If operator uses bots/programs to participate, must display easily accessible information",
+          "Must clearly inform customers that operator uses this software",
+          "Display notice on home pages/screens",
+          "Display in game description, help, how to play/bet pages",
+          "Restricted display devices: minimum requirement is link to further information"
+        ],
+        "when_applicable": "Where operators use programs to participate in gambling on their behalf in peer-to-peer gambling",
+        "disclosure_requirements": {
+          "accessibility": "Easily accessible information must be displayed",
+          "clarity": "Must clearly inform customers that operator uses this kind of software"
+        },
+        "display_locations": {
+          "standard_devices": [
+            "Home pages or screens",
+            "Game description pages",
+            "Help pages",
+            "How to play/bet pages or screens"
+          ],
+          "restricted_display_devices": {
+            "minimum_requirement": "Provide link to further information",
+            "link_locations": [
+              "Gambling pages/screens",
+              "Help pages",
+              "About pages",
+              "How to bet/play pages or screens"
+            ]
+          }
+        },
+        "examples": {
+          "poker_robots": "Operators using poker robots must disclose this clearly"
+        }
+      },
+      "applies_to": [
+        "peer_to_peer_gambling",
+        "poker",
+        "peer_to_peer_betting"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 16C"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure transparency about use of bots and third party software in peer-to-peer gambling",
+    "enforcement_priority": "High - critical for fair peer-to-peer gambling",
+    "key_principles": [
+      "Customer awareness of bots and software-assisted play",
+      "Clear policies on permitted/prohibited software",
+      "Detection and prevention of prohibited software",
+      "Operator transparency when using own bots",
+      "Reporting mechanisms for suspected violations"
+    ]
+  },
+  "related_requirements": [
+    "RTS 11 - Limiting Collusion and Cheating",
+    "LCCP Fair Gaming Provisions"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 11 - Detection of Cheating and Collusion"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

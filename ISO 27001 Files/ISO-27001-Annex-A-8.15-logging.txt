@@ -1,0 +1,94 @@
+ISO 27001 Logging
+
+ISO 27001 Annex A 8.15 Logging is an ISO 27001 control that requires an organisation to produce, store, protect and analyse logs of activity, exceptions, faults and relevant events.
+Purpose
+
+ISO 27001 Annex A 8.15 is a detective control that to record events, generate evidence, ensure the integrity of log information, prevent against unauthorised access, identify information security events that can lead to an information security incident and to support investigations.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.15 as:
+Logs that record activities, exceptions, faults and other relevant events should be produced, stored, protected and analysed.
+Implementation Guide
+
+Identify Requirements
+
+Identify what requirements you have for logging so that you can understand what you need to implement.
+This is going to be based on the risk assessments that you have conduct and the needs of the business and your clients.
+We consider that we use logs to work out what has gone wrong, to provide information on what is happening so we can react and sometimes in formal investigations.
+ISO 27001 Logging and Monitoring Policy Template
+
+You will have a topic specific policy, the ISO 27001 Logging and Monitoring Policy that sets out what you do for logging and monitoring.
+Event Log Requirements
+
+The standard sets out what the logs should consider to be included as fields and these are:
+a) user IDs;
+b) system activities;
+c) dates, times and details of relevant events (e.g. log-on and log-off); d) device identity, system identifier and location;
+e) network addresses and protocols.
+The following events should be considered for logging:
+a) successful and rejected system access attempts;
+c) changes to system configuration;
+d) use of privileges;
+e) use of utility programs and applications;
+f) files accessed and the type of access, including deletion of important data files;
+g) alarms raised by the access control system;
+h) activation and de-activation of security systems, such as anti-virus systems and intrusion detection systems;
+i) creation, modification or deletion of identities;
+j) transactions executed by users in applications. In some cases, the applications are a service or product provided or run by a third party.
+Protect Logs
+
+The logs that you have should be protected. We want to ensure that someone could not do something and cover their tracks. This also applies to admins and privilege users. Controls should be implemented to protect them and these can be both technical, administrative or a combination.
+Ensure Data Protection Laws
+
+Logs are tricky in that they can contain information and data protected by data protection laws. It is important to ensure that what you have and what you do complies. This is includes all steps of the process and lifecycle including sharing logs with 3rd parties. It is recommended to get the advice of legal and data protection professionals in terms of your particular deployment.
+Analyse Logs
+
+We collect logs and then we analyse them. The guidance on the analysis is listed as:
+a) the necessary skills for the experts performing the analysis;
+b) determining the procedure of log analysis;
+c) the required attributes of each security-related event;
+d) exceptions identified through the use of predetermined rules [e.g. security information and event management (SIEM) or firewall rules, and intrusion detection systems (IDSs) or malware signatures];
+e) known behaviour patterns and standard network traffic compared to anomalous activity and behaviour [user and entity behaviour analytics (UEBA)];
+f) results of trend or pattern analysis (e.g. as a result of using data analytics, big data techniques and specialised analysis tools);
+g) available threat intelligence.
+Monitoring
+
+You will implement specific monitoring activities based on need to support the logs.
+Access to protected resources – success and failed
+Outbound network connections – malicious server access
+Service Reports – service provider reports
+Physical Security – access, locations, cctv as appropriate
+How to comply
+
+To comply with ISO 27001 Annex A 8.15 you are going to implement the ‘how’ to the ‘what’ the control is expecting.
+In short measure you are going to:
+Understand and record the legal, regulatory and contractual requirements you have for data
+Conduct a risk assessment
+Based on the legal, regulatory, contractual requirements and the risk assessment you will implement a logging solution
+Implement a topic specific policy, the ISO 27001 Logging and Monitoring Policy
+Document and implement your processes and technical implementations for logging
+Check that the controls are working by conducting internal audits
+What will an auditor check?
+
+The audit is going to check a number of areas. Lets go through the main ones
+1. That you have documentation
+
+What this means is that you need to show that you have documented your legal, regulatory and contractual requirements for information and that you have taken this into account when building your logging solution. Where data protection laws exist that you have documented what those laws are and what those requirements are. That you have an information classification scheme and a topic specific policy for access control and that you have documented your logging taking all of this into account.
+2. That you have have implemented logging appropriately
+
+They will look at systems to seek evidence of logging. They want to see evidence of logging and the process in operation that includes the analysis of the logs and what you do as a result of that analysis. In addition the use of cloud services and the cloud providers logging and logging capabilities will be reviewed.
+3. That you have conducted internal audits
+
+The audit will want to see that you have tested the controls and evidenced that they are operating. This is usually in the form of the required internal audits. They will check the records and outputs of those internal audits.
+Top 3 Mistakes People Make
+
+In my experience, the top 3 mistakes people make for ISO 27001 Annex A 8.15 logging are
+1. You collect too much
+
+Collecting too much data and logging everything is a common mistake we see. That in conjunction with storing all logs for ever. It is easy to be overwhelmed with information so it is important to work out what you are going to log and why. Then to be sure that the information is valuable, can be analysed and that analysis is actionable.
+2. You don’t know your legal obligations
+
+This is a massive mistake that we see, where people assume ISO 27001 is just information security and forget that it also checks that appropriate laws are being followed, and in particular data protection laws. Cost saving by not having a data protection expert or ignoring data protection law entirely is a common mistake we see people make when cutting corners and saving costs. Logging and in particular personal information, can get you in a lot of hot water depending how you implement it.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

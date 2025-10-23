@@ -1,0 +1,731 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.16",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.16",
+    "control_number": "A 5.16",
+    "control_title": "Identity Management",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure unique identification of individuals and systems accessing the organisation's information and other associated assets and to enable appropriate assignment of access rights",
+    "control_objective": "Manage the full lifecycle of identities for all entities (human and non-human) to enable controlled access to information and resources"
+  },
+  "iso_27001_definition": {
+    "official_text": "The full lifecycle of identities should be managed.",
+    "key_requirements": [
+      "Full lifecycle management of identities implemented",
+      "Identities cover both human and non-human entities",
+      "Creation, modification, and destruction processes documented",
+      "Approval processes for identity lifecycle events",
+      "Business justification for all identities maintained"
+    ]
+  },
+  "identity_management_overview": {
+    "definition": "Identity management is an evolution of user access management that covers the entire lifecycle of digital identities for all entities",
+    "scope": [
+      "User identities (human)",
+      "System identities (non-human)",
+      "Service accounts",
+      "Automated processes"
+    ],
+    "framework_components": [
+      "Policies defining identity management approach",
+      "Processes for identity lifecycle management",
+      "Technologies to implement and monitor identities"
+    ],
+    "key_concept": "Framework of policies, processes and technologies to ensure that the right entities have the right access to the right resources",
+    "identity_representation": "Identities are virtual representations allowing access to data and resources, used to control, monitor and report on what people and systems do and are doing"
+  },
+  "entity_types": {
+    "description": "Identities can represent multiple entity types",
+    "human_identities": {
+      "definition": "Digital identities representing individual people",
+      "examples": [
+        "Employees",
+        "Contractors",
+        "Third party vendors",
+        "Temporary staff"
+      ]
+    },
+    "non_human_identities": {
+      "definition": "Digital identities representing systems, services, and automated processes",
+      "examples": [
+        "System accounts",
+        "Service accounts",
+        "Application identities",
+        "Server identities",
+        "Automated process accounts"
+      ]
+    },
+    "treatment": "Human and non-human identities are treated equivalently from a management perspective"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.16_REQ_1",
+      "requirement": "Implement Approval Process for Identity Lifecycle",
+      "description": "Establish formal approval process for creating, modifying, revoking and deleting identities",
+      "details": {
+        "scope": [
+          "User account creation",
+          "System account creation",
+          "Service account creation",
+          "Identity modification",
+          "Identity revocation",
+          "Identity deletion"
+        ],
+        "segregation_of_duty": "The person making the request cannot be the person that approves it - segregation of duty principle must be enforced",
+        "audit_trail": "Maintain audit trail of all approvals (email copies, ticketing system records, etc.)",
+        "variations": "Process may vary slightly or be tightened based on circumstances (e.g., third party accounts, administrative/superuser identities require enhanced controls)"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_2",
+      "requirement": "Document Business Requirement and Justification",
+      "description": "For all identity types, business case and/or justification must be documented and included in approval process",
+      "details": {
+        "purpose": "Understand why the identity is being created, allowing approvers to make informed decisions and maintaining control",
+        "required_for": [
+          "Standard user accounts",
+          "System accounts",
+          "Service accounts",
+          "Administrative accounts",
+          "Superuser accounts"
+        ],
+        "special_attention": "Administrative and superuser accounts require particular scrutiny - these have special powers and can cause significant harm or access everything",
+        "benefit": "Enables understanding of what access is needed and why, supporting access control decisions"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_3",
+      "requirement": "Verify Identity of Entity Before Creation",
+      "description": "When an entity requests an identity to be created, modified or deleted, the requestor and the entity (where relevant) are appropriately verified and checked",
+      "details": {
+        "principle": "Zero trust approach - verify entities before creating virtual representations",
+        "human_identities": {
+          "requirement": "For human identities, verify the person is who they claim to be",
+          "approach": "Use common sense verification - not necessarily passport/photo ID level but reasonable verification",
+          "examples": [
+            "Phone verification with requestor",
+            "Verification from manager or supervisor",
+            "Cross-check with HR records",
+            "Validate against phishing attempts"
+          ],
+          "caution": "Be alert to phishing attempts designed to get personnel to create unauthorized accounts"
+        },
+        "non_human_identities": {
+          "requirement": "Verify the entity and the technical need",
+          "approach": "Confirm system/service existence and legitimacy of automation need"
+        }
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_4",
+      "requirement": "Create Identity with Appropriate Configuration",
+      "description": "Identity creation must be performed by qualified personnel with proper configuration",
+      "details": {
+        "personnel_requirement": "Must be performed by someone with expertise and experience",
+        "configuration_steps": [
+          "Create identity record",
+          "Record assignment to requestor/entity",
+          "Remove default permissions",
+          "Modify permissions to reflect role-based access or creation request",
+          "Enforce default credentials to be changed at first opportunity",
+          "Inform user via secure methods"
+        ],
+        "critical_point": "DO NOT USE DEFAULT IDENTITY PASSWORDS - default credentials and identities are easily discoverable online",
+        "default_settings": "Default permissions are not designed to meet specific organizational needs"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_5",
+      "requirement": "Configure and Activate Identity Appropriately",
+      "description": "Identity configuration must reflect approved request and business needs, not system defaults",
+      "details": {
+        "personnel_requirement": "Should be done by someone with expertise and experience",
+        "configuration_consideration": "Easy to create accounts but requires experience to configure properly to meet approved needs",
+        "principle": "Customize configuration to meet business requirements, not defaults",
+        "security_imperative": "Never use default passwords - they are publicly available and security risk"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_6",
+      "requirement": "Implement One User to One ID Principle",
+      "description": "For human entities, identities should be unique to enable accountability and access control",
+      "details": {
+        "primary_principle": "One human to one unique ID where possible",
+        "accountability": "Unique identity allows tracking of what each human has done if issues occur",
+        "access_control": "Enables control of what each human has access to and can do",
+        "user_training": "Personnel trained on policies prohibiting sharing of login information and consequences of sharing",
+        "enforcement": "Policy documentation and awareness training required"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_7",
+      "requirement": "Allow Shared Identities Where Operationally Necessary",
+      "description": "Standard allows for multiple people using one ID where required for business or operational needs with appropriate documentation",
+      "details": {
+        "principle": "Exception to one-user-one-ID principle",
+        "requirement": "Multiple persons sharing one ID only where exceptional business or operational needs exist",
+        "documentation": "Clearly documented business justification required",
+        "approval_process": "Approval processes must specifically account for shared identities",
+        "usage": "Sparing use in exceptional circumstances only",
+        "caveat": "Standard assumes one-user-one-ID as default approach"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_8",
+      "requirement": "Manage Non-Human Identities with Oversight",
+      "description": "System and non-human identities require approval processes and periodic oversight",
+      "details": {
+        "approval_process": "Same approval process required for system and non-human identities as human identities",
+        "periodic_oversight": "Recommend monthly reviews of all service accounts",
+        "review_scope": [
+          "Verify accounts are still needed",
+          "Check configuration of ID and permissions",
+          "Ensure no orphaned or forgotten accounts",
+          "Validate against business requirements"
+        ],
+        "automation": "Automated processes creating identities should also remove/disable identities when no longer required"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_9",
+      "requirement": "Remove Old and Unused Identities",
+      "description": "Identities no longer required must be removed, disabled or deleted promptly",
+      "details": {
+        "triggering_events": [
+          "Personnel leaving organization (leaver process)",
+          "Offboarding of contractors or third parties",
+          "Automated expiration based on business need",
+          "System decommissioning"
+        ],
+        "process": "Processes such as leaver process and off-boarding as well as automated processes remove or disable identities",
+        "monitoring": "Reviews and audits check that identities no longer required are handled appropriately in timely manner",
+        "risk": "Failure to remove old IDs leaves orphaned accounts that can be compromised or abused"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_10",
+      "requirement": "Enforce Unique Identity Naming",
+      "description": "Identities must never be duplicated or copied; naming must be consistent across systems",
+      "details": {
+        "principle": "One user, one entity to one ID maintained everywhere possible",
+        "duplication_prohibition": "Identities are never duplicated or copied to create new identities",
+        "naming_consistency": "Entity must be called by one name consistently across all systems",
+        "example": "If entity is called 'Brian' in IT, it must be called 'Brian' everywhere - not 'Anna' in HR",
+        "cross_system_mapping": "Avoid mapping same entity to different names across systems",
+        "standard_intent": "Prevent confusion and ensure clear audit trails"
+      }
+    },
+    {
+      "requirement_id": "A_5.16_REQ_11",
+      "requirement": "Implement Logging, Monitoring and Reporting",
+      "description": "Records of significant identity management and usage events must be maintained",
+      "details": {
+        "scope": "Logging and monitoring of identities and administrative actions is mandatory",
+        "definition": "Significant events are those determined appropriate for your systems",
+        "guidance": "Consult industry norms for systems in use and think about key event types",
+        "key_events_to_log": [
+          "Failed logon attempts",
+          "Successful logon attempts",
+          "Account creation",
+          "Account deletion",
+          "Account modification",
+          "Administrative actions",
+          "Access right changes",
+          "Password changes"
+        ],
+        "logging_principle": "Do not log everything indiscriminately - focus on significant events you will actually review",
+        "event_determination": "Events determined as appropriate considering creation, modification and deletion",
+        "record_retention": "Once events determined, they are recorded and records are kept",
+        "purpose": "Enable audit trail and investigation of security events"
+      }
+    }
+  ],
+  "identity_management_process": {
+    "description": "Standard identity management process typically consists of these lifecycle stages",
+    "process_stages": [
+      {
+        "stage": 1,
+        "name": "Request for Identity/Access",
+        "description": "Identity is requested by someone (requestor, manager, system administrator)",
+        "details": [
+          "Justification for creation of identity included",
+          "Access required specified",
+          "Business case documented",
+          "Entity type specified (human/non-human)"
+        ]
+      },
+      {
+        "stage": 2,
+        "name": "Approval",
+        "description": "Request is formally approved by authorized personnel",
+        "details": [
+          "Approval conducted by someone senior in organization",
+          "Approval from system owner and/or data owner",
+          "Segregation of duty enforced (approver ≠ requester)",
+          "Business case reviewed",
+          "Audit trail maintained"
+        ]
+      },
+      {
+        "stage": 3,
+        "name": "Implementation",
+        "description": "Identity is created and access granted",
+        "details": [
+          "Identity created by qualified personnel",
+          "Access granted per approval",
+          "Default permissions removed",
+          "Permissions modified to reflect role-based access",
+          "User informed via secure methods",
+          "Default credentials forced to change at first opportunity"
+        ]
+      },
+      {
+        "stage": 4,
+        "name": "Modification",
+        "description": "Identity is modified during its lifecycle based on business need",
+        "details": [
+          "Changes follow structured approval process",
+          "Business justification for modifications documented",
+          "Changes tracked and audited",
+          "Access rights updated per approval",
+          "Role changes accommodated"
+        ]
+      },
+      {
+        "stage": 5,
+        "name": "Destruction/Removal",
+        "description": "Identity is disabled and ultimately deleted when no longer required",
+        "details": [
+          "Triggered by leaver process, offboarding, or business need cessation",
+          "Identity disabled first",
+          "Audit trail maintained of removal",
+          "Follow-up verification that identity is removed",
+          "Account data archived per retention policy"
+        ]
+      }
+    ]
+  },
+  "identity_management_principles": {
+    "primary_principle": "One User to One ID",
+    "description": "Core principle guiding identity management decisions",
+    "principle_statement": "Each human entity should have one unique identity to enable accountability, access control, and audit trail",
+    "application": [
+      "Supports tracking of user actions",
+      "Enables appropriate access control",
+      "Simplifies management and auditing",
+      "Supports compliance and investigation"
+    ],
+    "flexibility": "Standard allows exceptions where business or operational needs require shared identities, with appropriate documentation and controls"
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish and communicate Identity Management Policy",
+        "detail": "Create comprehensive policy covering identity lifecycle, approval processes, and user responsibilities"
+      },
+      {
+        "step": 2,
+        "action": "Implement approval process for identity creation",
+        "detail": "Establish formal process with segregation of duty, business case requirement, and audit trail"
+      },
+      {
+        "step": 3,
+        "action": "Establish identity verification procedures",
+        "detail": "Define how requestors and entities are verified before identity creation"
+      },
+      {
+        "step": 4,
+        "action": "Implement identity creation procedures",
+        "detail": "Define standards for identity creation, configuration, and activation by qualified personnel"
+      },
+      {
+        "step": 5,
+        "action": "Establish joiner/mover/leaver process",
+        "detail": "Create formal processes for onboarding new personnel, moving between roles, and offboarding"
+      },
+      {
+        "step": 6,
+        "action": "Implement periodic identity reviews",
+        "detail": "Establish schedule for regular reviews of human and non-human identities (recommend monthly for service accounts)"
+      },
+      {
+        "step": 7,
+        "action": "Configure logging and monitoring",
+        "detail": "Enable logging of significant identity events and establish review procedures"
+      },
+      {
+        "step": 8,
+        "action": "Implement identity governance tools",
+        "detail": "Deploy technology to manage identity lifecycle and maintain audit trails"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with identity management",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "People have left but they still have an account",
+        "description": "Access to systems not removed when personnel or third parties leave the organization",
+        "root_cause": [
+          "No formal leaver process",
+          "Leaver process not followed",
+          "Forgotten or orphaned accounts",
+          "Contractor/third party access not managed"
+        ],
+        "impact": "Security risk - departed personnel retain access to systems and data",
+        "prevention": "Implement and rigorously follow leaver process and offboarding procedures",
+        "action": "Ensure access to systems is up to date and that people or third parties that have left no longer have access or accounts",
+        "audit_risk": "High - easiest win for auditor"
+      },
+      {
+        "rank": 2,
+        "mistake": "Third parties have open-ended access they do not need",
+        "description": "Third parties granted continuous access rather than time-limited, purpose-specific access",
+        "root_cause": [
+          "No process for third party access",
+          "Lack of documentation",
+          "Assumption access needed permanently",
+          "Forgotten when original need ended"
+        ],
+        "example": "Third party brought in to fix issue - given permanent access instead of temporary fix access",
+        "correct_approach": "Grant access only when needed for specific purpose, remove when purpose complete",
+        "prevention": "Process must grant access when required and remove when not needed",
+        "best_practice": "Time-limited, purpose-specific access for all third parties"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control is wrong",
+        "description": "Poor document version control and maintenance of identity management documentation and procedures",
+        "issues": [
+          "Version numbers don't match where used",
+          "Documents not reviewed in 12 months",
+          "Comments left in final documents",
+          "Inconsistent documentation across systems"
+        ],
+        "prevention": [
+          "Keep document version control up to date",
+          "Ensure version numbers match where used",
+          "Evidence review in last 12 months",
+          "Remove comments from final documents",
+          "Maintain strict document control procedures"
+        ],
+        "impact": "Massive own goal - shows lack of control and organization"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.16 audit",
+    "audit_areas": [
+      {
+        "area": "1. Verify Processes Are Followed",
+        "description": "Auditor checks that rules, procedures and identity management processes are documented and followed",
+        "checks": [
+          "Rules and procedures documented for identity lifecycle",
+          "Approval process documented with segregation of duty",
+          "Evidence of following documented procedures",
+          "Audit trail of approvals maintained",
+          "Recent hires have approval documentation",
+          "Granted access matches what was requested and approved",
+          "Admin accounts inventory reviewed",
+          "Unused or forgotten accounts identified"
+        ],
+        "easiest_win": "Request admin accounts from systems - likely to find forgotten, orphaned, or unauthorized admin accounts (9 out of 10 times)",
+        "best_practice": "Maintain documented evidence of all identity management activities"
+      },
+      {
+        "area": "2. Rules, Processes and Training Verification",
+        "description": "Verify documented procedures exist, are followed, and personnel are trained",
+        "checks": [
+          "Documented procedures for identity creation exist",
+          "Documented procedures for identity modification exist",
+          "Documented procedures for identity removal exist",
+          "Procedures are followed in practice",
+          "Evidence of personnel training on procedures",
+          "Leaver process documented and followed",
+          "No access remains for departed personnel",
+          "No accounts for former employees or contractors remain",
+          "Approval process evident in operation"
+        ],
+        "biggest_gotcha": "People with accounts who have left the organization - evidence of no leaver process or process not followed",
+        "red_flag": "Finding former employee accounts still active"
+      },
+      {
+        "area": "3. Identity Documentation and Record Keeping",
+        "description": "Review documentation, audit trails and identity records for completeness and accuracy",
+        "checks": [
+          "Identity policies documented and current",
+          "Identity procedures documented and current",
+          "All identities recorded with assignment information",
+          "Business justification documented for identities",
+          "Approval records maintained with audit trail",
+          "Identity review records maintained",
+          "Audit logs for significant identity events",
+          "Documentation up to date and reviewed in last 12 months",
+          "Version control accurate"
+        ],
+        "warning": "Poor documentation quality is a massive own goal"
+      },
+      {
+        "area": "4. Identity Lifecycle Management in Practice",
+        "description": "Verify identity management process stages are implemented in operation",
+        "checks": [
+          "Request process: Business justification required and obtained",
+          "Approval process: Segregation of duty enforced, approvals documented",
+          "Implementation process: Identity created by qualified personnel, configured appropriately",
+          "Modification process: Changes follow approval process",
+          "Destruction process: Identities removed when no longer required"
+        ]
+      },
+      {
+        "area": "5. Non-Human Identity Oversight",
+        "description": "Verify system and service account management and oversight",
+        "checks": [
+          "System accounts approved and documented",
+          "Service accounts approved and documented",
+          "Non-human identities reviewed periodically",
+          "Unused service accounts identified and removed",
+          "Default passwords changed or non-existent",
+          "Administrative account inventory complete"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Identity management is foundational to protecting all critical gambling systems - enables accountability, access control, and audit trails for all system access",
+    "specific_requirements": [
+      {
+        "system": "Sensitive Customer Information Systems",
+        "identity_requirements": [
+          "Strict one-user-one-ID principle enforced",
+          "Unique identities for all personnel accessing customer data",
+          "Enhanced verification before identity creation (payment card data, authentication credentials)",
+          "Rapid removal of identities upon employment termination",
+          "Regular reviews of customer data access identities",
+          "Audit trail of all customer information access",
+          "Third party access time-limited and purpose-specific",
+          "Administrative access to customer systems tightly controlled"
+        ]
+      },
+      {
+        "system": "Random Number Generation Systems",
+        "identity_requirements": [
+          "Minimal personnel identities with access (principle of least privilege)",
+          "All RNG access identities pre-approved and documented",
+          "Enhanced verification before RNG system access identity creation",
+          "Separation of duties - different identities for creation, testing, monitoring",
+          "Continuous monitoring of RNG access activity",
+          "Immediate identity removal if access no longer needed",
+          "Audit trail of all RNG system access and modifications",
+          "No shared identities for RNG access - strict one-user-one-ID"
+        ]
+      },
+      {
+        "system": "Game State and Results Storage",
+        "identity_requirements": [
+          "Read access identities separated from write access identities",
+          "Business justification required for write access identities",
+          "Audit trail of all modifications to game state and results",
+          "Identity-based access control to audit trail itself",
+          "Regular reviews of game state modification identities",
+          "Approval required for any identity gaining game state write access",
+          "Monitoring of all game state access by identity"
+        ]
+      },
+      {
+        "system": "System Access Points and Entry/Exit Controls",
+        "identity_requirements": [
+          "All system access through registered identities",
+          "Access point identities logged and monitored",
+          "Failed access attempts logged by identity",
+          "Unregistered access attempts detected and escalated",
+          "Identities for system access points reviewed periodically",
+          "Service account identities for automated monitoring"
+        ]
+      },
+      {
+        "system": "Communication Networks",
+        "identity_requirements": [
+          "Network access identities managed through identity lifecycle process",
+          "Service identities for network devices approved and documented",
+          "Network segment access controlled by identity",
+          "VPN and remote access identities enhanced verification",
+          "Network access identities monitored for unusual activity",
+          "Removal of network access identities per leaver process"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must implement comprehensive identity management covering all personnel and systems with documented lifecycle processes, approvals, and audit trails across all critical systems as defined in RTS Chapter 4"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Manage complete lifecycle of identities (human and non-human) to ensure accountability, enable appropriate access control, and provide audit trails for all system access and actions",
+    "enforcement_priority": "Critical - identity management is foundational to all access control and audit trail requirements",
+    "key_principles": [
+      "One user to one unique identity (where operationally possible)",
+      "Complete lifecycle management (creation through destruction)",
+      "Approval process with segregation of duty",
+      "Business justification for all identities",
+      "Verification before identity creation",
+      "Immediate removal of identities no longer required",
+      "Regular review and oversight of identities",
+      "Comprehensive logging of identity management events",
+      "Documented procedures for all identity lifecycle stages",
+      "No default passwords or credentials",
+      "Unique naming convention across all systems"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.16 Identity Management, implement the following",
+    "requirements": [
+      {
+        "requirement": "Implement process for creating, updating and removing IDs",
+        "detail": "Formal documented process covering all lifecycle stages"
+      },
+      {
+        "requirement": "Implement approval process",
+        "detail": "Segregation of duty, business case required, audit trail maintained"
+      },
+      {
+        "requirement": "Include business case/justification in approval process",
+        "detail": "All identity creations require documented business reason"
+      },
+      {
+        "requirement": "Have HR leaver process that removes user identities",
+        "detail": "Formal process ensuring access removed upon employment termination"
+      },
+      {
+        "requirement": "Regularly review accounts and identities",
+        "detail": "Periodic reviews (monthly recommended for service accounts) of all identities"
+      },
+      {
+        "requirement": "Log and monitor identity activity",
+        "detail": "Significant events recorded and audit trail maintained"
+      },
+      {
+        "requirement": "Document all procedures",
+        "detail": "Procedures documented, version controlled, reviewed annually"
+      },
+      {
+        "requirement": "Train personnel on policies",
+        "detail": "Personnel aware of identity sharing prohibitions and consequences"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "prerequisite_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 5.9 - Inventory of information and other associated assets"
+    ],
+    "dependent_controls": [
+      "ISO 27001 A 5.15 - Access control",
+      "ISO 27001 A 5.17 - Authentication information",
+      "ISO 27001 A 5.18 - Access rights",
+      "ISO 27001 A 6.5 - Responsibilities after termination or change of employment"
+    ],
+    "related_iso_controls": [
+      "ISO 27001 A 8.2 - Privileged access rights",
+      "ISO 27001 A 8.3 - Information access restriction",
+      "ISO 27001 A 8.5 - Secure authentication",
+      "ISO 27001 A 8.7 - Cryptographic controls"
+    ],
+    "cross_references": [
+      "Access Control (A 5.15) - applies access rights determined by identity management",
+      "Authentication Information (A 5.17) - manages credentials for identities",
+      "Access Rights (A 5.18) - assigns rights to identities",
+      "Privileged Access Rights (A 8.2) - manages special identities with elevated access"
+    ]
+  },
+  "best_practices": {
+    "process_best_practices": [
+      "Implement robust joiner/mover/leaver processes that are consistently followed",
+      "Require business justification for all identity creation - enforce at process level",
+      "Use ticketing system or formal approval mechanism to maintain audit trail",
+      "Periodic review schedule - monthly for service accounts, quarterly for human identities",
+      "Implement automated identity removal where possible (e.g., for contractors at contract end)",
+      "Regular training for personnel on identity policies and procedures"
+    ],
+    "technical_best_practices": [
+      "Implement identity management platform/tool where possible",
+      "Enforce unique identity naming across all systems",
+      "Automatic password change requirement at first login",
+      "Disable default passwords or credentials completely",
+      "Centralized logging of identity management events",
+      "Automated alerts for significant identity events",
+      "Regular reconciliation of active identities against HR records"
+    ],
+    "documentation_best_practices": [
+      "Maintain comprehensive asset register of identities",
+      "Document all identity procedures with version control",
+      "Keep approval records and audit trails",
+      "Regular documentation review and update (at least annually)",
+      "Clear labeling of confidential documentation",
+      "Remove comments from final procedure documents"
+    ],
+    "governance_best_practices": [
+      "Executive sponsorship for identity management program",
+      "Clear accountability for identity lifecycle stages",
+      "Regular reporting on identity metrics (new identities, removed identities, orphaned accounts)",
+      "Identity audit committee or review board",
+      "Integration with HR systems for automatic termination notification"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "high_risk_areas": [
+      {
+        "area": "Admin Account Management",
+        "risk": "Admin accounts with elevated privileges pose highest security risk if mismanaged",
+        "control": "Maintain inventory of all admin accounts, document purpose and holder, regularly review"
+      },
+      {
+        "area": "Third Party Access",
+        "risk": "Contractors, vendors, support personnel may have access longer than necessary",
+        "control": "Time-limited identities, automatic expiration, monthly review of third party accounts"
+      },
+      {
+        "area": "Customer Data Access",
+        "risk": "Personnel accessing customer payment data, authentication data, account balances",
+        "control": "Strict approval, limited personnel, frequent reviews, audit trail of all access"
+      },
+      {
+        "area": "RNG System Access",
+        "risk": "Access to RNG determines game integrity and fairness",
+        "control": "Minimal access, enhanced verification, separation of duties, continuous monitoring"
+      }
+    ],
+    "regulatory_expectations": [
+      "UKGC expects identity management as fundamental security control",
+      "Identity records must support audit and investigation",
+      "Access accountability through unique identities is mandatory expectation",
+      "Rapid removal of access upon employment termination is minimum expectation",
+      "Compliance approach should document controls for each critical system type"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.16",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.16-identity-management.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

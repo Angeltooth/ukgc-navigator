@@ -1,0 +1,83 @@
+ISO 27001 Privileged Access Rights
+
+There are users that will be granted privileged access such as administer (admin) accounts, super user accounts, global admin accounts and even service accounts.
+ISO 27001 Privileged Access Rights is the control of those accounts. This ISO 27001 annex a control sets out the requirement to restrict access to those accounts and to properly manage them.
+In ISO 27001 this is known as ISO27001:2022 Clause 8.2 Privileged Access Rights. 
+It is important because these accounts have the ability to gain unlimited access and make unlimited changes and they need to be carefully considered and controlled to protect against misuse and compromise.
+Key Takeaways
+
+Document, manage and control your admin accounts.
+Do not use generic accounts.
+It is called ISO27001:2022 Annex A 8.2 Privileged Access Rights.
+What is ISO 27001 Annex A 8.2?
+
+First, let’s understand what this ISO 27001 control actually wants.
+ISO 27001 Annex A 8.2 Privileged Access Rights is an ISO 27001 control that wants you to make sure you have controls in place to manage privileged access rights.
+ISO 27001 Annex A 8.2 Purpose
+
+The purpose of ISO 27001 Annex A 8.2 Privileged Access Rights is to ensure only authorised users, software components and services are provided with privileged access rights.
+ISO 27001 Annex A 8.2 Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.2 Privileged Access Rights as:
+The allocation and use of privileged access rights should be restricted and managed.
+How to implement ISO 27001 Annex A 8.2
+
+Now let me share with you some best practice when it comes to implementation.
+General Guidance
+
+Privileged access is the access that people, software or services have that allows them to do things that normal users cannot do and that could cause the most harm. This level of access is used to manage and configure systems and to allow people to perform administrative tasks. We need people to have this level of access but we do not want everyone to have it. The risk of granting this level of access to someone that doesn’t know what to do with it or should not have it is that they could break something, stop something working or carry out activities that are, shall we say, bad.
+Implement a Topic Specific Policy
+
+Your starting point for this control is to implement a topic specific policy on access control and include in that policy your approach to privilege access. The ISO 27001 Access Control Policy Template is already written for you and ready to go and includes a great free Access Control Policy Example PDF.
+Implement an authorisation process
+
+An authorisation process is required for all requests for access to organisational assets. Implement a process of authorisation that separates those requiring access from those that grant it. Keep a record of all accounts with privilege access. Consider placing time limits on their use or allocating expiry dates.
+Implement Role Based Access
+
+I find the use of role based access as a technique is a great tool here. Understanding what roles you need, defining them and then allocating people to roles based on need.
+Ensure there is segregation of duty
+
+When implementing this control use common sense and be practicable. We are working here on the principle of segregation of duty. We do not want the person with the access to authorise the access and where possible the person with access should not have conflicting access. Rather, separate out your privilege accounts logically where it makes sense and you are able to do so. An example would be to separate out those with the access to the databases from those with access to the logging and monitoring. This prevents things like that ability to do something then change the logs to cover it up.
+Adopt the principle of Least Privilege
+
+Access should be granted based on the principle of least privilege, meaning users only get the minimum access necessary for their role.
+Adopt the principle of Need-to-Know
+
+Users should only have access to information they need to perform their duties.
+Review access requirements
+
+Regular reviews of people’s access should form part of your normal operating rhythm. This also applies to privilege accounts. A process to check who has what and if they still need it. Ideally this will be performed at least monthly.
+Restrict the use of privilege accounts
+
+Ideally we want a situation where privilege accounts are only used when needed to perform privileged actions and normal accounts are used in normal day to day operations for the user. It doesn’t have to be this, as this is best practice, but the ideal is some way to distinguish when the user is in privilege mode. It will reduce the likelihood of an information security incident.
+This level of account really should be logged and monitored for audit purposes.
+Remove generic privileged accounts
+
+You should really discourage the use of generic administrative accounts. We want to be able to tie actions back to an individual. If you simple have to have a generic account then my recommendation is to manage it as an exception and record it in the risk register. Mange it via risk management, even if that is accepting the risk.
+How to pass the audit of ISO 27001 Annex A 8.2
+
+Based on my experience this is the best practice approach to passing the audit of ISO 27001 Annex A 8.2 Privileged Access Rights.
+Time needed: 1 day
+How to pass an audit of ISO 27001 Annex A 8.2
+Have policies and procedures in place
+Write, approve, implement and communicate the documentation required for privileged access rights.
+Assess your privilege use requirements and perform a risk assessment
+Identify what your requirements are for privileged access and then perform a risk assessment.
+Implement controls proportionate to the risk posed
+Based on the risk assessment implement controls proportionate that risk assessment and the needs of the business.
+Keep records
+For audit purposes you will keep records. Examples of the records to keep include changes, updates, monitoring, review and audits.
+Test the controls that you have to make sure they are working
+Perform internal audits that include the testing of the controls to ensure that they are working.
+Top 3 Mistakes People Make and How to Avoid Them
+
+The top 3 mistakes people make for ISO 27001 Annex A 8.2 are
+1. Having generic accounts
+
+Having generic accounts is not always a bad thing but having them because you are lazy is. Try to eliminate them and where you do require them manage via risk management. This means recording them on the risk register and managing the risk, even if managing the risk is accepting the risk and recording the decision.
+2. Laptop Administrator Accounts
+
+This common mistake actually relates to end points and the default position of providing all users administrative control over those devices by default. Again, this is usually lazy management and again, as above, if required manage it via risk management. Auditors check and will want a justification and don’t just do it because it is easy or you have always done it. This level of access really does negate a lot of the end point controls that you are going to rely on.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

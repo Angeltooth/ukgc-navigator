@@ -1,0 +1,178 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Limiting Collusion and Cheating",
+  "document_reference": "RTS Aim 11",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Peer-to-peer gaming",
+  "aim": {
+    "aim_id": "RTS_AIM_11",
+    "aim_number": 11,
+    "aim_title": "Limiting Collusion and Cheating",
+    "aim_description": "To reduce the risk that cheating or collusion by players unfairly disadvantages another player and to inform customers about the risks posed"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_11A",
+      "requirement_number": "11A",
+      "title": "Anti-Collusion and Anti-Cheating Measures",
+      "requirement_type": "mandatory",
+      "full_text": "Measures intended to deter, prevent, and detect collusion and cheating must be implemented. Gambling systems must retain a record of relevant activities to facilitate investigation and be capable of suspending or disabling player accounts or player sessions. Operators must monitor the effectiveness of their policies and procedures.",
+      "implementation_guidance": {
+        "full_text": "Relevant activities to be recorded will vary by game but may include: which players played at which tables; the amounts won from and lost to accounts; game activities to an individual bet/action level. Where appropriate, prevention measures may include: taking steps to prevent a player from occupying more than one seat at any individual table. Detection measures may include, detecting and investigating the following, where appropriate: players who frequently share the same tables; players from same address who share the same table; suspicious patterns of play (such as chip dumping); unusual gameplay statistics. Customer complaints about cheating should be investigated. Records should be kept of investigations which result in an account being closed including: player details (name, location, which licence the activity was in reliance on), scale of the offences (financial and number of players), time and date etc; the reason for investigation (including whether it was initiated by customer contact) and the outcome; any relevant evidence such as reports, screenshots, chat history etc. This information should be considered when updating the risks identified in relevant policies and procedures.",
+        "key_points": [
+          "Must implement measures to deter, prevent, and detect collusion and cheating",
+          "Must retain records of relevant activities to facilitate investigation",
+          "Must be capable of suspending or disabling player accounts or sessions",
+          "Must monitor effectiveness of policies and procedures",
+          "Record: which players at which tables, amounts won/lost, individual bet/action level activity",
+          "Prevention: prevent player from occupying multiple seats at same table",
+          "Detection: players frequently sharing tables, same address players, chip dumping, unusual statistics",
+          "Investigate customer complaints about cheating",
+          "Keep records of investigations resulting in account closure",
+          "Use investigation findings to update risk assessments and procedures"
+        ],
+        "recording_requirements": {
+          "scope": "Relevant activities will vary by game",
+          "examples": [
+            "Which players played at which tables",
+            "Amounts won from and lost to accounts",
+            "Game activities to individual bet/action level"
+          ]
+        },
+        "prevention_measures": {
+          "examples": [
+            {
+              "measure": "Multi-seat prevention",
+              "description": "Taking steps to prevent player from occupying more than one seat at any individual table"
+            }
+          ]
+        },
+        "detection_measures": {
+          "requirement": "Detect and investigate where appropriate",
+          "examples": [
+            {
+              "indicator": "Players who frequently share same tables",
+              "action": "Detect and investigate"
+            },
+            {
+              "indicator": "Players from same address who share same table",
+              "action": "Detect and investigate"
+            },
+            {
+              "indicator": "Suspicious patterns of play",
+              "example": "Chip dumping",
+              "action": "Detect and investigate"
+            },
+            {
+              "indicator": "Unusual gameplay statistics",
+              "action": "Detect and investigate"
+            }
+          ]
+        },
+        "complaint_investigation": {
+          "requirement": "Customer complaints about cheating should be investigated"
+        },
+        "investigation_record_keeping": {
+          "when_required": "Investigations which result in account being closed",
+          "required_information": [
+            "Player details (name, location, which licence the activity was in reliance on)",
+            "Scale of offences (financial and number of players)",
+            "Time and date",
+            "Reason for investigation (including whether initiated by customer contact)",
+            "Outcome",
+            "Relevant evidence (reports, screenshots, chat history, etc.)"
+          ],
+          "use_of_information": "Should be considered when updating risks identified in relevant policies and procedures"
+        },
+        "monitoring_requirement": {
+          "scope": "Effectiveness of policies and procedures",
+          "action": "Operators must monitor"
+        }
+      },
+      "applies_to": [
+        "peer_to_peer_gaming",
+        "poker",
+        "peer_to_peer_betting"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 11A"
+    },
+    {
+      "requirement_id": "RTS_11B",
+      "requirement_number": "11B",
+      "title": "Information About Anti-Cheating Policies",
+      "requirement_type": "mandatory",
+      "full_text": "Information must be made available about the operator's policies and procedures with regard to cheating, recovered player funds and about how to complain if a customer suspects other participants are cheating.",
+      "implementation_guidance": {
+        "full_text": "As a minimum deterrent, customers should be informed that accounts will be closed if the customer is found to have cheated. Information regarding funds that are recovered from accounts during integrity investigations is not expected to cover every scenario but should highlight the main aims of the policy. Relevant information should be included in terms and conditions or rules.",
+        "key_points": [
+          "Must make information available about policies regarding cheating",
+          "Must explain policies about recovered player funds",
+          "Must explain how to complain if customer suspects cheating",
+          "Minimum deterrent: inform customers accounts will be closed if found to have cheated",
+          "Recovered funds policy should highlight main aims (not exhaustive)",
+          "Include information in terms and conditions or rules"
+        ],
+        "required_information": [
+          {
+            "topic": "Anti-cheating policies and procedures",
+            "requirement": "Make available to customers"
+          },
+          {
+            "topic": "Recovered player funds policy",
+            "requirement": "Highlight main aims of policy",
+            "detail_level": "Not expected to cover every scenario"
+          },
+          {
+            "topic": "How to complain",
+            "requirement": "Explain process if customer suspects other participants are cheating"
+          }
+        ],
+        "minimum_deterrent": {
+          "requirement": "Inform customers that accounts will be closed if found to have cheated",
+          "purpose": "Deterrent effect"
+        },
+        "disclosure_location": {
+          "requirement": "Include in terms and conditions or rules"
+        }
+      },
+      "applies_to": [
+        "peer_to_peer_gaming",
+        "poker",
+        "peer_to_peer_betting"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 11B"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Protect peer-to-peer gaming integrity by preventing, detecting, and deterring collusion and cheating",
+    "enforcement_priority": "High - critical for peer-to-peer game fairness and player protection",
+    "testing_requirements": "Must demonstrate effective detection systems and investigation procedures",
+    "key_principles": [
+      "Multi-layered approach: deter, prevent, detect",
+      "Comprehensive activity recording",
+      "Proactive detection of suspicious patterns",
+      "Investigation of complaints",
+      "Account suspension capabilities",
+      "Clear communication of policies",
+      "Use investigation findings to improve systems"
+    ]
+  },
+  "related_requirements": [
+    "RTS 16 - Use of Third Party Software",
+    "LCCP Customer Protection Provisions",
+    "Data Protection and Privacy Requirements"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 16 - Third Party Software (bots, poker aids)"
+    ]
+  }
+}

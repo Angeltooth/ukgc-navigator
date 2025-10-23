@@ -1,0 +1,41 @@
+RTS 9 – Progressive jackpot systems
+Applies to:
+Gaming (including bingo)
+RTS aim 9
+To ensure that progressive jackpot systems operate fairly.
+RTS requirement 9A
+An explanation of the jackpot rules must be clearly available to the customer before they commit to
+gamble.
+RTS implementation guidance 9A
+a. The rules for a jackpot shall describe how it is funded, what the start-up seed and any ceiling values
+are. The jackpot system’s return to player percentage should be displayed as per RTS 3C, this could
+be one combined game and progressive jackpot RTP figure or broken down into the base game and
+jackpot component. If a player is not eligible for a game’s progressive jackpot prize this should be
+made clear, along with their respective theoretical RTP.
+b. The rules for a jackpot shall describe how the prizes are determined and awarded, including what
+happens when two or more players simultaneously trigger the same jackpot, or appear to
+simultaneously trigger the jackpot, for example due to network latency issues.
+c. All eligible players should be able to see the current jackpot values and these should be updated as
+frequently as is practicable, particularly after the amount has been reset following a win.
+d. Where a jackpot is capped at a ceiling value, an explanation of how subsequent player contributions
+are handled should be provided (for example, the operation of any redirected overflow or reserve
+pools).
+RTS requirement 9B
+Jackpot systems must be configured and operated with adequate fairness and security.
+RTS implementation guidance 9B
+a. The gambling system shall maintain strict access and logging controls over the configuration and
+changes made to live jackpots.
+b. Where a customer contributes to a jackpot pool, that customer should be eligible to win the jackpot
+whilst they are playing that game. The chances of winning a jackpot should increase in correlation
+with the amount contributed.
+c. Where a jackpot containing player contributions is decommissioned those contributions need to be
+returned fairly according to the circumstances, with priority given to the players who made the
+contributions. Some example methods to achieve this include:
+i. waiting until the jackpot is next awarded before decommissioning it.
+ii. adding any remaining contributions onto another jackpot system, preferably one with a similar
+player base.
+iii. returning remaining contributions as a one off event, with adequate customer disclosure to
+explain the origin of money.
+d. The gambling system shall ensure that a winning customer is notified of a jackpot win immediately
+after it is triggered and that other participating customers are adequately notified of the jackpots reset
+value.

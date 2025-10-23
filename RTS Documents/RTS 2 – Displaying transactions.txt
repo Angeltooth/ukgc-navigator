@@ -1,0 +1,76 @@
+RTS 2 – Displaying transactions
+Applies to:
+In respect of requirements 2A to 2D - All gambling.
+In respect of requirements 2E - Casino (excluding peer-to-peer poker).
+RTS aim 2
+To enable the customer to understand the value and content of their transactions.
+RTS requirement 2A
+The remote gambling system must make available clear information about the amount of money being
+gambled by the customer, including any conversions from one form of currency to another, or from
+currency to credits, chips or other tokens etc, at the point of conversion.
+RTS implementation guidance 2A
+a. The financial commitment for each gamble should be displayed somewhere on the screen either in
+the currency of the customer’s account or in the currency of the product. The use of credits, chips or
+other tokens with no face value should only be used when the corresponding currency amount is
+clearly visible, or where the customer is not staking additional money such as a poker tournament.
+b. Any conversion from one currency to another should be clearly presented to the customer and any
+conversion rules are also to be presented. Where currency is converted into tokens, chips or credits,
+etc, the conversion should be clearly displayed.
+c. Information about the value of the gamble should be displayed including, as appropriate:
+i. unit stake and total stake, whether currency, credit, tokens, chips, or any other form of payment
+ii. entry fees, for example, payment for entry to poker tournaments
+iii. the price of lottery tickets and the number of draws entered.
+d. For telephone gambling, this information is to be delivered by the customer service agent or
+automated response system.
+e. For subscription lotteries, sending a confirmation by email or post and/or displaying the stake and the
+number of draws entered when the customer subscribes is sufficient.
+RTS requirement 2B
+The gambling system must display sufficient relevant information about the customer’s gamble so that the
+content of the gamble is clear. This information must be made available before the customer commits to
+the gamble including, for example, in the artwork and textual information displayed during gaming, or on
+an electronic equivalent of a betting slip or lottery ticket.
+RTS implementation guidance 2B
+a. The following items provide guidelines about the type of information that may be relevant:
+i. selections – the items the customer has chosen to gamble on
+ii. the bet type
+iii. the accepted odds, for example current odds, starting price, first show, etc
+iv. the odds format that will take precedence in settling bets must be set out in the rules.
+These items, where relevant, are also required on applications designed for use on restricted display
+devices.
+b. For telephone gambling the content of the customer’s bet should be read back to them before the bet
+is confirmed.
+c. Where the customer is able to choose, through the use of a third party user-interface, to override the
+display of this information, this must not be the default option. That is, the customer must make an
+active choice not to have the information available or to install a user-interface that does not contain
+the information. The remote gambling system should continue to make available or send the
+information to the customer; it should not assume that the information is not required.
+d. For subscription lotteries, sending a confirmation by email or post and/or displaying the first draw and
+the number of draws for which the customer will be entered is sufficient.
+RTS requirement 2C
+The gambling system must enable customers to choose whether to accept price fluctuations (in either
+direction) that occur after their bet is requested.
+RTS implementation guidance 2C
+a. Players should be presented with options to control whether a price change should be accepted or
+not.
+b. These options must be presented on a per bet basis, except in circumstances where a customer has
+requested a default account setting to disable price change alerts prior to bet acceptance. Where the
+functionality is offered at an account level the default option should not be set to accept all
+fluctuations. Where a customer chooses not to accept price changes automatically any bet where the
+price changes must be reoffered before it is accepted.
+c. Information sufficient to explain the options to the customers should be provided.
+d. An optimum solution would enable consumers to choose to automatically accept price movements
+within a particular margin range. Account level options offered to consumer could include accepting
+all bets with higher price, accepting all bets with shorter price or accepting all bets regardless of price
+movements.
+e. This requirement does not intend to capture currency fluctuations.
+RTS requirement 2D
+Customers who choose to use third party user interfaces must be informed that applications may not
+display full information about their gambles.
+RTS implementation guidance 2D
+Information should be included in terms and conditions, rules or other general information about the
+gambling product that is made available to and/or sent out to customers.
+RTS requirement 2E
+All gaming sessions must clearly display a customer’s net position, in the currency of their account or
+product (for example, pounds sterling, dollar, Euro) since the session started.
+RTS Implementation guidance 2E
+Net position is defined as the total of all winnings minus the sum of all losses since the start of the session.

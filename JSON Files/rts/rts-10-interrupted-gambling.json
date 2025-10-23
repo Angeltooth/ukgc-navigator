@@ -1,0 +1,201 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Interrupted Gambling",
+  "document_reference": "RTS Aim 10",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Peer-to-peer betting and gaming (including bingo)",
+  "aim": {
+    "aim_id": "RTS_AIM_10",
+    "aim_number": 10,
+    "aim_title": "Interrupted Gambling",
+    "aim_description": "To ensure that customers are treated fairly in the event of interrupted play or betting and that they are aware of how they will be treated if interruptions occur"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_10A",
+      "requirement_number": "10A",
+      "title": "Fair Policies for Service Interruptions",
+      "requirement_type": "mandatory",
+      "full_text": "Operators must take all reasonable steps to ensure that their policies for instigating or dealing with service interruptions are fair and do not systematically disadvantage customers.",
+      "implementation_guidance": {
+        "full_text": "For gaming the following policies should be applied: where an interruption occurs after the operator receives notification of the customer's gamble and where the customer can have no further influence on the outcome of the event or gamble the results of the gamble should stand; where an interruption to a single-participant single stage event occurs before an outcome has been generated the customer should have any deducted stake returned to their balance; for stateful games (games where there are multiple stages or decision points), all reasonable steps should be taken to restore the game to its last known state to enable the customer to complete the game; games with multiple participants (equal chance or otherwise) should be dealt with fairly on a case-by-case basis; progressive jackpot values should be restored to their pre-failure state. For peer-to-peer betting the following policies should be applied: where a service interruption is caused by failures in the gambling system, operators should suspend betting on all betting markets that have been affected by a significant event before service is restored; other failures should be dealt with fairly on a case-by-case basis.",
+        "key_points": [
+          "Policies must be fair and not systematically disadvantage customers",
+          "Gaming: If interruption after gamble committed and customer has no further influence, results stand",
+          "Gaming: Single-stage event interrupted before outcome generated - return stake",
+          "Gaming: Stateful games - restore to last known state to allow completion",
+          "Gaming: Multiple participant games - deal fairly case-by-case",
+          "Gaming: Progressive jackpots - restore to pre-failure state",
+          "Betting: If gambling system failure affects betting markets, suspend markets before restoring service",
+          "Betting: Other failures - deal fairly case-by-case"
+        ],
+        "gaming_policies": [
+          {
+            "scenario": "Interruption after operator receives notification and customer has no further influence",
+            "policy": "Results of the gamble should stand"
+          },
+          {
+            "scenario": "Single-participant single stage event interrupted before outcome generated",
+            "policy": "Return deducted stake to customer balance"
+          },
+          {
+            "scenario": "Stateful games (multiple stages or decision points)",
+            "policy": "Take all reasonable steps to restore game to last known state to enable customer to complete"
+          },
+          {
+            "scenario": "Games with multiple participants",
+            "policy": "Deal with fairly on case-by-case basis"
+          },
+          {
+            "scenario": "Progressive jackpot values",
+            "policy": "Restore to pre-failure state"
+          }
+        ],
+        "peer_to_peer_betting_policies": [
+          {
+            "scenario": "Service interruption caused by gambling system failures affecting betting markets with significant event",
+            "policy": "Suspend betting on all affected betting markets before service is restored"
+          },
+          {
+            "scenario": "Other failures",
+            "policy": "Deal with fairly on case-by-case basis"
+          }
+        ]
+      },
+      "applies_to": [
+        "peer_to_peer_betting",
+        "gaming",
+        "bingo"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 10A"
+    },
+    {
+      "requirement_id": "RTS_10B",
+      "requirement_number": "10B",
+      "title": "System Recovery Capabilities",
+      "requirement_type": "mandatory",
+      "full_text": "Systems must be capable of recovering from failures that cause interruptions to gambling, including where appropriate, the capability to void gambles (with or without manual intervention), the capability to suspend betting markets, and taking all reasonable steps to retain sufficient information to be able to restore events to their pre-failure state.",
+      "implementation_guidance": {
+        "full_text": "For gaming the system should: be capable of voiding gambles and restoring the amount gambled to the customer automatically, or in conjunction with manual operational controls; and implement all reasonable measures to maintain sufficient information to be capable of automatically restoring an event to its pre-failure state so that it may be completed by the customer. The following information should be restored, as appropriate: the state of a deck of cards, and any hands that have been dealt; number of tokens collected; any other predetermined information, such as maps or prize layouts; the value of any progressive jackpots; the state of any gambles, for example, who has staked what on what outcome; bets placed or offered. For peer-to-peer betting, it should be possible to suspend betting markets manually or automatically.",
+        "key_points": [
+          "Systems must be capable of recovering from failures causing gambling interruptions",
+          "Must have capability to void gambles (automatic or with manual intervention)",
+          "Must have capability to suspend betting markets",
+          "Must retain sufficient information to restore events to pre-failure state",
+          "Gaming: Capable of voiding gambles and restoring amount to customer (automatic or manual)",
+          "Gaming: Maintain info to restore to pre-failure state for customer completion",
+          "Gaming: Restore deck state, tokens, predetermined info, jackpot values, gamble states, bets",
+          "Peer-to-peer betting: Must be possible to suspend betting markets (manual or automatic)"
+        ],
+        "gaming_system_capabilities": {
+          "voiding_gambles": {
+            "requirement": "Capable of voiding gambles and restoring amount gambled to customer",
+            "methods": [
+              "Automatically",
+              "In conjunction with manual operational controls"
+            ]
+          },
+          "restoration_capability": {
+            "requirement": "Implement all reasonable measures to maintain sufficient information for automatic restoration",
+            "purpose": "Restore event to pre-failure state so customer may complete it",
+            "information_to_restore": [
+              "State of deck of cards and any hands dealt",
+              "Number of tokens collected",
+              "Any other predetermined information (maps, prize layouts)",
+              "Value of any progressive jackpots",
+              "State of any gambles (who staked what on what outcome)",
+              "Bets placed or offered"
+            ]
+          }
+        },
+        "peer_to_peer_betting_capabilities": {
+          "betting_market_suspension": {
+            "requirement": "Must be possible to suspend betting markets",
+            "methods": [
+              "Manually",
+              "Automatically"
+            ]
+          }
+        }
+      },
+      "applies_to": [
+        "peer_to_peer_betting",
+        "gaming",
+        "bingo"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 10B"
+    },
+    {
+      "requirement_id": "RTS_10C",
+      "requirement_number": "10C",
+      "title": "Information About Service Interruption Policies",
+      "requirement_type": "mandatory",
+      "full_text": "Operators must make available information about their policies regarding service interruptions in various different circumstances.",
+      "implementation_guidance": {
+        "full_text": "Operators should make information available to customers about how they will be treated in various common scenarios. However, this does not mean that operators have to detail all possible scenarios or responses to service interruptions.",
+        "key_points": [
+          "Operators must make information available about service interruption policies",
+          "Information should cover various different circumstances",
+          "Should explain how customers will be treated in common scenarios",
+          "Not required to detail ALL possible scenarios or responses"
+        ],
+        "disclosure_requirements": {
+          "scope": "Various different circumstances",
+          "detail_level": "Common scenarios - not exhaustive list required",
+          "purpose": "Enable customers to understand how they will be treated if interruptions occur"
+        },
+        "information_locations": [
+          "Terms and conditions",
+          "Help pages",
+          "Rules sections",
+          "FAQs"
+        ]
+      },
+      "applies_to": [
+        "peer_to_peer_betting",
+        "gaming",
+        "bingo"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 10C"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure customers treated fairly when technical interruptions occur and understand policies",
+    "enforcement_priority": "High - protects customers during system failures",
+    "testing_requirements": "Must demonstrate system recovery capabilities and fair interruption handling policies",
+    "key_principles": [
+      "Fair treatment during interruptions",
+      "No systematic customer disadvantage",
+      "Systems must be capable of recovery",
+      "Stateful restoration where possible",
+      "Clear policies communicated to customers",
+      "Case-by-case fairness for complex scenarios"
+    ]
+  },
+  "related_requirements": [
+    "RTS 5 - Result Determination",
+    "RTS 9 - Progressive Jackpot Systems",
+    "LCCP Customer Fairness Provisions"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 5 - Result Determination",
+      "RTS 9B - Progressive Jackpot Restoration"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

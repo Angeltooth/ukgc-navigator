@@ -1,0 +1,207 @@
+ISO 27001 Security Testing in Development and Acceptance
+
+ISO 27001 Security Testing in Development and Acceptance is an ISO 27001 control that requires an organisation to test software before they put it into production to ensure that information security requirements have been met.
+Purpose
+
+ISO 27001 Annex A 8.29 is a preventive control to validate if information security requirements are met when applications or code are deployed to the production environment.
+Definition
+
+ISO 27001 defines ISO 27001 Annex A 8.29 as:
+Security testing processes should be defined and implemented in the development life cycle.
+Implementation Guide
+
+I am not in the business of telling you how to conduct testing. Testing is a professions in it’s own right and information security testing can require some specialist resources. What I am going to do is show you want the ISO 27001 standard expects in the implementation for you to achieve ISO 27001 certification. These are on the whole, no brainers, common sense and what you would expect but let us take a look anyway.
+General
+
+Testing is part of the software development lifecycle. There relevant clauses that you need include:
+ISO 27001 Annex A 5.8 Information Security In Project Management
+ISO 27001 Annex A 8.25 Secure Development Life Cycle
+ISO 27001 Annex A 8.26 Application Security Requirements
+Secure Development Policy
+
+The first step is to create, or download, your secure development policy. The ISO 27001 secure development policy set’s out what you do for information security in the context of software and systems development. It does not set out how you do it, as how you do it is covered in your processes.
+Separate Environments
+
+You are going to make sure that for the in-scope developments that you have separate development, test and live environments with the appropriate management and controls in place around this. This will include the process of promoting through those environments and the authorisations and approvals and acceptance.
+Testing in a test environment should be conducted with the test environment matching as closely as possible to the production environment.
+It is possible to have multiple test environments to facilitate different kinds of tests.
+Further reading: ISO 27001 Annex A 8.31 Separation of Development, Test and Production Environments
+Testing
+
+All secure development will have testing. It is not our place, again, to tell you how to test as again, this is a profession in its own right but there must be a level of security testing in place that looks at the three parts of information security being confidentiality, integrity and availability.
+Simple testing that can be considered here would be penetration testing, vulnerability testing, regression testing, code scanning and code testing.
+We conduct testing for new information systems, upgrades, patches, new versions, changes.
+When conducting security testing we are testing against a set of requirements that we have defined. This can be in the form of configurations in testing systems. Baseline configurations and using the features of testing tools to enhance our capability.
+Testing should consider including:
+Access restrictions
+Global admin restrictions
+Cryptography and encryption
+User authentication
+Secure Configurations
+Testing is always proportionate to the risk, importance and data being processed, stored or transmitted.
+Test Plans
+
+Testing is conducted against test plans. When creating test plans consideration is given to
+Schedules of Activity
+Schedules of Tests
+Inputs and Expected Outputs
+Evaluation Criteria
+Follow Up Actions
+Knowledge and Experience
+
+The standard touches on this in a number of areas, having people with the right knowledge and / or experience to perform the role. This is also true of testing. Having a competency matrix and being able to point to qualifications or certifications will help. Where there are gaps a plan, such as training, should be in place but these are basic HR and people functions that are common place in any role.
+Who Tests
+
+Who conducts the test should be considered and be proportionate to the test being performed. Consider testing by the actual developer, peer review testing and also independent testing. An independent test has to be completed before go live.
+Types of Testing
+
+There are many types of testing that can be undertaken. The following is not an exhaustive list but
+Code Review
+Vulnerability Scanning
+Penetration Testing
+Peer Review
+Automated Testing
+Manual Testing
+Documentation
+
+Be sure to have documented evidence of tests conducted as well as of the acceptance criteria, process and sign offs.
+Outsourced Development
+
+If you outsource your development then the third party supplier controls will apply. The main thing is to ensure they meet your requirements for secure development but all relevant controls will apply to them.
+Further reading: ISO 27001 Annex A 8.30 Outsourced Development
+Implementation Checklist
+
+ISO 27001 Annex A 8.29 Security Testing in Development and Acceptance Implementation Checklist:
+1. Define a Security Testing Strategy
+
+Develop a comprehensive security testing strategy that outlines the scope, objectives, and methodology for security testing throughout the development lifecycle.
+Challenges
+
+Aligning security testing with the overall development process, ensuring adequate resources and expertise.
+Solutions
+
+Integrate security testing into the software development lifecycle (SDLC), provide training to development teams on security best practices.
+2. Conduct Code Reviews
+
+Perform regular code reviews to identify and address security vulnerabilities, such as buffer overflows, SQL injection, and cross-site scripting.
+Challenges
+
+Ensuring consistent and thorough code reviews, maintaining developer motivation for code review activities.
+Solutions
+
+Implement automated code review tools, establish clear guidelines and checklists for code reviews, provide incentives for developers to participate in code reviews.
+3. Perform Vulnerability Scans
+
+Utilise automated vulnerability scanning tools to identify and assess security vulnerabilities in applications, systems, and networks.
+Challenges
+
+False positives, overwhelming number of vulnerabilities, keeping up with the latest vulnerabilities and exploits.
+Solutions
+
+Prioritise vulnerabilities based on risk, implement vulnerability management processes, utilise vulnerability scanning tools effectively.
+4. Conduct Penetration Testing
+
+Perform penetration testing to simulate real-world attacks and identify exploitable vulnerabilities.
+Challenges
+
+Cost, resource constraints, potential for disruption to operations.
+Solutions
+
+Plan and scope penetration tests carefully, utilise ethical hackers and penetration testing tools, conduct penetration tests in controlled environments.
+5. Implement Secure Coding Practices
+
+Promote and enforce secure coding practices throughout the development process, including the use of secure coding standards and guidelines.
+Challenges
+
+Ensuring developer adherence to secure coding practices, keeping up with evolving security threats.
+Solutions
+
+Provide training on secure coding best practices, integrate secure coding principles into the development process, implement code analysis tools.
+6. Utilise Secure Development Frameworks and Libraries
+
+Leverage secure development frameworks and libraries to minimise the risk of common vulnerabilities.
+Challenges
+
+Selecting appropriate frameworks and libraries, ensuring compatibility with existing systems.
+Solutions
+
+Conduct thorough research and evaluation of available options, consider the security track record of frameworks and libraries.
+7. Establish a Secure Configuration Management Process
+
+Implement a secure configuration management process to ensure that systems and applications are configured securely.
+Challenges
+
+Maintaining secure configurations over time, ensuring consistent application of security configurations.
+Solutions
+
+Utilise automated configuration management tools, implement change management controls for system configurations.
+8. Conduct Acceptance Testing for Security
+
+Include security testing as part of the acceptance testing process to ensure that the system meets security requirements before deployment.
+Challenges
+
+Ensuring adequate coverage of security requirements in acceptance testing, integrating security testing into the acceptance testing process.
+Solutions
+
+Develop clear acceptance criteria for security requirements, involve security experts in the acceptance testing process.
+9. Continuously Monitor and Improve
+
+Continuously monitor security testing activities, analyse test results, and identify areas for improvement.
+Challenges
+
+Maintaining visibility into security testing activities, keeping up with evolving security threats.
+Solutions
+
+Implement security information and event management (SIEM) systems, conduct regular security audits and assessments.
+10. Document and Communicate
+
+Document all security testing activities, including test plans, results, and remediation actions. Communicate security testing results to relevant stakeholders.
+Challenges
+
+Maintaining accurate and up-to-date documentation, ensuring effective communication of security testing results.
+Solutions
+
+Utilise a centralised repository for security testing documentation, establish clear communication channels for sharing security testing information.
+Audit Checklist
+
+ISO 27001 Annex A 8.29 Security Testing in Development and Acceptance Audit Checklist:
+1. Review Security Testing Strategy
+
+Determine if a documented and approved security testing strategy exists and if it is aligned with the organisation’s risk profile and security objectives.
+Auditing Steps: Review the strategy document, interview relevant personnel, and assess its integration with the SDLC.
+2. Assess Code Review Processes
+
+Evaluate the effectiveness of code review processes, including frequency, participation, and the use of code review checklists.
+Observe code review meetings, interview developers, review code review logs, and analyse the types of vulnerabilities identified.
+3. Examine Vulnerability Scanning Activities
+
+Determine the frequency and scope of vulnerability scans, the types of vulnerabilities identified, and the effectiveness of remediation efforts.
+Review vulnerability scan reports, interview security personnel, and assess the organisation’s vulnerability management process.
+4. Evaluate Penetration Testing Procedures
+
+Determine the frequency, scope, and methodology of penetration testing activities, as well as the effectiveness of remediation efforts.
+Review penetration testing reports, interview penetration testers, and assess the impact of identified vulnerabilities.
+5. Assess Secure Coding Practices
+
+Evaluate the extent to which secure coding practices are followed by development teams, including the use of secure coding standards and guidelines.
+Interview developers, review code samples, and assess the effectiveness of secure coding training programs.
+6. Review the Use of Secure Development Frameworks and Libraries
+
+Determine whether the organisation utilises secure development frameworks and libraries, and assess the security posture of these components.
+Review the selection process for frameworks and libraries, assess their security track record, and determine if they are regularly updated and patched.
+7. Examine Secure Configuration Management:
+
+Evaluate the effectiveness of secure configuration management processes, including the use of secure baselines and change control procedures.
+Review system configuration documentation, interview system administrators, and assess the effectiveness of configuration management tools.
+8. Assess Acceptance Testing for Security
+
+Objective: Determine whether security requirements are adequately addressed in acceptance testing procedures and whether security testing is effectively integrated into the acceptance process.
+Auditing Steps: Review acceptance test plans and results, interview testers, and assess the effectiveness of security acceptance criteria.
+9. Review Security Testing Documentation
+
+Determine the completeness and accuracy of security testing documentation, including test plans, results, and remediation actions.
+Review security testing documentation, assess its completeness and accuracy, and determine if it is readily accessible to relevant personnel.
+10. Evaluate Continuous Improvement
+
+Determine whether the organisation is continuously improving its security testing processes based on lessons learned and emerging threats.
+Review security testing reports, assess the implementation of improvement recommendations, and interview key personnel regarding continuous improvement initiatives.

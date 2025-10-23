@@ -1,0 +1,36 @@
+What is ISO 27001 Annex A 5.10?
+
+ISO 27001 Annex A 5.10 Acceptable use of information and other associated assets is an ISO 27001 control that requires an organisation to implement rules and procedures for the acceptable use of information and other assets.
+People need to be informed what is and what is not acceptable to ensure the proper use, handling and protection of organisation assets.
+ISO 27001 Annex A 5.10 Purpose
+
+The purpose of ISO 27001 Annex A 5.10 is a preventive control that ensures information and other associated assets are appropriately protected, used and handled.
+ISO 27001 Annex A 5.10 Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 5.10 as:
+Rules for the acceptable use and procedures for handling information and other associated assets should be identified, documented and implemented.
+Implementation Guide
+
+To implement ISO 27001 Annex A 5.10 Acceptable Use Of Information And Other Associated Assets you are going to have to ensure that
+Personnel, contractors and third party users are made aware of the information security requirements for protecting and handling assets and information
+People are responsible for their use of company assets
+There is a topic specific policy on acceptable use
+Acceptable use procedures are documented, communicated and in place
+What should an acceptable use policy cover?
+
+The Acceptable Use Policy should cover the following topics
+Expected behaviour for information security
+Unacceptable behaviour for information security
+What monitoring the organisation is doing
+What acceptable use processes do I need?
+
+You are going to have acceptable use processes for the full information security lifecycle based on its classification and identified risks. What this means is you will consider
+Access restrictions that are based on classification
+Having a record of authorised users of information and systems
+Protecting information that has been copied to the same level as the original
+Following manufacturers specifications when storing information
+Marking storage media for the attention of the recipient
+Processes for disposing information and other assets including deletion methods and authorisation
+Acceptable Use and Cloud Services
+
+So what about assets that do not belong to the organisation? Cloud based assets for example. Well you need to identify those as well and record them as applicable and controlled. You are going to ensure there are agreements are in place and those agreements provide the required controls.

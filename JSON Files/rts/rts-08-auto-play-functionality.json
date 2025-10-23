@@ -1,0 +1,99 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Auto-play Functionality",
+  "document_reference": "RTS Aim 8",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Gaming (including bingo)",
+  "aim": {
+    "aim_id": "RTS_AIM_8A",
+    "aim_number": 8,
+    "aim_title": "Auto-play Functionality Prohibition",
+    "aim_description": "To make clear that auto-play cannot be offered for online gaming"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_8A",
+      "requirement_number": "8A",
+      "title": "Individual Game Cycle Commitment Required",
+      "requirement_type": "mandatory",
+      "full_text": "The gambling system must require a customer to commit to each game cycle individually.",
+      "implementation_guidance": {
+        "full_text": "This requirement does not prohibit offering functionality to automatically post blinds in peer-to-peer poker.",
+        "key_points": [
+          "Customer must commit to each game cycle individually",
+          "Auto-play NOT permitted for online gaming",
+          "Exception: Automatically posting blinds in peer-to-peer poker IS permitted"
+        ],
+        "prohibition": {
+          "general_rule": "Auto-play functionality is NOT permitted",
+          "scope": "All online gaming"
+        },
+        "exception": {
+          "game_type": "Peer-to-peer poker",
+          "permitted_functionality": "Automatically posting blinds",
+          "reasoning": "Blinds are structural requirement of poker, not a gamble commitment"
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "online_casino",
+        "slots",
+        "table_games"
+      ],
+      "applies_to_exclusions": [],
+      "exception_applies_to": [
+        "peer_to_peer_poker"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 8A"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Prevent automated continuous gambling that removes customer control and decision-making",
+    "enforcement_priority": "Critical - fundamental safer gambling requirement",
+    "key_principles": [
+      "Each game cycle requires individual customer commitment",
+      "No automated sequences of bets/spins",
+      "Customer must actively choose each gamble",
+      "Poker blinds exception recognizes structural game requirement"
+    ],
+    "rationale": "Auto-play removes customer control and can facilitate rapid, uncontrolled losses"
+  },
+  "related_requirements": [
+    "RTS 13 - Time Requirements and Reality Checks",
+    "RTS 14 - Responsible Product Design",
+    "LCCP Social Responsibility Code"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 13 - Reality Checks",
+      "RTS 14 - Responsible Product Design"
+    ]
+  },
+  "practical_examples": {
+    "prohibited": [
+      "Slots auto-spin feature",
+      "Auto-bet on roulette",
+      "Automated multi-game sequences",
+      "Continuous play without customer action"
+    ],
+    "permitted": [
+      "Customer clicks 'spin' for each slot game",
+      "Customer places each individual bet on table game",
+      "Automatic posting of blinds in poker (structural requirement)"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

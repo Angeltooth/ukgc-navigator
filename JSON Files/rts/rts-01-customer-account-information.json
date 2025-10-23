@@ -1,0 +1,173 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Customer Account Information",
+  "document_reference": "RTS Aim 1",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling – except subscription lotteries",
+  "aim": {
+    "aim_id": "RTS_AIM_1",
+    "aim_number": 1,
+    "aim_title": "Customer Account Information",
+    "aim_description": "To provide customers with easily accessible information about their current balances and facilities that enable them to review previous gambling and account transactions"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_1A",
+      "requirement_number": "1A",
+      "title": "Display of Current Account Balance",
+      "requirement_type": "mandatory",
+      "full_text": "Where customers hold a credit or debit balance, the pages or screens used for gambling and to move money into and out of accounts must display the customer's current account balance, in the currency of their account for example dollars, euros or pounds sterling, whenever that customer is logged in. Where it is not practical to display current balance from gambling screens then easily accessible links to this information must be provided.",
+      "implementation_guidance": {
+        "full_text": "Gambling pages and screens include virtual game pages, sports betting coupons, poker and other virtual gaming 'tables'. For telephone betting this information is to be delivered at the customer's request by the customer service agent or automated response system.",
+        "key_points": [
+          "Display current account balance on gambling pages/screens",
+          "Show balance in customer's account currency (dollars, euros, pounds sterling)",
+          "Display whenever customer is logged in",
+          "If not practical to display on gambling screens, provide easily accessible links",
+          "Gambling pages include: virtual games, sports betting coupons, poker tables, gaming tables",
+          "For telephone betting: deliver on customer request via agent or automated system"
+        ],
+        "display_requirements": {
+          "location": "Pages/screens used for gambling and money movement",
+          "currency": "Customer's account currency",
+          "frequency": "Whenever customer is logged in",
+          "alternative": "Easily accessible links if direct display not practical"
+        },
+        "included_pages": [
+          "Virtual game pages",
+          "Sports betting coupons",
+          "Poker tables",
+          "Virtual gaming tables"
+        ],
+        "telephone_betting": "Delivered on customer request by agent or automated system"
+      },
+      "applies_to": [
+        "online_casino",
+        "sports_betting",
+        "poker",
+        "bingo",
+        "lottery",
+        "all_remote_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 1A"
+    },
+    {
+      "requirement_id": "RTS_1B",
+      "requirement_number": "1B",
+      "title": "Access to Account and Gambling History",
+      "requirement_type": "mandatory",
+      "full_text": "Customers must have easy access to at least three months account and gambling history without having to contact the licensee. A minimum of 12 months of gambling and account history must be made available on request. The ability to request this information should be made clear to customers and be provided as soon as is practicable.",
+      "implementation_guidance": {
+        "full_text": "The gambling and account history should include: credit and debit information such as deposits, withdrawals, movement of funds between products, payments off credit accounts, entry fee deductions, and bonus information, as appropriate; bets placed, the results of bets, winnings paid; for gaming (including bingo) full or summarised gaming information should be available, for example, £10 taken into game, £100 turned over, £3 taken away from game. Where detailed historic game information may not necessarily be directly available to customers, as a minimum, customers must have easy access to details of the last game played and summarised information for previous activities; where customers are able to move funds between gambling products, account information and statements should clearly display movement of funds into and out of products; an option for customers to use their own defined time period or to select from a range of time periods. A summary total for the period selected should be displayed (at least on the first screen or page if the transactions span multiple screens). For telephone betting and restricted display devices, where customers demonstrate that they also have access to websites – by registering online or using other online products – it is acceptable to provide access to statements via these websites, otherwise customers should be sent a regular copy of their statement via email, fax or post unless they elect not to receive this information. Customers should be sent a statement on request, even if they have opted out of receiving regular statements.",
+        "key_points": [
+          "Customers must have easy access to minimum 3 months history without contacting licensee",
+          "Minimum 12 months history must be available on request",
+          "Ability to request information must be made clear",
+          "Information must be provided as soon as practicable",
+          "History must include credit/debit transactions, bets, results, winnings",
+          "For gaming: full or summarised info (amount in, amount turned over, amount out)",
+          "Show movement of funds between products clearly",
+          "Customers can define own time period or select from range",
+          "Display summary total for selected period on first screen/page",
+          "For telephone betting/restricted devices: provide via website or send via email/fax/post",
+          "Send statement on request even if customer opted out of regular statements"
+        ],
+        "minimum_access_periods": {
+          "without_contact": "3 months minimum",
+          "on_request": "12 months minimum"
+        },
+        "required_information": [
+          "Credit and debit information (deposits, withdrawals, fund movements)",
+          "Payments off credit accounts",
+          "Entry fee deductions",
+          "Bonus information",
+          "Bets placed",
+          "Results of bets",
+          "Winnings paid",
+          "Gaming summary (amount in, turnover, amount out)",
+          "Last game played details",
+          "Movement of funds between products"
+        ],
+        "gaming_information_examples": [
+          "£10 taken into game",
+          "£100 turned over",
+          "£3 taken away from game"
+        ],
+        "customer_options": {
+          "time_period_selection": "Custom defined or range selection",
+          "summary_display": "First screen/page for selected period"
+        },
+        "telephone_and_restricted_devices": {
+          "with_website_access": "Acceptable to provide via website",
+          "without_website_access": "Send regular statement via email/fax/post",
+          "opt_out": "Still must send statement on request"
+        }
+      },
+      "applies_to": [
+        "all_remote_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 1B"
+    },
+    {
+      "requirement_id": "RTS_1C",
+      "requirement_number": "1C",
+      "title": "Access to Net Deposits Information",
+      "requirement_type": "mandatory",
+      "full_text": "Customers must be able to access information about their net deposits.",
+      "implementation_guidance": {
+        "full_text": "Net deposits are defined as the running total of all deposits minus the sum of all withdrawals for the lifetime of the account. This should be displayed at an account level so the figure represents the net position of all payment methods. Where full account lifetime history is not possible then, as a minimum, the net deposits should be displayed from 1 April 2018, or the account opening date if after 1 April 2018. Information which explains the net deposit figure, including the timeframe it covers, should be provided.",
+        "key_points": [
+          "Customers must be able to access net deposits information",
+          "Net deposits = running total of all deposits minus all withdrawals",
+          "Calculated for lifetime of account",
+          "Displayed at account level (represents net position of all payment methods)",
+          "Minimum timeframe: from 1 April 2018 or account opening date (whichever later)",
+          "Must provide explanation of net deposit figure and timeframe covered"
+        ],
+        "definition": {
+          "net_deposits": "Running total of all deposits minus the sum of all withdrawals for the lifetime of the account"
+        },
+        "display_requirements": {
+          "level": "Account level (all payment methods combined)",
+          "timeframe_ideal": "Lifetime of account",
+          "timeframe_minimum": "From 1 April 2018 or account opening date (whichever later)"
+        },
+        "explanation_required": "Information explaining the net deposit figure and timeframe it covers"
+      },
+      "applies_to": [
+        "all_remote_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 1C"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure customers have transparency and access to their account information and gambling history",
+    "enforcement_priority": "High - critical for customer protection and informed gambling decisions",
+    "key_metrics": [
+      "Current balance display",
+      "3 months history without contact",
+      "12 months history on request",
+      "Net deposits calculation and display"
+    ]
+  },
+  "related_requirements": [
+    "RTS 2 - Displaying Transactions",
+    "RTS 12 - Financial Limits",
+    "LCCP Social Responsibility Code"
+  ],
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,179 @@
+What is it?
+
+Simply put, this control is all about keeping test data safe. Think about it: when you’re testing new software or systems, you often need data that looks like your real, confidential information (like customer names, addresses, or internal documents).
+A 8.33 tells you that you must use dummy data or make sure the real data you use for testing is protected just as well as your live, operational data. You need to prevent the unauthorised disclosure, modification, or loss of data that’s used for testing purposes. It’s making sure your test environment isn’t a weak spot that hackers can sneak through!
+Purpose
+
+This is a preventive control to ensure relevance of testing and protection of operational information used for testing.
+Definition
+
+ISO 27001 defines ISO 27001 Annex A 8.33 as:
+Test information should be appropriately selected, protected and managed.
+ISO27001:2022 Annex A 8.33 Test Information
+Applicability to Small Businesses, Tech Startups, and AI Companies
+
+This information security control is useful for businesses of all sizes, including small businesses, tech startups, and AI companies. Examples of using this control include:
+Small Businesses: You may not have complex testing environments, but if you take a copy of your customer database to test a new sales system, that copy must be protected.
+Tech Startups: You are constantly building and testing! You’re likely dealing with proprietary code and potentially sensitive user data, so keeping your test environments secure is a must to protect your intellectual property and early user trust.
+AI Companies: You rely heavily on training data and testing data to build and fine-tune your models. This data is often highly sensitive, sometimes containing personal details or proprietary information used to train your AI. A 8.33 is vital to ensure that data doesn’t leak during the development and testing of your algorithms.
+Why do you need it?
+
+You need to care for a few important reasons:
+Stop Data Leaks: If your test environment is less secure than your live system, a hacker can easily get to your real data that you’ve copied over for testing.
+Maintain Customer Trust: If you leak customer data, even from a testing server, your customers will lose faith in you.
+Avoid Fines: Depending on where you operate, laws like GDPR (General Data Protection Regulation) apply to test data just as much as live data. A leak can lead to huge fines.
+Keep it Real: If you use fake or masked data, your test results are more reliable, as you aren’t worried about accidentally modifying or destroying real customer records.
+When do you need it?
+
+You should address this control before you start any new development or testing project that requires using or simulating real data.
+During System Development: As soon as you plan to move data from a live environment to a testing environment.
+When You Set Up a Test Environment: You should define the security rules for the test environment right from the start.
+As Part of Your ISO 27001 Certification Process: You need documented procedures and proof of compliance before your audit.
+How do you write it?
+
+You don’t need a super-long, complicated document. Your procedure should answer these main questions:
+What data is allowed in the test environment? (Only masked data? Completely fake data?)
+How do we get the data? (Do we use an approved masking tool? Is the transfer encrypted?)
+Who can access the test data and test environment? (Only approved developers? Do they use unique passwords?)
+How is the test data deleted or destroyed when testing is finished? (Do we have a secure deletion process?)
+How do you implement it?
+
+Implementation is all about action! Follow these steps:
+Data Masking/Anonymization: This is the best approach! Use tools to change real names, numbers, and addresses into realistic-looking but fake data. This way, your testing works, but the data is useless if it leaks.
+Access Control: Make sure the people who can access the test environment are only those who need to. Use strong authentication (like two-factor verification) and unique user IDs.
+Separate Environments: Keep your Live (Production) and Test systems completely separate. They should not be able to talk to each other unless absolutely necessary and only over secure, monitored links.
+Secure Disposal: When a testing project is done, don’t just forget about the test data. Have a plan to securely wipe or destroy it.
+When it comes to testing information, in other words the information that you use in testing, the best advice for implementation is to not use production data, confidential data, personal data. Think of it this way, don’t use any data or information in test that could get you in hot water.
+If you have to then you have to but here I would recommend using things such as data masking or specialist tools that turn data into test data.
+What we need to do is select data and information that will ensure reliability of test results including the confidentiality, integrity and availability of the production and operational information.
+Consider here the requirements of ISO 27001 Annex A 8.31 Separation of Development, Test and Production Environments.
+General considerations would include
+Access Control – having access control in place that mirrors the production environment
+Authorisation – having a process of authorising the transfer of data between environments
+Logging – having logs of the transfer of information between environments
+Deletion – deleting testing data immediately after use
+Test data is for testing only.
+Depending on the test data that you have chosen then remember here that all of the annex a controls will apply to it as it does in production. Not using ‘real data’ is the best way to meet this control and mitigate risk.
+If you have to use ‘real data’ then the advice would be to have a risk register item, manage through the risk management process, even if that is accepting the risk.
+How to implement ISO 27001 Annex A 8.33: Step-by-Step
+
+In this step by step implementation checklist to ISO 27001 Test Information I show you, based on real world experience and best practice, the best way to implement Annex A 8.32.
+1. Test Data Management
+
+Challenge
+
+Employing production data within testing environments elevates the potential for data breaches or unauthorised access.
+Solution
+
+Implement rigorous data sanitisation and data masking techniques.
+Utilise synthetic data whenever possible.
+Encrypt all production data utilised for testing purposes.
+Establish robust access controls to safeguard test data.
+2. Data Anonymisation and Data Masking
+
+Challenge
+
+Anonymising or masking data effectively is complex and requires constant attention to prevent re-identification risks.
+Solution
+
+Utilise sophisticated tools to effectively anonymise or mask sensitive data.
+Regularly assess the effectiveness of masking techniques and ensure compliance with laws and relevant regulations.
+Continuously monitor systems for potential vulnerabilities and weaknesses that could lead to re-identification.
+3. Access Control
+
+Challenge
+
+Managing access rights in large organisations, especially when collaborating with external partners, can create significant security vulnerabilities.
+Solution
+
+Implement Role-Based Access Control (RBAC): Utilise RBAC to efficiently manage and control access permissions based on an individual’s role and responsibilities within the organisation.
+Regularly review access rights: Conduct periodic reviews of access rights to ensure they remain appropriate and aligned with current business needs.
+Monitor access logs: Continuously monitor access logs to detect and promptly respond to any unauthorised access attempts.
+4. Environment Separation
+
+Challenge
+
+Maintaining distinct development, testing, and production environments can be challenging, particularly within agile development methodologies.
+Solution
+
+Establish and enforce strict environment separation policies: Implement Separation of Development, Test and Production Environments.
+Leverage automation: Utilise automated tools to prevent accidental or unauthorised movement of code or data between environments.
+Conduct regular audits: Regularly review and assess the effectiveness of environment separation controls.
+5. Compliance and Security Requirements
+
+Challenge
+
+Maintaining compliance in test environments while adapting to constantly evolving regulations presents a significant challenge.
+Solution
+
+Utilise compliance management tools: Employ specialised tools to track and monitor regulatory changes and ensure compliance adherence.
+Integrate compliance into the ISMS: Incorporate compliance requirements directly into the Information Security Management System (ISMS) framework.
+Provide continuous training: Regularly train security teams on the latest regulatory requirements and best practices for maintaining compliance in test environments.
+6. Documentation and Audit
+
+Challenge
+
+Maintaining comprehensive and audit-ready documentation can be time-consuming and resource-intensive.
+Solution
+
+Automate documentation processes: Utilise automated tools to streamline documentation tasks, such as generating reports and tracking changes.
+Conduct regular reviews: Regularly review and update documentation to ensure accuracy, completeness, and compliance with relevant standards (e.g., ISO 27001).
+Examples of using it for small businesses
+
+Testing a new website checkout process using a copy of 100 recent customer orders. Use a tool to randomise customer names and addresses in the test copy before it’s used by the developer. Only approved IT staff can access the test server.
+Examples of using it for tech startups
+
+Developers need to test a new feature that uses real user settings and preferences. They create a synthetic dataset that perfectly simulates the structure of real data but contains no actual user-identifying information. The test environment is protected by a separate firewall.
+Examples of using it for AI companies
+
+A Machine Learning engineer needs to test a new AI model’s ability to process medical records. The engineer uses a de-identified and tokenised version of the medical records (each real patient ID is replaced by a temporary, meaningless code). This test data is stored only on an encrypted development server.
+Information security standards that need it
+
+This control is a key part of ISO 27001, which is an international standard for managing information security. Other standards that need it include:
+GDPR (General Data Protection Regulation)
+CCPA (California Consumer Privacy Act)
+DORA (Digital Operational Resilience Act)
+NIS2 (Network and Information Security (NIS) Directive) 
+SOC 2 (Service Organisation Control 2)
+NIST (National Institute of Standards and Technology) 
+HIPAA (Health Insurance Portability and Accountability Act)
+List of relevant ISO 27001:2022 controls
+
+The ISO 27001:2022 standard has specific controls that relate to test data:
+ISO 27001:2022 Data Masking: Annex A 8.11
+ISO 27001:2022 Protection of Information Systems During Audit Testing: Annex A 8.34
+ISO 27001:2022 Security Testing in Development and Acceptance: Annex A 8.29
+ISO 27001:2022 Change Management: Annex A 8.32
+How to audit ISO 27001 Annex A 8.33
+
+To conduct an internal audit of ISO 27001 Annex A 8.33 Test Information use the following audit checklist which sets out what to audit and how to audit it.
+1. Test Data Management
+
+Review and test data sanitisation and masking techniques.
+Check the use of synthetic data.
+Evidence that encryption of all production data utilised for testing purposes is in place.
+Walkthrough the access controls that are in place to safeguard test data.
+2. Data Anonymisation and Data Masking
+
+Document the tools to effectively anonymise or mask sensitive data.
+Assess the effectiveness of masking techniques and ensure compliance with relevant regulations.
+Walkthrough systems for potential vulnerabilities and weaknesses that could lead to re-identification.
+3. Access Control
+
+Ensure Role-Based Access Control (RBAC) is used to manage and control access permissions based on an individual’s role and responsibilities within the organisation.
+Review access rights: Conduct a review of access rights to ensure they remain appropriate and aligned with documented business needs.
+Check access logs
+4. Environment Separation
+
+Review the environment separation policies and check for clear rules and procedures for managing and accessing each environment.
+Assess automation and the use of automated tools to prevent accidental or unauthorised movement of code or data between environments.
+Check there have been regular audits that review and assess the effectiveness of environment separation controls.
+5. Compliance and Security Requirements
+
+Review compliance management tools and how they track and monitor regulatory changes and ensure compliance adherence.
+Ensure that compliance is integrated into the ISMS
+Asses continuous training and that regular training is in place for security teams on the latest regulatory requirements and best practices for maintaining compliance in test environments.
+6. Documentation and Audit
+
+Ensure that reviews and internal audits are in place and evidenced
+Assess the documentation framework, inputs and outputs.

@@ -1,0 +1,78 @@
+ISO 27001 Response To Information Security Incidents
+
+ISO 27001 Annex A 5.26 Response to information security incidents is an ISO 27001 control that requires an organisation to respond to information security incidents based on documented procedures.
+Purpose
+
+The purpose of ISO 2701 Annex A 5.26 is a corrective control that ensures efficient and effective response to information security incidents.
+Definition
+
+ISO 27001 defines Annex A 5.26 as:
+Information security incidents should be responded to in accordance with the documented procedures.
+Implementation Guide
+
+To implement ISO 27001 Annex A 5.26 is straightforward. You are going to document processes and procedures for information security incident response and then communicate to those people that need to know about it.
+The team that does the response is going to be designated which means you know and have recorded who they are and they are going to have the required competence to do the job.
+What should the incident response process include?
+
+The information security incident response process is going to include
+Containment: stopping the incident from spreading or getting worse
+Evidence Collection: collecting evidence of what happened
+Escalation: considering and acting on escalation as required which may mean invoking business continuity
+Logging: recording the response activities and what you did so you can analyse it later
+Communicating: telling people about the processes so they know what is expected and what to do
+Sharing: sharing knowledge with people that would be interested to improve responsiveness and reduce wider impact
+Closing: once the incident ends formally closing the incident and recording it
+Root cause: identifying why it happened and acting on that root cause conclusion.
+The 3 steps of Information Security Incident Response
+
+The 3 steps in information security incident response are:
+Identification: identifying the information security incident
+Assessment: assessing and prioritising the information security incident
+Response: responding to the information security incident incident
+Implementation Conclusion
+
+This guide provides a framework for responding to an information security incident. The guide should be used in conjunction with your information security incident management plan.
+How to comply
+
+To comply with ISO 27001 Annex A 5.26 you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to:
+Document your information security incident response process
+Assign and document the roles and responsibilities involved in the information response process
+Communicate the incident response processes that those that need to know about it
+Implement appropriate controls to mitigate, monitor and report on information security incidents
+Monitor and review the information security incident response effectiveness
+How to pass an audit
+
+To pass an audit of ISO 27001 Annex A 5.26 Information security incidents should be responded to in accordance with the documented procedures you are going to make sure that you have followed the steps above in how to comply.
+Have a documented information security incident management plan.
+Implement the information security incident management plan.
+Monitor the effectiveness of the information security incident management plan.
+Review and update the information security incident management plan as needed.
+What the audit will check
+
+The audit is going to check a number of areas. Lets go through the main ones
+1. That you have documented your roles, responsibilities and process
+
+The audit will check the documentation, that you have reviewed it and signed and it off and that it represents what you actually do not what you think they want to hear.
+2. That you can demonstrate the process working
+
+They are going to ask you for evidence to the incident response process and take one example. For this example you are going to show them and walk them through the process and prove that you followed it and that the process worked.
+3. That you can learn your lesson
+
+Documenting your lessons learnt and following this through to continual improvements or incident and corrective actions will be checked. They want to see that not only did you respond but that you learnt from it and did something to improve that reduced or eliminated the possibility of it happening again.
+Top 3 Mistakes People Make
+
+The top 3 Mistakes People Make For ISO 27001 Annex A 5.26 are
+1. Not having a documented information security incident response plan.
+
+This is the most common mistake made by organisations. A documented information security incident response plan is essential for effective incident response. It should include the following:
+A process for identifying information security incidents.
+A process for assessing the impact of information security incidents.
+A process for prioritising information security incidents.
+A process for responding to information security incidents.
+A process for recording information security incidents.
+2. Not implementing the information security incident response plan.
+
+Even if you have a documented information security incident response plan, it is not enough to simply have the plan. The plan must be implemented in order to be effective. This means assigning responsibility for implementing the plan, providing training on the plan, and testing the plan.
+3. Not monitoring the effectiveness of the information security incident response plan.
+
+Once the information security incident response plan is implemented, it is important to monitor its effectiveness. This means reviewing reports of information security incidents, conducting audits of the plan, and taking corrective action as needed.

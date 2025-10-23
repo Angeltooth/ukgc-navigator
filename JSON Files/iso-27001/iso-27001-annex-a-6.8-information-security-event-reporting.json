@@ -1,0 +1,942 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 6.8",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "People Controls",
+  "control": {
+    "control_id": "ISO_27001_A_6.8",
+    "control_number": "A 6.8",
+    "control_title": "Information Security Event Reporting",
+    "control_type": "Detective control",
+    "control_purpose": "To ensure information security events are reported promptly to enable timely response",
+    "control_objective": "Provide appropriate mechanisms and education for personnel to report observed or suspected information security events in a timely manner"
+  },
+  "iso_27001_definition": {
+    "official_text": "A process should be established for individuals to report observed or suspected information security events to a designated point of contact in a timely manner.",
+    "key_requirements": [
+      "Process for reporting events established",
+      "Designated point of contact identified",
+      "Multiple reporting channels available",
+      "Reporting in timely manner",
+      "Personnel educated on reporting",
+      "Roles and responsibilities defined",
+      "Records maintained of reported events",
+      "Event reporting reviewed and improved"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Detective control enabling early detection and response to security events",
+    "scope": [
+      "All types of information security events",
+      "Actual and suspected events",
+      "All personnel and third parties",
+      "Any location or circumstance",
+      "Out of hours and weekends"
+    ],
+    "key_outcome": "Events detected quickly and responded to within required timeframes"
+  },
+  "prerequisites": {
+    "description": "Before implementing event reporting, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Information Security Policy",
+        "description": "Documented information security policy",
+        "rationale": "Policy establishes foundation for incident management",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      },
+      {
+        "prerequisite": "Incident Management Plan",
+        "description": "Process for managing security incidents",
+        "rationale": "Reporting feeds into incident management process",
+        "reference": "ISO 27001 A 5.24 - Incident management planning and preparation"
+      },
+      {
+        "prerequisite": "Incident Assessment Process",
+        "description": "Process for assessing and prioritizing incidents",
+        "rationale": "Assessment determines response urgency",
+        "reference": "ISO 27001 A 5.25 - Assessment and decision on incidents"
+      },
+      {
+        "prerequisite": "Personnel Training",
+        "description": "Information security awareness training",
+        "rationale": "Personnel must understand what to report",
+        "reference": "ISO 27001 A 6.3 - Information security awareness, education and training"
+      }
+    ]
+  },
+  "event_reporting_overview": {
+    "definition": "Process enabling any member of organization to report suspected or actual information security events to appropriate personnel",
+    "reporting_principle": "If in doubt, report it - better to err on side of caution than miss actual incident",
+    "event_types": [
+      "Actual or suspected data breach",
+      "Information security controls not working",
+      "Loss or theft of device",
+      "Email sent to wrong recipient",
+      "Physical security breach",
+      "Virus or malware infection",
+      "Ransomware attack",
+      "System outage or unavailability",
+      "Phishing or suspicious emails",
+      "Unauthorized access or login attempts",
+      "Suspicious system behavior",
+      "Policy violations",
+      "Third-party security incidents",
+      "Supply chain security events"
+    ],
+    "timeliness_principle": "As soon as possible, as soon as observed or suspected - includes out of hours"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_6.8_REQ_1",
+      "requirement": "Establish Event Reporting Process",
+      "description": "Create documented procedure for reporting information security events",
+      "details": {
+        "process_elements": [
+          "Clear definition of what events should be reported",
+          "Multiple reporting channels available",
+          "Designated recipients and escalation paths",
+          "Timeframe for reporting (as soon as possible)",
+          "Information to capture in report",
+          "Roles and responsibilities",
+          "Out of hours reporting procedures",
+          "Confidentiality of reporter protected",
+          "No retaliation for reporting",
+          "Process for non-urgent vs urgent events",
+          "Documentation and recording of events",
+          "Follow-up and confirmation procedures"
+        ],
+        "documentation": [
+          "Event reporting policy",
+          "Event reporting procedure",
+          "Event report template or form",
+          "Contact information and escalation paths",
+          "Training materials on reporting process"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_2",
+      "requirement": "Define Multiple Reporting Channels",
+      "description": "Provide various ways for personnel to report events",
+      "details": {
+        "reporting_channels": [
+          "Email to designated security contact",
+          "Online reporting form or portal",
+          "Telephone hotline or call center",
+          "Chat or messaging platform",
+          "Text message",
+          "In-person report to manager or security",
+          "Anonymous reporting mechanism",
+          "Third-party or external reporting",
+          "Out of hours contact number"
+        ],
+        "channel_selection": [
+          "Choose appropriate channels for organization",
+          "Multiple channels increase reporting likelihood",
+          "Ensure accessibility during business and after hours",
+          "Anonymous option encourages reporting",
+          "Promote awareness of available channels"
+        ],
+        "accessibility": [
+          "Channels easy to use",
+          "Channels well publicized",
+          "Contact information readily available",
+          "No barriers to reporting"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_3",
+      "requirement": "Designate Event Recipients and Escalation",
+      "description": "Identify who receives and manages reported events",
+      "details": {
+        "primary_recipients": [
+          "Information security manager - primary point of contact",
+          "IT Service Desk - if acting as coordinator",
+          "Chief Information Security Officer (CISO) - oversight",
+          "Incident commander - for major incidents"
+        ],
+        "escalation_path": [
+          "Urgent/critical events - immediate notification",
+          "Normal events - within defined timeframe",
+          "Escalation criteria defined",
+          "Clear chain of responsibility",
+          "Escalation to management and executives for serious events"
+        ],
+        "external_recipients": [
+          "Legal team - for legal implications",
+          "Compliance team - for regulatory implications",
+          "Law enforcement - for criminal activity",
+          "Regulators - for reportable incidents",
+          "Customers - for breaches affecting them",
+          "Media - for serious incidents (crisis communication)"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_4",
+      "requirement": "Educate Personnel on Reporting",
+      "description": "Train personnel on what to report and how to report",
+      "details": {
+        "training_content": [
+          "Types of events that should be reported",
+          "Examples of reportable events",
+          "Reporting procedure and steps",
+          "Available reporting channels",
+          "Contact information for reporting",
+          "Information to provide in report",
+          "Timeframe for reporting",
+          "No retaliation for reporting",
+          "Confidentiality of reporter",
+          "Out of hours reporting procedures",
+          "What happens after reporting",
+          "Investigation and follow-up process"
+        ],
+        "training_delivery": [
+          "Initial training for all personnel",
+          "Annual refresher training",
+          "Role-specific training for security personnel",
+          "Awareness campaigns and reminders",
+          "Update training when process changes"
+        ],
+        "communication": [
+          "Posters and notices",
+          "Email announcements",
+          "Team meetings",
+          "Onboarding training",
+          "Intranet and internal communications",
+          "Manuals and reference materials"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_5",
+      "requirement": "Define Event Information Requirements",
+      "description": "Specify what information should be captured in event report",
+      "details": {
+        "event_report_information": [
+          "Date and time of event discovery",
+          "Date and time of event occurrence",
+          "Description of what happened",
+          "Type of event (breach, malware, system issue, etc.)",
+          "Systems or data affected",
+          "Number of people potentially affected",
+          "Severity assessment (if known)",
+          "Reporter name and contact information",
+          "Reporter department or role",
+          "Immediate actions taken",
+          "Evidence or additional information"
+        ],
+        "report_format": [
+          "Standardized form or template",
+          "Clear and easy to complete",
+          "Minimum required fields",
+          "Optional additional information",
+          "Accessible format (electronic or paper)"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_6",
+      "requirement": "Assign Roles and Responsibilities",
+      "description": "Clearly define who is responsible for each aspect",
+      "details": {
+        "role_definitions": [
+          "Event reporter - any personnel observing event",
+          "Report recipient - initial point of contact",
+          "Incident coordinator - receives and categorizes event",
+          "Incident investigator - investigates reported event",
+          "Incident manager - manages response process",
+          "Escalation authority - approves escalation to external parties",
+          "CISO or security lead - oversight and governance",
+          "Management - receives summary reports"
+        ],
+        "responsibility_assignment": [
+          "Each role assigned to specific person",
+          "Role-specific responsibilities documented",
+          "Clear escalation authority defined",
+          "Backup or coverage for key roles",
+          "Competence verified for assigned roles",
+          "Training provided for role requirements"
+        ],
+        "accountability": [
+          "Clear accountability for each responsibility",
+          "Performance metrics tracked",
+          "Adherence to timelines verified",
+          "Quality of response assessed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_7",
+      "requirement": "Establish Reporting Timeframes",
+      "description": "Define timeliness requirements for event reporting",
+      "details": {
+        "reporting_timeframe": [
+          "As soon as possible after discovery",
+          "As soon as possible after suspicion",
+          "Includes out of hours and weekends",
+          "No delay for non-business hours",
+          "Critical events - immediate notification"
+        ],
+        "regulatory_requirements": [
+          "GDPR - 72 hours for data breach notification to authority",
+          "GDPR - without undue delay for customer notification",
+          "UKGC - specific incident reporting timelines",
+          "Other applicable regulations - check requirements"
+        ],
+        "internal_timeframes": [
+          "Critical events - immediate response (minutes)",
+          "Urgent events - response within hours",
+          "Normal events - response within business day",
+          "Assessment and acknowledgment timelines"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_8",
+      "requirement": "Protect Reporter Confidentiality and Safety",
+      "description": "Ensure reporters feel safe and protected",
+      "details": {
+        "protection_measures": [
+          "Reporter identity protected when possible",
+          "Anonymous reporting option available",
+          "No retaliation policy clearly stated",
+          "Reporter not blamed for reporting",
+          "Reporter kept informed of status",
+          "Confidentiality of report maintained",
+          "Limited access to reporter information"
+        ],
+        "non_retaliation": [
+          "Clear policy against retaliation",
+          "Communication that retaliation prohibited",
+          "Process for addressing any retaliation",
+          "Escalation path for reporter concerns",
+          "Protection for reporters making good faith reports"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_9",
+      "requirement": "Record and Document Events",
+      "description": "Maintain records of all reported events",
+      "details": {
+        "documentation": [
+          "Event report captured",
+          "Date and time received",
+          "Reporter identity",
+          "Event description",
+          "Assessment outcome",
+          "Investigation findings",
+          "Response actions taken",
+          "Resolution or closure"
+        ],
+        "record_retention": [
+          "Maintain incident log",
+          "Records retained appropriately",
+          "Audit trail of events",
+          "Retrievable for investigation",
+          "Retention period defined (typically 3+ years)"
+        ],
+        "confidentiality": [
+          "Access restricted to authorized personnel",
+          "Sensitive incident information protected",
+          "Separation of incident data from casual access"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_10",
+      "requirement": "Manage Response and Investigation",
+      "description": "Respond to reported events appropriately",
+      "details": {
+        "response_process": [
+          "Event assessed for urgency and severity",
+          "Investigation initiated",
+          "Containment measures taken if needed",
+          "Evidence preserved",
+          "Stakeholders notified",
+          "External reporting if required",
+          "Corrective actions implemented",
+          "Root cause analysis conducted"
+        ],
+        "investigation_responsibilities": [
+          "Investigate reported events",
+          "Determine what actually happened",
+          "Assess impact and scope",
+          "Identify root cause",
+          "Recommend corrective actions",
+          "Document findings",
+          "Report on investigation"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_11",
+      "requirement": "Review and Communicate Reporting",
+      "description": "Provide feedback and manage reporting process",
+      "details": {
+        "feedback_to_reporter": [
+          "Acknowledge receipt of report",
+          "Confirm assessment of event",
+          "Inform of investigation status",
+          "Provide regular updates",
+          "Confirm resolution",
+          "Lessons learned communication"
+        ],
+        "management_communication": [
+          "Regular summary reports to management",
+          "Incident trends and patterns",
+          "Severity distribution",
+          "Response effectiveness",
+          "Improvement opportunities"
+        ],
+        "organizational_communication": [
+          "Share lessons learned",
+          "Communicate preventive actions",
+          "Acknowledge good reporting behaviors",
+          "Encourage continued reporting"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.8_REQ_12",
+      "requirement": "Review and Improve Reporting Process",
+      "description": "Periodically review and enhance reporting process",
+      "details": {
+        "review_elements": [
+          "Effectiveness of reporting channels",
+          "Timeliness of reporting",
+          "Response times",
+          "Investigation quality",
+          "Personnel awareness of process",
+          "Barriers to reporting",
+          "Event trends and patterns",
+          "Regulatory compliance"
+        ],
+        "improvement_actions": [
+          "Add channels if usage indicates need",
+          "Improve communication of process",
+          "Enhanced training if awareness low",
+          "Process improvements based on feedback",
+          "Technology enhancements",
+          "Update procedures as needed"
+        ],
+        "review_frequency": [
+          "At least annually",
+          "Following major incidents",
+          "When regulatory requirements change",
+          "Based on trend analysis"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Develop event reporting policy",
+        "detail": "Document policy on information security event reporting"
+      },
+      {
+        "step": 2,
+        "action": "Develop event reporting procedure",
+        "detail": "Create detailed procedure for reporting events"
+      },
+      {
+        "step": 3,
+        "action": "Define event types and criteria",
+        "detail": "Specify what types of events should be reported"
+      },
+      {
+        "step": 4,
+        "action": "Select reporting channels",
+        "detail": "Choose and implement reporting methods"
+      },
+      {
+        "step": 5,
+        "action": "Assign roles and responsibilities",
+        "detail": "Designate recipients and escalation paths"
+      },
+      {
+        "step": 6,
+        "action": "Create event report template",
+        "detail": "Develop form for capturing event information"
+      },
+      {
+        "step": 7,
+        "action": "Develop training materials",
+        "detail": "Create training on reporting process"
+      },
+      {
+        "step": 8,
+        "action": "Train all personnel",
+        "detail": "Deliver training on event reporting"
+      },
+      {
+        "step": 9,
+        "action": "Implement incident log",
+        "detail": "Set up system for recording events"
+      },
+      {
+        "step": 10,
+        "action": "Establish monitoring",
+        "detail": "Track reporting metrics and trends"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 6.8",
+    "checklist": [
+      {
+        "item": "Develop event reporting policy",
+        "status": "required"
+      },
+      {
+        "item": "Develop event reporting procedure",
+        "status": "required"
+      },
+      {
+        "item": "Define reportable event types",
+        "status": "required"
+      },
+      {
+        "item": "Establish multiple reporting channels",
+        "status": "required"
+      },
+      {
+        "item": "Designate event recipients",
+        "status": "required"
+      },
+      {
+        "item": "Define escalation path",
+        "status": "required"
+      },
+      {
+        "item": "Assign roles and responsibilities",
+        "status": "required"
+      },
+      {
+        "item": "Create event report form/template",
+        "status": "required"
+      },
+      {
+        "item": "Communicate reporting channels",
+        "status": "required"
+      },
+      {
+        "item": "Train all personnel",
+        "status": "required"
+      },
+      {
+        "item": "Establish incident log",
+        "status": "required"
+      },
+      {
+        "item": "Respond to reported events",
+        "status": "required"
+      },
+      {
+        "item": "Document all events",
+        "status": "required"
+      },
+      {
+        "item": "Review and improve process",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with event reporting",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No documented evidence of events or responses",
+        "description": "Events reported but not documented or recorded",
+        "root_cause": [
+          "No incident log or tracking system",
+          "No documentation standard",
+          "Informal or ad hoc reporting",
+          "No requirement to record events",
+          "Poor record keeping processes"
+        ],
+        "impact": "Cannot demonstrate reporting, cannot prove timely response, no audit trail, regulatory non-compliance",
+        "prevention": [
+          "Establish formal incident log",
+          "Document all reported events",
+          "Record assessment and response",
+          "Maintain audit trail",
+          "Retain records appropriately"
+        ],
+        "requirement": "All reported events must be documented"
+      },
+      {
+        "rank": 2,
+        "mistake": "Personnel unaware of reporting process or channels",
+        "description": "Reporting process exists but staff don't know about it",
+        "root_cause": [
+          "No training on reporting process",
+          "Reporting channels not communicated",
+          "Contact information not readily available",
+          "Changes to process not communicated",
+          "Assumption that staff know how to report"
+        ],
+        "impact": "Events not reported, increased incident severity, delayed response, potential regulatory violations",
+        "prevention": [
+          "Comprehensive training for all personnel",
+          "Highly publicize reporting channels",
+          "Post contact information prominently",
+          "Regular reminders and campaigns",
+          "Include in onboarding process"
+        ],
+        "best_practice": "Make reporting channels more visible than security notices on buildings"
+      },
+      {
+        "rank": 3,
+        "mistake": "Untimely response to reported events",
+        "description": "Events reported but response not timely",
+        "root_cause": [
+          "No defined response timeframes",
+          "No accountability for response",
+          "Recipients not aware of urgency",
+          "No escalation for urgent events",
+          "Lack of resources or staffing"
+        ],
+        "impact": "Incident impact increases, regulatory breach of notification timelines, compounding damage",
+        "prevention": [
+          "Define response timeframes",
+          "Assign accountability for response",
+          "Establish escalation for urgent events",
+          "Train recipients on urgency levels",
+          "Monitor response times"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 6.8 audit",
+    "audit_areas": [
+      {
+        "area": "1. Event Reporting Process Documentation",
+        "description": "Verify documented process for reporting events",
+        "checks": [
+          "Policy document exists and is current",
+          "Procedures documented with roles and responsibilities",
+          "Event types defined and examples provided",
+          "Reporting channels identified",
+          "Timeframes specified",
+          "Escalation paths documented",
+          "Approval and sign-off recorded"
+        ]
+      },
+      {
+        "area": "2. Reporting Channels",
+        "description": "Verify multiple reporting channels available",
+        "checks": [
+          "Multiple channels exist and are functional",
+          "Channels accessible to all personnel",
+          "Out of hours reporting available",
+          "Contact information correct and current",
+          "Channels communicated to personnel"
+        ]
+      },
+      {
+        "area": "3. Roles and Responsibilities",
+        "description": "Verify clear assignment of responsibilities",
+        "checks": [
+          "Roles identified and documented",
+          "Responsibility assignments clear",
+          "Personnel assigned to each role",
+          "Competence verified for roles",
+          "Escalation authority defined",
+          "Primary and backup assignments"
+        ]
+      },
+      {
+        "area": "4. Personnel Training and Awareness",
+        "description": "Verify personnel trained on reporting process",
+        "checks": [
+          "Training materials developed",
+          "Training delivered to personnel",
+          "Training records maintained",
+          "Content covers reporting process",
+          "Personnel understand event types",
+          "Personnel know reporting channels",
+          "Refresher training conducted"
+        ]
+      },
+      {
+        "area": "5. Event Recording and Documentation",
+        "description": "Verify events documented and recorded",
+        "checks": [
+          "Incident log or tracking system exists",
+          "Events recorded with required information",
+          "Records include date, time, description, status",
+          "Investigation findings documented",
+          "Response actions recorded",
+          "Records retained appropriately",
+          "Records secure and auditable"
+        ]
+      },
+      {
+        "area": "6. Event Response and Investigation",
+        "description": "Verify timely response to reported events",
+        "checks": [
+          "Events assessed for urgency",
+          "Investigation conducted",
+          "Response timeframes met",
+          "Escalation performed when needed",
+          "Evidence preserved",
+          "Findings documented",
+          "Actions taken appropriately"
+        ]
+      },
+      {
+        "area": "7. Reporter Protection",
+        "description": "Verify reporters feel safe reporting",
+        "checks": [
+          "Non-retaliation policy communicated",
+          "Anonymous reporting option available",
+          "Reporter confidentiality maintained",
+          "No negative consequences for reporting"
+        ]
+      },
+      {
+        "area": "8. Process Review and Improvement",
+        "description": "Verify process reviewed and improved",
+        "checks": [
+          "Annual review conducted",
+          "Metrics tracked and analyzed",
+          "Improvement actions implemented",
+          "Effectiveness verified",
+          "Process updated as needed"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, prompt event reporting is critical for detecting RNG tampering, customer data breaches, and regulatory violations",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Integrity",
+        "reporting_requirements": [
+          "Any suspected tampering with RNG systems",
+          "Unexpected game outcome patterns",
+          "System access anomalies",
+          "Audit log discrepancies",
+          "Failed integrity checks"
+        ]
+      },
+      {
+        "system": "Customer Data Protection",
+        "reporting_requirements": [
+          "Suspected or actual customer data breaches",
+          "Unauthorized access to customer information",
+          "Customer data downloads or exports",
+          "Payment card data access issues",
+          "Customer complaint about account access"
+        ]
+      },
+      {
+        "system": "Regulatory Compliance",
+        "reporting_requirements": [
+          "Potential AML/KYC violations",
+          "Problem gambling case escalations",
+          "License compliance failures",
+          "Regulatory reporting deadline misses",
+          "Suspicious transaction patterns"
+        ]
+      },
+      {
+        "system": "Business Continuity",
+        "reporting_requirements": [
+          "System outages affecting customer access",
+          "Database corruption or failure",
+          "Network infrastructure failures",
+          "Recovery procedure failures"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must have documented event reporting process with multiple channels, trained personnel, and timely response capability to meet UKGC reporting obligations"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Enable timely detection and reporting of information security events enabling rapid response and regulatory compliance",
+    "enforcement_priority": "Critical - incident response begins with event reporting; delays in reporting increase incident impact",
+    "key_principles": [
+      "Accessible reporting channels",
+      "Personnel trained on what to report",
+      "As soon as possible reporting requirement",
+      "Multiple reporting channels available",
+      "Clear recipients and escalation",
+      "Defined response timeframes",
+      "Reporter protection and non-retaliation",
+      "Comprehensive documentation",
+      "Timely investigation and response",
+      "Lessons learned and process improvement",
+      "Regulatory timeline compliance"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 6.8 Information Security Event Reporting, implement",
+    "requirements": [
+      {
+        "requirement": "Develop policy and procedure",
+        "detail": "Document event reporting process"
+      },
+      {
+        "requirement": "Define event types",
+        "detail": "Specify what events should be reported"
+      },
+      {
+        "requirement": "Establish reporting channels",
+        "detail": "Multiple ways to report (email, phone, form, chat)"
+      },
+      {
+        "requirement": "Designate recipients",
+        "detail": "Identify who receives reports"
+      },
+      {
+        "requirement": "Define escalation",
+        "detail": "Clear escalation path for urgent events"
+      },
+      {
+        "requirement": "Assign responsibility",
+        "detail": "Clear roles for processing events"
+      },
+      {
+        "requirement": "Create report form",
+        "detail": "Standard template for capturing information"
+      },
+      {
+        "requirement": "Train personnel",
+        "detail": "All staff know what and how to report"
+      },
+      {
+        "requirement": "Communicate channels",
+        "detail": "Personnel aware of reporting options"
+      },
+      {
+        "requirement": "Document events",
+        "detail": "Maintain incident log of all reports"
+      },
+      {
+        "requirement": "Respond timely",
+        "detail": "Events investigated and responded to promptly"
+      },
+      {
+        "requirement": "Review process",
+        "detail": "Annual review and improvement"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.24 - Incident management planning and preparation",
+      "ISO 27001 A 5.25 - Assessment and decision on information security events",
+      "ISO 27001 A 5.26 - Response to information security incidents",
+      "ISO 27001 A 6.3 - Information security awareness, education and training",
+      "ISO 27001 A 8.16 - Incident management and improvements"
+    ]
+  },
+  "best_practices": {
+    "channel_best_practices": [
+      "Provide multiple reporting channels - increases likelihood of reporting",
+      "Email addresses easy to remember",
+      "Phone number prominently displayed",
+      "Online form simple and quick to complete",
+      "Anonymous reporting available",
+      "Out of hours contact information",
+      "Multiple contact methods for urgent events"
+    ],
+    "process_best_practices": [
+      "Clear definition of what to report",
+      "Simple procedure that doesn't discourage reporting",
+      "Acknowledge receipt immediately",
+      "Provide status updates to reporter",
+      "Confirm resolution with reporter",
+      "Thank reporter for their vigilance"
+    ],
+    "awareness_best_practices": [
+      "Highly publicize reporting channels",
+      "Posters and notices in common areas",
+      "Email announcements",
+      "Include in onboarding and training",
+      "Regular reminders about reporting",
+      "Share examples of successfully reported events",
+      "Celebrate good reporting behaviors"
+    ],
+    "investigation_best_practices": [
+      "Treat all reports seriously",
+      "Respond promptly to urgent events",
+      "Conduct thorough investigation",
+      "Preserve evidence",
+      "Document findings",
+      "Identify root cause",
+      "Implement preventive actions"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "priority_event_types": [
+      {
+        "event": "RNG or game system anomaly",
+        "urgency": "Critical - immediate investigation"
+      },
+      {
+        "event": "Customer data breach",
+        "urgency": "Critical - immediate response"
+      },
+      {
+        "event": "System outage",
+        "urgency": "Critical - immediate restoration"
+      },
+      {
+        "event": "Suspected fraud",
+        "urgency": "High - urgent investigation"
+      },
+      {
+        "event": "Regulatory reporting miss",
+        "urgency": "High - urgent escalation"
+      }
+    ],
+    "regulatory_expectations": [
+      "Accessible reporting channels for staff and customers",
+      "Training on RNG and game integrity event reporting",
+      "Customer data breach reporting procedures",
+      "Incident log documenting all events",
+      "Timely response to reported events",
+      "Compliance with GDPR 72-hour notification"
+    ],
+    "audit_readiness": [
+      "Documented policy and procedures",
+      "Training records for all personnel",
+      "Incident log with events and responses",
+      "Response times within defined limits",
+      "Investigation findings documented",
+      "Communication of lessons learned"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 6.8",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-6.8-information-security-event-reporting.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

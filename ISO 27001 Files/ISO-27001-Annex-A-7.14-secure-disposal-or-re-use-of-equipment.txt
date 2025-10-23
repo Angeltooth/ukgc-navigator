@@ -1,0 +1,53 @@
+ISO 27001 Secure Disposal Or Re-Use Of Equipment
+
+ISO 27001 Annex A 7.14 Secure Disposal or Re-Use of Equipment is an ISO 27001 control that looks to make sure securely dispose of equipment and if you do reuse it, that you complete remove any data from it in a way that is unrecoverable.
+The focus for this ISO 27001 Control is your equipment how you dispose of it or re-use it. This is about protecting the data that is on it and preventing data leakage.
+Purpose
+
+The purpose of ISO 27001 Annex A 7.14 Secure Disposal Or Re-Use Of Equipment is to prevent leakage of information from equipment to be disposed or re-used.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 7.14 as:
+Items of equipment containing storage media should be verified to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.
+General Guidance
+
+Every item of equipment that we have has a limited life span. Sometimes it is short and sometime it is long but at some point a piece of equipment will be reallocated, repurposed and eventually it will be disposed of.
+This control concerns itself with equipment that contains storage media. We explored the requirements on storage media in the ISO 27001 Annex A 5.10 Storage Media and it may be worth refreshing your memory on this control.
+Our worse case scenario is that confidential and sensitive information ends up in the wrong hands or in the public domain. The consequences range from the embarrassing, to the legal ramifications, to financial and potentially, in the extreme, life threatening.
+Implementation Guide
+
+Delete is not enough
+
+What we do not want is something ending up on eBay and some smart arse tech person recovering all that lovely data you didn’t quite get rid of.
+I think we are all savvy enough in this day and age to know that just hitting delete, or even emptying the trash can, is not enough to remove that data from the system.
+Encryption
+
+A great compensating control to go along side this one is encryption and in particular the encryption of the hard drive as part of your standard build. Even in this scenario though it is best practice to securely remove all data from a storage device before reuse and to have the device professionally destroyed by a specialist third party when it is no longer needed. They will provide all of the appropriate documentation, receipts, audit trails and assurances that you will need.
+Asset Tags and Labels
+
+Some additional considerations to think about include asset tags or labels that are on any equipment. Best to remove those identifiers.
+Records and Audit Trails
+
+Part of your asset management process this is an important step and be sure to keep all records and audit trails.
+How to comply
+
+To comply with ISO 27001 Annex A 7.14 Secure Disposal Or Re-Use Of Equipment you are going to
+Get the help of professional third parties to securely destroy equipment you do not need
+Have policies and procedures in place
+Assess your equipment and perform a risk assessment
+Implement controls proportionate to the risk posed
+Keep maintenance records
+Test the controls that you have to make sure they are working
+Where equipment is reused you will fully remove and make un recoverable any data
+Top 3 Mistakes People Make
+
+The top 3 mistakes people make for ISO 27001 Annex A 7.14 Secure Disposal Or Re-Use Of Equipment are
+1. You give old equipment to charity
+
+This is not a bad thing actually. Neither is putting on eBay to sell it. But what is bad is not removing all labels and stickers and identifiers and not fully erasing all data on it in a way that is unrecoverable. Have a solid data removal process that you can evidence if you want to give to charity or resell.
+2. You keep stuff for ever
+
+It can be hard to get rid of stuff but you need to do some house keeping and follow your processes to securely destroy equipment you do not need rather than having it in a cupboard or on a desk.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

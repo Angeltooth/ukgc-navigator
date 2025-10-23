@@ -1,0 +1,419 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.15",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.15",
+    "control_number": "A 5.15",
+    "control_title": "Access Control",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure authorised access and to prevent unauthorised access to information and other associated assets",
+    "control_objective": "Control physical and logical access to information and other assets based on business and information security requirements"
+  },
+  "iso_27001_definition": {
+    "official_text": "Rules to control physical and logical access to information and other associated assets should be established and implemented.",
+    "key_requirements": [
+      "Rules to control physical access established",
+      "Rules to control logical access established",
+      "Access control rules implemented"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control ensuring authorised access and preventing unauthorised access to information and other associated assets",
+    "scope": [
+      "Physical access control",
+      "Logical access control"
+    ]
+  },
+  "prerequisites": {
+    "description": "Before implementing access control, foundational requirements must be met",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Asset Registers",
+        "description": "Complete physical, virtual, and data asset registers",
+        "rationale": "Cannot control access to assets you don't know you have",
+        "reference": "ISO 27001 A 5.9 - Inventory of Information and Other Associated Assets"
+      },
+      {
+        "prerequisite": "Information Classification",
+        "description": "Implement information classification system",
+        "rationale": "Classification levels determine appropriate access controls and restrictions",
+        "reference": "ISO 27001 A 5.12 - Classification of Information"
+      },
+      {
+        "prerequisite": "Access Control Policy",
+        "description": "Topic specific ISO 27001 Access Control Policy required",
+        "rationale": "Establishes organizational rules and approach to access control"
+      }
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.15_REQ_1",
+      "requirement": "Define and Map Access Rights",
+      "description": "Define and map appropriate access rights and restrictions to relevant entities",
+      "entities_definition": "Things that perform access, including humans and logical items such as services, devices and machines",
+      "entity_types": [
+        "Humans (personnel, contractors, third parties)",
+        "Services",
+        "Devices",
+        "Machines"
+      ]
+    },
+    {
+      "requirement_id": "A_5.15_REQ_2",
+      "requirement": "Principle of Least Privilege",
+      "description": "Work to the principle of least privilege - restrict access to everything unless needed",
+      "approach": "Restrict access to everything unless needed (not 'everyone has access unless forbidden')",
+      "rationale": "Minimize security risk by limiting access to only what is necessary"
+    },
+    {
+      "requirement_id": "A_5.15_REQ_3",
+      "requirement": "Account for Automation",
+      "description": "Account for automation in process and technology where permissions are changed automatically",
+      "consideration": "Automated permission changes must be controlled and logged"
+    },
+    {
+      "requirement_id": "A_5.15_REQ_4",
+      "requirement": "Regular Review of Approval Processes",
+      "description": "Implement review of approval processes at least annually or based on significant change",
+      "frequency": [
+        "At least annually",
+        "When significant change occurs"
+      ]
+    },
+    {
+      "requirement_id": "A_5.15_REQ_5",
+      "requirement": "Consistency",
+      "description": "Ensure consistency in approach to both access rights and information classification",
+      "alignment": "Access rights must align with information classification levels"
+    },
+    {
+      "requirement_id": "A_5.15_REQ_6",
+      "requirement": "Physical Perimeter Security",
+      "description": "Physical perimeter security should be considered if appropriate and be consistent with access rights",
+      "consideration": "Physical security measures should align with logical access controls"
+    },
+    {
+      "requirement_id": "A_5.15_REQ_7",
+      "requirement": "Dynamic Access Control",
+      "description": "Where dynamic access control is in play, consider the factors and elements and how they can be reflected",
+      "note": "Account for context-based and adaptive access control mechanisms"
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish and communicate topic specific ISO 27001 Access Control Policy",
+        "detail": "Create comprehensive policy covering physical and logical access control"
+      },
+      {
+        "step": 2,
+        "action": "Complete physical and virtual asset register",
+        "detail": "Identify all physical and virtual assets requiring access control",
+        "reference": "ISO 27001 A 5.9"
+      },
+      {
+        "step": 3,
+        "action": "Complete data asset register",
+        "detail": "Identify all information assets requiring access control"
+      },
+      {
+        "step": 4,
+        "action": "Decide on access control methodology/approach",
+        "detail": "Select appropriate access control methodology based on business requirements"
+      },
+      {
+        "step": 5,
+        "action": "Implement access control",
+        "detail": "Deploy access control mechanisms across all assets"
+      }
+    ]
+  },
+  "access_control_principles": {
+    "description": "Fundamental principles guiding access control decisions",
+    "principles": [
+      {
+        "principle": "Need to Know",
+        "description": "Grant access to the information required to perform tasks and duties",
+        "application": "Access limited to information necessary for job function"
+      },
+      {
+        "principle": "Need to Use",
+        "description": "Grant access where a clear need is present",
+        "application": "Access granted only when clear business need exists"
+      }
+    ],
+    "simple_summary": "Do not give people access to things they don't need"
+  },
+  "access_control_methodologies": {
+    "description": "Common methodologies for implementing access control",
+    "note": "There is no one right way to implement access control, though role-based is most common as it is often the simplest",
+    "methodologies": [
+      {
+        "methodology": "MAC - Mandatory Access Control",
+        "description": "Access control based on system-enforced policies, typically classification-based",
+        "use_case": "High security environments with strict classification requirements"
+      },
+      {
+        "methodology": "DAC - Discretionary Access Control",
+        "description": "Access control where owner of resource determines access permissions",
+        "use_case": "Flexible environments where resource owners manage access"
+      },
+      {
+        "methodology": "RBAC - Role Based Access Control",
+        "description": "Access control based on user roles within organization",
+        "use_case": "Most common - simplest to implement and manage",
+        "popularity": "Most commonly used methodology"
+      },
+      {
+        "methodology": "ABAC - Attribute Based Access Control",
+        "description": "Access control based on attributes (user, resource, environment)",
+        "use_case": "Complex environments requiring context-aware access decisions"
+      }
+    ]
+  },
+  "access_control_granularity": {
+    "description": "Level of detail in access control implementation",
+    "principle": "Granularity level based on business requirements and business risk",
+    "range": {
+      "low_granularity": {
+        "scope": "Entire networks or systems",
+        "cost": "Lower cost in time and resources",
+        "security": "Potentially less secure"
+      },
+      "high_granularity": {
+        "scope": "Individual fields or specific data elements",
+        "cost": "Higher cost in time and resources",
+        "security": "More secure"
+      }
+    },
+    "factors_to_consider": [
+      "Locations",
+      "Connection methods",
+      "Teams vs individuals",
+      "Specific data fields"
+    ],
+    "cost_security_tradeoff": {
+      "more_granular": "Higher cost, higher security",
+      "less_granular": "Lower cost, potentially lower security",
+      "objective": "Find the balance that is right for your organization"
+    }
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.15",
+    "checklist": [
+      {
+        "item": "Implement ISO 27001 Access Control Policy",
+        "status": "required"
+      },
+      {
+        "item": "Complete physical and virtual asset register",
+        "status": "required"
+      },
+      {
+        "item": "Complete data asset register",
+        "status": "required"
+      },
+      {
+        "item": "Decide on access control methodology/approach",
+        "status": "required"
+      },
+      {
+        "item": "Implement access control mechanisms",
+        "status": "required"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.15 audit",
+    "audit_areas": [
+      {
+        "area": "1. Verify No Obvious Security Failures",
+        "description": "Auditor checks that rules, procedures and access control methodology were followed",
+        "checks": [
+          "Rules and procedures documented",
+          "Access control methodology documented",
+          "Evidence of following documented procedures",
+          "Asset registers maintained",
+          "Access control procedures evidenced in operation",
+          "Reviews of access performed",
+          "Approval audit trail exists for recent hires",
+          "User access matches what was requested and approved"
+        ],
+        "best_practice": "Maintain documented evidence of all access control activities"
+      },
+      {
+        "area": "2. Rules, Processes, and Training",
+        "description": "Verify documented procedures exist, are followed, and personnel are trained",
+        "checks": [
+          "Documented procedures exist",
+          "Procedures are followed in practice",
+          "Personnel trained on access control",
+          "Leaver process exists and is followed",
+          "No access remains for departed personnel"
+        ],
+        "biggest_gotcha": "People with access who have left the organization (no leaver process followed)"
+      },
+      {
+        "area": "3. Documentation Quality",
+        "description": "Review audit trails and documentation for completeness and accuracy",
+        "checks": [
+          "All documents classified and labelled appropriately",
+          "Confidential documents labelled as such",
+          "Documents up to date",
+          "Documents reviewed in last 12 months",
+          "Version control matches across references",
+          "Audit trails complete"
+        ],
+        "warning": "Poor documentation is a 'massive own goal'"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with access control",
+    "mistakes": [
+      {
+        "mistake": "1. People have left but they still have access",
+        "description": "Access to systems not removed when personnel or third parties leave",
+        "prevention": "Implement and follow robust leaver process",
+        "action": "Ensure access is up to date and departed individuals no longer have access"
+      },
+      {
+        "mistake": "2. Third parties have open access",
+        "description": "Third parties granted continuous access rather than time-limited, purpose-specific access",
+        "prevention": "Follow process to grant access when required and remove when not needed",
+        "example": "Third party fixing issue: grant access for fix, then remove - not open-ended access",
+        "correct_approach": "Time-limited, purpose-specific access for third parties"
+      },
+      {
+        "mistake": "3. Document and version control is wrong",
+        "description": "Poor document version control and maintenance",
+        "prevention": [
+          "Keep document version control up to date",
+          "Ensure version numbers match where used",
+          "Evidence review in last 12 months",
+          "Remove comments from final documents"
+        ],
+        "best_practice": "Maintain strict document control procedures"
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Access control is fundamental to protecting all critical gambling systems",
+    "specific_requirements": [
+      {
+        "system": "Customer information systems",
+        "access_control_requirements": [
+          "Strict RBAC implementation",
+          "Need-to-know principle enforced",
+          "Regular access reviews",
+          "Audit trail of all access to sensitive data",
+          "Immediate access revocation upon termination"
+        ]
+      },
+      {
+        "system": "RNG and game outcome systems",
+        "access_control_requirements": [
+          "Highly restricted access (minimal personnel)",
+          "Multi-factor authentication required",
+          "All access logged and monitored",
+          "Segregation of duties enforced",
+          "Regular access recertification"
+        ]
+      },
+      {
+        "system": "Game state and results storage",
+        "access_control_requirements": [
+          "Read-only access for most personnel",
+          "Write access strictly controlled",
+          "Tamper-evident logging",
+          "Access aligned with job functions"
+        ]
+      },
+      {
+        "system": "System access points and communication networks",
+        "access_control_requirements": [
+          "Network segmentation enforced",
+          "Perimeter access controls",
+          "VPN or secure access for remote connections",
+          "Monitoring of all access attempts"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must demonstrate comprehensive access control for all critical systems as defined in RTS Chapter 4"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Control and monitor access to information and assets to prevent unauthorized access",
+    "enforcement_priority": "Critical - fundamental security control for all gambling systems",
+    "key_principles": [
+      "Least privilege access",
+      "Need-to-know/need-to-use",
+      "Regular access reviews",
+      "Immediate access revocation for leavers",
+      "Time-limited third party access",
+      "Consistency with information classification",
+      "Documented and auditable processes"
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "prerequisite_controls": [
+      "ISO 27001 A 5.9 - Inventory of Information and Other Associated Assets",
+      "ISO 27001 A 5.12 - Classification of Information"
+    ],
+    "other_iso_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 5.16 - Identity management",
+      "ISO 27001 A 5.17 - Authentication information",
+      "ISO 27001 A 5.18 - Access rights",
+      "ISO 27001 A 6.5 - Responsibilities after termination or change of employment",
+      "ISO 27001 A 8.2 - Privileged access rights",
+      "ISO 27001 A 8.3 - Information access restriction",
+      "ISO 27001 A 8.5 - Secure authentication"
+    ]
+  },
+  "best_practices": {
+    "documentation": [
+      "Maintain comprehensive asset registers",
+      "Document all access control procedures",
+      "Keep audit trails of all access requests and approvals",
+      "Regular documentation reviews"
+    ],
+    "process": [
+      "Implement robust joiner/mover/leaver processes",
+      "Regular access reviews and recertifications",
+      "Time-limited access for third parties",
+      "Automated access provisioning where possible"
+    ],
+    "technical": [
+      "Implement appropriate access control methodology (RBAC most common)",
+      "Use multi-factor authentication for sensitive systems",
+      "Log all access attempts",
+      "Automated alerts for unusual access patterns"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.15",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022"
+  }
+}

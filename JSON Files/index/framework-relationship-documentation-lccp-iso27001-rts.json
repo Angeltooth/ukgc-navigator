@@ -1,0 +1,465 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": "UK Gambling Commission",
+  "document_type": "Framework Relationship Documentation",
+  "document_reference": "FRD-2024",
+  "last_updated": "2025-10-21",
+  "document_purpose": "Explains how LCCP, ISO 27001, and RTS frameworks relate to and support each other as integrated compliance model",
+
+  "executive_summary": {
+    "overview": "Three complementary regulatory frameworks work together to establish comprehensive gambling operator compliance",
+    "framework_roles": {
+      "lccp": "Business and regulatory requirements - What operators must do",
+      "iso27001": "Security implementation methodology - How to achieve requirements securely",
+      "rts": "Gambling-specific technical standards - Detailed technical how-to specifications"
+    },
+    "integration_principle": "LCCP establishes the obligations. ISO 27001 provides the security framework for implementation. RTS specifies the technical detail.",
+    "operator_obligation": "Operators must comply with all applicable requirements across all three frameworks simultaneously"
+  },
+
+  "framework_hierarchy_and_relationships": {
+    "level_1_lccp": {
+      "framework_name": "LCCP - Licence Conditions and Codes of Practice",
+      "role": "Top-level regulatory requirements",
+      "establishes": [
+        "What gambling operators must do",
+        "Business obligations and restrictions",
+        "Customer protection requirements",
+        "Responsible gambling measures",
+        "Compliance deadlines and procedures",
+        "Enforcement consequences for breach"
+      ],
+      "examples": [
+        "Operators must prevent underage gambling (LCCP 3.2.11)",
+        "Operators must implement customer interaction systems (LCCP 3.4.3)",
+        "Operators must segregate customer funds (LCCP 4.1.1)",
+        "Operators must use only regulated payment service providers (LCCP 5.1.2)"
+      ],
+      "authority": "UK Gambling Commission",
+      "mandatory_vs_guidance": "Mix of mandatory conditions and best practice guidance"
+    },
+
+    "level_2_iso27001": {
+      "framework_name": "ISO 27001:2022 Information Security Management",
+      "role": "Implementation methodology",
+      "provides": [
+        "Security management system framework",
+        "How to implement requirements securely",
+        "Control objectives aligned with business needs",
+        "Best practices for information security",
+        "Risk management approach",
+        "Continuous improvement methodology"
+      ],
+      "examples": [
+        "A_5.1 (Policies) - How to establish policies supporting LCCP requirements",
+        "A_8.5 (Authentication) - How to implement secure age verification",
+        "A_8.24 (Cryptography) - How to encrypt sensitive customer data",
+        "A_8.15 (Logging) - How to audit and monitor system activity",
+        "A_6.3 (Training) - How to ensure staff competence"
+      ],
+      "authority": "International Organization for Standardization (ISO)",
+      "mandatory_vs_guidance": "All controls are implementation guidance (not prescriptive rules)",
+      "key_principle": "Operators can implement controls in different ways; ISO 27001 provides framework, not rigid specifications"
+    },
+
+    "level_3_rts": {
+      "framework_name": "RTS - Remote Technical Standards",
+      "role": "Detailed technical specifications",
+      "specifies": [
+        "Exact technical requirements for gambling systems",
+        "Data formats and structures",
+        "System behavior and functionality",
+        "Testing and validation procedures",
+        "Specific technical controls for remote gambling",
+        "Compliance verification methods"
+      ],
+      "examples": [
+        "RTS-01 - Exact format and content of customer account information",
+        "RTS-07 - RNG certification, testing, and audit requirements",
+        "RTS-12 - Specific financial limit thresholds and enforcement",
+        "RTS-13 - Session timer and reality check technical specifications",
+        "RTS-16 - Third-party software integration and testing procedures"
+      ],
+      "authority": "UK Gambling Commission",
+      "mandatory_vs_guidance": "All specifications are mandatory for remote gambling systems",
+      "key_principle": "RTS provides technical how-to guidance implementing LCCP requirements using ISO 27001 framework"
+    }
+  },
+
+  "integration_flow": {
+    "compliance_flow": {
+      "step_1": {
+        "stage": "Regulatory Requirement Identification",
+        "framework": "LCCP",
+        "activity": "Identify applicable LCCP provisions for operator's license type(s)",
+        "example": "Remote betting operator identifies LCCP 3.4.3 (customer interaction) applies to them",
+        "question": "What must we do?"
+      },
+      "step_2": {
+        "stage": "Security Framework Selection",
+        "framework": "ISO 27001",
+        "activity": "Identify ISO 27001 controls supporting LCCP requirement",
+        "example": "LCCP 3.4.3 supported by ISO A_5.1 (policies), A_8.15 (logging), A_6.3 (training)",
+        "question": "How do we do this securely?"
+      },
+      "step_3": {
+        "stage": "Technical Implementation",
+        "framework": "RTS",
+        "activity": "Reference RTS technical specifications for implementation detail",
+        "example": "RTS-01 (customer data), RTS-12 (financial limits), RTS-13 (timers) provide technical specs for customer interaction system",
+        "question": "What are the technical specifications?"
+      },
+      "step_4": {
+        "stage": "Verification",
+        "framework": "All three",
+        "activity": "Verify requirement met across all three frameworks",
+        "example": "Customer interaction system complies with LCCP 3.4.3, implements ISO 27001 controls, meets RTS-01/12/13 specs",
+        "question": "Are we compliant?"
+      }
+    }
+  },
+
+  "framework_interdependencies": {
+    "lccp_depends_on_iso27001": {
+      "relationship": "LCCP requires information security; ISO 27001 provides the framework",
+      "examples": [
+        {
+          "lccp_requirement": "Prevent customer data breaches",
+          "iso27001_enables": "A_8.24 (Cryptography), A_8.15 (Logging), A_5.18 (Access Rights)",
+          "mechanism": "ISO 27001 controls prevent the breaches LCCP prohibits"
+        },
+        {
+          "lccp_requirement": "Maintain fund segregation (4.1.1)",
+          "iso27001_enables": "A_8.2 (Privileged Access), A_8.24 (Cryptography), A_8.15 (Logging)",
+          "mechanism": "ISO 27001 controls protect the separated funds LCCP requires"
+        },
+        {
+          "lccp_requirement": "Enforce self-exclusion (3.5.3)",
+          "iso27001_enables": "A_5.18 (Access Rights), A_8.15 (Logging)",
+          "mechanism": "ISO 27001 controls prevent access and record enforcement attempts"
+        }
+      ]
+    },
+
+    "iso27001_depends_on_rts": {
+      "relationship": "ISO 27001 provides framework; RTS specifies gambling-specific technical detail",
+      "examples": [
+        {
+          "iso27001_control": "A_8.5 - Secure Authentication",
+          "rts_specifies": "RTS-01 requires specific customer data fields and age verification integration",
+          "mechanism": "RTS detail tells operators how to implement secure authentication for gambling"
+        },
+        {
+          "iso27001_control": "A_8.15 - Logging",
+          "rts_specifies": "RTS-01/02 specify what transaction data must be logged and format",
+          "mechanism": "RTS detail tells operators what and how to log in gambling systems"
+        }
+      ]
+    },
+
+    "rts_depends_on_lccp": {
+      "relationship": "RTS implements LCCP requirements; without LCCP, RTS specifications wouldn't be mandated",
+      "examples": [
+        {
+          "lccp_requirement": "Prevent underage gambling (3.2.11)",
+          "rts_implements": "RTS-01 specifies age verification data and implementation",
+          "mechanism": "RTS-01 provides technical way to meet LCCP requirement"
+        },
+        {
+          "lccp_requirement": "Implement customer interaction (3.4.3)",
+          "rts_implements": "RTS-12 (Financial Limits), RTS-13 (Reality Checks) provide technical implementation",
+          "mechanism": "RTS-12/13 provide technical systems to meet LCCP requirement"
+        }
+      ]
+    }
+  },
+
+  "decision_tree_for_operators": {
+    "question_1": "What must I comply with?",
+    "answer_1": "Consult LCCP to identify applicable provisions",
+    "guidance_1": "LCCP is the regulatory requirement; start here",
+
+    "question_2": "Which LCCP provisions apply to my license type?",
+    "answer_2": "Use Master Regulatory Index and LCCP document",
+    "guidance_2": "Cross-reference your license type against LCCP sections",
+
+    "question_3": "How do I implement LCCP requirement?",
+    "answer_3": "Consult ISO 27001 controls via Cross-Reference Mapping",
+    "guidance_3": "ISO 27001 provides implementation approach",
+
+    "question_4": "What are the technical specifications?",
+    "answer_4": "Consult RTS via Cross-Reference Mapping",
+    "guidance_4": "RTS provides detailed technical how-to",
+
+    "question_5": "How do I verify compliance?",
+    "answer_5": "Use Compliance Verification Matrix",
+    "guidance_5": "Verify compliance across LCCP, ISO 27001, and RTS simultaneously"
+  },
+
+  "implementation_sequence_guidance": {
+    "phase_1_assessment": {
+      "duration": "Weeks 1-2",
+      "objective": "Understand what applies to your operation",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Review your gambling licenses",
+          "source": "LCCP and Personal Licence Conditions"
+        },
+        {
+          "step": 2,
+          "action": "Identify applicable LCCP provisions",
+          "source": "Master Regulatory Index by license type"
+        },
+        {
+          "step": 3,
+          "action": "Identify applicable ISO 27001 controls",
+          "source": "Cross-Reference Mapping"
+        },
+        {
+          "step": 4,
+          "action": "Identify applicable RTS chapters",
+          "source": "Cross-Reference Mapping"
+        }
+      ]
+    },
+
+    "phase_2_policy_framework": {
+      "duration": "Weeks 3-4",
+      "objective": "Establish policies supporting all requirements",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Map LCCP provisions to information security policies",
+          "reference": "ISO 27001 A_5.1"
+        },
+        {
+          "step": 2,
+          "action": "Develop topic-specific policies for each major area",
+          "examples": ["Fund segregation policy", "Age verification policy", "Problem gambling policy"]
+        },
+        {
+          "step": 3,
+          "action": "Ensure policies reference applicable ISO 27001 controls and RTS chapters",
+          "integration": "Policies should show how LCCP/ISO 27001/RTS work together"
+        }
+      ]
+    },
+
+    "phase_3_system_implementation": {
+      "duration": "Weeks 5-12",
+      "objective": "Implement systems and controls",
+      "steps": [
+        {
+          "step": 1,
+          "area": "Critical Systems",
+          "example": "RNG systems, customer account systems, payment systems",
+          "reference": "Use RTS-07, RTS-01, RTS-02"
+        },
+        {
+          "step": 2,
+          "area": "Security Controls",
+          "example": "Cryptography, authentication, logging",
+          "reference": "Use ISO 27001 A_8 technology controls"
+        },
+        {
+          "step": 3,
+          "area": "Customer Protection",
+          "example": "Age verification, self-exclusion, problem gambling monitoring",
+          "reference": "Use LCCP 3.x provisions with ISO 27001 and RTS support"
+        }
+      ]
+    },
+
+    "phase_4_testing_verification": {
+      "duration": "Weeks 13-16",
+      "objective": "Verify compliance across all frameworks",
+      "steps": [
+        {
+          "step": 1,
+          "test": "LCCP compliance testing",
+          "verify": "Each LCCP provision requirement met"
+        },
+        {
+          "step": 2,
+          "test": "ISO 27001 control verification",
+          "verify": "Each supporting ISO 27001 control implemented"
+        },
+        {
+          "step": 3,
+          "test": "RTS technical compliance",
+          "verify": "Each RTS specification met"
+        }
+      ]
+    }
+  },
+
+  "gap_identification_and_bridging": {
+    "common_gaps": [
+      {
+        "gap": "LCCP requires X but ISO 27001 doesn't explicitly mention it",
+        "cause": "ISO 27001 is international standard; LCCP is UK gambling specific",
+        "resolution": "RTS fills the gap with gambling-specific technical detail",
+        "example": "LCCP requires RNG fairness; ISO 27001 doesn't detail RNG; RTS-07 specifies exact RNG requirements"
+      },
+      {
+        "gap": "ISO 27001 control requires more than LCCP minimum",
+        "cause": "ISO 27001 applies to all information security; LCCP is gambling-specific minimum",
+        "resolution": "Operators should implement full ISO 27001 control; it exceeds LCCP minimum",
+        "example": "A_8.15 (Logging) goes beyond LCCP minimum; implement full logging capability"
+      },
+      {
+        "gap": "RTS specifies technical detail LCCP doesn't mention",
+        "cause": "LCCP sets business requirements; RTS provides technical detail",
+        "resolution": "RTS detail is mandatory; implement exactly as specified",
+        "example": "LCCP 3.4.3 requires customer interaction; RTS-13 specifies exact timer intervals"
+      }
+    ],
+    "gap_resolution_approach": [
+      {
+        "step": 1,
+        "action": "Identify gap between frameworks",
+        "method": "Cross-reference mapping shows which controls/specs support each LCCP provision"
+      },
+      {
+        "step": 2,
+        "action": "Determine gap type",
+        "types": ["LCCP requires but not detailed", "ISO 27001 goes beyond LCCP", "RTS adds technical detail"]
+      },
+      {
+        "step": 3,
+        "action": "Apply resolution",
+        "approach": "Follow hierarchy: LCCP minimum, ISO 27001 framework, RTS technical detail"
+      },
+      {
+        "step": 4,
+        "action": "Document resolution",
+        "record": "How gap was identified and resolved for audit purposes"
+      }
+    ]
+  },
+
+  "precedence_rules": {
+    "rule_1": {
+      "situation": "LCCP requirement conflicts with ISO 27001 guidance",
+      "precedence": "LCCP takes precedence (LCCP is regulatory; ISO 27001 is framework)",
+      "action": "Implement per LCCP; use ISO 27001 as supporting framework"
+    },
+    "rule_2": {
+      "situation": "RTS specification conflicts with LCCP requirement",
+      "precedence": "Both must be met (RTS implements LCCP); if impossible, escalate to Commission",
+      "action": "Implement per RTS (which is more specific); verify LCCP also met"
+    },
+    "rule_3": {
+      "situation": "RTS specification conflicts with ISO 27001 guidance",
+      "precedence": "RTS takes precedence (RTS is gambling-specific; ISO 27001 is international framework)",
+      "action": "Implement per RTS; use ISO 27001 where RTS is silent"
+    },
+    "rule_4": {
+      "situation": "No specific guidance in any framework",
+      "precedence": "Follow LCCP spirit; use ISO 27001 best practices; seek Commission guidance",
+      "action": "Implement in way consistent with all three frameworks"
+    }
+  },
+
+  "operator_responsibilities": {
+    "responsibility_1": {
+      "area": "Compliance",
+      "obligation": "Ensure compliance with applicable provisions across ALL three frameworks",
+      "verification": "Use Master Index, Cross-Reference Mapping, Compliance Verification Matrix"
+    },
+    "responsibility_2": {
+      "area": "Policy Alignment",
+      "obligation": "Ensure policies align LCCP requirements with ISO 27001 framework and RTS specifications",
+      "verification": "Document how each policy references applicable framework documents"
+    },
+    "responsibility_3": {
+      "area": "Staff Competence",
+      "obligation": "Ensure staff understand how frameworks interconnect (not just individual requirements)",
+      "verification": "Training should show framework relationships, not just isolated requirements"
+    },
+    "responsibility_4": {
+      "area": "Evidence of Compliance",
+      "obligation": "Document compliance across frameworks in audit trail",
+      "verification": "For each LCCP provision, show ISO 27001 control evidence and RTS specification compliance"
+    },
+    "responsibility_5": {
+      "area": "Continuous Monitoring",
+      "obligation": "Monitor compliance across all three frameworks continuously",
+      "verification": "Implement monitoring per ISO 27001; report per LCCP; technical specs per RTS"
+    }
+  },
+
+  "framework_interaction_scenarios": [
+    {
+      "scenario": "Customer Fund Protection",
+      "lccp_requirement": "Segregate customer funds (4.1.1)",
+      "iso27001_framework": "A_5.1 (Policies), A_8.2 (Access Control), A_8.24 (Cryptography), A_8.15 (Logging)",
+      "rts_specification": "RTS-01 (Account Information), RTS-02 (Transactions)",
+      "implementation_flow": "1) Establish policy (A_5.1) → 2) Restrict access to fund accounts (A_8.2) → 3) Encrypt fund data (A_8.24) → 4) Log all movements (A_8.15) → 5) Record per RTS-01/02 format",
+      "verification": "Customer funds are in segregated account, access is restricted, all movements are encrypted and logged, records comply with RTS format"
+    },
+    {
+      "scenario": "Underage Gambling Prevention",
+      "lccp_requirement": "Verify age before gambling (3.2.11)",
+      "iso27001_framework": "A_5.1 (Policies), A_8.5 (Authentication), A_8.24 (Encryption), A_6.3 (Training)",
+      "rts_specification": "RTS-01 (Age Verification Data)",
+      "implementation_flow": "1) Establish policy (A_5.1) → 2) Implement secure authentication (A_8.5) → 3) Encrypt age data (A_8.24) → 4) Train staff (A_6.3) → 5) Record per RTS-01",
+      "verification": "Age verified before account creation/gambling, verification system is secure, data encrypted, staff trained, records comply with RTS-01"
+    },
+    {
+      "scenario": "Problem Gambling Monitoring",
+      "lccp_requirement": "Identify and intervene on harm indicators (3.4.3)",
+      "iso27001_framework": "A_5.1 (Policies), A_8.15 (Logging), A_8.1 (System Security), A_6.3 (Training)",
+      "rts_specification": "RTS-01 (Customer Data), RTS-12 (Financial Limits), RTS-13 (Reality Checks)",
+      "implementation_flow": "1) Establish policy (A_5.1) → 2) Implement monitoring system (A_8.1) → 3) Log all activity (A_8.15) → 4) Train staff (A_6.3) → 5) Technical specs per RTS-01/12/13",
+      "verification": "System monitors spend patterns per RTS-12, implements timers per RTS-13, logs decisions, staff trained on intervention, complies with RTS-01 data format"
+    },
+    {
+      "scenario": "RNG Fairness and Security",
+      "lccp_requirement": "Use licensed software only (2.2.1)",
+      "iso27001_framework": "A_5.1 (Policies), A_8.27 (Architecture), A_8.29 (Security Testing), A_8.30 (Outsourced Dev)",
+      "rts_specification": "RTS-07 (RNG Certification and Testing)",
+      "implementation_flow": "1) Establish supplier policy (A_5.1) → 2) Secure architecture for RNG (A_8.27) → 3) Implement testing (A_8.29) → 4) Manage outsourced dev (A_8.30) → 5) Certification per RTS-07",
+      "verification": "Software from licensed supplier only, secure architecture approved, security testing completed, developer monitored, RNG certified per RTS-07"
+    }
+  ],
+
+  "user_guidance": {
+    "for_compliance_officers": {
+      "primary_resource": "Cross-Reference Mapping document",
+      "use": "Verify each LCCP provision has supporting ISO 27001 controls and RTS specifications implemented",
+      "approach": "Audit using Compliance Verification Matrix"
+    },
+    "for_technical_teams": {
+      "primary_resource": "RTS specifications with ISO 27001 technical controls reference",
+      "use": "Implement systems to meet RTS technical specs while implementing ISO 27001 controls",
+      "approach": "Map system design to RTS chapters and ISO 27001 A_8 controls"
+    },
+    "for_operations_teams": {
+      "primary_resource": "Master Index and Framework Relationship Documentation",
+      "use": "Understand which LCCP provisions apply and ensure day-to-day operations comply",
+      "approach": "Follow LCCP procedures, supported by ISO 27001 processes, using RTS technical systems"
+    },
+    "for_management": {
+      "primary_resource": "Executive Summary and Framework Hierarchy",
+      "use": "Understand regulatory landscape and compliance obligations",
+      "approach": "Know LCCP is regulatory requirement; ISO 27001 is framework; RTS is technical detail"
+    }
+  },
+
+  "next_steps": {
+    "implementation": [
+      "Use Master Regulatory Index to identify all applicable requirements",
+      "Use Cross-Reference Mapping to plan implementation",
+      "Use this documentation to understand framework relationships",
+      "Implement per compliance flow: LCCP requirement → ISO 27001 framework → RTS technical spec"
+    ],
+    "ongoing_management": [
+      "Monitor LCCP changes and update compliance approach",
+      "Monitor ISO 27001 updates and ensure controls remain effective",
+      "Monitor RTS updates and update technical systems",
+      "Use Compliance Verification Matrix for regular compliance checks"
+    ]
+  }
+}

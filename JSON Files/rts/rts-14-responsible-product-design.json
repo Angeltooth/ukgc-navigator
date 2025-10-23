@@ -1,0 +1,327 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Responsible Product Design",
+  "document_reference": "RTS Aim 14",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "In respect of requirements RTS 14A and 14B – All gambling. In respect of requirement RTS 14C – Casino (excluding peer-to-peer poker). In respect of requirement RTS 14D – Slots. In respect of requirement RTS 14E and 14F – Casino. In respect of requirement RTS 14G – Casino (excluding slots and peer-to-peer poker).",
+  "aim": {
+    "aim_id": "RTS_AIM_14",
+    "aim_number": 14,
+    "aim_title": "Responsible Product Design",
+    "aim_description": "To ensure that products are designed responsibly and to minimise the likelihood that they exploit or encourage problem gambling behaviour"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_14A",
+      "requirement_number": "14A",
+      "title": "Prohibition of Features Encouraging Problem Gambling",
+      "requirement_type": "mandatory",
+      "full_text": "Gambling products must not actively encourage customers to chase their losses, increase their stake or increase the amount they have decided to gamble, or continue to gamble after they have indicated that they wish to stop.",
+      "implementation_guidance": {
+        "full_text": "By actively encourage, we mean the inclusion of specific features, functions or information that could reasonably be expected to encourage a greater likelihood of the behaviours described occurring. For example: the amount of funds taken into a product should not be topped up without the customer choosing to do so on each occasion, for example, when a customer buys-in at a poker table they should have to choose to purchase more chips to play at the table, automatic re-buys should not be provided; written or graphical information should not encourage customers to try to win back their losses; customers who have chosen to exit a game should not be encouraged to continue playing by, for example, being offered a free game. This requirement is not intended to prevent operators from offering special features or well-known games such as blackjack that allow customers to increase their stake on the occurrence of specific events (for example, split).",
+        "key_points": [
+          "Products must NOT actively encourage customers to chase losses",
+          "Must NOT actively encourage increasing stake or gambling amount",
+          "Must NOT encourage continuing after customer indicates wish to stop",
+          "Funds should not be automatically topped up without customer choosing each time",
+          "No automatic re-buys (e.g., poker table chips)",
+          "No messages encouraging winning back losses",
+          "No encouragement to continue after customer chooses to exit (e.g., free game offers)",
+          "Does not prevent legitimate game features like blackjack split/double down"
+        ],
+        "actively_encourage_definition": "Inclusion of specific features, functions or information that could reasonably be expected to encourage greater likelihood of problem behaviours",
+        "prohibited_features": [
+          {
+            "feature": "Automatic top-up of funds",
+            "prohibition": "Amount of funds taken into product should not be topped up without customer choosing on each occasion",
+            "example": "Poker table buy-in: customer should choose to purchase more chips each time, no automatic re-buys"
+          },
+          {
+            "feature": "Loss-chasing encouragement",
+            "prohibition": "Written or graphical information should not encourage customers to try to win back losses"
+          },
+          {
+            "feature": "Exit discouragement",
+            "prohibition": "Customers who chosen to exit should not be encouraged to continue",
+            "example": "Being offered free game after choosing to exit"
+          }
+        ],
+        "permitted_features": {
+          "clarification": "Not intended to prevent legitimate game features",
+          "examples": [
+            "Special features in well-known games",
+            "Blackjack split/double down (customer increases stake on specific game events)"
+          ]
+        }
+      },
+      "applies_to": [
+        "all_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 14A"
+    },
+    {
+      "requirement_id": "RTS_14B",
+      "requirement_number": "14B",
+      "title": "Prohibition of Withdrawal Cancellation",
+      "requirement_type": "mandatory",
+      "full_text": "Consumers must not be given the option to cancel their withdrawal request.",
+      "implementation_guidance": {
+        "full_text": "Once a customer has made a request to withdraw funds, they should not be given the option to deposit using these funds. Operators should make the process to withdraw funds as frictionless as possible.",
+        "key_points": [
+          "Customers must NOT be given option to cancel withdrawal request",
+          "Once withdrawal requested, should not be able to deposit using those funds",
+          "Withdrawal process should be as frictionless as possible"
+        ],
+        "prohibition": {
+          "action": "Canceling withdrawal request",
+          "status": "NOT PERMITTED"
+        },
+        "fund_protection": "Once withdrawal requested, funds should not be available for deposit",
+        "process_requirement": "Make withdrawal process as frictionless as possible"
+      },
+      "applies_to": [
+        "all_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 14B"
+    },
+    {
+      "requirement_id": "RTS_14C",
+      "requirement_number": "14C",
+      "title": "Prohibition of Multiple Simultaneous Slots",
+      "requirement_type": "mandatory",
+      "full_text": "The gambling system must not offer functionality which facilitates playing multiple slots games at the same time.",
+      "implementation_guidance": {
+        "full_text": "Operators are not permitted to offer functionality designed to allow players to play multiple slots at the same time. This includes, but is not limited to, split screen or multi-screen functionality. Combining multiple slots titles in a way which facilitates simultaneous play is not permitted.",
+        "key_points": [
+          "Must NOT offer functionality for playing multiple slots simultaneously",
+          "Includes split screen or multi-screen functionality",
+          "Combining multiple slots titles for simultaneous play NOT permitted"
+        ],
+        "prohibition": {
+          "scope": "Functionality designed to allow multiple slots simultaneously",
+          "includes": [
+            "Split screen functionality",
+            "Multi-screen functionality",
+            "Combining multiple slots titles for simultaneous play"
+          ],
+          "status": "NOT PERMITTED"
+        }
+      },
+      "applies_to": [
+        "casino",
+        "online_casino",
+        "slots"
+      ],
+      "applies_to_exclusions": [
+        "peer_to_peer_poker"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 14C"
+    },
+    {
+      "requirement_id": "RTS_14D",
+      "requirement_number": "14D",
+      "title": "Minimum Game Cycle Duration for Slots - 2.5 Seconds",
+      "requirement_type": "mandatory",
+      "full_text": "It must be a minimum of 2.5 seconds from the time a game is started until the next game cycle can be commenced. It must always be necessary to release and then depress the 'start button' or take equivalent action to commence a game cycle.",
+      "implementation_guidance": {
+        "full_text": "A game cycle starts when a player depresses the 'start button' or takes equivalent action to initiate the game and ends when all money or money's worth staked or won during the game has been either lost or delivered to, or made available for collection by the player and the start button or equivalent becomes available to initiate the next game. A player should commit to each game cycle individually, continued contact with a button, key or screen should not initiate a new game cycle.",
+        "key_points": [
+          "Minimum 2.5 seconds from game start until next game cycle can commence",
+          "Must release and then depress start button for each cycle (no hold-to-continue)",
+          "Game cycle: starts at button press, ends when all funds settled and button available again",
+          "Player must commit to each cycle individually",
+          "Continued contact with button/key/screen should NOT initiate new cycle"
+        ],
+        "minimum_duration": "2.5 seconds from game start until next game cycle can commence",
+        "button_interaction": {
+          "requirement": "Must release and then depress start button or take equivalent action",
+          "prohibition": "Continued contact should not initiate new game cycle"
+        },
+        "game_cycle_definition": {
+          "start": "Player depresses start button or takes equivalent action to initiate game",
+          "end": "All money or money's worth staked or won has been lost/delivered/made available for collection AND start button becomes available"
+        },
+        "individual_commitment": "Player should commit to each game cycle individually"
+      },
+      "applies_to": [
+        "slots",
+        "online_slots"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 14D"
+    },
+    {
+      "requirement_id": "RTS_14E",
+      "requirement_number": "14E",
+      "title": "Prohibition of Speed-Up Features",
+      "requirement_type": "mandatory",
+      "full_text": "The gambling system must not permit a customer to reduce the time until the result is presented.",
+      "implementation_guidance": {
+        "full_text": "Features such as turbo, quick spin and slam stop are not permitted. This is not intended to be an exhaustive list but to illustrate the types of features the requirement is referring to. This applies to all remote games, regardless of game cycle speed. This requirement does not apply to bonus and/or feature games where an additional stake is not wagered. This requirement does not prohibit the 'scratch-all' and/or 'reveal-all' feature. This requirement does not prohibit games where the customer will lose their stake unless they take action to end the game.",
+        "key_points": [
+          "Must NOT permit customer to reduce time until result presented",
+          "Turbo, quick spin, slam stop features NOT permitted",
+          "Applies to all remote games regardless of cycle speed",
+          "Does NOT apply to bonus/feature games without additional stake",
+          "Does NOT prohibit scratch-all/reveal-all features",
+          "Does NOT prohibit games where customer loses unless they act"
+        ],
+        "prohibited_features": {
+          "examples": ["Turbo", "Quick spin", "Slam stop"],
+          "note": "Not exhaustive list, illustrative of types of features prohibited"
+        },
+        "scope": "All remote games, regardless of game cycle speed",
+        "exceptions": [
+          {
+            "exception": "Bonus and/or feature games",
+            "condition": "Where additional stake is not wagered"
+          },
+          {
+            "exception": "Scratch-all and/or reveal-all features",
+            "status": "Not prohibited"
+          },
+          {
+            "exception": "Games requiring customer action to avoid losing stake",
+            "status": "Not prohibited"
+          }
+        ]
+      },
+      "applies_to": [
+        "casino",
+        "online_casino",
+        "slots",
+        "table_games"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 14E"
+    },
+    {
+      "requirement_id": "RTS_14F",
+      "requirement_number": "14F",
+      "title": "Prohibition of Losses-as-Wins Celebrations",
+      "requirement_type": "mandatory",
+      "full_text": "The gambling system must not celebrate a return which is less than or equal to the total stake gambled.",
+      "implementation_guidance": {
+        "full_text": "By 'celebrate' we mean the use of auditory or visual effects that are associated with a win are not permitted for returns which are less than or equal to last total amount staked. The following items provide guidelines for reasonable steps to inform the customer of the result of their game cycle: Display of total amount awarded; Winning lines displayed for a short period of time that will be considered sufficient to inform the customer of the result. This implementation should not override any of the display requirements (as set out in RTS 7E); Brief sound to indicate the result of the game and transfer to player balance.",
+        "key_points": [
+          "Must NOT celebrate return that is less than or equal to total stake gambled",
+          "Celebrate = auditory or visual effects associated with a win",
+          "Not permitted for returns ≤ last total amount staked",
+          "Allowed: display total amount awarded",
+          "Allowed: brief display of winning lines to inform customer",
+          "Allowed: brief sound indicating result and transfer to balance"
+        ],
+        "celebration_definition": "Use of auditory or visual effects that are associated with a win",
+        "prohibition_threshold": "Returns which are less than or equal to last total amount staked",
+        "permitted_result_communication": [
+          {
+            "method": "Display of total amount awarded",
+            "purpose": "Inform customer of result"
+          },
+          {
+            "method": "Winning lines displayed for short period",
+            "requirement": "Sufficient to inform customer of result",
+            "limitation": "Should not override RTS 7E display requirements"
+          },
+          {
+            "method": "Brief sound",
+            "purpose": "Indicate result and transfer to player balance"
+          }
+        ]
+      },
+      "applies_to": [
+        "casino",
+        "online_casino",
+        "slots",
+        "table_games"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 14F"
+    },
+    {
+      "requirement_id": "RTS_14G",
+      "requirement_number": "14G",
+      "title": "Minimum Game Cycle Duration for Casino Games - 5 Seconds",
+      "requirement_type": "mandatory",
+      "full_text": "It must be a minimum of 5 seconds from the time a game is started until the next game cycle can be commenced. It must always be necessary to release and then depress the 'start button' or take equivalent action to commence a game cycle.",
+      "implementation_guidance": {
+        "full_text": "A game cycle starts when a player depresses the 'start button' or takes equivalent action to initiate the game and ends when all money or money's worth staked or won during the game has been either lost or delivered to, or made available for collection by the player and the start button or equivalent becomes available to initiate the next game. A player should commit to each game cycle individually, continued contact with a button, key or screen should not initiate a new game cycle.",
+        "key_points": [
+          "Minimum 5 seconds from game start until next game cycle can commence",
+          "Must release and then depress start button for each cycle",
+          "Game cycle definition same as 14D",
+          "Player must commit to each cycle individually",
+          "Continued contact should NOT initiate new cycle"
+        ],
+        "minimum_duration": "5 seconds from game start until next game cycle can commence",
+        "button_interaction": {
+          "requirement": "Must release and then depress start button or take equivalent action",
+          "prohibition": "Continued contact should not initiate new game cycle"
+        },
+        "game_cycle_definition": {
+          "start": "Player depresses start button or takes equivalent action to initiate game",
+          "end": "All money or money's worth staked or won has been lost/delivered/made available for collection AND start button becomes available"
+        },
+        "individual_commitment": "Player should commit to each game cycle individually"
+      },
+      "applies_to": [
+        "casino",
+        "online_casino",
+        "table_games",
+        "roulette",
+        "blackjack",
+        "baccarat"
+      ],
+      "applies_to_exclusions": [
+        "slots",
+        "peer_to_peer_poker"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 14G"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure responsible product design that minimizes exploitation of problem gambling behaviors",
+    "enforcement_priority": "Critical - fundamental safer gambling requirement",
+    "testing_requirements": "Must demonstrate minimum game cycle durations, no turbo features, no losses-as-wins celebrations, no withdrawal cancellation",
+    "key_principles": [
+      "No encouragement of loss-chasing or stake increases",
+      "No withdrawal cancellation permitted",
+      "Minimum game cycle speeds enforced (2.5s slots, 5s casino games)",
+      "No turbo/speed-up features",
+      "No celebration of net losses",
+      "No simultaneous slots play",
+      "Individual commitment to each game cycle required"
+    ]
+  },
+  "related_requirements": [
+    "RTS 7E - Display of Results",
+    "RTS 8 - Auto-play Prohibition",
+    "RTS 12 - Financial Limits",
+    "RTS 13 - Reality Checks",
+    "LCCP Social Responsibility Code"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 7E - Display Requirements",
+      "RTS 8A - Individual Game Commitment",
+      "RTS 12 - Financial Limits",
+      "RTS 13 - Reality Checks"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

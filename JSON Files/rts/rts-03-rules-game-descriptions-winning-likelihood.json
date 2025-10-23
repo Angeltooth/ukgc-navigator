@@ -1,0 +1,235 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Rules, Game Descriptions and Likelihood of Winning",
+  "document_reference": "RTS Aim 3",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Gaming (including bingo), lotteries and betting on virtual events",
+  "aim": {
+    "aim_id": "RTS_AIM_3",
+    "aim_number": 3,
+    "aim_title": "Rules, Game Descriptions and Likelihood of Winning",
+    "aim_description": "To enable customers to make informed decisions about whether to gamble based on their chances of winning, the way the game, lottery or event works, the prizes or payouts on offer and the current state of multi-state games or events"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_3A",
+      "requirement_number": "3A",
+      "title": "Explanation of Applicable Rules",
+      "requirement_type": "mandatory",
+      "full_text": "An explanation of the applicable rules must be easily available to the customer before they commit to gamble. The content including artwork and text must be accurate, and sufficient to explain all of the applicable rules and how to participate. All reasonable steps must be taken to ensure that the content is understandable.",
+      "implementation_guidance": {
+        "full_text": "Explanatory content includes information in artwork and text displayed within the virtual event, in 'help' or 'how to play' pages, or other supporting material. Links to the information should be prominently placed, for example on home pages for gaming sections, game selection pages or menus, or within individual games, so that customers can easily locate them. As a minimum, restricted display devices should provide explanatory content via a menu item or other link. The following items provide guidelines on the type of explanatory content that may be relevant and should be considered for inclusion: the name of the game, lottery or virtual event; the applicable rules, including clear descriptions of what constitutes a winning outcome; restrictions on play or betting, such as any play duration limits, maximum wins, etc; the number of decks or frequency of shuffles in virtual card games; whether there are contributions to jackpots (progressives) and the way in which the jackpot operates, for example, whether the jackpot is won by achieving a particular outcome; instructions on how to interact with the game; rules pertaining to metamorphosis of games, for example, the number and type of tokens that need to be collected in order to qualify for a feature or bonus round and the rules and behaviour of the bonus round; the rules for entering a single lottery draw or a series of lottery draws and the frequency of the draws.",
+        "key_points": [
+          "Explanation of rules must be easily available BEFORE customer commits to gamble",
+          "Content (artwork and text) must be accurate",
+          "Must be sufficient to explain all applicable rules and how to participate",
+          "Take reasonable steps to ensure content is understandable",
+          "Links to information should be prominently placed",
+          "Restricted display devices: provide content via menu item or link"
+        ],
+        "content_locations": [
+          "Artwork and text within virtual event",
+          "Help pages",
+          "How to play pages",
+          "Other supporting material"
+        ],
+        "link_placement": [
+          "Home pages for gaming sections",
+          "Game selection pages",
+          "Menus",
+          "Within individual games"
+        ],
+        "restricted_display_devices": {
+          "minimum_requirement": "Provide explanatory content via menu item or other link"
+        },
+        "recommended_content": [
+          "Name of the game, lottery or virtual event",
+          "Applicable rules including clear descriptions of winning outcomes",
+          "Restrictions on play or betting (play duration limits, maximum wins, etc.)",
+          "Number of decks or frequency of shuffles in virtual card games",
+          "Contributions to jackpots and how jackpot operates",
+          "Instructions on how to interact with the game",
+          "Rules for game metamorphosis (tokens to collect, bonus rounds, etc.)",
+          "Rules for lottery draws and frequency of draws"
+        ]
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "lotteries",
+        "betting_on_virtual_events"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 3A"
+    },
+    {
+      "requirement_id": "RTS_3B",
+      "requirement_number": "3B",
+      "title": "Display of Current Game State",
+      "requirement_type": "mandatory",
+      "full_text": "Where relevant, as the game or event progresses, information that may reasonably be expected to enable the customer to understand the current state must be displayed.",
+      "implementation_guidance": {
+        "full_text": "The following items provide guidelines on the type of information that may be relevant. Where a game builds up a collection of tokens (symbols etc), the current number collected. An indication of which rules are currently relevant, such as displaying 'bonus round' or other feature labels. This requirement does not apply to lotteries.",
+        "key_points": [
+          "Display information about current game state as game progresses",
+          "Information must enable customer to understand current state",
+          "Show current number of tokens/symbols collected",
+          "Display indication of which rules are currently relevant (e.g., 'bonus round')",
+          "Does NOT apply to lotteries"
+        ],
+        "example_information": [
+          "Current number of tokens/symbols collected",
+          "Indication of current rules (e.g., 'bonus round' label)",
+          "Feature labels showing active game states"
+        ],
+        "exclusions": [
+          "Lotteries"
+        ]
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "virtual_events"
+      ],
+      "applies_to_exclusions": [
+        "lotteries"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 3B"
+    },
+    {
+      "requirement_id": "RTS_3C",
+      "requirement_number": "3C",
+      "title": "Information About Chances of Winning",
+      "requirement_type": "mandatory",
+      "full_text": "For each virtual event, game (including bingo), or lottery, information that may reasonably be expected to enable the customer to make an informed decision about his or her chances of winning must be easily available before the customer commits to gamble. Information must include: i. a description of the way the game works and the way in which winners are determined and prizes allocated ii. house edge (or margin) iii. the return to player (RTP) percentage or iv. the probability (likelihood) of winning events occurring.",
+      "implementation_guidance": {
+        "full_text": "The following items provide further guidance on acceptable types of information about the likelihood of winning: for types of peer-to-peer games where the likelihood of winning may depend on skill and/or the actions of other participants, a description of the way the game works and how winners are determined will be sufficient; for bingo, and some types of lottery or other games where it is not possible to determine the likelihood of winning because it depends on the eventual number of participants, a description of the way in which prizes are allocated will be sufficient; the average theoretical return to player percentage. Where an event (other than peer-to-peer) involves an element of skill, return to player percentage should be calculated using either the auto-play strategy or a standard/published strategy; the house edge, margin or over-round, for example for a virtual race; the probability of each winning event occurring, or such information as may reasonably be expected to allow the customer to calculate the probability that the event will occur. The nature of some games may mean that the game itself provides sufficient information, for example, the likelihood of rolling a six on a six-sided die would not require further explanation; The odds displayed in virtual event betting should reflect the probability of each event occurring as closely as possible. Information may be included in artwork and text displayed within the virtual game or event, in 'help' or 'how to play' pages, or other supporting material. Information should be easily accessible, for example by placing links on home pages for gaming or virtual event sections, game selection pages or menus, or within individual games.",
+        "key_points": [
+          "Information must be easily available BEFORE customer commits to gamble",
+          "Must include description of how game works and how winners are determined",
+          "Must include house edge/margin OR RTP percentage OR probability of winning",
+          "For peer-to-peer games: description of how game works and winners determined is sufficient",
+          "For bingo/lottery with variable participants: description of prize allocation is sufficient",
+          "RTP percentage: use auto-play or standard/published strategy for skill games",
+          "For virtual races: show house edge, margin or over-round",
+          "For probability: provide info allowing customer to calculate likelihood",
+          "Odds in virtual event betting should reflect actual probabilities",
+          "Information should be easily accessible via prominently placed links"
+        ],
+        "required_information_options": [
+          "Description of how game works and how winners are determined and prizes allocated",
+          "House edge or margin",
+          "Return to player (RTP) percentage",
+          "Probability (likelihood) of winning events occurring"
+        ],
+        "acceptable_alternatives": {
+          "peer_to_peer_games": "Description of how game works and winners determined (when likelihood depends on skill/other participants)",
+          "bingo_lottery_variable_participants": "Description of how prizes are allocated (when likelihood depends on number of participants)",
+          "skill_based_games": "RTP percentage calculated using auto-play or standard/published strategy",
+          "virtual_races": "House edge, margin or over-round",
+          "simple_probability_games": "Game itself may provide sufficient information (e.g., six-sided die)"
+        },
+        "display_requirements": {
+          "virtual_event_betting": "Odds displayed should reflect probability of each event occurring as closely as possible"
+        },
+        "content_locations": [
+          "Artwork and text within virtual game or event",
+          "Help pages",
+          "How to play pages",
+          "Other supporting material"
+        ],
+        "accessibility": "Easily accessible via links on home pages, game selection pages, menus, or within games"
+      },
+      "applies_to": [
+        "virtual_events",
+        "gaming",
+        "bingo",
+        "lotteries"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 3C"
+    },
+    {
+      "requirement_id": "RTS_3D",
+      "requirement_number": "3D",
+      "title": "Information About Prizes and Payouts",
+      "requirement_type": "mandatory",
+      "full_text": "For each virtual event, game (including bingo), or lottery, content describing the potential prizes and payouts or the means by which these are calculated or determined must be easily available before the customer commits to gamble.",
+      "implementation_guidance": {
+        "full_text": "Information should be made available about the amounts that customers may potentially win, for example in the form of pay-tables, or by showing the odds paid for particular outcomes. For peer-to-peer games where the prize is determined based on the actions of the participants, a description of the way the game works and the rake or commission taken will be sufficient. For lotteries and other types of events where the potential amount or prize paid out may not be known before the customer commits to gamble, describing the way in which the prize amount is determined will be sufficient. Information may be included in artwork and text displayed within the virtual event, in 'help' or 'how to play' pages, or other supporting material. Information should be easily accessible, for example by placing links on home pages for gaming sections, game selection pages or menus, or within individual games. Displays of jackpot amounts that change over time (progressives) should be updated as frequently as practicable, particularly after the amount has been reset following a win.",
+        "key_points": [
+          "Content describing potential prizes and payouts must be easily available BEFORE customer commits",
+          "Show amounts customers may potentially win (pay-tables, odds for outcomes)",
+          "For peer-to-peer: description of how game works and rake/commission is sufficient",
+          "For lotteries/variable prizes: description of how prize amount is determined is sufficient",
+          "Information should be easily accessible via links",
+          "Progressive jackpots: update as frequently as practicable, especially after reset"
+        ],
+        "display_methods": [
+          "Pay-tables",
+          "Odds paid for particular outcomes"
+        ],
+        "acceptable_alternatives": {
+          "peer_to_peer_games": "Description of how game works and rake or commission taken",
+          "lotteries_variable_prizes": "Description of how prize amount is determined"
+        },
+        "content_locations": [
+          "Artwork and text within virtual event",
+          "Help pages",
+          "How to play pages",
+          "Other supporting material"
+        ],
+        "accessibility": "Easily accessible via links on home pages, game selection pages, menus, or within games",
+        "progressive_jackpots": {
+          "update_frequency": "As frequently as practicable",
+          "critical_update_timing": "After amount has been reset following a win"
+        }
+      },
+      "applies_to": [
+        "virtual_events",
+        "gaming",
+        "bingo",
+        "lotteries"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 3D"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Enable informed customer decisions about gambling based on understanding of rules, winning chances, and potential prizes",
+    "enforcement_priority": "High - critical for fair gambling and informed consent",
+    "testing_requirements": "Must demonstrate that all game rules, RTP, and prize information is easily accessible before gambling",
+    "key_principles": [
+      "Information must be available BEFORE customer commits to gamble",
+      "Content must be accurate and understandable",
+      "Links must be prominently placed and easily accessible",
+      "Different games may require different types of information"
+    ]
+  },
+  "related_requirements": [
+    "RTS 2 - Displaying Transactions",
+    "RTS 7 - Generation of Random Outcomes",
+    "RTS 9 - Progressive Jackpot Systems",
+    "LCCP Social Responsibility Code"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 2 - Displaying Transactions",
+      "RTS 7 - Generation of Random Outcomes",
+      "RTS 9 - Progressive Jackpot Systems"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

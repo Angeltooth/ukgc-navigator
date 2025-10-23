@@ -1,0 +1,98 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - In-Play Betting",
+  "document_reference": "RTS Aim 15",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Betting and peer-to-peer betting",
+  "aim": {
+    "aim_id": "RTS_AIM_15",
+    "aim_number": 15,
+    "aim_title": "In-Play Betting",
+    "aim_description": "To make the customer aware that they may not have the latest information available when betting on live events, and that they may be at a disadvantage to operators or other customers who have more up-to-date information"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_15A",
+      "requirement_number": "15A",
+      "title": "Information About Broadcast Delays",
+      "requirement_type": "mandatory",
+      "full_text": "Information must be made available that explains that 'live' TV or other broadcasts are delayed and that others may have more up-to-date information. Main in-play betting pages must include this information where practicable.",
+      "implementation_guidance": {
+        "full_text": "Brief information should be included on main in-play pages or screens, such as the in-play home page or screen. More detail should be provided in 'help' or 'how to' or other product pages or screens. For telephone betting the information should be included in the general betting or product information that is made available to and/or sent out to customers. Where a brief notice cannot be practicably included on the main pages or screens, the information should be provided on easily accessible 'help', 'how to' or other product pages or screens.",
+        "key_points": [
+          "Must explain that live TV/broadcasts are delayed",
+          "Must explain that others may have more up-to-date information",
+          "Main in-play betting pages must include this information where practicable",
+          "Brief information on main in-play pages/screens",
+          "More detail in help/how to pages",
+          "Telephone betting: include in general betting information",
+          "If not practicable on main pages, provide on easily accessible help pages"
+        ],
+        "content_requirements": [
+          "Explain that live TV or other broadcasts are delayed",
+          "Explain that others may have more up-to-date information"
+        ],
+        "display_locations": {
+          "primary": {
+            "location": "Main in-play pages or screens (e.g., in-play home page)",
+            "content": "Brief information",
+            "requirement": "Where practicable"
+          },
+          "secondary": {
+            "location": "Help, how to, or other product pages",
+            "content": "More detailed information"
+          },
+          "telephone_betting": {
+            "location": "General betting or product information",
+            "distribution": "Made available to and/or sent out to customers"
+          },
+          "fallback": {
+            "condition": "Where brief notice cannot practicably be included on main pages",
+            "location": "Easily accessible help, how to, or other product pages/screens"
+          }
+        }
+      },
+      "applies_to": [
+        "betting",
+        "peer_to_peer_betting",
+        "sports_betting",
+        "in_play_betting"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 15A"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure customers aware of information disadvantage when betting on live events with delayed broadcasts",
+    "enforcement_priority": "Medium-High - important for fair betting on live events",
+    "key_principles": [
+      "Transparency about broadcast delays",
+      "Awareness of information asymmetry",
+      "Visible warnings on in-play pages",
+      "Accessible detailed information"
+    ]
+  },
+  "related_requirements": [
+    "RTS 3 - Rules and Game Descriptions",
+    "LCCP Customer Protection Provisions"
+  ],
+  "practical_examples": {
+    "compliant_notices": [
+      "Live TV broadcasts are delayed. Others may have more current information.",
+      "Please note: Streamed events have a delay. You may be at an information disadvantage.",
+      "Live feeds are subject to delay. Other customers may have access to faster information sources."
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

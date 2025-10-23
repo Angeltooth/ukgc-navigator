@@ -1,0 +1,53 @@
+Why is it important?
+
+The purpose of ISO 27001 Annex A 5.35 Independent review of information security is to ensure that what you are doing is still suitable, adequate and effective.
+It is independent so that you do not mark your own homework or become complacent in your operations.
+What is the definition in the standard?
+
+The ISO 27001 standard defines ISO 27001 Annex A 5.35 as:
+The organisations approach to managing information security and its implementation including people, processes and technologies should be reviewed independently at planned intervals, or when significant changes occur. 
+ISO 27001:2022 Annex A 5.35 Independent review of information security
+How do you implement it?
+
+1. Put in place policies and processes for reviews
+
+You will have policy and process for independent reviews. Consider the guidance in ISO 27001 Clause 9.2 Internal audit.
+For the process of independent review and audit you can learn the exact process by reading How to Conduct an Internal Audit.
+2. Plan your reviews
+
+You will plan your reviews on a periodic basis. There is no real guidance on periodic so plan to do one full audit of everything at least annually. You can implement an audit plan that includes both internal and external audits and reviews.
+3. Fix it if things have gone wrong
+
+Opportunities for continual improvement form part of the independent review. Based on the continual improvement policy and process this is an opportunity to identify any needs for change or enhancements.
+Consider the guidance in ISO 27001 Clause 10.1 Continual Improvement.
+Corrective actions may be required and should be implemented if the review finds things not working as intended. You would record it in the incident and corrective action log, potentially in the risk register if there is a risk identified and manage it as part of the corrective action process.
+For further guidance refer to ISO 27001:2002 Clause 10.2 Corrective Action
+4. Make sure the reviewer is independent
+
+Independence can be achieved using internal or external persons as long as they are independent of the area being reviewed. The people should have the competence to do the review and not have authority over the area being reviewed.
+5. Send Report to Management
+
+Independent reviews are reported to management and to top management as appropriate. Using the mechanism of the Management Review Team and the Management Review Team meeting is a great way to report out. Following the structured management review team agenda as defined by the standard.
+When do you conduct independent reviews?
+
+In addition to the planned periodic independent reviews there are other times that you would consider conducting independent reviews. They could be when
+Laws change
+Regulations change
+You start a new business venture
+You change business practice
+You enter a new jurisdiction
+Your security controls change
+What other standards apply?
+
+ISO/IEC 27007 and ISO/IEC TS 27008 provide guidance for carrying out independent reviews. 
+ISO 27001 Annex A 5.35 FAQ
+
+What are the Benefits of ISO 27001 5.35 Independent review of information security?
+Other than your ISO 27001 certification requiring it, the following are the top 5 benefits of ISO 27001 Annex A 5.35 Independent review of information security: 
+You cannot get ISO 27001 certification without it.
+Improved security: You will have an effective information security implementation that has been independently checked and verified
+Reduced risk: You will reduce the information security risks by having an independent review and implementing any continual improvements
+Improved compliance: Standards and regulations require you to have an independent review
+Reputation Protection: In the event of a breach having an independent review process in place will reduce the potential for fines and reduce the PR impact of an event
+Why is ISO 27001 Annex A 5.35 Independent review of information security important?
+Independent reviews are important as they give an impartial view of your information security management systems and controls. They bring fresh eyes, not constrained by day to day operations. Using competent people can lead to significant continual improvements that increase your information security posture.

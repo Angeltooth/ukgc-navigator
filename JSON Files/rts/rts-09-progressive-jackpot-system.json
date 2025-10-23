@@ -1,0 +1,174 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Progressive Jackpot Systems",
+  "document_reference": "RTS Aim 9",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Gaming (including bingo)",
+  "aim": {
+    "aim_id": "RTS_AIM_9",
+    "aim_number": 9,
+    "aim_title": "Progressive Jackpot Systems",
+    "aim_description": "To ensure that progressive jackpot systems operate fairly"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_9A",
+      "requirement_number": "9A",
+      "title": "Jackpot Rules Availability",
+      "requirement_type": "mandatory",
+      "full_text": "An explanation of the jackpot rules must be clearly available to the customer before they commit to gamble.",
+      "implementation_guidance": {
+        "full_text": "The rules for a jackpot shall describe how it is funded, what the start-up seed and any ceiling values are. The jackpot system's return to player percentage should be displayed as per RTS 3C, this could be one combined game and progressive jackpot RTP figure or broken down into the base game and jackpot component. If a player is not eligible for a game's progressive jackpot prize this should be made clear, along with their respective theoretical RTP. The rules for a jackpot shall describe how the prizes are determined and awarded, including what happens when two or more players simultaneously trigger the same jackpot, or appear to simultaneously trigger the jackpot, for example due to network latency issues. All eligible players should be able to see the current jackpot values and these should be updated as frequently as is practicable, particularly after the amount has been reset following a win. Where a jackpot is capped at a ceiling value, an explanation of how subsequent player contributions are handled should be provided (for example, the operation of any redirected overflow or reserve pools).",
+        "key_points": [
+          "Explanation of jackpot rules must be clearly available BEFORE customer commits to gamble",
+          "Must describe how jackpot is funded",
+          "Must state start-up seed value and any ceiling values",
+          "Display jackpot system RTP per RTS 3C (combined or broken down)",
+          "Make clear if player not eligible for progressive jackpot, show their theoretical RTP",
+          "Describe how prizes are determined and awarded",
+          "Explain what happens when multiple players simultaneously trigger jackpot",
+          "All eligible players should see current jackpot values",
+          "Update values as frequently as practicable, especially after reset",
+          "For capped jackpots: explain how subsequent contributions are handled (overflow/reserve pools)"
+        ],
+        "required_information": [
+          "How jackpot is funded",
+          "Start-up seed value",
+          "Ceiling values (if any)",
+          "How prizes are determined and awarded",
+          "What happens with simultaneous triggers",
+          "How to handle network latency issues causing apparent simultaneous triggers"
+        ],
+        "rtp_display": {
+          "reference": "Per RTS 3C",
+          "options": [
+            "One combined game and progressive jackpot RTP figure",
+            "Broken down into base game and jackpot component"
+          ],
+          "player_ineligibility": "If player not eligible for progressive jackpot, make clear and show their respective theoretical RTP"
+        },
+        "jackpot_value_display": {
+          "visibility": "All eligible players should be able to see current jackpot values",
+          "update_frequency": "As frequently as practicable",
+          "critical_update": "Particularly after amount has been reset following a win"
+        },
+        "capped_jackpots": {
+          "requirement": "Explain how subsequent player contributions are handled",
+          "examples": [
+            "Operation of redirected overflow pools",
+            "Operation of reserve pools"
+          ]
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "slots",
+        "casino_games"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 9A"
+    },
+    {
+      "requirement_id": "RTS_9B",
+      "requirement_number": "9B",
+      "title": "Jackpot System Configuration and Operation",
+      "requirement_type": "mandatory",
+      "full_text": "Jackpot systems must be configured and operated with adequate fairness and security.",
+      "implementation_guidance": {
+        "full_text": "The gambling system shall maintain strict access and logging controls over the configuration and changes made to live jackpots. Where a customer contributes to a jackpot pool, that customer should be eligible to win the jackpot whilst they are playing that game. The chances of winning a jackpot should increase in correlation with the amount contributed. Where a jackpot containing player contributions is decommissioned those contributions need to be returned fairly according to the circumstances, with priority given to the players who made the contributions. Some example methods to achieve this include: waiting until the jackpot is next awarded before decommissioning it; adding any remaining contributions onto another jackpot system, preferably one with a similar player base; returning remaining contributions as a one off event, with adequate customer disclosure to explain the origin of money. The gambling system shall ensure that a winning customer is notified of a jackpot win immediately after it is triggered and that other participating customers are adequately notified of the jackpots reset value.",
+        "key_points": [
+          "Maintain strict access and logging controls over jackpot configuration and changes",
+          "Customer contributing to jackpot should be eligible to win whilst playing",
+          "Chances of winning should increase in correlation with amount contributed",
+          "Decommissioned jackpots: return contributions fairly, priority to players who contributed",
+          "Winning customer must be notified immediately after jackpot triggered",
+          "Other participating customers must be notified of jackpot reset value"
+        ],
+        "access_and_security": {
+          "requirement": "Strict access and logging controls over configuration and changes to live jackpots",
+          "scope": "All jackpot system configurations and modifications"
+        },
+        "eligibility_and_fairness": {
+          "contribution_eligibility": "Customer contributing to jackpot pool should be eligible to win whilst playing that game",
+          "win_probability": "Chances of winning jackpot should increase in correlation with amount contributed"
+        },
+        "decommissioning_procedures": {
+          "requirement": "Return contributions fairly according to circumstances",
+          "priority": "Players who made contributions have priority",
+          "example_methods": [
+            {
+              "method": "Wait and award",
+              "description": "Wait until jackpot is next awarded before decommissioning"
+            },
+            {
+              "method": "Transfer to another jackpot",
+              "description": "Add remaining contributions onto another jackpot system",
+              "preference": "Preferably one with similar player base"
+            },
+            {
+              "method": "One-off return",
+              "description": "Return remaining contributions as one off event",
+              "requirement": "Provide adequate customer disclosure to explain origin of money"
+            }
+          ]
+        },
+        "notification_requirements": {
+          "winning_customer": {
+            "timing": "Immediately after jackpot is triggered",
+            "action": "Notify of jackpot win"
+          },
+          "other_participating_customers": {
+            "requirement": "Adequately notified of jackpot reset value",
+            "purpose": "Transparency about jackpot status"
+          }
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "slots",
+        "casino_games"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 9B"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure progressive jackpot systems operate fairly, transparently, and securely",
+    "enforcement_priority": "High - involves significant player contributions and potential large wins",
+    "testing_requirements": "Must demonstrate fair jackpot mechanics, proper contribution tracking, and secure configuration controls",
+    "key_principles": [
+      "Full transparency of jackpot rules before play",
+      "Contributors must be eligible to win",
+      "Win probability correlates with contribution",
+      "Secure system configuration and logging",
+      "Fair handling of decommissioned jackpots",
+      "Immediate winner notification"
+    ]
+  },
+  "related_requirements": [
+    "RTS 3C - RTP Display Requirements",
+    "RTS 7 - Generation of Random Outcomes",
+    "RTS 3 - Rules and Game Descriptions"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 3C - Return to Player Percentage Display",
+      "RTS 7C - Jackpot Eligibility for Contributors",
+      "RTS 3D - Prize Information Display"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

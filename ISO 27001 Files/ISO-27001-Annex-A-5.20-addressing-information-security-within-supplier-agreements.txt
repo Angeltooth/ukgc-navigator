@@ -1,0 +1,73 @@
+ISO 27001 Addressing Information Security Within Supplier Agreements
+
+ISO 27001 Annex A 5.20 Addressing information security within supplier agreements is an ISO 27001 control that requires an organisation to establish and agree information security requirements with suppliers.
+It is about having a legal mechanism in place. A contract or an agreement or terms of business.
+Suppliers represent one of your biggest risks as you cannot directly manage them or influence them and it is likely you rely on them, they have your data and provide services that you need to be successful.
+Purpose
+
+The purpose of ISO 27001 Annex A 5.20 is a preventive control that ensures you maintain an agreed level of information security in supplier relationships.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 5.20 as:
+Relevant information security requirements should be established and agreed with each supplier based on the type of supplier relationship.
+Implementation Guide
+
+We are going to rely on a couple of mechanism to ensure Information Security In Supplier Relationships.
+Supplier Agreements / Contracts
+
+The number one recommendation is to seek professional legal counsel for the provision of all contracts. The following is guidance but you should always defer to professional legal counsel. Always. You are not a lawyer. We are not a lawyer.
+Our first line of defence and go to is the supplier agreement or supplier contract. At its core it is a legal mechanism that is legally binding and provides the greatest level of overall protection.
+It sets out what is required, what will be done, who will do it, what happens if things go wrong.
+What information is to be provided, accessed and the methods of access.
+Legal, regulatory and contractual requirements. Elements such as intellectual property rights, copyright information, data protection requirements.
+The controls and levels of controls that are required by both parties to the agreement.
+Acceptable and unacceptable use of assets.
+How to grant and remove access
+Penalties, indemnities and remediation for failings to meet the contract.
+Contact information
+Screening requirements for staff were legally enforceable.
+How evidence and assurance of information security will be provided
+Rights to audit
+How to solve problems or conflicts with the contract
+Appropriate back up, business continuity and disaster recovery
+The process for change management
+Physical security as appropriate
+Information transfer processes
+Termination clauses and processes
+Destruction and removal of data processes
+Handover at the end of the contract
+Contracts are kept and recorded in the ISO 27001 Supplier Register. They are reviewed at least annually, based on risk and significant change or event.
+How to comply
+
+To comply with ISO 27001 Annex A 5.20 you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to
+Implement a topic specific policy
+Implement an supplier management process
+Implement an ISO 27001 supplier register
+Have agreements with all suppliers that cover information security requirements
+How to pass the audit
+
+To pass an audit of ISO 27001 Annex A 5.20 you are going to make sure that you have followed the steps above in how to comply.
+What the auditor will check
+
+The audit is going to check a number of areas. Lets go through the most common
+1. That you have a supplier agreements in place
+
+The auditor is going to check that you have agreements in place with suppliers that cover the information security requriements. It will check that those agreements are in date and cover the products and / or services acquired.
+2. That you have an ISO 27001 Supplier Register
+
+You will need an ISO 27001 Supplier Register to record and manage your suppliers. Make sure it is up to date and reflects your reality.
+3. Documentation
+
+They are going to look at audit trails and all your documentation and see that is classified and labelled. All the documents that you show them, as a minimum if they are confidential should be labelled as such. Is the document up to date. Has it been reviewed in the last 12 months. Does the version control match.
+Top 3 Mistakes People Make
+
+The top 3 Mistakes People Make For ISO 27001 Annex A 5.20 are
+1. You have no contracts or legal terms with a supplier
+
+Make sure that there is a contract, agreement, terms of business or some legal mechanism for engaging with suppliers and you have a copy, it is in date and covers what you are using.
+2. You have no assurance they are doing the right thing for information security
+
+Make sure you have done your security assessment and can place your hands on an in date certificate such as an ISO 27001 Certification for assurance they are doing the right thing. It needs to be in date a cover the products and / or services you have acquired and are using form the supplier.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

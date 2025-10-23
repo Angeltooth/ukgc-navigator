@@ -1,0 +1,139 @@
+ISO 27001 Outsourced Development
+
+ISO 27001 Annex A 8.30 Outsourced Development is an ISO 27001 control that requires an organisation to make sure that outsourced developments are meeting organisational information security requirements.
+Purpose
+
+ISO 27001 Annex A 8.26 is a preventive control and a detective control to ensure information security measures required by the organisation are implemented in outsourced system development.
+Definition
+
+ISO 27001 defines ISO 27001 Annex A 8.30 as:
+The organisation should direct, monitor and review the activities related to outsourced system development.
+Implementation Guide
+
+This is all about managing your outsourced development and making sure that it, and they, are following your requirements for information security. This will be done by telling them what you expect, getting it into agreements such as contracts and then regularly reviewing and monitoring them to ensure that it is being done.
+In addition, we treat the developers as a third party for which the following will apply:
+ISO 27001 Annex A 5.19 Information Security In Supplier Relationships
+ISO 27001 Annex A 5.20 Addressing Information Security Within Supplier Agreements
+ISO 27001 Annex A 5.22 Monitor, Review And Change Management Of Supplier Services
+Licensing
+
+Getting licensing right is key. You will have documented this and who owns code and intellectual property.
+The following will apply: ISO 27001 Annex A 5.32 Intellectual Property Rights
+Contracts
+
+You will have a contract in place and followed the contractual requirements for secure design, coding and test.
+The following will apply: ISO 27001 Annex A 8.25 Secure Development Life Cycle
+You will have provided them the threat model to consider.
+There will be the requirement to provide evidence, and actual evidence, that sufficient testing has been conducted.
+Escrow agreements where appropriate will be defined, document and evidenced.
+The right to audit will be included in the contact.
+Security requirements for the development environment will be in place.
+The requirements of all laws and regulations will be in place.
+Outsourced Development
+
+If you outsource your development then the third party supplier controls will apply. The main thing is to ensure they meet your requirements for secure development but all relevant controls that apply to you, will apply to them.
+Implementation Checklist
+
+ISO 27001 Annex A 8.30 Outsourced Development Implementation Checklist:
+1. Vendor Selection and Due Diligence
+
+Conduct thorough due diligence on potential outsourced developers, assessing their information security posture, certifications (e.g., ISO 27001, SOC 2), and track record. Include security requirements in supplier selection criteria and RFPs.
+Challenges: Limited vendor transparency, difficulty evaluating vendor claims.
+Solutions: Third-party audits, detailed security questionnaires, reference checks.
+2. Contractual Agreements
+
+Include comprehensive security clauses in all contracts with outsourced development vendors, defining responsibilities, liabilities, and obligations related to information security.
+Challenges: Negotiating strong contracts, enforcing contractual obligations.
+Solutions: Legal counsel, regular contract reviews, dispute resolution mechanisms.
+3. Information Sharing & Access Controls
+
+Implementation: Establish secure procedures for sharing sensitive information with vendors, implement robust access controls, and utilise secure communication channels.
+Challenges: Data breaches, insider threats.
+Solutions: Data Loss Prevention (DLP) tools, security awareness training, background checks.
+4. Data Protection & Privacy
+
+Ensure compliance with relevant data protection regulations (e.g., GDPR) when sharing data with outsourced developers. Implement appropriate data protection measures, such as data masking and encryption.
+Challenges: Meeting evolving data privacy regulations, ensuring vendor compliance.
+Solutions: Data processing agreements, regular privacy impact assessments, ongoing supplier monitoring.
+5. Incident Management
+
+Establish clear incident reporting procedures, develop a joint incident response plan with vendors, and conduct regular incident response drills.
+Challenges: Timely incident detection and response, coordination with vendors.
+Solutions: Security Information and Event Management (SIEM) systems, automated incident response tools, clear communication procedures.
+6. Physical and Environmental Security
+
+Ensure that vendors maintain adequate physical and environmental security measures, including secure facilities, access controls, and environmental controls.
+Challenges: Assessing and verifying vendor physical security measures.
+Solutions: On-site audits, remote monitoring of security systems, third-party security assessments.
+7. Human Resources Security
+
+Ensure that vendors have robust HR security practices, including background checks, employee security training, and secure employee onboarding and off-boarding procedures.
+Challenges: Ensuring compliance with vendor HR security practices.
+Solutions: Contractual requirements, regular vendor assessments, third-party HR security audits.
+8. System and Application Security
+
+Ensure that vendors have robust systems and application security controls, including secure development practices, vulnerability management, and regular security testing.
+Challenges: Assessing the security of complex systems and applications.
+Solutions: Penetration testing, vulnerability assessments, code reviews, secure development lifecycle (SDLC) processes.
+9. Business Continuity and Disaster Recovery
+
+Ensure that vendors have business continuity and disaster recovery plans in place to minimise the impact of disruptions on outsourced services.
+Challenges: Verifying the effectiveness of vendor BCP/DR plans.
+Solutions: Business impact analysis, disaster recovery drills, regular review and updates of BCP/DR plans.
+10. Continuous Monitoring & Improvement
+
+Conduct regular security audits and assessments of outsourced development activities, monitor vendor performance against agreed-upon security controls and KPIs, and continuously improve security processes.
+Challenges: Maintaining visibility into vendor security practices, resource constraints.
+Solutions: Third-party audits, automated monitoring tools, regular review and improvement of security controls.
+Audit Checklist
+
+ISO 27001 Annex A 8.30 Outsourced Development Audit Checklist
+1. Outsourced Developer Management
+
+Evidence that the guidance in the following was followed:
+ISO 27001 Annex A 5.19 Information Security In Supplier Relationships
+ISO 27001 Annex A 5.20 Addressing Information Security Within Supplier Agreements
+ISO 27001 Annex A 5.22 Monitor, Review And Change Management Of Supplier Services
+2. Vendor Selection and Due Diligence
+
+Assess the process for selection the outsourced developer
+Review the due diligence that was carried out.
+Seek evidence of vendor security certifications and / or audits and / or questionnaires.
+Review a sample of supplier references.
+3. Contractual Agreements
+
+Check contracts in place and that they cover
+the products and services the organisation has aquired
+clauses for information security
+Assess if contracts were reviewed and approved by legal counsel
+Ensure that regular contractual reviews are in place and evidenced.
+4. Information Sharing & Access Controls
+
+Have secure procedures for sharing sensitive information with been establised.
+Are access controls and user access lifecycle management in place.
+5. Data Protection & Privacy
+
+Ensure compliance with relevant data protection regulations (e.g., GDPR) when sharing data with outsourced developers is in place.
+Walkthrough the processes and procedures.
+6. Incident Management
+
+Assess the incident management process and communication channels with the outsourced developer.
+7. Physical and Environmental Security
+
+Audit to ensure that the outsourced developers maintain adequate physical and environmental security measures, including secure facilities, access controls, and environmental controls.
+8. Human Resources Security
+
+With your HR team review if vendors have robust HR security practices, including background checks, employee training, and secure employee onboarding and off-boarding procedures.
+Assess contracts for requirements.
+9. System and Application Security
+
+Walkthrough and asses that vendors have robust systems and application security controls, including secure development practices, vulnerability management, and regular security testing.
+Seek evidence of penetration testing, vulnerability assessments, code reviews, secure development lifecycle (SDLC) processes.
+10. Business Continuity and Disaster Recovery
+
+Review the business continuity and disaster recovery plans and check that they minimise the impact of disruptions on outsourced services.
+Assess the outsourced developers business impact analysis, disaster recovery plans, regular review and updates of BCP/DR plans.
+11. Continuous Monitoring & Improvement
+
+Check any security audits and assessments of outsourced development activities.
+Review if there is a monitor of supplier performance against agreed-upon security controls and KPIs, and if they continuously improve security processes.

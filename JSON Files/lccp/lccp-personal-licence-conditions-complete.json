@@ -1,0 +1,386 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Licence Conditions and Codes of Practice (LCCP) - Personal Licence Conditions",
+  "document_reference": "LCCP-PLC-2024",
+  "last_updated": "2025-10-21",
+  "jurisdiction_scope": "Great Britain (England, Scotland, Wales)",
+  
+  "document_overview": {
+    "purpose": "Specifies personal licence conditions for individuals holding personal licences issued by the UK Gambling Commission",
+    "structure": "Single section with core conditions and notification requirements",
+    "application_basis": "Gambling Act 2005 and subordinate legislation",
+    "compliance_obligation": "Mandatory conditions for all personal licence holders",
+    "enforcement": "Breach may result in: suspension or revocation of personal licence, financial penalties, disqualification from holding personal licences, consideration of suitability to hold operating or premises licences"
+  },
+
+  "personal_licence_types": [
+    {
+      "type": "Director",
+      "abbreviation": "Dir",
+      "scope": "Individual responsible for corporate governance and board-level decisions",
+      "key_conditions": [1, 2, 3]
+    },
+    {
+      "type": "Senior Manager",
+      "abbreviation": "SM",
+      "scope": "Individual with significant influence over compliance and operations",
+      "key_conditions": [1, 2, 3]
+    },
+    {
+      "type": "Compliance Officer",
+      "abbreviation": "CO",
+      "scope": "Individual responsible for ensuring licence compliance",
+      "key_conditions": [1, 2, 3]
+    },
+    {
+      "type": "Money Laundering Reporting Officer",
+      "abbreviation": "MLRO",
+      "scope": "Individual responsible for AML/CFT compliance and reporting",
+      "key_conditions": [1, 2, 3]
+    },
+    {
+      "type": "Operations Manager",
+      "abbreviation": "OM",
+      "scope": "Individual responsible for day-to-day operations",
+      "key_conditions": [1, 2, 3]
+    },
+    {
+      "type": "Remote Gambling Technical Officer",
+      "abbreviation": "RGTO",
+      "scope": "Individual with technical competence in remote gambling systems",
+      "key_conditions": [1, 2, 3]
+    },
+    {
+      "type": "Gaming Machine Technical Officer",
+      "abbreviation": "GMTO",
+      "scope": "Individual with technical competence in gaming machines",
+      "key_conditions": [1, 2, 3]
+    },
+    {
+      "type": "Non-Remote Gaming Machine Officer",
+      "abbreviation": "NRGMO",
+      "scope": "Individual responsible for non-remote gaming machine compliance",
+      "key_conditions": [1, 2, 3]
+    }
+  ],
+
+  "provision_types": [
+    {
+      "type_id": "mandatory_condition",
+      "type_name": "Mandatory Personal Licence Condition",
+      "abbreviation": "PLC",
+      "legal_status": "mandatory_condition",
+      "compliance_status": "Condition of personal licence",
+      "breach_consequence": "Breach may lead to: licence review with view to suspension/revocation, financial penalty, disqualification from holding personal licences, consideration of fitness and propriety",
+      "enforcement_discretion": "Commission exercises full discretion in enforcement"
+    }
+  ],
+
+  "sections": [
+    {
+      "section_id": 1,
+      "section_title": "Personal Licence Conditions",
+      "section_overview": "Core responsibilities and notification obligations for all personal licence holders",
+      
+      "subsections": [
+        {
+          "subsection_id": "1.1",
+          "subsection_title": "General responsibilities",
+          
+          "provisions": [
+            {
+              "provision_id": "1.1.1",
+              "provision_number": "1.1.1",
+              "provision_title": "Responsibility to avoid breach by operating licence holder",
+              "provision_type": "mandatory_condition",
+              "applies_to": ["All personal licence holders"],
+              
+              "provision_summary": "Personal licence holders must take all reasonable steps to ensure their actions do not cause the operating or premises licence holder to breach licence conditions",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Take all reasonable steps to prevent licence holder breach",
+                  "detail": "Personal licence holders must take all reasonable steps to ensure that the way in which they carry out their responsibilities in relation to licensed activities does not place the holder of the operating or any relevant premises licence in breach of their licence conditions",
+                  "compliance_action": "Understand licence conditions applicable to operating/premises licences; ensure actions comply with those conditions; escalate concerns about potential breaches",
+                  "responsibility_scope": "Applies to all actions and responsibilities undertaken by personal licence holder in carrying out licensed activities"
+                }
+              ],
+              
+              "enforcement_consequence": "Breach of this condition may result in Commission reviewing suitability of personal licence holder; may result in licence variation, suspension or revocation"
+            },
+
+            {
+              "provision_id": "1.1.2",
+              "provision_number": "1.1.2",
+              "provision_title": "Keep informed of regulatory developments",
+              "provision_type": "mandatory_condition",
+              "applies_to": ["All personal licence holders"],
+              
+              "provision_summary": "Personal licence holders must stay current with gambling legislation, codes of practice, Commission guidance, and maintain technical competence for functional roles",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Stay informed of gambling legislation",
+                  "detail": "Personal licence holders must keep themselves informed of developments in gambling legislation",
+                  "compliance_action": "Regularly review Gambling Act 2005 and subordinate legislation; subscribe to Commission updates; attend relevant training"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Keep informed of codes of practice",
+                  "detail": "Keep informed of developments in codes of practice",
+                  "compliance_action": "Review LCCP updates; understand how CoP provisions apply to licensed operator's activities; communicate changes to staff"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Stay current with Commission guidance",
+                  "detail": "Keep informed of any Commission guidance relevant to their role, whether issued on Commission website or communicated directly to licence holders",
+                  "compliance_action": "Monitor Commission website for guidance; respond to direct Commission communications; seek clarification on guidance where necessary"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Maintain technical competence (functional roles only)",
+                  "detail": "Holders of personal functional licences must keep their technical competence in respect of their licensed activities up to date",
+                  "applies_only_to": ["Remote Gambling Technical Officers", "Gaming Machine Technical Officers", "Non-Remote Gaming Machine Officers"],
+                  "compliance_action": "Undertake regular technical training; maintain certifications; stay current with technical standards and developments"
+                }
+              ],
+              
+              "enforcement_consequence": "Breach may demonstrate lack of fitness and propriety for personal licence; may result in suspension or revocation"
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "1.2",
+          "subsection_title": "Key event notification requirements",
+          
+          "provisions": [
+            {
+              "provision_id": "1.2.1",
+              "provision_number": "1.2.1",
+              "provision_title": "Notification of key events",
+              "provision_type": "mandatory_condition",
+              "applies_to": ["All personal licence holders"],
+              
+              "provision_summary": "Personal licence holders must notify Commission of specified key events within 10 working days of becoming aware of their occurrence",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Timing of notification",
+                  "detail": "Personal licence holders must notify the Commission of the occurrence of any key events within 10 working days after the licensee becomes aware of the event's occurrence",
+                  "compliance_action": "Establish internal procedures to identify key events; track dates of awareness; ensure Commission notification within 10 working days",
+                  "calculation": "10 working days excludes weekends and UK bank holidays; starts from date personal licence holder became aware of event"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Criminal investigation notification",
+                  "detail": "Subject to any criminal investigation listed under Schedule 7 Relevant Offences of the Gambling Act 2005",
+                  "compliance_action": "Immediately upon becoming aware of any criminal investigation related to Relevant Offences, notify Commission within 10 working days",
+                  "reference": "Schedule 7 - Relevant Offences, Gambling Act 2005"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Criminal conviction notification",
+                  "detail": "Conviction of any offence listed under Schedule 7 - Relevant Offences of the Gambling Act 2005",
+                  "compliance_action": "Notify Commission of conviction within 10 working days of becoming aware; provide court documents and sentencing information",
+                  "scope": "All relevant offences under Schedule 7, regardless of sentence or severity"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Investigation by professional/regulatory bodies",
+                  "detail": "Any current or pending investigation by a professional, statutory, regulatory or government body in Great Britain or abroad",
+                  "compliance_action": "Notify Commission of any investigation by: professional bodies (accounting, legal, medical, etc.), statutory bodies, regulatory authorities (financial, gambling, etc.), government bodies (tax, customs, etc.), or equivalent overseas bodies",
+                  "scope": "Includes investigations in any jurisdiction, not limited to GB"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Sanctions or penalties from investigations",
+                  "detail": "The imposition of any sanction or penalty against them following an investigation by any professional, statutory, regulatory or government body in Great Britain or abroad",
+                  "compliance_action": "Notify Commission of any sanctions, penalties, fines, or other consequences imposed by professional, regulatory, or government bodies; provide details of sanction and reason",
+                  "scope": "All types of sanctions and penalties from any jurisdiction"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Disciplinary sanctions",
+                  "detail": "The imposition of a disciplinary sanction against them, including dismissal, for gross misconduct",
+                  "compliance_action": "Notify Commission of any disciplinary action including: formal warnings, suspension, demotion, or dismissal for gross misconduct; provide details of misconduct and sanction",
+                  "trigger": "Applies specifically to disciplinary sanctions for gross misconduct"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Resignation following disciplinary proceedings",
+                  "detail": "Resignation from a position for which a personal licence is required following commencement of disciplinary proceedings in respect of gross misconduct",
+                  "compliance_action": "Notify Commission if personal licence holder resigns from personal licensed role following commencement of gross misconduct proceedings; state the position resigned from and nature of gross misconduct allegations",
+                  "trigger": "Must notify even if proceedings not concluded; must have been formally commenced before resignation"
+                },
+                {
+                  "requirement_number": 8,
+                  "requirement": "Disqualification as company director",
+                  "detail": "Disqualification from acting as a company director",
+                  "compliance_action": "Notify Commission of any disqualification from acting as company director (including automatic disqualification, voluntary, or Court-ordered); provide details of disqualification period and reason",
+                  "scope": "Disqualification under Companies House rules or Court orders in any jurisdiction"
+                },
+                {
+                  "requirement_number": 9,
+                  "requirement": "Bankruptcy or insolvency proceedings",
+                  "detail": "The presentation of a petition for their bankruptcy or sequestration or their entering into an individual voluntary agreement",
+                  "compliance_action": "Notify Commission of: (a) presentation of bankruptcy petition, (b) sequestration order (Scotland), (c) entry into Individual Voluntary Agreement (IVA); provide details of proceedings and dates",
+                  "scope": "Notification required at presentation/commencement stage, not only if proceedings finalized"
+                },
+                {
+                  "requirement_number": 10,
+                  "requirement": "Change of name or address",
+                  "detail": "A change in their name or address",
+                  "compliance_action": "Notify Commission of: (a) any legal name change (marriage, deed poll, etc.), (b) change of residential address or correspondence address; provide new details and effective date of change",
+                  "scope": "Any formal change to name or address used in connection with personal licence"
+                }
+              ],
+              
+              "notification_procedure": {
+                "timeline": "Within 10 working days of becoming aware",
+                "method": "Submit notification to Commission via designated route (typically online portal or email to specified address)",
+                "content": "Include: event description, dates, relevant details, supporting documentation where available",
+                "evidence": "Retain evidence of notification date for compliance records"
+              },
+              
+              "enforcement_consequence": "Failure to notify key events within 10 working days is breach of personal licence condition; may result in: financial penalty, suspension or revocation of personal licence, consideration of suitability for future licensing"
+            },
+
+            {
+              "provision_id": "1.2.2",
+              "provision_number": "1.2.2",
+              "provision_title": "Schedule 7 Relevant Offences reference",
+              "provision_type": "mandatory_condition",
+              "applies_to": ["All personal licence holders"],
+              
+              "provision_summary": "Definition and reference to Schedule 7 Relevant Offences under Gambling Act 2005",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Understand Relevant Offences",
+                  "detail": "Personal licence holders should familiarize themselves with Schedule 7 Relevant Offences of the Gambling Act 2005 to understand which criminal investigations and convictions must be notified",
+                  "compliance_action": "Review Schedule 7 Relevant Offences; understand which offences trigger notification requirement; seek legal advice if uncertain"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Schedule 7 scope",
+                  "detail": "Schedule 7 Relevant Offences include offences related to fraud, dishonesty, money laundering, and other crimes of dishonesty",
+                  "compliance_action": "Assume broad interpretation; notify Commission of any investigation or conviction related to offences of dishonesty, financial crime, or gambling-related offences"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Seek guidance if uncertain",
+                  "detail": "If uncertain whether investigation or conviction falls under Schedule 7, err on side of caution and notify Commission",
+                  "compliance_action": "Contact Commission if unsure; provide information and allow Commission to determine relevance"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "1.3",
+          "subsection_title": "Fitness and propriety",
+          
+          "provisions": [
+            {
+              "provision_id": "1.3.1",
+              "provision_number": "1.3.1",
+              "provision_title": "Maintaining fitness and propriety",
+              "provision_type": "mandatory_condition",
+              "applies_to": ["All personal licence holders"],
+              
+              "provision_summary": "Personal licence holders must maintain standards of fitness and propriety throughout licence duration",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Continuous fitness and propriety",
+                  "detail": "Personal licence holders must maintain the fitness and propriety standards that were met at time of licence grant throughout duration of licence",
+                  "compliance_action": "Regularly assess whether continuing to meet fitness and propriety criteria; take steps to maintain integrity and competence; avoid conduct that would demonstrate unfitness"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Understand fitness criteria",
+                  "detail": "Fitness and propriety assessed based on: integrity, competence, financial soundness, absence of undischarged criminal liability, suitability given personal circumstances",
+                  "compliance_action": "Understand Commission's fitness and propriety criteria; ensure conduct aligns with expected standards"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Impact of key events",
+                  "detail": "Key events listed in 1.2.1 may demonstrate loss of fitness and propriety and may trigger Commission action",
+                  "compliance_action": "Recognize that notification of key events may trigger Commission review of personal licence holder's suitability"
+                }
+              ],
+              
+              "enforcement_consequence": "Breach or loss of fitness and propriety may result in immediate suspension or revocation of personal licence"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "compliance_framework": {
+    "key_principles": [
+      "Personal licence conditions are mandatory conditions of personal licence",
+      "All personal licence holders subject to same core conditions regardless of role",
+      "Functional licence holders (technical roles) have additional technical competence requirements",
+      "Key event notification is strict 10 working day obligation - no discretion or exceptions",
+      "Personal licence holders have ongoing responsibility to maintain fitness and propriety",
+      "Failure to comply may result in immediate licence suspension or revocation"
+    ],
+    
+    "implementation_approach": [
+      "Ensure understanding of personal licence conditions at point of grant",
+      "Establish internal procedures to identify and track key events",
+      "Create notification protocols with clear 10 working day timeline",
+      "Maintain records of all notifications sent to Commission",
+      "Regularly review gambling legislation and Commission guidance",
+      "For functional licence holders: maintain technical competence through regular training and development",
+      "Proactively engage with Commission on any concerns about fitness and propriety"
+    ],
+    
+    "key_event_categories": [
+      "Criminal investigations related to Schedule 7 Relevant Offences",
+      "Criminal convictions for Schedule 7 Relevant Offences",
+      "Professional/regulatory/government body investigations",
+      "Sanctions or penalties from professional/regulatory bodies",
+      "Disciplinary sanctions including dismissal for gross misconduct",
+      "Resignation following commencement of gross misconduct proceedings",
+      "Disqualification as company director",
+      "Bankruptcy, sequestration, or IVA proceedings",
+      "Changes to name or address"
+    ]
+  },
+
+  "references_and_guidance": {
+    "external_legislation": [
+      "Gambling Act 2005 - Schedule 7 (Relevant Offences)",
+      "Gambling Act 2005 - Part 5 (Personal Licences)",
+      "Disqualification provisions under Companies legislation"
+    ],
+    
+    "commission_publications": [
+      "Personal licence holder guidance",
+      "Fitness and propriety guidance",
+      "Statement of principles for licensing and regulation",
+      "Schedule 7 Relevant Offences guidance"
+    ]
+  },
+
+  "usage_notes": {
+    "mcp_integration": "This JSON enables MCP queries such as: 'What are my personal licence obligations?', 'What events must I notify the Commission about?', 'How long do I have to notify key events?', 'What does fitness and propriety mean?'",
+    "filter_capabilities": "Query by: personal licence type, key event category, notification timeline, fitness and propriety criteria",
+    "compliance_support": "Supports personal licence compliance planning, event tracking, notification procedures, fitness and propriety maintenance"
+  }
+}

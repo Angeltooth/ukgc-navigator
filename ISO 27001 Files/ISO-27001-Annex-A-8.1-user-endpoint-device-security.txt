@@ -1,0 +1,97 @@
+Devices that connect to systems and data present a specific risk to information security due to their diversity and number.
+ISO 27001 User Endpoint Devices is the control of those end point devices. This ISO 27001 annex a control sets out the requirement to implement technical and administrative controls to ensure that data and systems are protected.
+In ISO 27001 this is known as ISO27001:2022 Clause 8.1 User Endpoint Devices.
+Endpoint devices are the devices and equipment that people use to get the job done and they need protecting. This control is about the protection of endpoint devices and to secure and protect the data that they process, store and transmit.
+It is important because endpoint devices are typically harder to manage as people are a lot more mobile. In the mobile economy it is difficult to predict the environment in which the endpoint device will be used and as a result difficult to predict the risks that you would need to mitigate.
+
+Key Takeaways
+
+Asset management is required so you understand what must be protected.
+The installation of anti-virus, anti-malware and encryption are a must.
+It is called ISO27001:2022 Annex A 8.1 User End Point Devices.
+The purpose of ISO 27001 Annex A 8.1 User Endpoint Devices is to protect information against the risks introduced by using user endpoint devices. More specifically it wants you to make sure you have controls in place to protect devices that store, process or transmit data.
+Examples of endpoint devices include
+Desktop computers
+Laptops
+Smartphones
+Tablets
+Other connected devices used to access company systems, such as POS terminals or IoT devices.
+How to Implement ISO 27001 Annex A 8.1 User Endpoint Devices
+
+Now let me share with you some best practice when it comes to implementation in this step-by-step implementation guide.
+1. Establishing an Endpoint Device Security Policy
+
+A starting point is the create of a topic specific policy that clearly sets out what you expect to happen. A topic specific policy on the secure configuration and use of devices is the starting point.
+2. The Role of Asset Management in Endpoint Security
+
+You need to have good asset management processes in place so that you know what end points you have and what needs to be protected. This is a common mistake we see where people do not know the devices they have an allow any device to connect to the organisation. We counter this with strong asset management as we covered in ISO 27001 Annex A 5.9 Inventory of information and other associated assets. 
+3. Essential Security Controls for User Devices
+
+In this day and age you would need a compelling reason not to have the basic technical controls of encryption and protection against malware software installed. These are a first line of defence. Consideration for layering on top of that endpoint device management solutions that give you more control over what the device can and cannot do is now common place. Where the ability to remote lock or remote wipe a device is available this should also be considered.
+Examples of relevant technical controls include
+Encryption: Encrypt the hard drives and data stored on user devices to protect against loss or theft.   
+Antivirus and Anti-Malware: Install and maintain antivirus software with up-to-date definitions on all applicable endpoints. 
+Configuration Management: Implement secure baseline configurations, such as those from CIS Benchmarks or DISA STIGs, to protect workstations. 
+Data Loss Prevention (DLP): Use solutions to control the use of portable storage devices like USB drives and prevent sensitive data from leaving the organisation. 
+Endpoint Device Management (EDM) tools: Deploy tools to enforce security policies, manage devices remotely, and provide functionalities like remote wipe for lost or stolen devices. 
+4. Backup Requirements
+
+Backups present their own challenges. As a rule, for ease, you are not going to have a structured approach to the back up of end point devices. That is unless you need one. What you will have to consider though is if people do personal backups then where are those backups and how secure are they. This can be a real rabbit hole to go down. For more detail on backups read ISO 27001 Annex A 8.13 Information Backup.
+5. The Importance of Employee Training and Awareness
+
+A large section of the guidance on this control concerns user responsibility, and rightly so. There is a lot of trust being placed in the users of these devices. Your role here is setting out what is expected, advising, communicating, training and educating. To tell people not to do silly things like leave these devices unattended, or worse case unattended and logged in. That they should be protected against theft and logged out of when not in use. More detail on education, training and awareness is provided in ISO 27001 Annex A 6.3 Information Security Awareness Education and Training.
+6. Managing “Bring Your Own Device” (BYOD) Risks
+
+People in smaller organisations really like using their own devices. It is not ideal but is also something that can be overcome. You will consider the technical controls that are in your gift and how they can mitigate risks. Example of access over VPN, or terminal equivalent access can work. Having either manual or automated checks that the devices at least have the basics of malware protection, encryption and are patched to the latest version would be expected. The real kicker here is that legislation often works against you if you allow a personal device as you probably cannot do what you think you can do. An example of this would be thinking you can remote wipe a personal device or ask to view the contents of a personal device. It is easy to allow, but a little a tricker to manage and usually the best course of action is to dig deep in those pockets and find the money to get a work device the person can use.
+7. Remove Asset Tags
+
+A traditional way of managing assets is to add physical asset tags to devices that identify the asset. Modern thinking is that these should either be removed or should be replaced with non descriptive, yet unique, tags so as not to make the asset a target as in the case of labelling the asset with the organisation or classification such as confidential as this can lead to the asset becoming a target.
+8. Implement Physical Security Controls
+
+The role of endpoint devices needs to take account of ISO 27001 Annex A 7.5 Protecting Against Physical and Environmental Threats. Even if you have no offices which we covered in ISO 27001 Physical Security Controls When You Have No Office there are physical security controls that are required. You are going to educate users not to leave devices unattended in public places and consider:
+Screen protectors
+Device auto locking after a set period of time
+Locks as appropriate
+Lockable storage for home locations
+Shredders for home locations
+How to Pass an ISO 27001 Audit for Annex A 8.1
+
+Based on my experience this is the best practice approach to passing the audit of ISO 27001 Annex A 8.1 User Endpoint Devices.
+Time needed: 1 day
+How to pass an audit of ISO 27001 Annex A 8.1
+Have policies and procedures in place
+Write, approve, implement and communicate the documentation required for user end point devices.
+Assess your equipment and perform a risk assessment
+Have an asset management process that includes an asset register. For each asset type perform a risk assessment. Based on the risk assessment implement the appropriate controls to mitigate the risk.
+Keep records
+For audit purposes you will keep records. Examples of the records to keep include changes, updates, monitoring, review and audits.
+Test the controls that you have to make sure they are working
+Perform internal audits that include the testing of the controls to ensure that they are working.
+What Auditors Look for: A Checklist
+
+The auditor is going to check a number of areas for ISO 27001 Annex A 8.1 User Endpoint Devices. Lets go through the main ones:
+1. That you have an asset register
+
+The auditor will check that you have an asset register and an asset management process. They will want to see all of the end point devices in an asset register and that they are assigned to people. For this they are also wanting to see bring your own devices (BYOD) or people’s own devices that connect to or interact with the in scope services.
+2. That devices are protected and checked
+
+The auditor is going to check that all the appropriate controls are on the end point device with the usual ones being antivirus and encryption. The SOA and the in scope controls is the starting point and specifically the technical controls that you have said are in scope. They want to see that these are checked periodically with evidence of the checks and they also want to see what you do if the checks fail, with evidence of an example of that. This is covered in more depth in ISO 27001 Annex A Control 5.9 Inventory of information and other associated assets.
+A great one here is that they will also check that you check that devices used by auditors and testers as part of verification activities are secure to your standards before allowing them to connect. This is covered in more detail in ISO 27001 Annex A 8.34 Protection of information systems during audit testing
+3. Anyone they audit
+
+They will likely check anyone that they audit. The usual operating approach is to get the person to share their screen and then to direct them to show the technical controls in place. This is usually ‘show me the antivirus is working’ as an approach. It is less common for them to observe the desk top and the trash for evidence of things that should not be there. You really should get everyone that is being audited to perform house keeping before the audit with the assumption they will be asked to share their screen. You can refuse and base that on confidentiality but they will want to see a sample of devices so if not you, then it will be someone.
+Key Documentation Required for a Successful Audit
+
+The auditor will want to see what controls you have in place and evidence of the operation of those controls including records such as change management, access management and that testing and internal audit has happened.
+Top 3 Mistakes to Avoid When Securing User Endpoint Devices
+
+In my experience, the top 3 mistakes people make for ISO 27001 Annex A 8.1 are
+1. Letting people use their own devices
+
+This is not a bad thing actually. Although it comes with some challenges and costs that are going to be far in excess of the cost of just providing a device owned and managed by the organisation. Be sure the appropriate controls are in place and that you can evidence them working.
+2. Not encrypting devices
+
+There is no real reason in this day and age to not have encryption. It is built into most operating systems and devices and if not can be easily applied. Having and not having it turned on is worse that not just having it. If you don’t or can’t have it then manage it via risk management and have it on the risk register but where you can deploy it, do, and check it is in place.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

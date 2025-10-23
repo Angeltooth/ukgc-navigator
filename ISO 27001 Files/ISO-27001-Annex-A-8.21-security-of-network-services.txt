@@ -1,0 +1,58 @@
+ISO 27001 Security of Network Services
+
+ISO 27001 Annex A 8.21 Security of Network Services is an ISO 27001 control that requires us to secure our networks and have service levels and service requirements implemented, monitored and identified.
+Purpose
+
+ISO 27001 Annex A 8.21 is a preventive control to ensure security in the use of network services..
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.21 as:
+Security mechanisms, service levels and service requirements of network services should be identified, implemented and monitored.
+Implementation Guide
+
+This control is looking for us to have control over our networks. We are going to ensure that we have identified what security measures we need, the service levels and the service requirements. Implementation is something that we can do internally or externally.
+The standard wants us to monitor and and review the agreed service levels. A great element of the guidance is that it pushes us to consider third-party attestations to provide a demonstration that the service provider is maintaining appropriate security measures.
+For me I would identify what the service requirements are then have a regular report and / or meeting that is set up to review it. I would keep evidence of this to show that I am managing it.
+The are a few things to consider when it comes to what to cover so lets go through them. As we do it is worth noting that many of these are already covered and that the standard is making them specific here to networks.
+Access to networks and services
+
+For this we consider what can and should be accessed and then have appropriate policy and process in place around that access.
+ISO 27001 Annex A 5.15 Access Control
+ISO 27001 Annex A 5.18 Access Rights
+Authentication
+
+The requirements on authentication for accessing services should be set.
+ISO 27001 Annex A 5.17 Authentication Information
+Authorisation
+
+Procedures that determine who is allowed to access networks and services are to be put in place.
+ISO 27001 Annex A 5.15 Access Control
+Technical Controls
+
+The network management and technical controls as well as the processes to access connections and services will be in place.
+ISO 27001 Annex A 8.20 Network Security
+Access Types
+
+How access is carried out such as physical network, wireless network, VPN will be determined.
+Monitoring and Logging
+
+Recording the time, location and other appropriate logging attributes of users that access networks and services will be in place.
+ISO 27001 Annex A 8.16 Monitoring Activities
+Security Features
+
+The security features of networks will be identified and implemented as well as documented. Consider here things like encryption, connection controls, cacheing, restrictive access. Firewalls, private networks, intrusion detection are also to be considered.
+Network Security Professional
+
+All in all you should work what a network security professional to work out the best solution for you and your needs. Your requirement is to identify, document, implement, monitor and review it.
+What will an auditor check?
+
+The audit is going to check a number of areas. Lets go through the main ones
+1. That you have documentation
+
+What this means is that you need to show that you have documented your network, document your security implementation and put in place appropriate service levels.
+2. That you have have implemented Security of Network Services appropriately
+
+They will look at systems to seek evidence of that it is implement appropriately. They will want to see evidence of the controls that in place and that they are operating. Service levels will be expected to be in place and reviewed. Where you rely on third party attestation of the supplier then evidence of that will be expected to be shown.
+3. That you have conducted internal audits
+
+The audit will want to see that you have tested the controls and evidenced that they are operating. This is usually in the form of the required internal audits. They will check the records and outputs of those internal audits.

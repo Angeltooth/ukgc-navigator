@@ -1,0 +1,472 @@
+{
+  "metadata": {
+    "created": "2025-10-23",
+    "description": "URL mapping reference for LCCP and RTS regulations - lookup file for hyperlinks",
+    "last_updated": "2025-10-23",
+    "note": "Add URLs in the 'url' field for each regulation. Leave blank if not available.",
+    "instructions": "Populate URLs by visiting the UKGC website and copying section links",
+    "base_urls": {
+      "LCCP": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp",
+      "RTS": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards"
+    }
+  },
+  "mappings": {
+    "LCCP_1": {
+      "framework": "LCCP",
+      "title": "Qualified Persons and Personal Licences",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/1",
+      "source": "UKGC"
+    },
+    "LCCP_1.1.1": {
+      "framework": "LCCP",
+      "title": "Qualified Persons - Qualifying Position",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/1-1-1-qualified-persons-qualifying-position",
+      "source": "UKGC"
+    },
+    "LCCP_1.1.2": {
+      "framework": "LCCP",
+      "title": "Qualified Persons - Tracks",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/1-1-2-qualified-persons-tracks",
+      "source": "UKGC"
+    },
+    "LCCP_1.2.1": {
+      "framework": "LCCP",
+      "title": "Specified management offices personal management licences",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/1-2-1-specified-management-offices-personal-management-licences",
+      "source": "UKGC"
+    },
+    "LCCP_1.2.2": {
+      "framework": "LCCP",
+      "title": "Specified management offices casino personal functional licences",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/1-2-2-specified-management-offices-casino-personal-functional-licences",
+      "source": "UKGC"
+    },
+    "LCCP_1.2.3": {
+      "framework": "LCCP",
+      "title": "Specified management offices lottery personal management licences",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/1-2-3-specified-management-offices-lottery-personal-management-licences",
+      "source": "UKGC"
+    },
+    "LCCP_2": {
+      "framework": "LCCP",
+      "title": "Technical Standards, Equipment Specifications, Remote Gambling Equipment and Gambling Software",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/2",
+      "source": "UKGC"
+    },
+    "LCCP_2.2.1": {
+      "framework": "LCCP",
+      "title": "Gambling Software",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/2-2-1-gambling-software",
+      "source": "UKGC"
+    },
+    "LCCP_2.3.1": {
+      "framework": "LCCP",
+      "title": "Technical Standards and Equipment Specifications",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/2-3-1-technical-standards",
+      "source": "UKGC"
+    },
+    "LCCP_2.3.2": {
+      "framework": "LCCP",
+      "title": "Bingo equipment specifications",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/2-3-2-bingo-equipment-specifications",
+      "source": "UKGC"
+    },
+    "LCCP_2.3.3": {
+      "framework": "LCCP",
+      "title": "Casino equipment specifications",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/2-3-3-casino-equipment-specifications",
+      "source": "UKGC"
+    },
+    "LCCP_3": {
+      "framework": "LCCP",
+      "title": "Peer to Peer Gaming, Other Networks and Hosting",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/3",
+      "source": "UKGC"
+    },
+    "LCCP_3.1.1": {
+      "framework": "LCCP",
+      "title": "Peer to Peer Gaming",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/3-1-1-peer-to-peer-gaming",
+      "source": "UKGC"
+    },
+    "LCCP_3.1.2": {
+      "framework": "LCCP",
+      "title": "Other Networks",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/3-1-2-other-networks",
+      "source": "UKGC"
+    },
+    "LCCP_3.1.3": {
+      "framework": "LCCP",
+      "title": "Hosting",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/3-1-3-hosting",
+      "source": "UKGC"
+    },
+    "LCCP_4": {
+      "framework": "LCCP",
+      "title": "Protection of Customer Funds",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/4",
+      "source": "UKGC"
+    },
+    "LCCP_4.1.1": {
+      "framework": "LCCP",
+      "title": "Customer Funds - Segregation",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/4-1-1-segregation-of-funds",
+      "source": "UKGC"
+    },
+    "LCCP_4.2.1": {
+      "framework": "LCCP",
+      "title": "Customer Funds - Disclosure to customers",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/4-2-1-disclosure-to-customers",
+      "source": "UKGC"
+    },
+    "LCCP_5": {
+      "framework": "LCCP",
+      "title": "Payment",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/5",
+      "source": "UKGC"
+    },
+    "LCCP_5.1.1": {
+      "framework": "LCCP",
+      "title": "Payment Methods",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/5-1-1-cash-and-cash-equivalents",
+      "source": "UKGC"
+    },
+    "LCCP_5.1.2": {
+      "framework": "LCCP",
+      "title": "Payment methods and services",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/5-1-2-payment-methods-services",
+      "source": "UKGC"
+    },
+    "LCCP_6": {
+      "framework": "LCCP",
+      "title": "Provision of Credit by Licensees and the Use of Credit Cards",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/6",
+      "source": "UKGC"
+    },
+    "LCCP_6.1.1": {
+      "framework": "LCCP",
+      "title": "Credit Prohibition",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/6-1-1-provision-of-credit",
+      "source": "UKGC"
+    },
+    "LCCP_6.1.2": {
+      "framework": "LCCP",
+      "title": "Use of credit cards",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/6-1-2-use-of-credit-cards",
+      "source": "UKGC"
+    },
+    "LCCP_7": {
+      "framework": "LCCP",
+      "title": "General 'Fair and Open' Provisions",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/7",
+      "source": "UKGC"
+    },
+    "LCCP_7.1.1": {
+      "framework": "LCCP",
+      "title": "Fair Terms and Consumer Rights",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/7-1-1-fair-and-transparent-terms-and-practices",
+      "source": "UKGC"
+    },
+    "LCCP_8": {
+      "framework": "LCCP",
+      "title": "Display of Licensed Status",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/8",
+      "source": "UKGC"
+    },
+    "LCCP_8.1.1": {
+      "framework": "LCCP",
+      "title": "Remote Gambling - Licence Display",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/8-1-1-display-of-licensed-status-remote-operators",
+      "source": "UKGC"
+    },
+    "LCCP_8.1.2": {
+      "framework": "LCCP",
+      "title": "Display of licensed status B2B operators",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/8-1-2-display-of-licensed-status-b2b-operators",
+      "source": "UKGC"
+    },
+    "LCCP_8.1.3": {
+      "framework": "LCCP",
+      "title": "Display of licensed status societies and local authorities",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/8-1-3-display-of-licensed-status-societies-and-local-authorities",
+      "source": "UKGC"
+    },
+    "LCCP_9": {
+      "framework": "LCCP",
+      "title": "Types and Rules of Casino and Other Games",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/9",
+      "source": "UKGC"
+    },
+    "LCCP_9.1.1": {
+      "framework": "LCCP",
+      "title": "Casino Games Rules",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/9-1-1-rules-of-casino-games",
+      "source": "UKGC"
+    },
+    "LCCP_9.1.2": {
+      "framework": "LCCP",
+      "title": "Bingo Prize Games",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/9-1-2-prohibited-bingo-prize-games",
+      "source": "UKGC"
+    },
+    "LCCP_10": {
+      "framework": "LCCP",
+      "title": "Tipping of Casino Employees",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/10",
+      "source": "UKGC"
+    },
+    "LCCP_10.1.1": {
+      "framework": "LCCP",
+      "title": "Tipping - Tronc System",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/10-1-1-tipping-personal-licence-holders",
+      "source": "UKGC"
+    },
+    "LCCP_11": {
+      "framework": "LCCP",
+      "title": "Lotteries",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/11",
+      "source": "UKGC"
+    },
+    "LCCP_11.1.1": {
+      "framework": "LCCP",
+      "title": "Lotteries - Non-Commercial Societies and Local Authorities",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/11-1-1-lotteries-societies-and-local-authorities",
+      "source": "UKGC"
+    },
+    "LCCP_11.2.1": {
+      "framework": "LCCP",
+      "title": "Lotteries - External Lottery Managers",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/11-2-1-lotteries-managers",
+      "source": "UKGC"
+    },
+    "LCCP_12": {
+      "framework": "LCCP",
+      "title": "Anti-Money Laundering",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/12",
+      "source": "UKGC"
+    },
+    "LCCP_12.1.1": {
+      "framework": "LCCP",
+      "title": "AML Risk Assessment and Controls",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/12-1-1-anti-money-laundering-prevention-of-money-laundering-and-terrorist",
+      "source": "UKGC"
+    },
+    "LCCP_12.1.2": {
+      "framework": "LCCP",
+      "title": "AML Risk Assessment and Controls - Measures for operators based in foreign jurisdictions",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/12-1-2-anti-money-laundering-measures-for-operators-based-in-foreign",
+      "source": "UKGC"
+    },
+    "LCCP_13": {
+      "framework": "LCCP",
+      "title": "Pool Betting",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/13",
+      "source": "UKGC"
+    },
+    "LCCP_13.1.1": {
+      "framework": "LCCP",
+      "title": "Pool Betting - Horserace and Dog Race",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/13-1-1-pool-betting",
+      "source": "UKGC"
+    },
+    "LCCP_13.1.2": {
+      "framework": "LCCP",
+      "title": "Pool betting football pools",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/13-1-2-pool-betting-football-pools",
+      "source": "UKGC"
+    },
+    "LCCP_13.1.3": {
+      "framework": "LCCP",
+      "title": "Pool betting  annual accounts",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/13-1-3-pool-betting-annual-accounts",
+      "source": "UKGC"
+    },
+    "LCCP_14": {
+      "framework": "LCCP",
+      "title": "Access to Premises",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/14",
+      "source": "UKGC"
+    },
+    "LCCP_14.1.1": {
+      "framework": "LCCP",
+      "title": "Premises Access",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/14-1-1-access-to-premises",
+      "source": "UKGC"
+    },
+    "LCCP_15": {
+      "framework": "LCCP",
+      "title": "Information Requirements",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/15",
+      "source": "UKGC"
+    },
+    "LCCP_15.1.1": {
+      "framework": "LCCP",
+      "title": "Offence Information",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/15-1-1-reporting-suspicion-of-offences-etc-non-betting-licences",
+      "source": "UKGC"
+    },
+    "LCCP_15.1.2": {
+      "framework": "LCCP",
+      "title": "Reporting suspicion of offences etc  betting licences",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/15-1-2-reporting-suspicion-of-offences-etc-betting-licences",
+      "source": "UKGC"
+    },
+    "LCCP_15.1.3": {
+      "framework": "LCCP",
+      "title": "Reporting of systematic or organised money lending",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/15-1-3-reporting-of-systematic-or-organised-money-lending",
+      "source": "UKGC"
+    },
+    "LCCP_15.2.1": {
+      "framework": "LCCP",
+      "title": "Key Events",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/15-2-1-reporting-key-events",
+      "source": "UKGC"
+    },
+    "LCCP_15.2.2": {
+      "framework": "LCCP",
+      "title": "Other Reportable Events",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/15-2-2-other-reportable-events",
+      "source": "UKGC"
+    },
+    "LCCP_15.2.3": {
+      "framework": "LCCP",
+      "title": "Other Reportable Events - Money Laundering, Terrorist Financing",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/15-2-3-other-reportable-events-money-laundering-terrorist-financing-etc",
+      "source": "UKGC"
+    },
+    "LCCP_15.3.1": {
+      "framework": "LCCP",
+      "title": "General and Regulatory Returns",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/15-3-1-general-and-regulatory-returns",
+      "source": "UKGC"
+    },
+    "LCCP_16": {
+      "framework": "LCCP",
+      "title": "Responsible Placement of Digital Adverts",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/16",
+      "source": "UKGC"
+    },
+    "LCCP_16.1.1": {
+      "framework": "LCCP",
+      "title": "Responsible Placement of Digital Adverts",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/16-1-1-responsible-placement-of-digital-adverts",
+      "source": "UKGC"
+    },
+    "LCCP_17": {
+      "framework": "LCCP",
+      "title": "Customer Identity Verification",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/17",
+      "source": "UKGC"
+    },
+    "LCCP_17.1.1": {
+      "framework": "LCCP",
+      "title": "Customer Identity Verification",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/17-1-1-customer-identity-verification",
+      "source": "UKGC"
+    },
+    "RTS_01": {
+      "framework": "RTS",
+      "title": "RTS 1 Customer account information",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-1-customer-account-information",
+      "source": "UKGC"
+    },
+    "RTS_02": {
+      "framework": "RTS",
+      "title": "RTS 2 Displaying transactions",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-2-displaying-transactions",
+      "source": "UKGC"
+    },
+    "RTS_03": {
+      "framework": "RTS",
+      "title": "RTS 3 Rules, game descriptions and the likelihood of winning",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-3-rules-game-descriptions-and-the-likelihood-of-winning",
+      "source": "UKGC"
+    },
+    "RTS_04": {
+      "framework": "RTS",
+      "title": "RTS 4 Time-critical events",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-4-time-critical-events",
+      "source": "UKGC"
+    },
+    "RTS_05": {
+      "framework": "RTS",
+      "title": "RTS 5 Result determination",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-5-result-determination",
+      "source": "UKGC"
+    },
+    "RTS_06": {
+      "framework": "RTS",
+      "title": "RTS 6 Result determination for play-for-free games",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-6-result-determination-for-play-for-free-games",
+      "source": "UKGC"
+    },
+    "RTS_07": {
+      "framework": "RTS",
+      "title": "RTS 7 Generation of random outcomes",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-7-generation-of-random-outcomes",
+      "source": "UKGC"
+    },
+    "RTS_08": {
+      "framework": "RTS",
+      "title": "RTS 8 Auto-play functionality",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-8-autoplay-functionality",
+      "source": "UKGC"
+    },
+    "RTS_09": {
+      "framework": "RTS",
+      "title": "RTS 9 Progressive jackpot systems",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-9-progressive-jackpot-systems",
+      "source": "UKGC"
+    },
+    "RTS_10": {
+      "framework": "RTS",
+      "title": "RTS 10 Interrupted gambling",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-10-interrupted-gambling",
+      "source": "UKGC"
+    },
+    "RTS_11": {
+      "framework": "RTS",
+      "title": "RTS 11 Limiting collusion and cheating",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-11-limiting-collusion-and-cheating",
+      "source": "UKGC"
+    },
+    "RTS_12": {
+      "framework": "RTS",
+      "title": "RTS 12 Financial limits",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-12-financial-limits",
+      "source": "UKGC"
+    },
+    "RTS_13": {
+      "framework": "RTS",
+      "title": "RTS 13 Time requirements and reality checks",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-13-time-requirements-and-reality-checks",
+      "source": "UKGC"
+    },
+    "RTS_14": {
+      "framework": "RTS",
+      "title": "RTS 14 Responsible product design",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-14-responsible-product-design",
+      "source": "UKGC"
+    },
+    "RTS_15": {
+      "framework": "RTS",
+      "title": "RTS 15 In-play betting",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-15-in-play-betting",
+      "source": "UKGC"
+    },
+    "RTS_16": {
+      "framework": "RTS",
+      "title": "RTS 16 Use of third party software",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-16-use-of-third-party-software",
+      "source": "UKGC"
+    },
+    "RTS_17": {
+      "framework": "RTS",
+      "title": "RTS 17 Live dealer studios",
+      "url": "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-17-live-dealer-studios",
+      "source": "UKGC"
+    }
+  },
+  "last_updated": "2025-10-23"
+}

@@ -1,0 +1,80 @@
+ISO 27001 Responsibilities After Termination Or Change Of Employment
+
+ISO 27001 Responsibilities After Termination Or Change Of Employment is an ISO 27001 control that  wants you to ensure that information security responsibilities remain valid even after someone leaves your organisation. It wants this to be defined, communicated and enforced. Which usually means having a relevant clause in your contracts of employment.
+Usually a contractual requirement placed on employees that covers what is expected of an employee when they leave the organisation or change role.
+Purpose
+
+The purpose of ISO 27001 Annex A 6.5 Responsibilities After Termination Or Change Of Employment is to ensure that you are protecting the organisation even after someone leaves.
+Definition
+
+ISO 27001 defines ISO 27001 Responsibilities After Termination Or Change Of Employment as:
+Information security responsibilities and duties that remain valid after termination or change of employment should be defined, enforced and communicated to relevant personnel and other interested parties.
+Implementation Guide
+
+General Guidance
+
+You are going to have to ensure that:
+contracts of employment include clauses for information security
+that those clauses cover what happens after someone leaves the organisation
+you have engaged with a HR professional
+you have engaged with a legal professional
+contracts are in place and signed and legally enforceable
+Examples of the information security responsibilities that remain valid after termination or change of employment
+
+The information security responsibilities that remain valid after termination or change of employment vary depending on the organisation and the employee’s role. However, some common responsibilities include:
+Maintaining confidentiality of information
+Returning all company-owned assets
+Not disclosing confidential information to unauthorised third parties
+How to manage the termination or change of employment of employees who have access to confidential information?
+
+Organisations should take the following steps to manage the termination or change of employment of employees who have access to confidential information:
+Revoke the employee’s access to all organisation systems, networks, and data.
+Collect any organisation-owned assets in the employee’s possession.
+Conduct an exit interview with the employee to discuss any concerns about the employee’s access to confidential information.
+Review audit logs for any suspicious activity or data breaches that may have occurred during the employee’s tenure.
+Change passwords and encryption keys that were shared with the employee.
+Review third-party access to ensure that the employee no longer has access to confidential information.
+Who is responsible for administering the termination process?
+
+The termination process is usually administered by the organisation’s human resources department. However, in some cases, the process may be administered by the employee’s manager or supervisor.
+Transferring Roles and Responsibilities
+
+When someone leaves the organisation their roles and responsibilities should be effectively handed over to someone else. Getting this wrong and not doing a hand over is one of the biggest mistakes we see organisation make meaning that vital activities get missed or fall by the wayside.
+It applies to suppliers and external personnel
+
+The same requirement is placed on suppliers and external personnel and is managed under contract.
+How to comply
+
+To comply with ISO 27001 Annex A 6.5 Responsibilities After Termination Or Change Of Employment you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to:
+Write, sign off, implement and communicate your topic specific policies on Human Resources
+Engage legal and HR professionals to draft contracts that include information security clauses and clauses for what happens after an employee leaves the orgnaisation
+Implement the contracts as part of the on-boarding process
+Have signed contracts for all employees
+As part of the off boarding process communicate the ongoing information security requirements that are in place
+How to pass the audit
+
+To pass an audit of ISO 27001 Annex A 6.5 you are going to make sure that you have followed the steps above in how to comply.
+What the auditor will check
+
+The audit is going to check a number of areas for compliance with Annex A 6.5 Responsibilities After Termination Or Change Of Employment. Lets go through them
+1. That you have contracts that meet the requirements of the clause
+
+They will check your contract template to ensure that it has the appropriate clauses for information security and what happens when the person leaves. If the template meets the standard then they meet ask to see examples of active contracts to check that they follow the template and meet the standard.
+2. That you engaged professionals
+
+They may check the validity of the contracts and clauses that you have. This is a low likelihood but the potential to see that what you have is legally enforceable and not just something that you made up.
+3. That people are aware of their responsibilities
+
+The audit is going to check for documented processes, documented topic specific policy and these have been communicated and people have been trained on what is required of them. They will check that communicating responsibility is part of the HR off boarding process.
+Common Mistakes
+
+In my experience, the top 3 mistakes people make for ISO 27001 Responsibilities After Termination Or Change Of Employment are
+1. You have no contracts in place
+
+This is usually in a start up, small business or one where people have known each other for a long time. The cost of formal contracts may be something that has been avoided and a feeling that everyone knows and trusts each other. This can be fine and appropriate but it isn’t for the requirements of the standard. There are laws and regulations that require contracts to protect people and the organisation. Have contracts in place.
+2. One or more members of your team haven’t done what they should have done
+
+Prior to the audit check that all members of the team have done what they should have. Do they know where the process documents are in relation to on boarding and off boarding people? Do they know where the contracts are? Do a pre audit as close to the audit as you can. Assuming is a recipe for disaster. Check!
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

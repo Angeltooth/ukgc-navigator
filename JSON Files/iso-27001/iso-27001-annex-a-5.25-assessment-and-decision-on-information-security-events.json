@@ -1,0 +1,757 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.25",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.25",
+    "control_number": "A 5.25",
+    "control_title": "Assessment and Decision on Information Security Events",
+    "control_type": "Detective control",
+    "control_purpose": "To ensure effective categorization and prioritization of information security events",
+    "control_objective": "Assess information security events and decide if they should be categorized as incidents, determine priority level, and assign appropriate response"
+  },
+  "iso_27001_definition": {
+    "official_text": "The organisation should assess information security events and decide if they are to be categorised as information security incidents.",
+    "key_requirements": [
+      "Information security events identified",
+      "Events assessed for incident status",
+      "Events categorized as incident or non-incident",
+      "Priority levels determined",
+      "Appropriate response assigned",
+      "Results recorded and documented"
+    ]
+  },
+  "event_assessment_overview": {
+    "definition": "Process of evaluating detected security events to determine if they constitute incidents requiring response",
+    "distinction": {
+      "event": "Any observable occurrence in a system or network that could indicate an information security concern",
+      "incident": "Event that could potentially have negative impact on confidentiality, integrity or availability of information requiring response"
+    },
+    "purpose": "Filter events to identify true incidents and prioritize response efforts",
+    "scope": [
+      "Categorizing events as incidents or non-incidents",
+      "Assessing impact and urgency",
+      "Determining priority levels",
+      "Recording assessment results",
+      "Supporting continuous improvement"
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.25_REQ_1",
+      "requirement": "Define Criteria for Information Security Incidents",
+      "description": "Establish what constitutes an information security incident vs. normal event",
+      "details": {
+        "incident_examples": [
+          "Virus or malware infection",
+          "Unauthorized access to systems or data",
+          "Ransomware attack",
+          "System outage or unavailability",
+          "Social engineering attacks",
+          "Unauthorized disclosure of information",
+          "Unauthorized modification of information",
+          "Denial of service attacks",
+          "Suspicious user behavior",
+          "Failed authentication attempts",
+          "Policy violations",
+          "Data loss or corruption"
+        ],
+        "non_incident_examples": [
+          "Legitimate user activity",
+          "Normal system errors",
+          "Scheduled maintenance",
+          "Expected system alerts",
+          "False positives from monitoring"
+        ],
+        "threshold": "Define clear threshold between event and incident"
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_2",
+      "requirement": "Assign Assessment Responsibility",
+      "description": "Designate who will assess events and make incident determination",
+      "details": {
+        "responsibility_assignment": "Point of contact assigned to assess events",
+        "qualifications": [
+          "Understanding of incident management process",
+          "Technical knowledge of systems",
+          "Decision-making authority",
+          "Knowledge of business context"
+        ],
+        "training": "Ensure assessor trained on criteria and process"
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_3",
+      "requirement": "Assess Impact of Events",
+      "description": "Evaluate the severity and consequences of detected events",
+      "details": {
+        "impact_assessment": "Assess severity of consequences if incident occurs",
+        "impact_areas": [
+          "Loss of confidentiality - unauthorized disclosure of data",
+          "Loss of integrity - unauthorized modification of data",
+          "Loss of availability - systems or data unavailable"
+        ],
+        "impact_scale": [
+          "Critical - affects core operations, multiple systems, significant data",
+          "High - affects important functions or sensitive data",
+          "Medium - affects some functions or some data",
+          "Low - minimal impact on operations"
+        ],
+        "considerations": [
+          "Systems affected",
+          "Data affected",
+          "Number of users impacted",
+          "Business process impact",
+          "Regulatory implications"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_4",
+      "requirement": "Assess Urgency of Events",
+      "description": "Evaluate how quickly action is needed to resolve or contain the event",
+      "details": {
+        "urgency_assessment": "Determine speed at which response is needed",
+        "urgency_scale": [
+          "Immediate - requires immediate action (minutes)",
+          "High - requires rapid action (within hours)",
+          "Medium - requires timely action (within 1 day)",
+          "Low - can be addressed in normal timeframe (within 3 days)"
+        ],
+        "factors": [
+          "Active threat continuing",
+          "Ongoing data loss",
+          "Spreading malware",
+          "Service degradation",
+          "Compliance implications",
+          "Customer impact"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_5",
+      "requirement": "Determine Priority Using Impact and Urgency",
+      "description": "Calculate incident priority based on impact and urgency assessment",
+      "details": {
+        "priority_formula": "Priority = Impact × Urgency",
+        "priority_matrix": [
+          {
+            "impact": "Critical",
+            "urgency": "Immediate",
+            "priority": "P1-Critical",
+            "response_time": "Immediate"
+          },
+          {
+            "impact": "Critical",
+            "urgency": "High",
+            "priority": "P1-Critical",
+            "response_time": "Within 1 hour"
+          },
+          {
+            "impact": "High",
+            "urgency": "Immediate",
+            "priority": "P1-Critical",
+            "response_time": "Immediate"
+          },
+          {
+            "impact": "High",
+            "urgency": "High",
+            "priority": "P2-High",
+            "response_time": "Within 4 hours"
+          },
+          {
+            "impact": "High",
+            "urgency": "Medium",
+            "priority": "P2-High",
+            "response_time": "Within 8 hours"
+          },
+          {
+            "impact": "Medium",
+            "urgency": "High",
+            "priority": "P2-High",
+            "response_time": "Within 8 hours"
+          },
+          {
+            "impact": "Medium",
+            "urgency": "Medium",
+            "priority": "P3-Medium",
+            "response_time": "Within 1 day"
+          },
+          {
+            "impact": "Low",
+            "urgency": "Low",
+            "priority": "P4-Low",
+            "response_time": "Within 3 days"
+          }
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_6",
+      "requirement": "Make Incident/Non-Incident Decision",
+      "description": "Determine whether event meets criteria for incident classification",
+      "details": {
+        "decision_options": [
+          "Is an incident - proceed to response",
+          "Is not an incident - close and document",
+          "Requires clarification - investigate further"
+        ],
+        "documentation": [
+          "Decision made",
+          "Rationale for decision",
+          "Date and time of decision",
+          "Assessor name"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_7",
+      "requirement": "Assign Response Based on Priority",
+      "description": "Determine appropriate response action based on incident priority",
+      "details": {
+        "response_assignment": [
+          "P1-Critical - Immediate escalation and response",
+          "P2-High - Urgent investigation and response",
+          "P3-Medium - Timely investigation and response",
+          "P4-Low - Standard handling and response"
+        ],
+        "response_details": [
+          "Who should respond",
+          "When response should occur",
+          "What initial actions needed",
+          "Escalation path if needed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_8",
+      "requirement": "Record Assessment Results",
+      "description": "Document all assessment decisions and supporting information",
+      "details": {
+        "required_documentation": [
+          "Date and time of event",
+          "Nature and description of event",
+          "Impact assessment (score and explanation)",
+          "Urgency assessment (score and explanation)",
+          "Priority level determination",
+          "Incident/non-incident decision",
+          "Assigned response",
+          "Assessor name and date",
+          "Notes and rationale"
+        ],
+        "format": "Incident report form or template",
+        "retention": "Maintain records for audit trail and analysis"
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_9",
+      "requirement": "Review and Validate Assessments",
+      "description": "Verify assessments are accurate and consistent",
+      "details": {
+        "validation": [
+          "Review assessments for accuracy",
+          "Check consistency with other incidents",
+          "Verify priority assignments appropriate",
+          "Ensure decision rationale documented"
+        ],
+        "oversight": "Senior incident manager or lead reviews assessments"
+      }
+    },
+    {
+      "requirement_id": "A_5.25_REQ_10",
+      "requirement": "Use Assessments for Continuous Improvement",
+      "description": "Leverage assessment data to improve processes and detection",
+      "details": {
+        "continuous_improvement": [
+          "Analyze assessment patterns",
+          "Identify trends (false positives, recurring types)",
+          "Adjust detection rules based on assessment results",
+          "Update incident criteria if needed",
+          "Improve assessor training based on patterns"
+        ],
+        "metrics": [
+          "Percentage of events assessed as incidents",
+          "Priority level distribution",
+          "Time to assessment",
+          "Assessment accuracy"
+        ]
+      }
+    }
+  ],
+  "impact_urgency_assessment_framework": {
+    "description": "Framework for assessing impact and urgency",
+    "impact_scale": {
+      "critical": {
+        "definition": "Affects core operations, critical systems, or large amounts of sensitive data",
+        "examples": [
+          "Customer payment system compromised",
+          "RNG integrity compromised",
+          "Game system unavailable",
+          "Multiple critical systems affected",
+          "Large-scale customer data breach"
+        ]
+      },
+      "high": {
+        "definition": "Affects important functions or significant sensitive data",
+        "examples": [
+          "Administrative system compromised",
+          "Significant customer data at risk",
+          "Important system unavailable",
+          "Multiple systems affected"
+        ]
+      },
+      "medium": {
+        "definition": "Affects some functions or some data",
+        "examples": [
+          "Non-critical system affected",
+          "Limited data at risk",
+          "One function unavailable",
+          "Minor security violation"
+        ]
+      },
+      "low": {
+        "definition": "Minimal operational impact",
+        "examples": [
+          "Isolated system affected",
+          "Non-sensitive data",
+          "Easily recoverable",
+          "No ongoing threat"
+        ]
+      }
+    },
+    "urgency_scale": {
+      "immediate": {
+        "definition": "Action needed right now to prevent escalation",
+        "examples": [
+          "Active attack ongoing",
+          "Data currently being stolen",
+          "Malware actively spreading",
+          "Service actively unavailable",
+          "Critical system failing"
+        ]
+      },
+      "high": {
+        "definition": "Action needed within hours",
+        "examples": [
+          "Suspicious activity detected",
+          "System degraded",
+          "Potential threat identified",
+          "Unauthorized access suspected"
+        ]
+      },
+      "medium": {
+        "definition": "Action needed within 1 business day",
+        "examples": [
+          "Suspected policy violation",
+          "Minor anomaly detected",
+          "Non-critical system issue",
+          "Informational event"
+        ]
+      },
+      "low": {
+        "definition": "Action needed within standard timeframe",
+        "examples": [
+          "Routine issue",
+          "Resolved by user",
+          "Historical event",
+          "Non-urgent matter"
+        ]
+      }
+    }
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Define Assessment Criteria",
+        "detail": "Document what constitutes incident vs. event"
+      },
+      {
+        "step": 2,
+        "action": "Create Assessment Form/Template",
+        "detail": "Develop form to capture assessment data"
+      },
+      {
+        "step": 3,
+        "action": "Define Impact and Urgency Scales",
+        "detail": "Establish scales with clear definitions"
+      },
+      {
+        "step": 4,
+        "action": "Create Priority Matrix",
+        "detail": "Develop impact × urgency priority matrix"
+      },
+      {
+        "step": 5,
+        "action": "Assign Assessment Responsibility",
+        "detail": "Designate assessor with decision authority"
+      },
+      {
+        "step": 6,
+        "action": "Train Assessor",
+        "detail": "Provide training on criteria and process"
+      },
+      {
+        "step": 7,
+        "action": "Implement Assessment Process",
+        "detail": "Integrate into incident detection workflow"
+      },
+      {
+        "step": 8,
+        "action": "Establish Review Process",
+        "detail": "Implement validation of assessments"
+      },
+      {
+        "step": 9,
+        "action": "Set Up Metrics Tracking",
+        "detail": "Track assessment metrics for improvement"
+      },
+      {
+        "step": 10,
+        "action": "Document Assessment Records",
+        "detail": "Maintain incident assessment documentation"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.25",
+    "checklist": [
+      {
+        "item": "Define incident assessment criteria",
+        "status": "required"
+      },
+      {
+        "item": "Create assessment form or template",
+        "status": "required"
+      },
+      {
+        "item": "Define impact scale and definitions",
+        "status": "required"
+      },
+      {
+        "item": "Define urgency scale and definitions",
+        "status": "required"
+      },
+      {
+        "item": "Create priority determination matrix",
+        "status": "required"
+      },
+      {
+        "item": "Assign assessment responsibility",
+        "status": "required"
+      },
+      {
+        "item": "Train assessor on criteria and process",
+        "status": "required"
+      },
+      {
+        "item": "Implement assessment process",
+        "status": "required"
+      },
+      {
+        "item": "Record all assessments",
+        "status": "required"
+      },
+      {
+        "item": "Establish assessment validation/review",
+        "status": "required"
+      },
+      {
+        "item": "Track assessment metrics",
+        "status": "required"
+      },
+      {
+        "item": "Use metrics for continuous improvement",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with event assessment",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No documented incident assessment plan",
+        "description": "No documented process for assessing and categorizing events",
+        "root_cause": [
+          "Assessment treated as informal process",
+          "No standardized criteria",
+          "No documentation requirement",
+          "Assessments done inconsistently"
+        ],
+        "impact": "Inconsistent incident categorization, poor decision-making, difficulty tracking patterns",
+        "prevention": "Document clear assessment criteria and process",
+        "requirement": "Written process defining what constitutes incident"
+      },
+      {
+        "rank": 2,
+        "mistake": "Assessment process not implemented",
+        "description": "Process documented but not actually used or followed",
+        "root_cause": [
+          "No training on process",
+          "No integration into workflow",
+          "Assessor not assigned",
+          "No accountability"
+        ],
+        "impact": "Assessments not consistently made, incidents missed or misprioritized",
+        "prevention": "Assign responsibility and train assessor on process",
+        "implementation": "Integrate assessment into incident detection workflow"
+      },
+      {
+        "rank": 3,
+        "mistake": "Assessment effectiveness not monitored",
+        "description": "No tracking or analysis of assessment results",
+        "root_cause": [
+          "No metrics collected",
+          "No review of assessments",
+          "No feedback to assessor",
+          "No improvement process"
+        ],
+        "impact": "Assessment quality doesn't improve, patterns not identified, processes not updated",
+        "prevention": "Track metrics and conduct regular review of assessments"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.25 audit",
+    "audit_areas": [
+      {
+        "area": "1. Assessment Criteria Documentation",
+        "description": "Verify incident assessment criteria documented",
+        "checks": [
+          "Incident assessment process documented",
+          "Incident criteria clearly defined",
+          "Examples of incidents provided",
+          "Impact scale documented",
+          "Urgency scale documented",
+          "Priority matrix documented"
+        ]
+      },
+      {
+        "area": "2. Assessment Process Implementation",
+        "description": "Verify assessment process is actually being used",
+        "checks": [
+          "Assessor assigned and trained",
+          "Recent incident assessments available",
+          "Assessments document impact/urgency",
+          "Priority determined for incidents",
+          "Decisions recorded"
+        ]
+      },
+      {
+        "area": "3. Assessment Quality",
+        "description": "Verify assessments are accurate and consistent",
+        "checks": [
+          "Impact assessments justified",
+          "Urgency assessments justified",
+          "Priority assignments appropriate",
+          "Consistency across incidents",
+          "Rationale documented"
+        ]
+      },
+      {
+        "area": "4. Assessment Records",
+        "description": "Verify assessment records maintained",
+        "checks": [
+          "Assessment forms or records exist",
+          "Required information captured",
+          "Assessment dates recorded",
+          "Assessor identified",
+          "Records retained"
+        ]
+      },
+      {
+        "area": "5. Validation and Review",
+        "description": "Verify assessments are reviewed and validated",
+        "checks": [
+          "Review process in place",
+          "Spot checks of assessments",
+          "Quality verification conducted",
+          "Issues identified and corrected"
+        ]
+      },
+      {
+        "area": "6. Continuous Improvement",
+        "description": "Verify assessment data used for improvement",
+        "checks": [
+          "Metrics tracked and analyzed",
+          "Patterns identified",
+          "Process improvements made",
+          "Criteria adjusted as needed"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Event assessment critical for rapidly identifying and prioritizing incidents affecting gambling systems",
+    "specific_requirements": [
+      {
+        "system": "Customer Data Systems",
+        "assessment_requirements": [
+          "Rapid assessment of potential breaches",
+          "Impact assessment for customer data",
+          "Urgency assessment for unauthorized access",
+          "Priority determination for response"
+        ]
+      },
+      {
+        "system": "RNG and Game Systems",
+        "assessment_requirements": [
+          "Assessment of game integrity incidents",
+          "Impact on fairness and outcomes",
+          "Urgency for immediate suspension",
+          "Priority for investigation and remediation"
+        ]
+      },
+      {
+        "system": "Critical Infrastructure",
+        "assessment_requirements": [
+          "Assessment of system outages",
+          "Impact on operational continuity",
+          "Urgency for restoration",
+          "Priority for business continuity activation"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must have documented criteria for assessing events and determining incident priority, with trained assessors making timely decisions"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Systematically assess detected events to determine if they are incidents, calculate priority level, and assign appropriate response",
+    "enforcement_priority": "High - effective incident management depends on accurate event assessment",
+    "key_principles": [
+      "Clear incident definition and criteria",
+      "Consistent assessment methodology",
+      "Impact and urgency evaluated systematically",
+      "Priority determined objectively",
+      "Assessments documented and recorded",
+      "Trained and designated assessor",
+      "Regular review and validation",
+      "Metrics tracked for improvement",
+      "Assessment data informs process updates"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.25 Assessment and Decision on Information Security Events, implement",
+    "requirements": [
+      {
+        "requirement": "Document incident assessment criteria",
+        "detail": "Clear definition of what constitutes incident"
+      },
+      {
+        "requirement": "Create assessment form/template",
+        "detail": "Standard form for recording assessments"
+      },
+      {
+        "requirement": "Define impact and urgency scales",
+        "detail": "Clear definitions for each level"
+      },
+      {
+        "requirement": "Create priority matrix",
+        "detail": "Impact × Urgency = Priority determination"
+      },
+      {
+        "requirement": "Assign assessment responsibility",
+        "detail": "Designate assessor with authority"
+      },
+      {
+        "requirement": "Train assessor",
+        "detail": "Ensure assessor understands process and criteria"
+      },
+      {
+        "requirement": "Implement assessment process",
+        "detail": "Integrate into incident workflow"
+      },
+      {
+        "requirement": "Record assessments",
+        "detail": "Document all assessment decisions"
+      },
+      {
+        "requirement": "Conduct assessment review",
+        "detail": "Validate accuracy and consistency"
+      },
+      {
+        "requirement": "Track metrics",
+        "detail": "Measure assessment performance"
+      },
+      {
+        "requirement": "Continuous improvement",
+        "detail": "Use metrics to improve process"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_controls": [
+      "ISO 27001 A 5.24 - Information security incident management planning and preparation",
+      "ISO 27001 A 8.16 - Incident management and improvements"
+    ]
+  },
+  "best_practices": {
+    "assessment_best_practices": [
+      "Use consistent criteria for all events",
+      "Document rationale for each assessment",
+      "Ensure assessor has required expertise",
+      "Review assessments regularly for consistency",
+      "Use data to identify patterns and trends",
+      "Update criteria based on experience"
+    ],
+    "process_best_practices": [
+      "Automate assessment where possible",
+      "Provide decision support tools",
+      "Include assessment in alerting workflow",
+      "Establish clear escalation based on priority",
+      "Track assessment metrics",
+      "Conduct periodic training refresher"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "incident_assessment_priorities": [
+      {
+        "event_type": "Customer Data Access",
+        "assessment_priority": "Critical impact if unauthorized",
+        "assessment_urgency": "Immediate if active threat"
+      },
+      {
+        "event_type": "RNG Anomaly",
+        "assessment_priority": "Critical impact on game fairness",
+        "assessment_urgency": "Immediate for investigation"
+      },
+      {
+        "event_type": "System Outage",
+        "assessment_priority": "Critical if affects customer access",
+        "assessment_urgency": "Immediate for restoration"
+      }
+    ],
+    "regulatory_expectations": [
+      "Documented assessment criteria for incident determination",
+      "Trained assessor making timely decisions",
+      "Assessment results recorded",
+      "Consistent prioritization methodology"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.25",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.25-assessment-and-decision-on-information-security-events.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

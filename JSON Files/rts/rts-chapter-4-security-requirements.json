@@ -1,0 +1,369 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Security Requirements",
+  "document_reference": "RTS Chapter 4",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators with remote gambling systems handling critical functions",
+  "standard_basis": {
+    "name": "ISO/IEC 27001:2022",
+    "previous_version": "ISO/IEC 27001:2013",
+    "replacement_date": "2022",
+    "note": "The 2022 standard replaces ISO/IEC 27001:2013"
+  },
+  "chapter_overview": {
+    "chapter_number": 4,
+    "chapter_title": "Remote Gambling and Software Technical Standards (RTS) Security Requirements",
+    "purpose": "To ensure customers are not exposed to unnecessary security risks by choosing to participate in remote gambling",
+    "basis": "Security requirements based on relevant sections of Annex A to ISO/IEC 27001:2022 standard"
+  },
+  "critical_systems": {
+    "description": "The Commission has highlighted those systems that are most critical to achieving the Commission's aims. The security standards apply to these critical systems:",
+    "systems": [
+      {
+        "system_id": "CRIT_SYS_1",
+        "system_type": "Sensitive Customer Information Systems",
+        "description": "Electronic systems that record, store, process, share, transmit or retrieve sensitive customer information",
+        "examples": [
+          "Credit/debit card details",
+          "Authentication information",
+          "Customer account balances"
+        ]
+      },
+      {
+        "system_id": "CRIT_SYS_2",
+        "system_type": "Random Number Generation Systems",
+        "description": "Electronic systems that generate, transmit, or process random numbers used to determine the outcome of games or virtual events",
+        "purpose": "Ensure game integrity and fairness"
+      },
+      {
+        "system_id": "CRIT_SYS_3",
+        "system_type": "Game State and Results Storage",
+        "description": "Electronic systems that store results or the current state of a customer's gamble",
+        "purpose": "Maintain game integrity and enable dispute resolution"
+      },
+      {
+        "system_id": "CRIT_SYS_4",
+        "system_type": "System Access Points",
+        "description": "Points of entry to and exit from the above systems (other systems that are able to communicate directly with core critical systems)",
+        "purpose": "Control and monitor access to critical systems"
+      },
+      {
+        "system_id": "CRIT_SYS_5",
+        "system_type": "Communication Networks",
+        "description": "Communication networks that transmit sensitive customer information",
+        "purpose": "Protect customer data in transit"
+      }
+    ]
+  },
+  "security_requirements_categories": {
+    "organizational_controls": {
+      "category_name": "Organisational Controls",
+      "description": "Management and organizational security measures",
+      "controls": [
+        {
+          "control_id": "5.1",
+          "control_title": "Policies for information security",
+          "iso_reference": "ISO 27001 Annex A 5.1",
+          "json_file": "iso-27001-annex-a-5.1-policies-for-information-security.json"
+        },
+        {
+          "control_id": "5.10",
+          "control_title": "Acceptable use of information and other associated assets",
+          "iso_reference": "ISO 27001 Annex A 5.10"
+        },
+        {
+          "control_id": "5.15",
+          "control_title": "Access control",
+          "iso_reference": "ISO 27001 Annex A 5.15"
+        },
+        {
+          "control_id": "5.16",
+          "control_title": "Identity management",
+          "iso_reference": "ISO 27001 Annex A 5.16"
+        },
+        {
+          "control_id": "5.17",
+          "control_title": "Authentication information",
+          "iso_reference": "ISO 27001 Annex A 5.17"
+        },
+        {
+          "control_id": "5.18",
+          "control_title": "Access rights",
+          "iso_reference": "ISO 27001 Annex A 5.18"
+        },
+        {
+          "control_id": "5.19",
+          "control_title": "Information security in supplier relationships",
+          "iso_reference": "ISO 27001 Annex A 5.19"
+        },
+        {
+          "control_id": "5.20",
+          "control_title": "Addressing information security within supplier agreements",
+          "iso_reference": "ISO 27001 Annex A 5.20"
+        },
+        {
+          "control_id": "5.21",
+          "control_title": "Managing information security in the ICT supply chain",
+          "iso_reference": "ISO 27001 Annex A 5.21"
+        },
+        {
+          "control_id": "5.22",
+          "control_title": "Monitoring, review and change management of supplier services",
+          "iso_reference": "ISO 27001 Annex A 5.22"
+        },
+        {
+          "control_id": "5.23",
+          "control_title": "Information security for use of cloud services",
+          "iso_reference": "ISO 27001 Annex A 5.23"
+        },
+        {
+          "control_id": "5.24",
+          "control_title": "Information security incident management planning and preparation",
+          "iso_reference": "ISO 27001 Annex A 5.24"
+        },
+        {
+          "control_id": "5.25",
+          "control_title": "Assessment and decision on information security events",
+          "iso_reference": "ISO 27001 Annex A 5.25"
+        },
+        {
+          "control_id": "5.26",
+          "control_title": "Response to information security incidents",
+          "iso_reference": "ISO 27001 Annex A 5.26"
+        },
+        {
+          "control_id": "5.28",
+          "control_title": "Collection of evidence",
+          "iso_reference": "ISO 27001 Annex A 5.28"
+        },
+        {
+          "control_id": "5.35",
+          "control_title": "Independent review of information security",
+          "iso_reference": "ISO 27001 Annex A 5.35"
+        }
+      ],
+      "total_controls": 16
+    },
+    "people_controls": {
+      "category_name": "People Controls",
+      "description": "Security measures related to personnel",
+      "controls": [
+        {
+          "control_id": "6.3",
+          "control_title": "Information security awareness, education and training",
+          "iso_reference": "ISO 27001 Annex A 6.3"
+        },
+        {
+          "control_id": "6.5",
+          "control_title": "Responsibilities after termination or change of employment",
+          "iso_reference": "ISO 27001 Annex A 6.5"
+        },
+        {
+          "control_id": "6.7",
+          "control_title": "Remote working",
+          "iso_reference": "ISO 27001 Annex A 6.7"
+        },
+        {
+          "control_id": "6.8",
+          "control_title": "Information security event reporting",
+          "iso_reference": "ISO 27001 Annex A 6.8"
+        }
+      ],
+      "total_controls": 4
+    },
+    "physical_controls": {
+      "category_name": "Physical Controls",
+      "description": "Physical security measures",
+      "controls": [
+        {
+          "control_id": "7.8",
+          "control_title": "Equipment siting and protection",
+          "iso_reference": "ISO 27001 Annex A 7.8"
+        },
+        {
+          "control_id": "7.10",
+          "control_title": "Storage media",
+          "iso_reference": "ISO 27001 Annex A 7.10"
+        },
+        {
+          "control_id": "7.14",
+          "control_title": "Secure disposal or re-use of equipment",
+          "iso_reference": "ISO 27001 Annex A 7.14"
+        }
+      ],
+      "total_controls": 3
+    },
+    "technological_controls": {
+      "category_name": "Technological Controls",
+      "description": "Technical security measures and controls",
+      "controls": [
+        {
+          "control_id": "8.1",
+          "control_title": "User endpoint devices",
+          "iso_reference": "ISO 27001 Annex A 8.1"
+        },
+        {
+          "control_id": "8.2",
+          "control_title": "Privileged access rights",
+          "iso_reference": "ISO 27001 Annex A 8.2"
+        },
+        {
+          "control_id": "8.3",
+          "control_title": "Information access restriction",
+          "iso_reference": "ISO 27001 Annex A 8.3"
+        },
+        {
+          "control_id": "8.5",
+          "control_title": "Secure authentication",
+          "iso_reference": "ISO 27001 Annex A 8.5"
+        },
+        {
+          "control_id": "8.7",
+          "control_title": "Protection against malware",
+          "iso_reference": "ISO 27001 Annex A 8.7"
+        },
+        {
+          "control_id": "8.13",
+          "control_title": "Information backup",
+          "iso_reference": "ISO 27001 Annex A 8.13"
+        },
+        {
+          "control_id": "8.15",
+          "control_title": "Logging",
+          "iso_reference": "ISO 27001 Annex A 8.15"
+        },
+        {
+          "control_id": "8.17",
+          "control_title": "Clock synchronisation",
+          "iso_reference": "ISO 27001 Annex A 8.17"
+        },
+        {
+          "control_id": "8.18",
+          "control_title": "Use of privileged utility programs",
+          "iso_reference": "ISO 27001 Annex A 8.18"
+        },
+        {
+          "control_id": "8.20",
+          "control_title": "Networks security",
+          "iso_reference": "ISO 27001 Annex A 8.20"
+        },
+        {
+          "control_id": "8.21",
+          "control_title": "Security of network services",
+          "iso_reference": "ISO 27001 Annex A 8.21"
+        },
+        {
+          "control_id": "8.22",
+          "control_title": "Segregation of networks",
+          "iso_reference": "ISO 27001 Annex A 8.22"
+        },
+        {
+          "control_id": "8.24",
+          "control_title": "Use of cryptography",
+          "iso_reference": "ISO 27001 Annex A 8.24"
+        },
+        {
+          "control_id": "8.25",
+          "control_title": "Secure development life cycle",
+          "iso_reference": "ISO 27001 Annex A 8.25"
+        },
+        {
+          "control_id": "8.26",
+          "control_title": "Application security requirements",
+          "iso_reference": "ISO 27001 Annex A 8.26"
+        },
+        {
+          "control_id": "8.27",
+          "control_title": "Secure system architecture and engineering principles",
+          "iso_reference": "ISO 27001 Annex A 8.27"
+        },
+        {
+          "control_id": "8.29",
+          "control_title": "Security testing in development and acceptance",
+          "iso_reference": "ISO 27001 Annex A 8.29"
+        },
+        {
+          "control_id": "8.30",
+          "control_title": "Outsourced development",
+          "iso_reference": "ISO 27001 Annex A 8.30"
+        },
+        {
+          "control_id": "8.31",
+          "control_title": "Separation of development, test and production environments",
+          "iso_reference": "ISO 27001 Annex A 8.31"
+        },
+        {
+          "control_id": "8.32",
+          "control_title": "Change management",
+          "iso_reference": "ISO 27001 Annex A 8.32"
+        },
+        {
+          "control_id": "8.33",
+          "control_title": "Test information",
+          "iso_reference": "ISO 27001 Annex A 8.33"
+        }
+      ],
+      "total_controls": 21
+    }
+  },
+  "summary_statistics": {
+    "total_iso_controls_required": 44,
+    "organizational_controls": 16,
+    "people_controls": 4,
+    "physical_controls": 3,
+    "technological_controls": 21
+  },
+  "compliance_notes": {
+    "overall_purpose": "Protect critical gambling systems and customer data through ISO 27001 security standards",
+    "enforcement_priority": "Critical - License condition requirement",
+    "scope": "Applies to all systems identified as critical to customer protection and game integrity",
+    "key_principles": [
+      "Risk-based approach to security",
+      "Protection of sensitive customer information",
+      "Integrity of game outcomes and RNG systems",
+      "Secure communication networks",
+      "Access control to critical systems",
+      "Incident management and response",
+      "Continuous monitoring and improvement"
+    ]
+  },
+  "related_requirements": {
+    "rts_chapters": [
+      "RTS 1 - Customer Account Information",
+      "RTS 5 - Result Determination",
+      "RTS 7 - Generation of Random Outcomes",
+      "RTS 10 - Interrupted Gambling"
+    ],
+    "lccp_reference": "License Condition 2.3.1 - Compliance with RTS and Testing Strategy",
+    "testing_strategy": "UK Gambling Commission Testing Strategy for Compliance with RTS"
+  },
+  "implementation_approach": {
+    "methodology": "Risk-based implementation focusing on critical systems",
+    "priorities": [
+      "Identify critical systems as defined in section 4.3",
+      "Implement ISO 27001 controls applicable to critical systems",
+      "Document security policies and procedures",
+      "Conduct security audits per ISO 27001 requirements",
+      "Maintain evidence of compliance for regulatory inspection"
+    ]
+  },
+  "audit_requirements": {
+    "independent_review": "ISO 27001 Annex A 5.35 - Independent review of information security",
+    "frequency": "Regular audits required per UKGC Testing Strategy",
+    "scope": "All critical systems and applicable ISO 27001 controls",
+    "documentation": "Maintain audit reports and remediation evidence"
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards, Chapter 4",
+    "iso_standard": "ISO/IEC 27001:2022",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

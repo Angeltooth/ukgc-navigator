@@ -1,0 +1,31 @@
+ISO 27001 Clock Synchronisation
+
+ISO 27001 Annex A 8.17 Clock Synchronisation is an ISO 27001 control that requires us to ensure the all the clocks of all systems are synchronised to an approved time source.
+Purpose
+
+ISO 27001 Annex A 8.17 is a detective control to enable the correlation and analysis of security-related events and other recorded data, and to support investigations into information security incidents.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.17 as:
+The clocks of information processing systems used by the organisation should be synchronised to approved time sources.
+Implementation Guide
+
+The whole point of this control is so that everything is synchronised and that it is reporting and recording and using the same time. This information is used in information security incidents and at the most extreme case in investigations. It is part of evidence gathering and would need to be in place for criminal investigations.
+The advice here would be to speak with your technical teams on the best approach and best technology to use.
+The need may arise from legal, regulatory, statutory, contractual, standards and internal monitoring needs. So this would be the first place to look to see if there is anything specific that you need to do.
+The basic premise is to get all clocks of all devices on the same page. This includes things you might not consider such as building entry systems or surveillance systems.
+It is probably more practical to have all devices of a type synced to the same source rather than every device of every type connected to the same source. Some systems may use there own time source for example. A clock for each service is acceptable with any difference recorded in order to mitigate the risk of discrepancies.
+The advice of the standard talks of linking to a radio time broadcast from a national atomic clock or global positioning system (GPS) and protocols such as networking time protocol ( NTP ) or precision time protocol (PTP) to keep all networked systems in synchronisation with a reference clock.
+For small organisations a lot of this can be overkill and it would be the advice to pursue the most technically simple option available.
+What will an auditor check?
+
+The audit is going to check a number of areas. Lets go through the main ones
+1. That you have documentation
+
+What this means is that you need to show that you have documented your clock synchronisation. This may be just recording what you do but be sure to understand how your clocks are synchronised and be able to show it.
+2. That you have have implemented clock synchronisation appropriately
+
+They will look at systems to seek evidence of clock synchronisation. They want to see evidence of clock synchronisation and the process in operation. It maybe that they look for evidence that you have used it as part of information security incident management.
+3. That you have conducted internal audits
+
+The audit will want to see that you have tested the controls and evidenced that they are operating. This is usually in the form of the required internal audits. They will check the records and outputs of those internal audits.

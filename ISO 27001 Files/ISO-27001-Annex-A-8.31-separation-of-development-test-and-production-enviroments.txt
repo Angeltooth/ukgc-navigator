@@ -1,0 +1,130 @@
+ISO 27001 Separation of Development, Test and Production Environments
+
+ISO 27001 Annex A 8.31 Separation of Development, Test and Production Environments is an ISO 27001 control that requires an organisation to have separate environments for each part of the development lifecycle and to be managing those environments.
+Purpose
+
+ISO 27001 Annex A 8.31 is a preventive control to protect the production environment and data from compromise by development and test activities.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.31 as:
+Development, testing and production environments should be separated and secured.
+Implementation Guide
+
+This is probably a no brainer requirement when it comes to your development lifecycle and you will adapt the requirement as needed by you based on the feedback and input of your specialist resources. The basic principle of segregation will hold whether we are talking a virtual or physical environment.
+The key to this control is to document everything and be able to demonstrate evidence that the control is working.
+Separate Environments
+
+You are going to make sure that for the in-scope developments that you have separate development, test and live environments with the appropriate management and controls in place around this. This will include the process of promoting through those environments and the authorisations and approvals and acceptance.
+In the production environment you will remove development tools and utility programs such as compliers and editors.
+Confidential, personal and sensitive data will not exist other than in the production environment.
+Environment Management
+
+Consideration for the management of the environments, the versions, the software, the patching, updating and access will be in place. Secure configurations will be documented and in place.
+Monitoring and logging will apply, as appropriate – ISO 27001 Annex A 8.16 Monitoring Activities, ISO 27001 Annex A 7.4 Physical Security Monitoring.
+Backups, backup process and evidence of backups will be implemented – ISO 27001 Annex A 8.13 Information Backup
+Approval processes will be put in place and there will NOT be the ability for one person to change all environments without that approval. Segregation of duty will be implemented ( ISO 27001 Annex A 5.3 Segregation of duties ) and changes will be controlled (ISO 27001 Annex A 8.32 Change Management) .
+You will define and document and implement rules for the authorisation and management through the different environments.
+Implementation Checklist
+
+ISO 27001 Annex A 8.31 Separation of Development, Test and Production Environments Implementation Checklist:
+1. Distinct Environments
+
+Establish clearly defined and separate environments for development, testing, and production.
+Each environment should have distinct hardware, software, and network configurations.
+Implement strong access controls to each environment, with least privilege principles applied.
+Challenges
+
+Cost: Maintaining separate environments can be expensive due to hardware, software licenses, and ongoing maintenance.
+Complexity: Managing multiple environments can increase operational complexity and require specialised tools and expertise.
+Solutions
+
+Virtualisation and Cloud Computing: Utilise virtualisation technologies (e.g., VMware, VirtualBox) or cloud platforms (e.g., AWS, Azure, GCP) to create cost-effective and scalable environments.
+Automation: Automate the provisioning and configuration of environments using tools like Ansible, Puppet, or Chef to reduce manual effort and improve consistency.
+Shared Resources: Explore options for sharing certain resources (e.g., network infrastructure, storage) across environments where feasible to optimise costs.
+2. Data Isolation
+
+Implement strict data isolation mechanisms to prevent unauthorised access or modification of sensitive data in non-production environments.
+Utilise techniques like data masking, tokenisation, and encryption to protect sensitive data in test and development environments.
+Ensure that only necessary data is copied or moved between environments.
+Challenges
+
+Data Masking Complexity: Implementing effective data masking rules can be complex and time-consuming, especially for complex data structures.
+Performance Impact: Data masking and other isolation techniques can sometimes impact the performance of applications in test and development environments.
+Solutions
+
+Data Masking Tools: Utilise specialised data masking tools to automate the process and ensure consistent application of masking rules.
+Performance Testing: Conduct thorough performance testing in masked environments to identify and mitigate any performance bottlenecks.
+Data Subsets: Use smaller subsets of production data in test and development environments to reduce the volume of data that needs to be masked and improve performance.
+3. Change Management:
+
+Establish a robust change management process to control the movement of code and configurations between environments.
+Implement strict controls on deployments to production, including thorough testing, code reviews, and approvals.
+Utilise version control systems (e.g., Git) to track all changes to code and configurations.
+Challenges
+
+Slow Deployment Cycles: A rigid change management process can sometimes slow down the deployment of new features and updates.
+Manual Processes: Manual steps in the deployment process can introduce errors and increase the risk of human error.
+Solutions
+
+Continuous Integration/Continuous Delivery (CI/CD): Implement CI/CD pipelines to automate the build, test, and deployment process, enabling faster and more frequent releases.
+Automated Testing: Implement comprehensive automated testing suites to accelerate the testing process and reduce the reliance on manual testing.
+Regular Reviews and Improvements: Regularly review and improve the change management process to identify and address any bottlenecks or inefficiencies.
+4. Monitoring and Logging
+
+Implement robust monitoring and logging capabilities in all environments to detect and respond to security incidents and performance issues.
+Collect and analyse logs from all environments to identify and investigate security threats and system vulnerabilities.
+Implement intrusion detection and prevention systems (IDPS) to monitor network traffic for malicious activity.
+Challenges
+
+Log Management Complexity: Managing and analysing large volumes of logs from multiple environments can be complex and time-consuming.
+Alert Fatigue: An excessive number of security alerts can lead to alert fatigue and make it difficult to identify and respond to genuine threats.
+Solutions
+
+Security Information and Event Management (SIEM) Systems: Utilise SIEM systems to collect, correlate, and analyse security logs from multiple sources.
+Alert Filtering and Prioritisation: Implement rules to filter and prioritise security alerts based on severity and risk level.
+Regular Log Reviews: Conduct regular reviews of security logs to identify and investigate suspicious activity.
+Audit Checklist
+
+ISO 27001 Annex A 8.31 Separation of Development, Test and Production Environments Audit Checklist:
+1. Are there distinct environments?
+
+Has the guidance in ISO 27001 Annex A 5.3 Segregation of duties been followed
+Are separate environments for development, testing, and production documented and operating as documented?
+Is there evidence that each environment has distinct hardware, software, and network configurations.
+Assess if strong access controls to each environment, with least privilege principles applied has been implemented and can be evidenced.
+Has automation been used and if so do a walkthrough to ensure it is as documented.
+Check virtualisation as relevant and walkthrough and assess the implementation.
+2. Is data isolation in place?
+
+Have data isolation mechanisms been put in place to prevent unauthorised access or modification of sensitive data in non-production environments.
+Assess data protection of sensitive data in test and development environments by techniques like data masking, tokenisation, and encryption. Review the techniques for adequacy.
+Review the process and controls that ensure only necessary data is copied or moved between environments.
+3. Is change managed?
+
+Has guidance in ISO 27001 Annex A 8.32 Change Management been followed
+Review the change management process to control the movement of code and configurations between environments taking a sample and walking through evidence.
+Audit the controls on deployments to production, including thorough testing, code reviews, and approvals.
+Assess the version control systems that track all changes to code and configurations.
+If Automated Testing is used then walkthrough the process.
+Check for regular reviews and improvements to the processes and controls.
+Sample changes and conduct thorough review of testing of changes.
+Assess if it includes unit testing, integration testing, security testing.
+Gain evidence of back out and roll back planning.
+4. What monitoring and logging is in place?
+
+Has guidance in ISO 27001 Annex A 8.16 Monitoring Activities been followed
+Assess the monitoring and logging capabilities in all environments to detect and respond to security incidents and performance issues.
+Collect evidence of logging and if there is analysis of logs from all environments to identify and investigate security threats and system vulnerabilities.
+If relevant audit the intrusion detection and prevention systems (IDPS) for monitoring of network traffic for malicious activity.
+Walkthrough the log management process.
+Gain evidence of alerts and responses.
+Seek evidence of log reviews.
+5. Are Authorisations Obtained?
+
+Walkthrough approval workflows for access to environments and the movement of data between them.
+Review if delegation is at appropriate authority levels.
+Assess what approval system is used and walkthrough it to evidence authorisation.
+Conclusion
+
+Many if not all of the controls that apply to this control are covered elsewhere. Be it the experience, licensing, technical controls access controls but consider them in the context of this clause and be able to evidence them as they apply to separation of environments.
+The best advice is to seek the help of your qualified and experienced technical teams that specialise in the management of environments.

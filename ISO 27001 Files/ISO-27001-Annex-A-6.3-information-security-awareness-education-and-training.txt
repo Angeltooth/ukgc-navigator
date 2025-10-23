@@ -1,0 +1,221 @@
+ISO 27001 Information Security Awareness Education and Training
+
+ISO 27001 Annex A 6.3 Information Security Awareness, Education and Training is an ISO 27001 control that wants you to educate people on information security. From security awareness training and education to regular updates on your information security policy, topic specific policies and processes.
+ISO 27001 Information Security Awareness, Education, and Training (ISEAT) is a comprehensive program designed to empower individuals within an organisation to understand, recognise, and prevent security threats. It aims to foster a culture of security awareness and responsibility among employees.
+Purpose
+
+The purpose of ISO 27001 Annex A 6.3 is to ensure that people are aware of their responsibilities for information security and that they meet them.
+Definition
+
+ISO 27001 defines ISO 27001 Information Security Awareness, Education, and Training as:
+Personnel of the organisation and relevant interested parties should receive appropriate information security awareness, education and training and regular updates of the organisations information security policy, topic-specific policies and procedures, as relevant for their job function.
+Ownership:
+In close collaboration with the HR teams and domain experts, the Information Security Officer is responsible for putting rules in place for the training and awareness and ensuring they are followed.
+Implementation Guide
+
+General Guidance
+
+You are going to have to
+decide what information security training and awareness to do based on organisation risk and needs
+plan your training and awareness for the next 12 months
+develop, build and implement your training and awareness materials
+deliver your training and awareness to those that need it
+verify that people understand it
+keep records of all training and awareness
+The headline guidance is to train people on information security. For more guidance on the ISO 27001 Security Training Policy and guidance on what and how to implement you can read our beginners guide to information security awareness and training.
+Information security training and awareness plan
+
+You are going to put in place and plan for information security training. It is not that hard to do but you want to think about what people will need to know about and how you are going to communicate that. A great tool to help is the ISO 27001 communication plan. You will also consider an off the shelf training tool to help you.
+ISO 27001 training requirements
+
+The programme should consider your ISO 27001 policies. That is the main information security policy and any ISO 27001 topic specific policies. It should also include your processes and procedures, specifically around information security.
+The list to consider including:
+Leadership and management commitment to information security – it is top down after all
+Requirements of relevant laws and regulations
+People’s own accountability and responsibility for information security
+How to report an event of incident
+Where the information security policies are
+Who you speak to if you have a question on information security
+When to do information security awareness and training
+
+The guidance is periodically but the best approach is
+conduct annual awareness training in information security
+conduct annual awareness training in data protection
+conduct initial awareness training either pre employment or as part of the onboarding process
+as things change or new things are introduced make people aware and train them
+in response to incidents and as part of continual improvement you may require additional training or awareness
+Approaches to information security training
+
+Actual training is something you implement based on need. You identify who needs training and provide it to them. Some training is for everyone, and some training is a little more targeted and specific to certain people and roles.
+It is good practice to consider different types of training, such as emails, web pages, stand up meetings, classroom based but most people opt for an off the shelf training package that makes most of the problem go away.
+There is a requirement to verify understanding that most people interpret as taking a test of some sort. These are usually built into the off the shelf training packages.
+Implementation Checklist
+
+ISO 27001 Annex A 6.3 Information Security Awareness, Education And Training Implementation Checklist:
+Define Target Audience & Objectives
+
+Challenge
+
+Identifying specific needs and tailoring programs to different roles (e.g., executives, IT staff, end-users).
+Solution
+
+Conduct role-based risk assessments to understand information security threats and vulnerabilities specific to each role.
+Create tailored training programs with clear learning objectives.
+Develop a Training Program
+
+Challenge
+
+Ensuring training is engaging, effective, and covers all necessary topics (e.g., data classification, security policies, incident response).
+Solution
+
+Utilise a variety of training methods (e.g., online courses, workshops, simulations, gamification) to keep employees engaged.
+Regularly review and update training materials based on new threats and vulnerabilities.
+Implement Training Delivery
+
+Challenge
+
+Ensuring all employees receive the necessary training, including new hires and contractors.
+Solution
+
+Integrate training into onboarding processes for all new employees and contractors.
+Establish a system for tracking training completion and maintaining records.
+Conduct Training Assessments
+
+Challenge
+
+Evaluating the effectiveness of training programs and identifying areas for improvement.
+Solution
+
+Conduct regular assessments (e.g., knowledge tests, surveys, simulated phishing attacks) to measure employee understanding and retention of training materials.
+Analyse assessment results to identify areas for improvement and adjust training programs accordingly.
+Promote Security Awareness
+
+Challenge
+
+Maintaining employee awareness of security threats and best practices on an ongoing basis.
+Solution
+
+Utilise various communication channels (e.g., newsletters, posters, email alerts, security bulletins) to disseminate security information and reminders.
+Conduct regular security campaigns and awareness events.
+Address Security Incidents
+
+Challenge
+
+Ensuring employees know how to report and respond to security incidents.
+Solution
+
+Develop clear incident reporting procedures and provide employees with easy-to-use reporting mechanisms.
+Conduct regular incident response drills and simulations to test employee preparedness.
+Manage Training Records
+
+Challenge
+
+Maintaining accurate and up-to-date training records for all employees.
+Solution
+
+Implement a centralised training records management system.
+Ensure all training records are properly documented, including dates, topics, and completion status.
+Continual Improvement
+
+Challenge
+
+Regularly reviewing and improving the information security awareness and training program.
+Solution
+
+Conduct periodic reviews of the training program to assess its effectiveness and identify areas for improvement.
+Gather feedback from employees and stakeholders to identify training needs and preferences.
+Address Cultural Factors
+
+Challenge
+
+Ensuring that the information security culture within the organisation supports and encourages secure behaviour.
+Solution
+
+Promote a culture of security awareness and responsibility at all levels of the organisation.
+Lead by example and demonstrate commitment to information security from senior management.
+Compliance with Legal and Regulatory Requirements
+
+Challenge
+
+Ensuring that the information security awareness and training program complies with all relevant legal and regulatory requirements.
+Solution
+
+Stay informed of all applicable laws and regulations related to information security.
+Regularly review and update the training program to ensure compliance.
+How to pass the audit
+
+To comply with ISO 27001 Annex A 6.3 you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to:
+Consider a specialist training tool
+Write, sign off, implement and communicate your information security awareness plan
+Write, sign off, implement and communicate your information security security plan
+Implement your training and awareness that includes the consequences of violating policies and procedures
+Implement your communication plan to communicate to relevant and interested parties
+Ensure that the training and awareness process meets all laws as well as local laws and regulations
+Keep records of all training and awareness as evidence
+Consider the ISO 27001 competency matrix to ensure you have the required skills for information security
+Implement a process of internal audit that checks that the appropriate controls are in place and effective and where they are not follow the continual improvement process to address the risks
+What the auditor will check
+
+The audit is going to check a number of areas for compliance with Annex A 6.3. Lets go through them
+1. That you have done information security training and awareness
+
+The auditor will meet with the HR and those responsible for training and awareness and check that it there is a plan and that you are following that plan. The easiest way to do this is get a specialist training tool but you can do it manually. Just be sure to be able to evidence that it happened, people understood it and you have records. They will check this training for things like annual training on Data Protection and Information Security and look at the onboarding process to see how you address it for new hires.
+2. That you have communicated the training and awareness process
+
+The process needs to be communicated to relevant and interested parties. The audit will check that the training and awareness plan and the communication plan and look for past evidence that this has happened.
+3. That people are aware of their responsibilities
+
+The audit is going to check for documented processes, documented topic specific policy and these have been communicated and people have been trained on what is required of them.
+Audit Checklist
+
+ISO 27001 Annex A 6.3 Information Security Awareness, Education And Training Audit Checklist:
+Review Awareness & Training Program Documentation
+
+Examine the documented information security awareness and training program, including objectives, scope, target audience, and training materials.
+Verify that the program aligns with the organisation’s risk assessment and information security policy.
+Assess Training Needs Analysis
+
+Determine if the organisation has conducted a thorough training needs analysis to identify specific training requirements for different roles and responsibilities.
+Evaluate whether the analysis considers factors like job roles, access levels, and potential threats.
+Examine Training Materials
+
+Review training materials for accuracy, relevance, and effectiveness in conveying key information security concepts.
+Check for clarity, conciseness, and appropriate language for the target audience.
+Verify Training Delivery Methods
+
+Evaluate the variety and effectiveness of training delivery methods used (e.g., online courses, workshops, simulations, presentations).
+Assess whether the chosen methods are engaging and suitable for different learning styles.
+Assess Training Records
+
+Verify the accuracy and completeness of training records, including attendance, completion dates, and assessment results.
+Ensure that records are maintained securely and for the appropriate retention period.
+Evaluate Training Effectiveness
+
+Review the methods used to evaluate training effectiveness (e.g., knowledge tests, surveys, simulated phishing attacks).
+Analyse the results of these evaluations to identify areas for improvement in the training program.
+Assess Awareness Campaigns
+
+Examine the methods used to promote ongoing security awareness (e.g., newsletters, posters, security bulletins).
+Evaluate the effectiveness of these campaigns in raising employee awareness and changing behaviour.
+Interview Key Personnel
+
+Conduct interviews with key personnel involved in the training program, including trainers, managers, and employees.
+Gather their perspectives on the effectiveness and relevance of the training.
+Observe Training Sessions
+
+If possible, observe training sessions to assess the delivery style, participant engagement, and overall quality of the training.
+Check for Compliance with Legal and Regulatory Requirements
+
+Verify that the information security awareness and training program complies with all relevant legal and regulatory requirements.
+Common Mistakes
+
+In my experience, the top 3 mistakes people make for ISO 27001 Information Security Awareness Education and Training are
+1. You have no evidence that anything actually happened
+
+You need to keep records and minutes of everything. You need a paper trail to show it was done. Make sure you have updated communication plans and training plans and you can evidence that it took place. If it isn’t written down it didn’t happen.
+2. One or more members of your team haven’t done what they should have done
+
+Prior to the audit check that all members of the team have done what they should have. Do they know where the process documents are in relation to the training and awareness process? Has everyone done the training they should have done in the time they should have done it? Is the communication plan up to date with evidence that communications on awareness have taken place. Do a pre audit as close to the audit as you can that checks the training and awareness process and the HR team that will be involved. Assuming they are doing the right thing is a recipe for disaster. Check!
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

@@ -1,0 +1,1908 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": "UK Gambling Commission",
+  "document_type": "Cross-Reference Mapping Document",
+  "document_reference": "CRM-2024",
+  "last_updated": "2025-10-23",
+  "document_purpose": "Comprehensive mapping linking LCCP provisions to supporting ISO 27001 controls and RTS technical specifications",
+  "mapping_overview": {
+    "total_lccp_provisions": 42,
+    "total_iso27001_controls": 40,
+    "total_rts_chapters": 17,
+    "mapping_relationships": "Each LCCP provision mapped to supporting ISO 27001 controls and RTS specifications that enable compliance"
+  },
+  "lccp_operating_licence_conditions_mappings": [
+    {
+      "lccp_section": "Section 1 - Qualified Persons and Personal Licences",
+      "mappings": [
+        {
+          "lccp_id": "1.1.1",
+          "lccp_title": "Qualified Persons - Qualifying Position",
+          "lccp_requirement": "Requirement for qualified persons - qualifying position",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to qualified persons - qualifying position"
+            },
+            {
+              "control_id": "A_5.16",
+              "control_title": "ISO 27001 A_5.16",
+              "relationship": "Related to qualified persons - qualifying position"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "ISO 27001 A_6.3",
+              "relationship": "Related to qualified persons - qualifying position"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for qualified persons - qualifying position"
+            }
+          ]
+        },
+        {
+          "lccp_id": "1.1.2",
+          "lccp_title": "Qualified persons \u2013 tracks",
+          "lccp_requirement": "Requirement for qualified persons \u2013 tracks",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to qualified persons \u2013 tracks"
+            },
+            {
+              "control_id": "A_5.16",
+              "control_title": "ISO 27001 A_5.16",
+              "relationship": "Related to qualified persons \u2013 tracks"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "ISO 27001 A_6.3",
+              "relationship": "Related to qualified persons \u2013 tracks"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for qualified persons \u2013 tracks"
+            }
+          ]
+        },
+        {
+          "lccp_id": "1.2.1",
+          "lccp_title": "Specified management offices \u2013 personal management licences",
+          "lccp_requirement": "Requirement for specified management offices \u2013 personal management licences",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to specified management offices \u2013 personal management licences"
+            },
+            {
+              "control_id": "A_5.16",
+              "control_title": "ISO 27001 A_5.16",
+              "relationship": "Related to specified management offices \u2013 personal management licences"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "1.2.2",
+          "lccp_title": "Specified management offices \u2013 casino personal functional licences",
+          "lccp_requirement": "Requirement for specified management offices \u2013 casino personal functional licences",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to specified management offices \u2013 casino personal functional licences"
+            },
+            {
+              "control_id": "A_5.16",
+              "control_title": "ISO 27001 A_5.16",
+              "relationship": "Related to specified management offices \u2013 casino personal functional licences"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "1.2.3",
+          "lccp_title": "Specified management offices \u2013 lottery personal management licences",
+          "lccp_requirement": "Requirement for specified management offices \u2013 lottery personal management licences",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to specified management offices \u2013 lottery personal management licences"
+            },
+            {
+              "control_id": "A_5.16",
+              "control_title": "ISO 27001 A_5.16",
+              "relationship": "Related to specified management offices \u2013 lottery personal management licences"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 2 - Technical Standards, Equipment and Gambling Software",
+      "mappings": [
+        {
+          "lccp_id": "2.2.1",
+          "lccp_title": "Gambling Software",
+          "lccp_requirement": "Requirement for gambling software",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to gambling software"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "ISO 27001 A_5.19",
+              "relationship": "Related to gambling software"
+            },
+            {
+              "control_id": "A_5.20",
+              "control_title": "ISO 27001 A_5.20",
+              "relationship": "Related to gambling software"
+            },
+            {
+              "control_id": "A_5.22",
+              "control_title": "ISO 27001 A_5.22",
+              "relationship": "Related to gambling software"
+            },
+            {
+              "control_id": "A_8.30",
+              "control_title": "ISO 27001 A_8.30",
+              "relationship": "Related to gambling software"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_16",
+              "rts_title": "RTS RTS_16",
+              "relationship": "Technical specification for gambling software"
+            }
+          ]
+        },
+        {
+          "lccp_id": "2.3.1",
+          "lccp_title": "Technical Standards and Equipment Specifications",
+          "lccp_requirement": "Requirement for technical standards and equipment specifications",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to technical standards and equipment specifications"
+            },
+            {
+              "control_id": "A_8.1",
+              "control_title": "ISO 27001 A_8.1",
+              "relationship": "Related to technical standards and equipment specifications"
+            },
+            {
+              "control_id": "A_8.27",
+              "control_title": "ISO 27001 A_8.27",
+              "relationship": "Related to technical standards and equipment specifications"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for technical standards and equipment specifications"
+            },
+            {
+              "rts_id": "rts_16",
+              "rts_title": "RTS RTS_16",
+              "relationship": "Technical specification for technical standards and equipment specifications"
+            }
+          ]
+        },
+        {
+          "lccp_id": "2.3.2",
+          "lccp_title": "Bingo equipment specifications",
+          "lccp_requirement": "Requirement for bingo equipment specifications",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to bingo equipment specifications"
+            },
+            {
+              "control_id": "A_8.1",
+              "control_title": "ISO 27001 A_8.1",
+              "relationship": "Related to bingo equipment specifications"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for bingo equipment specifications"
+            }
+          ]
+        },
+        {
+          "lccp_id": "2.3.3",
+          "lccp_title": "Casino equipment specifications",
+          "lccp_requirement": "Requirement for casino equipment specifications",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to casino equipment specifications"
+            },
+            {
+              "control_id": "A_8.1",
+              "control_title": "ISO 27001 A_8.1",
+              "relationship": "Related to casino equipment specifications"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for casino equipment specifications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 3 - Peer to Peer Gaming, Other Networks and Hosting",
+      "mappings": [
+        {
+          "lccp_id": "3.1.1",
+          "lccp_title": "Peer to Peer Gaming",
+          "lccp_requirement": "Requirement for peer to peer gaming",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to peer to peer gaming"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "ISO 27001 A_5.19",
+              "relationship": "Related to peer to peer gaming"
+            },
+            {
+              "control_id": "A_5.23",
+              "control_title": "ISO 27001 A_5.23",
+              "relationship": "Related to peer to peer gaming"
+            },
+            {
+              "control_id": "A_8.27",
+              "control_title": "ISO 27001 A_8.27",
+              "relationship": "Related to peer to peer gaming"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for peer to peer gaming"
+            },
+            {
+              "rts_id": "rts_16",
+              "rts_title": "RTS RTS_16",
+              "relationship": "Technical specification for peer to peer gaming"
+            }
+          ]
+        },
+        {
+          "lccp_id": "3.1.2",
+          "lccp_title": "Other Networks",
+          "lccp_requirement": "Requirement for other networks",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to other networks"
+            },
+            {
+              "control_id": "A_5.23",
+              "control_title": "ISO 27001 A_5.23",
+              "relationship": "Related to other networks"
+            },
+            {
+              "control_id": "A_8.27",
+              "control_title": "ISO 27001 A_8.27",
+              "relationship": "Related to other networks"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for other networks"
+            }
+          ]
+        },
+        {
+          "lccp_id": "3.1.3",
+          "lccp_title": "Hosting",
+          "lccp_requirement": "Requirement for hosting",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to hosting"
+            },
+            {
+              "control_id": "A_5.23",
+              "control_title": "ISO 27001 A_5.23",
+              "relationship": "Related to hosting"
+            },
+            {
+              "control_id": "A_8.27",
+              "control_title": "ISO 27001 A_8.27",
+              "relationship": "Related to hosting"
+            },
+            {
+              "control_id": "A_8.32",
+              "control_title": "ISO 27001 A_8.32",
+              "relationship": "Related to hosting"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for hosting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 4 - Protection of Customer Funds",
+      "mappings": [
+        {
+          "lccp_id": "4.1.1",
+          "lccp_title": "Segregation of Funds",
+          "lccp_requirement": "Requirement for segregation of funds",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to segregation of funds"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to segregation of funds"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to segregation of funds"
+            },
+            {
+              "control_id": "A_8.2",
+              "control_title": "ISO 27001 A_8.2",
+              "relationship": "Related to segregation of funds"
+            },
+            {
+              "control_id": "A_5.18",
+              "control_title": "ISO 27001 A_5.18",
+              "relationship": "Related to segregation of funds"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for segregation of funds"
+            }
+          ]
+        },
+        {
+          "lccp_id": "4.2.1",
+          "lccp_title": "Insolvency Protection",
+          "lccp_requirement": "Requirement for insolvency protection",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to insolvency protection"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to insolvency protection"
+            },
+            {
+              "control_id": "A_5.23",
+              "control_title": "ISO 27001 A_5.23",
+              "relationship": "Related to insolvency protection"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for insolvency protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 5 - Payment",
+      "mappings": [
+        {
+          "lccp_id": "5.1.1",
+          "lccp_title": "Payment Methods",
+          "lccp_requirement": "Requirement for payment methods",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to payment methods"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "ISO 27001 A_5.19",
+              "relationship": "Related to payment methods"
+            },
+            {
+              "control_id": "A_5.20",
+              "control_title": "ISO 27001 A_5.20",
+              "relationship": "Related to payment methods"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to payment methods"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for payment methods"
+            },
+            {
+              "rts_id": "rts_02",
+              "rts_title": "RTS RTS_02",
+              "relationship": "Technical specification for payment methods"
+            }
+          ]
+        },
+        {
+          "lccp_id": "5.1.2",
+          "lccp_title": "Payment methods and services",
+          "lccp_requirement": "Requirement for payment methods and services",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to payment methods and services"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "ISO 27001 A_5.19",
+              "relationship": "Related to payment methods and services"
+            },
+            {
+              "control_id": "A_5.20",
+              "control_title": "ISO 27001 A_5.20",
+              "relationship": "Related to payment methods and services"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to payment methods and services"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for payment methods and services"
+            },
+            {
+              "rts_id": "rts_02",
+              "rts_title": "RTS RTS_02",
+              "relationship": "Technical specification for payment methods and services"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 6 - Provision of Credit by Licensees and Use of Credit Cards",
+      "mappings": [
+        {
+          "lccp_id": "6.1.1",
+          "lccp_title": "Credit Prohibition",
+          "lccp_requirement": "Requirement for credit prohibition",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to credit prohibition"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "ISO 27001 A_5.19",
+              "relationship": "Related to credit prohibition"
+            },
+            {
+              "control_id": "A_5.20",
+              "control_title": "ISO 27001 A_5.20",
+              "relationship": "Related to credit prohibition"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for credit prohibition"
+            }
+          ]
+        },
+        {
+          "lccp_id": "6.1.2",
+          "lccp_title": "Use of credit cards",
+          "lccp_requirement": "Requirement for use of credit cards",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to use of credit cards"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "ISO 27001 A_5.19",
+              "relationship": "Related to use of credit cards"
+            },
+            {
+              "control_id": "A_5.20",
+              "control_title": "ISO 27001 A_5.20",
+              "relationship": "Related to use of credit cards"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to use of credit cards"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for use of credit cards"
+            },
+            {
+              "rts_id": "rts_02",
+              "rts_title": "RTS RTS_02",
+              "relationship": "Technical specification for use of credit cards"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 7 - General 'Fair and Open' Provisions",
+      "mappings": [
+        {
+          "lccp_id": "7.1.1",
+          "lccp_title": "Fair Terms and Consumer Rights",
+          "lccp_requirement": "Requirement for fair terms and consumer rights",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to fair terms and consumer rights"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to fair terms and consumer rights"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "ISO 27001 A_6.3",
+              "relationship": "Related to fair terms and consumer rights"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for fair terms and consumer rights"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 8 - Display of Licensed Status",
+      "mappings": [
+        {
+          "lccp_id": "8.1.1",
+          "lccp_title": "Remote Gambling - Licence Display",
+          "lccp_requirement": "Requirement for remote gambling - licence display",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to remote gambling - licence display"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to remote gambling - licence display"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for remote gambling - licence display"
+            },
+            {
+              "rts_id": "rts_16",
+              "rts_title": "RTS RTS_16",
+              "relationship": "Technical specification for remote gambling - licence display"
+            }
+          ]
+        },
+        {
+          "lccp_id": "8.1.2",
+          "lccp_title": "Display of licensed status \u2013 B2B operators",
+          "lccp_requirement": "Requirement for display of licensed status \u2013 b2b operators",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to display of licensed status \u2013 b2b operators"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to display of licensed status \u2013 b2b operators"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_16",
+              "rts_title": "RTS RTS_16",
+              "relationship": "Technical specification for display of licensed status \u2013 b2b operators"
+            }
+          ]
+        },
+        {
+          "lccp_id": "8.1.3",
+          "lccp_title": "Display of licensed status \u2013 societies and local authorities",
+          "lccp_requirement": "Requirement for display of licensed status \u2013 societies and local authorities",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to display of licensed status \u2013 societies and local authorities"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to display of licensed status \u2013 societies and local authorities"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for display of licensed status \u2013 societies and local authorities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 9 - Casino Games and Prize Games",
+      "mappings": [
+        {
+          "lccp_id": "9.1.1",
+          "lccp_title": "Casino Games Rules",
+          "lccp_requirement": "Requirement for casino games rules",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to casino games rules"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to casino games rules"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to casino games rules"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for casino games rules"
+            },
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for casino games rules"
+            }
+          ]
+        },
+        {
+          "lccp_id": "9.1.2",
+          "lccp_title": "Bingo Prize Games",
+          "lccp_requirement": "Requirement for bingo prize games",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to bingo prize games"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to bingo prize games"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for bingo prize games"
+            },
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for bingo prize games"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 10 - Tipping of Casino Employees",
+      "mappings": [
+        {
+          "lccp_id": "10.1.1",
+          "lccp_title": "Tipping - Tronc System",
+          "lccp_requirement": "Requirement for tipping - tronc system",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to tipping - tronc system"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to tipping - tronc system"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to tipping - tronc system"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 11 - Lotteries",
+      "mappings": [
+        {
+          "lccp_id": "11.1.1",
+          "lccp_title": "Lotteries - Non-Commercial Societies and Local Authorities",
+          "lccp_requirement": "Requirement for lotteries - non-commercial societies and local authorities",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to lotteries - non-commercial societies and local authorities"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to lotteries - non-commercial societies and local authorities"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to lotteries - non-commercial societies and local authorities"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for lotteries - non-commercial societies and local authorities"
+            },
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for lotteries - non-commercial societies and local authorities"
+            }
+          ]
+        },
+        {
+          "lccp_id": "11.2.1",
+          "lccp_title": "Lotteries - External Lottery Managers",
+          "lccp_requirement": "Requirement for lotteries - external lottery managers",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to lotteries - external lottery managers"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "ISO 27001 A_5.19",
+              "relationship": "Related to lotteries - external lottery managers"
+            },
+            {
+              "control_id": "A_5.20",
+              "control_title": "ISO 27001 A_5.20",
+              "relationship": "Related to lotteries - external lottery managers"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for lotteries - external lottery managers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 12 - Anti-Money Laundering",
+      "mappings": [
+        {
+          "lccp_id": "12.1.1",
+          "lccp_title": "AML Risk Assessment and Controls",
+          "lccp_requirement": "Requirement for aml risk assessment and controls",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to aml risk assessment and controls"
+            },
+            {
+              "control_id": "A_5.16",
+              "control_title": "ISO 27001 A_5.16",
+              "relationship": "Related to aml risk assessment and controls"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to aml risk assessment and controls"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to aml risk assessment and controls"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for aml risk assessment and controls"
+            },
+            {
+              "rts_id": "rts_02",
+              "rts_title": "RTS RTS_02",
+              "relationship": "Technical specification for aml risk assessment and controls"
+            }
+          ]
+        },
+        {
+          "lccp_id": "12.1.2",
+          "lccp_title": "Anti-money laundering - Measures for operators based in foreign jurisdictions",
+          "lccp_requirement": "Requirement for anti-money laundering - measures for operators based in foreign jurisdictions",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to anti-money laundering - measures for operators based in foreign jurisdictions"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "ISO 27001 A_5.19",
+              "relationship": "Related to anti-money laundering - measures for operators based in foreign jurisdictions"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to anti-money laundering - measures for operators based in foreign jurisdictions"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to anti-money laundering - measures for operators based in foreign jurisdictions"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for anti-money laundering - measures for operators based in foreign jurisdictions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 13 - Pool Betting",
+      "mappings": [
+        {
+          "lccp_id": "13.1.1",
+          "lccp_title": "Pool Betting - Horserace and Dog Race",
+          "lccp_requirement": "Requirement for pool betting - horserace and dog race",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to pool betting - horserace and dog race"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to pool betting - horserace and dog race"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to pool betting - horserace and dog race"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for pool betting - horserace and dog race"
+            },
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for pool betting - horserace and dog race"
+            }
+          ]
+        },
+        {
+          "lccp_id": "13.1.2",
+          "lccp_title": "Pool betting \u2013 football pools",
+          "lccp_requirement": "Requirement for pool betting \u2013 football pools",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to pool betting \u2013 football pools"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to pool betting \u2013 football pools"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to pool betting \u2013 football pools"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for pool betting \u2013 football pools"
+            },
+            {
+              "rts_id": "rts_07",
+              "rts_title": "RTS RTS_07",
+              "relationship": "Technical specification for pool betting \u2013 football pools"
+            }
+          ]
+        },
+        {
+          "lccp_id": "13.1.3",
+          "lccp_title": "Pool betting \u2013 annual accounts",
+          "lccp_requirement": "Requirement for pool betting \u2013 annual accounts",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to pool betting \u2013 annual accounts"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to pool betting \u2013 annual accounts"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 14 - Access to Premises",
+      "mappings": [
+        {
+          "lccp_id": "14.1.1",
+          "lccp_title": "Premises Access",
+          "lccp_requirement": "Requirement for premises access",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to premises access"
+            },
+            {
+              "control_id": "A_8.1",
+              "control_title": "ISO 27001 A_8.1",
+              "relationship": "Related to premises access"
+            },
+            {
+              "control_id": "A_8.2",
+              "control_title": "ISO 27001 A_8.2",
+              "relationship": "Related to premises access"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 15 - Information Requirements",
+      "mappings": [
+        {
+          "lccp_id": "15.1.1",
+          "lccp_title": "Offence Information",
+          "lccp_requirement": "Requirement for offence information",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to offence information"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to offence information"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to offence information"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for offence information"
+            }
+          ]
+        },
+        {
+          "lccp_id": "15.1.2",
+          "lccp_title": "Reporting suspicion of offences etc \u2013 betting licences",
+          "lccp_requirement": "Requirement for reporting suspicion of offences etc \u2013 betting licences",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to reporting suspicion of offences etc \u2013 betting licences"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to reporting suspicion of offences etc \u2013 betting licences"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for reporting suspicion of offences etc \u2013 betting licences"
+            }
+          ]
+        },
+        {
+          "lccp_id": "15.1.3",
+          "lccp_title": "Reporting of systematic or organised money lending",
+          "lccp_requirement": "Requirement for reporting of systematic or organised money lending",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to reporting of systematic or organised money lending"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to reporting of systematic or organised money lending"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "15.2.1",
+          "lccp_title": "Key Events",
+          "lccp_requirement": "Requirement for key events",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to key events"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to key events"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "15.2.2",
+          "lccp_title": "Other Reportable Events",
+          "lccp_requirement": "Requirement for other reportable events",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to other reportable events"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to other reportable events"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "15.2.3",
+          "lccp_title": "Other Reportable Events - Money Laundering, Terrorist Financing",
+          "lccp_requirement": "Requirement for other reportable events - money laundering, terrorist financing",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to other reportable events - money laundering, terrorist financing"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to other reportable events - money laundering, terrorist financing"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to other reportable events - money laundering, terrorist financing"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "15.3.1",
+          "lccp_title": "General and Regulatory Returns",
+          "lccp_requirement": "Requirement for general and regulatory returns",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to general and regulatory returns"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "ISO 27001 A_8.15",
+              "relationship": "Related to general and regulatory returns"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 16 - Responsible Placement of Digital Adverts",
+      "mappings": [
+        {
+          "lccp_id": "16.1.1",
+          "lccp_title": "Responsible Placement of Digital Adverts",
+          "lccp_requirement": "Requirement for responsible placement of digital adverts",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to responsible placement of digital adverts"
+            },
+            {
+              "control_id": "A_5.2",
+              "control_title": "ISO 27001 A_5.2",
+              "relationship": "Related to responsible placement of digital adverts"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "ISO 27001 A_6.3",
+              "relationship": "Related to responsible placement of digital adverts"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_03",
+              "rts_title": "RTS RTS_03",
+              "relationship": "Technical specification for responsible placement of digital adverts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 17 - Customer Identity Verification",
+      "mappings": [
+        {
+          "lccp_id": "17.1.1",
+          "lccp_title": "Customer Identity Verification",
+          "lccp_requirement": "Requirement for customer identity verification",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "ISO 27001 A_5.1",
+              "relationship": "Related to customer identity verification"
+            },
+            {
+              "control_id": "A_5.16",
+              "control_title": "ISO 27001 A_5.16",
+              "relationship": "Related to customer identity verification"
+            },
+            {
+              "control_id": "A_8.5",
+              "control_title": "ISO 27001 A_8.5",
+              "relationship": "Related to customer identity verification"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "ISO 27001 A_8.24",
+              "relationship": "Related to customer identity verification"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "RTS RTS_01",
+              "relationship": "Technical specification for customer identity verification"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lccp_code_of_practice_mappings": [
+    {
+      "lccp_section": "Section 1 - General",
+      "mappings": [
+        {
+          "lccp_id": "1.1.1",
+          "lccp_title": "Cooperation with the Commission",
+          "lccp_requirement": "Work openly with Commission and disclose material information",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy supporting Commission cooperation and regulatory transparency"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "Awareness and Training",
+              "relationship": "Staff training on regulatory obligations and Commission liaison"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "1.1.2",
+          "lccp_title": "Responsibility for Third Parties",
+          "lccp_requirement": "Licensees responsible for third party actions; require compliance in contracts",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy governing third-party management and oversight"
+            },
+            {
+              "control_id": "A_5.19",
+              "control_title": "Supplier Relationships",
+              "relationship": "Third-party relationship management and governance"
+            },
+            {
+              "control_id": "A_5.20",
+              "control_title": "Supplier Agreements",
+              "relationship": "Contractual requirements for third parties"
+            },
+            {
+              "control_id": "A_5.22",
+              "control_title": "Supplier Monitoring",
+              "relationship": "Monitoring third-party compliance with requirements"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 3.1 - Combating Problem Gambling",
+      "mappings": [
+        {
+          "lccp_id": "3.1.1",
+          "lccp_title": "Combating Problem Gambling",
+          "lccp_requirement": "Have and implement SR gambling policies and procedures",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Information security policy supporting problem gambling controls"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "Awareness and Training",
+              "relationship": "Staff training on problem gambling identification and response"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_12",
+              "rts_title": "Financial Limits",
+              "relationship": "Technical implementation of betting and stake limits"
+            },
+            {
+              "rts_id": "rts_13",
+              "rts_title": "Time Requirements and Reality Checks",
+              "relationship": "Technical implementation of session monitoring and alerts"
+            },
+            {
+              "rts_id": "rts_14",
+              "rts_title": "Responsible Product Design",
+              "relationship": "Product design features to minimize harm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 3.2 - Access to Gambling by Children",
+      "mappings": [
+        {
+          "lccp_id": "3.2.1",
+          "lccp_title": "Casinos SR Code - Preventing Underage Gambling",
+          "lccp_requirement": "Casinos must prevent underage gambling through age verification and supervision",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy governing age verification procedures"
+            },
+            {
+              "control_id": "A_8.5",
+              "control_title": "Secure Authentication",
+              "relationship": "Secure identity verification systems"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "Awareness and Training",
+              "relationship": "Staff training on age verification procedures"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "3.2.11",
+          "lccp_title": "Remote SR Code - Preventing Underage Gambling",
+          "lccp_requirement": "Remote operators must verify age before deposit, free-play, or wagering",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy on remote age verification"
+            },
+            {
+              "control_id": "A_8.5",
+              "control_title": "Secure Authentication",
+              "relationship": "Secure age verification systems"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "Use of Cryptography",
+              "relationship": "Encryption of identity verification data"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "Customer Account Information",
+              "relationship": "Age verification data recording and validation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 3.3 - Gambling Management Tools",
+      "mappings": [
+        {
+          "lccp_id": "3.3.1",
+          "lccp_title": "Responsible Gambling Information",
+          "lccp_requirement": "Make RG information readily available to all customers",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy on RG information disclosure"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 3.4 - Customer Interaction",
+      "mappings": [
+        {
+          "lccp_id": "3.4.3",
+          "lccp_title": "Remote Customer Interaction",
+          "lccp_requirement": "Implement effective customer interaction systems to identify and act on harm indicators",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy governing customer interaction and monitoring systems"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "Logging",
+              "relationship": "Logging of customer activity and interaction records"
+            },
+            {
+              "control_id": "A_8.1",
+              "control_title": "User Endpoint Device Security",
+              "relationship": "Security of customer interaction systems"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "Awareness and Training",
+              "relationship": "Staff training on customer interaction procedures"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "Customer Account Information",
+              "relationship": "Customer data captured for harm monitoring"
+            },
+            {
+              "rts_id": "rts_12",
+              "rts_title": "Financial Limits",
+              "relationship": "Financial limit monitoring and alerts"
+            },
+            {
+              "rts_id": "rts_13",
+              "rts_title": "Time Requirements and Reality Checks",
+              "relationship": "Session monitoring and player alerts"
+            }
+          ]
+        },
+        {
+          "lccp_id": "3.4.4",
+          "lccp_title": "Financial Vulnerability Check",
+          "lccp_requirement": "Conduct financial vulnerability checks for customers exceeding spending thresholds",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy on financial vulnerability assessment"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "Use of Cryptography",
+              "relationship": "Encryption of financial data used in vulnerability checks"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "Logging",
+              "relationship": "Logging of vulnerability assessments"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "Customer Account Information",
+              "relationship": "Customer spend tracking for threshold detection"
+            },
+            {
+              "rts_id": "rts_02",
+              "rts_title": "Displaying Transactions",
+              "relationship": "Transaction data for vulnerability assessment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 3.5 - Self-Exclusion",
+      "mappings": [
+        {
+          "lccp_id": "3.5.1",
+          "lccp_title": "Self-Exclusion - Non-Remote SR Code",
+          "lccp_requirement": "Have self-exclusion procedures and prevent excluded individuals from gambling",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy governing self-exclusion procedures"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "Logging",
+              "relationship": "Audit trail of self-exclusions and access attempts"
+            },
+            {
+              "control_id": "A_5.18",
+              "control_title": "Access Rights",
+              "relationship": "Preventing access for excluded individuals"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "Awareness and Training",
+              "relationship": "Staff training on self-exclusion procedures"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "3.5.3",
+          "lccp_title": "Self-Exclusion - Remote SR Code",
+          "lccp_requirement": "Have remote self-exclusion procedures via customer services and automated process",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy on remote self-exclusion"
+            },
+            {
+              "control_id": "A_8.15",
+              "control_title": "Logging",
+              "relationship": "Logging of self-exclusion requests and enforcement"
+            },
+            {
+              "control_id": "A_5.18",
+              "control_title": "Access Rights",
+              "relationship": "Automated prevention of excluded customer access"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "Customer Account Information",
+              "relationship": "Exclusion status tracking in customer records"
+            }
+          ]
+        },
+        {
+          "lccp_id": "3.5.5",
+          "lccp_title": "Remote Multi-Operator Self-Exclusion SR Code",
+          "lccp_requirement": "Participate in national multi-operator self-exclusion scheme",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.19",
+              "control_title": "Supplier Relationships",
+              "relationship": "Relationship with multi-operator scheme provider"
+            },
+            {
+              "control_id": "A_5.20",
+              "control_title": "Supplier Agreements",
+              "relationship": "Agreement with scheme operator"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "Use of Cryptography",
+              "relationship": "Secure data sharing with scheme"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "Customer Account Information",
+              "relationship": "Multi-operator exclusion data integration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 3.7 - Provision of Credit",
+      "mappings": [
+        {
+          "lccp_id": "3.7.1",
+          "lccp_title": "Provision of Credit",
+          "lccp_requirement": "Strict controls on credit checking, limits, and vulnerable person protections",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy on credit provision and management"
+            },
+            {
+              "control_id": "A_8.24",
+              "control_title": "Use of Cryptography",
+              "relationship": "Encryption of credit data"
+            },
+            {
+              "control_id": "A_5.18",
+              "control_title": "Access Rights",
+              "relationship": "Access controls for credit systems"
+            }
+          ],
+          "supporting_rts": [
+            {
+              "rts_id": "rts_01",
+              "rts_title": "Customer Account Information",
+              "relationship": "Credit limit recording and tracking"
+            },
+            {
+              "rts_id": "rts_12",
+              "rts_title": "Financial Limits",
+              "relationship": "Credit limit enforcement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lccp_section": "Section 7 - Fair and Open Provisions",
+      "mappings": [
+        {
+          "lccp_id": "7.1.1",
+          "lccp_title": "Fair and Transparent Terms",
+          "lccp_requirement": "Terms must be fair, transparent, and comply with consumer protection laws",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy supporting fair terms and transparency"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    }
+  ],
+  "lccp_personal_licence_mappings": [
+    {
+      "lccp_section": "Personal Licence Conditions",
+      "mappings": [
+        {
+          "lccp_id": "1.1.1",
+          "lccp_title": "Responsibility to Avoid Breach",
+          "lccp_requirement": "Personal licence holders must not cause operating/premises licence holder breach",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policies supporting personal licence holder responsibilities"
+            },
+            {
+              "control_id": "A_6.3",
+              "control_title": "Awareness and Training",
+              "relationship": "Training on personal licence responsibilities"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "1.1.2",
+          "lccp_title": "Keep Informed of Regulatory Developments",
+          "lccp_requirement": "Personal licence holders must stay current with legislation, codes, and guidance",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_6.3",
+              "control_title": "Awareness and Training",
+              "relationship": "Ongoing professional development and training requirements"
+            },
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy supporting continuous learning and competence maintenance"
+            }
+          ],
+          "supporting_rts": []
+        },
+        {
+          "lccp_id": "1.2.1",
+          "lccp_title": "Notification of Key Events",
+          "lccp_requirement": "Notify Commission of key events within 10 working days",
+          "supporting_iso27001_controls": [
+            {
+              "control_id": "A_6.8",
+              "control_title": "Information Security Event Reporting",
+              "relationship": "Incident reporting procedures and timelines"
+            },
+            {
+              "control_id": "A_5.1",
+              "control_title": "Policies for Information Security",
+              "relationship": "Policy on key event identification and notification"
+            }
+          ],
+          "supporting_rts": []
+        }
+      ]
+    }
+  ],
+  "rts_to_iso27001_mappings": [
+    {
+      "rts_chapter": "Chapter 1 - Customer Account Information",
+      "supporting_iso27001_controls": [
+        {
+          "control_id": "A_8.1",
+          "control_title": "User Endpoint Device Security",
+          "relationship": "Security of systems storing customer account data"
+        },
+        {
+          "control_id": "A_8.24",
+          "control_title": "Use of Cryptography",
+          "relationship": "Encryption of customer account information"
+        },
+        {
+          "control_id": "A_8.15",
+          "control_title": "Logging",
+          "relationship": "Audit trails of account data access and changes"
+        },
+        {
+          "control_id": "A_5.18",
+          "control_title": "Access Rights",
+          "relationship": "Role-based access to customer account systems"
+        }
+      ]
+    },
+    {
+      "rts_chapter": "Chapter 7 - Generation of Random Outcomes",
+      "supporting_iso27001_controls": [
+        {
+          "control_id": "A_8.27",
+          "control_title": "Secure Systems Architecture and Engineering Principles",
+          "relationship": "Secure design of RNG systems"
+        },
+        {
+          "control_id": "A_8.29",
+          "control_title": "Security Testing in Development and Acceptance",
+          "relationship": "RNG testing and certification procedures"
+        },
+        {
+          "control_id": "A_8.30",
+          "control_title": "Outsourced Development",
+          "relationship": "Management of outsourced RNG development"
+        },
+        {
+          "control_id": "A_8.15",
+          "control_title": "Logging",
+          "relationship": "RNG audit trails and seeding records"
+        }
+      ]
+    },
+    {
+      "rts_chapter": "Chapter 12 - Financial Limits",
+      "supporting_iso27001_controls": [
+        {
+          "control_id": "A_5.1",
+          "control_title": "Policies for Information Security",
+          "relationship": "Policy governing financial limit implementation"
+        },
+        {
+          "control_id": "A_8.15",
+          "control_title": "Logging",
+          "relationship": "Logging of limit breaches and override events"
+        },
+        {
+          "control_id": "A_8.1",
+          "control_title": "User Endpoint Device Security",
+          "relationship": "Security of limit-setting systems"
+        }
+      ]
+    },
+    {
+      "rts_chapter": "Chapter 13 - Time Requirements and Reality Checks",
+      "supporting_iso27001_controls": [
+        {
+          "control_id": "A_8.17",
+          "control_title": "Clock Synchronisation",
+          "relationship": "Accurate time tracking for reality checks"
+        },
+        {
+          "control_id": "A_8.15",
+          "control_title": "Logging",
+          "relationship": "Logging of session times and alert delivery"
+        },
+        {
+          "control_id": "A_8.1",
+          "control_title": "User Endpoint Device Security",
+          "relationship": "Security of timer and alert delivery systems"
+        }
+      ]
+    }
+  ],
+  "compliance_mapping_guide": {
+    "how_to_use_mappings": [
+      {
+        "scenario": "Operator question: How do I implement self-exclusion?",
+        "approach": [
+          "1. Find LCCP provision: 3.5.3 (Remote Self-Exclusion SR Code)",
+          "2. Check supporting ISO 27001: A_5.1, A_8.15, A_5.18",
+          "3. Check supporting RTS: RTS-01",
+          "4. Result: Comprehensive implementation roadmap"
+        ]
+      },
+      {
+        "scenario": "Auditor question: Which provisions govern customer fund protection?",
+        "approach": [
+          "1. Find LCCP section: 4.1.1 and 4.2.1",
+          "2. Check supporting ISO 27001: A_8.24, A_8.15, A_8.2, A_5.18",
+          "3. Check supporting RTS: RTS-01, RTS-02",
+          "4. Result: Complete audit scope"
+        ]
+      },
+      {
+        "scenario": "Developer question: What security standards apply to RNG systems?",
+        "approach": [
+          "1. Find RTS chapter: Chapter 7 (Generation of Random Outcomes)",
+          "2. Check supporting ISO 27001: A_8.27, A_8.29, A_8.30, A_8.15",
+          "3. Find related LCCP: Section 2 (Technical Standards)",
+          "4. Result: Complete technical specification"
+        ]
+      },
+      {
+        "scenario": "Compliance officer question: What controls ensure underage gambling prevention?",
+        "approach": [
+          "1. Find LCCP provision: 3.2.1 (Casinos) or 3.2.11 (Remote)",
+          "2. Check supporting ISO 27001: A_5.1, A_8.5, A_8.24, A_6.3",
+          "3. Check supporting RTS: RTS-01",
+          "4. Result: Comprehensive age verification framework"
+        ]
+      }
+    ]
+  },
+  "update_notes": [
+    {
+      "date": "2025-10-23",
+      "action": "Complete expansion: Added 7 new conditions to reach full 42 condition coverage",
+      "added_conditions": [
+        "1.1.2",
+        "1.2.1",
+        "1.2.2",
+        "1.2.3",
+        "2.3.2",
+        "2.3.3",
+        "12.1.2"
+      ],
+      "removed_condition": [
+        "2.1"
+      ],
+      "changes": "All 42 LCCP conditions now mapped with ISO 27001 and RTS cross-references"
+    }
+  ]
+}

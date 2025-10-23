@@ -1,0 +1,1082 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.19",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.19",
+    "control_number": "A 5.19",
+    "control_title": "Information Security in Supplier Relationships",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure an agreed level of information security is maintained in supplier relationships and supply chain",
+    "control_objective": "Manage information security risks associated with supplier products and services through defined processes and procedures"
+  },
+  "iso_27001_definition": {
+    "official_text": "Processes and procedures should be defined and implemented to manage the information security risks associated with the use of supplier's products or services.",
+    "key_requirements": [
+      "Processes defined for supplier information security management",
+      "Procedures defined for supplier information security management",
+      "Information security risks of suppliers identified and assessed",
+      "Mitigation of supplier risks implemented",
+      "Ongoing compliance monitoring in place"
+    ]
+  },
+  "supplier_relationships_overview": {
+    "definition": "Suppliers are third parties providing products or services that support business operations",
+    "scope": [
+      "Cloud service providers",
+      "Software vendors",
+      "Hardware suppliers",
+      "Managed service providers",
+      "Outsourced functions",
+      "Payment processors",
+      "Data processors",
+      "Hosting providers",
+      "Contractors and consultants",
+      "Third party integrations"
+    ],
+    "risk_context": "Suppliers represent one of biggest risks as organization cannot directly manage them, likely relies on them, and they may have access to data and critical systems",
+    "supply_chain_security": "Control is about securing the supply chain and managing inherited risks from supplier relationships",
+    "key_principle": "Cannot outsource security responsibility - organization accountable for security of supplier-provided services"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.19_REQ_1",
+      "requirement": "Implement Topic-Specific Supplier Security Policy",
+      "description": "Organization must have documented policy on information security in supplier relationships",
+      "details": {
+        "policy_content": "Defines approach to managing supplier information security risks",
+        "scope": [
+          "Supplier selection and evaluation",
+          "Risk assessment methodology",
+          "Contract requirements",
+          "Monitoring and compliance",
+          "Incident handling",
+          "Termination procedures"
+        ],
+        "approval": "Policy must be approved and communicated to relevant personnel"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_2",
+      "requirement": "Define Supplier Management Process",
+      "description": "Formal process for managing information security throughout supplier relationship lifecycle",
+      "details": {
+        "process_stages": [
+          "Identify and document suppliers",
+          "Classify suppliers by type and risk level",
+          "Evaluate suppliers for information security",
+          "Review controls in place at suppliers",
+          "Document what suppliers can access and do",
+          "Assess and manage supplier information security risks",
+          "Monitor and ensure compliance",
+          "Implement mitigation for non-compliance",
+          "Handle security incidents involving suppliers",
+          "Plan for continuity and disaster recovery",
+          "Manage information transfers",
+          "Terminate supplier relationships appropriately"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_3",
+      "requirement": "Identify and Document All Suppliers",
+      "description": "Maintain comprehensive inventory of all suppliers with documented information",
+      "details": {
+        "documentation": [
+          "Supplier name and contact information",
+          "Products or services provided",
+          "Data accessed or processed",
+          "Systems or infrastructure access",
+          "Criticality to operations",
+          "Risk classification",
+          "Contract or agreement dates",
+          "Insurance and liability information"
+        ],
+        "classification": "Categorize suppliers by type (cloud, software, hardware, service providers, etc.)",
+        "registry": "Maintain in ISO 27001 Supplier Register"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_4",
+      "requirement": "Evaluate Suppliers for Information Security",
+      "description": "Assess suppliers against information security requirements before engagement",
+      "details": {
+        "evaluation_criteria": [
+          "Existing ISO 27001 or relevant certifications",
+          "Information security policies and procedures",
+          "Controls implemented",
+          "Risk management approach",
+          "Security incident history",
+          "Financial stability and viability",
+          "References and past performance",
+          "Ability to meet specific requirements"
+        ],
+        "assessment_methods": [
+          "Security questionnaire",
+          "Certification verification",
+          "Audit or assessment",
+          "Reference checks",
+          "Financial review"
+        ],
+        "risk_rating": "Assign risk rating based on evaluation findings"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_5",
+      "requirement": "Review and Document Supplier Controls",
+      "description": "Review what controls suppliers have in place and document appropriateness",
+      "details": {
+        "controls_review": [
+          "Access control mechanisms",
+          "Encryption of data in transit and at rest",
+          "Incident response procedures",
+          "Business continuity planning",
+          "Personnel security practices",
+          "Physical security measures",
+          "Audit and monitoring capabilities",
+          "Vulnerability management"
+        ],
+        "documentation": "Document what controls are in place and how they address risk",
+        "adequacy": "Determine if controls meet organizational requirements"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_6",
+      "requirement": "Document Supplier Data Access and Capabilities",
+      "description": "Clearly document what suppliers can access, monitor, control and use",
+      "details": {
+        "access_documentation": [
+          "What data supplier can access",
+          "What systems supplier can access",
+          "What functions supplier can perform",
+          "What information supplier can view",
+          "What modifications supplier can make",
+          "What monitoring supplier conducts",
+          "What communications they can see"
+        ],
+        "principle": "Document actual scope, not generic assumptions",
+        "purpose": "Enable risk assessment and ongoing monitoring of appropriate scope"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_7",
+      "requirement": "Assess and Manage Supplier Information Security Risks",
+      "description": "Conduct formal information security risk assessment for suppliers",
+      "details": {
+        "risk_assessment": [
+          "Identify potential security threats from supplier",
+          "Assess likelihood of issues",
+          "Assess impact if security incident occurs",
+          "Rate risk level",
+          "Identify risk mitigation options"
+        ],
+        "risk_factors": [
+          "Data sensitivity of information accessed",
+          "Criticality of services provided",
+          "Financial stability of supplier",
+          "Maturity of security practices",
+          "History and reputation",
+          "Concentration risk (single supplier)"
+        ],
+        "mitigation": "Implement controls to reduce identified risks to acceptable level"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_8",
+      "requirement": "Monitor and Ensure Supplier Compliance",
+      "description": "Ongoing monitoring to ensure supplier maintains agreed information security standards",
+      "details": {
+        "monitoring_activities": [
+          "Regular communication and check-ins",
+          "Receipt of certificates and audit reports",
+          "Performance reviews",
+          "Security assessment updates",
+          "Compliance verification",
+          "Incident reporting monitoring"
+        ],
+        "frequency": "Frequency based on risk level and supplier criticality",
+        "responsibilities": "Define who is responsible for supplier monitoring",
+        "escalation": "Process for escalating concerns to management"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_9",
+      "requirement": "Implement Non-Compliance Mitigation",
+      "description": "Formal process for managing and mitigating supplier non-compliance",
+      "details": {
+        "non_compliance_response": [
+          "Identify non-compliance or deficiency",
+          "Communicate concern to supplier",
+          "Request corrective action plan",
+          "Set deadline for remediation",
+          "Monitor corrective actions",
+          "Verify remediation",
+          "Escalate if not resolved"
+        ],
+        "escalation": [
+          "Multiple non-compliances",
+          "Failure to remediate",
+          "Critical control failures",
+          "Security incident evidence"
+        ],
+        "options": [
+          "Service restrictions",
+          "Contract penalties",
+          "Supplier suspension",
+          "Supplier termination"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_10",
+      "requirement": "Handle Supplier Security Incidents",
+      "description": "Process for managing security incidents involving suppliers",
+      "details": {
+        "incident_handling": [
+          "Supplier reports security incident",
+          "Investigation of incident and impact",
+          "Notification to affected parties",
+          "Remediation and recovery",
+          "Root cause analysis",
+          "Preventive measures identified",
+          "Documentation and lessons learned"
+        ],
+        "notification": "Ensure suppliers have obligation and process to report incidents",
+        "timeframe": "Define acceptable timeframe for incident reporting (e.g., 24-48 hours)",
+        "support": "Provide support for investigation and recovery"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_11",
+      "requirement": "Address Availability, Business Continuity and Disaster Recovery",
+      "description": "Ensure supplier provides continuity and recovery to meet organizational needs",
+      "details": {
+        "continuity_requirements": [
+          "Availability commitments (SLA uptime)",
+          "Backup and redundancy measures",
+          "Disaster recovery procedures",
+          "Recovery time objectives (RTO)",
+          "Recovery point objectives (RPO)",
+          "Backup data location and testing",
+          "Geographic redundancy"
+        ],
+        "contract_terms": "Contract must specify continuity expectations",
+        "testing": "Require supplier to test and verify recovery procedures",
+        "documentation": "Supplier provides evidence of continuity capabilities"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_12",
+      "requirement": "Manage Information Transfer Processes",
+      "description": "Define and manage how information is transferred to/from suppliers",
+      "details": {
+        "transfer_controls": [
+          "Encryption in transit required",
+          "Secure transfer protocols (SFTP, HTTPS, etc.)",
+          "No clear text transmission of sensitive data",
+          "Data validation and integrity checking",
+          "Retention and deletion procedures",
+          "Access logging for transferred data"
+        ],
+        "data_classification": "Transfer requirements based on data sensitivity",
+        "frequency": "Define how often transfers occur",
+        "error_handling": "Process for managing failed or corrupted transfers"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_13",
+      "requirement": "Implement Supplier Termination Process",
+      "description": "Formal process for ending supplier relationships and managing transition",
+      "details": {
+        "termination_steps": [
+          "Notice period provided per contract",
+          "Transition plan developed",
+          "Knowledge transfer from supplier",
+          "Data return or deletion verification",
+          "System access removed",
+          "Accounts closed",
+          "Passwords changed",
+          "Documents and records transferred",
+          "Contract handover"
+        ],
+        "data_handling": "Ensure all data returned, deleted, or transferred securely",
+        "access_removal": "All supplier access to systems, data, facilities removed immediately",
+        "transition_support": "Supplier provides support during transition period",
+        "verification": "Verify all data and access properly handled"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_14",
+      "requirement": "Establish Supplier Agreements and Contracts",
+      "description": "Legal contracts with suppliers defining information security requirements",
+      "details": {
+        "contract_elements": [
+          "Scope of services and access",
+          "Information security requirements",
+          "Compliance obligations",
+          "Data protection and privacy requirements",
+          "Incident reporting requirements",
+          "Audit and monitoring rights",
+          "Insurance requirements",
+          "Liability and indemnity clauses",
+          "Termination and exit clauses",
+          "Intellectual property rights",
+          "Contact information",
+          "Change management process",
+          "SLA and availability commitments",
+          "Business continuity requirements",
+          "Personnel screening requirements",
+          "Physical security requirements",
+          "Penalties for non-compliance",
+          "Conflict resolution process"
+        ],
+        "legal_counsel": "Seek professional legal counsel for all contracts",
+        "review_frequency": "Review contracts at least annually",
+        "amendments": "Update contracts based on significant changes or risks"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_15",
+      "requirement": "Maintain Supplier Register",
+      "description": "Centralized registry of all suppliers with documented information",
+      "details": {
+        "register_contents": [
+          "Supplier name and type",
+          "Services/products provided",
+          "Risk classification",
+          "Contract status and dates",
+          "Certifications held",
+          "Last assessment date",
+          "Compliance status",
+          "Contact information",
+          "Insurance information",
+          "SLA terms"
+        ],
+        "format": "Can be spreadsheet or dedicated system",
+        "maintenance": "Keep current and accurate",
+        "access": "Appropriate personnel access to register",
+        "updates": "Update when new suppliers added or information changes"
+      }
+    },
+    {
+      "requirement_id": "A_5.19_REQ_16",
+      "requirement": "Define Expected Physical Security Standards",
+      "description": "Communicate expectations for physical security at supplier locations",
+      "details": {
+        "physical_security_elements": [
+          "Access control to facilities",
+          "Surveillance and monitoring",
+          "Environmental controls (power, cooling)",
+          "Fire suppression",
+          "Visitor management",
+          "Secure storage of media",
+          "Equipment disposal procedures",
+          "Locked areas for sensitive operations"
+        ],
+        "contractual_requirement": "Contract specifies physical security expectations",
+        "verification": "Supplier provides evidence of physical security measures"
+      }
+    }
+  ],
+  "supplier_contract_template_elements": {
+    "description": "Key elements that should be included in supplier agreements",
+    "must_include": [
+      {
+        "element": "Scope and Services",
+        "description": "Clearly define what services will be provided, what will be accessed, and limitations"
+      },
+      {
+        "element": "Information Security Requirements",
+        "description": "Specify security controls, certifications, and standards supplier must maintain"
+      },
+      {
+        "element": "Data Protection and Privacy",
+        "description": "Include GDPR, data processing obligations, and data subject rights"
+      },
+      {
+        "element": "Incident Reporting",
+        "description": "Require supplier to report security incidents within specified timeframe"
+      },
+      {
+        "element": "Access Control",
+        "description": "Define how access will be granted, managed, and removed"
+      },
+      {
+        "element": "Audit Rights",
+        "description": "Organization right to audit supplier and verify compliance"
+      },
+      {
+        "element": "Monitoring Rights",
+        "description": "Organization right to monitor supplier systems and performance"
+      },
+      {
+        "element": "Insurance and Liability",
+        "description": "Insurance requirements and liability limitations"
+      },
+      {
+        "element": "Indemnity",
+        "description": "Indemnification clauses for breaches and failures"
+      },
+      {
+        "element": "Service Level Agreements",
+        "description": "Availability, performance, and support commitments"
+      },
+      {
+        "element": "Business Continuity",
+        "description": "Backup, disaster recovery, and contingency planning requirements"
+      },
+      {
+        "element": "Data Handling and Return",
+        "description": "Data return, deletion, or transfer upon contract end"
+      },
+      {
+        "element": "Termination",
+        "description": "Termination process, notice periods, and exit procedures"
+      },
+      {
+        "element": "Change Management",
+        "description": "Process for managing changes to services or infrastructure"
+      },
+      {
+        "element": "Personnel Screening",
+        "description": "Background check and vetting requirements for supplier staff"
+      },
+      {
+        "element": "Intellectual Property",
+        "description": "IP ownership, licensing, and usage rights"
+      },
+      {
+        "element": "Conflict Resolution",
+        "description": "Process for resolving disputes"
+      },
+      {
+        "element": "Penalties",
+        "description": "Remedies for non-compliance and breach"
+      }
+    ]
+  },
+  "supplier_management_lifecycle": {
+    "description": "Stages of supplier relationship management",
+    "stages": [
+      {
+        "stage": 1,
+        "name": "Supplier Selection",
+        "description": "Identify and evaluate potential suppliers",
+        "activities": [
+          "Define requirements",
+          "Identify candidate suppliers",
+          "Request security information",
+          "Conduct security evaluation",
+          "Rate supplier security posture",
+          "Make selection decision"
+        ]
+      },
+      {
+        "stage": 2,
+        "name": "Contract Negotiation",
+        "description": "Negotiate and finalize supplier agreement",
+        "activities": [
+          "Prepare contract requirements",
+          "Negotiate terms",
+          "Ensure information security terms included",
+          "Legal review and approval",
+          "Execute contract",
+          "Distribute to relevant parties"
+        ]
+      },
+      {
+        "stage": 3,
+        "name": "Onboarding",
+        "description": "Set up supplier access and operations",
+        "activities": [
+          "Provision supplier access",
+          "Conduct security briefing",
+          "Provide security policies",
+          "Establish communication channels",
+          "Set up incident reporting",
+          "Configure monitoring"
+        ]
+      },
+      {
+        "stage": 4,
+        "name": "Ongoing Monitoring",
+        "description": "Monitor supplier compliance and performance",
+        "activities": [
+          "Regular compliance reviews",
+          "Performance monitoring",
+          "Certificate and audit report verification",
+          "Incident tracking",
+          "Risk reassessment",
+          "Communication and engagement"
+        ]
+      },
+      {
+        "stage": 5,
+        "name": "Issue Management",
+        "description": "Manage any compliance or performance issues",
+        "activities": [
+          "Identify non-compliance or issues",
+          "Communicate concerns",
+          "Request corrective action",
+          "Track remediation",
+          "Escalate if needed",
+          "Document resolution"
+        ]
+      },
+      {
+        "stage": 6,
+        "name": "Termination",
+        "description": "End supplier relationship and transition",
+        "activities": [
+          "Provide termination notice",
+          "Develop transition plan",
+          "Transfer data and knowledge",
+          "Remove all access",
+          "Verify data handling",
+          "Close relationship"
+        ]
+      }
+    ]
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish Supplier Security Policy",
+        "detail": "Document organization's approach to managing supplier information security risks"
+      },
+      {
+        "step": 2,
+        "action": "Develop Supplier Management Process",
+        "detail": "Define procedures for evaluating, monitoring, and managing suppliers"
+      },
+      {
+        "step": 3,
+        "action": "Create Supplier Register",
+        "detail": "Establish centralized registry of all suppliers with documented information"
+      },
+      {
+        "step": 4,
+        "action": "Inventory Current Suppliers",
+        "detail": "Identify and document all existing suppliers and services"
+      },
+      {
+        "step": 5,
+        "action": "Evaluate Current Suppliers",
+        "detail": "Assess existing suppliers against information security requirements"
+      },
+      {
+        "step": 6,
+        "action": "Review and Update Supplier Contracts",
+        "detail": "Ensure contracts include appropriate information security terms"
+      },
+      {
+        "step": 7,
+        "action": "Establish Supplier Monitoring Program",
+        "detail": "Implement ongoing monitoring of supplier compliance and performance"
+      },
+      {
+        "step": 8,
+        "action": "Develop Risk Management Approach",
+        "detail": "Define how to assess and manage supplier information security risks"
+      },
+      {
+        "step": 9,
+        "action": "Create Incident Management Process for Suppliers",
+        "detail": "Establish process for handling supplier-related security incidents"
+      },
+      {
+        "step": 10,
+        "action": "Train Personnel",
+        "detail": "Educate relevant staff on supplier management procedures"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.19",
+    "checklist": [
+      {
+        "item": "Implement supplier security policy",
+        "status": "required"
+      },
+      {
+        "item": "Develop supplier management process",
+        "status": "required"
+      },
+      {
+        "item": "Create ISO 27001 Supplier Register",
+        "status": "required"
+      },
+      {
+        "item": "Identify and document all suppliers",
+        "status": "required"
+      },
+      {
+        "item": "Evaluate suppliers for information security",
+        "status": "required"
+      },
+      {
+        "item": "Establish supplier agreements/contracts",
+        "status": "required"
+      },
+      {
+        "item": "Review supplier controls and capabilities",
+        "status": "required"
+      },
+      {
+        "item": "Conduct supplier risk assessments",
+        "status": "required"
+      },
+      {
+        "item": "Implement supplier monitoring program",
+        "status": "required"
+      },
+      {
+        "item": "Establish non-compliance handling process",
+        "status": "required"
+      },
+      {
+        "item": "Define incident management for suppliers",
+        "status": "required"
+      },
+      {
+        "item": "Document all procedures",
+        "status": "required"
+      },
+      {
+        "item": "Train personnel",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with supplier management",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No contracts or legal terms with suppliers",
+        "description": "Operating with suppliers without formal contracts or agreements defining information security obligations",
+        "root_cause": [
+          "Reliance on verbal agreements",
+          "Informal relationships with suppliers",
+          "Assumption supplier will handle security",
+          "Lack of procurement process"
+        ],
+        "impact": "No legal recourse if supplier fails to maintain security, no defined obligations",
+        "prevention": "Require contract, agreement, or terms of business for every supplier engagement",
+        "action": "Ensure you have copy of contract, it is current, and covers what you are using from supplier",
+        "audit_risk": "High - immediate finding if no contracts in place"
+      },
+      {
+        "rank": 2,
+        "mistake": "No assurance supplier maintains information security",
+        "description": "No verification or evidence that suppliers are maintaining adequate information security controls",
+        "root_cause": [
+          "No monitoring or oversight",
+          "No assessment of supplier controls",
+          "Failure to request and verify certifications",
+          "No ongoing compliance checking"
+        ],
+        "evidence_needed": "In-date certificate such as ISO 27001 Certification",
+        "coverage": "Certificate must cover products/services actually being used from supplier",
+        "action": "Obtain and verify security assessment or certification for each supplier",
+        "verification": "Ensure certification is current and applicable to services being provided",
+        "audit_risk": "High - auditor will ask for proof supplier maintains security"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control is wrong",
+        "description": "Poor documentation and version control of supplier management procedures and records",
+        "issues": [
+          "Version numbers don't match across references",
+          "Supplier Register not updated",
+          "Documents not reviewed in 12 months",
+          "Comments left in final documents",
+          "Contracts outdated or lost"
+        ],
+        "prevention": [
+          "Keep document version control current",
+          "Match version numbers across references",
+          "Evidence regular review of procedures",
+          "Maintain Supplier Register",
+          "Keep contracts organized and accessible",
+          "Remove comments from final documents"
+        ],
+        "impact": "Shows lack of control and organization of supply chain"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.19 audit",
+    "audit_areas": [
+      {
+        "area": "1. Supplier Management Process Verification",
+        "description": "Auditor checks supplier management process is documented and followed",
+        "checks": [
+          "Supplier management process documented",
+          "Process covers all lifecycle stages",
+          "Process followed in operation",
+          "Evidence of supplier evaluations",
+          "Risk assessments conducted",
+          "Monitoring activities documented",
+          "Non-compliance actions documented",
+          "Incident management process defined"
+        ],
+        "best_practice": "Maintain evidence of all supplier management activities"
+      },
+      {
+        "area": "2. Supplier Register Verification",
+        "description": "Verify Supplier Register exists, is current, and accurate",
+        "checks": [
+          "Supplier Register exists",
+          "All suppliers documented",
+          "Register current and accurate",
+          "Risk ratings assigned",
+          "Certifications recorded",
+          "Contract dates documented",
+          "Contact information current",
+          "Register maintained and reviewed"
+        ],
+        "easiest_win": "Request Supplier Register - if doesn't exist or is significantly out of date, immediate finding"
+      },
+      {
+        "area": "3. Supplier Contracts Verification",
+        "description": "Verify contracts exist and contain information security terms",
+        "checks": [
+          "Contract exists for each supplier",
+          "Contracts up to date",
+          "Information security terms included",
+          "Audit rights defined",
+          "Monitoring rights defined",
+          "Incident reporting requirements",
+          "Confidentiality terms included",
+          "Termination and exit clauses"
+        ],
+        "critical_finding": "No contract with supplier"
+      },
+      {
+        "area": "4. Supplier Information Security Verification",
+        "description": "Verify suppliers maintain adequate information security",
+        "checks": [
+          "ISO 27001 or relevant certification held by suppliers",
+          "Certificates current and valid",
+          "Certification covers services being used",
+          "Audit reports or assessments obtained",
+          "Security controls documented",
+          "Regular reviews of supplier security posture"
+        ]
+      },
+      {
+        "area": "5. Supplier Monitoring and Compliance",
+        "description": "Verify ongoing monitoring and management of supplier compliance",
+        "checks": [
+          "Monitoring activities conducted",
+          "Compliance verified regularly",
+          "Performance reviewed",
+          "Non-compliance identified and managed",
+          "Incidents tracked and managed",
+          "Corrective actions documented",
+          "Supplier issues escalated appropriately"
+        ]
+      },
+      {
+        "area": "6. Documentation Quality",
+        "description": "Review documentation completeness and accuracy",
+        "checks": [
+          "All documents classified and labelled",
+          "Confidential documents labelled",
+          "Documents current and reviewed in 12 months",
+          "Version control accurate",
+          "Audit trails for supplier management"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Supplier management critical for protecting all critical gambling systems - suppliers may provide infrastructure, software, or services essential to system operation",
+    "specific_requirements": [
+      {
+        "system": "Sensitive Customer Information Systems",
+        "supplier_requirements": [
+          "Payment processor must be PCI DSS compliant and regularly audited",
+          "Data processor must be GDPR compliant with Data Processing Agreement",
+          "Cloud provider storing customer data must have ISO 27001 certification",
+          "Hosting provider must have redundancy and disaster recovery",
+          "Regular audit of supplier controls for customer data",
+          "Supplier incident reporting for any customer data breaches",
+          "Strict data return and deletion upon termination"
+        ]
+      },
+      {
+        "system": "Random Number Generation Systems",
+        "supplier_requirements": [
+          "RNG supplier must have audited and certified RNG",
+          "RNG software supplier must have extensive testing documentation",
+          "Hosting provider for RNG systems must have highest security standards",
+          "RNG supplier must provide audit reports and certifications",
+          "Regular independent verification of RNG supplier controls",
+          "Access controls to RNG systems managed per contract",
+          "Incident reporting for any RNG-related issues"
+        ]
+      },
+      {
+        "system": "Game State and Results Storage",
+        "supplier_requirements": [
+          "Database provider must have backup and disaster recovery",
+          "Storage provider must ensure data integrity and non-repudiation",
+          "Provider must maintain audit logs of all database access",
+          "Provider must have incident response capability",
+          "Regular assessment of storage provider controls"
+        ]
+      },
+      {
+        "system": "System Access Points and Entry/Exit Controls",
+        "supplier_requirements": [
+          "Firewall/network security supplier must provide configuration control",
+          "VPN/remote access provider must enforce multi-factor authentication",
+          "Access control system supplier must provide audit trails",
+          "Regular review of supplier controls"
+        ]
+      },
+      {
+        "system": "Communication Networks",
+        "supplier_requirements": [
+          "Network provider must provide encryption capabilities",
+          "Internet service provider must have DDoS protection",
+          "CDN provider must have security controls",
+          "Supplier must respond to security incidents",
+          "Regular performance and security monitoring"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must implement comprehensive supplier management including formal assessments, contracts with security terms, ongoing monitoring, and documented risk management for all critical suppliers"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Manage information security risks in supply chain through defined processes, formal agreements, and ongoing monitoring of suppliers",
+    "enforcement_priority": "High - supply chain security is critical dependency for overall security",
+    "key_principles": [
+      "Cannot outsource security responsibility",
+      "All suppliers must be identified and assessed",
+      "Formal contracts with information security terms required",
+      "Risk-based approach to supplier management",
+      "Ongoing monitoring and compliance verification",
+      "Rapid incident notification and management",
+      "Business continuity and disaster recovery planning",
+      "Clear data handling and return procedures",
+      "Segregation of duties in supplier approval",
+      "Documentation of all supplier relationships",
+      "Regular review of supplier performance and security"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.19 Information Security in Supplier Relationships, implement the following",
+    "requirements": [
+      {
+        "requirement": "Implement supplier security policy",
+        "detail": "Documented policy on managing supplier information security risks"
+      },
+      {
+        "requirement": "Develop supplier management process",
+        "detail": "Formal procedures covering full supplier relationship lifecycle"
+      },
+      {
+        "requirement": "Create and maintain Supplier Register",
+        "detail": "Centralized registry with all suppliers and relevant information"
+      },
+      {
+        "requirement": "Identify and document all suppliers",
+        "detail": "Comprehensive inventory of all suppliers with documented data access"
+      },
+      {
+        "requirement": "Evaluate suppliers for information security",
+        "detail": "Security assessment of all suppliers against organizational requirements"
+      },
+      {
+        "requirement": "Establish supplier contracts/agreements",
+        "detail": "Legal contracts with information security terms and requirements"
+      },
+      {
+        "requirement": "Conduct supplier risk assessment",
+        "detail": "Formal information security risk assessment for each supplier"
+      },
+      {
+        "requirement": "Implement supplier monitoring",
+        "detail": "Ongoing monitoring and compliance verification"
+      },
+      {
+        "requirement": "Manage non-compliance",
+        "detail": "Process for identifying and remediating supplier non-compliance"
+      },
+      {
+        "requirement": "Define incident management",
+        "detail": "Process for managing supplier-related security incidents"
+      },
+      {
+        "requirement": "Plan continuity and recovery",
+        "detail": "Supplier commitments for business continuity and disaster recovery"
+      },
+      {
+        "requirement": "Manage supplier termination",
+        "detail": "Process for ending relationships and transitioning services"
+      },
+      {
+        "requirement": "Document all procedures",
+        "detail": "Comprehensive documentation with version control"
+      },
+      {
+        "requirement": "Train personnel",
+        "detail": "Educate staff on supplier management procedures"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "prerequisite_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 5.15 - Access control"
+    ],
+    "dependent_controls": [
+      "ISO 27001 A 5.20 - Supplier service delivery management"
+    ],
+    "related_iso_controls": [
+      "ISO 27001 A 5.20 - Supplier service delivery management",
+      "ISO 27001 A 8.34 - Management of information security incidents from suppliers"
+    ],
+    "cross_references": [
+      "Access Control (A 5.15) - supplier access controlled per access control policy",
+      "Supplier Service Delivery (A 5.20) - ongoing management of supplier delivery"
+    ]
+  },
+  "best_practices": {
+    "supplier_selection_best_practices": [
+      "Define clear security requirements before supplier selection",
+      "Request ISO 27001 certification or equivalent",
+      "Conduct thorough security evaluation",
+      "Reference checks with other organizations",
+      "Financial stability assessment",
+      "Review incident history and public breaches"
+    ],
+    "contract_best_practices": [
+      "Obtain professional legal counsel for all contracts",
+      "Include detailed information security requirements",
+      "Specify audit and monitoring rights",
+      "Include incident reporting obligations",
+      "Define SLAs and availability commitments",
+      "Include data handling and return procedures",
+      "Specify penalties for non-compliance",
+      "Include termination and exit procedures",
+      "Review contracts annually or on significant change"
+    ],
+    "monitoring_best_practices": [
+      "Schedule regular compliance reviews",
+      "Request certificates and audit reports annually",
+      "Conduct risk reassessments periodically",
+      "Track supplier incidents and issues",
+      "Maintain regular communication",
+      "Document all monitoring activities",
+      "Escalate serious issues to management"
+    ],
+    "risk_management_best_practices": [
+      "Conduct formal risk assessment for each supplier",
+      "Focus on suppliers with access to critical data or systems",
+      "Consider supplier concentration risk",
+      "Implement risk mitigation for high-risk suppliers",
+      "Monitor changes that affect risk level",
+      "Document all risk assessments"
+    ],
+    "documentation_best_practices": [
+      "Maintain comprehensive Supplier Register",
+      "Keep all contracts organized and accessible",
+      "Document risk assessments and evaluations",
+      "Maintain monitoring records",
+      "Track incidents and resolutions",
+      "Keep procedures current with version control"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_supplier_categories": [
+      {
+        "category": "Payment Processors",
+        "risk": "Access to customer payment information",
+        "requirements": [
+          "PCI DSS compliance mandatory",
+          "Regular PCI audits and SOC 2 Type II reports",
+          "Encryption of payment data in transit and at rest",
+          "Incident reporting within 24 hours",
+          "Data handling and retention per PCI requirements"
+        ]
+      },
+      {
+        "category": "RNG/Game Software Suppliers",
+        "risk": "Control game outcomes and fairness",
+        "requirements": [
+          "Independent RNG certification",
+          "Audited and tested RNG documentation",
+          "Source code review capability",
+          "Game testing and certification",
+          "Regular compliance verification"
+        ]
+      },
+      {
+        "category": "Cloud/Hosting Providers",
+        "risk": "Infrastructure for critical systems",
+        "requirements": [
+          "ISO 27001 certification covering services used",
+          "SOC 2 Type II audit reports",
+          "Data residency and sovereignty compliance",
+          "Disaster recovery and business continuity SLAs",
+          "Incident response capability"
+        ]
+      },
+      {
+        "category": "Compliance and Reporting Suppliers",
+        "risk": "Regulatory reporting data integrity",
+        "requirements": [
+          "Security of compliance data",
+          "Audit trail of all modifications",
+          "Data integrity verification",
+          "Backup and recovery procedures"
+        ]
+      }
+    ],
+    "regulatory_expectations": [
+      "UKGC expects comprehensive supplier management program",
+      "Particular scrutiny on critical suppliers (payments, RNG, hosting)",
+      "Formal risk assessment and mitigation expected",
+      "Regular verification of supplier compliance required",
+      "Clear procedures for incident management with suppliers",
+      "Compliance approach should document supplier management for each critical system"
+    ],
+    "audit_focus_areas": [
+      "Payment processor compliance verification",
+      "RNG supplier certifications and audits",
+      "Cloud provider security controls",
+      "Incident response with suppliers",
+      "Data handling and return procedures"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.19",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.19-information-security-in-supplier-relationships.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

@@ -1,0 +1,90 @@
+ISO 27001 Information Access Restrictions
+
+The best way to protect information security is with access control and information access restrictions. It’s primary function is to ensure the confidentiality of information and is a technique that you use every day to access websites and services.
+This ISO 27001 annex a control sets out the requirement to restrict access to information and services and to properly implement and manage access control.
+In ISO 27001 this is known as ISO 27001:2022 Annex A 8.3 Information Access Restriction. 
+It is important because people with the wrong access controls in place could access information that was not intended for them and this presents a risk of data breach and data compromise which can have significant legal, regulatory and customer consequences.
+Key Takeaways
+
+You need an access control policy.
+Access should be provided on a Need-to-Know basis with the principle of Least Privilege.
+It is called ISO 27001:2022 Annex A 8.3 Information Access Restriction.
+What is ISO 27001 Annex A 8.3?
+
+First, let’s understand what this ISO 27001 control actually wants.
+ISO 27001 Annex A 8.3 Information Access Restriction is an ISO 27001 control that looks to make sure you have controls in place to restrict access to information based on risk and organisation need.
+ISO 27001 Annex A 8.3 Purpose
+
+The purpose of ISO 27001 Annex A 8.3 Information Access Restriction is to ensure only authorised access and to prevent unauthorised access to information and other associated assets.
+ISO 27001 Annex A 8.3 Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.3 Information Access Restriction as:
+Access to information and other associated assets should be restricted in accordance with the established topic-specific policy on access control.
+How to implement ISO 27001 Annex A 8.3
+
+This is not the Wild West so we do not allow everyone to have access to everything. A basic premise of information security is access. We protect what is important to us and only allow those that we want to have access to it, to have access to it.
+Implement an Access Control Policy
+
+Your starting point for this control is to implement a topic specific policy on access control and include in that policy your approach to access. The ISO 27001 Access Control Policy Template is already written for you and ready to go and includes a great free Access Control Policy Example PDF. There is a lot more information on the Access Control Policy including how to write your own is covered in ISO 27001 Access Control Policy Ultimate Guide.
+We are not talking here about privilege access which we covered in 8.2 Privilege Access but we are looking more general.
+Implement Role Based Access
+
+I find the use of role based access as a technique is a great tool here. Understanding what roles you need, defining them and then allocating people to roles based on need.
+Adopt the principle of Least Privilege
+
+Access should be granted based on the principle of least privilege, meaning users only get the minimum access necessary for their role.
+Adopt the principle of Need-to-Know
+
+Users should only have access to information they need to perform their duties.
+Enforce access control
+
+Learning from previous tutorials and in particular ISO 27001 Annex A 5.18 Access Rights you will ensure proper access control proportionate to the risk posed by the access that is required.
+Account for dynamic access
+
+The control is not particularly hard. It is mainly common sense. The standard talks a lot about dynamic access management techniques, which I think is phrase they are hoping catches on. It is mainly about second guessing dynamic changes that require access control considerations. Situations like sharing externally, or when investigations occur.
+Base access on information classification
+
+Link access control to information classification to ensure sensitive data is appropriately protected. You can take into account the information classification scheme when you are working out what your access requirements are.
+Implement technical controls
+
+Ensure that the defined access policies are technically implemented in systems, applications, and services. The controls are mainly technical once you have the policy and the requirements. Examples of appropriate technical controls include:
+Authentication technology, credentials, or certificates to access information.
+Time based access that allows access for or in set times.
+The encryption for protecting information either at the device or information level.
+Setting out what the printing permissions are if appropriate.
+Implement Monitoring & Auditing
+
+Log access activities and conduct periodic reviews of access rights to ensure they remain appropriate.
+Keep records
+
+There will be consideration for recording access, monitoring, reporting and alerting.
+Information access restrictions have been around a long time and there is nothing to worry about here.
+Remove generic accounts
+
+You should really discourage the use of generic accounts. We want to be able to tie actions back to an individual. If you simple have to have a generic account then my recommendation is to manage it as an exception and record it in the risk register. Mange it via risk management, even if that is accepting the risk.
+How to pass the audit
+
+Time needed: 1 day
+How to comply with ISO 27001 Annex A 8.3
+Have policies and procedures in place
+Write, approve, implement and communicate the documentation required for information access restriction.
+Assess your access requirements and perform a risk assessment
+Have an asset management process that includes an asset register. For each asset type perform a risk assessment and access requirements review.
+Implement controls proportionate to the risk posed
+Based on the risk assessment implement the appropriate controls to mitigate the risk.
+Keep records
+For audit purposes you will keep records. Examples of the records to keep include changes, updates, monitoring, review and audits.
+Test the controls that you have to make sure they are working
+Perform internal audits that include the testing of the controls to ensure that they are working.
+Top 3 Mistakes People Make and How to Avoid Them
+
+The top 3 mistakes people make for ISO 27001 Annex A 8.3 are
+1. Not restricting access when people leave
+
+Having a robust starter, leaver, mover process that accounts for leavers and considers the access restrictions during the notice period as well as when the person leaves is key. This is often overlooked with people having full access during notice and often the access still being in place when they leave.
+2. Not matching your classification policy
+
+The access policy and the classification policy set out what you do, not how you do it. Often there is an mis match with what actually happens. Consider approaches like role based access that allow you to define the access restriction requirements and then monitor, report and audit against it.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

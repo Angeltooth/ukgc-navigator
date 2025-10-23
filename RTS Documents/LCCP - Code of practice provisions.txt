@@ -1,0 +1,892 @@
+LCCP - Code of practice provisions
+
+1. General
+1.1. Cooperation and responsibility for third parties
+1.1.1 - Cooperation with the Commission
+
+Applies to:
+All licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1.As made plain in its Statement of principles for licensing and regulation, the Commission expects licensees to conduct their gambling operations in a way that does not put the licensing objectives at risk, to work with the Commission in an open and cooperative way and to disclose anything which the Commission would reasonably need to be aware of in exercising its regulatory functions. This includes, in particular, anything that is likely to have a material impact on the licensee’s business or on the licensee’s ability to conduct licensed activities compliantly. Licensees should have this principle in mind in their approach to, and when considering their compliance with, their obligations under the conditions attached to their licence and in relation to the following provisions of this code.
+
+1.1.2 - Responsibility for third parties – all licences
+
+Applies to:
+All licences.
+
+1. Licensees are responsible for the actions of third parties with whom they contract for the provision of any aspect of the licensee’s business related to the licensed activities.
+2. Licensees must ensure that the terms on which they contract with such third parties:
+a. require the third party to conduct themselves in so far as they carry out activities on behalf of the licensee as if they were bound by the same licence conditions and subject to the same codes of practice as the licensee
+b. oblige the third party to provide such information to the licensee as they may reasonably require in order to enable the licensee to comply with their information reporting and other obligations to the Commission
+c. enable the licensee, subject to compliance with any dispute resolution provisions of such contract, to terminate the third party’s contract promptly if, in the licensee’s reasonable opinion, the third party is in breach of contract (including in particular terms included pursuant to this code provision) or has otherwise acted in a manner which is inconsistent with the licensing objectives, including for affiliates where they have breached a relevant advertising code of practice.
+
+1.1.3 - Responsibility for third parties – remote
+
+Applies to:
+All remote licences.
+
+1. Remote licensees must ensure in particular:
+that third parties who provide user interfaces enabling customers to access their remote gambling facilities:
+a. include a term that any such user interface complies with the Commission’s technical standards for remote gambling systems; and
+b. enable them, subject to compliance with any dispute resolution provisions of such contract, to terminate the third party’s contract promptly if, in the licensee’s reasonable opinion, the third party is in breach of that term.
+
+2. Financial requirements
+2.1. Anti-money laundering
+
+Applies to:
+All remote and non-remote casino licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+1. In order to help prevent activities related to money laundering and terrorist financing, licensees should act in accordance with the Commission’s guidance on anti-money laundering, The Prevention of Money Laundering and Combating the Financing of Terrorism - Guidance for remote and non-remote casinos.
+
+2.1.2 - Anti-money laundering – other than casino
+
+Applies to:
+All licences except casino licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+1. As part of their procedures for compliance with the requirements in respect to the prevention and detection of money laundering in the Proceeds of Crime Act 2002 and the Terrorism Act 2000 , licensees should take into account the Commission’s advice on the Proceeds of Crime Act 2002, *Duties and responsibilities under the Proceeds of Crime Act 2002 – Advice for operators (excluding casino operators). 
+
+3. Protection of children and other vulnerable persons
+3.1. Combating problem gambling
+3.1.1 - Combating problem gambling
+
+Applies to:
+All licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+1. Licensees must have and put into effect policies and procedures intended to promote socially responsible gambling including the specific policies and procedures required by the provisions of section 3 of this code.
+
+3.2 . Access to gambling by children and young persons
+3.2.1 - Casinos SR code
+
+Applies to:
+All non-remote casino licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must have and put into effect policies and procedures designed to prevent underage gambling, and monitor the effectiveness of these.
+2. Licensees must ensure that their policies and procedures take account of the structure and layout of their gambling premises.
+3. Licensees must designate one or more supervisors for each casino entrance.
+4. A supervisor’s responsibilities include ensuring compliance with this section of the code.
+5. A supervisor must implement the following procedures:
+a. checking the age of customers who appear to be, or are suspected of being, underage
+b. refusing entry to anyone unable to produce an acceptable form of identification, for example one which:
+i. contains a photograph from which the individual can be identified
+ii. states the individual’s date of birth
+iii. is valid
+iv. is legible and shows no signs of tampering or reproduction
+c. taking action when there are unlawful attempts to enter the premises, including removing anyone who appears to be underage and cannot produce an acceptable form of identification.
+
+6. Licensees must not deliberately provide facilities for gambling in such a way as to appeal particularly to children or young people, for example by reflecting or being associated with youth culture.
+7. In premises restricted to adults, service must be refused in any circumstances where any adult is accompanied by a child or young person.
+8. Licensees must take all reasonable steps to ensure that all staff understand their responsibilities for preventing underage gambling. This must include appropriate training which must cover all relevant prohibitions against inviting children or young persons to gamble or to enter gambling premises, and the legal requirements on returning stakes and not paying prizes to underage customers.
+9. Licensees must conduct test purchasing or take part in collective test purchasing programmes as a means of providing reasonable assurance that they have effective policies and procedures to prevent underage gambling, and must provide their test purchase results to the Commission, in such a form or manner as the Commission may from time to time specify.
+
+3.2.2 - Casinos ordinary code
+
+Applies to:
+All non-remote casino licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. There should be a sufficient number of supervisors at casino entrances to enable a considered judgement to be made about the age of everyone attempting to enter the casino and to take the appropriate action (for example checking identification) whilst at the same time not allowing others to enter unsupervised. The nature of this task means that it cannot be properly accomplished only by using CCTV; it will require a physical presence. Heavily used entrances may require more than one designated supervisor.
+2. Supervisors may be assisted by other door keepers provided the supervisor retains the responsibility for compliance with this section of the code and deals personally with any case where there is any doubt or dispute as to someone’s eligibility to enter.
+3. The Commission considers acceptable forms of identification to include: any identification carrying the PASS logo (for example Citizencard or Validate); a military identification card; a driving licence (including provisional licence) with photocard; or a passport.
+4. Licensees should put into effect procedures that require their staff to check the age of any customer who appears to them to be under 25.
+5. Licensees should consider permanent exclusion from premises of any adult accompanied by a child or young person on more than one occasion to premises restricted to adults, or if there is reason to believe the offence was committed knowingly or recklessly.
+6. Procedures should be put into effect for dealing with cases where a child or young person repeatedly attempts to gamble on premises restricted to adults, including oral warnings, reporting the offence to the Gambling Commission1 and the police, and making available information on problem gambling.
+7. In providing training to staff on their responsibilities for preventing underage gambling, licensees should have, as a minimum, policies for induction training and refresher training.
+
+3.2.3 - AGC SR code
+
+Applies to:
+All adult gaming centre licences.
+
+1. Licensees must have and put into effect policies and procedures designed to prevent underage gambling, and monitor the effectiveness of these.
+2. This must include procedures for:
+a. checking the age of apparently underage customers
+b. removing anyone who appears to be under age and cannot produce an acceptable form of identification
+c. taking action when there are attempts by under-18s to enter the premises.
+3. Licensees must ensure that their policies and procedures take account of the structure and layout of their gambling premises.
+4. Licensees must not deliberately provide facilities for gambling in such a way as to appeal particularly to children or young people, for example by reflecting or being associated with youth culture.
+5. In premises restricted to adults, service must be refused in any circumstances where any adult is accompanied by a child or young person.
+6. Licensees must take all reasonable steps to ensure that all staff understand their responsibilities for preventing underage gambling. This must include appropriate training which must cover all relevant prohibitions against inviting children or young persons to gamble or to enter gambling premises, and the legal requirements on returning stakes and not paying prizes to underage customers.
+7. Licensees must only accept identification which:
+a. contains a photograph from which the individual can be identified
+b. states the individual’s date of birth
+c. is valid
+d. is legible and has no visible signs of tampering or reproduction.
+8. All licensees must conduct test purchasing or take part in collective test purchasing programmes, as a means of providing reasonable assurance that they have effective policies and procedures to prevent underage gambling, and must provide their test purchase results to the Gambling Commission, in such a form or manner as the Commission may from time to time specify.
+
+3.2.4 - AGC ordinary code
+
+Applies to:
+All adult gaming centre licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. The Commission considers acceptable forms of identification to include any identification carrying the PASS logo (for example Citizencard or Validate); a military identification card; a driving licence (including a provisional licence) with photocard; or a passport.
+2. Licensees should put into effect procedures that require their staff to check the age of any customer who appears to them to be under 25.
+3. Licensees should consider permanent exclusion from premises for any adult accompanied by a child or young person on more than one occasion to premises restricted to adults, or if there is reason to believe the offence was committed knowingly or recklessly.
+4. Procedures should be put into effect for dealing with cases where a child or young person repeatedly attempts to gamble on premises restricted to adults, including oral warnings, reporting the offence to the Gambling Commission and the police, and making available information on problem gambling.
+5. In providing training to staff on their responsibilities for preventing underage gambling, licensees should have, as a minimum, policies for induction training and refresher training.
+
+3.2.5 - Bingo and FEC SR code
+
+Applies to:
+All non-remote bingo and family entertainment centre licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must have and put into effect policies and procedures designed to prevent underage gambling, and monitor the effectiveness of these.
+2. This must include procedures for:
+a. checking the age of apparently underage customers
+b. refusing entry to any adult-only areas to anyone unable to produce an acceptable form of identification
+c. taking action when there are unlawful attempts to enter the adult-only areas.
+3. Licensees must ensure that their policies and procedures take account of the structure and layout of their gambling premises.
+4. Licensees must not permit children or young people to gamble in the adults-only areas of premises to which they have access. If there is a ‘no under-18s’ premises policy, licensees must pay particular attention to the procedures they use at the entrance to the premises to check customers’ ages.
+5. Licensees must take all reasonable steps to ensure that all staff understand their responsibilities for preventing underage gambling. This must include appropriate training which must cover:
+all relevant prohibitions against inviting children or young persons to gamble on age-restricted products or to enter age-restricted areas;
+the legal requirements on returning stakes and not paying prizes to underage customers; and
+procedures for challenging any adult who may be complicit in allowing a child or young person to gamble.
+6. Licensees must only accept identification which:
+a. contains a photograph from which the individual can be identified
+b. states the individual’s date of birth
+c. is valid
+d. is legible and has no visible signs of tampering or reproduction.
+7. All licensees must conduct test purchasing or take part in collective test purchasing programmes, as a means of providing reasonable assurance that they have effective policies and procedures to prevent underage gambling, and must provide their test purchase results to the Commission, in such a form or manner as the Commission may from time to time specify.
+
+3.2.6 - Bingo and FEC ordinary code
+
+Applies to:
+All non-remote bingo and family entertainment centre licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. The Commission considers acceptable forms of identification to include: any identification carrying the PASS logo (for example Citizencard or Validate); a military identification card; a driving licence (including a provisional licence) with photocard; or a passport.
+2. Licensees should require a person who appears to relevant staff to be under the age of 25 to be asked to produce proof of age, either at the point of entry to the gambling area or as soon as it comes to the attention of staff that they wish to access gambling facilities.
+3. Licensees should have procedures for dealing with cases where an adult knowingly or recklessly allows a child or young person to gamble. These procedures might include refusing to allow the adult to continue to gamble, removing them from the premises, and reporting the incident to the police or local authorities, or taking action where forged identification is produced.
+4. Procedures should be put into effect for dealing with cases where a child or young person repeatedly attempts to gamble on their premises, including oral warnings, reporting the offence to the Gambling Commission1 and the police, and making available information on problem gambling to the child or young person concerned.
+5. Where it is likely that customers’ young or otherwise vulnerable children will be left unattended on or adjacent to their premises, licensees should consider reminding customers of their parental responsibilities and assess whether there is a need to develop procedures for minimising the risk to such children.
+6. In providing training to staff on their responsibilities for preventing underage gambling, licensees should have, as a minimum, policies for induction training and refresher training.
+
+3.2.7 - Betting SR code
+
+Applies to:
+Points 1, 2 and 4 to 7: all non-remote betting and remote betting intermediary (trading rooms only) licences.
+Points 3: all non-remote betting licences (except general betting (limited) licences) and remote betting intermediary (trading rooms only) licences.
+Points 8: non-remote pool betting licences.
+Points 9: all non-remote general betting (standard) licences.
+
+1. Licensees must have and put into effect policies and procedures designed to prevent underage gambling, and monitor the effectiveness of these.
+2. This must include procedures for:
+a. checking the age of apparently underage customers
+b. removing from adult-only licensed premises anyone who appears to be underage and cannot produce an acceptable form of identification
+c. taking action when there are attempts by under-18s to enter adult-only premises
+d. refusing entry to any adult-only area of a track to anyone unable to produce an acceptable form of identification
+e. taking action when there are unlawful attempts to enter the adult-only areas.
+3. Licensees must ensure that their policies and procedures take account of the structure and layout of their gambling premises
+4. Licensees must not deliberately provide facilities for gambling in such a way as to appeal particularly to children or, except in the case of football pools, young people, for example by reflecting or being associated with youth culture.
+5. In premises restricted to adults, service must be refused in any circumstances where any adult is accompanied by a child or young person.
+6. Licensees must take all reasonable steps to ensure that all staff understand their responsibilities for preventing underage gambling. This must include appropriate training which must cover all relevant prohibitions against inviting children or young persons to gamble or to enter gambling premises, and the legal requirements on returning stakes and not paying prizes to underage customers.
+7. Licensees must only accept identification which:
+a. contains a photograph from which the individual can be identified
+b. states the individual’s date of birth
+c. is valid
+d. is legible and has no visible signs of tampering or reproduction.
+8. In the case of non-remote pool betting licensees, where pool entries or payments are collected door to door by the licensee or the licensee’s authorised agent the licensee’s procedures must include procedures for: a checking the age of apparently underage entrants to the pool; and b taking action when there are unlawful attempts to enter the pool.
+9. Licensees must conduct test purchasing or take part in collective test purchasing programmes, as a means of providing reasonable assurance that they have effective policies and procedures to prevent underage gambling, and must provide their test purchase results to the Commission, in such a form or manner as the Commission may from time to time specify.
+
+3.2.8 - Betting ordinary code
+
+Applies to:
+
+Points 1 to 5 inclusive: all non-remote betting and remote betting intermediary (trading rooms only) licences.
+Points 6: all non-remote betting (limited) licences and remote betting intermediary (trading rooms only) licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. The Commission considers acceptable forms of identification to include any identification carrying the PASS logo (for example Citizencard or Validate); a military identification card; a driving licence (including a provisional licence) with photocard; or a passport.
+2. Licensees should put into effect procedures that require their staff to check the age of any customer who appears to them to be under 25.
+3. Licensees should consider permanent exclusion from premises for any adult accompanied by a child or young person on more than one occasion to premises restricted to adults, or if there is reason to believe the offence was committed knowingly or recklessly.
+4. Procedures should be put into effect for dealing with cases where a child or young person repeatedly attempts to gamble on premises restricted to adults, including oral warnings, reporting the offence to the Gambling Commission 1 and the police, and making available information on problem gambling.
+5. In providing training to staff on their responsibilities for preventing underage gambling, licensees should have, as a minimum, policies for induction training and refresher training.
+6. Licensees should consider how they monitor the effectiveness of their policies and procedures for preventing underage gambling (for example by taking part in a collective test purchasing programme) and should be able to explain to the Commission or licensing authority what approach they have adopted.
+
+
+3.2.9 - Lottery SR code
+
+Applies to:
+All non-remote lottery licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must have and put into effect policies and procedures designed to minimise the risk of lottery tickets being sold to children (that is, persons under 16). This must include procedures for:
+
+a. checking the age of apparently underage purchasers of lottery tickets
+b. taking action when there are unlawful attempts to purchase tickets.
+
+2. Licensees must take all reasonable steps to ensure that all those engaged in the promotion of lotteries in reliance on the licence understand their responsibilities for preventing underage gambling, returning stakes and not paying prizes to underage customers.
+
+3.2.10 - Lottery ordinary code
+
+Applies to:
+All non-remote lottery licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees should require a person who appears to be under the age of 16 to be asked to produce proof of identity and age before purchasing a ticket.
+
+3.2.11 - Remote SR code
+
+Applies to:
+All remote licences (including ancillary remote betting licences in respect of bets made or accepted by telephone or email), except lottery licences, gaming machine technical, gambling software, host, ancillary remote casino, and ancillary remote bingo licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must have and put into effect policies and procedures designed to prevent underage gambling and monitor the effectiveness of these.
+2. Such procedures must include:
+a. Verifying the age of a customer before the customer is able to:
+i. deposit any funds into their account;
+ii. access any free-to-play versions of gambling games that the licensee may make available; or
+iii. gamble with the licensee using either their own money or any free bet or bonus.
+b. warning potential customers that underage gambling is an offence;
+c. regularly reviewing their age verification systems and implementing all reasonable improvements that may be made as technology advances and as information improves;
+d. ensuring that relevant staff are properly trained in the use of their age verification procedures; in particular customer services staff must be appropriately trained in the use of secondary forms of identification when initial verification procedures fail to prove that an individual is of legal age; and
+e. enabling their gambling websites to permit filtering software to be used by adults (such as parents or within schools) in order to restrict access to relevant pages of those sites.
+
+3.2.12 - Remote ordinary code
+
+Applies to:
+All remote licences (including ancillary remote betting licences), except gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino and remote betting intermediary (trading rooms only) licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees should, and should request their contracted partners to, draw attention to parental responsibility as part of the purchasing process of facilities such as mobile phones and interactive television.
+
+3.2.13 - Remote lottery SR code
+
+Applies to:
+All remote lottery licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must have and put into effect policies and procedures designed to prevent underage gambling and monitor the effectiveness of these.
+2. Such procedures must include:
+a. warning potential customers that underage gambling is an offence;
+b. requiring customers to affirm that they are of legal age;
+c. regularly reviewing their age verification systems and implementing all reasonable improvements that may be made as technology advances and as information improves;
+d. ensuring that relevant staff are properly trained in the use of their age verification procedures; in particular anyone who sells lottery tickets including canvassers and customer services staff must be appropriately trained in the use of secondary forms of identification when initial verifications procedures fail to prove that an individual is of legal age;
+e. enabling their gambling websites to permit filtering software to be used by adults (such as parents or within schools) in order to restrict access to relevant pages of those sites;
+f. the following age verification procedures:
+i. in the case of both subscription lotteries and low frequency lotteries1 , and provided it is clear in the terms and conditions that those under the age of 16 are not permitted to participate and that the prizes will not be paid out to those found to be under 16, customers must be required to verify their age before being able to make any subscription or purchase entry into the lottery. (The licensee is expected to conduct a programme of random checks of users who self-verify for compliance with age restrictions);
+ii. in every other case, licensees must verify the age of a customer before the customer is able to: o access any free-to-play versions of lotteries (for example instant win or digital scratchcard lotteries) that the licensee may make available; or o in any case, participate in a lottery.
+
+
+3.2.14 - Remote lottery ordinary code
+
+Applies to:
+All remote society lottery licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Where operators consider the lottery will be more likely to attract underage play – for example, where the prize is of particular appeal to children (those under the age of 16) such as concert tickets, games consoles, large prizes - operators should ensure that age verification measures are appropriate to the risk of attempted underage play. In these circumstances it is unlikely that self-verification alone will be sufficient.
+
+3.3 . Gambling management tools and responsible gambling management information
+3.3.1 - Responsible gambling information
+
+Applies to:
+All licences, except gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino and remote betting (remote platform) licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must make information readily available to their customers on how to gamble responsibly and how to access information about, and help in respect of, problem gambling.
+2. The information must cover:
+a. any measures provided by the licensee to help individuals monitor or control their gambling, such as restricting the duration of a gambling session or the amount of money they can spend
+b. timers or other forms of reminders or ‘reality checks’ where available
+c. self-exclusion options
+d. information about the availability of further help or advice.
+3. The information must be directed to all customers whether or not licensees also make available material which is directed specifically at customers who may be ‘problem gamblers’.
+4. For gambling premises, information must be available in all areas where gambling facilities are provided and adjacent to ATMs. Information must be displayed prominently using methods appropriate to the size and layout of the premises. These methods may include the use of posters, the provision of information on gambling products, or the use of screens or other facilities in the gambling premises. Information must also be available in a form that may be taken away and may also be made available through the use of links to be accessed online or using smart technology. Licensees must take all reasonable steps to ensure that this information is also readily accessible in locations which enable the customer to obtain it discreetly.
+
+3.3.2 - Foreign languages
+
+Applies to:
+All licences, except gaming machine technical, gambling software, host, ancillary remote bingo and ancillary remote casino licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1.Licensees who market their services in one or more foreign languages should make available in that, or those, foreign languages:
+a. the information on how to gamble responsibly and access to help referred to above
+b. the players’ guides to any game, bet or lottery required to be made available to customers under provisions in this code
+c. the summary of the contractual terms on which gambling is offered, which is required to be provided to customers as a condition of the licensee’s operating licence.
+
+3.3.3 - Betting B2 - time and monetary thresholds
+
+Applies to:
+All non-remote betting licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must ensure that any B2 machines that they make available for use require customers to make an active choice whether to set time and monetary thresholds for customer and staff alerts. Such thresholds must comply with any relevant requirements set out in the Commission’s machine technical standards
+
+3.3.4 - Remote time-out facility
+
+Applies to:
+All remote licences except: any remote lottery licence the holder of which does not provide facilities for participation in instant win lotteries, ancillary remote betting licences, remote betting (remote platform), gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino and remote betting intermediary (trading room only) licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must offer a ‘time out’ facility for customers for the following durations:
+
+a. 24 hours
+b. one week
+c. one month or
+d. such other period as the customer may reasonably request, up to a maximum of 6 weeks.
+
+3.4. Customer interaction
+3.4.1 - Premises-based customer interaction
+
+Applies to:
+All non-remote licences (except non-remote lottery, gaming machine technical, gambling software and host licences); only the following remote licences – ancillary remote bingo, ancillary remote casino, ancillary remote betting, remote general betting limited, and remote betting intermediary (trading rooms only).
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must interact with customers in a way which minimises the risk of customers experiencing harms associated with gambling. This must include:
+a. identifying customers who may be at risk of or experiencing harms associated with gambling.
+b. interacting with customers who may be at risk of or experiencing harms associated with gambling.
+c. understanding the impact of the interaction on the customer, and the effectiveness of the Licensee’s actions and approach.
+
+3.4.2 - Customer interaction – lotteries
+
+Applies to:
+All lottery licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees who are non-commercial societies or external lottery managers must:
+a. set an upper limit on the value of lottery tickets which may be sold to a person, whether as part of a single transaction or over a period of time, without customer interaction;
+b. maintain records of all instances of customer interaction pursuant to (a) above and, in each case, whether purchase of tickets beyond the limits set was then permitted; and
+c. ensure such records are made available to the Commission for inspection on request and retained for at least three years from the date of any lottery to which they relate.
+
+
+3.4.3 - Remote customer interaction
+
+Applies to:
+All remote licences, except any remote lottery licence the holder of which does not provide facilities for participation in instant win or high frequency lotteries1, remote gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, ancillary remote betting, remote betting intermediary (trading rooms only) and remote general betting limited licences.
+
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must implement effective customer interaction systems and processes in a way which minimises the risk of customers experiencing harms associated with gambling. These systems and processes must embed the three elements of customer interaction – identify, act and evaluate – and which reflect that customer interaction is an ongoing process as explained in the Commission’s guidance (see paragraph 2).
+2. Licensees must take into account the Commission’s guidance on customer interaction for remote operators2 as published and revised from time to time (‘the Guidance’).
+3. Licensees must consider the factors that might make a customer more vulnerable to experiencing gambling harms and implement systems and processes to take appropriate and timely action where indicators of vulnerability are identified. Licensees must take account of the Commission’s approach to vulnerability as set out in the Commission’s Guidance.
+4. Licensees must have in place effective systems and processes to monitor customer activity to identify harm or potential harm associated with gambling, from the point when an account is opened.
+5. Licensees must use a range of indicators relevant to their customer and the nature of the gambling facilities provided in order to identify harm or potential harm associated with gambling. These must include:
+a. customer spend
+b. patterns of spend
+c. time spent gambling
+d. gambling behaviour indicators
+e. customer-led contact
+f. use of gambling management tools
+g. account indicators.
+6. In accordance with SR Code Provision 1.1.2, licensees are responsible for ensuring compliance with the requirements. In particular, if the licensee contracts with third party business-to-business providers to offer any aspect of the licensee’s business related to the licensed activities, the licensee is responsible for ensuring that systems and processes are in place to monitor the activity on the account for each of the indicators in paragraph 5 (a-g) and in a timely way as set out in paragraphs 7 and 8.
+7. A licensee’s systems and processes for customer interaction must flag indicators of risk of harm in a timely manner for manual intervention, and feed into automated processes as required by paragraph 11. 
+8. Licensees must take appropriate action in a timely manner when they have identified the risk of harm.
+9. Licensees must tailor the type of action they take based on the number and level of indicators of harm exhibited. This must include, but not be limited to, systems and processes which deliver:
+a. tailored action at lower levels of indicators of harm which seeks to minimise future harm
+b. increasing action where earlier stages have not had the impact required
+c. strong or stronger action as the immediate next step n cases where that is appropriate, rather than increasing action gradually
+d. reducing or preventing marketing or the take-up of new bonus offers where appropriate
+e. ending the business relationship where necessary.
+10. Licensees must prevent marketing and the take up of new bonus offers where strong indicators of harm, as defined within the licensee’s processes, have been identified.
+11. Licensees must ensure that strong indicators of harm, as defined within the licensee’s processes, are acted on in a timely manner by implementing automated processes. Where such automated processes are applied, the licensee must manually review their operation in each individual customer’s case and the licensee must allow the customer the opportunity to contest any automated decision which affects them.
+12. Licensees must implement processes to understand the impact of individual interactions and actions on a customer’s behaviour, the continued risk of harm and therefore whether and, if so, what further action is needed.
+13. Licensees must take all reasonable steps to evaluate the effectiveness of their overall approach, for example by trialling and measuring impact, and be able to demonstrate to the Commission the outcomes of their evaluation.
+14. Licensees must take account of problem gambling rates for the relevant gambling activity as published by the Commission4, in order to check whether the number of customer interactions is, at a minimum, in line with this level. For the avoidance of doubt, this provision is not intended to mandate the outcome of those customer interactions.
+
+3.4.4 - Financial vulnerability check
+
+Applies to:
+All remote licences, except any remote lottery licence the holder of which does not provide facilities for participation in instant win or high frequency lotteries, remote gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, ancillary remote betting, remote betting intermediary (trading rooms only) and remote general betting limited licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must undertake a financial vulnerability check for customers that meet the relevant threshold.
+2. A financial vulnerability check must include at a minimum a customer-specific public record information check for significant indicators of potential financial vulnerability. The check must include whether the customer is subject to any of the following:
+a. bankruptcy order, or equivalent, or
+b. county court judgment (CCJ); an individual voluntary arrangement (IVA); high court judgment (HCJ); administration order (AO) or decree; Debt Relief Order (DRO); or equivalent.
+3. Licensees must:
+a. consider the financial vulnerability information they obtain, together with all of the other information they know about the customer and are permitted to use, in order to assess risk,
+b. take proportionate action when risk is identified, and
+c. record the rationale for the decision on proportionate action.
+4. Licensees must have and put into effect policies and procedures on:
+a. whether, when taking decisions on proportionate action, it is appropriate for such a decision to be taken manually, in a fully automated manner (offering the customer the opportunity for manual review where decisions for action are taken), or through a combination of automated processing and subsequent manual review, and
+b. the circumstances in which immediate action is necessary to limit harm where significant risk is identified.
+5. The licensee is not required to conduct this financial vulnerability check at the point when the customer reaches a relevant threshold, if the operator has previously conducted a financial vulnerability check or a financial risk assessment within the previous 12 months.
+6. From 28 February 2025, the relevant threshold is where the customer’s deposits minus withdrawals exceeds £150 in a rolling 30-day period.
+7. Between 30 August 2024 and 27 February 2025, the relevant threshold is where the customer’s deposits minus withdrawals exceeds £500 in a rolling 30-day period.
+
+3.4.5 - Not in use
+
+3.4.6 - Financial risk assessments pilot
+
+Applies to:
+All remote bingo, casino and betting licences of fee categories J1, K1 and L1.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Subject to paragraph 2 below, in this provision:
+a. the pilot phase is the period from 30 August 2024 to 31 March 2025 inclusive;
+b. the pilot stages of the pilot phase are three stages which operate over such periods of the pilot phase as may be specified by the Commission from time to time;
+c. a threshold is a threshold which is specified by the Commission for the purposes of subparagraph h below from time to time;
+d. a customer’s account is an inactive account for the purposes of a pilot stage if the customer did not use that account for gambling during the period of 12 months prior to the commencement of the relevant pilot stage;
+e. a customer’s account is an active account for the purposes of a pilot stage if the customer used that account for gambling during the period of 12 months prior to the commencement of the relevant pilot stage;
+f. the stage one historical period is such period as the Commission may specify for the purposes of subparagraph h(i);
+g. the stage two historical period is such period as the Commission may specify for the purposes of subparagraph h(ii);
+h. a relevant customer is:
+i. during the first pilot stage, a customer of the licensee who has an account which is inactive, and in relation to which during the stage one historical period the deposits into that account minus the withdrawals from that account exceeded either the relevant threshold during a calendar day or the relevant threshold over a 90-day period;
+ii. during the second pilot stage, a customer of the licensee who has an account which is active, and in relation to which during the stage two historical period the deposits into that account minus the withdrawals from that account exceeded either the relevant threshold during a calendar day or the relevant threshold over a 90-day period;
+iii. during the third pilot stage, a customer of the licensee who has an account which is active, and in relation to which:
+the deposits into that account minus the withdrawals from that account exceed the relevant threshold over any 24-hour period; or
+the deposits into that account minus the withdrawals from that account exceed the relevant threshold over any 90-day period;
+i. a credit reference agency is any one of the three credit reference agencies, Equifax, Experian and TransUnion;
+j. a financial risk assessment is an assessment provided by a credit reference agency of the financial risk in relation to a customer which takes into account information that the credit reference agency holds about the customer, including (where available) credit performance data and aggregated current account turnover data.
+2. The Commission may:
+a. extend the pilot phase so that it concludes on a date no later than 30 April 2025, any such extension to be notified to licensees no later than 17 March 2025;
+b. for the purposes of paragraph 1b above, specify that pilot stages operate over different periods in respect of different licensees and/or categories of licensees;
+c. for the purposes of paragraph 1c above, specify different thresholds for different pilot stages and/or for different cases and/or categories of case;
+d. for the purposes of paragraph 1f above, specify different stage one historical periods in respect of different licensees and/or categories of licensees;
+e. for the purposes of paragraph 1g above, specify different stage two historical periods in respect of different licensees and/or categories of licensees; and
+f. for the purposes of paragraph 1h above, specify the relevant calendar days and the relevant 90 day periods, and the Commission may specify different such days or periods in respect of different licensees or categories of licensees.
+3. During the pilot phase, a licensee must request from a credit reference agency a financial risk assessment in respect of each relevant customer. The request must be made:
+a. during the first and second pilot stages, within 10 working days of the relevant pilot stage commencing; and
+b. during the third pilot stage, within 24 hours of the time at which the customer first becomes a relevant customer.
+4. In a case in which a licensee receives a financial risk assessment pursuant to a request made under paragraph 3 above, the licensee must:
+a. consider the financial risk assessment and any other relevant information that it holds about the relevant customer and:
+i. assess whether the relevant customer is or was (as the case may be) at risk of harm associated with gambling, and
+ii. determine what action, if any, the licensee would take or would have taken (as the case may be) under SR Code Provision 3.4.3 as a result of that assessment if paragraph 6 below did not apply;
+b. record the assessment and the determination referred to in subparagraph a above, and the reasons for the determination; and
+c. provide to the Commission such information in relation to the assessment and/or determination referred to in subparagraph a above, and/or information in relation to such assessments and determinations generally, at such time and in such form and manner as the Commission may specify from time to time.
+5. During the pilot phase, a licensee must:
+a. determine the policies and procedures that it would be appropriate for the licensee to adopt in relation to the provision to and receipt from credit reference agencies of data about customers (including the receipt of financial risk assessments);
+b. determine the policies and procedures that it would be appropriate for the licensee to adopt in relation to assessments of whether a customer is at risk of harm associated with gambling, and determinations of what action (if any) the licensee would take as a result of that assessment, if the licensee were required to obtain and consider a financial risk assessment for the purposes of SR Code Provision 3.4.3; and
+c. report to the Commission its conclusions under subparagraphs a and b above, and its reasons for those conclusions, at such time and in such form and manner as the Commission may specify from time to time.
+
+3.4.7 - Financial risk assessments pilot – analysis phase
+
+Applies to:
+All remote bingo, casino and betting licences which were within fee categories J1, K1 and L1 on 30 August 2024.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. In this provision:
+a. the ‘analysis phase’ is the period from the date on which this provision takes effect until such date as the Commission may specify;
+b. a ‘direction’ is a direction given by the Commission to a licensee (or licensees) under paragraph 2 below;
+c. a ‘modified financial risk assessment’ is a financial risk assessment which does not take into account such information that the credit reference agency holds about the customer as may be specified in a direction and/or which takes into account information that the credit reference agency holds about the customer in such manner as may be specified in a direction;
+d. ‘pilot information’ comprises:
+i. a financial risk assessment obtained by a licensee during the pilot phase,
+ii. any information available to the licensee only because it was included in a financial risk assessment obtained during the pilot phase,
+iii. a financial risk assessment and a modified financial risk assessment obtained by a licensee during the analysis phase, and
+iv. any other information obtained or generated by, or otherwise available to, the licensee only because the licensee has complied with a direction;
+e. the definitions of terms provided for by SR Code Provision 3.4.6(1) and (2) apply.
+2. For the purpose of enabling a licensee and/or the Commission and/or a credit reference agency to analyse or further analyse information obtained or produced during the pilot phase, during the analysis phase the Commission may from time to time give to the licensee (or to more than one licensee) a direction which requires the licensee (or licensees):
+a. to provide to one or more credit reference agencies such information as may be specified in the direction;
+b. to request from one or more credit reference agencies such information as may be specified in the direction;
+c. to carry out such analysis of information as may be specified in the direction; and/or
+d. to provide to the Commission such information as may be specified in the direction.
+3. For the avoidance of doubt, the information which may be specified in a direction may include, but is not limited to:
+a. information about one or more specific customers; and/or
+b. a modified financial risk assessment.
+4. The licensee to which a direction is given must comply with the direction in such manner and in such form as the Commission may specify in the direction.
+5. For the purpose of enabling the licensee and/or the Commission to analyse information obtained or produced by the licensee during the pilot phase or the analysis phase, the licensee must retain all pilot information until 31 March 2026 or such other date as the Commission may specify.
+6. Subject to paragraph 5 above, the licensee must use pilot information only during the analysis phase and only for the purposes of complying with a direction. The licensee must not use pilot information for any other purpose. In particular, a licensee must not use pilot information for the purpose of compliance with its obligations under SR Code Provision 3.4.3.
+
+3.5 . Self-exclusion
+3.5.1 - Self exclusion – Non-remote and trading rooms SR code
+
+Applies to:
+All non-remote licences (except lottery, gaming machine technical and gambling software licences) and remote betting intermediary (trading rooms only) licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must have and put into effect procedures for self-exclusion and take all reasonable steps to refuse service or to otherwise prevent an individual who has entered a self-exclusion agreement from participating in gambling.
+2. Licensees must, as soon as practicable, take all reasonable steps to prevent any marketing material being sent to a self-excluded customer.
+3. Licensees must take steps to remove the name and details of a self-excluded individual from any marketing databases used by the company or group (or otherwise flag that person as an individual to whom marketing material must not be sent), within two days of receiving the completed self-exclusion notification.
+4. This covers any marketing material relating to gambling, or other activities that take place on the premises where gambling may take place. However, it would not extend to blanket marketing which is targeted at a particular geographical area and where the excluded individual would not knowingly be included.
+5. Licensees must close any customer accounts of an individual who has entered a self- exclusion agreement and return any funds held in the customer account. It is not sufficient merely to prevent an individual from withdrawing funds from their customer account whilst still accepting wagers from them. Where the giving of credit is permitted, the licensee may retain details of the amount owed to them by the individual, although the account must not be active.
+6. Licensees must put into effect procedures designed to ensure that an individual who has self-excluded cannot gain access to gambling. These procedures must include:
+a. a register of those excluded with appropriate records (name, address, other details, and any membership or account details that may be held by the operator);
+b. photo identification (except where the Licensee can reasonably satisfy themselves that in the circumstances in which they provide facilities for gambling an alternative means of identification is at least as effective) and a signature;
+c. staff training to ensure that staff are able to administer effectively the systems; and
+d. the removal of those persons found in the gambling area or attempting to gamble from the premises.
+7. Licensees must ensure that their procedures for preventing access to gambling by self- excluded individuals take account of the structure and layout of the gambling premises.
+8. Licensees must, when administering the self-exclusion agreement, signpost the individual to counselling and support services.
+
+
+3.5.2 - Self-exclusion – non-remote ordinary code
+
+Applies to:
+All non-remote licences and remote betting intermediary (trading rooms only) licences, but not gaming machine technical and gambling software licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Self-exclusion procedures should require individuals to take positive action in order to self- exclude. This can be a signature on a self-exclusion form.
+2. Individuals should be able to self-exclude without having to enter gambling premises.
+3. Before an individual self-excludes, licensees should provide or make available sufficient information about what the consequences of self-exclusion are.
+4. Licensees should take all reasonable steps to extend the self-exclusion to premises of the same type owned by the operator in the customer’s local area. In setting the bounds of that area licensees may take into account the customer’s address (if known to them), anything else known to them about the distance the customer ordinarily travels to gamble and any specific request the customer may make.
+5. Licensees should encourage the customer to consider extending their self-exclusion to other licensees’ gambling premises in the customer’s local area.
+6. Customers should be given the opportunity to discuss self-exclusion in private, where possible.
+7. Licensees should take steps to ensure that:
+a. the minimum self-exclusion period offered is of a duration of not less than 6 nor more than 12 months
+b. any self-exclusion may, on request, be extended for one or more further periods of at least 6 months each
+c. a customer who has decided to enter a self-exclusion agreement is given the opportunity to do so immediately without any cooling-off period. However, if the customer wishes to consider the self-exclusion further (for example to discuss with problem gambling groups), the customer may return at a later date to enter into self- exclusion
+d. at the end of the period chosen by the customer, the self-exclusion remains in place for a further 6 months, unless the customer takes positive action in order to gamble again
+e. where a customer chooses not to renew the self-exclusion, and makes a positive request to begin gambling again during the 6 month period following the end of their initial self-exclusion, the customer is given one day to cool off before being allowed access to gambling facilities. The contact must be made via telephone or in person
+f. notwithstanding the expiry of the period of self-exclusion chosen by a customer, no marketing material should be sent to them unless and until they have asked for or agreed to accept such material.
+8. The licensee should retain the records relating to a self-exclusion agreement at least for the length of the self-exclusion agreement plus a further 6 months.
+9. Please note that the Commission does not require the licensee to carry out any particular assessment or make any judgement as to whether the previously self-excluded individual should again be permitted access to gambling. The requirement to take positive action in person or over the phone is purely to a) check that the customer has considered the decision to access gambling again and allow them to consider the implications; and b) implement the one day cooling-off period and explain why this has been put in place.
+10. Licensees should have, and put into effect, policies and procedures which recognise, seek to guard against and otherwise address, the fact that some individuals who have self-excluded might attempt to breach their exclusion without entering a gambling premises, for example, by getting another to gamble on their behalf.
+11. Licensees should have effective systems in place to inform all venue staff of self-excluded individuals who have recently attempted to breach a self-exclusion in that venue, and the licensees neighbouring venues.
+12. In providing training to staff on their responsibilities for self-exclusion, licensees should have, as a minimum, policies for induction training and refresher training.
+
+3.5.3 - Self-exclusion – remote SR code
+
+Applies to:
+All remote licences except: gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, betting intermediary (trading room only) and remote betting (standard) (remote platform) licences.
+Point 8 does not apply to ancillary remote betting licences, remote general betting (limited), or any remote lottery licence the holder of which does not provide facilities for participation in instant win lotteries.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must have and put into effect procedures for self-exclusion and take all reasonable steps to refuse service or to otherwise prevent an individual who has entered a self-exclusion agreement from participating in gambling.
+2. Licensees must, as soon as practicable, take all reasonable steps to prevent any marketing material being sent to a self-excluded customer.
+3. Licensees must take steps to remove the name and details of a self-excluded individual from any marketing databases used by the company or group (or otherwise flag that person as an individual to whom marketing material must not be sent), within two days of receiving the completed self-exclusion notification.
+4. This covers any marketing material relating to gambling. However, it would not extend to blanket marketing which is targeted at a particular geographical area and where the excluded individual would not knowingly be included.
+5. Licensees must close any customer accounts of an individual who has entered a self- exclusion agreement and return any funds held in the customer account. It is not sufficient merely to prevent an individual from withdrawing funds from their customer account whilst still accepting wagers from them. Where the giving of credit is permitted, the licensee may retain details of the amount owed to them by the individual, although the account must not be active.
+6. Licensees must put into effect procedures designed to ensure that an individual who has self-excluded cannot gain access to gambling. These procedures must include:
+a. a register of those excluded with appropriate records (name, address, other details, and any membership or account details that may be held by the operator);
+b. a record of the card numbers to be excluded;
+c. staff training to ensure that staff are able to administer effectively the systems; and
+d. the removal of access from those persons found to have gambled or who have attempted to gamble on the facilities.
+7. Licensees must when administering the self-exclusion signpost the individual to counselling and support services.
+8. Customers must be given the opportunity to self-exclude by contacting customer services and in addition by entering an automated process using remote communication. In order to avoid inadvertent self-exclusion it is acceptable for an automated process to include an additional step that requires the customer to confirm that they wish to self-exclude. The licensee must ensure that all staff who are involved in direct customer service are aware of the self-exclusion system in place, and are able to direct that individual to an immediate point of contact with whom/which to complete that process.
+
+3.5.4 - Self-exclusion – Remote ordinary code
+
+Applies to:
+All remote licences (including ancillary remote betting licences), except gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, remote betting intermediary (trading rooms only) and remote betting (standard) (remote platform) licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Self-exclusion procedures should require individuals to take positive action in order to self-exclude:
+a. over the internet; this can be a box that must be ticked in order to indicate that they understand the system
+b. by telephone; this can be a direct question asking whether they understand the system.
+2. Before an individual self-excludes, licensees should provide or make available sufficient information about what the consequences of self-exclusion are.
+3. Licensees should encourage the customer to consider extending their self-exclusion to other remote gambling operators currently used by the customer.
+4. Within the licensee’s information about self-exclusion policies, the licensee should provide a statement to explain that software is available to prevent an individual computer from accessing gambling internet sites. The licensee should provide a link to a site where further information is available.
+5. Licensees should take all reasonable steps to ensure that:
+a. the minimum self-exclusion period offered is of a duration of not less than 6 nor more than 12 months;
+b. any self-exclusion may, on request, be extended for one or more further periods of at least 6 months;
+c. the self-exclusion arrangements give customers the option of selecting a self-exclusion period of up to at least five years;
+d. a customer who has decided to enter a self-exclusion agreement is given the opportunity to do so immediately without any cooling-off period. However, if the customer wishes to consider the self-exclusion further (for example to discuss with problem gambling groups) the customer may return at a later date to enter into self-exclusion;
+e. at the end of the period chosen by the customer, self-exclusion remains in place, for a minimum of 7 years, unless the customer takes positive action to gamble again;
+f. where a customer chooses not to renew, and makes a positive request to begin gambling again, during the 7 year period following the end of their initial self-exclusion, the customer is given one day to cool off before being allowed to access gambling facilities. Contact must be made via phone or in person; re-registering online is not sufficient; and
+g. notwithstanding the expiry of the period of self-exclusion chosen by a customer, no marketing material should be sent to them unless and until they have asked for or agreed to accept such material.
+6. The licensee should retain the records relating to a self-exclusion agreement for as long as is needed to enable the self-exclusion procedures set out in paragraph 5 above to be implemented.
+7. Please note that the Commission does not require the licensee to carry out any particular assessment or make any judgement as to whether the previously self-excluded individual should again be permitted access to gambling. The requirement to take positive action in person or over the phone is purely to a) check that the customer has considered the decision to access gambling again and allow them to consider the implications; and b) implement the one day cooling-off period and explain why this has been put in place.
+8. In providing training to staff on their responsibilities for self-exclusion, licensees should have, as a minimum, policies for induction training and refresher training.
+
+
+3.5.5 - Remote multi-operator SR code
+
+Applies to:
+All remote licences except: any remote lottery licence the holder of which does not provide facilities for participation in instant win lotteries, ancillary remote betting when relied upon to provide facilities for betting via a machine (commonly known as self-service betting terminals) on premises where a betting or track premises licence has effect, remote general betting (remote platform), remote betting intermediary (trading room only), gaming machine technical, gambling software, host, ancillary remote bingo, and ancillary remote casino licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must participate in the national multi-operator self-exclusion scheme.
+
+
+3.5.6 - Multi-operator non-remote SR code
+
+Applies to:
+All non-remote casino, bingo and betting licences (except in respect of the provision of facilities for betting in reliance on a track premises licence) and holders of gaming machine general operating licences for adult gaming centres.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must offer customers with whom they enter into a self-exclusion agreement in respect of facilities for any kind of gambling offered by them at licensed gambling premises the ability to self-exclude from facilities for the same kind of gambling offered in their locality by any other holder of an operating licence to whom this provision applies, by participating in one or more available multi-operator self-exclusion schemes.
+
+
+3.5.7 - Multi-operator non-remote ordinary code
+
+Applies to:
+All non-remote casino, bingo and betting licences (except in respect of the provision of facilities for betting in reliance on a track premises licence) and holders of gaming machine general operating licences for adult gaming centres.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees should contribute to and participate in the development and effective implementation of multi-operator self-exclusions schemes with the aim of making available to customers the ability to self-exclude from facilities for gambling provided by other licensed operators within their local area(s).
+
+3.5.8 - Non-remote lottery SR code
+
+Applies to:
+All non-remote lottery licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1 Licensees must have and put into effect procedures for self-exclusion and take all reasonable steps to refuse service or to otherwise prevent an individual who has entered a self-exclusion agreement from participating in gambling.
+
+2. Licensees must, as soon as practicable, take all reasonable steps to prevent any marketing material being sent to a self-excluded customer.
+3. Licensees must take steps to remove the name and details of a self-excluded individual from any marketing databases used by the company or group (or otherwise flag that person as an individual to whom marketing material must not be sent), within two days of receiving the completed self-exclusion notification.
+4. This covers any marketing material relating to gambling, or other activities that take place on the premises where gambling may take place. However, it would not extend to blanket marketing which is targeted at a particular geographical area and where the excluded individual would not knowingly be included.
+5. Licensees must close any customer accounts of an individual who has entered a self-exclusion agreement and return any funds held in the customer account. It is not sufficient merely to prevent an individual from withdrawing funds from their customer account whilst still accepting wagers from them. Where the giving of credit is permitted, the licensee may retain details of the amount owed to them by the individual, although the account must not be active.
+6. Licensees must put into effect procedures designed to ensure that an individual who has self- excluded cannot gain access to gambling. These procedures must include:
+a. a register of those excluded with appropriate records (name, address, other details, and any membership or account details that may be held by the operator);
+b. a facility for someone self-excluding to provide a signature; and
+c. staff training to ensure that staff are able to administer effectively the systems.
+7. Licensees must, when administering the self-exclusion agreement, signpost the individual to counselling and support services.
+
+
+
+3.6 . Employment of children and young persons
+3.6.1 - Lottery and pool betting
+
+Applies to:
+All lottery licences and pool betting licences restricted to football pools.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees who employ young persons (16 and 17 year olds) to sell tickets, collect payments or pay out winnings should have and put into effect policies and procedures designed to ensure that all staff, including staff who are young persons themselves, are made aware that the law prohibits underage gambling, and that tickets may only be sold to persons aged 16 or over.
+
+
+3.6.2 - Bingo
+
+Applies to:
+All non-remote bingo licences
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees who employ children under (under-16-year-olds) and young persons (those aged 16 or 17) should be aware that it is an offence:
+a. to employ them to provide facilities for playing bingo;
+b. for their contracts of employment to require them, or for them to be permitted, to perform a function in connection with a gaming machine; and
+c. to employ a child to perform any function on premises where, and at time when, facilities are being provided for playing bingo.
+2. As to 1b, it should be noted that in the Commission’s view the relevant provision of the Act applies to any function performed in connection with a gaming machine. This includes servicing or cleaning such a machine.
+3. Accordingly, licensees should have and put into effect policies and procedures designed to ensure that:
+a. children and young persons are never asked to perform tasks within 1a or 1b, above
+b. all staff, including those who are children and young persons themselves, are instructed about the laws relating to access to gambling by children and young persons.
+4. Licensees should consider adopting a policy that:
+a. children are not employed to work on bingo licensed premises at any time when the premises are open for business
+b. neither children nor young persons are in any event asked to work in areas where gaming machines are situated.
+
+3.6.3 - Casino
+
+Applies to:
+All non-remote casino licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees who employ children (under-16-year-olds) and young persons (those aged 16 and 17) should be aware that it is an offence:
+a. to employ them to provide facilities for gambling;
+b. if gaming machines are sited on the premises, for their contracts of employment to require them, or for them to be permitted, to perform a function in connection with a gaming machine at any time; and
+c. to employ them to carry out any other function on casino licensed premises while any gambling activity is being carried on in reliance on the premises licence (except that they can be employed on a part of regional casino premises when that part of the premises is not being used for the provision of facilities for gambling).
+2. As to 1b, it should be noted that in the Commission’s view the relevant provision of the Act applies to any function performed in connection with a gaming machine. This includes servicing or cleaning such a machine.
+3. Accordingly, licensees should have and put into effect policies and procedures designed to ensure that:
+a. children and young persons are never asked to perform tasks within 1a or 1b above
+b. all staff, including those who are children or young persons themselves, are instructed about the laws relating to access to gambling by children and young persons.
+4. Licensees should consider adopting a policy that:
+children and young persons are not employed to work on casino licensed premises (other than in an area of a regional casino where gambling does not take place) at any time when the premises are open for business
+gaming machines are turned off if children and young persons are working on the premises outside the hours when the premises are open for business.
+
+
+3.6.4 - Betting
+
+Applies to:
+All non-remote general, pool betting, and remote betting intermediary (trading rooms only) licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees who employ children (under-16-year-olds) and young persons (those aged 16 and 17) should be aware that it is an offence:
+a. to employ children to provide facilities for gambling in connection with football pools;
+b. otherwise to employ children and young persons to provide facilities for gambling;
+c. if gaming machines are sited on the premises, for their contracts of employment to require them, or for them to be permitted, to perform a function in connection with a gaming machine at any time; and
+d. to employ them to carry out any other function on betting licensed premises while any gambling activity is being carried on in reliance on the premises licence.
+2. As to 1c, it should be noted that in the Commission’s view the relevant provision of the Act applies to any function performed in connection with a gaming machine. This includes servicing or cleaning such a machine.
+3. Accordingly, licensees should have and put into effect policies and procedures designed to ensure that:
+a. children are never asked to perform tasks within 1a above
+b. children and young persons are never asked to perform tasks within 1b above
+c. all staff, including those who are children or young persons themselves, are instructed about the laws relating to access to gambling by children and young persons.
+4. Licensees should consider adopting a policy that:
+a. children and young persons are not employed to work on betting licensed premised at any time when the premised are open for business
+b. gaming machines are turned off if children and young persons are working on the premises outside the hours when the premises are open for business.
+
+
+3.6.5 - Adult Gaming Centres
+
+Applies to:
+All adult gaming centre licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees who employ children (under-16-year-olds) and young persons (those aged 16 and 17) should be aware that it is an offence:
+a. to employ them to provide facilities for gambling;
+b. if gaming machines are sited on the premises, for their contracts of employment to require them, or for them to be permitted, to perform a function in connection with a gaming machine at any time; and
+c. to employ them to carry out any other function on adult gaming centre licensed premises while any gambling activity is being carried on in reliance on the premises licence.
+2. As to 1b, it should be noted that in the Commission’s view the relevant provision of the Act applies to any function performed in connection with a gaming machine. This includes servicing or cleaning such a machine.
+3. Accordingly, licensees should have and put into effect policies and procedures designed to ensure that:
+a. children and young persons are never asked to perform tasks within 1a or 1b, above
+b. all staff, including those who are children or young persons themselves, are instructed about the laws relating to access to gambling by children and young persons.
+4. Licensees should consider adopting a policy that:
+a. children and young persons are not employed to work on adult gaming centre licensed premises at any time when the premises are open for business
+b. gaming machines are turned off if children and young persons are working on the premises outside the hours when the premises are open for business.
+
+3.6.6 - Family Entertainment Centres
+
+Applies to:
+All family entertainment centre licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees who employ children (under-16-year-olds) and young persons (those aged 16 and 17) should be aware that it is an offence:
+a. to employ them to provide facilities for gambling;
+b. if gaming machines are sited on the premises, for their contracts of employment to require them, or for them to be permitted, to perform a function in connection with a gaming machine at any time; and
+c. to employ them to carry out any other function on adult gaming centre licensed premises while any gambling activity is being carried on in reliance on the premises licence.
+2. As to 1b, it should be noted that in the Commission’s view the relevant provision of the Act applies to any function performed in connection with a gaming machine. This includes servicing or cleaning such a machine.
+3. Accordingly, licensees should have and put into effect policies and procedures designed to ensure that:
+a. children and young persons are never asked to perform tasks within 1a or 1b, above
+b. all staff, including those who are children or young persons themselves, are instructed about the laws relating to access to gambling by children and young persons.
+4. Licensees should consider adopting a policy that:
+a. children and young persons are not employed to work on adult gaming centre licensed premises at any time when the premises are open for business
+b. gaming machines are turned off if children and young persons are working on the premises outside the hours when the premises are open for business.
+
+
+3.6.7 - Remote
+
+Applies to:
+All remote licences, except remote lottery, remote pool betting, remote gaming machine technical, remote gambling software, ancillary remote bingo, ancillary remote casino and remote betting intermediary (trading rooms only) licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees who employ children (under-16-year-olds) and young persons (those aged 16 and 17) should be aware that it is an offence to employ them to provide facilities for gambling.
+
+3.6.8 - Remote pool betting
+
+Applies to:
+All remote pool betting licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees who employ children (under-16-year-olds) and young persons (those aged 16 and 17) should be aware that it is an offence:
+a. to employ children to provide facilities for gambling on connection with football pools; and
+b. otherwise to employ children and young people to provide facilities for gambling.
+
+3.7.1 - Provision of credit
+
+Applies to:
+All non-remote general betting licences (except where betting is offered under a 2005 Act casino premises licence), pool betting licences and all remote licences (including ancillary remote betting licences), except gaming machine technical, gambling software, host, ancillary remote casino, ancillary remote bingo and remote betting intermediary (trading rooms only) licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees who choose to offer credit to members of the public who are not themselves gambling operators must also:
+a. have procedures for checking and scoring applications for credit from such customers, for setting, and for the increase of, credit limits
+b. explain these procedures to customers
+c. set a maximum credit limit for each customer and not permit customers to exceed that limit without further application
+d. apply a 24-hour delay between receiving a request for an increase in a credit limit and granting it in those cases where the limit exceeds that which the operator previously set
+e. not require a minimum spend within a set time period
+f. take all reasonable steps to ensure that offers of credit are not sent to vulnerable persons, including those who have self-excluded from gambling
+g. ensure that information about an offer of credit includes a risk warning of what may happen in the event of default.
+
+
+3.8.1 - Money-lending – casinos
+
+Applies to:
+All non-remote casino licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees should take steps to prevent systematic or organised money lending between customers on their premises.
+2. While the nature of those steps will depend to some extent on the layout and size of the premises, they should cover matters such as:
+a. systems for monitoring for such activity;
+b. instructions to staff concerning what they should do if they spot what they believe to be significant money lending and to managers about the ways in which they should handle and act on any such lending; and
+c. excluding from the premises, either temporarily or permanently as appropriate, any person whom the evidence suggests has become involved in organised or systematic money lending.
+3. There should be appropriate arrangements in place to cover any cases where it appears that the lending may be commercial in nature or may involve money laundering. In the latter case, the requirements in respect of reporting suspicious transactions must be followed. In all cases where the operator encounters systematic or organised money lending, a report should be made to the Commission.
+
+
+3.8.2 - Money-lending – other than casinos
+
+Applies to:
+All non-remote bingo, general betting, adult gaming centre, family entertainment centre and remote betting intermediary (trading rooms only) licences.
+
+Ordinary code
+These do not have the status of operator licence conditions but set out good practice. Operators may adopt alternative approaches to those set out in ordinary code provisions if they have actively taken account of the ordinary code provision and can demonstrate that an alternative approach is reasonable in the operator's particular circumstances; or that to take an alternative approach would be acting in a similarly effective manner. Ordinary codes of practice are admissible in evidence in criminal or civil proceedings and must be taken into account in any case in which the court or tribunal think them relevant, and by the Commission in the exercise of its functions; any departure from ordinary code provisions by an operator may be taken into account by the Commission on a licence review, but cannot lead to imposition of a financial penalty.
+
+1. Licensees should seek to prevent systematic or organised money lending between customers on their premises. As a minimum, they should have arrangements in place to ensure staff are requested to report any instances of substantial money lending when they become aware of them.
+
+
+3.9.1 - Identification of individual customers - remote
+
+Applies to:
+All remote licences (including ancillary remote betting licences) except gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino and remote betting intermediary (trading rooms only) licences.
+
+Social responsibility code
+Compliance with these is a condition of licences; therefore any breach of them by an operator may lead the Commission to review the operator’s licence with a view to suspension, revocation or the imposition of a financial penalty and would also expose the operator to the risk of prosecution.
+
+1. Licensees must have and put into effect policies and procedures designed to identify separate accounts which are held by the same individual.
+2. Where licensees allow customers to hold more than one account with them, the licensee must have and put into effect procedures which enable them to relate each of a customer’s such accounts to each of the others and ensure that:
+a. if a customer opts to self-exclude they are effectively excluded from all gambling with the licensee unless they make it clear that their request relates only to some forms of gambling or gambling using only some of the accounts they hold with the licensee;
+b. all of a customer’s accounts are monitored and decisions that trigger customer interaction are based on the observed behaviour and transactions across all the accounts;
+c. where credit is offered or allowed the maximum credit limit is applied on an aggregate basis across all accounts; and
+d. individual financial limits can be implemented across all of a customer’s accounts.
+3. Licensees which are companies or other bodies corporate must take all reasonable steps to comply with the above provision as if reference to a customer holding more than one account with them included a reference to a customer holding one or more accounts with them and one or more accounts with a group company.
+4. A company is a ‘group company’ in relation to a licensee if it is the holding company of, subsidiary of, or shares a common holding company with, the licensee. For these purposes ‘holding company’ and ‘subsidiary’ have the meanings ascribed to them by section 1159 of the Companies Act 20061 or any statutory modification or re-enactment thereof.
+
+
+
+
+
+

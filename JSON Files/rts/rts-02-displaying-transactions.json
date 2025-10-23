@@ -1,0 +1,260 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Displaying Transactions",
+  "document_reference": "RTS Aim 2",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "In respect of requirements 2A to 2D - All gambling. In respect of requirements 2E - Casino (excluding peer-to-peer poker).",
+  "aim": {
+    "aim_id": "RTS_AIM_2",
+    "aim_number": 2,
+    "aim_title": "Customer Understanding of Transaction Value and Content",
+    "aim_description": "To enable the customer to understand the value and content of their transactions"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_2A",
+      "requirement_number": "2A",
+      "title": "Display of Money Being Gambled",
+      "requirement_type": "mandatory",
+      "full_text": "The remote gambling system must make available clear information about the amount of money being gambled by the customer, including any conversions from one form of currency to another, or from currency to credits, chips or other tokens etc, at the point of conversion.",
+      "implementation_guidance": {
+        "full_text": "The financial commitment for each gamble should be displayed somewhere on the screen either in the currency of the customer's account or in the currency of the product. The use of credits, chips or other tokens with no face value should only be used when the corresponding currency amount is clearly visible, or where the customer is not staking additional money such as a poker tournament. Any conversion from one currency to another should be clearly presented to the customer and any conversion rules are also to be presented. Where currency is converted into tokens, chips or credits, etc, the conversion should be clearly displayed. Information about the value of the gamble should be displayed including, as appropriate: unit stake and total stake, whether currency, credit, tokens, chips, or any other form of payment; entry fees, for example, payment for entry to poker tournaments; the price of lottery tickets and the number of draws entered. For telephone gambling, this information is to be delivered by the customer service agent or automated response system. For subscription lotteries, sending a confirmation by email or post and/or displaying the stake and the number of draws entered when the customer subscribes is sufficient.",
+        "key_points": [
+          "Display financial commitment on screen in account or product currency",
+          "Credits/chips/tokens only permitted when corresponding currency amount is visible",
+          "Exception: When customer not staking additional money (e.g., poker tournaments)",
+          "Currency conversions must be clearly presented with conversion rules",
+          "Display unit stake and total stake",
+          "Show entry fees for tournaments",
+          "Display lottery ticket prices and number of draws",
+          "For telephone gambling: deliver via customer service agent or automated system",
+          "For subscription lotteries: email/post confirmation or display stake and draws at subscription"
+        ],
+        "must_display": [
+          "Unit stake",
+          "Total stake",
+          "Entry fees (where applicable)",
+          "Lottery ticket prices (where applicable)",
+          "Number of draws entered (where applicable)"
+        ],
+        "currency_handling": {
+          "conversions_required": "Yes - all currency conversions must be clearly displayed",
+          "conversion_rules_required": "Yes - conversion rules must be presented",
+          "credits_tokens_chips": "Only permitted when corresponding currency amount clearly visible"
+        },
+        "channel_specific": {
+          "online": "Display on screen",
+          "telephone": "Delivered by customer service agent or automated response system",
+          "subscription_lotteries": "Email/post confirmation or display at subscription"
+        }
+      },
+      "applies_to": [
+        "all_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 2A"
+    },
+    {
+      "requirement_id": "RTS_2B",
+      "requirement_number": "2B",
+      "title": "Display of Gamble Content Information",
+      "requirement_type": "mandatory",
+      "full_text": "The gambling system must display sufficient relevant information about the customer's gamble so that the content of the gamble is clear. This information must be made available before the customer commits to the gamble including, for example, in the artwork and textual information displayed during gaming, or on an electronic equivalent of a betting slip or lottery ticket.",
+      "implementation_guidance": {
+        "full_text": "The following items provide guidelines about the type of information that may be relevant: selections – the items the customer has chosen to gamble on; the bet type; the accepted odds, for example current odds, starting price, first show, etc; the odds format that will take precedence in settling bets must be set out in the rules. These items, where relevant, are also required on applications designed for use on restricted display devices. For telephone gambling the content of the customer's bet should be read back to them before the bet is confirmed. Where the customer is able to choose, through the use of a third party user-interface, to override the display of this information, this must not be the default option. That is, the customer must make an active choice not to have the information available or to install a user-interface that does not contain the information. The remote gambling system should continue to make available or send the information to the customer; it should not assume that the information is not required. For subscription lotteries, sending a confirmation by email or post and/or displaying the first draw and the number of draws for which the customer will be entered is sufficient.",
+        "key_points": [
+          "Display information BEFORE customer commits to gamble",
+          "Show in artwork/text during gaming or on electronic betting slip",
+          "Include selections chosen by customer",
+          "Display bet type",
+          "Show accepted odds (current, starting price, first show, etc.)",
+          "Odds format for settling bets must be in rules",
+          "Required on restricted display devices (mobile apps)",
+          "For telephone gambling: read back bet content before confirmation",
+          "Third-party user interfaces: information display must not be disabled by default",
+          "Customer must actively choose to hide information",
+          "System must continue sending information even if third-party UI doesn't display it",
+          "For subscription lotteries: email/post confirmation or display first draw and number of draws"
+        ],
+        "required_information": [
+          "Selections - items customer has chosen to gamble on",
+          "Bet type",
+          "Accepted odds (current odds, starting price, first show, etc.)",
+          "Odds format that will take precedence in settling bets"
+        ],
+        "timing": "Before customer commits to the gamble",
+        "display_requirements": {
+          "standard_devices": "Display in artwork/text or electronic betting slip",
+          "restricted_display_devices": "Same requirements apply (mobile apps, etc.)",
+          "telephone": "Read back bet content before confirmation",
+          "third_party_interfaces": "Information display must not be disabled by default - customer must actively choose to hide"
+        },
+        "third_party_ui_rules": {
+          "default_setting": "Information must be displayed by default",
+          "customer_override": "Customer must make active choice to hide information",
+          "system_responsibility": "System must continue making information available even if third-party UI doesn't display it"
+        }
+      },
+      "applies_to": [
+        "all_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 2B"
+    },
+    {
+      "requirement_id": "RTS_2C",
+      "requirement_number": "2C",
+      "title": "Customer Control of Price Fluctuations",
+      "requirement_type": "mandatory",
+      "full_text": "The gambling system must enable customers to choose whether to accept price fluctuations (in either direction) that occur after their bet is requested.",
+      "implementation_guidance": {
+        "full_text": "Players should be presented with options to control whether a price change should be accepted or not. These options must be presented on a per bet basis, except in circumstances where a customer has requested a default account setting to disable price change alerts prior to bet acceptance. Where the functionality is offered at an account level the default option should not be set to accept all fluctuations. Where a customer chooses not to accept price changes automatically any bet where the price changes must be reoffered before it is accepted. Information sufficient to explain the options to the customers should be provided. An optimum solution would enable consumers to choose to automatically accept price movements within a particular margin range. Account level options offered to consumer could include accepting all bets with higher price, accepting all bets with shorter price or accepting all bets regardless of price movements. This requirement does not intend to capture currency fluctuations.",
+        "key_points": [
+          "Customers must be able to choose whether to accept price fluctuations",
+          "Options presented per bet basis by default",
+          "Exception: Customer can request default account setting to disable price change alerts",
+          "If account-level functionality offered, default must NOT be set to accept all fluctuations",
+          "If customer chooses not to accept price changes automatically, bet must be reoffered when price changes",
+          "Provide sufficient information to explain options",
+          "Optimum solution: allow customers to accept price movements within margin range",
+          "Does not apply to currency fluctuations"
+        ],
+        "presentation_requirements": {
+          "default_method": "Per bet basis",
+          "account_level_allowed": "Yes, if customer requests",
+          "default_account_setting": "Must NOT be set to accept all fluctuations"
+        },
+        "customer_options": {
+          "per_bet_control": "Accept or reject price changes for each bet",
+          "account_level_options": [
+            "Accept all bets with higher price",
+            "Accept all bets with shorter price",
+            "Accept all bets regardless of price movements",
+            "Reject all price changes (bet must be reoffered)"
+          ],
+          "optimum_solution": "Allow customers to accept price movements within a margin range"
+        },
+        "when_price_changes": {
+          "if_customer_rejects_auto_acceptance": "Bet must be reoffered before acceptance",
+          "if_customer_accepts_auto_acceptance": "Bet proceeds with new price"
+        },
+        "exclusions": "Currency fluctuations are not covered by this requirement"
+      },
+      "applies_to": [
+        "betting",
+        "sports_betting",
+        "horse_racing",
+        "exchange_betting"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 2C"
+    },
+    {
+      "requirement_id": "RTS_2D",
+      "requirement_number": "2D",
+      "title": "Third Party User Interface Information Disclosure",
+      "requirement_type": "mandatory",
+      "full_text": "Customers who choose to use third party user interfaces must be informed that applications may not display full information about their gambles.",
+      "implementation_guidance": {
+        "full_text": "Information should be included in terms and conditions, rules or other general information about the gambling product that is made available to and/or sent out to customers.",
+        "key_points": [
+          "Inform customers that third-party user interfaces may not display full information",
+          "Include warning in terms and conditions",
+          "Include in rules or general product information",
+          "Must be made available to customers",
+          "Should be sent out to customers"
+        ],
+        "disclosure_locations": [
+          "Terms and conditions",
+          "Rules",
+          "General information about gambling product",
+          "Information sent to customers"
+        ],
+        "warning_content": "Third-party applications may not display full information about gambles"
+      },
+      "applies_to": [
+        "all_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 2D"
+    },
+    {
+      "requirement_id": "RTS_2E",
+      "requirement_number": "2E",
+      "title": "Display of Customer Net Position",
+      "requirement_type": "mandatory",
+      "full_text": "All gaming sessions must clearly display a customer's net position, in the currency of their account or product (for example, pounds sterling, dollar, Euro) since the session started.",
+      "implementation_guidance": {
+        "full_text": "Net position is defined as the total of all winnings minus the sum of all losses since the start of the session.",
+        "key_points": [
+          "Display customer's net position during all gaming sessions",
+          "Must be clearly displayed",
+          "Show in currency of account or product (GBP, USD, EUR, etc.)",
+          "Calculate from session start",
+          "Net position = total winnings - total losses"
+        ],
+        "definition": {
+          "net_position": "Total of all winnings minus the sum of all losses since the start of the session"
+        },
+        "display_requirements": {
+          "visibility": "Clearly displayed",
+          "currency": "Currency of customer's account or product",
+          "examples": [
+            "Pounds sterling (GBP)",
+            "Dollar (USD)",
+            "Euro (EUR)"
+          ]
+        },
+        "calculation": {
+          "formula": "Net Position = Total Winnings - Total Losses",
+          "calculation_start": "Session start",
+          "running_total": "Updated throughout session"
+        }
+      },
+      "applies_to": [
+        "casino",
+        "online_casino",
+        "online_slots",
+        "table_games",
+        "bingo",
+        "all_gaming_sessions"
+      ],
+      "applies_to_exclusions": [
+        "peer_to_peer_poker"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 2E"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure transparency in gambling transactions and customer understanding",
+    "enforcement_priority": "High - critical for customer protection",
+    "testing_requirements": "All requirements must be demonstrated during technical compliance assessment",
+    "penalties_for_non_compliance": "License conditions breach - can result in regulatory sanctions, fines, or license suspension"
+  },
+  "related_requirements": [
+    "RTS 1 - Customer Account Information",
+    "RTS 3 - Rules and Game Descriptions",
+    "LCCP Social Responsibility Code Provisions",
+    "Customer Interaction Requirements"
+  ],
+  "cross_references": {
+    "lccp": "License Conditions and Codes of Practice - Social Responsibility",
+    "other_rts": [
+      "RTS 1 - Customer Account Information",
+      "RTS 3 - Rules and Game Descriptions"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

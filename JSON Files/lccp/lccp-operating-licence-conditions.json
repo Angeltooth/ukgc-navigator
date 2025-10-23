@@ -1,0 +1,1245 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Licence Conditions and Codes of Practice (LCCP)",
+  "document_reference": "LCCP-2024",
+  "last_updated": "2025-10-23",
+  "legal_status": "mandatory",
+  "jurisdiction_scope": "Great Britain (England, Scotland, Wales)",
+  "document_overview": {
+    "purpose": "Specifies operating licence conditions and codes of practice for gambling operators licensed by the UK Gambling Commission",
+    "structure": "17 major sections covering operational, financial, and regulatory requirements",
+    "application_basis": "Gambling Act 2005 and subordinate legislation",
+    "compliance_obligation": "Mandatory for all holders of UKGC operating licences",
+    "enforcement": "Breach may result in variation, suspension or revocation of licence, financial penalties, or criminal prosecution"
+  },
+  "licence_types_covered": [
+    {
+      "type": "Remote Casino",
+      "abbreviation": "RC",
+      "scope": "Online casino games offered to GB customers",
+      "key_conditions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "type": "Remote Bingo",
+      "abbreviation": "RB",
+      "scope": "Online bingo games offered to GB customers",
+      "key_conditions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "type": "Remote Betting",
+      "abbreviation": "RBet",
+      "scope": "Online betting on sporting events and other outcomes",
+      "key_conditions": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "type": "Remote Gaming Machine Technical",
+      "abbreviation": "GMT",
+      "scope": "Supply of gaming machines for remote gambling",
+      "key_conditions": [
+        2,
+        8
+      ]
+    },
+    {
+      "type": "Gambling Software",
+      "abbreviation": "GS",
+      "scope": "Supply of gambling software to licensed operators",
+      "key_conditions": [
+        2,
+        8
+      ]
+    },
+    {
+      "type": "Host",
+      "abbreviation": "Host",
+      "scope": "Provision of hosting infrastructure without direct customer contracts",
+      "key_conditions": [
+        3,
+        8
+      ]
+    },
+    {
+      "type": "Non-Remote Casino",
+      "abbreviation": "NRC",
+      "scope": "Physical casino premises",
+      "key_conditions": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "Non-Remote Bingo",
+      "abbreviation": "NRB",
+      "scope": "Physical bingo hall premises",
+      "key_conditions": [
+        9
+      ]
+    },
+    {
+      "type": "Pool Betting",
+      "abbreviation": "PB",
+      "scope": "Pool betting operations (horseracing, football pools)",
+      "key_conditions": [
+        13
+      ]
+    },
+    {
+      "type": "Lottery",
+      "abbreviation": "Lot",
+      "scope": "Operation of lotteries by non-commercial societies or local authorities",
+      "key_conditions": [
+        11
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": 1,
+      "section_title": "Qualified Persons and Personal Licences",
+      "section_overview": "Requirements for qualified persons in relation to small-scale operators and qualified position changes",
+      "conditions": [
+        {
+          "condition_id": "1.1.1",
+          "condition_number": "1.1.1",
+          "condition_title": "Qualified Persons - Qualifying Position",
+          "applies_to": [
+            "All operating licences except ancillary remote licences issued to small-scale operators"
+          ],
+          "legal_basis": [
+            "Gambling Act 2005 section 104(1)(b)",
+            "Gambling Act 2005 (Definition of Small-scale Operator) Regulations 2006"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Maintain qualified persons list",
+              "detail": "Licensee must maintain Schedule X with list of individuals notified as qualified persons",
+              "compliance_action": "Ensure Schedule X is current and accurate"
+            },
+            {
+              "requirement": "Notify changes within 28 days",
+              "detail": "When individual begins or ceases to occupy qualifying position, apply to Commission under section 104(1)(b) within 28 days",
+              "compliance_action": "Submit application for licence amendment within 28 days of change"
+            },
+            {
+              "requirement": "Advance notification permitted",
+              "detail": "Application may be made in advance specifying effective date of change",
+              "compliance_action": "Plan succession/departures and submit applications proactively"
+            }
+          ],
+          "definitions": {
+            "small_scale_operator": "Operator meeting specific criteria in Gambling Act 2005 (Definition of Small-scale Operator) Regulations 2006",
+            "qualifying_position": "As defined in Gambling Act 2005 (Definition of Small-scale Operator) Regulations 2006",
+            "qualified_person": "Individual meeting qualification criteria and notified to Commission"
+          },
+          "penalties_for_breach": "Variation, suspension or revocation of operating licence"
+        },
+        {
+          "condition_id": "1.1.2",
+          "condition_title": "Qualified persons \u2013 tracks",
+          "condition_description": "",
+          "applies_to": "",
+          "condition_detail": ""
+        },
+        {
+          "condition_id": "1.2.1",
+          "condition_title": "Specified management offices \u2013 personal management licences",
+          "condition_description": "",
+          "applies_to": "",
+          "condition_detail": ""
+        },
+        {
+          "condition_id": "1.2.2",
+          "condition_title": "Specified management offices \u2013 casino personal functional licences",
+          "condition_description": "",
+          "applies_to": "",
+          "condition_detail": ""
+        },
+        {
+          "condition_id": "1.2.3",
+          "condition_title": "Specified management offices \u2013 lottery personal management licences",
+          "condition_description": "",
+          "applies_to": "",
+          "condition_detail": ""
+        }
+      ]
+    },
+    {
+      "section_id": 2,
+      "section_title": "Technical Standards, Equipment Specifications, Remote Gambling Equipment and Gambling Software",
+      "section_overview": "Requirements for technical standards, gambling software, equipment inspection, and RTS compliance",
+      "conditions": [
+        {
+          "condition_id": "2.2.1",
+          "condition_number": "2.2.1",
+          "condition_title": "Gambling Software",
+          "applies_to": [
+            "All remote casino, bingo and betting licences except ancillary licences and remote betting intermediary (trading room only) licences"
+          ],
+          "legal_basis": [
+            "Gambling Act 2005 section 51-54 (gambling software definition and offences)"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Software manufactured by licensed operator",
+              "detail": "All gambling software must be manufactured by holder of gambling software operating licence",
+              "compliance_action": "Verify supplier holds UKGC gambling software operating licence"
+            },
+            {
+              "requirement": "Software supplied by licensed operator",
+              "detail": "All gambling software must be supplied to licensee by holder of gambling software operating licence",
+              "compliance_action": "Ensure supply chain uses licensed operators only"
+            },
+            {
+              "requirement": "Installation/adaptation by licensed operator",
+              "detail": "Software must only be installed or adapted by holder of gambling software operating licence",
+              "compliance_action": "Contractually require licensed operator to perform installation/adaptation"
+            }
+          ],
+          "statutory_definition": {
+            "term": "Gambling Software",
+            "meaning": "Computer software for use in connection with remote gambling, but does not include anything for use solely in connection with a gaming machine",
+            "offences": "Person commits offence if manufactures, supplies, installs or adapts gambling software without operating licence",
+            "penalties": [
+              "Imprisonment up to 51 weeks (Scotland: 6 months)",
+              "Fine not exceeding level 5 on standard scale",
+              "Or both"
+            ]
+          }
+        },
+        {
+          "condition_id": "2.3.1",
+          "condition_number": "2.3.1",
+          "condition_title": "Technical Standards and Equipment Specifications",
+          "applies_to": [
+            "All non-remote gaming machine technical and gambling software licences and remote operating licences, including remote gaming machine technical, remote gambling software and betting ancillary remote licences, but not remote betting intermediary (trading rooms only) licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Comply with Commission technical standards",
+              "detail": "Licensees must comply with Commission's technical standards and requirements for timing and procedures for testing",
+              "compliance_action": "Reference rts-01 to rts-17 JSON files in this MCP; implement required testing procedures",
+              "referenced_documents": [
+                "rts-01.json",
+                "rts-02.json",
+                "rts-03.json",
+                "rts-04.json",
+                "rts-05.json",
+                "rts-06.json",
+                "rts-07.json",
+                "rts-08.json",
+                "rts-09.json",
+                "rts-10.json",
+                "rts-11.json",
+                "rts-12.json",
+                "rts-13.json",
+                "rts-14.json",
+                "rts-15.json",
+                "rts-16.json",
+                "rts-17.json"
+              ]
+            }
+          ]
+        },
+        {
+          "condition_id": "2.3.2",
+          "condition_title": "Bingo equipment specifications",
+          "condition_description": "",
+          "applies_to": "",
+          "condition_detail": ""
+        },
+        {
+          "condition_id": "2.3.3",
+          "condition_title": "Casino equipment specifications",
+          "condition_description": "",
+          "applies_to": "",
+          "condition_detail": ""
+        }
+      ]
+    },
+    {
+      "section_id": 3,
+      "section_title": "Peer to Peer Gaming, Other Networks and Hosting",
+      "section_overview": "Requirements for peer-to-peer gaming networks, network operators, and hosting arrangements",
+      "conditions": [
+        {
+          "condition_id": "3.1.1",
+          "condition_number": "3.1.1",
+          "condition_title": "Peer to Peer Gaming",
+          "applies_to": [
+            "Remote casino licences (except ancillary remote and casino game host licences)"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Domestic player contracts",
+              "detail": "Every player in Great Britain must have contract with network operator or another UKGC remote casino licensed operator",
+              "compliance_action": "Ensure all GB players have valid contracts on file"
+            },
+            {
+              "requirement": "International player contracts",
+              "detail": "International players must have contracts with network operator, licensed UKGC operator, or approved unlicensed operator",
+              "compliance_action": "Approve international operators after due diligence; verify licensing and AML compliance"
+            },
+            {
+              "requirement": "Dispute handling arrangements",
+              "detail": "Arrangements with other operators must clearly specify responsibility for complaint categories, particularly multi-jurisdiction disputes",
+              "compliance_action": "Document dispute handling protocols with all partner operators"
+            },
+            {
+              "requirement": "Customer due diligence",
+              "detail": "Policies and procedures must meet requirements equivalent to Third Money Laundering Directive (2005/60/EC) or successor",
+              "compliance_action": "Implement KYC/AML procedures meeting EU directive standards"
+            },
+            {
+              "requirement": "Information sharing for regulatory compliance",
+              "detail": "Arrangements must enable parties to discharge regulatory obligations including money laundering prevention, terrorism financing prevention, cheating investigation, problem gambling combating, customer complaint investigation",
+              "compliance_action": "Establish information sharing protocols with all network partners"
+            }
+          ]
+        },
+        {
+          "condition_id": "3.1.2",
+          "condition_number": "3.1.2",
+          "condition_title": "Other Networks",
+          "applies_to": [
+            "All remote casino, bingo and betting licences except ancillary remote and host licences"
+          ],
+          "note": "Does not apply to provision of facilities for playing non-remote bingo games in premises with bingo premises licence",
+          "key_requirements": [
+            {
+              "requirement": "Domestic customer contracts",
+              "detail": "Every domestic customer must contract with network operator or another UKGC licence holder of same type",
+              "compliance_action": "Ensure contractual relationships cover all domestic customers"
+            },
+            {
+              "requirement": "Dispute handling clarity",
+              "detail": "Clear arrangements for which operator handles which complaint categories",
+              "compliance_action": "Document and communicate dispute handling process"
+            },
+            {
+              "requirement": "Information sharing protocols",
+              "detail": "Enable regulatory compliance for money laundering, terrorism financing, cheating investigation, problem gambling, complaints",
+              "compliance_action": "Establish and maintain information sharing agreements"
+            }
+          ]
+        },
+        {
+          "condition_id": "3.1.3",
+          "condition_number": "3.1.3",
+          "condition_title": "Hosting",
+          "applies_to": [
+            "All casino (game host), bingo (game host), general betting (host) (real events) and general betting (host) (virtual events) licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Participant contracts",
+              "detail": "Hosts must ensure participants (domestic and international) are parties to appropriate contracts with licensed operators",
+              "compliance_action": "Verify contractual arrangements between host and participating operators"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 4,
+      "section_title": "Protection of Customer Funds",
+      "section_overview": "Requirements for customer fund protection, segregation, and insolvency protection",
+      "conditions": [
+        {
+          "condition_id": "4.1.1",
+          "condition_number": "4.1.1",
+          "condition_title": "Customer Funds - Segregation",
+          "applies_to": [
+            "All operating licences holding customer funds"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Separate client bank account",
+              "detail": "Customer funds must be held in separate client bank account(s)",
+              "compliance_action": "Establish dedicated segregated bank accounts for customer funds"
+            },
+            {
+              "requirement": "Funds definition",
+              "detail": "Includes all customer account balances, deposits received, accumulated winnings awaiting withdrawal, and prize funds",
+              "compliance_action": "Ensure all customer money is tracked and segregated"
+            }
+          ]
+        },
+        {
+          "condition_id": "4.2.1",
+          "condition_number": "4.2.1",
+          "condition_title": "Customer Funds - Insolvency Protection",
+          "applies_to": [
+            "All operating licences holding customer funds"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Clear terms and conditions",
+              "detail": "Terms must clearly state whether customer funds are protected in insolvency, level of protection, and method of achievement",
+              "compliance_action": "Provide written disclosure to customers with acknowledgement"
+            },
+            {
+              "requirement": "Information provision",
+              "detail": "Information must be provided before first deposit and upon any changes, requiring customer acknowledgement",
+              "compliance_action": "Obtain customer acknowledgement of insolvency protection information"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 5,
+      "section_title": "Payment",
+      "section_overview": "Requirements for payment methods and cash/cash equivalent handling",
+      "conditions": [
+        {
+          "condition_id": "5.1.1",
+          "condition_number": "5.1.1",
+          "condition_title": "Payment Methods",
+          "applies_to": [
+            "All operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Licensed payment service providers only",
+              "detail": "Accept payments only from FCA-authorised payment service providers or equivalent regulated entities",
+              "compliance_action": "Verify payment provider licensing under Payment Services Regulations 2017"
+            }
+          ]
+        },
+        {
+          "condition_id": "5.1.2",
+          "condition_number": "5.1.2",
+          "condition_title": "Payment methods and services",
+          "applies_to": [
+            "All remote casino, bingo and betting operating licences, except ancillary, host and remote betting intermediary (trading room only) licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Licensed payment service providers only",
+              "detail": "Accept payments only from FCA-authorised payment service providers as defined in Schedule 1 Part 1 of Payment Services Regulations 2017 (SI 2017 No 752)",
+              "compliance_action": "Verify all payment providers hold required 'payment service provider' designation under regulation 2"
+            },
+            {
+              "requirement": "Effective from date",
+              "detail": "This condition applies from 31 January 2024",
+              "compliance_action": "Ensure compliance from specified effective date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 6,
+      "section_title": "Provision of Credit by Licensees and the Use of Credit Cards",
+      "section_overview": "Requirements prohibiting credit provision and credit card acceptance",
+      "conditions": [
+        {
+          "condition_id": "6.1.1",
+          "condition_number": "6.1.1",
+          "condition_title": "Credit Prohibition",
+          "applies_to": [
+            "All operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "No credit provision",
+              "detail": "Licensees must not provide credit to customers for gambling",
+              "compliance_action": "Ensure systems prevent credit extension to customers"
+            },
+            {
+              "requirement": "No credit card acceptance",
+              "detail": "Must not accept credit card payments, including through money service businesses",
+              "compliance_action": "Block credit card payments in payment processing systems"
+            }
+          ]
+        },
+        {
+          "condition_id": "6.1.2",
+          "condition_number": "6.1.2",
+          "condition_title": "Use of credit cards",
+          "applies_to": [
+            "All non-remote general betting, pool betting and betting intermediary licences, and all remote licences (including ancillary remote betting and ancillary remote lottery licences) except gaming machine technical, gambling software and host licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Credit card prohibition",
+              "detail": "Licensees must not accept payment for gambling by credit card",
+              "compliance_action": "Block credit card transactions in payment processing systems"
+            },
+            {
+              "requirement": "Third-party credit card prohibition",
+              "detail": "This includes payments made through money service businesses",
+              "compliance_action": "Ensure payment processors do not accept credit card payments via intermediaries"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 7,
+      "section_title": "General 'Fair and Open' Provisions",
+      "section_overview": "Requirements for fair terms, transparent practices, and consumer protection compliance",
+      "conditions": [
+        {
+          "condition_id": "7.1.1",
+          "condition_number": "7.1.1",
+          "condition_title": "Fair Terms and Consumer Rights",
+          "applies_to": [
+            "All operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Fairness compliance",
+              "detail": "Ensure terms and consumer notices are not unfair under Consumer Rights Act 2015",
+              "compliance_action": "Review terms for fairness; comply with Act requirements"
+            },
+            {
+              "requirement": "Term change fairness",
+              "detail": "Changes to customer contract terms must comply with Consumer Rights Act 2015 fairness and transparency requirements",
+              "compliance_action": "Notify customers of material changes before implementation"
+            },
+            {
+              "requirement": "Unfair practices prohibition",
+              "detail": "Do not commit unfair commercial practices under Consumer Protection from Unfair Trading Regulations 2008",
+              "compliance_action": "Train staff on unfair practices; implement compliance monitoring"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 8,
+      "section_title": "Display of Licensed Status",
+      "section_overview": "Requirements for displaying Commission licence information on gambling platforms",
+      "conditions": [
+        {
+          "condition_id": "8.1.1",
+          "condition_number": "8.1.1",
+          "condition_title": "Remote Gambling - Licence Display",
+          "applies_to": [
+            "All remote operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Display on every screen",
+              "detail": "Display Commission statement and account number on every screen where customers can access gambling",
+              "compliance_action": "Implement display in technical systems per Commission specification"
+            },
+            {
+              "requirement": "Format compliance",
+              "detail": "Display must follow format and contain information specified by Commission in technical standards",
+              "compliance_action": "Reference applicable RTS standards for display format"
+            }
+          ]
+        },
+        {
+          "condition_id": "8.1.2",
+          "condition_number": "8.1.2",
+          "condition_title": "Display of licensed status \u2013 B2B operators",
+          "applies_to": [
+            "All gaming machine technical, gambling software and host licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "First page display",
+              "detail": "Display the following on the first page of website offering gaming machines or gambling software: statement of UKGC licensing, account number, link to licensed status on Commission website",
+              "compliance_action": "Implement display on first page of B2B website"
+            },
+            {
+              "requirement": "Page display",
+              "detail": "Display at least the above information on each page offering gaming machines or gambling software",
+              "compliance_action": "Ensure display on all relevant pages"
+            },
+            {
+              "requirement": "Product distinction",
+              "detail": "Where offering products not provided under licence, clearly distinguish regulated from unregulated products",
+              "compliance_action": "Mark products clearly as regulated or unregulated"
+            },
+            {
+              "requirement": "Format compliance",
+              "detail": "Statement, account number and link must be in format specified by Commission in technical standards",
+              "compliance_action": "Follow Commission technical standards for display format"
+            }
+          ]
+        },
+        {
+          "condition_id": "8.1.3",
+          "condition_number": "8.1.3",
+          "condition_title": "Display of licensed status \u2013 societies and local authorities",
+          "applies_to": [
+            "All lottery operating licences issued to non-commercial societies, local authorities and external lottery managers"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Display on every screen",
+              "detail": "Display on every screen from which customers can access lottery products: statement of UKGC licensing, account number, link to licensed status on Commission website",
+              "compliance_action": "Implement display on all lottery access screens"
+            },
+            {
+              "requirement": "Format compliance",
+              "detail": "Statement, account number and link must be in format specified by Commission",
+              "compliance_action": "Follow Commission specifications for display format"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 9,
+      "section_title": "Types and Rules of Casino and Other Games",
+      "section_overview": "Requirements regarding permitted games and gaming rules",
+      "conditions": [
+        {
+          "condition_id": "9.1.1",
+          "condition_number": "9.1.1",
+          "condition_title": "Casino Games Rules",
+          "applies_to": [
+            "All non-remote casino operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Prohibited games prohibition",
+              "detail": "Do not offer games on Commission prohibited list",
+              "compliance_action": "Check Commission-published prohibited games list; restrict prohibited games"
+            },
+            {
+              "requirement": "Game freedom",
+              "detail": "Operators free to offer new casino games without approval (none currently prohibited)",
+              "compliance_action": "Inform Commission if new games introduced"
+            }
+          ]
+        },
+        {
+          "condition_id": "9.1.2",
+          "condition_number": "9.1.2",
+          "condition_title": "Bingo Prize Games",
+          "applies_to": [
+            "All non-remote bingo operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Permitted bingo games",
+              "detail": "Follow rules for bingo games and prize games",
+              "compliance_action": "Ensure compliance with specified bingo game rules"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 10,
+      "section_title": "Tipping of Casino Employees",
+      "section_overview": "Requirements for tipping arrangements in casinos using tronc systems",
+      "conditions": [
+        {
+          "condition_id": "10.1.1",
+          "condition_number": "10.1.1",
+          "condition_title": "Tipping - Tronc System",
+          "applies_to": [
+            "All non-remote casino operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Tronc system mandatory",
+              "detail": "Tips only permitted through tronc system where all tips pooled and distributed to employees",
+              "compliance_action": "Implement tronc system; maintain tipping records"
+            },
+            {
+              "requirement": "Separate troncs",
+              "detail": "Separate tronc may operate for each staff category",
+              "compliance_action": "Design tronc structure to match staff categories"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 11,
+      "section_title": "Lotteries",
+      "section_overview": "Requirements for lottery operations by non-commercial societies, local authorities, and external lottery managers",
+      "conditions": [
+        {
+          "condition_id": "11.1.1",
+          "condition_number": "11.1.1",
+          "condition_title": "Lotteries - Non-Commercial Societies and Local Authorities",
+          "applies_to": [
+            "All lottery operating licences issued to non-commercial societies or local authorities"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Minimum proceeds to purpose",
+              "detail": "At least 20% of lottery proceeds applied to society purpose or LA statutory power",
+              "compliance_action": "Track proceeds; allocate minimum 20% to qualifying purpose"
+            },
+            {
+              "requirement": "Proceeds limits",
+              "detail": "Single lottery max \u00a35,000,000; aggregate annual proceeds max \u00a350,000,000",
+              "compliance_action": "Monitor cumulative proceeds; ensure within limits"
+            },
+            {
+              "requirement": "Prize limits",
+              "detail": "Individual ticket maximum: \u00a325,000 or 10% of proceeds (whichever greater)",
+              "compliance_action": "Set prize limits in lottery rules; validate payments"
+            },
+            {
+              "requirement": "Non-linked lotteries",
+              "detail": "Cannot link to other lotteries unless max aggregate win under \u00a3500,000",
+              "compliance_action": "Review linkage arrangements; ensure compliance"
+            },
+            {
+              "requirement": "Ticket document requirements",
+              "detail": "Each ticket must identify: promoting society, designated member's name/address, draw date(s)",
+              "compliance_action": "Include required information on tickets"
+            },
+            {
+              "requirement": "Display licensing information",
+              "detail": "Tickets must display 'licensed by Gambling Commission' and Commission website details",
+              "compliance_action": "Include on all ticket formats"
+            },
+            {
+              "requirement": "Uniform ticket price",
+              "detail": "Ticket price must be: uniform, shown on ticket, paid before ticket issue",
+              "compliance_action": "Set and display ticket price; enforce payment before issue"
+            },
+            {
+              "requirement": "Pre-sale notification",
+              "detail": "Lodge description and rules with Commission at least 28 days before sale",
+              "compliance_action": "Submit lottery documentation 28 days pre-sale"
+            },
+            {
+              "requirement": "Street sale restrictions",
+              "detail": "Cannot sell in street except from static structures (kiosk) or door-to-door; requires local authority permission",
+              "compliance_action": "Restrict street sales; obtain local authority permissions"
+            },
+            {
+              "requirement": "Accurate accounting records",
+              "detail": "Records must show: total proceeds, prize allocation, expenses, amount applied to purpose, sold/unsold ticket count",
+              "compliance_action": "Maintain detailed accounting; retain 3 years"
+            },
+            {
+              "requirement": "Commission submission",
+              "detail": "Within 3 months of draw, submit lottery submission with accounting information and approval by qualified person",
+              "compliance_action": "Submit within 3-month deadline; obtain required approvals"
+            },
+            {
+              "requirement": "Auditor confirmation",
+              "detail": "If annual proceeds exceed \u00a31,000,000, provide auditor confirmation that proceeds fully accounted for in annual accounts",
+              "compliance_action": "Obtain auditor confirmation if threshold exceeded"
+            }
+          ]
+        },
+        {
+          "condition_id": "11.2.1",
+          "condition_number": "11.2.1",
+          "condition_title": "Lotteries - External Lottery Managers",
+          "applies_to": [
+            "All lottery operating licences issued to external lottery managers"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Minimum proceeds to society",
+              "detail": "At least 20% of proceeds paid to promoting society/LA for qualifying purpose",
+              "compliance_action": "Calculate and pay minimum 20% proceeds share"
+            },
+            {
+              "requirement": "Proceeds limits",
+              "detail": "Single lottery max \u00a35,000,000; aggregate per society/LA max \u00a350,000,000",
+              "compliance_action": "Manage proceeds within limits per society"
+            },
+            {
+              "requirement": "Prize limits",
+              "detail": "Individual maximum: \u00a325,000 or 10% of proceeds",
+              "compliance_action": "Set per rules; validate in system"
+            },
+            {
+              "requirement": "Fund segregation",
+              "detail": "Lottery proceeds segregated from trading income; held in trustee bank account for each society/LA; protected in event of insolvency",
+              "compliance_action": "Maintain separate trustee accounts per society; document arrangements"
+            },
+            {
+              "requirement": "Timely accounting",
+              "detail": "Procedures to ensure lottery profits properly allocated and accounted to society/LA promptly",
+              "compliance_action": "Establish and follow profit allocation procedures"
+            },
+            {
+              "requirement": "Regulatory compliance",
+              "detail": "All other requirements apply (non-linked, documentation, street sales restrictions, accounting, submission)",
+              "compliance_action": "Implement all applicable lottery requirements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 12,
+      "section_title": "Anti-Money Laundering",
+      "section_overview": "Requirements for AML risk assessment, policies, procedures, and terrorist financing prevention",
+      "conditions": [
+        {
+          "condition_id": "12.1.1",
+          "condition_number": "12.1.1",
+          "condition_title": "AML Risk Assessment and Controls",
+          "applies_to": [
+            "All operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Conduct AML risk assessment",
+              "detail": "Assess risks of business being used for money laundering and terrorist financing",
+              "compliance_action": "Complete risk assessment; document findings"
+            },
+            {
+              "requirement": "Review risk assessment",
+              "detail": "Review as necessary in light of changes in circumstances, products, technology, payment methods, customer demographic; review at least annually",
+              "compliance_action": "Establish annual review cycle; update when circumstances change"
+            },
+            {
+              "requirement": "Implement controls",
+              "detail": "Ensure appropriate policies, procedures and controls to prevent money laundering and terrorist financing",
+              "compliance_action": "Implement risk-based AML/CFT controls"
+            },
+            {
+              "requirement": "Maintain effectiveness",
+              "detail": "Controls must be implemented effectively, kept under review, revised appropriately to remain effective; account for Commission guidance",
+              "compliance_action": "Monitor control effectiveness; update per Commission guidance"
+            }
+          ]
+        },
+        {
+          "condition_id": "12.1.2",
+          "condition_title": "Anti-money laundering - Measures for operators based in foreign jurisdictions",
+          "condition_description": "",
+          "applies_to": "",
+          "condition_detail": ""
+        }
+      ]
+    },
+    {
+      "section_id": 13,
+      "section_title": "Pool Betting",
+      "section_overview": "Requirements for pool betting record-keeping on horserace and football pools",
+      "conditions": [
+        {
+          "condition_id": "13.1.1",
+          "condition_number": "13.1.1",
+          "condition_title": "Pool Betting - Horserace and Dog Race",
+          "applies_to": [
+            "All pool betting operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Transaction records",
+              "detail": "Produce and retain record of transactions relevant to each pool offered",
+              "compliance_action": "Maintain transaction records enabling identification of individual bets and winnings"
+            },
+            {
+              "requirement": "Records availability",
+              "detail": "Records must be available to Commission on request",
+              "compliance_action": "Maintain accessible records for Commission inspection"
+            }
+          ]
+        },
+        {
+          "condition_id": "13.1.2",
+          "condition_number": "13.1.2",
+          "condition_title": "Pool betting \u2013 football pools",
+          "applies_to": [
+            "All pool betting operating licences which authorise football pools"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Transaction record production",
+              "detail": "Licensees and any authorised person under section 93(3) Gambling Act 2005 must produce and retain record of transactions for each pool offered",
+              "compliance_action": "Maintain comprehensive transaction records"
+            },
+            {
+              "requirement": "Individual bet tracking",
+              "detail": "Record must be capable of identifying individual bets into pool and relating to subsequent payment of winnings",
+              "compliance_action": "Implement system tracking individual bets and associated winnings"
+            },
+            {
+              "requirement": "Commission availability",
+              "detail": "Records must be made available to Commission on request",
+              "compliance_action": "Ensure records accessible for Commission inspection"
+            }
+          ]
+        },
+        {
+          "condition_id": "13.1.3",
+          "condition_number": "13.1.3",
+          "condition_title": "Pool betting \u2013 annual accounts",
+          "applies_to": [
+            "All pool betting operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Annual account production",
+              "detail": "Licensees must produce annual accounts",
+              "compliance_action": "Prepare annual financial statements"
+            },
+            {
+              "requirement": "Accountant certification",
+              "detail": "Accounts should be certified by qualified independent accountant",
+              "compliance_action": "Engage qualified accountant to certify accounts"
+            },
+            {
+              "requirement": "Commission availability",
+              "detail": "Copies must be made available to Commission on request",
+              "compliance_action": "Provide copies to Commission when requested"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 14,
+      "section_title": "Access to Premises",
+      "section_overview": "Enforcement officer access rights to premises",
+      "conditions": [
+        {
+          "condition_id": "14.1.1",
+          "condition_number": "14.1.1",
+          "condition_title": "Premises Access",
+          "applies_to": [
+            "All non-remote operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Permit enforcement access",
+              "detail": "Permit enforcement officers access to premises for inspection and enforcement purposes",
+              "compliance_action": "Establish access procedures for Commission officers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 15,
+      "section_title": "Information Requirements",
+      "section_overview": "Detailed reporting requirements for key events, other reportable events, and regulatory returns",
+      "conditions": [
+        {
+          "condition_id": "15.1.1",
+          "condition_number": "15.1.1",
+          "condition_title": "Offence Information",
+          "applies_to": [
+            "All operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Report suspected offences",
+              "detail": "As soon as reasonably practicable, provide information relating to suspected offences under Gambling Act 2005",
+              "compliance_action": "Establish reporting procedures for suspected offences"
+            }
+          ]
+        },
+        {
+          "condition_id": "15.1.2",
+          "condition_number": "15.1.2",
+          "condition_title": "Reporting suspicion of offences etc \u2013 betting licences",
+          "applies_to": [
+            "All betting operating licences including betting intermediary, ancillary remote betting, betting host and remote betting intermediary (trading rooms only) licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Provide offence information",
+              "detail": "As soon as reasonably practicable, provide Commission with any information from whatever source that licensee knows relates to or suspects may relate to commission of offence under the Act",
+              "compliance_action": "Establish procedures for reporting suspected offences"
+            },
+            {
+              "requirement": "Breach of licence condition reporting",
+              "detail": "Report information relating to offence resulting from breach of licence condition or code provision",
+              "compliance_action": "Monitor for potential licence condition breaches"
+            },
+            {
+              "requirement": "Bet voiding information",
+              "detail": "Report information suspected to relate to section 336 Gambling Act 2005 bet voiding orders",
+              "compliance_action": "Report suspected situations warranting bet void orders"
+            },
+            {
+              "requirement": "Sport governing body reporting",
+              "detail": "Licensees accepting bets on outcomes of sporting events governed by bodies in Schedule 6 Part 3 Gambling Act 2005 must report relevant information to that governing body as soon as reasonably practicable",
+              "compliance_action": "Report suspected betting rule breaches to relevant sport governing body"
+            },
+            {
+              "requirement": "Betting rules definition",
+              "detail": "Betting rules include any rule about bets that would be regulated activities under Financial Services and Markets Act 2000 (spread betting)",
+              "compliance_action": "Include spread betting in scope of reporting obligations"
+            }
+          ]
+        },
+        {
+          "condition_id": "15.1.3",
+          "condition_number": "15.1.3",
+          "condition_title": "Reporting of systematic or organised money lending",
+          "applies_to": [
+            "All non-remote casino, non-remote bingo, general betting, adult gaming centre, family entertainment centre and remote betting intermediary (trading rooms only) licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Report money lending cases",
+              "detail": "As soon as reasonably practicable provide Commission with information relating to cases of systematic, organised or substantial money lending between customers on premises",
+              "compliance_action": "Implement monitoring procedures for customer-to-customer lending activity"
+            },
+            {
+              "requirement": "Compliance with code provisions",
+              "detail": "Reporting in accordance with ordinary code provisions on money lending between customers",
+              "compliance_action": "Align reporting with code of practice requirements"
+            },
+            {
+              "requirement": "Form and manner",
+              "detail": "Reporting in such form or manner as Commission may specify from time to time",
+              "compliance_action": "Follow Commission reporting format requirements"
+            }
+          ]
+        },
+        {
+          "condition_id": "15.2.1",
+          "condition_number": "15.2.1",
+          "condition_title": "Key Events",
+          "applies_to": [
+            "All operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Governance changes",
+              "detail": "Report changes to governing documents, articles of association, regulatory structure",
+              "compliance_action": "Notify of governance/regulatory changes"
+            },
+            {
+              "requirement": "Beneficial ownership changes",
+              "detail": "Report changes in beneficial ownership (>=20%) and holding company interests",
+              "compliance_action": "Track and report ownership changes"
+            },
+            {
+              "requirement": "Key staff changes",
+              "detail": "Report senior manager, MLRO, nominated officer departures/appointments; disciplinary sanctions for gross misconduct",
+              "compliance_action": "Report personnel changes within required timeframes"
+            },
+            {
+              "requirement": "Litigation",
+              "detail": "Report commencement of material litigation and outcome",
+              "compliance_action": "Notify of significant lawsuits"
+            },
+            {
+              "requirement": "Suspicious activity reports",
+              "detail": "Report disclosures under Proceeds of Crime Act 2002 or Terrorism Act 2000 with unique reference number",
+              "compliance_action": "Report SARs with reference number within 5 working days"
+            },
+            {
+              "requirement": "Security breaches",
+              "detail": "Report security breaches affecting customer data confidentiality or account access >12 hours",
+              "compliance_action": "Report cyber incidents affecting operations or data"
+            },
+            {
+              "requirement": "Gaming system faults",
+              "detail": "Report system faults causing under/overpayments or incorrect prizes",
+              "compliance_action": "Report system errors affecting player payouts"
+            },
+            {
+              "requirement": "Domain/broadcast changes",
+              "detail": "Report commencement/cessation of trading on website domains, mobile apps, or broadcast media",
+              "compliance_action": "Notify of new or closed operational channels"
+            }
+          ]
+        },
+        {
+          "condition_id": "15.2.2",
+          "condition_number": "15.2.2",
+          "condition_title": "Other Reportable Events",
+          "applies_to": [
+            "All operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Customer fund protection changes",
+              "detail": "Report material changes to customer funds protection arrangements",
+              "compliance_action": "Notify of changes to segregated accounts or security"
+            },
+            {
+              "requirement": "ADR entity changes",
+              "detail": "Report changes to dispute resolution provider",
+              "compliance_action": "Notify of ADR provider changes"
+            },
+            {
+              "requirement": "Unlicensed group advertising",
+              "detail": "Report awareness of unlicensed group companies advertising in new jurisdictions or exceeding GGY thresholds",
+              "compliance_action": "Monitor group advertising; report threshold breaches"
+            },
+            {
+              "requirement": "AML/CFT breaches",
+              "detail": "Report actual or potential breaches of Proceeds of Crime Act 2002 or Terrorism Act 2000",
+              "compliance_action": "Report potential money laundering/terrorist financing breaches"
+            },
+            {
+              "requirement": "Suicide notifications",
+              "detail": "Notify if player death by suicide known or suspected, including name, DOB, gambling activity summary",
+              "compliance_action": "Report suspected suicide deaths with available player information"
+            }
+          ]
+        },
+        {
+          "condition_id": "15.2.3",
+          "condition_number": "15.2.3",
+          "condition_title": "Other Reportable Events - Money Laundering, Terrorist Financing",
+          "applies_to": [
+            "All non-remote and remote casino operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "MLRTF Regulations breaches",
+              "detail": "Notify of actual or potential breaches of Money Laundering, Terrorist Financing and Transfer of Funds (Information on Payer) Regulations 2017",
+              "compliance_action": "Report breaches within required timeframes"
+            },
+            {
+              "requirement": "AML compliance officer notification",
+              "detail": "Within 14 days of appointment, notify Commission of individual responsible for MLRTF compliance",
+              "compliance_action": "Provide name and contact details of AML officer"
+            },
+            {
+              "requirement": "Nominated officer notification",
+              "detail": "Within 14 days of appointment, notify Commission of nominated officer",
+              "compliance_action": "Provide details of nominated officer"
+            },
+            {
+              "requirement": "Officer removal notification",
+              "detail": "Within 14 days of departure/removal of AML officer or nominated officer, notify Commission",
+              "compliance_action": "Report staff departures in AML/NOM roles"
+            }
+          ]
+        },
+        {
+          "condition_id": "15.3.1",
+          "condition_number": "15.3.1",
+          "condition_title": "General and Regulatory Returns",
+          "applies_to": [
+            "All operating licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Provide information on request",
+              "detail": "Provide Commission with any information on facilities use and gambling operations as requested",
+              "compliance_action": "Maintain records enabling compliance with information requests"
+            },
+            {
+              "requirement": "Submit quarterly returns",
+              "detail": "Within 28 days of end of each quarterly period, submit accurate Regulatory Return with specified information",
+              "compliance_action": "Submit quarterly returns within 28-day deadline"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 16,
+      "section_title": "Responsible Placement of Digital Adverts",
+      "section_overview": "Requirements for responsible ad placement avoiding copyright infringement",
+      "conditions": [
+        {
+          "condition_id": "16.1.1",
+          "condition_number": "16.1.1",
+          "condition_title": "Responsible Placement of Digital Adverts",
+          "applies_to": [
+            "All licences"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Avoid copyright infringement sites",
+              "detail": "Do not place digital advertisements on websites providing unauthorised access to copyrighted content",
+              "compliance_action": "Screen ad placement partners; avoid piracy sites"
+            },
+            {
+              "requirement": "Third party due diligence",
+              "detail": "Take reasonable steps to ensure third parties do not place adverts on copyright infringement websites",
+              "compliance_action": "Contract terms require third parties to avoid piracy sites; monitor placement"
+            },
+            {
+              "requirement": "Termination rights",
+              "detail": "Contracts must enable prompt termination if third party places ads on copyright infringement sites",
+              "compliance_action": "Include termination clauses in third party contracts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": 17,
+      "section_title": "Customer Identity Verification",
+      "section_overview": "Requirements for customer identity verification and information retention",
+      "conditions": [
+        {
+          "condition_id": "17.1.1",
+          "condition_number": "17.1.1",
+          "condition_title": "Customer Identity Verification",
+          "applies_to": [
+            "All remote licences (including ancillary remote betting licences in respect of bets by telephone or email), except lottery, gaming machine technical, gambling software, host, ancillary remote casino, and ancillary remote bingo"
+          ],
+          "key_requirements": [
+            {
+              "requirement": "Verify customer identity pre-gambling",
+              "detail": "Obtain and verify information establishing customer identity (name, address, date of birth) before customer gambles",
+              "compliance_action": "Implement KYC procedures; verify identity before account activation"
+            },
+            {
+              "requirement": "No withdrawal restrictions for early information",
+              "detail": "Withdrawal requests must not require additional information if could have been requested earlier",
+              "compliance_action": "Gather identity information upfront; allow unrestricted withdrawals"
+            },
+            {
+              "requirement": "Inform customers of ID requirements",
+              "detail": "Inform customers pre-deposit about identity documents/information that may be required and circumstances",
+              "compliance_action": "Provide clear information on identity requirements before deposit"
+            },
+            {
+              "requirement": "Maintain current identity information",
+              "detail": "Take reasonable steps to ensure identity information remains accurate and current",
+              "compliance_action": "Periodically update and verify customer identity information"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

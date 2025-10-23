@@ -1,0 +1,9 @@
+RTS 8 – Auto-play functionality
+Applies to:
+Gaming (including bingo).
+RTS aim 8A
+To make clear that auto-play cannot be offered for online gaming.
+RTS requirement 8A
+The gambling system must require a customer to commit to each game cycle individually.
+RTS guidance 8A
+This requirement does not prohibit offering functionality to automatically post blinds in peer-to-peer poker.

@@ -1,0 +1,234 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Time Requirements and Reality Checks",
+  "document_reference": "RTS Aim 13",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "In respect of requirement RTS 13A – All remote gambling except telephone gambling. In respect of RTS 13B – Remote gaming (including bingo but excluding peer to peer gaming), remote instant win lotteries and high frequency lotteries. In respect of RTS 13C – Casino (excluding peer to peer poker).",
+  "aim": {
+    "aim_id": "RTS_AIM_13",
+    "aim_number": 13,
+    "aim_title": "Time Requirements and Reality Checks",
+    "aim_description": "To provide customers with facilities to assist them to keep track of the time they spend gambling"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_13A",
+      "requirement_number": "13A",
+      "title": "Display of Time in Full Screen Applications",
+      "requirement_type": "mandatory",
+      "full_text": "Where the gambling system uses full screen client applications that obscure the clock on the customer's device the client application itself must display the time of day or the elapsed time since the application was started, wherever practicable.",
+      "implementation_guidance": {
+        "full_text": "Time of day should either be taken from the customer's own device or 'server time' and should be displayed in hours and minutes. Operators will not be expected to detect whether or not customers have hidden their clocks. Elapsed time should be displayed in minutes and hours. For restricted display devices, time of day or elapsed time should be displayed where the device supports it. In addition, customers may be offered the ability to set a session or game-play duration reminder.",
+        "key_points": [
+          "Full screen applications that obscure device clock must display time of day OR elapsed time",
+          "Time of day: from customer device or server time, displayed in hours and minutes",
+          "Operators not expected to detect if customers hide their clocks",
+          "Elapsed time: displayed in minutes and hours",
+          "Restricted display devices: display where device supports it",
+          "Optional: offer ability to set session or gameplay duration reminder"
+        ],
+        "when_applicable": {
+          "condition": "Full screen client applications that obscure clock on customer's device",
+          "requirement": "Client application must display time of day OR elapsed time",
+          "practicability": "Wherever practicable"
+        },
+        "time_of_day_display": {
+          "source_options": [
+            "Customer's own device",
+            "Server time"
+          ],
+          "format": "Hours and minutes"
+        },
+        "elapsed_time_display": {
+          "format": "Minutes and hours"
+        },
+        "operator_responsibilities": {
+          "not_required": "Detect whether customers have hidden their clocks"
+        },
+        "restricted_display_devices": {
+          "requirement": "Display time of day or elapsed time where device supports it"
+        },
+        "optional_features": {
+          "session_reminder": "Customers may be offered ability to set session or game-play duration reminder"
+        }
+      },
+      "applies_to": [
+        "all_remote_gambling"
+      ],
+      "applies_to_exclusions": [
+        "telephone_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 13A"
+    },
+    {
+      "requirement_id": "RTS_13B",
+      "requirement_number": "13B",
+      "title": "Reality Check Facility",
+      "requirement_type": "mandatory",
+      "full_text": "The gambling system must provide easily accessible facilities that make it possible for customers to set a frequency at which they will receive and see on the screen a reality check within a gaming session. A 'reality check' means a display of the time elapsed since the session began. The customer must acknowledge the reality check for it to be removed from the screen.",
+      "implementation_guidance": {
+        "full_text": "The customer should be offered the opportunity to set or amend a reality check via easily accessible means at all times. Customers should be able to select a frequency at which the reality check will appear on the screen. Customers can be presented with a pre-set list time periods but these must have a reasonable and appropriate range from which to select and where a default time period is offered it must be set at the minimum. The reality check should continue to appear at the selected time intervals until the customer's gaming session ends (see definition of terms) or the customer exits their account (this will depend on solutions i ii iii below). If a customer is participating in multiple gaming sessions at once (for example, playing bingo as well as participating in slots games in between draws) the gaming session began when the player commenced with the first product. The reality check facility could be implemented via one of the following ways: Player account level implementation - there are two potential solutions for account level implementation. The optimum approach would enable customers to set a reality check reminder for their account, which would commence at the start of the first gaming session and roll over to subsequent sessions. An alternative solution would be for the reality check to commence before a customer accesses a gaming session (for example, at account login stage). The second solution would meet the requirement although it would not take into account natural breaks in play, such as when customers are in the casino lobby. Product level implementation - this approach will enable a customer to set a reality check for each individual gaming session, for example the player commences playing roulette and then later starts playing blackjack and has two reality checks running concurrently but covering different time periods. Hybrid solution - some games are subject one reality check and others are subject to another for example all slot games are subject to a single reality check and live dealer products are subject to a separate reality check. A clear explanation of how the reality check is implemented must be provided to players so they are aware of how they can use it to assist them in managing their gambling. Where possible a player's preferences should be applied to all future account logins or gaming sessions (where applicable). If this is not possible players must be provided with clear information that explains that they will have to set a reality check for each account login or gaming session. The reality check should offer the customer the facility to exit the gaming session or log out of their account (depending on which of the above solutions is adopted). The reality check should provide a link to the customer's account history. The reality check can be presented at the end of a game but a player cannot be permitted to commit further funds to a new game until they have acknowledged the reality check, unless it occurs mid-way through a multi-state game such as blackjack where a player would need to commit additional funds if they wanted to split or double down. The reality check must prevent a new game within an auto-play sequence from commencing until the player has acknowledged the reality check.",
+        "key_points": [
+          "Must provide easily accessible facilities for customers to set reality check frequency",
+          "Reality check = display of time elapsed since session began",
+          "Customer must acknowledge reality check to remove from screen",
+          "Customer should be able to set or amend reality check at all times",
+          "Can present pre-set list but must have reasonable range, default must be minimum",
+          "Reality check continues until gaming session ends or customer exits account",
+          "Multiple sessions: session begins when first product commenced",
+          "Implementation options: account level, product level, or hybrid",
+          "Must provide clear explanation of how reality check is implemented",
+          "Should offer facility to exit session or log out",
+          "Must provide link to account history",
+          "Cannot commit further funds until reality check acknowledged",
+          "Must prevent auto-play from continuing until acknowledged"
+        ],
+        "facility_requirements": {
+          "accessibility": "Easily accessible at all times",
+          "customer_control": "Customers should be able to select frequency"
+        },
+        "time_period_options": {
+          "format": "Can present pre-set list of time periods",
+          "requirement": "Must have reasonable and appropriate range",
+          "default": "If default offered, must be set at minimum"
+        },
+        "display_duration": {
+          "continues_until": [
+            "Customer's gaming session ends",
+            "Customer exits their account (depends on implementation)"
+          ]
+        },
+        "multiple_sessions": {
+          "definition": "Gaming session began when player commenced with first product",
+          "example": "Playing bingo and slots in between draws counts as one session from start of bingo"
+        },
+        "implementation_options": [
+          {
+            "type": "Player account level - Optimum",
+            "description": "Reality check reminder for account commences at start of first gaming session and rolls over to subsequent sessions"
+          },
+          {
+            "type": "Player account level - Alternative",
+            "description": "Reality check commences before customer accesses gaming session (e.g., at login)",
+            "limitation": "Does not account for natural breaks in play (e.g., casino lobby)"
+          },
+          {
+            "type": "Product level",
+            "description": "Customer sets reality check for each individual gaming session",
+            "example": "Playing roulette and blackjack has two concurrent reality checks covering different periods"
+          },
+          {
+            "type": "Hybrid",
+            "description": "Some games subject to one reality check, others to another",
+            "example": "All slot games use single reality check, live dealer products use separate reality check"
+          }
+        ],
+        "explanation_requirement": {
+          "content": "Clear explanation of how reality check is implemented",
+          "purpose": "Players aware of how to use it to assist in managing gambling"
+        },
+        "preference_persistence": {
+          "ideal": "Player preferences applied to all future account logins or gaming sessions",
+          "if_not_possible": "Provide clear information that reality check must be set for each login/session"
+        },
+        "reality_check_features": {
+          "exit_facility": "Should offer facility to exit gaming session or log out of account",
+          "account_history_link": "Should provide link to customer's account history"
+        },
+        "fund_commitment_restriction": {
+          "general_rule": "Player cannot commit further funds to new game until reality check acknowledged",
+          "exception": "Unless occurs mid-way through multi-state game (e.g., blackjack split/double down)",
+          "auto_play": "Must prevent new game in auto-play sequence until acknowledged"
+        },
+        "timing_flexibility": {
+          "presentation": "Can be presented at end of game",
+          "restriction": "But must be acknowledged before new game with further funds"
+        }
+      },
+      "applies_to": [
+        "remote_gaming",
+        "bingo",
+        "remote_instant_win_lotteries",
+        "high_frequency_lotteries"
+      ],
+      "applies_to_exclusions": [
+        "peer_to_peer_gaming"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 13B"
+    },
+    {
+      "requirement_id": "RTS_13C",
+      "requirement_number": "13C",
+      "title": "Continuous Display of Elapsed Time",
+      "requirement_type": "mandatory",
+      "full_text": "The elapsed time should be displayed for the duration of the gaming session.",
+      "implementation_guidance": {
+        "full_text": "Time displayed should begin either when the game is opened or once play commences. Elapsed time should be displayed in seconds, minutes and hours.",
+        "key_points": [
+          "Elapsed time must be displayed for duration of gaming session",
+          "Time begins when game opened OR when play commences",
+          "Display format: seconds, minutes and hours"
+        ],
+        "display_requirements": {
+          "duration": "For duration of gaming session",
+          "start_timing_options": [
+            "When game is opened",
+            "Once play commences"
+          ],
+          "format": "Seconds, minutes and hours"
+        }
+      },
+      "applies_to": [
+        "casino",
+        "online_casino",
+        "online_slots",
+        "table_games"
+      ],
+      "applies_to_exclusions": [
+        "peer_to_peer_poker"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 13C"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Help customers track time spent gambling and take breaks through reality checks",
+    "enforcement_priority": "Critical - key safer gambling tool",
+    "testing_requirements": "Must demonstrate reality check functionality, time display, and interruption of play for acknowledgment",
+    "key_principles": [
+      "Time awareness during gambling sessions",
+      "Customer-controlled reality check frequency",
+      "Mandatory acknowledgment before continuing",
+      "Link to account history for informed decisions",
+      "Prevents automated continuous play",
+      "Multiple implementation options for different products"
+    ]
+  },
+  "related_requirements": [
+    "RTS 12 - Financial Limits",
+    "RTS 14 - Responsible Product Design",
+    "RTS 8 - Auto-play Prohibition",
+    "LCCP Social Responsibility Code"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 12 - Financial Limits",
+      "RTS 14 - Responsible Product Design",
+      "RTS 8A - Auto-play and Reality Checks"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

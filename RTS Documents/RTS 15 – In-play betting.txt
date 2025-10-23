@@ -1,0 +1,20 @@
+RTS 15 – In-play betting
+Applies to:
+Betting and peer-to-peer betting
+RTS aim 15
+To make the customer aware that they may not have the latest information available when betting on
+live events, and that they may be at a disadvantage to operators or other customers who have more
+up-to-date information.
+RTS requirement 15A
+Information must be made available that explains that ‘live’ TV or other broadcasts are delayed and
+that others may have more up-to-date information. Main in-play betting pages must include this
+information where practicable.
+RTS implementation guidance 15A
+a. Brief information should be included on main in-play pages or screens, such as the in-play
+home page or screen. More detail should be provided in ‘help’ or ‘how to’ or other product
+pages or screens.
+b. For telephone betting the information should be included in the general betting or product
+information that is made available to and/or sent out to customers.
+c. Where a brief notice cannot be practicably included on the main pages or screens, the
+information should be provided on easily accessible ‘help’, ‘how to’ or other product pages or
+screens.

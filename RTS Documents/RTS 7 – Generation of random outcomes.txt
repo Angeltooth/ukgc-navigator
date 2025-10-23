@@ -1,0 +1,111 @@
+RTS 7 – Generation of random outcomes
+Applies to:
+Gaming (including bingo), lotteries, and betting on virtual events
+RTS aim 7
+To ensure that games and other virtual events operate fairly.
+RTS requirement 7A
+Random number generation and game results must be ‘acceptably random’. Acceptably random here
+means that it is possible to demonstrate to a high degree of confidence that the output of the RNG, game,
+lottery and virtual event outcomes are random through, for example, statistical analysis using generally
+accepted tests and methods of analysis. Adaptive behaviour (that is, a compensated game) is not
+permitted.
+Where lotteries use the outcome of other events external to the lottery, to determine the result of the lottery
+the outcome must be unpredictable and externally verifiable.
+RTS implementation guidance 7A
+a. RNGs should be capable of demonstrating the following qualities:
+i. the output from the RNG is uniformly distributed over the entire output range and game, lottery,
+or virtual event outcomes are distributed in accordance with the expected or theoretical
+probabilities
+ii. the output of the RNG, game, lottery, and virtual event outcomes should be unpredictable, for
+example, for a software RNG it should be computationally infeasible to predict what the next
+number will be without complete knowledge of the algorithm and seed value
+iii. random number generation does not reproduce the same output stream (cycle), and that two
+instances of a RNG do not produce the same stream as each other (synchronise)
+iv. any forms of seeding and re-seeding used do not introduce predictability
+v. any scaling applied to the output of the random number generator maintains the qualities as
+detailed
+b. For lotteries using external events - where it is not practical to demonstrate 7A the events outcomes
+should be:
+i. unpredictable, that is, events should be selected only where they may reasonably be assumed
+to be random events
+ii. unable to be influenced by the lottery operator (or external lottery manager)
+iii. publicly available and externally verifiable, for example, events that are published in local or
+national press would be acceptable.
+c. For games or virtual events that use the laws of physics to generate the outcome of the game
+(mechanical RNGs), the mechanical RNG used should be capable of meeting the requirements in a.
+where applicable and in addition:
+i. the mechanical pieces should be constructed of materials to prevent decomposition of any
+component over time (for example, a ball shall not disintegrate)
+ii. the properties of physical items used to choose the selection should not be altered
+iii. players should not have the ability to interact with, come into physical contact with, or
+manipulate the mechanics of the game
+d. Restricting adaptive behaviour prohibits automatic or manual interventions that change the
+probabilities of game outcomes occurring during play. Restricting adaptive behaviour is not intended
+to prevent games from offering bonus or special features that implement a different set of rules, if
+they are based on the occurrence of random events.
+RTS requirement 7B
+As far as is reasonably possible, games and events must be implemented fairly and in accordance with the
+rules and prevailing payouts, where applicable, as they are described to the customer.
+RTS implementation guidance 7B
+a. Games should implement the rules as described in the rules available to the customer before play
+commenced.
+b. The mapping of the random inputs to game outcomes should be in accordance with prevailing
+probabilities, pay tables, etc.
+c. When random numbers, scaled or otherwise, are received, for example, following a game requesting
+a sequence of random numbers, they are to be used in the order in which they are received and they
+may not be discarded due to adaptive behaviour.
+d. Numbers or sequences of numbers are not to be discarded, unless they fall outside the expected
+range of numbers required by the virtual event – such an occurrence should result in an error being
+logged and investigated.
+RTS requirement 7C
+Game designs or features that may reasonably be expected to mislead the customer about the likelihood
+of particular results occurring are not permitted, including substituting losing events with near-miss losing
+events and simulations of real devices that do not simulate the real probabilities of the device.
+RTS implementation guidance 7C
+a. Where a virtual event simulates a physical device, the theoretical game probabilities should match
+the probabilities of the real device (for example, the probability of a coin landing heads must be 0.5
+every time the coin is tossed).
+b. Where multiple physical devices are simulated the probabilities of each outcome should be
+independent of the other simulated devices.
+c. Games may not falsely display near-miss results, that is, the event may not substitute one losing
+outcome with a different losing outcome.
+d. Where the event requires a pre-determined layout (for example, hidden prizes on a map), the
+locations of the winning spots should not change during play, except as provided for in the rules of
+the game.
+e. Where games involve an element of skill, every outcome described in the virtual event rules or
+artwork should be possible, that is, the customer should have some chance of achieving an
+advertised outcome regardless of skill.
+f. Where a customer contributes to a jackpot pool, that customer should be eligible to win the jackpot
+whilst they are playing that game, in accordance with the game and jackpot rules.
+RTS requirement 7D
+The rules, payouts and outcome probabilities of a virtual event or game may not be changed while it is
+available for gambling, except as provided for in the rules of the game, lottery or virtual event. Such
+changes must be brought to customer’s attention.
+RTS implementation guidance 7D
+a. Changes to game or event rules, paytables or other parameters that change the way in which a
+game, lottery, or event works, the winnings paid, or likelihood of winning (except as described in
+7Dc), should be conducted with the game or event taken offline or suspended.
+b. Altered games, lotteries, and events should display a notice that informs customers that the game or
+event has been changed, for example, ‘rules changed’, ’new odds’, or 'different payouts’. The notice
+should be displayed on game selection screens and on the events themselves if it is possible for the
+customer to go straight to the event without using a selection screen.
+c. This requirement is not intended to prevent games and virtual events where specified changes occur
+legitimately, in accordance with the game or event rules, for example:
+i. virtual events, such as virtual racing products where the odds differ from event to event
+depending on the virtual runners
+ii. virtual games, such as bingo where the odds of winning are dependent on the number of
+entrants
+iii. games with progressive jackpots, where the amount that can be won changes over time
+iv. games with bonus rounds where different rules apply, so long as these rounds are properly
+described to the customer
+v. unspecified changes to rules, paytables or other parameters that change the way in which a
+game, lottery or event works are not permitted, for example, rules that state ‘game rules may
+be changed at any time’ would not be acceptable.
+RTS requirement 7E
+Except in the case of subscription lotteries, the system clearly and accurately display the result of the
+game or event and the customer’s gamble. The result must be displayed for a length of time that may
+reasonably be expected to be sufficient for the customer to understand the result of the game or event in
+the context of their gamble.
+RTS implementation guidance 7E
+The game artwork and text should be sufficient to provide the customer with all of the information required
+to determine whether they have lost or won, and the value of any winnings.

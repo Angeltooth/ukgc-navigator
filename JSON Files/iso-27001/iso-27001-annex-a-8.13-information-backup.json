@@ -1,0 +1,831 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 8.13",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_8.13",
+    "control_number": "A 8.13",
+    "control_title": "Information Backup",
+    "control_type": "Corrective control",
+    "control_purpose": "To enable recovery from loss of data or systems through maintained and tested backups",
+    "control_objective": "Maintain backup copies of information, software, and systems and regularly test recovery capability"
+  },
+  "iso_27001_definition": {
+    "official_text": "Backup copies of information, software and systems should be maintained and regularly tested in accordance with the agreed topic-specific policy on backup.",
+    "key_requirements": [
+      "Backup policy established",
+      "Information and systems identified for backup",
+      "Backup strategy implemented",
+      "Regular backup schedule",
+      "Backups encrypted",
+      "Geographic distribution of backups",
+      "Retention schedules defined",
+      "Regular testing of backups",
+      "Recovery procedures documented",
+      "Restoration capability verified"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Corrective control enabling recovery from data loss or system failure",
+    "scope": [
+      "Critical business data",
+      "Customer data",
+      "System configurations",
+      "Application software",
+      "Operating systems",
+      "Databases",
+      "Email and communications",
+      "Documents and records"
+    ],
+    "key_outcome": "System and data recovery within defined timeframes after loss or damage"
+  },
+  "prerequisites": {
+    "description": "Before implementing backup strategy, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Business Impact Assessment",
+        "description": "Identified critical systems and recovery requirements",
+        "rationale": "BIA determines backup strategy and schedules",
+        "reference": "Business continuity planning"
+      },
+      {
+        "prerequisite": "Information Classification",
+        "description": "Classified data by sensitivity and criticality",
+        "rationale": "Classification determines backup protection level",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "Risk Assessment",
+        "description": "Identified data loss and system failure risks",
+        "rationale": "Risk assessment informs backup strategy",
+        "reference": "ISO 27001 A 5.2 - Information security risk assessment"
+      },
+      {
+        "prerequisite": "Legal and Regulatory Requirements",
+        "description": "Identified legal obligations for data retention",
+        "rationale": "Retention schedules driven by legal requirements",
+        "reference": "Data protection laws (GDPR, etc.)"
+      }
+    ]
+  },
+  "backup_overview": {
+    "definition": "Process of creating and maintaining copies of data and systems for recovery purposes",
+    "backup_types": [
+      "Full backup - complete copy of all data",
+      "Incremental backup - only changed data since last backup",
+      "Differential backup - changes since last full backup",
+      "Snapshot backup - point-in-time image of system",
+      "Continuous replication - real-time mirroring"
+    ],
+    "storage_types": [
+      "On-site storage - fast recovery, local risk",
+      "Off-site storage - geographic redundancy",
+      "Cloud storage - scalable, vendor-managed",
+      "Multiple copies - enhanced protection",
+      "Geographic distribution - disaster recovery"
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_8.13_REQ_1",
+      "requirement": "Develop Backup Policy",
+      "description": "Create documented policy for backup strategy",
+      "details": {
+        "policy_elements": [
+          "Backup objectives and scope",
+          "Systems and data included",
+          "Backup frequency and schedule",
+          "Retention periods",
+          "Recovery time objectives (RTO)",
+          "Recovery point objectives (RPO)",
+          "Backup storage locations",
+          "Encryption requirements",
+          "Testing schedule",
+          "Roles and responsibilities",
+          "Exceptions and approvals"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_2",
+      "requirement": "Conduct Business Impact Assessment",
+      "description": "Identify critical systems and recovery requirements",
+      "details": {
+        "bia_elements": [
+          "Critical business processes",
+          "Dependent systems and data",
+          "Impact of unavailability",
+          "Maximum tolerable downtime",
+          "Recovery time objectives (RTO)",
+          "Recovery point objectives (RPO)",
+          "Prioritization of recovery",
+          "Resource requirements"
+        ],
+        "output": "Backup strategy requirements"
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_3",
+      "requirement": "Identify Backup Requirements",
+      "description": "Determine what systems and data require backup",
+      "details": {
+        "systems_to_backup": [
+          "RNG systems and code",
+          "Game systems and configurations",
+          "Customer database",
+          "Payment processing systems",
+          "Email and communications",
+          "Business-critical applications",
+          "Regulatory and compliance records",
+          "Financial data"
+        ],
+        "backup_classification": [
+          "Critical - immediate recovery required",
+          "Important - timely recovery needed",
+          "Standard - routine backup acceptable",
+          "Non-essential - backup not required"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_4",
+      "requirement": "Implement Backup Technology",
+      "description": "Deploy appropriate backup solution",
+      "details": {
+        "technology_options": [
+          "Enterprise backup software",
+          "Cloud backup services",
+          "Database backup tools",
+          "Virtual machine snapshots",
+          "Continuous replication",
+          "Hybrid approach"
+        ],
+        "considerations": [
+          "Backup speed and efficiency",
+          "Recovery speed",
+          "Storage capacity",
+          "Encryption capability",
+          "Automation",
+          "Disaster recovery integration",
+          "Cost and scalability"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_5",
+      "requirement": "Establish Backup Schedule",
+      "description": "Define when and how often backups occur",
+      "details": {
+        "scheduling_factors": [
+          "Data change frequency",
+          "System criticality",
+          "RTO and RPO requirements",
+          "Resource availability",
+          "Business operations impact",
+          "Compliance requirements"
+        ],
+        "schedule_examples": [
+          "Critical systems - multiple daily backups",
+          "Important systems - daily backups",
+          "Standard systems - weekly backups",
+          "Incremental backups - between full backups"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_6",
+      "requirement": "Encrypt All Backups",
+      "description": "Protect backup data through encryption",
+      "details": {
+        "encryption_requirements": [
+          "At-rest encryption of backup files",
+          "In-transit encryption during transfer",
+          "Strong encryption algorithms",
+          "Key management procedures",
+          "Backup of encryption keys",
+          "Access controls to backups"
+        ],
+        "key_considerations": [
+          "Encryption key protection critical",
+          "Key recovery procedures",
+          "Separate key storage",
+          "No single point of failure for keys"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_7",
+      "requirement": "Manage Backup Storage and Distribution",
+      "description": "Store backups securely with geographic distribution",
+      "details": {
+        "storage_strategy": [
+          "Multiple backup copies",
+          "On-site storage for fast recovery",
+          "Off-site storage for disaster recovery",
+          "Geographic distribution to different regions",
+          "Fireproof or climate-controlled storage",
+          "Restricted physical access"
+        ],
+        "off_site_considerations": [
+          "Secure transportation",
+          "Secure facilities",
+          "Insurance coverage",
+          "Recovery speed vs distance tradeoff",
+          "Distance sufficient for disaster"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_8",
+      "requirement": "Define Retention Schedules",
+      "description": "Determine how long backups are retained",
+      "details": {
+        "retention_drivers": [
+          "Legal and regulatory requirements",
+          "Contractual obligations",
+          "Business needs",
+          "Data protection laws",
+          "Right to be forgotten",
+          "Tax and financial requirements"
+        ],
+        "retention_periods": [
+          "Daily backups - 1-2 weeks",
+          "Weekly backups - 1-3 months",
+          "Monthly backups - 6-12 months",
+          "Annual backups - 3-7 years",
+          "Compliance holds - indefinite"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_9",
+      "requirement": "Implement Regular Backup Testing",
+      "description": "Verify backups can be recovered",
+      "details": {
+        "testing_approach": [
+          "Scheduled regular recovery tests",
+          "Test of critical systems first",
+          "Full recovery to verify completeness",
+          "Partial recovery testing",
+          "Automation of test procedures",
+          "Documentation of test results"
+        ],
+        "test_frequency": [
+          "Critical systems - quarterly or more",
+          "Important systems - semi-annually",
+          "Standard systems - annually minimum",
+          "After backup software/process changes",
+          "After significant system changes"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_10",
+      "requirement": "Document Recovery Procedures",
+      "description": "Create clear step-by-step recovery processes",
+      "details": {
+        "recovery_documentation": [
+          "Systems recovered and order",
+          "Step-by-step recovery steps",
+          "Contact information for personnel",
+          "Access credentials needed",
+          "Estimated recovery time",
+          "Validation procedures",
+          "Disaster recovery site procedures"
+        ],
+        "documentation_locations": [
+          "Electronic copy accessible",
+          "Printed copy off-site",
+          "Multiple redundant copies",
+          "Easy to find in emergency"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_11",
+      "requirement": "Verify Recovery Capability",
+      "description": "Confirm systems can be recovered to operational state",
+      "details": {
+        "verification_elements": [
+          "Recovery meets RTO requirements",
+          "Recovery meets RPO requirements",
+          "Systems function post-recovery",
+          "Data integrity verified",
+          "Applications operational",
+          "Services available to customers",
+          "Full operational capability"
+        ],
+        "test_scenarios": [
+          "Complete data center failure",
+          "Ransomware attack recovery",
+          "Data corruption scenarios",
+          "System corruption scenarios",
+          "Partial system failure"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_12",
+      "requirement": "Address Legal and Data Protection Requirements",
+      "description": "Ensure backups comply with data protection laws",
+      "details": {
+        "legal_considerations": [
+          "GDPR right to be forgotten",
+          "GDPR right to erasure",
+          "Selective data deletion",
+          "Data retention requirements",
+          "Data residency requirements",
+          "Cross-border data transfers"
+        ],
+        "compliance_approach": [
+          "Legal review of requirements",
+          "Retention schedule compliance",
+          "Selective deletion capability",
+          "Data protection impact assessment",
+          "Privacy impact analysis"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.13_REQ_13",
+      "requirement": "Document and Communicate Policy",
+      "description": "Ensure personnel understand backup strategy",
+      "details": {
+        "communication": [
+          "Backup policy published",
+          "Recovery procedures accessible",
+          "Staff trained on backup importance",
+          "Contact information for recovery",
+          "Update when changes made"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Conduct business impact assessment",
+        "detail": "Identify critical systems and recovery requirements"
+      },
+      {
+        "step": 2,
+        "action": "Develop backup policy",
+        "detail": "Document backup strategy and schedule"
+      },
+      {
+        "step": 3,
+        "action": "Identify backup requirements",
+        "detail": "Determine systems and data to backup"
+      },
+      {
+        "step": 4,
+        "action": "Select backup technology",
+        "detail": "Choose appropriate backup solution"
+      },
+      {
+        "step": 5,
+        "action": "Establish backup schedule",
+        "detail": "Define backup frequency"
+      },
+      {
+        "step": 6,
+        "action": "Implement encryption",
+        "detail": "Encrypt all backup data"
+      },
+      {
+        "step": 7,
+        "action": "Establish storage strategy",
+        "detail": "Multiple copies with geographic distribution"
+      },
+      {
+        "step": 8,
+        "action": "Define retention",
+        "detail": "Determine retention periods"
+      },
+      {
+        "step": 9,
+        "action": "Document recovery procedures",
+        "detail": "Step-by-step recovery process"
+      },
+      {
+        "step": 10,
+        "action": "Test backups",
+        "detail": "Verify recovery capability"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 8.13",
+    "checklist": [
+      {
+        "item": "Conduct business impact assessment",
+        "status": "required"
+      },
+      {
+        "item": "Develop backup policy",
+        "status": "required"
+      },
+      {
+        "item": "Identify systems requiring backup",
+        "status": "required"
+      },
+      {
+        "item": "Select backup technology",
+        "status": "required"
+      },
+      {
+        "item": "Implement backup solution",
+        "status": "required"
+      },
+      {
+        "item": "Establish backup schedule",
+        "status": "required"
+      },
+      {
+        "item": "Implement encryption",
+        "status": "required"
+      },
+      {
+        "item": "Configure geographic distribution",
+        "status": "required"
+      },
+      {
+        "item": "Define retention schedules",
+        "status": "required"
+      },
+      {
+        "item": "Document recovery procedures",
+        "status": "required"
+      },
+      {
+        "item": "Conduct recovery testing",
+        "status": "required"
+      },
+      {
+        "item": "Verify recovery capability",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with backups",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Backups not tested or tested infrequently",
+        "description": "No evidence that recovery actually works",
+        "root_cause": [
+          "Testing time consuming",
+          "Resource constraints",
+          "Belief backups automatically work",
+          "Fear of disrupting production",
+          "No metrics on recovery success"
+        ],
+        "impact": "Backup failure when needed, data loss, operational disruption",
+        "prevention": [
+          "Regular testing schedule mandatory",
+          "Quarterly minimum for critical systems",
+          "Full recovery verification",
+          "Test environment for testing",
+          "Automated testing where possible",
+          "Document test results"
+        ],
+        "requirement": "Regular testing required - cannot skip this"
+      },
+      {
+        "rank": 2,
+        "mistake": "No consideration of data protection laws",
+        "description": "Backups cannot support right to erasure",
+        "root_cause": [
+          "Lack of legal expertise",
+          "Cost cutting",
+          "Misunderstanding of GDPR",
+          "No data protection officer involved",
+          "Assumption backup solves everything"
+        ],
+        "impact": "GDPR violations, regulatory penalties, customer liability",
+        "prevention": [
+          "Legal review of requirements",
+          "Data protection expertise required",
+          "Selective deletion capability",
+          "Retention schedule compliance",
+          "Privacy impact assessment"
+        ]
+      },
+      {
+        "rank": 3,
+        "mistake": "Backups all in one location",
+        "description": "Single point of failure for disaster recovery",
+        "root_cause": [
+          "Cost of off-site storage",
+          "Complexity of multi-location",
+          "Underestimating disaster risk",
+          "No disaster recovery planning"
+        ],
+        "impact": "Disaster loses both data and backups, business disruption",
+        "prevention": [
+          "Off-site backup copies required",
+          "Geographic distribution",
+          "Sufficient distance for disasters",
+          "Secure transportation",
+          "Regular verification of off-site"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 8.13 audit",
+    "audit_areas": [
+      {
+        "area": "1. Backup Policy",
+        "description": "Verify documented policy",
+        "checks": [
+          "Policy document current",
+          "Scope defined",
+          "Schedule documented",
+          "Retention periods specified",
+          "RTO/RPO defined",
+          "Testing requirements"
+        ]
+      },
+      {
+        "area": "2. Backup Implementation",
+        "description": "Verify backups actually running",
+        "checks": [
+          "Backup solution deployed",
+          "Backup schedule adhered to",
+          "Backups completing successfully",
+          "Backup logs available",
+          "Encryption enabled",
+          "Multiple copies"
+        ]
+      },
+      {
+        "area": "3. Testing and Verification",
+        "description": "Verify recovery capability tested",
+        "checks": [
+          "Recovery tests documented",
+          "Testing on schedule",
+          "Full recovery verified",
+          "RTO/RPO met",
+          "Test results successful",
+          "Issues documented and resolved"
+        ]
+      },
+      {
+        "area": "4. Storage and Distribution",
+        "description": "Verify safe backup storage",
+        "checks": [
+          "On-site storage secured",
+          "Off-site storage location",
+          "Geographic separation",
+          "Secure transportation",
+          "Environmental protection",
+          "Access controls"
+        ]
+      },
+      {
+        "area": "5. Retention and Deletion",
+        "description": "Verify retention compliance",
+        "checks": [
+          "Retention schedule",
+          "Legal requirements met",
+          "Deletion procedures",
+          "Data protection compliance",
+          "Audit trail of deletions"
+        ]
+      },
+      {
+        "area": "6. Recovery Procedures",
+        "description": "Verify recovery documented",
+        "checks": [
+          "Recovery procedures written",
+          "Step-by-step instructions",
+          "Contact information",
+          "Estimated time to recover",
+          "Accessible in emergency"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, RNG systems, game integrity, and customer data require robust backup and recovery capability",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Systems",
+        "backup_requirements": [
+          "Multiple daily backups",
+          "Off-site copies at different location",
+          "Full recovery capability",
+          "RTO less than 1 hour",
+          "RPO less than 1 hour",
+          "Quarterly recovery testing",
+          "Encryption mandatory"
+        ]
+      },
+      {
+        "system": "Customer Data",
+        "backup_requirements": [
+          "Daily backups minimum",
+          "Off-site geographic separation",
+          "Encryption mandatory",
+          "GDPR right to erasure capability",
+          "Selective deletion support",
+          "Recovery within 24 hours",
+          "Semi-annual testing"
+        ]
+      },
+      {
+        "system": "Financial and Payment Data",
+        "backup_requirements": [
+          "Multiple daily backups",
+          "Off-site protection",
+          "Full encryption",
+          "PCI DSS compliance",
+          "Rapid recovery capability",
+          "Quarterly testing"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must maintain tested backups with documented recovery procedures and capability to meet RTO/RPO for critical systems"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Enable recovery from data loss or system failure through maintained and tested backups",
+    "enforcement_priority": "Critical - backup recovery essential to business continuity",
+    "key_principles": [
+      "Regular backups on documented schedule",
+      "Multiple copies with geographic distribution",
+      "All backups encrypted",
+      "Regular testing of recovery",
+      "Recovery time objectives defined and met",
+      "Recovery point objectives defined and met",
+      "Retention schedules complying with laws",
+      "Documented recovery procedures",
+      "Accessible recovery documentation",
+      "Legal and data protection compliance"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 8.13 Information Backup, implement",
+    "requirements": [
+      {
+        "requirement": "Backup policy",
+        "detail": "Documented backup strategy"
+      },
+      {
+        "requirement": "Business impact assessment",
+        "detail": "Critical systems and RTO/RPO"
+      },
+      {
+        "requirement": "Backup schedule",
+        "detail": "Regular backups documented"
+      },
+      {
+        "requirement": "Backup technology",
+        "detail": "Appropriate backup solution deployed"
+      },
+      {
+        "requirement": "Encryption",
+        "detail": "All backups encrypted"
+      },
+      {
+        "requirement": "Multiple copies",
+        "detail": "On-site and off-site backups"
+      },
+      {
+        "requirement": "Geographic distribution",
+        "detail": "Off-site location sufficient distance"
+      },
+      {
+        "requirement": "Retention schedule",
+        "detail": "Legal and business requirements met"
+      },
+      {
+        "requirement": "Recovery procedures",
+        "detail": "Documented step-by-step process"
+      },
+      {
+        "requirement": "Regular testing",
+        "detail": "Quarterly minimum, verified working"
+      },
+      {
+        "requirement": "Legal compliance",
+        "detail": "GDPR and data protection requirements"
+      },
+      {
+        "requirement": "Documentation",
+        "detail": "Complete records and evidence"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.2 - Information security risk assessment",
+      "ISO 27001 A 5.12 - Classification of information",
+      "ISO 27001 A 8.1 - User endpoint device security",
+      "ISO 27001 A 8.10 - Encryption",
+      "ISO 27001 Clause 8.4 - Business continuity"
+    ]
+  },
+  "best_practices": {
+    "backup_best_practices": [
+      "3-2-1 rule: 3 copies, 2 different media types, 1 off-site",
+      "Automated backup processes",
+      "Centralized backup management",
+      "Encryption on all backups",
+      "Multiple backup retention periods",
+      "Immutable backups if ransomware risk"
+    ],
+    "storage_best_practices": [
+      "On-site for fast recovery",
+      "Off-site for disaster recovery",
+      "Geographic distribution",
+      "Secure facilities",
+      "Environmental controls",
+      "Restricted access"
+    ],
+    "testing_best_practices": [
+      "Regular recovery testing",
+      "Full recovery verification",
+      "Document test results",
+      "Test different scenarios",
+      "Test in separate environment",
+      "Quarterly for critical systems"
+    ],
+    "recovery_best_practices": [
+      "Clear documented procedures",
+      "Step-by-step instructions",
+      "Contact information",
+      "RTO/RPO published",
+      "Accessible documentation",
+      "Regular procedure reviews"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_backup_windows": [
+      {
+        "system": "RNG",
+        "recovery_time": "Less than 1 hour",
+        "impact": "Game integrity compromised"
+      },
+      {
+        "system": "Customer Platform",
+        "recovery_time": "Less than 4 hours",
+        "impact": "Customers cannot access accounts"
+      },
+      {
+        "system": "Payment Processing",
+        "recovery_time": "Less than 2 hours",
+        "impact": "Transactions blocked"
+      },
+      {
+        "system": "Compliance Systems",
+        "recovery_time": "Less than 8 hours",
+        "impact": "Reporting delays"
+      }
+    ],
+    "regulatory_expectations": [
+      "Documented backup policy and schedule",
+      "Regular tested backups",
+      "Recovery capability verified",
+      "Off-site geographic separation",
+      "Encryption of all backups",
+      "GDPR right to erasure support",
+      "Recovery within RTO/RPO"
+    ],
+    "audit_readiness": [
+      "Backup policy approved and current",
+      "Recovery test results documented",
+      "Backup logs showing regular execution",
+      "Off-site verification",
+      "Encryption configuration verified",
+      "Recovery procedures documented"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 8.13",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-8.13-information-backup.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

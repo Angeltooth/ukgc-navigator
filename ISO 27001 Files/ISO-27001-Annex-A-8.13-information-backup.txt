@@ -1,0 +1,82 @@
+ISO 27001 Information Backup
+
+ISO 27001 Annex A 8.13 Information Backup is an ISO 27001 control that requires an organisation to create and test backups of data, software and systems.
+Information backup is important because things can go wrong. From accidental loss of information to the more aggressive and damaging ransomware attacks, there are many reasons that you might want to restore information from a point in time. Having an effective information backup process that is tested and proven to work will save your bacon one day.
+Purpose
+
+ISO 27001 Annex A 8.13 is corrective control that is to enable recovery from loss of data or systems. 
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.13 as:
+Backup copies of information, software and systems should be maintained and regularly tested in accordance with the agreed topic-specific policy on backup. 
+Implementation Guide
+
+You are going to have to ensure that you:
+Implement a topic specific policy for information backup
+Identify the information that you want to protect
+Classify the information that you want to protect
+Implement controls to protect the information based on risk, classification and business need
+keep records
+Test the controls that you have to make sure they are working
+There are several approaches to information backup and the most common is to implement a backup tool.
+Backup Policy
+
+The backup policy is a specific document that is covered in detail in the Beginner’s Guide to the ISO 27001 Backup Policy.
+In summary it sets out the organisations approach to backups and ensures that adequate processes and procedures are in place as well as regular testing of the backup so that we can be sure that when the time comes and if we need it, we can recover it.
+Identify Backup Requirements
+
+The best way to identify the backup requirements is to conduct a business impact assessment (BIA). The BIA will identify and prioritise your critical systems and data and will provide you with time scales for how quickly they should be recovered. This in turn will inform your approach to backups and the scheduling of backups.
+Implement Backup Technology
+
+There are many types of backup technology and you should implement the one that is appropriate to you. The standard is hung up on old fashioned tapes and storing them in remote locations but any technology solution can work, especially with the prevalence of cloud based storage. The things to consider here are both the encryption of the backup and the legal and regulatory requirements placed on data.
+Encrypt backups
+
+Backups should always be encrypted and is often built into any off the shelf backup solution.
+Backups and the law
+
+This is an area where you are going to need some legal advice. The main issues here come around data protection and in particular the GDPR and relate directly to the right to be forgotten and information deletion. Backups are one area that can get you in hot water if you are unable to meet the demands and requirements of the laws and regulations.
+Set Backup Retention Schedules
+
+The backup retention schedules are driven by the needs of the business and the laws and regulations that apply to it. Using the business impact assessment (BIA) is a good starting point for working out the schedule as is reverting to client contracts and client requirements.
+Test Backups
+
+The backups that you make should be tested. It is pointless to back things up securely and when the time comes to recover the data find out that you cannot, in fact, recover the data. Have a process of regular backup testing that gives you the confidence that you can recover from backup should the need arise.
+How to comply
+
+To comply with ISO 27001 Annex A 8.13 you are going to implement the ‘how’ to the ‘what’ the control is expecting.
+In short measure you are going to:
+Understand and record the legal, regulatory and contractual requirements you have for data
+Conduct a risk assessment
+Based on the legal, regulatory, contractual requirements and the risk assessment you will implement an
+information backup scheme
+Implement and communicate your topic specific policy on backup
+Document and implement your processes and technical implementations for data backup
+Check that the controls are working by conducting internal audits
+How to pass an audit
+
+To pass an audit of ISO 27001 Annex A 8.13 Information backup you are going to make sure that you have followed the steps above in how to comply.
+You are going to do that by first conducting an internal audit, following the How to Conduct an ISO 27001 Internal Audit Guide.
+What will an auditor check?
+
+The audit is going to check a number of areas. Lets go through the main ones
+1. That you have documentation
+
+What this means is that you need to show that you have documented your legal, regulatory and contractual requirements for information backup. Where data protection laws exist that you have documented what those laws are and what those requirements are. That you have an information classification scheme and a topic specific policy for access control and that you have documented your information backup techniques.
+2. That you have have implemented information backup appropriately
+
+They will look at systems to seek evidence of information backup, testing and recovery. They want to see evidence of tests, the results of tests and any continual improvement you conducted as a result of those tests.
+3. That you have conducted internal audits
+
+The audit will want to see that you have tested the controls and evidenced that they are operating. This is usually in the form of the required internal audits. They will check the records and outputs of those internal audits.
+Top 3 Mistakes People Make
+
+In my experience, the top 3 mistakes people make for ISO 27001 Annex A 8.13 Information Backup are
+1. You have not tested the backup
+
+This is a common mistake we see. That you have not tested that you can recover from backups. Sometimes you did a recovery test but it was a long time ago, or it was a partial recovery and therefore you have no actual evidence that your backups can be recovered to a point the organisation is operational again within the time frames and to the point in time that was agreed.
+2. You don’t know your legal obligations
+
+This is a massive mistake that we see, where people assume ISO 27001 is just information security and forget that it also checks that appropriate laws are being followed, and in particular data protection laws. Cost saving by not having a data protection expert or ignoring data protection law entirely is a common mistake we see people make when cutting corners and saving costs. Backups where information, in particular personal information, cannot be deleted selectively can get you in a lot of hot water.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

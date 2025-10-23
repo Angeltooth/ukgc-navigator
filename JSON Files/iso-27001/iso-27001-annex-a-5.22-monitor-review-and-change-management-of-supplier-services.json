@@ -1,0 +1,864 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.22",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.22",
+    "control_number": "A 5.22",
+    "control_title": "Monitor, Review and Change Management of Supplier Services",
+    "control_type": "Preventive control",
+    "control_purpose": "To maintain agreed level of information security and service delivery in line with supplier agreements",
+    "control_objective": "Regularly monitor, review, evaluate and manage changes in supplier information security practices and service delivery"
+  },
+  "iso_27001_definition": {
+    "official_text": "The organisation should regularly monitor, review, evaluate and manage change in supplier information security practices and service delivery.",
+    "key_requirements": [
+      "Regular monitoring of supplier services",
+      "Regular review of supplier information security",
+      "Regular evaluation of supplier performance",
+      "Management of changes in supplier services",
+      "Management of changes in supplier controls",
+      "Verification of compliance with agreements"
+    ]
+  },
+  "supplier_monitoring_overview": {
+    "definition": "Ongoing oversight and management of supplier performance, security, and changes throughout service delivery",
+    "purpose": "Ensure suppliers continue to meet agreed information security and service levels throughout relationship",
+    "scope": [
+      "Service performance monitoring",
+      "Security posture verification",
+      "Change management oversight",
+      "Incident response",
+      "Compliance verification",
+      "Relationship management"
+    ],
+    "key_principle": "Have agreements, ensure they're followed, check them regularly, respond when issues occur",
+    "simplicity": "Not complicated - straightforward monitoring and issue management"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.22_REQ_1",
+      "requirement": "Assign Responsibility for Supplier Monitoring",
+      "description": "Assign responsibility to person or team with skills and resources to monitor supplier requirements",
+      "details": {
+        "responsibility": "Clear assignment of who monitors suppliers",
+        "skills_required": [
+          "Information security knowledge",
+          "Supplier management experience",
+          "Technical competency for services provided",
+          "Communication and negotiation skills"
+        ],
+        "resources": "Sufficient resources and time allocated",
+        "accountability": "Clear accountability for monitoring activities"
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_2",
+      "requirement": "Establish Performance Monitoring Metrics",
+      "description": "Define and monitor service performance levels in line with supplier agreements",
+      "details": {
+        "monitoring_approach": [
+          "Reports from supplier (monthly, quarterly)",
+          "Metrics and KPIs (availability, response time, security events)",
+          "Dashboards showing real-time or regular status",
+          "Performance reports analyzed regularly"
+        ],
+        "metrics_examples": [
+          "Service availability percentage",
+          "Response time to incidents",
+          "Number of security updates deployed",
+          "Vulnerability disclosure timeframe",
+          "Audit completion status",
+          "SLA compliance rate"
+        ],
+        "frequency": "Regular monitoring cadence established"
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_3",
+      "requirement": "Monitor and Respond to Supplier Changes",
+      "description": "Monitor changes made by suppliers and respond appropriately",
+      "details": {
+        "supplier_changes": [
+          "Software updates and patches",
+          "Changes to processes or procedures",
+          "Changes to controls or security measures",
+          "Infrastructure or platform changes",
+          "Personnel or organizational changes",
+          "Subcontractor additions or changes"
+        ],
+        "response_required": [
+          "Understand impact of change",
+          "Verify security implications",
+          "Test in staging if applicable",
+          "Approve or request modification",
+          "Plan deployment or implementation",
+          "Document change and response"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_4",
+      "requirement": "Verify Compliance with Agreement Terms",
+      "description": "Monitor and verify supplier compliance with information security requirements in agreements",
+      "details": {
+        "compliance_verification": [
+          "Audit supplier against agreement terms",
+          "Verify certifications remain current",
+          "Check security assessment results",
+          "Validate controls in place",
+          "Confirm incident reporting procedures followed",
+          "Verify data handling procedures"
+        ],
+        "frequency": "Regular verification based on criticality",
+        "evidence": "Request and review supporting evidence"
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_5",
+      "requirement": "Conduct Regular Security Reviews",
+      "description": "Regularly evaluate and assess supplier information security practices",
+      "details": {
+        "review_activities": [
+          "Annual security assessment",
+          "Certification verification (ISO 27001, SOC 2, etc.)",
+          "Vulnerability scanning results",
+          "Penetration test findings",
+          "Incident history review",
+          "Security posture evaluation"
+        ],
+        "frequency": "At least annually, more frequently for critical suppliers",
+        "documentation": "Results documented and findings tracked"
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_6",
+      "requirement": "Implement Service Review Meetings",
+      "description": "Conduct regular meetings with suppliers to review performance and security",
+      "details": {
+        "meeting_topics": [
+          "Service performance review",
+          "Security posture discussion",
+          "Change notifications and approvals",
+          "Incident and issue tracking",
+          "Upcoming planned changes",
+          "Concerns or improvement areas"
+        ],
+        "meeting_frequency": [
+          "Quarterly for critical suppliers",
+          "Semi-annually for standard suppliers",
+          "Annually for lower-risk suppliers"
+        ],
+        "documentation": "Meeting notes maintained and action items tracked"
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_7",
+      "requirement": "Monitor Supplier Incidents and Issues",
+      "description": "Track and respond to incidents or issues involving suppliers",
+      "details": {
+        "incident_types": [
+          "Security incidents",
+          "Service outages",
+          "Performance degradation",
+          "Non-compliance findings",
+          "Configuration errors",
+          "Personnel issues"
+        ],
+        "tracking": [
+          "Log all incidents and issues",
+          "Track status and resolution",
+          "Document root causes",
+          "Maintain incident register"
+        ],
+        "response": [
+          "Incident escalation procedures",
+          "Immediate action if needed",
+          "Investigation and analysis",
+          "Corrective action tracking",
+          "Communication with stakeholders"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_8",
+      "requirement": "Manage Supplier Change Requests",
+      "description": "Establish process for managing changes requested by suppliers",
+      "details": {
+        "change_types": [
+          "Infrastructure or platform changes",
+          "Pricing or contract changes",
+          "Service scope changes",
+          "Security requirement changes",
+          "SLA modifications",
+          "Support or escalation procedure changes"
+        ],
+        "evaluation": [
+          "Impact assessment",
+          "Security implications review",
+          "Business continuity impact",
+          "Approval by appropriate authority",
+          "Testing plan if needed"
+        ],
+        "decision": [
+          "Approve change as proposed",
+          "Approve with conditions",
+          "Reject change",
+          "Request modification"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_9",
+      "requirement": "Evaluate Supplier Adequacy",
+      "description": "Ensure suppliers maintain adequate information security throughout service delivery",
+      "details": {
+        "adequacy_assessment": [
+          "Security practices remain appropriate",
+          "Controls remain effective",
+          "Certifications remain current",
+          "Performance meets expectations",
+          "Incident response capability adequate"
+        ],
+        "frequency": "Regular evaluation, at minimum annually",
+        "action": [
+          "Continue relationship if adequate",
+          "Request improvements if deficiencies found",
+          "Replace supplier if inadequate"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_10",
+      "requirement": "Maintain Supplier Register",
+      "description": "Keep Supplier Register current with monitoring status and findings",
+      "details": {
+        "register_updates": [
+          "Last review date recorded",
+          "Compliance status documented",
+          "Security assessment results",
+          "Known issues or concerns",
+          "Upcoming audit or review dates",
+          "Meeting outcomes"
+        ],
+        "currency": "Register updated regularly as monitoring occurs"
+      }
+    },
+    {
+      "requirement_id": "A_5.22_REQ_11",
+      "requirement": "Document Monitoring Activities",
+      "description": "Maintain documentation of all monitoring, review and evaluation activities",
+      "details": {
+        "documentation": [
+          "Monitoring plans and schedules",
+          "Performance reports received",
+          "Review meeting notes",
+          "Audit findings and reports",
+          "Incidents and issues log",
+          "Change approvals and status"
+        ],
+        "retention": "Maintain records of monitoring activities",
+        "access": "Appropriate personnel can access monitoring records"
+      }
+    }
+  ],
+  "supplier_monitoring_process": {
+    "description": "Standard process for ongoing monitoring and management of supplier services",
+    "process_steps": [
+      {
+        "step": 1,
+        "name": "Monitoring Planning",
+        "description": "Plan monitoring activities based on supplier criticality",
+        "activities": [
+          "Identify critical suppliers requiring frequent monitoring",
+          "Establish monitoring schedule and frequency",
+          "Define monitoring metrics and KPIs",
+          "Assign monitoring responsibilities",
+          "Communicate plan to stakeholders"
+        ]
+      },
+      {
+        "step": 2,
+        "name": "Regular Performance Monitoring",
+        "description": "Collect and analyze supplier performance data",
+        "activities": [
+          "Receive performance reports from supplier",
+          "Review metrics and dashboards",
+          "Compare against SLA commitments",
+          "Analyze trends and patterns",
+          "Identify any performance issues"
+        ]
+      },
+      {
+        "step": 3,
+        "name": "Security Review",
+        "description": "Review supplier security posture regularly",
+        "activities": [
+          "Verify certifications remain current",
+          "Review security assessments",
+          "Check vulnerability scanning results",
+          "Monitor incident history",
+          "Evaluate security controls"
+        ]
+      },
+      {
+        "step": 4,
+        "name": "Service Review Meeting",
+        "description": "Conduct regular meeting with supplier",
+        "activities": [
+          "Review performance metrics",
+          "Discuss security posture",
+          "Share any concerns or issues",
+          "Review planned changes",
+          "Discuss improvements or concerns",
+          "Document outcomes and action items"
+        ]
+      },
+      {
+        "step": 5,
+        "name": "Change Management",
+        "description": "Monitor and manage changes",
+        "activities": [
+          "Monitor supplier-initiated changes",
+          "Evaluate security implications",
+          "Test if applicable",
+          "Approve or request modification",
+          "Track implementation"
+        ]
+      },
+      {
+        "step": 6,
+        "name": "Incident Management",
+        "description": "Track and respond to incidents",
+        "activities": [
+          "Log incidents and issues",
+          "Investigate and analyze",
+          "Request corrective action",
+          "Track resolution",
+          "Communicate outcomes"
+        ]
+      },
+      {
+        "step": 7,
+        "name": "Compliance Verification",
+        "description": "Verify ongoing compliance with agreements",
+        "activities": [
+          "Check agreement compliance",
+          "Verify security requirements met",
+          "Document compliance status",
+          "Identify any gaps",
+          "Request remediation if needed"
+        ]
+      },
+      {
+        "step": 8,
+        "name": "Annual Evaluation",
+        "description": "Conduct annual evaluation of supplier adequacy",
+        "activities": [
+          "Comprehensive security assessment",
+          "Performance evaluation",
+          "Compliance verification",
+          "Determine if supplier remains adequate",
+          "Plan for next year or change decision"
+        ]
+      }
+    ]
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish Supplier Monitoring Policy",
+        "detail": "Document organization's approach to monitoring suppliers"
+      },
+      {
+        "step": 2,
+        "action": "Assign Monitoring Responsibility",
+        "detail": "Designate person or team responsible for supplier monitoring"
+      },
+      {
+        "step": 3,
+        "action": "Define Monitoring Metrics",
+        "detail": "Establish performance metrics and KPIs to monitor"
+      },
+      {
+        "step": 4,
+        "action": "Create Monitoring Schedule",
+        "detail": "Establish frequency and timing of monitoring activities"
+      },
+      {
+        "step": 5,
+        "action": "Implement Performance Tracking",
+        "detail": "Set up mechanism to collect and track performance data"
+      },
+      {
+        "step": 6,
+        "action": "Schedule Regular Reviews",
+        "detail": "Establish recurring meetings with suppliers"
+      },
+      {
+        "step": 7,
+        "action": "Establish Incident Management",
+        "detail": "Create process for tracking supplier incidents"
+      },
+      {
+        "step": 8,
+        "action": "Define Change Management Process",
+        "detail": "Establish process for evaluating supplier changes"
+      },
+      {
+        "step": 9,
+        "action": "Plan Annual Evaluations",
+        "detail": "Schedule comprehensive annual supplier evaluations"
+      },
+      {
+        "step": 10,
+        "action": "Document Procedures",
+        "detail": "Create comprehensive monitoring procedures documentation"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.22",
+    "checklist": [
+      {
+        "item": "Assign supplier monitoring responsibility",
+        "status": "required"
+      },
+      {
+        "item": "Define performance metrics and KPIs",
+        "status": "required"
+      },
+      {
+        "item": "Establish monitoring schedule and frequency",
+        "status": "required"
+      },
+      {
+        "item": "Implement performance tracking mechanism",
+        "status": "required"
+      },
+      {
+        "item": "Monitor supplier changes",
+        "status": "required"
+      },
+      {
+        "item": "Establish service review meetings",
+        "status": "required"
+      },
+      {
+        "item": "Track incidents and issues",
+        "status": "required"
+      },
+      {
+        "item": "Manage supplier change requests",
+        "status": "required"
+      },
+      {
+        "item": "Verify agreement compliance",
+        "status": "required"
+      },
+      {
+        "item": "Conduct regular security reviews",
+        "status": "required"
+      },
+      {
+        "item": "Conduct annual evaluations",
+        "status": "required"
+      },
+      {
+        "item": "Maintain Supplier Register",
+        "status": "required"
+      },
+      {
+        "item": "Document monitoring activities",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with supplier monitoring",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Do not monitor suppliers",
+        "description": "No monitoring, reviews, or oversight of suppliers after contract execution",
+        "root_cause": [
+          "Assumption suppliers will maintain standards",
+          "Resource constraints",
+          "Focus on new suppliers rather than existing",
+          "No process for ongoing monitoring"
+        ],
+        "impact": "Non-compliance not detected, security issues not identified, service degradation not noticed",
+        "prevention": "Establish monitoring process and assign responsibility",
+        "evidence_needed": "Be able to demonstrate monitoring activities (meetings, reports, dashboards)",
+        "audit_risk": "High - auditors will ask to see evidence of monitoring"
+      },
+      {
+        "rank": 2,
+        "mistake": "No assurance supplier maintains information security",
+        "description": "No verification that supplier continues to maintain security",
+        "root_cause": [
+          "Initial assessment done but no ongoing verification",
+          "Assumption previous certification remains valid",
+          "No annual review process",
+          "No incident tracking"
+        ],
+        "evidence_needed": "Current certification (ISO 27001, etc.) or recent security assessment",
+        "action": "Request annual compliance updates from suppliers",
+        "certification": "Ensure certifications are in date and cover services being used"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control is wrong",
+        "description": "Poor documentation of monitoring activities",
+        "issues": [
+          "No records of monitoring activities",
+          "No meeting notes from reviews",
+          "Incidents not tracked or documented",
+          "Changes not documented",
+          "Supplier Register not updated"
+        ],
+        "prevention": [
+          "Document all monitoring activities",
+          "Maintain meeting notes",
+          "Track incidents in log",
+          "Record changes and approvals",
+          "Keep Supplier Register current"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.22 audit",
+    "audit_areas": [
+      {
+        "area": "1. Supplier Monitoring Evidence",
+        "description": "Verify monitoring activities are occurring and documented",
+        "checks": [
+          "Monitoring process documented",
+          "Responsibility assigned",
+          "Performance reports or metrics reviewed",
+          "Evidence of regular reviews or meetings",
+          "Dashboards or reports showing monitoring",
+          "Changes tracked and documented"
+        ],
+        "easiest_win": "Request evidence of supplier monitoring - if none exists, immediate finding"
+      },
+      {
+        "area": "2. Service Review Meetings",
+        "description": "Verify regular meetings with suppliers",
+        "checks": [
+          "Meeting schedule exists",
+          "Regular meetings occur (quarterly/semi-annually)",
+          "Meeting notes maintained",
+          "Topics covered documented",
+          "Action items tracked to completion",
+          "Attendance recorded"
+        ],
+        "requirement": "At minimum, auditor will ask for evidence of recent supplier meetings"
+      },
+      {
+        "area": "3. Incident and Issue Management",
+        "description": "Verify incidents are tracked and managed",
+        "checks": [
+          "Incident tracking log maintained",
+          "Incidents documented with details",
+          "Response actions taken",
+          "Root cause analysis conducted",
+          "Resolution tracked",
+          "Lessons learned captured"
+        ]
+      },
+      {
+        "area": "4. Change Management",
+        "description": "Verify changes are managed appropriately",
+        "checks": [
+          "Supplier changes identified",
+          "Changes evaluated for impact",
+          "Security implications assessed",
+          "Approvals documented",
+          "Implementation tracked",
+          "Testing completed where needed"
+        ]
+      },
+      {
+        "area": "5. Security Compliance Verification",
+        "description": "Verify supplier security is evaluated regularly",
+        "checks": [
+          "Certifications verified annually",
+          "Security assessments current",
+          "Compliance with agreement terms verified",
+          "Controls validated",
+          "Vulnerabilities tracked"
+        ],
+        "frequency": "At least annually for all suppliers"
+      },
+      {
+        "area": "6. Supplier Register and Documentation",
+        "description": "Verify monitoring records maintained",
+        "checks": [
+          "Supplier Register current",
+          "Last review date recorded",
+          "Compliance status documented",
+          "Monitoring frequency met",
+          "Audit trails complete"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Supplier monitoring critical to ensure all critical gambling system suppliers maintain agreed security standards throughout service delivery",
+    "specific_requirements": [
+      {
+        "system": "Payment Processing Services",
+        "monitoring_requirements": [
+          "Monthly performance reporting",
+          "Quarterly compliance reviews",
+          "Annual security assessments",
+          "Incident tracking and response",
+          "PCI DSS compliance verification",
+          "Regular audit report submission"
+        ]
+      },
+      {
+        "system": "RNG and Game Software",
+        "monitoring_requirements": [
+          "Quarterly compliance reviews",
+          "Annual security assessment",
+          "Monitoring of RNG function and results",
+          "Change management for game algorithms",
+          "Incident response for game anomalies",
+          "Audit trail integrity verification"
+        ]
+      },
+      {
+        "system": "Cloud/Hosting Infrastructure",
+        "monitoring_requirements": [
+          "Monthly performance monitoring (availability, latency)",
+          "Quarterly compliance reviews",
+          "Annual security assessment",
+          "Change notification and approval process",
+          "Incident response capability verification",
+          "Disaster recovery testing evidence"
+        ]
+      },
+      {
+        "system": "Compliance and Reporting",
+        "monitoring_requirements": [
+          "Data integrity verification",
+          "Audit trail completeness checks",
+          "Regular backups verification",
+          "Change management for reporting logic",
+          "Incident response for reporting errors"
+        ]
+      },
+      {
+        "system": "Communication Networks",
+        "monitoring_requirements": [
+          "Monthly availability and performance",
+          "Quarterly security compliance",
+          "Annual security assessment",
+          "DDoS protection effectiveness",
+          "Incident response for outages"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must implement comprehensive supplier monitoring including regular meetings, performance tracking, incident management, and annual evaluations for all critical suppliers"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Monitor, review and manage supplier services throughout relationship to ensure continued compliance with agreements and security standards",
+    "enforcement_priority": "High - ongoing monitoring essential to detect and address supplier issues",
+    "key_principles": [
+      "Clear assignment of monitoring responsibility",
+      "Regular performance monitoring and metrics",
+      "Monitoring of supplier changes",
+      "Regular service review meetings",
+      "Incident and issue tracking",
+      "Supplier change management",
+      "Regular security compliance verification",
+      "Annual comprehensive evaluation",
+      "Supplier Register kept current",
+      "Documented monitoring activities",
+      "Responsive action when issues identified"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.22 Monitor, Review and Change Management of Supplier Services, implement",
+    "requirements": [
+      {
+        "requirement": "Assign supplier monitoring responsibility",
+        "detail": "Clear ownership of supplier monitoring activities"
+      },
+      {
+        "requirement": "Define performance metrics",
+        "detail": "Establish metrics and KPIs for supplier performance"
+      },
+      {
+        "requirement": "Implement performance monitoring",
+        "detail": "Collect and track supplier performance data regularly"
+      },
+      {
+        "requirement": "Monitor supplier changes",
+        "detail": "Track and evaluate changes made by suppliers"
+      },
+      {
+        "requirement": "Conduct service review meetings",
+        "detail": "Hold regular meetings with suppliers (quarterly minimum)"
+      },
+      {
+        "requirement": "Track incidents and issues",
+        "detail": "Maintain log of incidents and manage responses"
+      },
+      {
+        "requirement": "Manage supplier change requests",
+        "detail": "Evaluate and approve/deny supplier-requested changes"
+      },
+      {
+        "requirement": "Verify compliance with agreements",
+        "detail": "Regularly verify supplier compliance with terms"
+      },
+      {
+        "requirement": "Conduct security reviews",
+        "detail": "Regularly evaluate supplier security practices"
+      },
+      {
+        "requirement": "Conduct annual evaluations",
+        "detail": "Comprehensive annual assessment of supplier adequacy"
+      },
+      {
+        "requirement": "Maintain Supplier Register",
+        "detail": "Keep register current with monitoring status"
+      },
+      {
+        "requirement": "Document activities",
+        "detail": "Maintain records of monitoring and review activities"
+      },
+      {
+        "requirement": "Demonstrate evidence",
+        "detail": "Be able to show monitoring activities to auditor"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "prerequisite_controls": [
+      "ISO 27001 A 5.19 - Information security in supplier relationships",
+      "ISO 27001 A 5.20 - Addressing information security within supplier agreements",
+      "ISO 27001 A 5.21 - Managing information security in the ICT supply chain"
+    ],
+    "cross_references": [
+      "Supplier Relationships (A 5.19) - supplier management overall",
+      "Supplier Agreements (A 5.20) - establishing terms to monitor",
+      "ICT Supply Chain (A 5.21) - monitoring ICT products/services",
+      "Supplier Service Delivery (A 5.22) - ongoing monitoring and management"
+    ]
+  },
+  "best_practices": {
+    "monitoring_best_practices": [
+      "Assign monitoring to individual with authority to take action",
+      "Establish regular cadence - not ad hoc",
+      "Use dashboards or metrics to track performance",
+      "Track trends over time for pattern recognition",
+      "Prioritize monitoring of critical suppliers",
+      "Document all monitoring activities"
+    ],
+    "meeting_best_practices": [
+      "Schedule regular meetings (quarterly for critical)",
+      "Maintain detailed meeting notes",
+      "Track action items to completion",
+      "Share performance metrics during meetings",
+      "Discuss upcoming changes ahead of time",
+      "Document attendees and topics covered"
+    ],
+    "incident_management_best_practices": [
+      "Log all incidents immediately",
+      "Investigate root causes",
+      "Track resolution status",
+      "Request corrective actions",
+      "Verify effectiveness of corrections",
+      "Share learnings across organization"
+    ],
+    "change_management_best_practices": [
+      "Require advance notification of changes",
+      "Evaluate impact before allowing",
+      "Test in staging if possible",
+      "Define rollback procedures",
+      "Communicate changes to stakeholders",
+      "Document all change approvals"
+    ],
+    "review_best_practices": [
+      "Conduct annual comprehensive evaluation",
+      "Request current certifications",
+      "Request recent security assessments",
+      "Compare against original evaluation",
+      "Identify improvements or deterioration",
+      "Plan next year or change decision"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_supplier_monitoring": [
+      {
+        "supplier_category": "Payment Processors",
+        "monitoring_focus": [
+          "PCI DSS compliance status monthly",
+          "Incident response effectiveness",
+          "Security audit report currency",
+          "Change management for payment flows",
+          "Data breach notification capability"
+        ]
+      },
+      {
+        "supplier_category": "RNG Providers",
+        "monitoring_focus": [
+          "RNG certification status",
+          "Test results and validation",
+          "Game outcome audit trails",
+          "Change management for algorithms",
+          "Incident response for game anomalies"
+        ]
+      },
+      {
+        "supplier_category": "Cloud/Infrastructure",
+        "monitoring_focus": [
+          "Uptime and availability metrics",
+          "Security posture updates",
+          "Disaster recovery readiness",
+          "Change notification process",
+          "Incident response capability"
+        ]
+      }
+    ],
+    "regulatory_expectations": [
+      "UKGC expects evidence of supplier monitoring",
+      "Regular meeting records demonstrate engagement",
+      "Performance metrics show oversight",
+      "Incident tracking shows responsiveness",
+      "Compliance approach should detail monitoring cadence for critical suppliers",
+      "Auditor will request evidence of supplier oversight"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.22",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.22-monitor-review-and-change-management-of-supplier-services.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

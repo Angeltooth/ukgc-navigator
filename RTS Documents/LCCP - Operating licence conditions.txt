@@ -1,0 +1,952 @@
+LCCP - Operating licence conditions
+
+1. Qualified persons and personal licences
+1.1. Qualified persons
+1.1.1 - Qualified persons – qualifying position
+Applies to:
+All operating licences, except ancillary remote licences, issued to small-scale operators.
+1. In this condition the terms ‘small-scale operator’, ‘qualifying position’ and ‘qualified person’ have the meanings respectively ascribed to them by the Gambling Act 2005 (Definition of Small-scale Operator) Regulations 20061.
+2. Schedule X lists those individuals notified to the Commission as qualified persons.
+3. If, whilst the licensee remains a small-scale operator, an individual begins or ceases to occupy a qualifying position in relation to the licensee, the licensee must within 28 days apply to the Commission under section 104(1)(b) of the Act3 for amendment of the details of the licence set out in Schedule X.
+4. An application for amendment under section 104(1)(b) of the Act may be made in advance of an individual beginning or ceasing to occupy a qualifying position provided it specifies the date from which the change to which it relates is to be effective.
+5. In this condition ‘qualified person’ has the same meaning as in the Gambling Act 2005(Definition of Small-scale Operator) Regulations 2006.
+
+1.1.2 - Qualified persons – tracks
+Applies to:
+All non-remote general betting operating licences issued to small-scale operators.
+
+1. Schedule Y to this licence lists those of the licensee’s employees whose details have been provided to the Commission as authorised by the licensee to accept bets on the licensee’s behalf on a track otherwise than under the supervision of a qualified person present on the same track.
+2. Should the licensee wish to add an individual to the list or remove the name of an individual from the list the licensee must make application to the Commission under section 104(1)(b) of the Act for amendment of that detail of the licence. Any employee the licensee wishes to add to the list may act unsupervised pending amendment of the licence provided a valid amendment application has been lodged with the Commission.
+3. In this condition ‘qualified person’ has the same meaning as in the Gambling Act 2005 (Definition of Small-scale Operator) Regulations 2006.
+
+1.2. Personal licences
+1.2.1 - Specified management offices – personal management licences
+Applies to:
+All casino, bingo, general and pool betting, betting intermediary, gaming machine general, gaming machine technical, gambling software and lottery managers licences, except ancillary remote licences.
+
+1. Subject to 6 and 7 below, licensees must ensure:
+a. that each individual who occupies one of the management offices specified in 2 below in respect of the licensee or in connection with the licensed activities holds a personal licence authorising the performance of the functions of that office (hereafter ‘a personal management licence’); and
+b. that at least one person occupies at least one of those offices
+2. The specified management offices are those offices (whether or not held by a director in the case of a licensee which is a company, a partner in the case of a licensee which is a partnership or an officer of the association in the case of a licensee which is an unincorporated association) the occupier of which is by virtue of the terms of their appointment responsible for:
+a. the overall management and direction of the licensee’s business or affairs (this is likely to be the Chief Executive Officer, Managing Director or equivalent
+b. chairing the board (where the licensee has such a body) where that appointment is held for a fixed or indeterminate term of office, unless:
+1. the position is held only on a transient and short-term basis for individual meetings; and
+2. the licensee retains evidence in support of point 1.
+c. the licensee’s finance function as head of that function
+d. the licensee’s gambling regulatory compliance function as head of that function
+e. the licensee’s marketing function as head of that function
+f. the licensee’s information technology function as head of that function in so far as it relates to gambling-related information technology and software
+g. oversight of the day to day management of the licensed activities at an identified number of premises licensed under Part 8 of the Act or across an identified geographical area
+h. in the case of casino and bingo licences only, oversight of the day to day management of a single set of premises licensed under Part 8 of the Act, and
+i. the licensee’s anti-money laundering and counter-terrorist financing function as head of that function this is likely to include the following:
+a. for holders of casino licences, the person responsible for compliance with the relevant regulations (and appointed in accordance with those regulations); and the person responsible for submission of reports of known or suspected money laundering or terrorist financing activity under the relevant legislation (and appointed in accordance with the relevant regulations);
+b. for holders of licences other than casino licences, where an individual has been appointed to submit reports of known or suspected money laundering or terrorist financing activity under the relevant legislation, that individual.
+3. The person responsible for the licensee’s gambling regulatory compliance function as head of that function shall not, except with the Commission’s express approval, occupy any other specified management office.
+4. Licensees must take all reasonable steps to ensure that anything done in the performance of the functions of a specified management office is done in accordance with the terms and conditions of the holder’s personal management licence.
+5. Where an individual is authorised by a personal licence and that licence comes under review under section 116(2) of the Act2, the operating licensee must comply with any conditions subsequently imposed on that licence by the Commission about redeployment, supervision, or monitoring of the individual’s work and any requirements of the Commission in respect of such matters applicable during the period of the review.
+6. Paragraphs 1 to 5 above shall not apply to a licensee for so long as the licensee is a ‘small- scale operator’ as defined in the Gambling Act 2005 (Definition of Small-scale Operator) Regulations 2006 (‘the Regulations’).
+7. During the period of 3 years commencing with the date on which a licensee ceases to be a small-scale operator paragraphs 1 to 6 above shall apply subject to the proviso that the phrase ‘each individual’ in paragraph 1a shall not include any individual who was a ‘qualified person’ (as defined in the Regulations) in relation to the licensee 28 days immediately prior to the licensee ceasing to be a small-scale operator.
+
+1.2.2 - Specified management offices – casino personal functional licences
+Applies to:
+All non-remote casino operating licences, except ancillary remote licences.
+
+In addition to paragraphs 1 to 6 in licence condition 1.2.1, licensees must ensure that if any of the following operational functions:
+a. dealer in respect of casino games
+b. cashier
+c. inspector
+d. security staff employed to watch gaming
+e. supervisor of gaming activities
+is performed in connection with the licensed activities, it is performed by an individual who holds a personal licence authorising performance of the function (hereafter ‘a personal functional licence’). Licensees must take all reasonable steps to ensure that anything done in the performance of those functions is done in accordance with the terms and conditions of the personal functional licence.
+
+1.2.3 - Specified management offices – lottery personal management licences
+Applies to:
+All lottery operating licences issued to non-commercial societies and local authorities.
+
+1. Subject to 5 below, licensees must ensure that the individual who occupies the management office specified in 2 below in or in respect of the licensee or in connection with the licensed activities holds a personal licence authorising the performance of the functions of that office (hereafter ‘a personal management licence').
+2. The specified management office is that director’s post in the case of a licensee which is a company, that partner in the case of a licensee which is a partnership, or that office in a licensee which is an unincorporated association or local authority, the occupier of which has overall management responsibility for the promotion of the lottery.
+3. Licensees must take all reasonable steps to ensure that anything done in the performance of the functions of a specified management office is done in accordance with the terms and conditions of the holder’s personal management licence.
+4. Where an individual is authorised by a personal licence and that licence comes under review under section 116(2) of the Act, the operating licensee must comply with any conditions subsequently imposed on that licence by the Commission about redeployment, supervision, or monitoring of the individual’s work and any requirements of the Commission in respect of such matters applicable during the period of the review.
+5. Paragraphs 1 to 4 above shall not apply to a licensee for so long as the licensee is a ‘small- scale operator’ as defined in the Gambling Act 2005 (Definition of Small-scale Operator) Regulations 2006.
+
+
+
+2. Technical standards, equipment specifications, remote gambling equipment and gambling software
+2.1. Key equipment
+
+Applies to:
+All remote casino, bingo and betting licences other than ancillary licences and remote betting intermediary (trading room only) licences.
+
+Licensees must, on request, permit an enforcement officer to inspect any of their remote gambling equipment and/or provide to the Commission copies of data held on such equipment in such format and manner as the Commission may request.
+
+2.2. Gambling software
+2.2.1 - Gambling software
+Applies to:
+All remote casino, bingo and betting licences other than ancillary licences and remote betting intermediary (trading room only) licences.
+
+All gambling software (see Gambling Software Definition) used by the licensee must have been manufactured by the holder of a gambling software operating licence. All such gambling software must also be supplied to the licensee by a holder of a gambling software operating licence. Such software must only be installed or adapted by the holder of such a licence.
+
+Gambling Software Definition:
+
+(1)A person commits an offence if in the course of a business he manufactures, supplies, installs or adapts gambling software unless he acts in accordance with an operating licence.
+
+(2)In this Act “gambling software”—
+
+(a)means computer software for use in connection with remote gambling, but
+
+(b)does not include anything for use solely in connection with a gaming machine.
+
+(3)A person does not supply or install gambling software for the purposes of subsection (1) by reason only of the facts that—
+
+(a)he makes facilities for remote communication or non-remote communication available to another person, and
+
+(b)the facilities are used by the other person to supply or install gambling software.
+
+(4)A person guilty of an offence under this section shall be liable on summary conviction to—
+
+(a)imprisonment for a term not exceeding 51 weeks,
+
+(b)a fine not exceeding level 5 on the standard scale, or
+
+(c)both.
+
+(5)In the application of subsection (4) to Scotland the reference to 51 weeks shall have effect as a reference to six months.
+
+2.3. Technical standards and equipment specifications
+2.3.1 - Technical standards
+Applies to:
+All non-remote gaming machine technical and gambling software licences and remote operating licences, including remote gaming machine technical, remote gambling software and betting ancillary remote licences, but not remote betting intermediary (trading rooms only) licences.
+1 Licensees must comply with the Commission’s technical standards and with requirements set by the Commission relating to the timing and procedures for testing (see rts-01 to rts-17 .json files in this MCP)
+
+2.3.2 - Bingo equipment specifications
+Applies to:
+Non-remote bingo operating licences and bingo ancillary remote licences.
+
+1. Licensees must comply with the Commission’s specification for bingo equipment
+
+2.3.3 - Casino equipment specifications
+Applies to:
+Non-remote casino operating licences and casino ancillary remote licences.
+
+1. Licensees must comply with the Commission’s specifications for casino equipment
+
+3. Peer to peer gaming, other networks and hosting
+3.1. Peer to peer gaming, other networks and hosting
+3.1.1 - Peer to peer gaming
+Applies to:
+Remote casino licences (except ancillary remote and casino (game host licences).
+
+All licensees who provide facilities for peer to peer gaming in circumstances in which they do not contract directly with all of the players using those facilities (‘network operators’) must have, put into effect and monitor the effectiveness of, policies and procedures designed to ensure that:
+
+1. every player using the facilities in Great Britain (‘a domestic player’) is doing so pursuant to a contract entered into between that player and the network operator, or that player and another holder of a Gambling Commission remote casino operating licence;
+2. every player who is not a domestic player but who participates in a game of chance in which a domestic player also participates is doing so pursuant to a contract between that player and the network operator, or that player and another holder of a Gambling Commission remote casino operating licence, or a gambling operator not licensed by the Gambling Commission through which participants use the facilities outside Great Britain and which:
+a. holds all licences or permissions (if any) required in relation to its provisions of facilities for peer to peer gaming by the laws of the state or states in which it is domiciled or incorporated;
+b. has been approved by the network operator, after conducting due diligence enquires into those individuals who appear to the network operator to have a material financial interest in it, as suitable to provide those facilities; and in particular,
+c. has in place policies and procedures in respect of the identification of customers which in the network operator’s reasonable opinion satisfy requirements as to the customer due diligence broadly equivalent to those set out in Directive 2005/60/EC (‘the Third Money Laundering Directive’) or any subsequent replacement1 for re-enactment thereof;
+3. the arrangements between the network operator and any remote casino licence holder through which domestic players access their facilities, and with gambling operators not licensed by the Gambling Commission through which players use their facilities outside Great Britain, provide in clear terms which operator is to be responsible for the handling of which categories of customer complaint and dispute; in particular such arrangements must provide how a dispute involving players from more than one jurisdiction is to be handled;
+4. the network operator’s arrangements for the sharing of information both with any remote casino licence holder through which domestic players access their facilities and with gambling operators not licensed by the Gambling Commission through which participants use the facilities outside Great Britain are such as to enable all parties to discharge effectively their respective regulatory obligations, in particular in relation to:
+a. prevention of money laundering; combating the financing of terrorism; and where applicable, the Proceeds of Crime Act2.
+b. investigation of suspected cheating,
+c. combating of problem gambling, and
+d. investigation of customer complaints.
+
+3.1.2 - Other networks
+
+Applies to:
+All remote casino, bingo, and betting licences (except ancillary remote and host licences).
+
+1. Subject to 2 below, all licensees who provide facilities for gambling, other than peer to peer gaming, in circumstances in which they do not contract directly with all of the participants using those facilities (‘network operators’) must have, put into effect and monitor the effectiveness of policies and procedures designed to ensure that:
+a. every participant using the facilities in Great Britain (‘a domestic customer’) is doing so pursuant to a contract entered into between that player and the network operator, or that player and another holder of a Gambling Commission remote operating licence of the same kind as that held by the network operator (‘a relevant licence’);
+b. the arrangements between the network operator and any holder of a relevant licence through which domestic customers access their facilities, and with gambling operators not licensed by the Gambling Commission through which customers use their facilities outside Great Britain, provide in clear terms which operator is to be responsible for the handling of which categories of customer complaint and dispute; in particular such arrangements must provide how a dispute involving customers from more than one jurisdiction is to be handled;
+c. the network operator’s arrangements for the sharing of information both with any holder of a relevant licence and with gambling operators not licensed by the Gambling Commission through which participants use the facilities outside Great Britain are such as to enable all parties to discharge effectively their respective regulatory obligations, in particular in relation to:
+i. prevention of money laundering; combating the financing of terrorism; and where applicable, the Proceeds of Crime Act1,
+ii. investigation of suspected cheating,
+iii. combating of problem gambling, and
+iv. investigation of customer complaints.
+2. Paragraph 1 above does not apply to the provision to the holder of a non-remote bingo operating licence (H) of facilities for the playing of games of bingo organised by H in premises in respect of which a bingo premises licence has effect (for example, the National Bingo Game).
+
+3.1.3 - Hosting
+Applies to:
+All casino (game host), bingo (game host), general betting (host) (real events) and general betting (host) (virtual events) licences.
+
+1. Subject to 2 below, all licensees who provide facilities for gambling in circumstances in which they do not contract directly with any of the participants using those facilities (‘hosts’) must ensure that:
+a. every participant using the facilities in Great Britain (‘a domestic customer’) is doing so pursuant to a contract entered into between that player and the holder of a Gambling Commission remote casino, bingo, general betting (real events) or general betting (virtual events) operating licence (‘a relevant licence’);
+b. the arrangements between the host and any holder of a relevant licence through which domestic customers access their facilities, and with gambling operators not licensed by the Gambling Commission through which customers use their facilities outside Great Britain, provide in clear terms which operator is to be responsible for the handling of which categories of customer complaint and dispute; in particular such arrangements must provide how a dispute involving customers from more than one jurisdiction is to be handled;
+c. the host’s arrangements for the sharing of information both with any holder of a relevant licence and with gambling operators not licensed by the Gambling Commission through which participants use the facilities outside Great Britain are such as to enable all parties to discharge effectively their respective regulatory obligations, in particular in relation to:
+i. prevention of money laundering; combating the financing of terrorism; and where applicable, the Proceeds of Crime Act1,
+ii. investigation of suspected cheating,
+iii. combating of problem gambling, and
+iv. investigation of customer complaints.
+2. Paragraph 1 above does not apply to the provision to the holder of a non-remote bingo operating licence (H) of facilities for the playing of games of bingo organised by H in premises in respect of which a bingo premises licence has effect (for example, the National Bingo Game).
+
+4. Protection of customer funds
+4.1. Segregation of funds
+4.1.1 - Segregation of funds
+Applies to:
+All remote operating licences, except gaming machine technical, gambling software, host, ancillary remote bingo and ancillary remote casino licences.
+
+1. Licensees who hold customer funds must ensure that these are held in a separate client bank account or accounts.
+2. In this condition ‘customer funds’ means the aggregate value of funds held to the credit of customers including, without limitation:
+a. cleared funds deposited with the licensee by customers to provide stakes in, or to meet participation fees in respect of, future gambling,
+b. winnings or prizes which the customer has chosen to leave on deposit with the licensee or for which the licensee has yet to account to the customer, and
+c. any crystallised but as yet unpaid loyalty or other bonuses, in each case irrespective of whether the licensee is a party to the gambling contract.
+
+4.2. Disclosure to customers
+4.2.1 - Disclosure to customers
+Applies to:
+All operating licences, except gaming machine technical, gambling software, host, ancillary, remote bingo, and ancillary remote casino licences.
+
+1. Licensees who hold customer funds must set out clearly in the terms and conditions under which they provide facilities for gambling information about whether customer funds are protected in the event of insolvency, the level of such protection and the method by which this is achieved.
+2. Such information must be according to such rating system and in such form the Commission may from time to time specify. It must be provided in writing to each customer, in a manner which requires the customer to acknowledge receipt of the information and does not permit the customer to utilise the funds for gambling until they have done so, both on the first occasion on which the customer deposits funds and on the occasion of any subsequent deposit which is the first since a change in the licensee’s terms in relation to protection of such funds.
+3. In this condition ‘customer funds’ means the aggregate value of funds held to the credit of customers including, without limitation:
+a. cleared funds deposited with the licensee by customers to provide stakes in, or to meet participation fees in respect of, future gambling;
+b. winnings or prizes which the customer has chosen to leave on deposit with the licensee or for which the licensee has yet to account to the customer; and
+c. any crystallised but as yet unpaid loyalty or other bonuses, in each case irrespective of whether the licensee is a party to the gambling contract.
+
+5. Payment
+5.1. Cash and cash equivalents, payment methods and services
+5.1.1 - Cash and cash equivalents
+Applies to:
+All operating licences except gaming machine technical, gambling software and host licences.
+
+1. Licensees, as part of their internal controls and financial accounting systems, must implement appropriate policies and procedures concerning the usage of cash and cash equivalents (for example, bankers drafts, cheques and debit cards and digital currencies) by customers, designed to minimise the risk of crimes such as money laundering, to avoid the giving of illicit credit to customers and to provide assurance that gambling activities are being conducted in a manner which promotes the licensing objectives.
+2. Licensees must ensure that such policies and procedures are implemented effectively, kept under review, and revised appropriately to ensure that they remain effective, and take into account any applicable learning or guidelines published by the Gambling Commission from time to time.
+
+5.1.2 - Payment methods and services
+Applies to:
+All remote casino, bingo and betting operating licences, except ancillary, host and remote betting intermediary (trading room only) licences.
+
+Effective from 31 January 2024:
+
+1. Licensees must only accept payment from customers using their gambling facilities in Great Britain by a method which involves the provision of payment services as defined in Schedule 1 Part 1 of the Payment Services Regulations 2017 (SI 2017 No 752)1 if the provider of those services is a ‘payment service provider’ within the definition of that term in regulation 2 of those Regulations2 (or the equivalent requirements of any UK Statutory Instrument by which those regulations are amended or superseded).
+
+
+The Payment Services Regulations 2017
+SCHEDULE 1
+Payment Services
+PART 1
+Payment services
+1.  Subject to Part 2, the following, when carried out as a regular occupation or business activity, are payment services—
+
+(a)services enabling cash to be placed on a payment account and all of the operations required for operating a payment account;
+
+(b)services enabling cash withdrawals from a payment account and all of the operations required for operating a payment account;
+
+(c)the execution of payment transactions, including transfers of funds on a payment account with the user's payment service provider or with another payment service provider—
+
+(i)execution of direct debits, including one-off direct debits;
+
+(ii)execution of payment transactions through a payment card or a similar device;
+
+(iii)execution of credit transfers, including standing orders;
+
+(d)the execution of payment transactions where the funds are covered by a credit line for a payment service user—
+
+(i)execution of direct debits, including one-off direct debits;
+
+(ii)execution of payment transactions through a payment card or a similar device;
+
+(iii)execution of credit transfers, including standing orders;
+
+(e)issuing payment instruments or acquiring payment transactions;
+
+(f)money remittance;
+
+(g)payment initiation services;
+
+(h)account information services.
+
+6. Provision of credit by licensees and the use of credit cards
+6.1 . Provision of credit by licensees and the use of credit cards
+6.1.1 - Provision of credit
+Applies to:
+All gaming machine general operating licences for adult gaming centres and family entertainment centres.
+
+1. Licensees must neither:
+a. provide credit themselves in connection with gambling; nor
+b. participate in, arrange, permit or knowingly facilitate the giving of credit in connection with gambling.
+
+6.1.2 - Use of credit cards
+Applies to:
+All non-remote general betting, pool betting and betting intermediary licences, and all remote licences (including ancillary remote betting and ancillary remote lottery licences) except gaming machine technical, gambling software and host licences.
+1. Licensees must not accept payment for gambling by credit card. This includes payments to the licensee made by credit card through a money service business.
+
+7. General ‘fair and open’ provisions
+7.1. Fair and transparent terms and practices
+7.1.1 - Fair and transparent terms and practices
+
+Applies to:
+All operating licences except gaming machine technical and gambling software licences.
+
+1. Licensees must ensure that the terms on which gambling is offered, and any consumer notices relating to gambling activity, are not unfair within the meaning of the Consumer Rights Act 2015. Licensees must comply with those terms.
+2.The contractual terms on which gambling is offered and any consumer notices relating to gambling activity must be transparent within the meaning of the Consumer Rights Act 2015. The contractual terms on which gambling is offered must be made available to customers in an easily accessible way.
+3. Licensees must ensure that changes to customer contract terms comply with the fairness and transparency requirements under the Consumer Rights Act 2015. Customers must be notified of material changes to terms before they come into effect.
+4. Licensees must ensure that they do not commit any unfair commercial practices within the meaning of the Consumer Protection from Unfair Trading Regulations 2008, at any stage of their interactions with consumers.
+
+8. Display of licensed status
+8.1. Display of licensed status
+8.1.1 - Display of licensed status
+Applies to:
+All remote casino, bingo and betting licences other than ancillary, host, remote betting intermediary (trading room only), remote general betting (limited) and remote general betting (standard) (remote platform) licences.
+
+1. Licensees providing facilities for remote gambling must display on every screen from which customers are able to access gambling facilities provided in reliance on this licence:
+a. a statement that they are licensed and regulated by the Gambling Commission;
+b. their account number; and
+c. a link (which will be supplied by the Commission) to their current licensed status as recorded on the Commission’s website.
+2. Such statement, account number and link must be in the format, provided by the means, and contain the information from time to time specified by the Commission in its technical standards applicable to the kind of facilities for gambling provided in accordance with this licence or otherwise notified to licensees for the purposes of this condition.
+3. Licensees may also display on screens accessible from Great Britain information about licences or other permissions they hold from regulators in, or by virtue of the laws of, jurisdictions outside Great Britain provided it is made plain on those screens that the licensee provides facilities for gambling to persons in Great Britain in reliance on their Gambling Commission licence(s).
+
+8.1.2 - Display of licensed status – B2B operators
+
+Applies to:
+All gaming machine technical, gambling software and host licences.
+
+1. Licensees offering the supply of gaming machines or gambling software on websites must:
+display the following information on the first page of the website which offers gaming machines or gambling software in reliance on the licence:
+i. a statement that they are licensed and regulated by the Gambling Commission;
+ii. their account number; and
+iii. a link (which will be supplied by the Commission) to their current licensed status as recorded on to the Commission’s website.
+b. display at least the information at a above on each page of the website which offers gaming machines or gambling software in reliance on the licence; and
+c. where they offer on pages of, or by means of a link from, their website, the supply of gaming machines or gambling software which are not provided in reliance on their licence, clearly distinguish those products which are regulated by the Commission from those which are not.
+2. Such statement, account number and link must be in the format, provided by the means, and contain the information from time to time specified by the Commission in its technical standards applicable to the kind of facilities for gambling provided in accordance with this licence or otherwise notified to licensees for the purposes of this condition.
+
+8.1.3 - Display of licensed status – societies and local authorities
+Applies to:
+All lottery operating licences issued to non-commercial societies, local authorities and external lottery managers.
+
+1. Licensees offering the supply of lotteries on websites or mobile applications must display on every screen from which customers are able to access lottery products provided in reliance of this licence:
+a. a statement that they are licensed and regulated by the Gambling Commission;
+b. their account number; and
+c. a link (which will be supplied by the Commission) to their current licensed status as recorded on the Commission’s website.
+Such statement, account number and link must be in the format, provided by the means, and contain the information from time to time specified by the Commission.
+
+9. Types and rules of casino and other games
+9.1. Casino and bingo games
+9.1.1 - Rules of casino games
+
+Applies to:
+All non-remote casino operating licences.
+1. Licensees must not offer or permit to be played casino games that appear on any list of games prohibited by the Commission: 
+
+No games are prohibited at the moment but we can publish a list of games that must not be offered should we feel it is necessary.
+
+The Department for Culture, Media and Sport (DCMS) published its white paper in April 2023. The white paper set out the government's plans for modernising the regulation of the gambling sector. The new government reviewed the proposals in relation to modernising the rules for casinos and decided to implement the changes as outlined in the previous government’s consultation on this matter.
+
+Casino businesses are free to offer new casino games, and new side bets or variants on existing games, without having to obtain approval from the Gambling Commission.
+
+9.1.2 - Prohibited bingo prize games
+
+Applies to:
+All non-remote bingo operating licences.
+
+10. Tipping of casino employees
+10.1 . Tipping of casino employees
+10.1.1 - Tipping – personal licence holders
+
+Applies to:
+All non-remote casino operating licences.
+
+1. Licensees must only permit tipping of staff holding personal licences where a tronc system is operated; that is to say, where all tips are pooled and distributed amongst the employees concerned. A separate tronc may be operated for each of a number of categories of licensed staff.
+
+11. Lotteries
+11.1. Lotteries – societies and local authorities
+11.1.1 - Lotteries – societies and local authorities
+
+Applies to:
+All lottery operating licences issued to non-commercial societies or local authorities.
+
+1. Licensees must ensure that at least 20% of the proceeds of any lottery promoted in reliance on the licence are applied to a purpose for which the promoting non-commercial society is conducted or the promoting local authority has power to incur expenditure.
+2. For the purposes of this condition:
+a. the proceeds of any lottery promoted in reliance on this licence must not exceed £5,000,000 and subject to 11.1.1 2b, the aggregate of the proceeds of lotteries promoted wholly or partly in a calendar year in reliance on the licence must not exceed £50,000,000.
+b. In 2020 the aggregate of the proceeds of lotteries promoted wholly or partly in a calendar year may not exceed £31,331,475.
+3. The rules of any lottery promoted in reliance on this licence must be such as to ensure:
+a. that it is not possible for the purchaser of a ticket in the lottery to win by virtue of that ticket (whether in money, money's worth, or partly the one and partly the other and including any winnings arising from a rollover) more than:
+i. £25,000
+ii. if more, 10% of the proceeds of the lottery.
+b. that membership of the class among whom prizes are allocated does not depend on making any payment (apart from payment of the price of a ticket).
+4. A lottery promoted in reliance on this licence must not be linked to any other lottery, free draw or prize competition.
+5. For the purposes of this condition:
+a. two or more lotteries are linked if any of them is so structured that a person who wins a prize in that lottery will also win a prize in some or all others, unless the maximum amount which a person can win is no more than £500,000 in aggregate. In determining whether two or more lotteries are linked it is immaterial how many of them are promoted in reliance on this licence.
+b. a lottery is linked to a free draw or prize competition if:
+i. a person’s participation in, or his being allocated a prize in, the lottery is a means of establishing his eligibility to enter the draw or competition and
+ii. the arrangements for the lottery and/or the draw or competition are such that a person may win more than £500,000 in aggregate as a result of his participation in the lottery and the draw or competition.
+6. If a lottery, whilst not a linked lottery, has the feature that by selecting the same numbers in the lottery and in one or more other lottery or lotteries the participant in those lotteries may win prizes which, in aggregate, exceed £500,000, no advertisement for, nor other marketing of, the lottery may make any reference to that feature.
+7. Licensees must ensure that each person who purchases a ticket in a lottery promoted on behalf of a non-commercial society in reliance on this licence receives a document which:
+a. identifies the promoting society;
+b. states the name and address of a member of the society who is designated, by persons acting on behalf of the society, as having responsibility within the society for the promotion of the lottery; and
+c. either states the date of the draw (or each draw) in the lottery, or enables the date of the draw (or each draw) in the lottery to be determined.
+8. Licensees must display ‘licensed by the Gambling Commission’ and details of the Gambling Commission website on lottery tickets.
+9. The price payable for purchasing each ticket in a lottery promoted in reliance on this licence:
+a. must be the same;
+b. must be shown on the ticket or in a document received by the purchaser; and
+c. must be paid to the promoter of the lottery before any person is given a ticket or any right in respect of membership of the class among whom prizes are to be allocated.
+10. For the purposes of these conditions, reference to a person receiving a document includes a reference to a message being sent or displayed to him electronically in a manner which enables him, without incurring significant expense or delay, to:
+a. retain the message electronically; or
+b. print it.
+11. Licensees must lodge with the Commission a description of, and a copy of the rules of, any lottery intended to be promoted in reliance on this licence, and any amendment to the rules of a lottery previously notified to the Commission, at least 28 days before any tickets in such lottery, or amended lottery, are put on sale1.
+12. Lottery tickets must not be sold to a person in any street. For these purposes ‘street’ includes any bridge, road, lane, footway, subway, square, court, alley or passage (including passages through enclosed premises such as shopping malls) whether a thoroughfare or not. But, by way of exception, tickets may be sold in a street from a static structure such as a kiosk or display stand. Tickets may also be sold door to door. Licensees must ensure that they have any necessary local authority permissions, such as a street trading licence.
+13. Accurate accounting records must be kept in relation to all lotteries promoted in reliance on this licence showing:
+a. the total proceeds of each lottery;
+b. the amount allocated to prizes in each lottery;
+c. the amount of proceeds allocated to expenses, and details of those expenses, for each lottery;
+d. the amount applied directly to the purposes of the society or purposes for which the local authority has power to incur expenditure as the case may be; and
+e. the number of sold and unsold tickets in each lottery.
+14. Such records must be made available to the Commission for inspection on request and retained for at least three years from the date of any lottery to which they relate.
+15. In addition, in respect of each lottery promoted in reliance on this licence, a lottery submission must be sent to the Commission within three months of the date of determination of the lottery or, in the case of an ‘instant lottery’, within three months of the last date on which tickets in the lottery were on sale providing the information set out in paragraph 13 above. Every such submission must contain or be accompanied by a declaration that the information given in it is correct and must be shown to have been approved before submission by:
+a. the holder of a personal management licence
+b. a ‘qualified person’ as defined in the Gambling Act 2005 (Definition of Small-scale Operator) Regulations 20062 or
+c. except where the licensee is a local authority, the designated person named on the lottery tickets as having responsibility for the promotion of the lottery.
+16. Where a society or local authority instructs an External Lottery Manager to make the submission on their behalf, they must ensure that the details on the submission are verified and approved by one of the people named above from the relevant society or local authority.
+17. For any calendar year in which the cumulative proceeds of lotteries promoted in reliance on this licence exceed £1,000,000 the licensee must provide the Commission with written confirmation from a qualifying auditor confirming that the proceeds of those lotteries have been fully accounted for in their annual audited accounts. Such confirmation must be provided within ten months of the date to which the accounts are made up.
+18. A qualifying auditor means a person who is eligible for appointment as a statutory auditor under section 1212 Companies Act 20063 or any statutory modification or re-enactment thereof but, in the case of a lottery promoted by or on behalf of a non-commercial society, is not:
+a. a member of the society
+b.  partner, officer or employee of such a member or
+c. a partnership of which a person falling within a or b is a partner.
+
+11.2. Lotteries – managers
+11.2.1 - Lotteries – managers
+
+Applies to:
+All lottery operating licences issued to external lottery managers.
+
+1. Licensees must ensure that at least 20% of the proceeds of any lottery promoted in reliance on the licence are paid to the promoting non-commercial society or local authority to apply to a purpose for which the promoting society is conducted or the local authority has power to incur expenditure.
+2. For the purposes of this condition:
+a. the proceeds of any lottery promoted in reliance on this licence may not exceed £5,000,000 and subject to 11.2.1 2b, the aggregate of the proceeds of lotteries promoted wholly or partly in a calendar year on behalf of the same non-commercial society or local authority in reliance on the licence may not exceed £50,000,000.
+b. In 2020 the aggregate of the proceeds of lotteries promoted wholly or partly in a calendar year on behalf of the same non-commercial society or local authority in reliance on the licence may not exceed £31,311,475.
+3. The rules of any lottery promoted in reliance on this licence must be such as to ensure:
+a. that it is not possible for the purchaser of a ticket in the lottery to win by virtue of that ticket (whether in money, money's worth, or partly the one and partly the other and including any winnings arising from a rollover) more than:
+i. £25,000
+ii. if more, 10% of the proceeds of the lottery
+b. that membership of the class among whom prizes are allocated does not depend on making any payment (apart from payment of the price of a ticket).
+4. A lottery promoted in reliance on this licence must not be linked to any other lottery, free draw or prize competition.
+5. For the purposes of this condition:
+a. two or more lotteries are linked if any of them is so structured that a person who wins a prize in that lottery will also win a prize in some or all others, unless the maximum amount which a person can win is no more than £500,000 in aggregate. In determining whether two or more lotteries are linked it is immaterial how many of them are promoted in reliance on this licence.
+b. a lottery is linked to a free draw or prize competition if:
+i. a person’s participation in, or his being allocated a prize in, the lottery is a means of establishing his eligibility to enter the draw or competition and
+ii. the arrangements for the lottery and/or the draw or competition are such that a person may win more than £500,000 in aggregate as a result of his participation in the lottery and the draw or competition.
+6. If a lottery, whilst not a linked lottery, has the feature that by selecting the same numbers in the lottery and in one or more other lottery or lotteries the participant in those lotteries may win prizes which, in aggregate, exceed £500,000, no advertisement for, nor other marketing of, the lottery may make any reference to that feature.
+7. Licensees must ensure that each person who purchases a ticket in a lottery promoted in reliance on this licence on behalf of a non-commercial society, receives a document which:
+a. identifies the promoting society
+b. states the name and address of a member of the society who is designated, by persons acting on behalf of the society, as having responsibility within the society for the promotion of the lottery
+c. either states the date of the draw (or each draw) in the lottery, or enables the date of the draw (or each draw) in the lottery to be determined.
+8. Licensees must display ‘licensed by the Gambling Commission’ and details of the Gambling Commission website on lottery tickets.
+9. The price payable for purchasing each ticket in a lottery promoted in reliance on this licence:
+a. must be the same
+b. must be shown on the ticket or in a document received by the purchaser
+c. must be paid to the promoter of the lottery before any person is given a ticket or any right in respect of membership of the class among whom prizes are to be allocated.
+10. For the purposes of these conditions, reference to a person receiving a document includes a reference to a message being sent or displayed to him electronically in a manner which enables him, without incurring significant expense or delay, to:
+a. retain the message electronically or
+b. print it.
+11. Licensees must lodge with the Commission a description of, and a copy of the rules of, any lottery intended to be promoted in reliance on this licence, and any amendment to the rules of a lottery previously notified to the Commission, at least 28 days before any tickets in such lottery, or amended lottery, are put on sale.1
+12. Lottery tickets must not be sold to a person in any street. For these purposes ‘street’ includes any bridge, road, lane, footway, subway, square, court, alley or passage (including passages through enclosed premises such as shopping malls) whether a thoroughfare or not. But, by way of exception, tickets may be sold in a street from a static structure such as a kiosk or display stand. Tickets may also be sold door to door. Licensees must ensure that they have any necessary local authority permissions, such as a street trading licence.
+13. Licensees must have arrangements in place to ensure separation between lottery proceeds they hold on behalf of non-commercial societies or local authorities and their own trading income and that such lottery proceeds are legally protected by means of separate bank accounts having trustee status or equivalent legal protection for each society or local authority in the event of the licensee’s insolvency, in which event the proceeds will be paid to the society or local authority.
+14. Licensees must ensure that following the determination of a lottery all lottery proceeds are properly allocated between prizes, expenses and profits and have procedures in place designed to ensure that lottery profits belonging to non-commercial societies or local authorities whose lotteries they manage in reliance on this licence are accounted for in a timely manner to the society or local authority.
+
+12. Anti-money laundering
+12.1 . Prevention of money laundering and terrorist financing
+12.1.1 - Anti-money laundering - Prevention of money laundering and terrorist financing
+
+Applies to:
+All operating licences except gaming machine technical and gambling software licences.
+
+1. Licensees must conduct an assessment of the risks of their business being used for money laundering and terrorist financing. Such risk assessment must be appropriate and must be reviewed as necessary in the light of any changes of circumstances, including the introduction of new products or technology, new methods of payment by customers, changes in the customer demographic or any other material changes, and in any event reviewed at least annually.
+2. Following completion of and having regard to the risk assessment, and any review of the assessment, licensees must ensure they have appropriate policies, procedures and controls to prevent money laundering and terrorist financing.
+3. Licensees must ensure that such policies, procedures and controls are implemented effectively, kept under review, revised appropriately to ensure that they remain effective, and take into account any applicable learning or guidelines published by the Gambling Commission from time to time.
+
+12.1.2 - Anti-money laundering - Measures for operators based in foreign jurisdictions
+Applies to:
+All remote casino operating licences where any of the licensee’s remote gambling equipment is located outside Great Britain.
+
+Licensees must comply with Parts 2 and 3 of the Money Laundering Regulations 2007 (UK Statutory Instrument No. 2157 of 2007) as amended by the Money Laundering (Amendment) Regulations 2007 (UK Statutory Instrument No. 3299 of 2007), or the equivalent requirements of any UK Statutory Instrument by which those regulations are amended or superseded1 insofar as they relate to casinos (the MLR) whether or not the MLR otherwise apply to their business.
+
+13. Pool betting
+13.1. Pool betting
+13.1.1 - Pool betting
+
+Applies to:
+All pool betting operating licences, except those restricted to football pools.
+
+1. Licensees and any person they so authorise under 93(2) of the Gambling Act 2005 to offer pool betting on a track in connection with a horserace or dog race in reliance on an occasional use notice, must produce and retain a record of the transactions relevant to each pool that they offer. The record must be capable of identifying individual bets into the pool and relating these to subsequent payment of winnings where applicable. Licensees must make this information available to the Commission on request.
+
+13.1.2 - Pool betting – football pools
+
+Applies to:
+All pool betting operating licences which authorise football pools.
+
+1. Licensees and any person they so authorise under 93(3) of the Gambling Act 20051 in respect of football pool betting, must produce and retain a record of the transactions relevant to each pool that they offer. The record must be capable of identifying individual bets into the pool and relating these to the subsequent payment of winnings where applicable. Licensees must make this information available to the Commission on request.
+
+13.1.3 - Pool betting – annual accounts
+
+Applies to:
+All pool betting operating licences.
+
+1. Licensees must produce annual accounts which should be certified by a qualified independent accountant. Licensees must make copies available to the Commission on request.
+
+14. Access to premises
+14.1. Access to premises
+14.1.1 - Access to premises
+
+Applies to:
+All operating licences.
+
+Licensees must have and put into effect policies and procedures (including staff training programmes) designed to ensure that their staff co-operate with the Commission’s enforcement officers in the proper performance of their compliance functions and are made aware of those officers’ rights of entry to premises contained in Part 15 of the Gambling Act 2005: 
+
+
+Gambling Act 2005
+Part 15
+Inspection
+
+303Enforcement officers
+(1)The Commission—
+
+(a)may designate employees of the Commission as enforcement officers for the purposes of this Act, and
+
+(b)may appoint persons other than employees of the Commission as enforcement officers for the purposes of this Act.
+
+(2)The Commission may pay to or in respect of an enforcement officer who is not an employee of the Commission sums by way of or in respect of—
+
+(a)remuneration;
+
+(b)allowances;
+
+(c)expenses;
+
+(d)pension;
+
+(e)gratuity.
+
+304Authorised persons
+(1)In this Act—
+
+(a)“authorised person” has the meaning given by this section, and
+
+(b)a reference to an authorised local authority officer is a reference to a person who is an authorised person by virtue of subsection (2).
+
+(2)An officer of a licensing authority is an authorised person for a purpose relating to premises if—
+
+(a)the premises are wholly or partly situated in the authority's area, and
+
+(b)the officer is designated by the authority as an authorised person for the purposes of this section.
+
+(3)An officer of an authority other than a licensing authority is an authorised person for a purpose relating to premises if—
+
+(a)the authority has statutory functions, for an area in which the premises are wholly or partly situated, in relation to minimising or preventing the risk of pollution of the environment or of harm to human health, and
+
+(b)the officer is authorised by the authority for the purpose of exercising any of those statutory functions.
+
+(4)The following are authorised persons for purposes relating to any premises—
+
+(a)an inspector appointed under section 18 of the Fire Precautions Act 1971 (c. 40) (enforcement),]
+
+(b)an inspector appointed under section 19 of the Health and Safety at Work etc. Act 1974 (c. 37) (inspectors),
+
+(c)an inspector or surveyor of ships appointed under section 256 of the Merchant Shipping Act 1995 (c. 21) (enforcement),
+
+(d)a person who is within a class prescribed by the Secretary of State by regulations.
+
+305Compliance
+A constable, enforcement officer or authorised person may undertake activities for the purpose of assessing—
+(a)compliance with provision made by or by virtue of this Act;
+
+(b)whether an offence is being committed under or by virtue of this Act.
+
+306Suspected offence
+(1)A constable or enforcement officer may enter premises if he reasonably suspects that an offence under this Act may be—
+
+(a)being committed on the premises, or
+
+(b)about to be committed on the premises.
+
+(2)A justice of the peace may on the application of a constable or enforcement officer issue a warrant authorising a constable or enforcement officer to enter premises if the justice of the peace is satisfied—
+
+(a)that there are reasonable grounds for suspecting that an offence under this Act has been committed on the premises,
+
+(b)that there are reasonable grounds for suspecting that evidence of the commission of the offence may be found on the premises, and
+
+(c)that at least one of the conditions in subsection (3) is satisfied.
+
+(3)Those conditions are—
+
+(a)that admission to the premises has been refused,
+
+(b)that admission to the premises is likely to be refused unless a warrant is produced,
+
+(c)that the purpose of entry may be frustrated or seriously prejudiced unless a constable or enforcement officer arriving at the premises can secure immediate entry, and
+
+(d)that there is likely to be nobody at the premises capable of granting admission.
+
+(4)A warrant may be granted in reliance on subsection (3)(a) or (b) only if the justice of the peace is satisfied—
+
+(a)that notice has been given to a person occupying the premises, or having responsibility for their management, of intent to apply for a warrant, or
+
+(b)that the purpose of entry may be frustrated or seriously prejudiced by the giving of notice under paragraph (a).
+
+(5)A warrant under subsection (2) shall cease to have effect at the end of the period of 28 days beginning with the day of issue.
+
+(6)In the application of this section to Scotland, any reference to a justice of the peace is to be construed as a reference to the sheriff or a justice of the peace.
+
+307Inspection of gambling
+(1)A constable, enforcement officer or authorised person may enter premises to which this section applies for a purpose specified in subsection (3).
+
+(2)This section applies to premises if a constable, enforcement officer or authorised person reasonably suspects that facilities for gambling other than private and non-commercial gaming or betting may be being provided, may be about to be provided or have been provided, on the premises.
+
+(3)The purposes mentioned in subsection (1) are—
+
+(a)to discover whether facilities for gambling other than private and non-commercial gaming or betting are being provided, are about to be provided or have been provided on the premises,
+
+(b)to determine whether an operating licence or premises licence is held in respect of the provision of facilities for gambling on the premises, and
+
+(c)to determine whether facilities are being, will be or have been provided in accordance with the terms and conditions of an operating licence or premises licence.
+
+308Operating licence holders
+(1)A constable or enforcement officer may enter premises to which this section applies for the purpose specified in subsection (3).
+
+(2)This section applies to premises which a constable or enforcement officer reasonably believes to be used by the holder of an operating licence wholly or partly for purposes connected with the licensed activities.
+
+(3)The purpose mentioned in subsection (1) is to determine whether the licensed activities are being carried on in accordance with the terms and conditions of the operating licence.
+
+309Family entertainment centres
+(1)A constable, enforcement officer or authorised local authority officer may enter premises in respect of which an application has been made for a family entertainment centre gaming machine permit for a purpose connected with the consideration of the application.
+
+(2)A constable, enforcement officer or authorised local authority officer may enter premises in respect of which a family entertainment centre gaming machine permit has effect for the purpose of determining whether the gaming machines used on the premises, and the arrangements for their use, comply with the requirements of this Act and regulations under it.
+
+310Premises licensed for alcohol
+(1)An enforcement officer or an authorised local authority officer may enter premises in respect of which an application has been made under Schedule 13 for a purpose connected with the consideration of the application.
+
+(2)A constable, enforcement officer or authorised local authority officer may enter premises in respect of which an on-premises alcohol licence has effect for the purpose of—
+
+(a)determining whether gaming carried on satisfies the conditions in section 279;
+
+(b)in the case of bingo played on the premises, determining—
+
+(i)whether the terms and conditions of any relevant operating licence are being complied with;
+
+(ii)whether section 281 applies;
+
+(c)ascertaining the number and category of gaming machines being made available for use on the premises.
+
+311Prize gaming permit
+(1)A constable, enforcement officer or authorised local authority officer may enter premises in respect of which an application has been made for a prize gaming permit for a purpose connected with the consideration of the application.
+
+(2)A constable, enforcement officer or authorised local authority officer may enter premises in respect of which a prize gaming permit has effect for the purposes of determining whether prize gaming on the premises complies with the requirements of this Act and regulations under it.
+
+312Clubs
+(1)A constable or enforcement officer may enter premises to which this section applies for a purpose specified in subsection (3).
+
+(2)This section applies to premises which a constable or enforcement officer reasonably believes to be used by a members' club, a commercial club or a miners' welfare institute.
+
+(3)The purposes mentioned in subsection (1) are—
+
+(a)to determine whether gaming is taking place on the premises or is about to take place on the premises,
+
+(b)to determine whether any gaming that is taking place or is about to take place on the premises is in accordance with—
+
+(i)section 269,
+
+(ii)a club gaming permit, or
+
+(iii)a club machine permit.
+
+(4)An authorised local authority officer may enter premises in respect of which an application has been made for a club gaming permit or a club machine permit for a purpose connected with the consideration of the application.
+
+
+313Licensed premises
+(1)A constable, enforcement officer or authorised person may enter premises in respect of which an application for a premises licence has been made to assess, having regard to the licensing objectives, the likely effects of activity carried on in reliance on the premises licence.
+
+(2)A constable, enforcement officer or authorised person may enter premises in respect of which a premises licence has effect for a purpose connected with a review under section 201.
+
+314Lotteries: registered societies
+Where a society is registered with a local authority in accordance with Part 5 of Schedule 11, an enforcement officer or an authorised local authority officer may enter premises owned or used by the society for the purpose of making inquiries in connection with a lottery promoted on behalf of the society.
+
+315Temporary use notice
+(1)A constable, enforcement officer or authorised person may enter premises in respect of which a temporary use notice has been given to assess, having regard to the licensing objectives, the likely effects of activity carried on in reliance on the temporary use notice.
+
+(2)A constable, enforcement officer or authorised person may enter premises in respect of which a temporary use notice has effect to determine whether an activity of a kind listed in section 37(1) is being carried on otherwise than in accordance with the temporary use notice.
+
+316Authorisations: production on demand
+(1)A constable or enforcement officer may require the holder of an operating licence to produce to the constable or enforcement officer within a specified period a copy of any authorisation given by the holder of the licence under section 93(2) or (3) or 94(2).
+
+(2)While a person is holding himself out as willing to accept bets on behalf of the holder of an operating licence in accordance with section 93(2) or (3) or 94(2), a constable or enforcement officer may require the person to produce a copy of his authorisation under that section—
+
+(a)within a specified period, or
+
+(b)immediately.
+
+(3)A constable or enforcement officer may require the holder of a casino premises licence to produce to the constable or enforcement officer within a specified period a copy of any authorisation given by the holder of the licence under section 174(3).
+
+(4)While a person is carrying on an activity in reliance on an authorisation under section 174(3), a constable or enforcement officer may require the person to produce a copy of his authorisation under that section—
+
+(a)within a specified period, or
+
+(b)immediately.
+
+(5)A person commits an offence if he fails without reasonable excuse to comply with a requirement imposed under this section.
+
+(6)A person guilty of an offence under subsection (5) shall be liable on summary conviction to a fine not exceeding level 2 on the standard scale.
+
+317Powers
+(1)A constable, enforcement officer or authorised person exercising a power under or by virtue of this Part to enter premises may—
+
+(a)inspect any part of the premises and any machine or other thing on the premises;
+
+(b)question any person on the premises;
+
+(c)require access to any written or electronic record which is kept on the premises;
+
+(d)require to be supplied with a copy, in such form as he directs, of an entry in a written or electronic record which is kept on the premises;
+
+(e)remove and retain anything if he reasonably believes that it constitutes or contains evidence of—
+
+(i)the commission of an offence under this Act, or
+
+(ii)the breach of a term or condition of a licence issued under this Act;
+
+(f)remove and retain anything if he reasonably believes that it is being used or has been used in the commission of an offence under this Act.
+
+(2)The Secretary of State may by regulations make provision about the treatment of —
+
+(a)copies supplied under subsection (1)(d), and
+
+(b)things removed under subsection (1)(e) or (f).
+
+(3)Regulations under subsection (2) may, in particular, make provision—
+
+(a)about the retention, use, return, disposal or destruction of anything supplied or removed;
+
+(b)conferring a right of appeal.
+
+(4)The Secretary of State may by regulations make provision about the procedure to be followed in the exercise of a power under this section.
+
+(5)Nothing in this Part authorises action to be taken in England and Wales in respect of anything of a kind specified in section 9(2) of the Police and Criminal Evidence Act 1984 (c. 60) (legally privileged material, &c.).
+
+(6)A person exercising a power under or by virtue of this Part shall have regard to any relevant provision of a code of practice under that Act (and guidance under section 25 may refer to a provision of a code).
+
+(7)Subsection (6) does not apply as respects the exercise of a power in relation to Scotland.
+
+318Dwellings
+(1)A power under this Part to enter premises without a warrant does not apply in relation to a dwelling.
+
+(2)A justice of the peace may on the application of a constable, enforcement officer or authorised person issue a warrant authorising a constable, enforcement officer or authorised person to enter premises if the justice of the peace is satisfied—
+
+(a)that, but for subsection (1), a constable, enforcement officer or authorised person would be able to enter the premises without a warrant in reliance on a provision of this Part, and
+
+(b)that at least one of the conditions in subsection (3) is satisfied.
+
+(3)Those conditions are—
+
+(a)that admission to the premises has been refused,
+
+(b)that admission to the premises is likely to be refused unless a warrant is produced,
+
+(c)that the purpose of entry may be frustrated or seriously prejudiced unless a constable, enforcement officer or authorised person arriving at the premises can secure immediate entry, and
+
+(d)that there is likely to be nobody at the premises capable of granting admission.
+
+(4)A warrant may be granted in reliance on subsection (3)(a) or (b) only if the justice of the peace is satisfied—
+
+(a)that notice has been given to a person occupying the premises, or having responsibility for their management, of intent to apply for a warrant, or
+
+(b)that the purpose of entry may be frustrated or seriously prejudiced by the giving of notice under paragraph (a).
+
+(5)A warrant under subsection (2) shall cease to have effect at the end of the period of 28 days beginning with the day of issue.
+
+(6)In the application of this section or section 319 to Scotland, any reference to a justice of the peace is to be construed as a reference to the sheriff or a justice of the peace.
+
+319Records
+(1)A constable, enforcement officer or authorised person exercising a power of entry under or by virtue of this Part may exercise a power under section 317(1)(c) to (e) in relation to records (whether written or electronic) only if the records relate entirely to the matters to which the power of entry relates.
+
+(2)A justice of the peace may on the application of a constable, enforcement officer or authorised person issue a warrant disapplying subsection (1) to a specified extent if the justice of the peace is satisfied that the disapplication is necessary.
+
+(3)A warrant may be granted under subsection (2) only if the justice of the peace is satisfied—
+
+(a)that notice has been given to a person in control of the records of intent to apply for a warrant, or
+
+(b)that the purpose of exercising the power of entry may be frustrated or seriously prejudiced by the giving of notice under paragraph (a).
+
+(4)A warrant under subsection (2) shall cease to have effect at the end of the period of 28 days beginning with the day of issue.
+
+320Timing
+A power under or by virtue of this Part may be exercised only at a reasonable time.
+
+321Evidence of authorisation
+An enforcement officer or authorised person seeking to exercise a power under or by virtue of this Part must produce evidence of his identity and authority to a person (if there is one) who appears to the enforcement officer or authorised person to be occupying the relevant premises or to have responsibility for their management.
+
+322Information
+(1)The Secretary of State shall make regulations requiring a person who exercises a power under or by virtue of this Part to provide information about the power and its exercise.
+
+(2)Regulations under subsection (1) shall, in particular, make provision about—
+
+(a)the information to be provided (which may include ancillary information about a provision of this Act or another enactment or about a rule of law);
+
+(b)the form and manner in which the information is to be provided;
+
+(c)the person to whom, or the place at which, the information is to be provided (which may, in particular, include provision for the supply of a copy if requested by a person within a specified class);
+
+(d)timing.
+
+(3)A constable, enforcement officer or authorised person exercising a power under or by virtue of this Part shall comply with any relevant provision of regulations under this section.
+
+323Use of force
+(1)A constable may use reasonable force for the purpose of entering premises in pursuance of a power under or by virtue of this Part.
+
+(2)An enforcement officer may use reasonable force for the purpose of entering premises in pursuance of a power under or by virtue of section 306 or 307.
+
+(3)An authorised person may use reasonable force for the purpose of entering premises in pursuance of a power under section 307.
+
+324Person accompanying inspector, &c.
+A constable, enforcement officer or authorised person exercising a power under or by virtue of this Part to enter premises may take one or more persons with him.
+
+325Securing premises after entry
+A person who enters premises in reliance on a power under or by virtue of this Part shall take reasonable steps to ensure that when he leaves the premises they are as secure as they were before he entered.
+
+Obstruction
+(1)A person commits an offence if without reasonable excuse he obstructs, or fails to cooperate with, a constable, enforcement officer or authorised person who is exercising or seeking to exercise a power under or by virtue of this Part.
+
+(2)A person guilty of an offence under this section shall be liable on summary conviction to a fine not exceeding level 3 on the standard scale.
+
+
+15. Information requirements
+15.1 . Reporting suspicion of offences
+15.1.1 - Reporting suspicion of offences etc – non-betting licences
+
+Applies to:
+All operating licences except betting, betting intermediary, ancillary remote betting, betting host and remote betting intermediary (trading rooms only) licences.
+
+1. Licensees must as soon as reasonably practicable, in such a form or manner as the Commission may from time to time specify, provide the Commission with any information that they know relates to or suspect may relate to the commission of an offence under the Act, including an offence resulting from a breach of a licence condition or a code provision having the effect of a licence condition.
+
+15.1.2 - Reporting suspicion of offences etc – betting licences
+
+Applies to:
+All betting operating licences including betting intermediary, ancillary remote betting, betting host and remote betting intermediary (trading rooms only) licences.
+
+1. Licensees must as soon as reasonably practicable provide the Commission with any information, in such a form or manner as the Commission may from time to time specify, from whatever source that they:
+
+a. know relates to or suspect may relate to the commission of an offence under the Act, including an offence resulting from a breach of a licence condition or a code provision having the effect of a licence condition
+b. suspect may lead the Commission to consider making an order to void a bet under section 336 of the Gambling Act 2005.
+2 Licensees who accept bets, or facilitate the making or acceptance of bets between others, on the outcome of horse races or other sporting events governed by one of the sport governing bodies included in Part 3 of Schedule 6 to the Gambling Act 20053, must as soon as reasonably practicable provide the sport governing body with relevant and necessary information, from whatever source, that they know or suspect may relate to a breach of betting rules applied by that governing body.
+
+3 ‘Betting rules’ includes any rule about bets the making or acceptance of which would be a regulated activity within the meaning of section 22 of the Financial Services and Markets Act 2000 (‘spread betting’).
+
+15.1.3 - Reporting of systematic or organised money lending
+
+Applies to:
+All non-remote casino, non-remote bingo, general betting, adult gaming centre, family entertainment centre and remote betting intermediary (trading rooms only) licences.
+
+
+1. Licensees must as soon as reasonably practicable, in such form or manner as the Commission may from time to time specify, provide the Commission with any information relating to cases where they encounter systematic, organised or substantial money lending between customers on their premises, in accordance with the ordinary code provisions on money lending between customers.
+
+15.2 . Reporting key events and other reportable events
+
+15.2.1 - Reporting key events
+
+Applies to:
+All operating licences.
+
+A key event is an event that could have a significant impact on the nature or structure of a licensee’s business. Licensees must notify the Commission, in such form or manner as the Commission may from time to time specify, of the occurrence of any of the following key events as soon as reasonably practicable and in any event within five working days of the licensee becoming aware of the event’s occurrence1.
+
+Operator status
+
+1. Any of the following applying to a licensee, any person holding a key position for a licensee, a group company or a shareholder or member (holding 3% or more of the issued share capital of the licensee or its holding company):
+a. presenting of a petition for winding up
+b. making of a winding up order
+c. entering into administration or receivership
+d. bankruptcy (applying to individuals only)
+e. sequestration (applicable in Scotland), or
+f.an individual voluntary arrangement.
+
+Relevant persons and positions
+
+2. In the case of licensees who are companies or other bodies corporate having a share capital, the name and address of any person who (whether or not already a shareholder or member) becomes a shareholder or member holding 3% or more of the issued share capital of the licensee or its holding company.
+3. The taking of any loan by the licensee, or by a group company who then makes an equivalent loan to the licensee, from any person not authorised by the Financial Conduct Authority: a copy of the loan agreement must be supplied.
+4. The appointment of a person to, or a person ceasing to occupy, a ‘key position’ (including leaving one position to take up another). A ‘key position’ in relation to a licensee is:
+a. in the case of a small-scale operator, a ‘qualifying position’ as defined in the Gambling Act 2005 (Definition of Small-scale Operator) Regulations 20062
+b. in the case of an operator which is not a small-scale operator, a ‘specified management office’ as set out in (current) LCCP licence condition 1.2
+c. a position where the holder of which has overall responsibility for the licensee’s anti-money laundering and/or terrorist financing compliance, and/or for the reporting of known or suspected money laundering or terrorist financing activity.
+d. any other position for the time being designated by the Commission as a ‘key position’. (Notification is required whether or not the person concerned is required to hold a personal management licence and whether or not the event notified requires the licensee to apply for a variation to amend a detail of their licence.)
+
+Financial events
+
+5. Any material change in the licensee’s banking arrangements, in particular the termination of such arrangements or a particular facility and whether by the licensee or the provider of the arrangements.
+6. Any breach of a covenant given to a bank or other lender.
+7. Any default by the licensee or, where the licensee is a body corporate, by a group company in making repayment of the whole or any part of a loan on its due date.
+8. Any change in the licensee’s arrangements as to the methods by which, and/or the payment processors through which, the licensee accepts payment from customers using their gambling facilities (this key event applies to remote casino, bingo and betting operating licences, except ancillary and remote betting intermediary (trading room only) licences).
+
+Legal or regulatory proceedings or reports
+
+9. The grant, withdrawal or refusal of any application for a licence or other permission made by the licensee, or in the case of a licensee which is a body corporate, any group company of theirs, to a gambling regulator in another jurisdiction. In the case of a withdrawal or refusal of the application, the licensee must also notify the reasons for such withdrawal or refusal. (This condition does not apply to applications for licences or other permissions to carry on activities which would fall outside the scope of a Gambling Commission operating licence if carried out in Britain or with customers in Great Britain.)
+10.Any investigation by a professional, statutory, regulatory or government body (in whatever jurisdiction) into the licensee’s activities, or the activities of a person in a ‘key position’, where such an investigation could result in the imposition of a sanction or penalty which could reasonably be expected to raise doubts about the licensee’s continued suitability to hold a Gambling Commission licence.
+11. Any criminal investigation by a law enforcement agency in any jurisdiction in which the licensee, or a person in a ‘key position’ related to the licensee, is involved and where the Commission might have cause to question whether the licensee’s measures to keep crime out of gambling had failed.
+12. The referral to the licensee’s Board, or persons performing the function of an audit or risk committee, of material concerns raised by a third party (such as an auditor, or a professional, statutory or other regulatory or government body (in whatever jurisdiction)) about the provision of facilities for gambling: a summary of the nature of the concerns must be provided.
+13. The imposition by the licensee of a disciplinary sanction, including dismissal, against the holder of a personal licence or a person occupying a qualifying position for gross misconduct; or the resignation of a personal licence holder or person occupying a qualifying position following commencement of disciplinary proceedings in respect of gross misconduct against that person.
+14. The commencement (in whatever jurisdiction) of any material litigation against the licensee or, where the licensee is a body corporate, a group company: the licensee must also notify the outcome of such litigation.
+15. The making of a disclosure pursuant to section 330, 331, 332 or 338 of the Proceeds of Crime Act 20023 or section 19, 20, 21, 21ZA, 21ZB or 21A of the Terrorism Act 20004 (a suspicious activity report): the licensee should inform the Commission of the unique reference number issued by the United Kingdom Financial Intelligence Unit of the National Crime Agency5 in respect of each disclosure and for the purposes of this key event the five working day period referred to above runs from the licensee’s receipt of the unique reference number. The licensee should also indicate whether the customer relationship has been discontinued at the time of the submission.
+
+Gambling facilities
+
+16. Any security breach to the licensee’s environment that adversely affects the confidentiality of customer data; or prevents the licensee’s customers, staff, or legitimate users from accessing their accounts for longer than 12 hours.
+17. Where a gaming system fault has resulted in under or overpayments to a player (this includes instances where a fault causes an incorrect prize/win value to be displayed).
+18. In the case of remote gambling, the commencement or cessation of trading on website domains (including mobile sites or mobile device applications) or broadcast media through which the licensee provides gambling facilities (including domains covered by ‘white label’ arrangements). In this condition: ‘body corporate’ has the meaning ascribed to that term by section 1173 of the Companies Act 20066 or any statutory modification or re-enactment thereof
+a. in respect of a company, ‘holding company’ and ‘subsidiary’ have the meaning ascribed to that term by section 1159 of the Companies Act 20067 or any statutory modification or re-enactment thereof
+b. a ‘group company’ is any subsidiary or holding company of the licensee and any subsidiary of such holding company.
+
+15.2.2 - Other reportable events
+
+Applies to:
+All operating licences.
+
+1. Licensees must also notify the Commission in such form or manner as the Commission may from time to time specify, as soon as reasonably practicable of the occurrence of any of the following events1:
+a. any material change in the licensee’s arrangements for the protection of customer funds in accordance with licence condition 4 (protection of customer funds) (where applicable)
+b. any change in the identity of the ADR entity or entities for the handling of customer disputes, as required by the social responsibility code provision on complaints and disputes.
+c. their becoming aware that a group company which is not a Commission licensee is advertising remote gambling facilities to those residing in a jurisdiction in or to which it has not previously advertised, or their becoming aware of a sustained or meaningful generation of 3% or 10% of group Gross Gambling Yield being exceeded by the group in that jurisdiction.
+d. any actual or potential breaches by the licensee of the requirements imposed by or under Parts 7 or 8 of the Proceeds of Crime Act 20022, or Part III of the Terrorism Act 20003, or any UK law by which those statutes are amended or superseded.
+2. The licensee must notify the Commission, as soon as reasonably practicable, if it knows or has reasonable cause to suspect that a person who has gambled with it has died by suicide, whether or not such suicide is known or suspected to be associated with gambling. Such notification must include the person's name and date of birth, and a summary of their gambling activity, if that information is available to the licensee.
+In this condition:
+
+a. ‘group company’ has the same meaning as in condition 15.2.1; and
+b. without prejudice to section 327 of the Gambling Act 20054, ‘advertising’ includes: having a home page directed towards a jurisdiction and written in, or in one of, that jurisdiction’s official language(s), having arrangements enabling that jurisdiction’s currency to be selected for gambling or the use of payment methods available only in that jurisdiction, and providing a specific customer service facility referable to that jurisdiction.
+
+15.2.3 - Other reportable events – money laundering, terrorist financing, etc
+
+Applies to:
+All non-remote and remote casino operating licences.
+
+1. Licensees must notify the Commission in such form or manner as the Commission may from time to time specify, as soon as reasonably practicable of any actual or potential breaches by the licensee of the provisions of the Money Laundering, Terrorist Financing and Transfer of Funds (Information on Payer) Regulations 20171, or any UK Statutory Instrument by which those regulations are amended or superseded.
+2. Licensees must, within 14 days of the appointment, notify the Commission of the identity of the individual appointed as:
+a.the officer responsible for the licensee’s compliance with the Money Laundering, Terrorist Financing and Transfer of Funds (Information on Payer) Regulations 2017 (regulation 21(1)(a))2,
+b. the nominated officer (regulation 21(3))3, and any subsequent appointment to either of those positions.
+3. Licensees must, within 14 days of the departure or removal of any individual appointed to the positions mentioned in 2 above, notify the Commission of such departure or removal.
+
+15.3 . General and regulatory returns
+15.3.1 - General and regulatory returns
+
+Applies to:
+All operating licences.
+
+On request, licensees must provide the Commission with such information as the Commission may require, in such a form or manner as the Commission may from time-to-time specify, about the use made of facilities provided in accordance with this licence and the manner in which gambling authorised by this licence and the licensee’s business in relation to that gambling are carried on.
+In particular within 28 days of the end of each quarterly period licensees must submit an accurate Regulatory Return to the Commission containing such information as the Commission may from time to time specify.
+
+16. Responsible placement of digital adverts
+16.1. Responsible placement of digital adverts
+16.1.1 - Responsible placement of digital adverts
+
+Applies to:
+All licences.
+
+1. Licencees must:
+
+a. Ensure that they do not place digital advertisements on websites providing unauthorised access to copyrighted content;
+b. take all reasonable steps to ensure that third parties with whom they contract for the provision of any aspect of their business related to the licensed activities do not place digital advertisements on websites providing unauthorised access to copyrighted content; and
+c. ensure that the terms upon which they contract with such third parties enable them, subject to compliance with any dispute resolution provisions, to terminate the third party’s contract promptly if, in the Licensee’s reasonable opinion, the third party has been responsible for placing digital advertisements for the licensed activities on such websites.
+
+
+17. Customer identity verification
+17.1 . Customer identity verification
+17.1.1 - Customer identity verification
+
+Applies to:
+All remote licences (including ancillary remote betting licences in respect of bets made or accepted by telephone or email), except any lottery licence the holder of which only provides facilities for participation in low frequency or subscription lotteries, gaming machine technical, gambling software, host, ancillary remote casino, and ancillary remote bingo.
+
+1. Licensees must obtain and verify information in order to establish the identity of a customer before that customer is permitted to gamble. Information must include, but is not restricted to, the customer’s name, address and date of birth.
+2. A request made by a customer to withdraw funds from their account must not result in a requirement for additional information to be supplied as a condition of withdrawal if the licensee could have reasonably requested that information earlier. This requirement does not prevent a licensee from seeking information on the customer which they must obtain at that time due to any other legal obligation.
+3. Before permitting a customer to deposit funds, licensees should inform customers what types of identity documents or other information the licensee may need the customer to provide, the circumstances in which such information might be required, and the form and manner in which such information should be provided.
+4. Licensees must take reasonable steps to ensure that the information they hold on a customer’s identity remains accurate.

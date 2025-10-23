@@ -1,0 +1,42 @@
+ISO 27001 Secure Development
+
+ISO 27001 Annex A 8.25 Secure Development Life Cycle is an ISO 27001 control that requires us to develop code and software and systems with information security designed and built in. You may hear the term – ‘security by design and default’.
+Purpose
+
+ISO 27001 Annex A 8.25 is a preventive control to ensure information security is designed and implemented within the secure development life cycle of software and systems.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.25 as:
+Rules for the secure development of software and systems should be established and applied.
+Implementation Guide
+
+I am not in the business of telling you how to develop either systems or software. These are professions in their own right. What I am going to do is show you want the ISO 27001 standard expects in the implementation for you to achieve ISO 27001 certification. These are on the whole, no brainers, common sense and what you would expect but let us take a look anyway.
+Secure Development Policy
+
+The first step is to create, or download, your secure development policy. The secure development policy set’s out what you do for information security in the context of software and systems development. It does not set out how you do it, as how you do it is covered in your processes.
+Coding Guidelines
+
+You are going to make sure that you have documented coding guidelines. These can be standard guidelines or industry best practice, and you likely already do this today, just make sure that this written down, communicated and available to those that need it.
+Separate Environments
+
+You are going to make sure that for the inscope developments that you have separate development, test and live environments with the appropriate management and controls in place around this. This will include the process of promoting through those environments and the authorisations and approvals and acceptance.
+Specification and Design
+
+What ever methodology you use it is likely to have a specification and design phase. I am not sure of a situation where you would not, although could, but it is at these phases that you will evidence that information security was considered. Here we place a lot of reliance on ISO 27001 Annex A 5.8 Information Security In Project Management. The same is true when it comes to security checkpoints in projects.
+The advice here would be to have in your project management either a placeholder in an existing template / document or create a security specific one. Be sure you are considering things like access requirements, data transfers, technical controls, risks and risk mitigations. Have checkpoints with go / no go decisions and a process for what you do if the checkpoint fails.
+Testing
+
+All secure development will have testing. It is not our place, again, to tell you how to test as again, this is a profession in its own right but there must be a level of security testing in place that looks at the three parts of information security being confidentiality, integrity and availability.
+Simple testing that can be considered here would be penetration testing, vulnerability testing, regression testing, code scanning and code testing.
+Code Repositories
+
+The configuration and management of code and code libraries should be carefully considered and documented. Many tools exist that can help with this and automate many of the tasks.
+Knowledge and Experience
+
+The standard touches on this in a number of areas, having people with the right knowledge and / or experience to perform the role. This is also true of the secure development lifecycle. Having a competency matrix and being able to point to qualifications or certifications will help. Where there are gaps a plan, such as training, should be in place but these are basic HR and people functions that are common place in any role.
+Outsourced Development
+
+If you outsource your development then the third party supplier controls will apply. The main thing is to ensure they meet your requirements for secure development but all relevant controls will apply to them.
+Conclusion
+
+Many if not all of the controls that apply to this control are covered elsewhere. Be it the experience, licensing, technical controls but consider them in the context of this clause and be able to evidence them as they apply to secure development.

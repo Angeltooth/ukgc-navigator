@@ -1,0 +1,251 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.1",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.1",
+    "control_number": "A 5.1",
+    "control_title": "Policies for Information Security",
+    "control_purpose": "To ensure the suitability, adequacy and effectiveness of management's direction and support for information security",
+    "control_objective": "Ensure management direction and support for information security in accordance with business requirements and relevant laws and regulations"
+  },
+  "iso_27001_definition": {
+    "official_text": "Information security policy and topic-specific policies should be defined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+    "key_requirements": [
+      "Information security policy defined",
+      "Topic-specific policies defined",
+      "Approved by management",
+      "Published",
+      "Communicated to relevant personnel and interested parties",
+      "Acknowledged by recipients",
+      "Reviewed at planned intervals",
+      "Reviewed when significant changes occur"
+    ]
+  },
+  "change_from_iso_27001_2013": {
+    "note": "The new ISO 27001:2022 version explicitly calls out that a pack or suite of policies will be required rather than just the headline information security policy",
+    "improvement": "More explicit requirement for topic-specific policies"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.1_REQ_1",
+      "requirement": "Assign Ownership",
+      "description": "The Senior leadership team is responsible for developing, approving, and implementing appropriate information security policies.",
+      "responsible_party": "Senior leadership team",
+      "actions": [
+        "Develop information security policies",
+        "Approve information security policies",
+        "Implement information security policies"
+      ]
+    },
+    {
+      "requirement_id": "A_5.1_REQ_2",
+      "requirement": "Address Policy Requirements",
+      "description": "The policy should address business needs, legal obligations, and security risks",
+      "policy_must_address": [
+        {
+          "area": "Business needs",
+          "detail": "Align with business strategies and requirements"
+        },
+        {
+          "area": "Legal and contractual obligations",
+          "detail": "Comply with all relevant laws, regulations, and contracts"
+        },
+        {
+          "area": "Security risks",
+          "detail": "Consider current and potential threats to information security"
+        }
+      ]
+    },
+    {
+      "requirement_id": "A_5.1_REQ_3",
+      "requirement": "Include Policy Statements",
+      "description": "The main information security policy must include specific statements",
+      "required_policy_statements": [
+        {
+          "statement": "Defining information security",
+          "detail": "Clearly define what constitutes information security for the organisation"
+        },
+        {
+          "statement": "Setting security objectives",
+          "detail": "Establish clear information security goals or a framework for setting them"
+        },
+        {
+          "statement": "Guiding principles",
+          "detail": "Outline principles for all information security activities"
+        },
+        {
+          "statement": "Compliance",
+          "detail": "Commit to meeting all applicable information security requirements"
+        },
+        {
+          "statement": "Continuous improvement",
+          "detail": "Commit to ongoing improvement of the information security management system"
+        },
+        {
+          "statement": "Responsibilities",
+          "detail": "Assign responsibility for information security management to specific roles"
+        },
+        {
+          "statement": "Handling exceptions",
+          "detail": "Establish procedures for handling exceptions to security policies"
+        }
+      ]
+    },
+    {
+      "requirement_id": "A_5.1_REQ_4",
+      "requirement": "Include Topic Specific Policies",
+      "description": "Topic-specific policies provide detailed guidance on implementing specific security controls. These must align with and support the main information security policy.",
+      "examples_of_topic_specific_policies": [
+        "Access control",
+        "Physical security",
+        "Asset management",
+        "Data transfer",
+        "Device security",
+        "Network security",
+        "Incident management",
+        "Data backup",
+        "Cryptography",
+        "Data classification",
+        "Vulnerability management",
+        "Secure development"
+      ],
+      "note": "Topic-specific policies can be called standards, directives, or other suitable names"
+    },
+    {
+      "requirement_id": "A_5.1_REQ_5",
+      "requirement": "Approve Policies",
+      "description": "Top management must approve the main policy and any changes to it",
+      "approval_requirements": {
+        "main_policy": "Top management must approve",
+        "changes_to_main_policy": "Top management must approve",
+        "topic_specific_policies": "Relevant personnel with necessary authority and expertise should develop, review, and approve"
+      }
+    },
+    {
+      "requirement_id": "A_5.1_REQ_6",
+      "requirement": "Review Policies",
+      "description": "Regular policy reviews are essential to ensure policies remain current and effective",
+      "review_triggers": [
+        "Planned intervals (regular scheduled reviews)",
+        "Significant changes occur"
+      ],
+      "review_should_assess": [
+        "Changes to the organisation's business strategy",
+        "Changes in the organisation's technology",
+        "Updates to laws, regulations, and contracts",
+        "Evolving security risks and threats",
+        "Lessons learned from security incidents"
+      ],
+      "review_inputs": [
+        "Management reviews",
+        "Audits"
+      ]
+    },
+    {
+      "requirement_id": "A_5.1_REQ_7",
+      "requirement": "Communicate Policies",
+      "description": "Policies must be communicated to all relevant personnel and stakeholders in a clear, accessible, and understandable format",
+      "communication_requirements": {
+        "audience": "All relevant personnel and stakeholders",
+        "format": "Clear, accessible, and understandable",
+        "acknowledgment": "Recipients should acknowledge their understanding and agreement to comply"
+      },
+      "external_distribution_note": "When distributing policies outside the organisation, care must be taken to protect confidential information"
+    }
+  ],
+  "implementation_steps": {
+    "estimated_time": "1 hour and 30 minutes",
+    "steps": [
+      {
+        "step": 1,
+        "action": "Work out what policies you actually require",
+        "detail": "Identify all policies needed based on business needs, legal requirements, and security risks"
+      },
+      {
+        "step": 2,
+        "action": "Write the policies",
+        "detail": "Develop main information security policy and all topic-specific policies"
+      },
+      {
+        "step": 3,
+        "action": "Sign them off",
+        "detail": "Obtain approval from top management for main policy and appropriate authority for topic-specific policies"
+      },
+      {
+        "step": 4,
+        "action": "Publish them",
+        "detail": "Make policies available in appropriate format and location"
+      },
+      {
+        "step": 5,
+        "action": "Have them acknowledged by staff",
+        "detail": "Ensure all relevant personnel acknowledge understanding and agreement to comply"
+      },
+      {
+        "step": 6,
+        "action": "Review them at regular intervals",
+        "detail": "Establish review schedule and process for ongoing policy review and updates"
+      }
+    ]
+  },
+  "compliance_notes": {
+    "overall_purpose": "Establish comprehensive information security policy framework with management support",
+    "enforcement_priority": "Critical - foundation of information security management system",
+    "key_principles": [
+      "Top management approval and support",
+      "Suite of policies covering all relevant areas",
+      "Clear communication and acknowledgment",
+      "Regular review and updates",
+      "Alignment with business needs and legal requirements",
+      "Protection of confidential information when distributing externally"
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "ukgc_context": "UK Gambling Commission requires compliance with ISO 27001 security standards for critical systems",
+    "other_iso_controls": [
+      "ISO 27001 A 5.2 - Information security roles and responsibilities",
+      "ISO 27001 A 5.3 - Segregation of duties",
+      "ISO 27001 A 6 - People controls",
+      "ISO 27001 A 8 - Technology controls"
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems": [
+      "Electronic systems that record, store, process, share, transmit or retrieve sensitive customer information",
+      "Electronic systems that generate, transmit, or process random numbers used to determine game outcomes",
+      "Electronic systems that store results or current state of customer's gamble",
+      "Points of entry to and exit from critical systems",
+      "Communication networks that transmit sensitive customer information"
+    ],
+    "compliance_requirement": "Operators must demonstrate information security policies meeting ISO 27001 Annex A 5.1 requirements for all critical systems"
+  },
+  "supplementary_guidance": {
+    "flexibility": "Topic-specific policies can vary across organisations",
+    "naming_convention": "Organisation can choose format and names for policy documents (e.g., standards, directives)",
+    "best_practice": "Use prewritten ISO 27001 Policy Pack and follow ISO 27001 Policies Ultimate Guide for efficient implementation"
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.1",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022"
+  }
+}

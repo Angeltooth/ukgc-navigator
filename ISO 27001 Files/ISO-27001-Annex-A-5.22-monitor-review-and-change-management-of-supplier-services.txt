@@ -1,0 +1,66 @@
+ISO 27001 Monitor, Review And Change Management Of Supplier Services
+
+ISO 27001 Annex A 5.22 Monitor, review and change management of supplier services is an ISO 27001 control that requires an organisation to maintain an agreed level of service and information security in line with legal agreements.
+Purpose
+
+The purpose of ISO 27001 Annex A 5.22 is a preventive control that ensures you maintain an agreed level of information security and service delivery in line with supplier agreements.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 5.22 as:
+The organisation should regularly monitor, review, evaluate and manage change in supplier information security practices and service delivery.
+Implementation Guide
+
+As with all the clauses that relate to supplier management we are looking to assign the responsibility to a person or a team with the skills and resources to be able to track that requirements are being met and where not, they are being addressed.
+In basic terms it is about making sure that the terms and conditions in legal agreements that relate to information security are being met. It is about managing issues, problems and incidents as the occur and if changes are needed to suppliers that those changes do not adversely impact the business.
+You are going to:
+Those service performance levels are going to be monitored, most likely via reports or metrics or dashboards.
+Check and respond to changes made by suppliers such as updates, changes to process, changes to controls
+Where supplier services change to monitor and respond to those
+Keep your eye on the terms and conditions of the agreements and that they are followed
+Ensure those pesky suppliers are evaluated and maintain adequate security
+It isn’t really that hard although you can over complicate it very easily. Have agreements in place, make sure they are followed, check them and respond when things go wrong.
+We are not teaching people how to do supplier management or change it. What is here is common sense.
+How to comply
+
+To comply with ISO 27001 Annex A 5.22 you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to
+Implement a topic specific policy
+Implement a supplier management process
+Include in your supplier management process supplier acquisition and supplier transfer
+Implement an ISO 27001 supplier register
+Have agreements with all suppliers that cover information security requirements
+Have information security assurances for critical suppliers as a minimum and ideally all relevant suppliers
+Monitor those suppliers
+Respond to adverse incidents in a structured way
+How to pass an audit
+
+To pass an audit of ISO 27001 Annex A 5.22 Monitor, review and change management of supplier services you are going to make sure that you have followed the steps above in how to comply.
+What the auditor will check
+
+The audit is going to check a number of areas. Lets go through the most common
+1. That you have a supplier agreements in place
+
+The auditor is going to check that you have agreements in place with suppliers that cover the information security requirements. It will check that those agreements are in date and cover the products and / or services acquired.
+2. That you have an ISO 27001 Supplier Register
+
+You will need an ISO 27001 Supplier Register to record and manage your suppliers. Make sure it is up to date and reflects your reality.
+3. Documentation
+
+They are going to look at audit trails and all your documentation and see that is classified and labelled. All the documents that you show them, as a minimum if they are confidential should be labelled as such. Is the document up to date. Has it been reviewed in the last 12 months. Does the version control match.
+Top 3 Mistakes People Make
+
+The top 3 Mistakes People Make For ISO 27001 Annex A 5.22 are
+1. You have do not monitor suppliers
+
+Make sure that there are reviews and monitors in place. Perhaps meetings. Perhaps reports. Perhaps dashboards. Be sure to be able to evidence that you review and monitor those suppliers. You will have processes for adverse advents so do not be surprised if you are asked to evidence an adverse event, problem or issue and that you followed your process.
+2. You have no assurance they are doing the right thing for information security
+
+Make sure you have done your security assessment and can place your hands on an in date certificate such as an ISO 27001 Certification for assurance they are doing the right thing. It needs to be in date a cover the products and / or services you have acquired and are using form the supplier.
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.
+FAQ
+
+What policies do I need for ISO 27001 Annex A 5.22 Monitor, review and change management of supplier services?
+For ISO 27001 Annex A 5.22 Monitor, review and change management of supplier services you will need the ISO 27001 Supplier Policy.
+Why is Monitor, Review and Change Management of Supplier Services Important?
+ISO 27001 Annex A 5.22 Monitor, review and change management of supplier services is important because suppliers represent the biggest risk to you. If they are not doing the right thing it is your reputation, your finances, your success that is stake. Get supplier management correct and reduce the risk.

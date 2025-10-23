@@ -1,0 +1,43 @@
+ISO 27001 Network Security
+
+ISO 27001 Annex A 8.20 Network Security is an ISO 27001 control that requires us to secure our networks and document that we are doing so.
+Purpose
+
+ISO 27001 Annex A 8.20 is a preventive control and a detective control to protect information in networks and its supporting information processing facilities from compromise via the network..
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.20 as:
+Networks and network devices should be secured, managed and controlled to protect information in
+systems and applications.
+Implementation Guide
+
+This control is looking for us to have control over our networks. We are going to ensure the information security in networks and protect connected services from un authorised access. The are a few things to consider so lets go through them.
+Documentation
+
+Documentation plays a large part in the standard and that is equally true of networks. This is usually an area where organisations struggle. Keeping up to date network documentation. But it is key to this control and passing the audit.
+The documentation that is expected includes network diagrams and configuration files of devices. This documentation is also expected to have the document hygiene that includes document classification and version control. Again, this can often be overlooked.
+Included in the documentation would be the classification level of the data that is carried over the network. As a rule, to simplify it, all organisation networks would be classed as confidential and public access / guest networks would be classified as public.
+Roles and Responsibilities
+
+Network management is a specialist activity that requires trained and experienced professionals. As a result you would document the roles and responsibilities including recording who is performing the role. Around this would be the usual access management processes of requesting, authorising and providing access as well as the segregation of duties to remove conflicts.
+Logging and Monitoring
+
+As part of the network implementation you will include appropriate logging and monitoring for actions that are relevant to information security.
+Technical Considerations
+
+Under advisement of your technical teams you will consider technical elements such as encryption of data in transit, restrictions and filtering of connections to the network and the use of firewalls, hardening of network devices, removal of default passwords and services, disabling vulnerable network protocols, authenticating systems on the network, segregating admin channels from other network channels.
+Virtual Networks
+
+Virtual networks can add an additional layer of security and appropriate security controls should be applied. There is a standard that covers Virtual Networks and it is ISO/IEC TS 23167.
+What will an auditor check?
+
+The audit is going to check a number of areas. Lets go through the main ones
+1. That you have documentation
+
+What this means is that you need to show that you have documented your network. Can you show network diagrams, a list of devices and their configurations, logs of configuration changes, roles and responsibilities?
+2. That you have have implemented Network Security appropriately
+
+They will look at systems to seek evidence of network security. They will question you on the process and seek evidence that you have followed it. They want to see evidence of network security and the process in operation.
+3. That you have conducted internal audits
+
+The audit will want to see that you have tested the controls and evidenced that they are operating. This is usually in the form of the required internal audits. They will check the records and outputs of those internal audits.

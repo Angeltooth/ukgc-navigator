@@ -1,0 +1,1002 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.24",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.24",
+    "control_number": "A 5.24",
+    "control_title": "Information Security Incident Management Planning and Preparation",
+    "control_type": "Corrective control",
+    "control_purpose": "To ensure quick, effective, consistent and orderly response to information security incidents, including communication on information security events",
+    "control_objective": "Plan and prepare for managing information security incidents by defining, establishing and communicating incident management processes, roles and responsibilities"
+  },
+  "iso_27001_definition": {
+    "official_text": "The organization should plan and prepare for managing information security incidents by defining, establishing and communicating information security incident management processes, roles and responsibilities.",
+    "key_requirements": [
+      "Incident management processes defined",
+      "Incident management procedures established",
+      "Roles and responsibilities defined",
+      "Responsibilities communicated",
+      "Personnel competency ensured",
+      "Response capability ready",
+      "Learning and improvement capability"
+    ]
+  },
+  "incident_management_overview": {
+    "definition": "Planning and preparation for identifying, responding to and learning from information security incidents",
+    "purpose": "Ensure organization can detect, respond, and recover from security incidents effectively",
+    "scope": [
+      "Incident identification and detection",
+      "Incident classification and prioritization",
+      "Incident response and containment",
+      "Investigation and analysis",
+      "Communication and escalation",
+      "Recovery and remediation",
+      "Lessons learned and improvement"
+    ],
+    "key_principle": "Incidents will happen - focus on being prepared, responding effectively, and learning from them",
+    "control_type": "Corrective - responds to incidents after they occur"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.24_REQ_1",
+      "requirement": "Define Incident Management Roles and Responsibilities",
+      "description": "Clearly define who is responsible for each incident management function",
+      "details": {
+        "roles": [
+          "Incident manager/coordinator",
+          "Technical incident responders",
+          "Investigation team",
+          "Communication lead",
+          "Senior management escalation",
+          "External escalation contacts",
+          "Business continuity coordinator"
+        ],
+        "responsibilities": [
+          "Who detects incidents",
+          "Who triages incidents",
+          "Who responds to incidents",
+          "Who investigates incidents",
+          "Who communicates internally",
+          "Who communicates externally",
+          "Who decides escalation",
+          "Who coordinates recovery"
+        ],
+        "documentation": "Document all roles and responsibilities clearly"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_2",
+      "requirement": "Establish Incident Management Processes and Procedures",
+      "description": "Define comprehensive processes for managing information security incidents",
+      "details": {
+        "process_areas": [
+          "Evaluation - assess if incident is information security related",
+          "Monitoring - detect, classify, analyze and report incidents",
+          "Managing - respond, escalate, invoke crisis/continuity procedures",
+          "Coordinating - manage internal and external resources",
+          "Logging - document all incident activity",
+          "Evidence handling - preserve evidence for investigation",
+          "Root cause analysis - determine why incident occurred",
+          "Lessons learned - improve to prevent recurrence"
+        ],
+        "scope": "Processes address full incident lifecycle from detection through learning"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_3",
+      "requirement": "Implement Priority Levels and Response Times",
+      "description": "Define incident priority levels with corresponding response timeframes",
+      "details": {
+        "priority_levels": [
+          {
+            "level": "Critical",
+            "criteria": "Affects core operations or customer data",
+            "response_time": "Immediate (minutes)",
+            "examples": "Ransomware, data breach, system outage"
+          },
+          {
+            "level": "High",
+            "criteria": "Significant security impact or data at risk",
+            "response_time": "Within hours",
+            "examples": "Unauthorized access, suspected intrusion"
+          },
+          {
+            "level": "Medium",
+            "criteria": "Moderate security concern",
+            "response_time": "Within 1 business day",
+            "examples": "Policy violation, security misconfiguration"
+          },
+          {
+            "level": "Low",
+            "criteria": "Minor security event",
+            "response_time": "Within 3 business days",
+            "examples": "Failed login attempts, minor alerts"
+          }
+        ],
+        "escalation": "Define escalation criteria for moving between levels"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_4",
+      "requirement": "Define Incident Detection and Monitoring",
+      "description": "Establish how incidents will be detected and monitored",
+      "details": {
+        "detection_methods": [
+          "Automated monitoring systems and alerts",
+          "User reporting and helpdesk",
+          "System log analysis",
+          "Security tool alerts",
+          "External notification (e.g., breach notification)",
+          "Third party notification"
+        ],
+        "monitoring": [
+          "24/7 monitoring or defined monitoring windows",
+          "Alert thresholds and triggers",
+          "Log collection and analysis",
+          "Event correlation",
+          "Anomaly detection"
+        ],
+        "incident_classification": "Define what constitutes an incident vs. normal event"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_5",
+      "requirement": "Establish Incident Response Procedures",
+      "description": "Define step-by-step procedures for responding to incidents",
+      "details": {
+        "response_steps": [
+          "Acknowledge incident receipt",
+          "Verify incident details",
+          "Contain the incident to prevent spread",
+          "Preserve evidence",
+          "Isolate affected systems if needed",
+          "Begin investigation",
+          "Update status regularly",
+          "Execute recovery procedures",
+          "Verify recovery"
+        ],
+        "decision_points": [
+          "Activate business continuity if needed",
+          "Activate crisis management if needed",
+          "Involve law enforcement if criminal",
+          "Notify customers/regulators if data breach",
+          "Engage external specialists if needed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_6",
+      "requirement": "Implement Incident Communication Plan",
+      "description": "Establish procedures for communicating about incidents",
+      "details": {
+        "internal_communication": [
+          "How to report incident",
+          "Who to report to",
+          "What to report",
+          "Status update frequency",
+          "Escalation notification"
+        ],
+        "external_communication": [
+          "Customer notification procedures",
+          "Regulator notification (UKGC, ICO for breaches)",
+          "Media/public communication",
+          "Third party notification",
+          "Timing and content of communications"
+        ],
+        "reporting_requirements": [
+          "GDPR data breach notification (72 hours)",
+          "UKGC incident reporting",
+          "Customer notification requirements",
+          "Law enforcement reporting"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_7",
+      "requirement": "Establish Incident Logging and Tracking",
+      "description": "Maintain comprehensive records of all incidents",
+      "details": {
+        "incident_log_contents": [
+          "Incident ID and date/time",
+          "Description and severity",
+          "Systems and data affected",
+          "Detection method",
+          "Initial assessment",
+          "Response actions",
+          "Timeline of events",
+          "Root cause",
+          "Resolution steps",
+          "Lessons learned",
+          "Responsible parties"
+        ],
+        "logging_system": "Maintain incident tracking system or log",
+        "retention": "Maintain logs for audit and learning"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_8",
+      "requirement": "Define Evidence Handling Procedures",
+      "description": "Establish procedures for preserving evidence in case of legal action",
+      "details": {
+        "evidence_handling": [
+          "Preserve system logs and data",
+          "Chain of custody for evidence",
+          "Secure storage of evidence",
+          "Labeling and documentation",
+          "Prevent evidence tampering",
+          "Timeline documentation"
+        ],
+        "considerations": [
+          "Criminal investigation potential",
+          "Civil litigation potential",
+          "Regulatory investigation",
+          "Data protection implications",
+          "Forensic analysis needs"
+        ],
+        "specialist_involvement": "Involve forensic specialists or legal team when appropriate"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_9",
+      "requirement": "Implement Root Cause Analysis Process",
+      "description": "Establish process for investigating root causes of incidents",
+      "details": {
+        "analysis_methods": [
+          "Timeline reconstruction",
+          "System log review",
+          "Forensic analysis",
+          "Interview relevant personnel",
+          "Identify failure points",
+          "Determine contributing factors",
+          "Identify root cause"
+        ],
+        "investigation_depth": "Depth appropriate to incident severity",
+        "documentation": "Document investigation and findings"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_10",
+      "requirement": "Establish Lessons Learned Process",
+      "description": "Implement process for learning from incidents and making improvements",
+      "details": {
+        "lessons_learned": [
+          "What was the incident",
+          "How was it detected",
+          "How was it handled",
+          "What worked well",
+          "What could be improved",
+          "Root causes identified",
+          "Preventive measures",
+          "Detective improvements"
+        ],
+        "action_items": [
+          "Identify improvements needed",
+          "Assign ownership",
+          "Track implementation",
+          "Verify effectiveness",
+          "Document completion"
+        ],
+        "continuous_improvement": "Use lessons learned to improve processes and controls"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_11",
+      "requirement": "Ensure Incident Response Team Competency",
+      "description": "Ensure personnel handling incidents have appropriate skills and training",
+      "details": {
+        "competency_requirements": [
+          "Subject matter expertise in area",
+          "Incident response training",
+          "Technical skills for role",
+          "Communication skills",
+          "Knowledge of procedures",
+          "Understanding of legal/regulatory requirements"
+        ],
+        "training": [
+          "Initial incident response training",
+          "Role-specific training",
+          "Periodic refresher training",
+          "Scenario-based exercises",
+          "Tabletop exercises"
+        ],
+        "competency_matrix": "Document competency levels and training requirements per role"
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_12",
+      "requirement": "Communicate Incident Management to Organization",
+      "description": "Ensure all personnel understand how to report incidents",
+      "details": {
+        "communication_frequency": "Quarterly minimum communication",
+        "topics": [
+          "How to recognize an incident",
+          "How to report an incident",
+          "Who to report to",
+          "What information to provide",
+          "Importance of prompt reporting",
+          "No retaliation for good-faith reporting"
+        ],
+        "audience": [
+          "All personnel trained",
+          "Specific focus on critical functions",
+          "Management informed of procedures",
+          "Contractors/third parties informed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_13",
+      "requirement": "Consider Different Incident Scenarios",
+      "description": "Plan for various types of incidents that might occur",
+      "details": {
+        "scenario_types": [
+          "Ransomware attack",
+          "Data breach",
+          "System outage",
+          "Unauthorized access",
+          "Insider threat",
+          "Third party compromise",
+          "Supply chain incident",
+          "Regulatory incident",
+          "Physical security incident"
+        ],
+        "scenario_planning": [
+          "Develop response procedures for each type",
+          "Identify different escalation paths",
+          "Plan coordination with different teams",
+          "Plan external notifications needed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.24_REQ_14",
+      "requirement": "Define Incident Reporting Requirements",
+      "description": "Establish incident reporting procedures and external reporting obligations",
+      "details": {
+        "internal_incident_reporting": [
+          "Incident reporting mechanism",
+          "Incident report form or template",
+          "Information to capture",
+          "Submission process and timing"
+        ],
+        "external_reporting": [
+          "GDPR data breach notification to authorities",
+          "UKGC incident reporting requirements",
+          "Customer notification procedures",
+          "Law enforcement notification if criminal",
+          "Timeframes for each reporting type"
+        ],
+        "documentation": "Document all incident reports and communications"
+      }
+    }
+  ],
+  "incident_management_lifecycle": {
+    "description": "Typical incident response lifecycle",
+    "stages": [
+      {
+        "stage": 1,
+        "name": "Detection",
+        "description": "Incident is detected through monitoring or reporting",
+        "activities": [
+          "Automatic alert triggered or user reports",
+          "Initial assessment of severity",
+          "Verify incident details",
+          "Log incident",
+          "Assign incident ID"
+        ]
+      },
+      {
+        "stage": 2,
+        "name": "Triage and Classification",
+        "description": "Assess incident and determine response priority",
+        "activities": [
+          "Assess incident severity",
+          "Determine priority level",
+          "Identify affected systems and data",
+          "Escalate if needed",
+          "Activate response team"
+        ]
+      },
+      {
+        "stage": 3,
+        "name": "Response and Containment",
+        "description": "Respond to incident and contain impact",
+        "activities": [
+          "Acknowledge incident",
+          "Preserve evidence",
+          "Isolate affected systems if needed",
+          "Stop malicious activity",
+          "Prevent spread"
+        ]
+      },
+      {
+        "stage": 4,
+        "name": "Investigation",
+        "description": "Investigate how incident occurred",
+        "activities": [
+          "Collect forensic evidence",
+          "Analyze logs and artifacts",
+          "Interview relevant personnel",
+          "Determine root cause",
+          "Document timeline"
+        ]
+      },
+      {
+        "stage": 5,
+        "name": "Recovery and Remediation",
+        "description": "Recover systems and remediate",
+        "activities": [
+          "Clean or rebuild systems",
+          "Restore from backups if needed",
+          "Restore service",
+          "Verify systems functioning",
+          "Validate data integrity"
+        ]
+      },
+      {
+        "stage": 6,
+        "name": "Communication and Notification",
+        "description": "Communicate incident to stakeholders",
+        "activities": [
+          "Internal notification to management",
+          "Customer notification if needed",
+          "Regulator notification if required",
+          "Media/public communication if needed",
+          "Third party notification"
+        ]
+      },
+      {
+        "stage": 7,
+        "name": "Lessons Learned",
+        "description": "Learn from incident and improve",
+        "activities": [
+          "Conduct post-incident review",
+          "Identify what worked well",
+          "Identify improvements needed",
+          "Develop action items",
+          "Track implementation",
+          "Update procedures"
+        ]
+      }
+    ]
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Define Incident Management Policy",
+        "detail": "Create policy on incident management approach and principles"
+      },
+      {
+        "step": 2,
+        "action": "Define Roles and Responsibilities",
+        "detail": "Document who is responsible for each incident function"
+      },
+      {
+        "step": 3,
+        "action": "Develop Incident Management Procedures",
+        "detail": "Create detailed procedures for detecting and responding to incidents"
+      },
+      {
+        "step": 4,
+        "action": "Create Incident Report Form",
+        "detail": "Develop standard form for reporting incidents"
+      },
+      {
+        "step": 5,
+        "action": "Establish Incident Logging System",
+        "detail": "Implement system or log to track incidents"
+      },
+      {
+        "step": 6,
+        "action": "Define Priority Levels",
+        "detail": "Establish incident severity levels with response timeframes"
+      },
+      {
+        "step": 7,
+        "action": "Create Response Playbooks",
+        "detail": "Develop procedures for responding to different incident types"
+      },
+      {
+        "step": 8,
+        "action": "Establish Communication Procedures",
+        "detail": "Define internal and external communication protocols"
+      },
+      {
+        "step": 9,
+        "action": "Create Competency Matrix",
+        "detail": "Document incident team skills and training requirements"
+      },
+      {
+        "step": 10,
+        "action": "Conduct Training and Exercises",
+        "detail": "Train response team and conduct incident response drills"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.24",
+    "checklist": [
+      {
+        "item": "Define incident management policy",
+        "status": "required"
+      },
+      {
+        "item": "Define roles and responsibilities",
+        "status": "required"
+      },
+      {
+        "item": "Document incident management procedures",
+        "status": "required"
+      },
+      {
+        "item": "Establish incident detection mechanism",
+        "status": "required"
+      },
+      {
+        "item": "Implement incident logging system",
+        "status": "required"
+      },
+      {
+        "item": "Define incident priority levels",
+        "status": "required"
+      },
+      {
+        "item": "Establish response procedures",
+        "status": "required"
+      },
+      {
+        "item": "Define communication procedures",
+        "status": "required"
+      },
+      {
+        "item": "Create incident report form",
+        "status": "required"
+      },
+      {
+        "item": "Define evidence handling procedures",
+        "status": "required"
+      },
+      {
+        "item": "Establish root cause analysis process",
+        "status": "required"
+      },
+      {
+        "item": "Implement lessons learned process",
+        "status": "required"
+      },
+      {
+        "item": "Train incident response team",
+        "status": "required"
+      },
+      {
+        "item": "Communicate procedures to organization",
+        "status": "required"
+      },
+      {
+        "item": "Conduct incident response drills",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with incident management",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Did not learn lessons from incidents",
+        "description": "Incidents occur but no improvements made to prevent recurrence",
+        "root_cause": [
+          "No post-incident review process",
+          "Focus on immediate response only",
+          "No ownership of action items",
+          "No tracking of improvements"
+        ],
+        "impact": "Repeated incidents, wasted resources, no security improvement",
+        "prevention": "Implement formal lessons learned process",
+        "evidence": "Document corrective actions and improvements made per incident",
+        "audit_risk": "High - auditors specifically check for continuous improvement"
+      },
+      {
+        "rank": 2,
+        "mistake": "Did not tell people how to raise an incident",
+        "description": "Personnel don't know how to report security incidents",
+        "root_cause": [
+          "No communication about incident procedures",
+          "Procedures exist but not shared",
+          "No training provided",
+          "No regular reminders"
+        ],
+        "impact": "Incidents not reported, delays in detection and response",
+        "prevention": "Communicate incident reporting procedures quarterly minimum",
+        "evidence": "Auditor will ask random employees how to report incident",
+        "audit_risk": "Critical - auditors specifically test this knowledge"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control is wrong",
+        "description": "Poor documentation and maintenance of incident procedures",
+        "issues": [
+          "Procedures not documented",
+          "Version numbers don't match",
+          "Procedures not reviewed in 12 months",
+          "Comments left in final documents",
+          "Old versions still in use"
+        ],
+        "prevention": [
+          "Document all procedures clearly",
+          "Maintain version control",
+          "Review annually",
+          "Remove comments from final versions"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.24 audit",
+    "audit_areas": [
+      {
+        "area": "1. Documented Procedures",
+        "description": "Verify incident management procedures are documented",
+        "checks": [
+          "Incident management policy exists",
+          "Procedures documented",
+          "Roles and responsibilities clear",
+          "Procedures reflect actual practice",
+          "Procedures reviewed recently",
+          "Version control current"
+        ]
+      },
+      {
+        "area": "2. Incident Knowledge Test",
+        "description": "Verify personnel know how to report incidents",
+        "checks": [
+          "Auditor asks random employees how to report incident",
+          "Employees can articulate reporting process",
+          "Employees know who to contact",
+          "Awareness of incident importance",
+          "Understanding of no-retaliation policy"
+        ],
+        "importance": "This is a bread-and-butter test - almost certain to happen"
+      },
+      {
+        "area": "3. Incident Process Evidence",
+        "description": "Verify incident procedures are actually being followed",
+        "checks": [
+          "Request sample incident record",
+          "Walk through how it was handled",
+          "Verify each step of procedure followed",
+          "Check evidence preservation",
+          "Verify documentation complete",
+          "Confirm escalation if appropriate"
+        ]
+      },
+      {
+        "area": "4. Lessons Learned Evidence",
+        "description": "Verify organization learns from incidents",
+        "checks": [
+          "Post-incident reviews documented",
+          "Lessons learned identified",
+          "Corrective actions documented",
+          "Action items tracked to completion",
+          "Process improvements implemented",
+          "Effectiveness verified"
+        ],
+        "importance": "This shows continuous improvement and maturity"
+      },
+      {
+        "area": "5. Incident Log/Register",
+        "description": "Verify incident tracking and history",
+        "checks": [
+          "Incident log maintained",
+          "All incidents recorded",
+          "Incident details documented",
+          "Timeline maintained",
+          "Resolution tracked",
+          "Lessons learned recorded"
+        ]
+      },
+      {
+        "area": "6. Training and Competency",
+        "description": "Verify incident team has appropriate skills",
+        "checks": [
+          "Team members trained",
+          "Training records maintained",
+          "Competency matrix exists",
+          "Ongoing development planned",
+          "Scenario exercises conducted"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Incident management critical for responding to security incidents affecting gambling systems - rapid response essential to protect customer data and maintain operations",
+    "specific_requirements": [
+      {
+        "system": "Customer Data Systems",
+        "incident_requirements": [
+          "Rapid incident detection for unauthorized access",
+          "Immediate response to potential data breaches",
+          "Breach notification to UKGC within required timeframe",
+          "Customer notification procedures",
+          "Forensic investigation capability",
+          "Evidence preservation for potential prosecution"
+        ]
+      },
+      {
+        "system": "RNG and Game Systems",
+        "incident_requirements": [
+          "Immediate detection of RNG anomalies",
+          "Rapid response to game integrity incidents",
+          "Investigation of game outcome irregularities",
+          "Communication to UKGC of integrity concerns",
+          "Recovery procedures to restore fair gaming",
+          "Player compensation procedures if needed"
+        ]
+      },
+      {
+        "system": "Compliance and Reporting Systems",
+        "incident_requirements": [
+          "Detection of audit trail tampering",
+          "Incident response to maintain integrity",
+          "Investigation of reporting discrepancies",
+          "Recovery procedures to restore accuracy",
+          "Notification to UKGC if integrity compromised"
+        ]
+      },
+      {
+        "system": "Critical Infrastructure",
+        "incident_requirements": [
+          "Business continuity activation for outages",
+          "Rapid detection and response to attacks",
+          "Crisis management procedures",
+          "Customer communication for service disruptions",
+          "Recovery and service restoration"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must have comprehensive incident management procedures with defined roles, communication plans, external reporting procedures, and lessons learned processes"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Ensure organization can rapidly detect, respond to, investigate and learn from information security incidents",
+    "enforcement_priority": "Critical - incident response capability essential for all organizations",
+    "key_principles": [
+      "Clear roles and responsibilities defined",
+      "Processes documented and communicated",
+      "Personnel trained and competent",
+      "Multiple detection methods",
+      "Rapid response procedures",
+      "Evidence preservation",
+      "Root cause analysis",
+      "Lessons learned and continuous improvement",
+      "External reporting when required",
+      "Regular training and drills",
+      "Post-incident reviews"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.24 Information Security Incident Management Planning and Preparation, implement",
+    "requirements": [
+      {
+        "requirement": "Define incident management policy",
+        "detail": "Document approach to incident management"
+      },
+      {
+        "requirement": "Define roles and responsibilities",
+        "detail": "Clearly assign incident response roles"
+      },
+      {
+        "requirement": "Document procedures",
+        "detail": "Comprehensive incident procedures documented"
+      },
+      {
+        "requirement": "Establish incident detection",
+        "detail": "Mechanism to detect incidents"
+      },
+      {
+        "requirement": "Implement incident logging",
+        "detail": "Track all incidents"
+      },
+      {
+        "requirement": "Define priority levels",
+        "detail": "Severity levels with response times"
+      },
+      {
+        "requirement": "Establish response procedures",
+        "detail": "Step-by-step incident response procedures"
+      },
+      {
+        "requirement": "Define communication",
+        "detail": "Internal and external communication procedures"
+      },
+      {
+        "requirement": "Establish evidence handling",
+        "detail": "Procedures to preserve evidence"
+      },
+      {
+        "requirement": "Implement RCA process",
+        "detail": "Root cause analysis procedures"
+      },
+      {
+        "requirement": "Establish lessons learned",
+        "detail": "Post-incident review and improvement process"
+      },
+      {
+        "requirement": "Train personnel",
+        "detail": "Train incident response team"
+      },
+      {
+        "requirement": "Communicate to organization",
+        "detail": "All personnel know how to report incidents"
+      },
+      {
+        "requirement": "Conduct drills",
+        "detail": "Practice incident response procedures"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.24 - Information security incident management planning and preparation (this control)",
+      "ISO 27001 A 8.16 - Incident management and improvements"
+    ],
+    "supporting_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 8.1 - User endpoint devices",
+      "ISO 27001 A 8.6 - Capacity management",
+      "ISO 27001 A 8.15 - Logging"
+    ]
+  },
+  "best_practices": {
+    "planning_best_practices": [
+      "Engage senior management in incident planning",
+      "Involve legal and compliance teams",
+      "Consider regulatory reporting requirements",
+      "Plan for worst-case scenarios",
+      "Test procedures regularly",
+      "Keep procedures updated"
+    ],
+    "response_best_practices": [
+      "Establish 24/7 on-call capability for critical incidents",
+      "Implement rapid escalation procedures",
+      "Preserve evidence from the start",
+      "Communicate status regularly",
+      "Involve specialists when needed",
+      "Document everything",
+      "Focus on quick recovery"
+    ],
+    "investigation_best_practices": [
+      "Conduct thorough root cause analysis",
+      "Use structured problem-solving methods",
+      "Involve appropriate experts",
+      "Document investigation thoroughly",
+      "Interview involved parties",
+      "Preserve evidence for potential prosecution"
+    ],
+    "learning_best_practices": [
+      "Conduct formal post-incident reviews",
+      "Identify specific improvements",
+      "Assign ownership of action items",
+      "Track implementation",
+      "Verify effectiveness",
+      "Update procedures based on learnings",
+      "Share learnings across organization"
+    ],
+    "training_best_practices": [
+      "Initial incident response training for team",
+      "Periodic refresher training",
+      "Scenario-based exercises",
+      "Tabletop exercises",
+      "Full incident response drills",
+      "Lessons learned from real incidents"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_incident_types": [
+      {
+        "incident_type": "Customer Data Breach",
+        "ukgc_requirement": "Notify UKGC immediately",
+        "response_priority": "Critical",
+        "key_actions": [
+          "Immediate containment",
+          "Forensic investigation",
+          "UKGC notification",
+          "Customer notification",
+          "Regulatory compliance"
+        ]
+      },
+      {
+        "incident_type": "RNG Integrity Issue",
+        "ukgc_requirement": "Suspend affected games, notify UKGC",
+        "response_priority": "Critical",
+        "key_actions": [
+          "Disable affected RNG immediately",
+          "Suspend gaming on affected products",
+          "Investigate integrity",
+          "UKGC notification",
+          "Player remediation plan"
+        ]
+      },
+      {
+        "incident_type": "Customer Data Breach",
+        "ukgc_requirement": "Notify UKGC immediately",
+        "response_priority": "Critical",
+        "key_actions": [
+          "Immediate containment",
+          "Forensic investigation",
+          "UKGC notification",
+          "Customer notification",
+          "Regulatory compliance"
+        ]
+      },
+      {
+        "incident_type": "RNG Integrity Issue",
+        "ukgc_requirement": "Suspend affected games, notify UKGC",
+        "response_priority": "Critical",
+        "key_actions": [
+          "Disable affected RNG immediately",
+          "Suspend gaming on affected products",
+          "Investigate integrity",
+          "UKGC notification",
+          "Player remediation plan"
+        ]
+      },
+      {
+        "incident_type": "System Outage",
+        "ukgc_requirement": "Notify UKGC if significant duration",
+        "response_priority": "Critical",
+        "key_actions": [
+          "Activate business continuity",
+          "Rapid recovery",
+          "Customer communication",
+          "UKGC notification if extended"
+        ]
+      },
+      {
+        "incident_type": "Ransomware Attack",
+        "ukgc_requirement": "Notify UKGC, may affect licensing",
+        "response_priority": "Critical",
+        "key_actions": [
+          "Isolate affected systems",
+          "Preserve evidence",
+          "Do not pay ransom without legal advice",
+          "UKGC notification",
+          "Recovery procedures"
+        ]
+      }
+    ],
+    "regulatory_expectations": [
+      "UKGC expects documented incident procedures",
+      "Personnel must know how to report incidents",
+      "Evidence of post-incident reviews and improvements",
+      "Compliance approach should detail incident management procedures",
+      "External reporting procedures for UKGC required incidents"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.24",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.24-information-security-incident-management-planning-and-preparation.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

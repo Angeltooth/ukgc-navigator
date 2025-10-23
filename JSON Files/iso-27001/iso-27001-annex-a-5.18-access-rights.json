@@ -1,0 +1,819 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.18",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.18",
+    "control_number": "A 5.18",
+    "control_title": "Access Rights",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure access to information and other associated assets is defined and authorised according to business requirements",
+    "control_objective": "Manage the full lifecycle of access rights in accordance with organization's topic-specific access control policy and rules"
+  },
+  "iso_27001_definition": {
+    "official_text": "Access rights to information and other associated assets should be provisioned, reviewed, modified and removed in accordance with the organisation's topic-specific policy on and rules for access control.",
+    "key_requirements": [
+      "Access rights provisioned in accordance with policy",
+      "Access rights reviewed in accordance with policy",
+      "Access rights modified in accordance with policy",
+      "Access rights removed in accordance with policy",
+      "Full lifecycle management of access rights",
+      "Policy-based and rules-based approach"
+    ]
+  },
+  "access_rights_overview": {
+    "definition": "Access rights are permissions and authorizations that control what an entity (user, system, service) can do with information and other associated assets",
+    "relationship_to_controls": {
+      "identity_management_5_16": "Identity determines WHO is accessing - identity is account/login",
+      "authentication_information_5_17": "Authentication proves the identity - password/multi-factor authentication",
+      "access_control_5_15": "Access control establishes rules for access based on information classification",
+      "access_rights_5_18": "Access rights assign specific permissions to specific identities based on business need"
+    },
+    "lifecycle_stages": [
+      "Provisioning (grant)",
+      "Review",
+      "Modification",
+      "Removal"
+    ],
+    "scope": [
+      "System access rights",
+      "Data access rights",
+      "Application access rights",
+      "File/folder permissions",
+      "Database permissions",
+      "Network access rights",
+      "Physical access rights"
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.18_REQ_1",
+      "requirement": "Obtain Authorization from Asset Owner",
+      "description": "Access rights must be authorized by the owner of the information or asset being accessed",
+      "details": {
+        "authorization_source": "Asset owner makes final determination of who gets access",
+        "asset_owner_definition": "The person responsible for the information or asset",
+        "principle": "Asset owner understands their data and who needs access to it",
+        "examples": [
+          "Database owner authorizes database access",
+          "System owner authorizes system access",
+          "Data owner authorizes data access",
+          "Application owner authorizes application access"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_2",
+      "requirement": "Base Access on Policy and Business Requirements",
+      "description": "Access rights must be granted based on organization's topic-specific access control policy and actual business requirements",
+      "details": {
+        "principle": "Access must be justified by policy and business need",
+        "elements": [
+          "Policy defines roles and access levels",
+          "Business requirement specifies what access needed",
+          "Access rights granted only where both policy and business requirement align",
+          "No access granted without documented business justification"
+        ],
+        "alignment": "Access rights must be consistent with information classification and role requirements"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_3",
+      "requirement": "Implement Segregation of Duty",
+      "description": "Separate the person requesting access from the person authorizing and granting access",
+      "details": {
+        "principle": "Segregation of duty prevents abuse of access granting",
+        "parties_involved": [
+          "Requestor - person requesting access",
+          "Authorizer - asset owner or manager approving",
+          "Implementer - person granting/provisioning access"
+        ],
+        "requirement": "Requestor cannot be the sole authorizer or implementer",
+        "benefit": "Provides check and balance on access provisioning"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_4",
+      "requirement": "Provision Access After Authorization",
+      "description": "Access rights are only provided after formal authorization, not before",
+      "details": {
+        "requirement": "No provisional access granted with intention to complete approval after",
+        "correct_approach": "Complete approval process first, then provision access",
+        "incorrect_approach": "Grant access then complete audit trail after the fact",
+        "timing": "Authorization must be completed and documented before access provisioning occurs",
+        "audit_trail": "Approval must be in place and documented prior to access being granted"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_5",
+      "requirement": "Provide Access for Required Duration Only",
+      "description": "Access rights are provided for as long as needed and removed when no longer required",
+      "details": {
+        "principle": "Time-limited access based on business need",
+        "duration_determination": "Business need determines how long access is needed",
+        "ongoing_access": "Access continues as long as business need exists",
+        "removal_trigger": "Access removed when business need no longer exists",
+        "review_process": "Regular review determines when access no longer needed",
+        "efficiency": "Minimizes rights in use, reduces risk"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_6",
+      "requirement": "Remove Access Upon Employment Termination",
+      "description": "Access rights are removed when a person leaves the organization",
+      "details": {
+        "trigger_events": [
+          "Employment termination",
+          "Resignation",
+          "Contract end",
+          "Role change resulting in no further need",
+          "Redundancy"
+        ],
+        "process": "Leaver process must include removal of all access rights",
+        "timing": "Access should be removed on or before last day",
+        "completeness": "All systems, applications, and assets must have access removed",
+        "verification": "Audit that all access was removed"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_7",
+      "requirement": "Manage Third Party and Supplier Access",
+      "description": "Suppliers and third parties are provided temporary access for specific time periods",
+      "details": {
+        "principle": "Time-limited, purpose-specific access for external parties",
+        "approach": [
+          "Access granted when needed",
+          "Access removed when no longer needed",
+          "Not continuous or open-ended",
+          "Clear business justification for duration"
+        ],
+        "example": "Third party contractor fixing issue granted access for fix duration, then access removed",
+        "documentation": "Business case for third party access and duration documented",
+        "removal": "Must be actively removed - not expected to expire automatically"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_8",
+      "requirement": "Maintain Records of Access Rights",
+      "description": "Records of who has access to what are maintained and managed",
+      "details": {
+        "records_to_maintain": [
+          "User to access rights mapping",
+          "Access approval documentation",
+          "Access grant date and time",
+          "Access modification history",
+          "Access removal date and time",
+          "Access review records"
+        ],
+        "access_register": "Maintain access rights register/inventory",
+        "documentation": "Keep audit trail of all lifecycle events",
+        "protection": "Protect access records as sensitive information"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_9",
+      "requirement": "Conduct Regular Access Reviews",
+      "description": "Reviews of access are carried out regularly to verify access still appropriate",
+      "details": {
+        "review_frequency": "Regular reviews conducted at defined intervals",
+        "privileged_accounts": "Review more frequently for privileged accounts",
+        "review_scope": [
+          "Verify access still needed",
+          "Verify user still employed/active",
+          "Verify access matches approved role",
+          "Identify orphaned accounts or unnecessary access",
+          "Check for violations or anomalies"
+        ],
+        "documentation": "Keep records of access reviews",
+        "action": "Remove access found to be no longer needed"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_10",
+      "requirement": "Avoid Account Cloning",
+      "description": "Account cloning should be avoided due to risk of incorrect permissions",
+      "details": {
+        "practice": "When creating new accounts, temptation to clone existing accounts",
+        "risk": "If source account has been modified or over-privileged, cloned accounts inherit those issues",
+        "danger": "All cloned accounts end up with superuser access or excessive permissions",
+        "caution": "If account cloning must occur, take great care with permission verification",
+        "best_practice": "Create accounts fresh based on role requirements rather than cloning"
+      }
+    },
+    {
+      "requirement_id": "A_5.18_REQ_11",
+      "requirement": "Implement Role-Based Access Control",
+      "description": "Role-based access is a great mechanism for managing access and should be considered",
+      "details": {
+        "mechanism": "Group permissions by role rather than assigning individually to each user",
+        "benefits": [
+          "Simplifies access management",
+          "Reduces errors and oversights",
+          "Aligns with job functions",
+          "Easier to audit and review",
+          "Scales with organization growth"
+        ],
+        "implementation": "Define roles, assign users to roles, grant permissions to roles",
+        "recommendation": "RBAC should be considered for all significant systems"
+      }
+    }
+  ],
+  "access_rights_lifecycle": {
+    "description": "Standard process for managing access rights through complete lifecycle",
+    "stages": [
+      {
+        "stage": 1,
+        "name": "Request Access",
+        "description": "User/manager requests access based on business need",
+        "details": [
+          "Business justification provided",
+          "Specific access requirements specified",
+          "Duration specified if time-limited",
+          "Role specified if applicable"
+        ]
+      },
+      {
+        "stage": 2,
+        "name": "Authorize",
+        "description": "Asset owner and appropriate authority authorize the request",
+        "details": [
+          "Asset owner reviews request",
+          "Verifies business need",
+          "Verifies requestor is different from authorizer",
+          "Approves or denies access",
+          "Documents authorization"
+        ]
+      },
+      {
+        "stage": 3,
+        "name": "Provision",
+        "description": "Access rights are granted and configured",
+        "details": [
+          "User identity created if needed",
+          "Access rights configured in systems",
+          "Permissions set according to authorization",
+          "Access tested and verified",
+          "User notified of access granted"
+        ]
+      },
+      {
+        "stage": 4,
+        "name": "Review",
+        "description": "Access rights periodically reviewed to verify appropriateness",
+        "details": [
+          "Scheduled reviews (quarterly, annually)",
+          "More frequent for privileged accounts",
+          "Verify user still needs access",
+          "Verify access still appropriate",
+          "Identify unnecessary or excessive access",
+          "Document review results"
+        ]
+      },
+      {
+        "stage": 5,
+        "name": "Modify",
+        "description": "Access rights changed based on business requirements or review findings",
+        "details": [
+          "Modification request submitted",
+          "Authorization required for changes",
+          "Changes implemented and tested",
+          "Changes documented and audited",
+          "Segregation of duty maintained"
+        ]
+      },
+      {
+        "stage": 6,
+        "name": "Remove",
+        "description": "Access rights removed when no longer needed",
+        "details": [
+          "Triggered by leaver process or role change",
+          "All access removed from all systems",
+          "Removal documented and audited",
+          "Verification that access removed",
+          "Account may be disabled or deleted"
+        ]
+      }
+    ]
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish Topic-Specific Access Control Policy",
+        "detail": "Document access control policy defining roles, access levels, and rules"
+      },
+      {
+        "step": 2,
+        "action": "Identify Asset Owners",
+        "detail": "Determine who owns each information asset or system"
+      },
+      {
+        "step": 3,
+        "action": "Define Role-Based Access Model",
+        "detail": "Define roles and corresponding access rights for each role"
+      },
+      {
+        "step": 4,
+        "action": "Implement Access Request and Authorization Process",
+        "detail": "Create formal process with segregation of duty"
+      },
+      {
+        "step": 5,
+        "action": "Create Access Rights Inventory",
+        "detail": "Document all current access rights and users"
+      },
+      {
+        "step": 6,
+        "action": "Configure Access Provisioning",
+        "detail": "Implement or configure systems to grant access as authorized"
+      },
+      {
+        "step": 7,
+        "action": "Establish Access Review Schedule",
+        "detail": "Create schedule for regular access reviews (quarterly minimum)"
+      },
+      {
+        "step": 8,
+        "action": "Implement Leaver Process",
+        "detail": "Establish process to remove all access upon employment termination"
+      },
+      {
+        "step": 9,
+        "action": "Train Personnel",
+        "detail": "Educate staff on access request process and responsibilities"
+      },
+      {
+        "step": 10,
+        "action": "Document Procedures",
+        "detail": "Document all access rights procedures with version control"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.18",
+    "checklist": [
+      {
+        "item": "Implement topic-specific access control policy",
+        "status": "required"
+      },
+      {
+        "item": "Define access rights based on roles and business need",
+        "status": "required"
+      },
+      {
+        "item": "Implement access request and authorization process",
+        "status": "required"
+      },
+      {
+        "item": "Enforce segregation of duty in access approval",
+        "status": "required"
+      },
+      {
+        "item": "Maintain access rights inventory/register",
+        "status": "required"
+      },
+      {
+        "item": "Implement provisioning of access after authorization",
+        "status": "required"
+      },
+      {
+        "item": "Establish schedule for regular access reviews",
+        "status": "required"
+      },
+      {
+        "item": "Conduct more frequent reviews for privileged accounts",
+        "status": "required"
+      },
+      {
+        "item": "Implement leaver process to remove access",
+        "status": "required"
+      },
+      {
+        "item": "Manage third party and supplier access",
+        "status": "required"
+      },
+      {
+        "item": "Document all procedures",
+        "status": "required"
+      },
+      {
+        "item": "Train personnel on processes",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with access rights",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "People have left but they still have access",
+        "description": "Access not removed when personnel or third parties leave the organization",
+        "root_cause": [
+          "No formal leaver process",
+          "Leaver process not followed",
+          "Forgotten or orphaned accounts",
+          "Contractor/third party access not managed"
+        ],
+        "impact": "Security risk - departed personnel retain access to systems and data",
+        "prevention": "Implement and rigorously follow leaver process",
+        "action": "Ensure access is current and departed personnel no longer have any access",
+        "audit_risk": "High - easiest win for auditor, results in immediate finding"
+      },
+      {
+        "rank": 2,
+        "mistake": "Third parties have open-ended access they do not need",
+        "description": "Third parties granted continuous access rather than time-limited, purpose-specific access",
+        "root_cause": [
+          "No process for third party access",
+          "Lack of documentation",
+          "Assumption access needed permanently",
+          "Forgotten when original need ended"
+        ],
+        "example": "Third party brought in to fix issue - given permanent access instead of temporary fix access",
+        "correct_approach": "Grant access only when needed for specific purpose, remove when purpose complete",
+        "prevention": "Process must grant access when required and remove when not needed",
+        "best_practice": "Time-limited, purpose-specific access for all third parties"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control is wrong",
+        "description": "Poor document version control and maintenance of access rights procedures",
+        "issues": [
+          "Version numbers don't match where used",
+          "Documents not reviewed in 12 months",
+          "Comments left in final documents",
+          "Old versions still in circulation",
+          "Inconsistent procedures across systems"
+        ],
+        "prevention": [
+          "Keep document version control up to date",
+          "Ensure version numbers match where used",
+          "Evidence review in last 12 months",
+          "Remove comments from final documents"
+        ],
+        "impact": "Shows lack of control and organization"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.18 audit",
+    "audit_areas": [
+      {
+        "area": "1. Verify Processes Are Followed",
+        "description": "Auditor checks that access rights procedures are documented and followed",
+        "checks": [
+          "Access control policy documented",
+          "Access rights procedures documented",
+          "Access request process documented",
+          "Authorization process documented with segregation of duty",
+          "Procedures followed in operation",
+          "Recent hires have access approval documentation",
+          "Granted access matches what was requested and approved",
+          "Access authorization in place before provisioning",
+          "Third party access time-limited",
+          "Audit trail of access lifecycle maintained"
+        ],
+        "easiest_win": "Request admin/privileged accounts from systems - likely to find unnecessary, orphaned, or unauthorized accounts (9 out of 10 times)",
+        "best_practice": "Maintain documented evidence of all access lifecycle activities"
+      },
+      {
+        "area": "2. Admin and Privileged Account Review",
+        "description": "Verify administrative and privileged account access is appropriate and necessary",
+        "checks": [
+          "List all admin accounts obtained",
+          "Auditor requests explanation for each admin account",
+          "Verification that each admin account is still needed",
+          "Verification that admin holds each account is correct",
+          "No orphaned or forgotten admin accounts",
+          "Admin access matches job function",
+          "No admin accounts for departed personnel"
+        ],
+        "frequency": "More frequent audits for privileged accounts",
+        "risk_focus": "Auditors focus here as admin access poses highest risk"
+      },
+      {
+        "area": "3. Rules and Procedures Compliance",
+        "description": "Verify documented procedures exist, are followed, and personnel are trained",
+        "checks": [
+          "Procedures documented for access provisioning",
+          "Procedures documented for access review",
+          "Procedures documented for access removal",
+          "Procedures followed in practice",
+          "Personnel trained on procedures",
+          "Leaver process documented and followed",
+          "No access remains for departed personnel",
+          "Business justification documented for access",
+          "Asset owner authorization documented"
+        ],
+        "biggest_gotcha": "People with access who have left - evidence of no leaver process or process not followed",
+        "red_flag": "Former employee or contractor accounts still active"
+      },
+      {
+        "area": "4. Access Review Evidence",
+        "description": "Verify regular access reviews are conducted and documented",
+        "checks": [
+          "Access review schedule exists",
+          "Access reviews conducted regularly",
+          "More frequent reviews for privileged accounts",
+          "Review documentation maintained",
+          "Review scope covers all systems and assets",
+          "Access removal actions documented from reviews",
+          "No access found that is no longer needed",
+          "Privileged account reviews current"
+        ]
+      },
+      {
+        "area": "5. Access Rights Inventory",
+        "description": "Verify access rights are tracked and documented",
+        "checks": [
+          "Access rights inventory/register maintained",
+          "All users and access documented",
+          "Inventory current and accurate",
+          "Segregation of duty evident in authorization",
+          "Third party access documented and time-limited",
+          "Role-based access documented",
+          "Access provisioning recorded"
+        ]
+      },
+      {
+        "area": "6. Documentation Quality",
+        "description": "Review documentation completeness and accuracy",
+        "checks": [
+          "All documents classified and labelled appropriately",
+          "Confidential documents labelled as such",
+          "Documents up to date",
+          "Documentation reviewed in last 12 months",
+          "Version control accurate",
+          "Version numbers match across references",
+          "Audit trails complete"
+        ],
+        "warning": "Poor documentation is a massive own goal"
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Access rights management is critical to protecting all gambling systems - controls who can do what with information and assets",
+    "specific_requirements": [
+      {
+        "system": "Sensitive Customer Information Systems",
+        "access_rights_requirements": [
+          "Strict role-based access control to customer data",
+          "Minimal personnel with access to payment card information",
+          "Read-only access where possible",
+          "Approval required from data owner for all access",
+          "Quarterly access reviews for customer data access",
+          "Privileged access removed upon role change",
+          "Third party vendor access time-limited and audited",
+          "Segregation of duty in access authorization",
+          "Access audit trail for all customer data access"
+        ]
+      },
+      {
+        "system": "Random Number Generation Systems",
+        "access_rights_requirements": [
+          "Minimal personnel with RNG system access (principle of least privilege)",
+          "All RNG access pre-approved and documented",
+          "Segregation of access - RNG development, testing, monitoring separate",
+          "Different access for RNG implementation vs. RNG validation",
+          "Monthly access reviews for RNG systems",
+          "No overlapping access across critical RNG functions",
+          "Immediate access removal if role no longer involves RNG work",
+          "Third party RNG vendor access strictly time-limited",
+          "Complete audit trail of all RNG access"
+        ]
+      },
+      {
+        "system": "Game State and Results Storage",
+        "access_rights_requirements": [
+          "Read access separated from write access",
+          "Approval required for any write access to game results",
+          "Audit trail of who accessed what and when",
+          "Access to audit trail itself controlled",
+          "Quarterly reviews of game state modification access",
+          "Role-based access aligned with job functions",
+          "No administrative access to game results data",
+          "Immediate access removal for separated personnel"
+        ]
+      },
+      {
+        "system": "System Access Points and Entry/Exit Controls",
+        "access_rights_requirements": [
+          "System access provisioning authorized before granted",
+          "All system access documented and registered",
+          "Access rights tied to specific systems and functions",
+          "Regular reviews of system access rights",
+          "Third party system access time-limited",
+          "Service account access managed per identity/authentication lifecycle"
+        ]
+      },
+      {
+        "system": "Communication Networks",
+        "access_rights_requirements": [
+          "Network access rights based on network segmentation",
+          "Different access rights for different network zones",
+          "VPN access rights authorized and limited",
+          "Remote access differentiated from local access",
+          "Network service account access controlled",
+          "Quarterly review of network access rights"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must implement comprehensive access rights management for all critical systems with role-based access, formal authorization, regular reviews, and documented audit trails"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Manage complete lifecycle of access rights to ensure only authorized entities have access to information and assets they need for legitimate business purposes",
+    "enforcement_priority": "Critical - access rights control what users can actually do once authenticated",
+    "key_principles": [
+      "Authorization before provisioning",
+      "Business justification required for all access",
+      "Asset owner authorization mandatory",
+      "Segregation of duty in access approval",
+      "Time-limited access based on business need",
+      "Immediate removal upon employment termination",
+      "Regular review of access appropriateness",
+      "More frequent reviews for privileged access",
+      "Role-based access control preferred",
+      "Avoid account cloning",
+      "Third party access temporary and purpose-specific",
+      "Complete audit trail of all access lifecycle events"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.18 Access Rights, implement the following",
+    "requirements": [
+      {
+        "requirement": "Implement process for creating, updating and removing access rights",
+        "detail": "Formal documented process covering all lifecycle stages"
+      },
+      {
+        "requirement": "Establish asset owner authorization requirement",
+        "detail": "Asset owner must approve all access provisioning"
+      },
+      {
+        "requirement": "Implement segregation of duty",
+        "detail": "Separate requestor, authorizer, and implementer roles"
+      },
+      {
+        "requirement": "Base access on policy and business requirements",
+        "detail": "Access granted only where policy and business need align"
+      },
+      {
+        "requirement": "Provision access after authorization",
+        "detail": "Authorization completed before access is granted"
+      },
+      {
+        "requirement": "Maintain access rights inventory",
+        "detail": "Document all users and their access rights"
+      },
+      {
+        "requirement": "Establish regular access review schedule",
+        "detail": "Conduct reviews at defined intervals, more frequently for privileged accounts"
+      },
+      {
+        "requirement": "Implement leaver process",
+        "detail": "Remove all access upon employment termination"
+      },
+      {
+        "requirement": "Manage third party access",
+        "detail": "Time-limited, purpose-specific access for external parties"
+      },
+      {
+        "requirement": "Implement role-based access control",
+        "detail": "Group permissions by role where possible"
+      },
+      {
+        "requirement": "Document all procedures",
+        "detail": "Maintain updated documentation with version control"
+      },
+      {
+        "requirement": "Train personnel",
+        "detail": "Educate staff on access request and approval process"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "prerequisite_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 5.12 - Classification of information",
+      "ISO 27001 A 5.15 - Access control",
+      "ISO 27001 A 5.16 - Identity management"
+    ],
+    "dependent_controls": [
+      "ISO 27001 A 5.17 - Authentication information",
+      "ISO 27001 A 6.5 - Responsibilities after termination or change of employment"
+    ],
+    "related_iso_controls": [
+      "ISO 27001 A 8.2 - Privileged access rights",
+      "ISO 27001 A 8.3 - Information access restriction",
+      "ISO 27001 A 9.4 - Physical and logical access restrictions"
+    ],
+    "cross_references": [
+      "Access Control (A 5.15) - establishes rules for access based on classification",
+      "Identity Management (A 5.16) - manages identities to which access rights assigned",
+      "Authentication Information (A 5.17) - proves identity gets assigned access",
+      "Privileged Access Rights (A 8.2) - manages elevated access rights"
+    ]
+  },
+  "best_practices": {
+    "authorization_best_practices": [
+      "Asset owner signs off on all access requests",
+      "Maintain approval audit trail",
+      "Verify segregation of duty in all approvals",
+      "Document business justification for all access",
+      "Review and approve before provisioning occurs"
+    ],
+    "provisioning_best_practices": [
+      "Automate access provisioning where possible",
+      "Provision only after authorization",
+      "Configure access per specific authorization",
+      "Test access provisioning",
+      "Document what was provisioned and when"
+    ],
+    "review_best_practices": [
+      "Schedule regular access reviews (quarterly minimum)",
+      "Review privileged accounts monthly",
+      "Include user managers in review process",
+      "Document review findings and actions",
+      "Remove access found no longer needed",
+      "Maintain evidence of reviews"
+    ],
+    "removal_best_practices": [
+      "Implement automated leaver process",
+      "Remove access on or before last day",
+      "Remove access from all systems",
+      "Document removal and verification",
+      "Archive removed user data per policy"
+    ],
+    "rbac_best_practices": [
+      "Define clear role definitions",
+      "Group permissions by role",
+      "Assign users to roles rather than individual permissions",
+      "Regular review of role definitions",
+      "Avoid role proliferation"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "high_risk_areas": [
+      {
+        "area": "Customer Data Access",
+        "risk": "Excessive access to customer payment information, personal details, account balances",
+        "control": "Minimal personnel with access, read-only where possible, frequent reviews"
+      },
+      {
+        "area": "RNG System Access",
+        "risk": "Access to RNG systems could allow manipulation of game fairness",
+        "control": "Strictly limited access, segregation of duties, monthly reviews, no overlapping access"
+      },
+      {
+        "area": "Admin Account Access",
+        "risk": "Elevated privileges could allow unauthorized modifications to systems and data",
+        "control": "Minimal admin access, segregation of duties, frequent privileged account reviews"
+      },
+      {
+        "area": "Former Employee Access",
+        "risk": "Departed personnel retaining access poses ongoing security risk",
+        "control": "Rigorous leaver process, verification of all access removal"
+      },
+      {
+        "area": "Third Party Vendor Access",
+        "risk": "Extended vendor access beyond needed duration",
+        "control": "Time-limited access, documented business case, active removal"
+      }
+    ],
+    "regulatory_expectations": [
+      "UKGC expects sophisticated access rights management",
+      "Principle of least privilege strongly emphasized",
+      "Role-based access control expected for large gambling operations",
+      "Access audit trail required for all systems",
+      "Compliance approach should document access rights for each critical system",
+      "Regular privileged access reviews expected",
+      "Leaver process verification mandatory"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.18",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.18-access-rights.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

@@ -1,0 +1,65 @@
+ISO 27001 Collection Of Evidence
+
+ISO 27001 Annex A 5.28 Collection of Evidence requires an organisation to identify, collect, acquire and preserve evidence related to information security incidents.
+It is an ISO 27001 control that forms part of information security incident management.
+Purpose
+
+The purpose of ISO 27001 Clause 5.28 is to ensure a consistent and effective management of evidence related to information security incidents for the purposes of disciplinary and legal actions.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 5.28 as:
+The organisation should establish and implement procedures for the identification, collection, acquisition and preservation of evidence related to information security events.
+Implementation Guide
+
+It is my experience that the best way to implement Annex A 5.28 is to have a procedure that calls in the professionals to do the work. This would form part of your incident management process and would be instigated at the earliest opportunity. This usually means as soon as it becomes clear that evidence collection will be required to support a legal or disciplinary process.
+Having a Collection of Evidence Policy and a process that has the contact details for a pre selected, pre vetted supplier is the best way to implement Annex A 5.28.
+The requirements of ISO 27001 Collection of Evidence
+
+As the control is looking at the collection of evidence to support legal and disciplinary action the first requirement is to understand the different laws and jurisdictions that apply to you. If you understand the needs of these laws you will understand what requirements they have and increase your chances of successfully admitting your evidence for consideration.
+The requirements of the control are based around having documented processes and procedures that meet the requirements of applicable laws. Those processes and procedures are going to cover
+Identification of evidence
+Collection of evidence
+Acquisition of evidence
+Preservation of evidence
+When implementing those processes and procedures you are going to ensure that
+Evidence and records are complete and have not been tampered with
+Copies of electronic evidence are identical to the origionals
+Evidence from systems was from systems operating as intended at the time of collection
+It is best practice and recommended that people that are involved in the process and collection of evidence and trained, qualified and certified to the appropriate level.
+How to comply
+
+To comply with ISO 27001 Annex A 5.28 you are going to implement the ‘how’ to the ‘what’ the control is expecting. In short measure you are going to:
+Have an ISO 27001 topic specific policy for the collection of evidence
+Implement a process that outsource the collection of evidence to an appropriate, qualified, certified, pre vetted supplier at the earliest opportunity
+Incorporate that process into your information security incident management process
+How to pass an audit
+
+To pass an audit of ISO 27001 Annex A 5.28 you are going to make sure that you have followed the steps above in how to comply and be able to evidence it in operation. It maybe that you have not had to implement the process for the collection of evidence, which is acceptable, in which case just your policy and procedures will be audited.
+Have an ISO 27001 topic specific policy for the collection of evidence
+Implement a process that outsource the collection of evidence to an appropriate, qualified, certified, pre vetted supplier at the earliest opportunity
+Incorporate that process into your information security incident management process
+Be able to evidence that you followed the documented process in the event that you have had to collect evidence as part of your business operations.
+What an auditor will check
+
+The audit is going to check a number of areas. Lets go through the main ones
+1. That you have documented your collection of evidence process
+
+The audit will check the documentation, that you have reviewed it and signed and it off and that it represents what you actually do not what you think they want to hear.
+2. That you can demonstrate the process working
+
+They are going to ask you for evidence to the collection of evidence process and take at least one example. For this example you are going to show them and walk them through the process and prove that you followed it and that the process worked.
+3. That you can learn your lesson
+
+Documenting your lessons learnt and following this through to continual improvements or incident and corrective actions will be checked.
+Top 3 Mistakes People Make
+
+The most common mistakes people make for ISO 27001 Annex A 5.28 are
+1. Not having a documented collection of evidence process and policy.
+
+This is the most common mistake made by organisations. A documented collection of evidence policy and collection of evidence process is essential for effective incident response.
+2. Not having evidence collected by professionals
+
+There are so many mistakes that can be made in the collection of evidence that would render the evidence useless. The standard guidance is to use trained and qualified personnel. Whether in house or out sourced you should ensure that you engage with professionals at the earliest opportunity and at least as soon as it becomes evident that evidence is required for legal or disciplinary purposes.
+3. Not monitoring the effectiveness of the collections of evidence process
+
+It is important to monitor its effectiveness of the collection of evidence process. This means reviewing the process, conducting internal audits and reviewing actual incidents for lessons learnt.

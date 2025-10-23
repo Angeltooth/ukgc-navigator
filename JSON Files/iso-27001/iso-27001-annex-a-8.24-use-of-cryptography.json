@@ -1,0 +1,821 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 8.24",
+  "last_updated": "2025-01-15",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_8.24",
+    "control_number": "A 8.24",
+    "control_title": "Use of Cryptography",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure proper and effective use of cryptography to protect confidentiality, authenticity and integrity of information according to business requirements and legal, regulatory and contractual obligations",
+    "control_objective": "Define and implement rules for effective use of cryptography including key management procedures to protect information and ensure compliance with applicable laws"
+  },
+  "iso_27001_definition": {
+    "official_text": "Rules for the effective use of cryptography, including cryptographic key management, should be defined and implemented.",
+    "key_requirements": [
+      "Rules for effective use of cryptography defined",
+      "Cryptography requirements based on information classification",
+      "Cryptographic standards and algorithms documented",
+      "Key management procedures established",
+      "Encryption of sensitive data at rest and in transit",
+      "Cryptographic key generation and distribution controlled",
+      "Key storage and protection procedures documented",
+      "Key compromise and recovery procedures in place",
+      "Legal and regulatory requirements addressed"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control ensuring cryptography is used effectively to protect information and manage associated risks",
+    "scope": [
+      "Data encryption at rest",
+      "Data encryption in transit",
+      "Cryptographic algorithms and key management",
+      "Digital signatures and authentication",
+      "Cryptographic key lifecycle management",
+      "Endpoint encryption",
+      "Mobile device encryption",
+      "Cloud data encryption"
+    ],
+    "key_outcome": "Confidentiality, authenticity and integrity of information protected through proper cryptography implementation and key management"
+  },
+  "prerequisites": {
+    "description": "Before implementing cryptography controls, foundational requirements must be met",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Information Classification",
+        "description": "Information classification scheme implemented",
+        "rationale": "Cryptography requirements determined by information classification level",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "Legal and Regulatory Review",
+        "description": "Legal review of cryptography requirements and restrictions",
+        "rationale": "Cryptography laws vary by jurisdiction and must be understood",
+        "reference": "Legal and regulatory requirements"
+      },
+      {
+        "prerequisite": "Information Classification and Handling Policy",
+        "description": "Policy documenting encryption requirements by data type",
+        "rationale": "Cryptography requirements defined in information handling policy",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "Risk Assessment",
+        "description": "Risk assessment identifying encryption needs",
+        "rationale": "Cryptography requirements aligned with identified risks",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      }
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_8.24_REQ_1",
+      "requirement": "Understand Legal and Regulatory Requirements",
+      "description": "Review and document applicable cryptography laws and regulations",
+      "details": {
+        "legal_considerations": [
+          "Laws governing cryptography use in UK jurisdiction",
+          "Regulations related to data protection and encryption",
+          "Export controls on cryptography where applicable",
+          "Industry-specific cryptography requirements",
+          "Customer contractual requirements for encryption",
+          "Regulatory requirements from UKGC"
+        ],
+        "legal_review_process": [
+          "Obtain legal professional advice on cryptography requirements",
+          "Document legal advice received and comply with recommendations",
+          "Review cryptography laws in all jurisdictions where data processed",
+          "Identify any restrictions on cryptography use",
+          "Maintain evidence of legal review",
+          "Update review when laws or regulations change"
+        ],
+        "regulatory_compliance": [
+          "GDPR requirements for data protection encryption",
+          "Payment Card Industry (PCI) DSS encryption requirements",
+          "UKGC requirements for customer data protection",
+          "Industry standards and best practices"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_2",
+      "requirement": "Define Cryptography Policy",
+      "description": "Develop topic-specific cryptography and key management policy",
+      "details": {
+        "cryptography_policy_content": [
+          "Purpose and objectives of cryptography use",
+          "Information types requiring encryption",
+          "Encryption requirements by data classification level",
+          "Approved cryptographic standards and algorithms",
+          "Encryption key strength and cipher requirements",
+          "Confidential data encrypted at rest and in transit",
+          "Key management procedures and responsibilities",
+          "Roles and responsibilities for cryptography"
+        ],
+        "key_management_policy": [
+          "Key generation procedures and standards",
+          "Key distribution and transmission procedures",
+          "Key storage and protection requirements",
+          "Key lifecycle management procedures",
+          "Key change and rotation schedules",
+          "Key compromise response procedures",
+          "Key recovery and backup procedures",
+          "Key destruction procedures",
+          "Logging and monitoring of key activities"
+        ],
+        "policy_documentation": [
+          "Policy formally documented and approved",
+          "Policy communicated to all relevant personnel",
+          "Policy reviewed and updated annually",
+          "Version control maintained",
+          "Evidence of review recorded"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_3",
+      "requirement": "Select Cryptographic Standards and Algorithms",
+      "description": "Choose appropriate cryptographic standards and algorithms",
+      "details": {
+        "standard_selection": [
+          "Industry-standard encryption algorithms selected",
+          "Algorithm strength appropriate for data sensitivity",
+          "Key length meeting current security standards",
+          "Compliance with regulatory requirements",
+          "Avoidance of weak or deprecated algorithms"
+        ],
+        "approved_encryption": [
+          "AES for symmetric encryption (128, 192, 256-bit keys)",
+          "RSA for asymmetric encryption (2048-bit or stronger)",
+          "SHA-256 or stronger for cryptographic hashing",
+          "TLS 1.2 or 1.3 for data in transit encryption",
+          "Deprecated algorithms (DES, MD5, SHA-1) avoided"
+        ],
+        "algorithm_documentation": [
+          "Approved algorithms documented",
+          "Algorithm selection justified",
+          "Cipher strength documented",
+          "Standards referenced (NIST, BSI, etc.)",
+          "Review and update of algorithms annually"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_4",
+      "requirement": "Implement Encryption at Rest",
+      "description": "Deploy encryption for data stored on systems and devices",
+      "details": {
+        "data_at_rest_encryption": [
+          "Database encryption for stored data",
+          "File system encryption for storage devices",
+          "Endpoint encryption for desktop and laptop computers",
+          "Mobile device encryption for smartphones and tablets",
+          "Backup encryption for stored backups",
+          "Archive encryption for long-term storage"
+        ],
+        "implementation_approach": [
+          "Use operating system built-in encryption where available",
+          "Deploy full disk encryption on endpoints",
+          "Use database native encryption capabilities",
+          "Implement application-level encryption for sensitive data",
+          "Encrypt temporary files and working data",
+          "Secure deletion of encrypted data"
+        ],
+        "sensitive_data_protection": [
+          "Customer personal data encrypted at rest",
+          "Payment card data encrypted at rest",
+          "Account information encrypted at rest",
+          "Financial transaction data encrypted at rest",
+          "Authentication credentials encrypted at rest"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_5",
+      "requirement": "Implement Encryption in Transit",
+      "description": "Deploy encryption for data transmitted across networks",
+      "details": {
+        "data_in_transit_encryption": [
+          "HTTPS/TLS for web traffic",
+          "VPN encryption for remote access",
+          "Email encryption for sensitive communications",
+          "Database replication encryption",
+          "Backup transmission encryption",
+          "API communication encryption",
+          "Inter-system communication encryption"
+        ],
+        "encryption_standards": [
+          "TLS 1.2 minimum for HTTPS",
+          "TLS 1.3 preferred for new implementations",
+          "Strong cipher suites configured",
+          "Perfect forward secrecy enabled",
+          "Certificate validation enforced",
+          "Deprecated protocols disabled (SSL 3.0, TLS 1.0, TLS 1.1)"
+        ],
+        "certificate_management": [
+          "SSL/TLS certificates from trusted CAs",
+          "Certificate validity verified",
+          "Certificate expiration monitored",
+          "Private keys protected",
+          "Certificate renewal procedures documented",
+          "Compromised certificate revocation procedures"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_6",
+      "requirement": "Establish Key Management Procedures",
+      "description": "Implement comprehensive cryptographic key management",
+      "details": {
+        "key_generation": [
+          "Keys generated using cryptographically secure random sources",
+          "Key generation in secure environment",
+          "Sufficient key entropy",
+          "Documentation of key generation process",
+          "Key generation logged and auditable"
+        ],
+        "key_distribution": [
+          "Secure key transmission methods",
+          "Keys distributed over encrypted channels",
+          "Key escrow procedures where legally required",
+          "Public key infrastructure (PKI) for key distribution",
+          "Key distribution audit trail maintained"
+        ],
+        "key_storage": [
+          "Keys stored in secure locations",
+          "Hardware security modules (HSM) for critical keys",
+          "Access controls limiting key access",
+          "Key storage locations documented",
+          "Segregation of keys and encrypted data",
+          "Protection against unauthorized key access"
+        ],
+        "key_lifecycle_management": [
+          "Key creation documented",
+          "Key activation schedule defined",
+          "Key rotation schedule established",
+          "Key retirement and destruction procedures",
+          "Key versioning maintained",
+          "Lifecycle documented and tracked"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_7",
+      "requirement": "Manage Key Compromise and Recovery",
+      "description": "Establish procedures for handling key compromise and recovery",
+      "details": {
+        "compromise_procedures": [
+          "Process for detecting key compromise",
+          "Immediate notification procedures",
+          "Key revocation procedures",
+          "Data re-encryption with new keys",
+          "Customer notification if required",
+          "Investigation of compromise cause",
+          "Preventive measures to avoid recurrence"
+        ],
+        "key_loss_recovery": [
+          "Key loss detection and reporting",
+          "Backup key recovery procedures",
+          "Key recovery from key escrow (if applicable)",
+          "Recovery testing and verification",
+          "Documentation of recovery procedures"
+        ],
+        "key_backup": [
+          "Critical keys backed up securely",
+          "Backup keys stored separately from primary keys",
+          "Backup keys protected with same security as primary",
+          "Backup key restoration procedures documented",
+          "Backup testing performed regularly"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_8",
+      "requirement": "Implement Key Management Logging and Monitoring",
+      "description": "Establish logging and monitoring of cryptographic key activities",
+      "details": {
+        "logging_requirements": [
+          "Key generation logged with date, time and person",
+          "Key distribution logged",
+          "Key storage location and protection verified",
+          "Key usage logged for audit purposes",
+          "Key rotation logged",
+          "Key destruction logged with evidence",
+          "Key compromise incidents logged",
+          "Unauthorized key access attempts logged"
+        ],
+        "monitoring_activities": [
+          "Monitoring of key management system operation",
+          "Alerts for key compromise attempts",
+          "Alerts for unauthorized key access",
+          "Alerts for key expiration approaching",
+          "Alerts for suspicious key usage patterns",
+          "Regular review of key management logs"
+        ],
+        "log_retention": [
+          "Key management logs retained for investigation",
+          "Logs protected from unauthorized access",
+          "Logs retained for period required by regulations",
+          "Audit trail of all key activities maintained"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_9",
+      "requirement": "Address Cryptographic Objectives",
+      "description": "Ensure cryptography implementation achieves security objectives",
+      "details": {
+        "confidentiality_objective": [
+          "Encryption protects data from interception",
+          "Encryption prevents unauthorized data access",
+          "Encrypted data useless if intercepted",
+          "Strong encryption prevents data decryption attempts",
+          "Confidentiality of sensitive information ensured"
+        ],
+        "integrity_objective": [
+          "Cryptographic hashing detects data modification",
+          "Digital signatures ensure data authenticity",
+          "Message authentication codes verify data integrity",
+          "Tampered data detected through integrity checks",
+          "Data integrity maintained during transmission"
+        ],
+        "non_repudiation_objective": [
+          "Digital signatures provide evidence of actions",
+          "Cryptographic proof of message origin",
+          "Evidence of approval or authorization",
+          "Non-repudiation of transactions for disputes",
+          "Forensic evidence of events"
+        ],
+        "authentication_objective": [
+          "Cryptographic authentication of users and systems",
+          "Multi-factor authentication using cryptography",
+          "Mutual authentication between systems",
+          "Prevention of unauthorized access through authentication",
+          "Identity verification through cryptography"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.24_REQ_10",
+      "requirement": "Test and Verify Cryptography Implementation",
+      "description": "Conduct testing to verify cryptography controls are functioning",
+      "details": {
+        "testing_activities": [
+          "Verify encryption is enabled and functioning",
+          "Test key generation and distribution",
+          "Verify key storage protection",
+          "Test encryption at rest and in transit",
+          "Verify certificate validity and proper configuration",
+          "Test key rotation procedures",
+          "Verify key compromise procedures",
+          "Test backup and recovery of keys"
+        ],
+        "testing_frequency": [
+          "Initial testing after implementation",
+          "Testing after configuration changes",
+          "Regular periodic testing (annually minimum)",
+          "Testing as part of internal audits",
+          "Penetration testing of encryption"
+        ],
+        "testing_documentation": [
+          "Test procedures documented",
+          "Test results recorded",
+          "Issues identified and remediated",
+          "Verification of remediation",
+          "Evidence retained for audit"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Obtain legal and regulatory advice",
+        "detail": "Consult legal professionals on cryptography laws and requirements"
+      },
+      {
+        "step": 2,
+        "action": "Review information classification scheme",
+        "detail": "Identify data requiring encryption based on classification levels"
+      },
+      {
+        "step": 3,
+        "action": "Develop cryptography policy",
+        "detail": "Create topic-specific cryptography and key management policies"
+      },
+      {
+        "step": 4,
+        "action": "Select cryptographic standards",
+        "detail": "Choose approved encryption algorithms and key strengths"
+      },
+      {
+        "step": 5,
+        "action": "Implement encryption at rest",
+        "detail": "Deploy encryption for stored data and devices"
+      },
+      {
+        "step": 6,
+        "action": "Implement encryption in transit",
+        "detail": "Deploy HTTPS, VPN and other network encryption"
+      },
+      {
+        "step": 7,
+        "action": "Establish key management procedures",
+        "detail": "Document key generation, storage, rotation and recovery"
+      },
+      {
+        "step": 8,
+        "action": "Implement key management system",
+        "detail": "Deploy tools for managing cryptographic keys"
+      },
+      {
+        "step": 9,
+        "action": "Configure logging and monitoring",
+        "detail": "Enable logging of key management and encryption activities"
+      },
+      {
+        "step": 10,
+        "action": "Test and verify cryptography",
+        "detail": "Conduct testing to verify all controls are functioning"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 8.24",
+    "checklist": [
+      {
+        "item": "Legal and regulatory advice on cryptography obtained and documented",
+        "status": "required"
+      },
+      {
+        "item": "Cryptography policy developed and approved",
+        "status": "required"
+      },
+      {
+        "item": "Key management policy developed and approved",
+        "status": "required"
+      },
+      {
+        "item": "Encryption requirements defined by data classification level",
+        "status": "required"
+      },
+      {
+        "item": "Approved cryptographic standards and algorithms documented",
+        "status": "required"
+      },
+      {
+        "item": "Encryption implemented for sensitive data at rest",
+        "status": "required"
+      },
+      {
+        "item": "Encryption implemented for sensitive data in transit",
+        "status": "required"
+      },
+      {
+        "item": "HTTPS/TLS implemented for web traffic",
+        "status": "required"
+      },
+      {
+        "item": "Endpoint and mobile device encryption implemented",
+        "status": "required"
+      },
+      {
+        "item": "Key generation procedures documented and implemented",
+        "status": "required"
+      },
+      {
+        "item": "Key distribution procedures documented and implemented",
+        "status": "required"
+      },
+      {
+        "item": "Key storage protection procedures documented and implemented",
+        "status": "required"
+      },
+      {
+        "item": "Key rotation schedule established and followed",
+        "status": "required"
+      },
+      {
+        "item": "Key compromise procedures documented",
+        "status": "required"
+      },
+      {
+        "item": "Key recovery and backup procedures documented",
+        "status": "required"
+      },
+      {
+        "item": "Key management logging and monitoring implemented",
+        "status": "required"
+      },
+      {
+        "item": "Cryptography testing performed and documented",
+        "status": "required"
+      },
+      {
+        "item": "Certificate management procedures implemented",
+        "status": "required"
+      },
+      {
+        "item": "Internal audit of cryptography controls conducted",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with cryptography",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Weak or inadequate key management",
+        "description": "Cryptographic keys not properly managed, stored or protected allowing key compromise or loss",
+        "root_cause": [
+          "Lack of formal key management procedures",
+          "Keys stored insecurely or with insufficient access controls",
+          "No key backup or recovery procedures",
+          "Lack of awareness of key management importance",
+          "Cost or complexity concerns"
+        ],
+        "impact": "Key compromise exposes encrypted data, key loss prevents data access, audit failures, regulatory violations",
+        "prevention": [
+          "Establish formal key management policy and procedures",
+          "Store keys in secure locations with access controls",
+          "Implement key backup and recovery procedures",
+          "Use hardware security modules for critical keys",
+          "Regular testing of key backup and recovery",
+          "Training for personnel handling keys"
+        ]
+      },
+      {
+        "rank": 2,
+        "mistake": "Use of weak encryption algorithms or key lengths",
+        "description": "Encryption using weak or deprecated algorithms or insufficiently long key lengths that can be broken",
+        "root_cause": [
+          "Use of legacy or default encryption",
+          "Lack of understanding of encryption strength",
+          "Cost considerations using weaker encryption",
+          "Backward compatibility requirements",
+          "Lack of security review during implementation"
+        ],
+        "impact": "Encryption can be broken, data exposed, compliance violations, regulatory penalties",
+        "prevention": [
+          "Use only industry-standard strong encryption algorithms",
+          "Implement minimum key lengths (AES-128 or stronger)",
+          "Avoid deprecated algorithms (DES, MD5, SHA-1)",
+          "Regular review of cryptographic standards",
+          "Security review before implementation",
+          "Use NIST and other standards as guidance"
+        ]
+      },
+      {
+        "rank": 3,
+        "mistake": "Inconsistent or incomplete encryption implementation",
+        "description": "Some data encrypted while other sensitive data is not encrypted creating inconsistent protection",
+        "root_cause": [
+          "No comprehensive encryption policy",
+          "Lack of data classification to identify what needs encryption",
+          "Piecemeal encryption implementation",
+          "Lack of coordination across systems",
+          "Legacy systems without encryption capability"
+        ],
+        "impact": "Unencrypted sensitive data exposed, audit findings of non-compliance, data breaches",
+        "prevention": [
+          "Establish comprehensive encryption policy",
+          "Classify all data by sensitivity level",
+          "Identify all data types requiring encryption",
+          "Implement encryption consistently across all systems",
+          "Plan migration of legacy systems",
+          "Regular audit of encryption implementation"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 8.24 audit",
+    "audit_areas": [
+      {
+        "area": "1. Cryptography Policy Documentation",
+        "description": "Verify cryptography and key management policies are documented",
+        "checks": [
+          "Cryptography policy exists and is approved",
+          "Key management policy documented",
+          "Encryption requirements defined by data classification",
+          "Approved encryption algorithms documented",
+          "Policy reviewed within last 12 months"
+        ]
+      },
+      {
+        "area": "2. Encryption Implementation",
+        "description": "Verify encryption is implemented for sensitive data",
+        "checks": [
+          "Data at rest encryption implemented",
+          "Data in transit encryption implemented",
+          "HTTPS/TLS configured for web traffic",
+          "Endpoint and mobile device encryption",
+          "Encryption functioning and enabled",
+          "Certificate validity verified"
+        ]
+      },
+      {
+        "area": "3. Key Management",
+        "description": "Verify key management procedures are implemented",
+        "checks": [
+          "Key generation procedures documented",
+          "Key distribution procedures documented",
+          "Key storage procedures secure",
+          "Key rotation procedures implemented",
+          "Key compromise procedures documented",
+          "Key backup and recovery procedures tested"
+        ]
+      },
+      {
+        "area": "4. Key Protection",
+        "description": "Verify cryptographic keys are protected",
+        "checks": [
+          "Keys stored securely with access controls",
+          "Keys not stored with encrypted data",
+          "Access to keys logged and audited",
+          "Key usage monitored",
+          "Key compromise procedures in place"
+        ]
+      },
+      {
+        "area": "5. Legal Compliance",
+        "description": "Verify cryptography implementation complies with laws",
+        "checks": [
+          "Legal advice on cryptography obtained",
+          "Cryptography use complies with regulations",
+          "Key escrow or recovery procedures where legally required",
+          "Documentation of legal compliance"
+        ]
+      },
+      {
+        "area": "6. Testing and Verification",
+        "description": "Verify encryption controls are tested",
+        "checks": [
+          "Encryption testing documented and performed",
+          "Key management procedures tested",
+          "Backup and recovery procedures tested",
+          "Test results documented",
+          "Issues identified and remediated"
+        ]
+      },
+      {
+        "area": "7. Gambling Operator-Specific Encryption",
+        "description": "Verify critical gambling data is properly encrypted",
+        "checks": [
+          "Customer data encrypted at rest and in transit",
+          "Payment card data encrypted",
+          "Account information encrypted",
+          "Transaction data encrypted",
+          "Game outcome data protected"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, cryptography is critical for protecting customer personal data, payment information and ensuring transaction integrity. UKGC expects encryption of sensitive data at rest and in transit and documented key management procedures.",
+    "specific_requirements": [
+      "Customer personal data (name, address, ID) encrypted at rest and in transit",
+      "Payment card data encrypted in transit and at rest per PCI DSS requirements",
+      "Customer financial account information encrypted",
+      "Customer authentication credentials encrypted at rest",
+      "Transaction data encrypted for confidentiality",
+      "Communication to payment processors encrypted",
+      "Backup data encrypted",
+      "HTTPS/TLS enforced for all web traffic",
+      "Cryptographic key management procedures documented and followed",
+      "Key generation, storage and rotation procedures implemented"
+    ],
+    "compliance_requirement": "Gambling operators must implement encryption for sensitive data with documented key management procedures to protect customer information and ensure compliance with UKGC and data protection requirements"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Protect confidentiality, integrity and authenticity of information through proper cryptography implementation and key management",
+    "enforcement_priority": "Critical - cryptography is essential for protecting customer data and ensuring regulatory compliance",
+    "key_principles": [
+      "Legal and regulatory requirements understood and followed",
+      "Comprehensive cryptography policy established",
+      "Strong encryption algorithms and key lengths used",
+      "Encryption implemented for all sensitive data",
+      "Robust key management procedures implemented",
+      "Encryption testing and verification performed",
+      "Key compromise procedures in place",
+      "Consistent encryption across all systems"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 8.24 Use of Cryptography, implement",
+    "requirements": [
+      "Legal advice on cryptography requirements obtained and documented",
+      "Cryptography policy approved and communicated",
+      "Key management policy documented and approved",
+      "Information classification scheme incorporates encryption requirements",
+      "Approved cryptographic standards and algorithms documented",
+      "Encryption implemented for all sensitive data at rest",
+      "Encryption implemented for all sensitive data in transit",
+      "HTTPS/TLS configured for web applications",
+      "Endpoint and mobile device encryption enabled",
+      "Key generation procedures using secure random sources",
+      "Key storage in secure locations with access controls",
+      "Key distribution procedures for secure key transmission",
+      "Key rotation schedule established and implemented",
+      "Key backup and recovery procedures documented and tested",
+      "Key compromise procedures documented and understood",
+      "Logging of all key management activities",
+      "Monitoring for unauthorized key access or use",
+      "Encryption testing performed and documented",
+      "Certificate management procedures implemented",
+      "Internal audit of cryptography controls conducted"
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "UK Gambling Commission Remote Technical Standards (RTS) Chapter 4 - Systems and Operational Security",
+    "related_controls": [
+      {
+        "control": "ISO 27001 A 5.12 - Classification of information",
+        "relationship": "Data classification determines encryption requirements"
+      },
+      {
+        "control": "ISO 27001 A 8.1 - Networks and information processing facilities",
+        "relationship": "Encryption protects information in networks and on facilities"
+      },
+      {
+        "control": "ISO 27001 A 8.15 - Logging",
+        "relationship": "Key management activities must be logged"
+      }
+    ]
+  },
+  "best_practices": {
+    "encryption_best_practices": [
+      "Use industry-standard encryption algorithms",
+      "Implement AES-256 for sensitive data encryption",
+      "Use TLS 1.2 or 1.3 for network encryption",
+      "Enforce HTTPS on all web applications",
+      "Encrypt endpoint storage with full disk encryption",
+      "Implement database encryption for stored data",
+      "Use hardware security modules for critical keys",
+      "Implement encryption in application code where possible"
+    ],
+    "key_management_best_practices": [
+      "Generate keys using cryptographically secure random sources",
+      "Store keys separately from encrypted data",
+      "Restrict key access to minimum necessary personnel",
+      "Implement key rotation at regular intervals",
+      "Maintain secure key backup for recovery",
+      "Test key recovery procedures regularly",
+      "Log all key management activities",
+      "Protect key storage locations with physical and logical controls"
+    ],
+    "policy_and_governance_best_practices": [
+      "Establish comprehensive cryptography policy",
+      "Define encryption requirements by data type",
+      "Specify approved algorithms and key lengths",
+      "Document key management procedures",
+      "Assign clear responsibility for key management",
+      "Establish approval authority for cryptography changes",
+      "Review and update policy annually",
+      "Maintain documentation of all cryptography decisions"
+    ],
+    "testing_and_verification_best_practices": [
+      "Test encryption implementation initially",
+      "Verify encryption after system changes",
+      "Regularly test key backup and recovery",
+      "Perform annual cryptographic security audit",
+      "Conduct penetration testing of encryption",
+      "Test encryption failover and redundancy",
+      "Document all testing results",
+      "Address any deficiencies found in testing"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "customer_data_encryption": "All customer personal data including names, addresses, identification information and contact details must be encrypted at rest and in transit. Customer account information and balances should be encrypted. Encryption protects customer privacy and supports GDPR compliance.",
+    "payment_card_protection": "Payment card data must be encrypted per PCI DSS requirements. Card data should never be stored unencrypted. Communication with payment processors must use encryption. Encryption protects payment card information from interception or theft.",
+    "transaction_security": "Wager transactions and game outcome information should be encrypted to protect transaction integrity and confidentiality. Transaction logging relies on encryption for integrity assurance. Encryption helps prevent dispute resolution issues from transaction tampering.",
+    "key_management_practicalities": "For most gambling operators, key management is built into systems being used (HTTPS certificates managed by web servers, database encryption keys managed by databases, cloud key management by cloud providers). Understanding how keys are managed in these systems is sufficient. Document where keys are stored, who can access them and procedures if keys are lost or compromised.",
+    "audit_readiness": "To be audit-ready: provide cryptography policy; provide list of encrypted data types; provide evidence of encryption implementation; provide key management documentation; show testing evidence; demonstrate certificate validity; provide incident response records for any encryption issues."
+  },
+  "document_metadata": {
+    "created_date": "2025-01-15",
+    "source": "ISO 27001 Annex A 8.24 Use of Cryptography Source Document - Converted for UKGC Compliance",
+    "ukgc_reference": "Remote Technical Standards (RTS) Chapter 4 - Systems and Operational Security",
+    "format": "JSON",
+    "version": "1.0",
+    "standard_version": "ISO 27001:2022",
+    "file_name": "iso-27001-annex-a-8.24-use-of-cryptography.json",
+    "content_coverage": "Comprehensive coverage of ISO 27001 A.8.24 Use of Cryptography control including purpose, definition, implementation requirements, compliance procedures, common mistakes, audit requirements and UKGC-specific application for gambling operators"
+  }
+}

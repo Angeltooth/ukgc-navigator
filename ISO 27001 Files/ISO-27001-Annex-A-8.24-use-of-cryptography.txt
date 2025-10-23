@@ -1,0 +1,63 @@
+ISO 27001 Cryptography
+
+ISO 27001 Annex A 8.24 Use of Cryptography is an ISO 27001 control that requires us to define and manage the rules associated with cryptography, which in laymen’s terms is encryption.
+Purpose
+
+ISO 27001 Annex A 8.24 is a preventive control to ensure proper and effective use of cryptography to protect the confidentiality, authenticity or integrity of information according to business and information security requirements, and taking into consideration legal, statutory, regulatory and contractual requirements related to cryptography.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 8.24 as:
+Rules for the effective use of cryptography, including cryptographic key management, should be defined and implemented.
+Implementation Guide
+
+The implementation of cryptography can be as simple or as difficult as you want to make it. Let us take a look at some of the considerations and guidance.
+The Law
+
+The main overriding factor of any implementation of this controls is the law. The laws around encryption and cryptography vary around the world and even within countries so it is paramount that what ever you are going to do, you get checked and signed of by a legal professional and keep evidence of the advice that you received.
+Information Classification and Handling Policy
+
+Information classification is a requirement of the standard and good practice. You will implement a topic specific information classification and handling policy, either with the template or writing it yourself, and the considerations for encryption will be captured within in. For simplicity, it is usual, that confidential data, or data of the highest classification, will be encrypted during transmission and at rest.
+More information on the requirements of the standard is covered in ISO 27001 Annex A 5.12 Classification Of Information
+Topic Specific Cryptography Policy
+
+To meet the requirements of this particular ISO 27001 clause you are going to need a topic specific policy for cryptography and for key management.
+The topic-specific policy on cryptography defined by the organisation will include the general
+principles for the protection of information. A topic-specific policy on the use of cryptography is
+necessary to reduce the risks of using cryptographic techniques and to avoid inappropriate or incorrect use.
+Standards
+
+When using encryption it is likely that you will use default and off the shelf technology but you should consider and record that standards that you are following and include in that information on cipher strength, algorithms used.
+Technical Implementation
+
+You will implement the technology required to realise what you have set out in your topic specific policies. The best approach is the use of industry standard technologies and usually that means the built in product features of technology that you already have.
+As part of the technical implementation you will implement endpoint encryption and this is, where feasible, for all endpoints including mobile devices.
+Key Management
+
+This is an important step as the keys are the things that can cause you a lot of problems if they are compromised or even if you forget what they are. The implementation of a robust key management process is therefore, pardon the pun, key.
+There are many steps to consider in the management of keys so let us list out the common ones that you will need to address.
+Generating keys
+Issuing keys
+Obtaining Public Keys
+Distributing keys
+Storing keys
+Changing keys
+Updating keys
+Dealing with key compromise
+Dealing with key loss
+Revoking keys
+Recovering keys
+Backing up keys
+Destroying keys
+Logging key management activity
+Monitoring key management activity
+Responding to legal requests for keys
+Practical Real World
+
+This really is going to depend but for most small business this requirement really comes down to encrypting devices and this is usually with standard or built in technology. The management of keys is often built in and easy to implement. The advice would be that unless you need something overly sophisticated keep it simple. Have HTTPs on your website, encrypt traffic, rely on the network technology of the likes of Azure and AWS and the apps that use that all these days are connections over encrypted links. Be able to show how the keys are managed in line with the above key management process requirements which again is usually easy to do and built into the technology that you are using.
+The questions most asked at audit is, what if you loose the key, who knows what the key is, where is the key stored and is the key stored securely.
+Cryptographic Objectives
+
+The objectives of cryptography may seem common sense but lets us examine them.
+You are looking to ensure the confidentiality of data as the main objective. We want to reduce the risk of a data breach, of data being intercepted and if it is intercepted we want that data to be useless.
+It can be the case that cryptography can ensure non-repudiation, which means that we can provide evidence of events or actions.
+Finally it can be used to authentication, to grant access only to the right people or resources or entities.

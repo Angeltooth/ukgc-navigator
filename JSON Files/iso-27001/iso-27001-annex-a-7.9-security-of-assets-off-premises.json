@@ -1,0 +1,954 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 7.9",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_7.9",
+    "control_number": "A 7.9",
+    "control_title": "Security of Assets Off-Premises",
+    "control_type": "Preventive control",
+    "control_purpose": "To prevent loss, damage, theft, or compromise of equipment and data when assets are located outside organization premises",
+    "control_objective": "Protect off-site assets through appropriate physical, technical, and procedural controls based on risk assessment"
+  },
+  "iso_27001_definition": {
+    "official_text": "Off-site assets should be protected.",
+    "key_requirements": [
+      "Off-site assets identified",
+      "Risks to off-site assets assessed",
+      "Controls selected based on risk",
+      "Physical protection measures implemented",
+      "Technical protection measures implemented",
+      "Personnel trained on asset protection",
+      "Controls monitored and verified"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control protecting organization assets when outside controlled premises",
+    "scope": [
+      "Laptops and portable computers",
+      "Mobile devices and tablets",
+      "USB drives and portable storage",
+      "External hard drives",
+      "Documents and printed materials",
+      "Equipment at client or supplier sites",
+      "Equipment in transit",
+      "Equipment used in remote locations",
+      "Equipment used in public spaces"
+    ],
+    "asset_types": [
+      "IT equipment and devices",
+      "Mobile devices",
+      "Storage media",
+      "Documents and records",
+      "Keys and credentials",
+      "Network equipment"
+    ]
+  },
+  "prerequisites": {
+    "description": "Before implementing off-site asset protection, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Asset Inventory",
+        "description": "Complete inventory of organization assets",
+        "rationale": "Must know what assets exist to protect them",
+        "reference": "ISO 27001 A 5.9 - Inventory of information and other associated assets"
+      },
+      {
+        "prerequisite": "Risk Assessment",
+        "description": "Assessment of risks to off-site assets",
+        "rationale": "Controls based on identified risks",
+        "reference": "ISO 27001 A 5.2 - Information security risk assessment"
+      },
+      {
+        "prerequisite": "Information Classification",
+        "description": "Classification of information on assets",
+        "rationale": "Protection level based on data sensitivity",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "Personnel Awareness",
+        "description": "Personnel trained on asset protection",
+        "rationale": "Awareness critical for off-site protection",
+        "reference": "ISO 27001 A 6.3 - Information security awareness, education and training"
+      }
+    ]
+  },
+  "offsite_asset_protection_overview": {
+    "definition": "Controls protecting organization assets when located outside organization premises and security perimeter",
+    "challenges": [
+      "Uncontrolled physical environment",
+      "Loss or theft of devices",
+      "Accidental damage or damage",
+      "Unauthorized access",
+      "Shoulder surfing and eavesdropping",
+      "WiFi eavesdropping",
+      "Data exposure in public",
+      "Device compromise",
+      "Malware infection from public networks"
+    ],
+    "protection_principle": "Proportionate controls based on asset value and data sensitivity"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_7.9_REQ_1",
+      "requirement": "Identify Off-Site Assets",
+      "description": "Determine what assets are taken off-site",
+      "details": {
+        "asset_categories": [
+          "Laptops and portable computers",
+          "Mobile devices and smartphones",
+          "Tablets and readers",
+          "USB drives and external storage",
+          "External hard drives",
+          "Printed documents and records",
+          "Access badges or credentials",
+          "Network equipment",
+          "Portable printers"
+        ],
+        "asset_documentation": [
+          "Maintain asset inventory",
+          "Identify owner of each asset",
+          "Record asset serial numbers",
+          "Classify data on assets",
+          "Track asset location",
+          "Document off-site usage"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_2",
+      "requirement": "Assess Risks to Off-Site Assets",
+      "description": "Identify security risks specific to off-site locations",
+      "details": {
+        "risk_factors": [
+          "Physical theft or loss",
+          "Environmental damage (water, fire, physical damage)",
+          "Unauthorized access to data",
+          "Shoulder surfing and observation",
+          "Device compromise or malware",
+          "Network eavesdropping",
+          "Accidental damage",
+          "Fire or theft in transit",
+          "Equipment left unattended",
+          "Data exposure on unencrypted devices"
+        ],
+        "risk_assessment_elements": [
+          "Asset value and replaceability",
+          "Data sensitivity on asset",
+          "Likelihood of threat occurring",
+          "Impact if theft or loss occurs",
+          "Frequency of off-site use",
+          "Types of locations used",
+          "Unauthorized access risk",
+          "Environment control assessment"
+        ],
+        "output": "Risk assessment documenting risks and proposed controls"
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_3",
+      "requirement": "Develop Off-Site Asset Protection Policy",
+      "description": "Create documented policy for protecting off-site assets",
+      "details": {
+        "policy_elements": [
+          "What assets can be taken off-site",
+          "Approval process for off-site use",
+          "Permitted off-site locations",
+          "Restricted locations for sensitive assets",
+          "Physical protection requirements",
+          "Technical protection requirements",
+          "Data handling requirements",
+          "Transport and custody procedures",
+          "Consequences of loss or damage",
+          "Incident reporting for lost devices",
+          "Review and update frequency"
+        ],
+        "scope_considerations": [
+          "Home office use",
+          "Public location use (cafes, airports)",
+          "Client or customer site use",
+          "Courier and transport",
+          "Third-party or contractor sites"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_4",
+      "requirement": "Implement Physical Protection Controls",
+      "description": "Deploy physical measures to protect off-site assets",
+      "details": {
+        "physical_controls": [
+          "Never leave devices unattended in public areas",
+          "Use lockable storage when not in use",
+          "Keep devices in sight at all times",
+          "Use cable locks for stationary equipment",
+          "Use laptop carrying cases and bags",
+          "Protect devices during transport",
+          "Position away from public view in transit",
+          "Keep devices in locked vehicle trunk",
+          "Use secure storage at client sites",
+          "Avoid leaving documents in public spaces"
+        ],
+        "location_specific_measures": [
+          "Home office - secured room or lockable storage",
+          "Public spaces - never unattended, privacy screens",
+          "Transport - locked luggage or vehicle",
+          "Client sites - secure storage or escort",
+          "Hotels - hotel safe or in-room security"
+        ],
+        "environmental_protection": [
+          "Protection from water and weather damage",
+          "Protection from extreme temperatures",
+          "Protection from fire hazards",
+          "Adequate insurance for damage"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_5",
+      "requirement": "Implement Technical Protection Controls",
+      "description": "Deploy technology measures to protect off-site assets",
+      "details": {
+        "technical_controls": [
+          "Full disk encryption on all portable devices",
+          "Password protection on devices",
+          "Multi-factor authentication where possible",
+          "Mobile Device Management (MDM) for tracking",
+          "Remote wiping capability for lost devices",
+          "Antivirus and antimalware protection",
+          "Firewall enabled on devices",
+          "VPN for remote network access",
+          "Secure WiFi connections only",
+          "Automatic screen lock after idle time",
+          "USB port restrictions",
+          "Bluetooth disabled when not needed",
+          "Location tracking for valuable devices"
+        ],
+        "device_management": [
+          "Update and patch management",
+          "Compliance checking before off-site use",
+          "Monitoring for vulnerabilities",
+          "Inventory tracking",
+          "Device retirement and wiping",
+          "Lost device reporting procedures"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_6",
+      "requirement": "Prevent Unauthorized Access and Shoulder Surfing",
+      "description": "Implement controls to prevent data exposure",
+      "details": {
+        "access_prevention": [
+          "Aware of surroundings when working",
+          "Position screen away from public view",
+          "Turn screen off when stepping away",
+          "Use privacy screens and anti-glare filters",
+          "Do not discuss confidential information",
+          "Avoid verbal passwords or sensitive data",
+          "Be aware of security cameras",
+          "Use headphones to prevent eavesdropping",
+          "Lock or secure device when unattended"
+        ],
+        "shoulder_surfing_prevention": [
+          "Sit with back to wall or secure side",
+          "Use privacy screens or laptop covers",
+          "Maintain awareness of surroundings",
+          "Use anti-glare privacy filters",
+          "Position laptop away from others",
+          "Be conscious of window reflections",
+          "Cover keyboard when typing passwords"
+        ],
+        "public_area_best_practices": [
+          "Avoid sensitive work in public",
+          "Use headphones for audio",
+          "Keep conversations private",
+          "Never leave device unattended",
+          "Be aware of camera angles",
+          "Do not print sensitive materials",
+          "Do not leave printouts behind"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_7",
+      "requirement": "Protect Data on Off-Site Assets",
+      "description": "Ensure data is protected if device is lost or stolen",
+      "details": {
+        "data_protection": [
+          "Encryption of sensitive data",
+          "No storage of unnecessary data",
+          "Minimal data on portable devices",
+          "Cloud storage instead of local storage",
+          "Secure deletion of sensitive data",
+          "No backup of unnecessary data",
+          "Separation of work and personal data",
+          "Confidential data access only from home office"
+        ],
+        "data_minimization": [
+          "Only necessary data on portable devices",
+          "Remove data when off-site use ends",
+          "Secure deletion when data no longer needed",
+          "Regular cleanup of temporary files",
+          "Archival of older data to secure location"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_8",
+      "requirement": "Train Personnel on Off-Site Asset Protection",
+      "description": "Educate personnel on protecting assets off-premises",
+      "details": {
+        "training_content": [
+          "Off-site asset protection policy",
+          "Physical protection practices",
+          "Technical protection measures",
+          "Shoulder surfing and eavesdropping prevention",
+          "Public area security practices",
+          "Incident reporting for lost devices",
+          "Data handling off-site",
+          "Home office security",
+          "Transport security",
+          "Consequences of policy violations",
+          "Asset inventory and accountability"
+        ],
+        "training_delivery": [
+          "Initial training for new employees",
+          "Annual refresher training",
+          "Role-specific training for critical roles",
+          "Awareness campaigns and reminders",
+          "Targeted training for frequent travelers",
+          "Update training for new technologies"
+        ],
+        "training_methods": [
+          "In-person workshops",
+          "Online training modules",
+          "Email reminders and tips",
+          "Posters and notices",
+          "Incident case studies",
+          "Simulations or practical exercises"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_9",
+      "requirement": "Establish Asset Loss Procedures",
+      "description": "Create procedures for reporting and handling lost assets",
+      "details": {
+        "loss_reporting": [
+          "Immediate reporting to IT and security",
+          "Information to capture in report",
+          "Escalation procedures",
+          "Out of hours reporting capability",
+          "Confirmation of loss details"
+        ],
+        "loss_response": [
+          "Remote wiping of device if possible",
+          "Revocation of access credentials",
+          "Investigation of what was on device",
+          "Assessment of data breach risk",
+          "Notification to affected parties if needed",
+          "Law enforcement notification if theft",
+          "Insurance claim if applicable",
+          "Device recovery attempts"
+        ],
+        "documentation": [
+          "Record of lost devices",
+          "Investigation findings",
+          "Actions taken",
+          "Outcome (recovered, written off, etc.)",
+          "Lessons learned"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_10",
+      "requirement": "Restrict Off-Site Use of Sensitive Assets",
+      "description": "Control which assets can be used off-site based on risk",
+      "details": {
+        "restriction_approach": [
+          "Risk-based decision on what can go off-site",
+          "High-risk data may not leave premises",
+          "Sensitive systems restricted to office use",
+          "Critical infrastructure equipment office-only",
+          "RNG or game systems may have restrictions",
+          "Customer data access restrictions"
+        ],
+        "approval_process": [
+          "Business case for off-site use",
+          "Manager approval required",
+          "Security assessment performed",
+          "Risk controls verified in place",
+          "Time-limited approvals for temporary use"
+        ],
+        "monitoring": [
+          "Track which assets used off-site",
+          "Monitor compliance with restrictions",
+          "Audit random samples of off-site use",
+          "Investigate unauthorized off-site use"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_11",
+      "requirement": "Monitor and Verify Control Effectiveness",
+      "description": "Verify off-site asset protection controls are working",
+      "details": {
+        "monitoring_activities": [
+          "Track incidents of lost or stolen devices",
+          "Monitor unauthorized data access",
+          "Review asset return procedures",
+          "Verify encryption compliance",
+          "Check MDM reporting",
+          "Audit sample of off-site workers"
+        ],
+        "verification_methods": [
+          "Interview off-site workers",
+          "Observe security practices",
+          "Check device encryption status",
+          "Verify patch levels",
+          "Audit device logs",
+          "Review incident reports"
+        ],
+        "issue_tracking": [
+          "Document control gaps",
+          "Track control violations",
+          "Implement corrective actions",
+          "Follow up on effectiveness"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.9_REQ_12",
+      "requirement": "Review and Update Controls",
+      "description": "Regularly review and improve off-site asset protection",
+      "details": {
+        "review_elements": [
+          "Effectiveness of current controls",
+          "New threats or risks identified",
+          "Technology changes",
+          "Policy compliance",
+          "Incident trends",
+          "Personnel feedback",
+          "Regulatory changes",
+          "Industry best practices"
+        ],
+        "improvement_actions": [
+          "Enhanced technical controls",
+          "Improved physical security measures",
+          "Additional training and awareness",
+          "Policy updates for new situations",
+          "Process improvements",
+          "Equipment or tool upgrades"
+        ],
+        "review_frequency": [
+          "At least annually",
+          "Following security incidents",
+          "When new threats emerge",
+          "Based on audit findings"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Identify off-site assets",
+        "detail": "Inventory all assets used outside premises"
+      },
+      {
+        "step": 2,
+        "action": "Assess risks",
+        "detail": "Evaluate security risks to off-site assets"
+      },
+      {
+        "step": 3,
+        "action": "Develop policy",
+        "detail": "Document off-site asset protection policy"
+      },
+      {
+        "step": 4,
+        "action": "Plan controls",
+        "detail": "Select physical and technical controls"
+      },
+      {
+        "step": 5,
+        "action": "Implement technical controls",
+        "detail": "Deploy encryption, MDM, and security tools"
+      },
+      {
+        "step": 6,
+        "action": "Implement physical controls",
+        "detail": "Establish procedures and practices"
+      },
+      {
+        "step": 7,
+        "action": "Develop training",
+        "detail": "Create training on asset protection"
+      },
+      {
+        "step": 8,
+        "action": "Train personnel",
+        "detail": "Deliver training to all personnel"
+      },
+      {
+        "step": 9,
+        "action": "Establish loss procedures",
+        "detail": "Create procedures for lost device incidents"
+      },
+      {
+        "step": 10,
+        "action": "Monitor and verify",
+        "detail": "Check control effectiveness"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 7.9",
+    "checklist": [
+      {
+        "item": "Identify and inventory off-site assets",
+        "status": "required"
+      },
+      {
+        "item": "Assess risks to off-site assets",
+        "status": "required"
+      },
+      {
+        "item": "Develop off-site asset protection policy",
+        "status": "required"
+      },
+      {
+        "item": "Implement physical protection controls",
+        "status": "required"
+      },
+      {
+        "item": "Implement technical protection controls",
+        "status": "required"
+      },
+      {
+        "item": "Deploy encryption on portable devices",
+        "status": "required"
+      },
+      {
+        "item": "Implement Mobile Device Management",
+        "status": "required"
+      },
+      {
+        "item": "Develop training materials",
+        "status": "required"
+      },
+      {
+        "item": "Train all personnel",
+        "status": "required"
+      },
+      {
+        "item": "Establish lost device procedures",
+        "status": "required"
+      },
+      {
+        "item": "Monitor control effectiveness",
+        "status": "required"
+      },
+      {
+        "item": "Review and improve controls",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with off-site asset protection",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Personnel unaware of expectations for asset protection",
+        "description": "No communication or training on how to protect off-site assets",
+        "root_cause": [
+          "No policy or procedure documented",
+          "No training delivered",
+          "Assumption that staff understand risks",
+          "Poor communication of expectations",
+          "No accountability for compliance"
+        ],
+        "impact": "Devices left unattended in public, data exposed, theft or loss incidents, regulatory violations",
+        "prevention": [
+          "Document clear policy",
+          "Train all personnel",
+          "Communicate expectations",
+          "Provide reminders and awareness",
+          "Establish accountability"
+        ],
+        "requirement": "Personnel must be trained and aware of asset protection expectations"
+      },
+      {
+        "rank": 2,
+        "mistake": "Off-site asset protection not actually implemented",
+        "description": "Policy exists but personnel not following practices",
+        "root_cause": [
+          "No enforcement or monitoring",
+          "No consequences for violations",
+          "Lack of technical controls",
+          "Inconvenient or burdensome controls",
+          "No management oversight"
+        ],
+        "impact": "Assets left unattended, devices lost or stolen, data breaches, audit findings",
+        "prevention": [
+          "Implement enforced technical controls",
+          "Monitor for compliance",
+          "Sample check off-site practices",
+          "Establish consequences",
+          "Make controls practical and convenient"
+        ],
+        "best_practice": "Pre-audit verification that off-site workers following practices"
+      },
+      {
+        "rank": 3,
+        "mistake": "No technical controls on portable devices",
+        "description": "Devices used off-site without encryption or security tools",
+        "root_cause": [
+          "Perceived complexity of tools",
+          "Lack of IT implementation",
+          "Cost concerns",
+          "Performance impact",
+          "User resistance"
+        ],
+        "impact": "Lost device exposes all data, no recovery capability, no remote wiping, regulatory violations",
+        "prevention": [
+          "Mandate full disk encryption",
+          "Deploy Mobile Device Management",
+          "Enable remote wiping",
+          "Simplify user experience",
+          "Provide support and training"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 7.9 audit",
+    "audit_areas": [
+      {
+        "area": "1. Off-Site Asset Policy",
+        "description": "Verify documented policy exists",
+        "checks": [
+          "Policy document exists and is current",
+          "Policy addresses off-site asset protection",
+          "Physical and technical controls specified",
+          "Approved locations defined",
+          "Restricted locations for sensitive data",
+          "Incident reporting procedures"
+        ]
+      },
+      {
+        "area": "2. Asset Inventory",
+        "description": "Verify assets identified and tracked",
+        "checks": [
+          "Inventory of off-site assets",
+          "Asset serial numbers recorded",
+          "Data sensitivity classified",
+          "Owner identified for each asset",
+          "Location tracking if mobile devices"
+        ]
+      },
+      {
+        "area": "3. Risk Assessment",
+        "description": "Verify risks assessed",
+        "checks": [
+          "Risk assessment documented",
+          "Risks specific to off-site use identified",
+          "Mitigation controls selected",
+          "Risk-appropriate controls deployed"
+        ]
+      },
+      {
+        "area": "4. Physical Protection",
+        "description": "Verify physical controls in place",
+        "checks": [
+          "Policy addresses physical security practices",
+          "No unattended devices in public",
+          "Secure storage when not in use",
+          "Transport security",
+          "Home office security assessment",
+          "Lock and cable controls"
+        ]
+      },
+      {
+        "area": "5. Technical Controls",
+        "description": "Verify technical protection deployed",
+        "checks": [
+          "Full disk encryption on portable devices",
+          "MDM deployed and functioning",
+          "Remote wiping capability",
+          "Multi-factor authentication",
+          "Patch and update compliance",
+          "Antivirus and malware protection"
+        ]
+      },
+      {
+        "area": "6. Personnel Training",
+        "description": "Verify staff trained on asset protection",
+        "checks": [
+          "Training materials developed",
+          "Training delivered to personnel",
+          "Training records maintained",
+          "Content covers key practices",
+          "Off-site workers understand expectations",
+          "Refresher training conducted"
+        ]
+      },
+      {
+        "area": "7. Lost Device Procedures",
+        "description": "Verify procedures for lost assets",
+        "checks": [
+          "Procedure documented",
+          "Reporting mechanism established",
+          "Remote wiping executed",
+          "Access revoked promptly",
+          "Investigation conducted",
+          "Lessons learned documented"
+        ]
+      },
+      {
+        "area": "8. Monitoring and Compliance",
+        "description": "Verify controls are being followed",
+        "checks": [
+          "Sample of off-site workers observed",
+          "Encryption status verified",
+          "Devices locked when unattended",
+          "No sensitive data left unattended",
+          "Incident reports reviewed",
+          "Compliance issues tracked"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, loss of devices containing RNG algorithms, customer data, or game integrity information poses critical risks",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Systems",
+        "offsite_restrictions": [
+          "RNG algorithms and methodologies must not leave premises",
+          "Game system code restricted to office use",
+          "System documentation kept secure",
+          "Development work restricted to controlled environments"
+        ]
+      },
+      {
+        "system": "Customer Data",
+        "offsite_requirements": [
+          "Customer data off-site use restricted and approved",
+          "Full encryption required on portable devices",
+          "No customer data in public locations",
+          "Restricted home office use",
+          "Remote access via VPN only",
+          "Data minimization on portable devices"
+        ]
+      },
+      {
+        "system": "Regulatory Information",
+        "offsite_restrictions": [
+          "Compliance documentation kept secure",
+          "Audit reports and findings office-only",
+          "Regulatory correspondence restricted",
+          "License and approval documentation secure"
+        ]
+      },
+      {
+        "system": "Financial Data",
+        "offsite_requirements": [
+          "Payment processing data office-only",
+          "Financial records restricted",
+          "Encrypted transport if necessary",
+          "No financial data in public spaces"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must implement appropriate controls to protect assets when used off-premises, with particular restrictions on assets containing RNG, game, or customer data"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Protect organization assets from loss, theft, damage, or compromise when located outside organization premises",
+    "enforcement_priority": "High - off-site asset protection critical to preventing data breaches and operational disruption",
+    "key_principles": [
+      "Risk-based selection of controls",
+      "Physical protection in uncontrolled environments",
+      "Technical protection through encryption and MDM",
+      "Personnel awareness and training",
+      "Clear policies and procedures",
+      "Monitoring and compliance checking",
+      "Incident response for lost devices",
+      "Data minimization on portable devices",
+      "Restricted off-site use for sensitive assets",
+      "Regular review and improvement"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 7.9 Security of Assets Off-Premises, implement",
+    "requirements": [
+      {
+        "requirement": "Identify off-site assets",
+        "detail": "Inventory all assets used outside premises"
+      },
+      {
+        "requirement": "Assess risks",
+        "detail": "Evaluate security risks to off-site assets"
+      },
+      {
+        "requirement": "Develop policy",
+        "detail": "Document off-site asset protection policy"
+      },
+      {
+        "requirement": "Implement physical controls",
+        "detail": "Establish practices for protecting devices physically"
+      },
+      {
+        "requirement": "Deploy encryption",
+        "detail": "Full disk encryption on all portable devices"
+      },
+      {
+        "requirement": "Implement MDM",
+        "detail": "Mobile Device Management for tracking and control"
+      },
+      {
+        "requirement": "Train personnel",
+        "detail": "All staff trained on asset protection practices"
+      },
+      {
+        "requirement": "Restrict sensitive assets",
+        "detail": "Control off-site use of critical systems"
+      },
+      {
+        "requirement": "Establish loss procedures",
+        "detail": "Procedures for reporting and handling lost devices"
+      },
+      {
+        "requirement": "Monitor compliance",
+        "detail": "Verify staff following protection practices"
+      },
+      {
+        "requirement": "Document controls",
+        "detail": "Evidence of all control measures"
+      },
+      {
+        "requirement": "Review and improve",
+        "detail": "Annual review and process improvement"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.9 - Inventory of information and other associated assets",
+      "ISO 27001 A 5.12 - Classification of information",
+      "ISO 27001 A 6.3 - Information security awareness, education and training",
+      "ISO 27001 A 6.7 - Remote working",
+      "ISO 27001 A 8.1 - User endpoint devices",
+      "ISO 27001 A 8.3 - Information access restriction"
+    ]
+  },
+  "best_practices": {
+    "physical_security_best_practices": [
+      "Never leave devices unattended in public",
+      "Keep devices in sight at all times",
+      "Use privacy screens to prevent shoulder surfing",
+      "Use lockable storage when not in use",
+      "Keep devices in locked vehicle trunk",
+      "Position away from public view when working",
+      "Be aware of surroundings and observers"
+    ],
+    "technical_security_best_practices": [
+      "Mandate full disk encryption",
+      "Deploy Mobile Device Management",
+      "Enable remote wiping capability",
+      "Require strong passwords",
+      "Enable automatic screen lock",
+      "Disable Bluetooth when not needed",
+      "Use VPN for remote access",
+      "Keep devices patched and updated"
+    ],
+    "data_handling_best_practices": [
+      "Minimize data on portable devices",
+      "Use cloud storage instead of local files",
+      "Secure deletion of sensitive data",
+      "No unnecessary backup of data",
+      "Separate work and personal data",
+      "Restrict sensitive data access",
+      "Encrypt sensitive documents"
+    ],
+    "awareness_best_practices": [
+      "Train all personnel on practices",
+      "Provide practical guidelines",
+      "Share real examples and case studies",
+      "Regular reminders and campaigns",
+      "Make expectations clear",
+      "Provide necessary equipment",
+      "Support and assistance available"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_asset_categories": [
+      {
+        "asset": "RNG system components",
+        "restriction": "Office-only - no off-site access"
+      },
+      {
+        "asset": "Game algorithms and code",
+        "restriction": "Office-only - secured location"
+      },
+      {
+        "asset": "Customer personal data",
+        "restriction": "Restricted off-site use - encrypted only"
+      },
+      {
+        "asset": "Payment card data",
+        "restriction": "Office-only - no off-site access"
+      },
+      {
+        "asset": "Regulatory documentation",
+        "restriction": "Restricted off-site - encrypted only"
+      }
+    ],
+    "regulatory_expectations": [
+      "Clear policy defining which assets can be used off-site",
+      "Particular restrictions on RNG and game system access",
+      "Strong controls for customer data off-site use",
+      "Technical controls on all portable devices",
+      "Personnel training on asset protection",
+      "Monitoring of off-site asset compliance",
+      "Incident procedures for lost or stolen devices"
+    ],
+    "audit_readiness": [
+      "Off-site asset inventory and risk assessment documented",
+      "Policy and procedures clearly defined",
+      "Encryption and MDM deployed on devices",
+      "Personnel training records maintained",
+      "Compliance verification of off-site practices",
+      "Incident log for any lost devices",
+      "Evidence of management review and approval"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 7.9",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-7.9-security-of-assets-off-premises.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

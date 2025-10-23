@@ -1,0 +1,364 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Generation of Random Outcomes",
+  "document_reference": "RTS Aim 7",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Gaming (including bingo), lotteries, and betting on virtual events",
+  "aim": {
+    "aim_id": "RTS_AIM_7",
+    "aim_number": 7,
+    "aim_title": "Generation of Random Outcomes",
+    "aim_description": "To ensure that games and other virtual events operate fairly"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_7A",
+      "requirement_number": "7A",
+      "title": "Acceptably Random Number Generation",
+      "requirement_type": "mandatory",
+      "full_text": "Random number generation and game results must be 'acceptably random'. Acceptably random here means that it is possible to demonstrate to a high degree of confidence that the output of the RNG, game, lottery and virtual event outcomes are random through, for example, statistical analysis using generally accepted tests and methods of analysis. Adaptive behaviour (that is, a compensated game) is not permitted. Where lotteries use the outcome of other events external to the lottery, to determine the result of the lottery the outcome must be unpredictable and externally verifiable.",
+      "implementation_guidance": {
+        "full_text": "RNGs should be capable of demonstrating the following qualities: the output from the RNG is uniformly distributed over the entire output range and game, lottery, or virtual event outcomes are distributed in accordance with the expected or theoretical probabilities; the output of the RNG, game, lottery, and virtual event outcomes should be unpredictable, for example, for a software RNG it should be computationally infeasible to predict what the next number will be without complete knowledge of the algorithm and seed value; random number generation does not reproduce the same output stream (cycle), and that two instances of a RNG do not produce the same stream as each other (synchronise); any forms of seeding and re-seeding used do not introduce predictability; any scaling applied to the output of the random number generator maintains the qualities as detailed. For lotteries using external events - where it is not practical to demonstrate 7A the events outcomes should be: unpredictable, that is, events should be selected only where they may reasonably be assumed to be random events; unable to be influenced by the lottery operator (or external lottery manager); publicly available and externally verifiable, for example, events that are published in local or national press would be acceptable. For games or virtual events that use the laws of physics to generate the outcome of the game (mechanical RNGs), the mechanical RNG used should be capable of meeting the requirements in a. where applicable and in addition: the mechanical pieces should be constructed of materials to prevent decomposition of any component over time (for example, a ball shall not disintegrate); the properties of physical items used to choose the selection should not be altered; players should not have the ability to interact with, come into physical contact with, or manipulate the mechanics of the game. Restricting adaptive behaviour prohibits automatic or manual interventions that change the probabilities of game outcomes occurring during play. Restricting adaptive behaviour is not intended to prevent games from offering bonus or special features that implement a different set of rules, if they are based on the occurrence of random events.",
+        "key_points": [
+          "RNG and game results must be 'acceptably random' - demonstrable through statistical analysis",
+          "Adaptive behaviour (compensated games) NOT permitted",
+          "For lotteries using external events: outcome must be unpredictable and externally verifiable",
+          "RNG must produce uniformly distributed output over entire range",
+          "Output must be unpredictable (computationally infeasible to predict next number)",
+          "Must not reproduce same output stream (no cycling)",
+          "Two RNG instances must not synchronize",
+          "Seeding/re-seeding must not introduce predictability",
+          "Scaling must maintain randomness qualities",
+          "External lottery events must be unpredictable, uninfluenced by operator, publicly available",
+          "Mechanical RNGs must use non-decomposing materials, unchanging properties, no player manipulation",
+          "Bonus features with different rules allowed if based on random events"
+        ],
+        "rng_quality_requirements": [
+          {
+            "quality": "Uniform Distribution",
+            "requirement": "Output uniformly distributed over entire output range",
+            "detail": "Game, lottery, or virtual event outcomes distributed according to expected/theoretical probabilities"
+          },
+          {
+            "quality": "Unpredictability",
+            "requirement": "Output must be unpredictable",
+            "detail": "For software RNG: computationally infeasible to predict next number without complete knowledge of algorithm and seed value"
+          },
+          {
+            "quality": "No Cycling",
+            "requirement": "RNG does not reproduce same output stream",
+            "detail": "Prevents predictable patterns from repeating"
+          },
+          {
+            "quality": "No Synchronization",
+            "requirement": "Two RNG instances do not produce same stream as each other",
+            "detail": "Multiple RNGs must be independent"
+          },
+          {
+            "quality": "Seeding Security",
+            "requirement": "Seeding and re-seeding do not introduce predictability",
+            "detail": "Seed values must be sufficiently random and secure"
+          },
+          {
+            "quality": "Scaling Integrity",
+            "requirement": "Scaling applied to RNG output maintains all qualities",
+            "detail": "Conversion from RNG output to game outcomes preserves randomness"
+          }
+        ],
+        "lottery_external_events": {
+          "when_applicable": "Where it is not practical to demonstrate 7A requirements",
+          "requirements": [
+            {
+              "requirement": "Unpredictable",
+              "detail": "Events selected only where they may reasonably be assumed to be random events"
+            },
+            {
+              "requirement": "Unable to be influenced",
+              "detail": "Cannot be influenced by lottery operator or external lottery manager"
+            },
+            {
+              "requirement": "Publicly available and externally verifiable",
+              "detail": "Events published in local or national press are acceptable"
+            }
+          ]
+        },
+        "mechanical_rng_requirements": {
+          "when_applicable": "Games or virtual events using laws of physics to generate outcomes",
+          "general_requirements": "Must meet standard RNG requirements where applicable, plus:",
+          "additional_requirements": [
+            {
+              "requirement": "Non-decomposing materials",
+              "detail": "Mechanical pieces must be constructed of materials to prevent decomposition over time",
+              "example": "A ball shall not disintegrate"
+            },
+            {
+              "requirement": "Unchanging properties",
+              "detail": "Properties of physical items used for selection should not be altered"
+            },
+            {
+              "requirement": "No player manipulation",
+              "detail": "Players should not have ability to interact with, come into physical contact with, or manipulate the mechanics"
+            }
+          ]
+        },
+        "adaptive_behaviour_prohibition": {
+          "definition": "Automatic or manual interventions that change probabilities of game outcomes during play",
+          "status": "NOT PERMITTED",
+          "clarification": "Not intended to prevent bonus or special features that implement different rules, if based on occurrence of random events"
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "lotteries",
+        "betting_on_virtual_events"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 7A"
+    },
+    {
+      "requirement_id": "RTS_7B",
+      "requirement_number": "7B",
+      "title": "Fair Implementation According to Rules",
+      "requirement_type": "mandatory",
+      "full_text": "As far as is reasonably possible, games and events must be implemented fairly and in accordance with the rules and prevailing payouts, where applicable, as they are described to the customer.",
+      "implementation_guidance": {
+        "full_text": "Games should implement the rules as described in the rules available to the customer before play commenced. The mapping of the random inputs to game outcomes should be in accordance with prevailing probabilities, pay tables, etc. When random numbers, scaled or otherwise, are received, for example, following a game requesting a sequence of random numbers, they are to be used in the order in which they are received and they may not be discarded due to adaptive behaviour. Numbers or sequences of numbers are not to be discarded, unless they fall outside the expected range of numbers required by the virtual event – such an occurrence should result in an error being logged and investigated.",
+        "key_points": [
+          "Games must be implemented fairly according to rules described to customer",
+          "Must follow prevailing payouts as described",
+          "Implement rules as available to customer before play",
+          "Mapping of random inputs to outcomes must match stated probabilities and pay tables",
+          "Random numbers must be used in order received",
+          "Random numbers may NOT be discarded due to adaptive behaviour",
+          "Numbers only discarded if outside expected range - must be logged and investigated"
+        ],
+        "rule_implementation": {
+          "requirement": "Implement rules as described to customer before play commenced",
+          "mapping": "Random inputs to game outcomes must match prevailing probabilities, pay tables, etc."
+        },
+        "random_number_usage": {
+          "order": "Must be used in the order in which they are received",
+          "no_discarding": "May NOT be discarded due to adaptive behaviour",
+          "exception": "Only discarded if fall outside expected range",
+          "exception_action": "Such occurrence must result in error being logged and investigated"
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "lotteries",
+        "betting_on_virtual_events"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 7B"
+    },
+    {
+      "requirement_id": "RTS_7C",
+      "requirement_number": "7C",
+      "title": "Prohibition of Misleading Game Designs",
+      "requirement_type": "mandatory",
+      "full_text": "Game designs or features that may reasonably be expected to mislead the customer about the likelihood of particular results occurring are not permitted, including substituting losing events with near-miss losing events and simulations of real devices that do not simulate the real probabilities of the device.",
+      "implementation_guidance": {
+        "full_text": "Where a virtual event simulates a physical device, the theoretical game probabilities should match the probabilities of the real device (for example, the probability of a coin landing heads must be 0.5 every time the coin is tossed). Where multiple physical devices are simulated the probabilities of each outcome should be independent of the other simulated devices. Games may not falsely display near-miss results, that is, the event may not substitute one losing outcome with a different losing outcome. Where the event requires a pre-determined layout (for example, hidden prizes on a map), the locations of the winning spots should not change during play, except as provided for in the rules of the game. Where games involve an element of skill, every outcome described in the virtual event rules or artwork should be possible, that is, the customer should have some chance of achieving an advertised outcome regardless of skill. Where a customer contributes to a jackpot pool, that customer should be eligible to win the jackpot whilst they are playing that game, in accordance with the game and jackpot rules.",
+        "key_points": [
+          "Game designs/features that mislead about likelihood of results NOT permitted",
+          "Near-miss substitution NOT permitted (substituting one losing outcome with different losing outcome)",
+          "Simulations of physical devices must match real probabilities",
+          "Virtual coin toss: 0.5 probability for heads every time",
+          "Multiple simulated devices must have independent probabilities",
+          "Pre-determined layouts (hidden prizes) must not change during play",
+          "For skill games: every advertised outcome must be possible",
+          "Customers contributing to jackpot must be eligible to win while playing"
+        ],
+        "prohibition_near_miss": {
+          "definition": "Substituting one losing outcome with a different losing outcome",
+          "status": "NOT PERMITTED",
+          "purpose": "Prevent false impression of 'almost winning'"
+        },
+        "physical_device_simulation": {
+          "requirement": "Theoretical game probabilities must match probabilities of real device",
+          "example": "Probability of coin landing heads must be 0.5 every time",
+          "multiple_devices": "Probabilities of each outcome should be independent of other simulated devices"
+        },
+        "pre_determined_layouts": {
+          "rule": "Locations of winning spots should not change during play",
+          "exception": "Except as provided for in the rules of the game",
+          "example": "Hidden prizes on a map must stay in same locations"
+        },
+        "skill_based_games": {
+          "requirement": "Every outcome described in rules or artwork should be possible",
+          "detail": "Customer should have some chance of achieving advertised outcome regardless of skill level"
+        },
+        "jackpot_eligibility": {
+          "requirement": "Customer contributing to jackpot pool should be eligible to win jackpot whilst playing",
+          "condition": "In accordance with game and jackpot rules"
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "lotteries",
+        "betting_on_virtual_events"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 7C"
+    },
+    {
+      "requirement_id": "RTS_7D",
+      "requirement_number": "7D",
+      "title": "Restriction on Changes to Rules and Probabilities",
+      "requirement_type": "mandatory",
+      "full_text": "The rules, payouts and outcome probabilities of a virtual event or game may not be changed while it is available for gambling, except as provided for in the rules of the game, lottery or virtual event. Such changes must be brought to customer's attention.",
+      "implementation_guidance": {
+        "full_text": "Changes to game or event rules, paytables or other parameters that change the way in which a game, lottery, or event works, the winnings paid, or likelihood of winning (except as described in 7Dc), should be conducted with the game or event taken offline or suspended. Altered games, lotteries, and events should display a notice that informs customers that the game or event has been changed, for example, 'rules changed', 'new odds', or 'different payouts'. The notice should be displayed on game selection screens and on the events themselves if it is possible for the customer to go straight to the event without using a selection screen. This requirement is not intended to prevent games and virtual events where specified changes occur legitimately, in accordance with the game or event rules, for example: virtual events, such as virtual racing products where the odds differ from event to event depending on the virtual runners; virtual games, such as bingo where the odds of winning are dependent on the number of entrants; games with progressive jackpots, where the amount that can be won changes over time; games with bonus rounds where different rules apply, so long as these rounds are properly described to the customer; unspecified changes to rules, paytables or other parameters that change the way in which a game, lottery or event works are not permitted, for example, rules that state 'game rules may be changed at any time' would not be acceptable.",
+        "key_points": [
+          "Rules, payouts, and outcome probabilities may NOT be changed while available for gambling",
+          "Exception: Changes provided for in the rules of the game",
+          "Changes must be brought to customer's attention",
+          "Changes should be conducted with game taken offline or suspended",
+          "Altered games must display notice: 'rules changed', 'new odds', 'different payouts'",
+          "Notice must appear on game selection screens and on events themselves",
+          "Legitimate in-game changes allowed if in accordance with rules (virtual racing odds, bingo with variable entrants, progressive jackpots, bonus rounds)",
+          "Unspecified changes NOT permitted (e.g., 'rules may be changed at any time')"
+        ],
+        "change_procedure": {
+          "general_rule": "Take game or event offline or suspended for changes",
+          "applies_to": "Changes to rules, paytables, or parameters that affect how game works, winnings paid, or likelihood of winning",
+          "exception": "See legitimate in-game changes below"
+        },
+        "customer_notification": {
+          "requirement": "Display notice informing customers game has been changed",
+          "notice_examples": [
+            "Rules changed",
+            "New odds",
+            "Different payouts"
+          ],
+          "display_locations": [
+            "Game selection screens",
+            "On the events themselves (if customer can go directly to event)"
+          ]
+        },
+        "legitimate_in_game_changes": {
+          "allowed": true,
+          "condition": "Changes occur in accordance with game or event rules",
+          "examples": [
+            {
+              "game_type": "Virtual racing products",
+              "change": "Odds differ from event to event depending on virtual runners"
+            },
+            {
+              "game_type": "Bingo",
+              "change": "Odds of winning depend on number of entrants"
+            },
+            {
+              "game_type": "Progressive jackpots",
+              "change": "Amount that can be won changes over time"
+            },
+            {
+              "game_type": "Games with bonus rounds",
+              "change": "Different rules apply in bonus rounds",
+              "condition": "Rounds must be properly described to customer"
+            }
+          ]
+        },
+        "prohibited_changes": {
+          "type": "Unspecified changes to rules, paytables, or parameters",
+          "status": "NOT PERMITTED",
+          "unacceptable_example": "Rules that state 'game rules may be changed at any time'"
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "lotteries",
+        "betting_on_virtual_events"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 7D"
+    },
+    {
+      "requirement_id": "RTS_7E",
+      "requirement_number": "7E",
+      "title": "Display of Results",
+      "requirement_type": "mandatory",
+      "full_text": "Except in the case of subscription lotteries, the system clearly and accurately display the result of the game or event and the customer's gamble. The result must be displayed for a length of time that may reasonably be expected to be sufficient for the customer to understand the result of the game or event in the context of their gamble.",
+      "implementation_guidance": {
+        "full_text": "The game artwork and text should be sufficient to provide the customer with all of the information required to determine whether they have lost or won, and the value of any winnings.",
+        "key_points": [
+          "System must clearly and accurately display result of game/event and customer's gamble",
+          "Result must be displayed for sufficient time for customer to understand",
+          "Exception: subscription lotteries",
+          "Artwork and text must provide all information needed to determine win/loss and winnings value"
+        ],
+        "display_requirements": {
+          "clarity": "Clearly and accurately display result",
+          "duration": "Length of time reasonably expected to be sufficient for customer understanding",
+          "content": "Result of game or event AND customer's gamble"
+        },
+        "information_required": {
+          "win_loss_determination": "All information required to determine whether they have lost or won",
+          "winnings_value": "The value of any winnings"
+        },
+        "exclusion": {
+          "game_type": "Subscription lotteries",
+          "status": "Exempt from this requirement"
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "lotteries",
+        "betting_on_virtual_events"
+      ],
+      "applies_to_exclusions": [
+        "subscription_lotteries"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 7E"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure games operate fairly with truly random outcomes, no misleading features, and transparent results",
+    "enforcement_priority": "Critical - fundamental to fair gambling and game integrity",
+    "testing_requirements": "RNG testing required per UKGC Testing Strategy - must demonstrate statistical randomness",
+    "key_principles": [
+      "True randomness demonstrable through statistical analysis",
+      "No adaptive/compensated games allowed",
+      "No misleading near-miss displays",
+      "Physical device simulations must match real probabilities",
+      "Changes to rules/payouts require notification",
+      "Results must be clearly displayed for adequate time"
+    ]
+  },
+  "related_requirements": [
+    "RTS 3 - Rules and Game Descriptions",
+    "RTS 5 - Result Determination",
+    "RTS 6 - Result Determination for Play-for-Free Games",
+    "RTS 9 - Progressive Jackpot Systems",
+    "UKGC Testing Strategy"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 3 - Rules and Game Descriptions",
+      "RTS 5 - Result Determination",
+      "RTS 6 - Result Determination for Play-for-Free Games",
+      "RTS 9 - Progressive Jackpot Systems"
+    ],
+    "external_documents": [
+      "UK Gambling Commission Testing Strategy for RNG Compliance"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

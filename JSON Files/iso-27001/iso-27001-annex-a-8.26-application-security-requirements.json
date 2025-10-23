@@ -1,0 +1,553 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 8.26",
+  "last_updated": "2025-01-15",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_8.26",
+    "control_number": "A 8.26",
+    "control_title": "Application Security Requirements",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure information security requirements are identified, specified and approved when developing or acquiring applications",
+    "control_objective": "Define comprehensive security requirements for all applications ensuring security by design throughout development or acquisition lifecycle"
+  },
+  "iso_27001_definition": {
+    "official_text": "Information security requirements should be identified, specified and approved when developing or acquiring applications.",
+    "key_requirements": [
+      "Application security requirements identified and documented",
+      "Security requirements specified in requirements documents",
+      "Security requirements approved before development or acquisition",
+      "Requirements cover all relevant security aspects",
+      "Application security requirements include Annex A control requirements",
+      "Third-party application evaluation against security requirements"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control ensuring security is specified upfront for both custom-developed and acquired applications",
+    "scope": [
+      "Custom-developed applications",
+      "Acquired or purchased applications",
+      "Web applications",
+      "Mobile applications",
+      "Third-party service integrations",
+      "APIs and integrations",
+      "Legacy system modifications"
+    ],
+    "key_outcome": "All applications meet specified security requirements supporting regulatory compliance and business objectives"
+  },
+  "security_requirements_framework": {
+    "core_requirements": [
+      {
+        "requirement": "Access Control",
+        "description": "Mechanisms to control who accesses what functionality and data"
+      },
+      {
+        "requirement": "Authentication",
+        "description": "Verification of user or system identity with appropriate strength"
+      },
+      {
+        "requirement": "Authorization and Segregation of Duties",
+        "description": "Enforcement of access rights and prevention of conflicting duties"
+      },
+      {
+        "requirement": "Data Protection",
+        "description": "Encryption and protection of sensitive data at rest and in transit"
+      },
+      {
+        "requirement": "Input Validation",
+        "description": "Validation of all user inputs to prevent injection attacks"
+      },
+      {
+        "requirement": "Output Validation and Encoding",
+        "description": "Proper encoding of output to prevent script injection"
+      },
+      {
+        "requirement": "Error Handling",
+        "description": "Error handling that does not reveal sensitive information"
+      },
+      {
+        "requirement": "Logging and Monitoring",
+        "description": "Comprehensive logging of security-relevant activities"
+      },
+      {
+        "requirement": "Session Management",
+        "description": "Secure session handling and timeout mechanisms"
+      },
+      {
+        "requirement": "Resilience",
+        "description": "Ability to resist and recover from malicious attacks and failures"
+      },
+      {
+        "requirement": "Vulnerability Management",
+        "description": "Processes for identifying and patching security vulnerabilities"
+      },
+      {
+        "requirement": "Legal and Regulatory Compliance",
+        "description": "Compliance with applicable laws and regulations"
+      }
+    ],
+    "transactional_services": [
+      "Authorization process and approval levels required",
+      "Non-repudiation of transactions",
+      "Physical transfer security for media and documents",
+      "Data retention periods",
+      "Insurance requirements",
+      "Contractual requirements between parties",
+      "End of contract/relationship procedures"
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_8.26_REQ_1",
+      "requirement": "Identify Application Security Requirements",
+      "description": "Systematically identify all security requirements for applications",
+      "details": {
+        "requirement_identification": [
+          "Review relevant Annex A controls and Statement of Applicability",
+          "Assess information classification of data handled",
+          "Identify access control requirements",
+          "Determine authentication requirements",
+          "Identify encryption and data protection needs",
+          "Determine logging and monitoring needs",
+          "Identify regulatory compliance requirements",
+          "Assess resilience and availability needs"
+        ],
+        "documentation": [
+          "Requirements document created",
+          "Each requirement documented with rationale",
+          "Traceability to Annex A controls",
+          "Prioritization of requirements",
+          "Acceptance criteria defined"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.26_REQ_2",
+      "requirement": "Specify Access Control Requirements",
+      "description": "Define access control and authentication requirements",
+      "details": {
+        "access_requirements": [
+          "User roles and responsibilities defined",
+          "Access rights by role specified",
+          "Separation of duties requirements",
+          "Privilege minimization requirements",
+          "Time-based or context-based access requirements"
+        ],
+        "authentication_requirements": [
+          "Authentication mechanism type specified (password, MFA, etc.)",
+          "Authentication strength requirements",
+          "Single sign-on or integration requirements",
+          "Session timeout requirements",
+          "Failed authentication handling"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.26_REQ_3",
+      "requirement": "Specify Data Protection Requirements",
+      "description": "Define encryption and data protection requirements",
+      "details": {
+        "encryption_requirements": [
+          "Data at rest encryption required",
+          "Data in transit encryption required",
+          "Encryption algorithm standards specified",
+          "Key management requirements",
+          "Sensitive field identification and protection"
+        ],
+        "privacy_requirements": [
+          "Personal data minimization",
+          "Data retention limits",
+          "Anonymization where possible",
+          "GDPR compliance requirements",
+          "Data subject access support"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.26_REQ_4",
+      "requirement": "Specify Input and Output Validation",
+      "description": "Define input validation and output encoding requirements",
+      "details": {
+        "input_validation": [
+          "All input validation required",
+          "Whitelisting approach specified",
+          "Injection attack prevention",
+          "File upload validation",
+          "Size and type restrictions"
+        ],
+        "output_encoding": [
+          "XSS prevention through output encoding",
+          "HTML encoding for HTML output",
+          "JSON encoding for JSON output",
+          "URL encoding for URL output"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.26_REQ_5",
+      "requirement": "Specify Logging and Monitoring",
+      "description": "Define logging and monitoring requirements",
+      "details": {
+        "logging_requirements": [
+          "Security events logged",
+          "Failed access attempts logged",
+          "User actions logged",
+          "Data access logged",
+          "Configuration changes logged",
+          "Log retention specified",
+          "Log protection requirements"
+        ],
+        "monitoring_requirements": [
+          "Real-time alerting requirements",
+          "Anomaly detection needs",
+          "Performance monitoring",
+          "Availability monitoring",
+          "Security incident detection"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.26_REQ_6",
+      "requirement": "Address Transactional Service Requirements",
+      "description": "For transactional applications, specify additional requirements",
+      "details": {
+        "transaction_requirements": [
+          "Transaction authorization levels",
+          "Non-repudiation of transactions",
+          "Transaction audit trail",
+          "Dispute resolution procedures",
+          "Compensation mechanisms"
+        ],
+        "contractual_requirements": [
+          "Service level agreements",
+          "Liability limitations",
+          "Data handling agreements",
+          "Incident notification",
+          "End of service procedures"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.26_REQ_7",
+      "requirement": "Address Payment Processing Requirements",
+      "description": "For payment applications, ensure compliance with payment standards",
+      "details": {
+        "pci_dss_compliance": [
+          "PCI DSS compliance required if handling cards",
+          "Encryption of payment data",
+          "Secure storage of payment information",
+          "Tokenization of card data",
+          "Regular security testing"
+        ],
+        "legal_compliance": [
+          "Payment regulations compliance",
+          "Regional payment requirements",
+          "Fraud prevention measures",
+          "AML/KYC integration where required"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.26_REQ_8",
+      "requirement": "Approve Security Requirements",
+      "description": "Ensure requirements are reviewed and approved",
+      "details": {
+        "approval_process": [
+          "Requirements reviewed by security team",
+          "Requirements reviewed by business stakeholders",
+          "Legal review where applicable",
+          "Formal approval documented",
+          "Change management process for requirement changes"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.26_REQ_9",
+      "requirement": "Evaluate Third-Party Applications",
+      "description": "For acquired applications, evaluate against security requirements",
+      "details": {
+        "evaluation_process": [
+          "Third-party application security assessment",
+          "Vendor security practices review",
+          "Security documentation review",
+          "Vulnerability assessment",
+          "Compliance verification"
+        ],
+        "vendor_management": [
+          "Vendor security maturity assessment",
+          "Security SLAs in contracts",
+          "Audit and assessment rights",
+          "Incident notification requirements",
+          "Support and patch provision"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish security requirements process",
+        "detail": "Define process for identifying and specifying requirements"
+      },
+      {
+        "step": 2,
+        "action": "Document security requirements template",
+        "detail": "Create template for consistent requirement documentation"
+      },
+      {
+        "step": 3,
+        "action": "Review Annex A controls",
+        "detail": "Understand which Annex A controls apply to applications"
+      },
+      {
+        "step": 4,
+        "action": "Specify access and authentication requirements",
+        "detail": "Define how users will authenticate and be authorized"
+      },
+      {
+        "step": 5,
+        "action": "Specify data protection requirements",
+        "detail": "Define encryption and data protection standards"
+      },
+      {
+        "step": 6,
+        "action": "Specify input/output validation requirements",
+        "detail": "Define protection against injection attacks"
+      },
+      {
+        "step": 7,
+        "action": "Specify logging requirements",
+        "detail": "Define what security events must be logged"
+      },
+      {
+        "step": 8,
+        "action": "Address transactional requirements if applicable",
+        "detail": "Add transaction-specific requirements for applicable apps"
+      },
+      {
+        "step": 9,
+        "action": "Review and approve requirements",
+        "detail": "Obtain security, business and legal approval"
+      },
+      {
+        "step": 10,
+        "action": "Communicate requirements to development teams",
+        "detail": "Ensure developers understand security requirements"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 8.26",
+    "checklist": [
+      {
+        "item": "Security requirements identification process established",
+        "status": "required"
+      },
+      {
+        "item": "Security requirements template created",
+        "status": "required"
+      },
+      {
+        "item": "Access control requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Authentication requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Data protection and encryption requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Input/output validation requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Error handling requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Logging and monitoring requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Session management requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Resilience and availability requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Legal and regulatory requirements documented",
+        "status": "required"
+      },
+      {
+        "item": "Transactional requirements if applicable",
+        "status": "conditional"
+      },
+      {
+        "item": "Payment requirements and PCI DSS if applicable",
+        "status": "conditional"
+      },
+      {
+        "item": "Requirements approved and documented",
+        "status": "required"
+      },
+      {
+        "item": "Third-party applications evaluated against requirements",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes with application security requirements",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No security requirements specified at all",
+        "description": "Security treated as afterthought after development starts",
+        "root_cause": [
+          "Lack of awareness of requirement",
+          "Speed to market prioritized over security",
+          "No security person involved in planning"
+        ],
+        "impact": "Applications built without security considerations, expensive retrofitting needed",
+        "prevention": [
+          "Establish requirement identification process",
+          "Include security in requirements review",
+          "Obtain security approval before development"
+        ]
+      },
+      {
+        "rank": 2,
+        "mistake": "Generic requirements without application specificity",
+        "description": "Broad security requirements without specific implementation guidance",
+        "root_cause": [
+          "Template-based requirements without tailoring",
+          "Lack of understanding of application context",
+          "No collaboration with development team"
+        ],
+        "impact": "Developers uncertain how to implement requirements, security inconsistency",
+        "prevention": [
+          "Tailor requirements to specific application",
+          "Include specific technical requirements",
+          "Engage developers in requirements definition"
+        ]
+      },
+      {
+        "rank": 3,
+        "mistake": "Third-party applications without security assessment",
+        "description": "Acquiring applications without evaluating security adequacy",
+        "root_cause": [
+          "Vendor assurances accepted without verification",
+          "Cost or speed considerations dominating",
+          "No security evaluation process for acquisitions"
+        ],
+        "impact": "Insecure applications in production, third-party breaches",
+        "prevention": [
+          "Establish vendor security assessment process",
+          "Require security documentation from vendors",
+          "Test applications before acquisition"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "Auditor checks for ISO 27001 A 8.26",
+    "audit_areas": [
+      {
+        "area": "1. Requirements Identification Process",
+        "checks": [
+          "Process for identifying requirements documented",
+          "Requirements identified before development or acquisition",
+          "Requirements based on risk and Annex A controls"
+        ]
+      },
+      {
+        "area": "2. Requirements Specification",
+        "checks": [
+          "Security requirements documented",
+          "Requirements specific and measurable",
+          "Requirements traceable to Annex A controls"
+        ]
+      },
+      {
+        "area": "3. Requirements Approval",
+        "checks": [
+          "Requirements formally approved",
+          "Security review and approval evident",
+          "Business and legal review completed"
+        ]
+      },
+      {
+        "area": "4. Core Security Requirements",
+        "checks": [
+          "Access control requirements specified",
+          "Authentication requirements specified",
+          "Data protection requirements documented",
+          "Input validation requirements specified",
+          "Logging requirements documented"
+        ]
+      },
+      {
+        "area": "5. Third-Party Applications",
+        "checks": [
+          "Third-party applications evaluated",
+          "Security assessment documented",
+          "Vendor security capabilities reviewed"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Gambling applications must be specified with comprehensive security requirements covering customer data protection, payment processing security, game integrity and regulatory compliance",
+    "specific_requirements": [
+      "Game applications must specify RNG integrity requirements",
+      "Payment applications must specify PCI DSS compliance",
+      "Customer account applications must specify data protection and authentication",
+      "Age verification applications must specify identity verification requirements",
+      "Responsible gambling applications must specify control implementation"
+    ],
+    "compliance_requirement": "Gambling operators must identify, specify and approve information security requirements for all applications"
+  },
+  "to_pass_the_audit": {
+    "requirements": [
+      "Security requirements identification process documented",
+      "Security requirements specified for all custom applications",
+      "Requirements approved by security and business stakeholders",
+      "Access control and authentication requirements specified",
+      "Data protection requirements specified",
+      "Input validation and error handling requirements specified",
+      "Logging and monitoring requirements specified",
+      "Third-party applications evaluated against security requirements",
+      "Payment applications comply with PCI DSS",
+      "Requirements traceability to Annex A controls"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-01-15",
+    "source": "ISO 27001 Annex A 8.26 Application Security Requirements",
+    "ukgc_reference": "Remote Technical Standards (RTS) Chapter 4",
+    "format": "JSON",
+    "version": "1.0",
+    "standard_version": "ISO 27001:2022",
+    "file_name": "iso-27001-annex-a-8.26-application-security-requirements.json",
+    "content_coverage": "ISO 27001 A.8.26 Application Security Requirements for UKGC compliance"
+  }
+}

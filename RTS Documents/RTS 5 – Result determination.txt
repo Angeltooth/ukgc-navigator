@@ -1,0 +1,21 @@
+RTS 5 – Result determination
+Applies to:
+All gambling
+RTS aim 5
+To ensure that the gambling system implements the operator’s rules, game rules and betting rules as they
+are described to the customer.
+RTS requirement 5A
+All reasonable steps should be taken to ensure that gambles are accepted, processed and settled in
+accordance with the operators’ published terms and rules, and the rules of the specific game, event, or bet.
+Where unexpected system flaws, faults, or errors that affect the customer occur, steps are to be taken as
+soon as practicable to remedy the problem and ensure that the customer is treated fairly according to the
+circumstances.
+RTS implementation guidance 5A
+a. Under normal operation, in the absence of technical faults, the system should act in accordance with
+the rules.
+b. Reasonable steps include testing of systems and new products against the published rules and
+monitoring the ongoing performance of those products in the live environment. Refer to our testing
+strategy for more detailed requirements in this area.
+c. Customers should be notified when errors that affect them, for example, incorrectly settled bets, have
+occurred as soon as practicable after the event occurs. Steps should be taken to rectify the error, for
+example, by manually adjusting the customer’s account.

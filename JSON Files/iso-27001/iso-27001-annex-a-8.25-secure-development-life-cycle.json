@@ -1,0 +1,771 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 8.25",
+  "last_updated": "2025-01-15",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_8.25",
+    "control_number": "A 8.25",
+    "control_title": "Secure Development Life Cycle",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure information security is designed and implemented throughout the software and systems development lifecycle",
+    "control_objective": "Establish rules and procedures for secure development incorporating security by design and default throughout development, testing and deployment"
+  },
+  "iso_27001_definition": {
+    "official_text": "Rules for the secure development of software and systems should be established and applied.",
+    "key_requirements": [
+      "Secure development policy established",
+      "Coding guidelines defined and documented",
+      "Development, test and production environments separated",
+      "Specification and design include security considerations",
+      "Security testing performed on all developments",
+      "Code repositories managed securely",
+      "Personnel have appropriate knowledge and experience",
+      "Outsourced development meets security requirements",
+      "Security checkpoints throughout development process"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control ensuring security is built into systems and software from initial design through deployment",
+    "scope": [
+      "All custom software development",
+      "All system development",
+      "Third-party software modifications",
+      "Infrastructure code and configuration",
+      "API and integration development",
+      "Outsourced development",
+      "Legacy system modifications"
+    ],
+    "key_outcome": "Systems and software delivered with security designed in, reducing vulnerabilities and security defects"
+  },
+  "prerequisites": {
+    "description": "Before implementing secure development lifecycle, foundational requirements must be met",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Project Management Framework",
+        "description": "Project management methodology and procedures in place",
+        "rationale": "Secure development integrated into project management",
+        "reference": "ISO 27001 A 5.8 - Information security in project management"
+      },
+      {
+        "prerequisite": "Risk Assessment Process",
+        "description": "Risk assessment procedures for development projects",
+        "rationale": "Development risks identified and mitigated",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      },
+      {
+        "prerequisite": "Change Management",
+        "description": "Change management procedures for development changes",
+        "rationale": "Development changes controlled and approved",
+        "reference": "ISO 27001 A 5.29 - Information security during supplier relationships"
+      },
+      {
+        "prerequisite": "Configuration Management",
+        "description": "Configuration management for development assets",
+        "rationale": "Development configurations controlled and tracked",
+        "reference": "ISO 27001 A 8.32 - Change management"
+      }
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_8.25_REQ_1",
+      "requirement": "Establish Secure Development Policy",
+      "description": "Create topic-specific policy for secure development",
+      "details": {
+        "policy_content": [
+          "Purpose and scope of secure development",
+          "Security requirements for all development activities",
+          "Security by design and default principles",
+          "Development lifecycle security requirements",
+          "Roles and responsibilities for security",
+          "Coding and design standards required",
+          "Testing and validation requirements",
+          "Environment separation requirements",
+          "Code repository and version control procedures",
+          "Personnel competency requirements"
+        ],
+        "policy_communication": [
+          "Policy formally documented and approved",
+          "Policy communicated to all developers and teams",
+          "Policy training provided",
+          "Policy reviewed and updated annually",
+          "Evidence of policy compliance maintained"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.25_REQ_2",
+      "requirement": "Define Coding Guidelines",
+      "description": "Establish and document coding standards and guidelines",
+      "details": {
+        "coding_standards": [
+          "Programming language specific guidelines",
+          "Secure coding practices documented",
+          "Common vulnerability avoidance techniques",
+          "Input validation and sanitization requirements",
+          "Error handling and logging standards",
+          "Exception handling procedures",
+          "Resource management standards",
+          "Authentication and authorization implementation"
+        ],
+        "industry_standards": [
+          "OWASP Top 10 vulnerabilities addressed",
+          "CWE (Common Weakness Enumeration) awareness",
+          "Language-specific security guidelines",
+          "Framework-specific best practices",
+          "Cryptographic implementation standards"
+        ],
+        "guidelines_documentation": [
+          "Guidelines documented in development manual",
+          "Examples of compliant and non-compliant code",
+          "Quick reference guides for developers",
+          "Regular updates based on threats and lessons learned",
+          "Accessibility and availability to all developers"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.25_REQ_3",
+      "requirement": "Implement Environment Separation",
+      "description": "Establish separate development, test and production environments",
+      "details": {
+        "environment_types": [
+          "Development environment for coding and initial testing",
+          "Test or staging environment for acceptance testing",
+          "Production environment for live systems",
+          "Pre-production environment for final validation if needed"
+        ],
+        "environment_controls": [
+          "Access controls limiting environment access",
+          "Data protection in non-production environments",
+          "Configuration management for each environment",
+          "Logging and monitoring in each environment",
+          "Incident procedures for each environment"
+        ],
+        "promotion_procedures": [
+          "Formal promotion process between environments",
+          "Approval required before environment promotion",
+          "Testing completion verified before promotion",
+          "Documentation of promotion process",
+          "Rollback procedures for failed promotions",
+          "Environment promotion audit trail"
+        ],
+        "data_handling": [
+          "Sanitized or synthetic data in non-production environments",
+          "Real customer data not used in development or test",
+          "Anonymization procedures for test data",
+          "Secure data disposal from non-production environments"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.25_REQ_4",
+      "requirement": "Address Security in Specification and Design",
+      "description": "Incorporate security considerations in specification and design phases",
+      "details": {
+        "security_in_requirements": [
+          "Security requirements documented in specifications",
+          "Access control requirements defined",
+          "Authentication and authorization requirements",
+          "Data protection requirements",
+          "Audit and logging requirements",
+          "Performance and availability requirements",
+          "Incident recovery requirements"
+        ],
+        "security_architecture_review": [
+          "Security architecture reviewed during design phase",
+          "Threat model developed for system",
+          "Attack surface identified and documented",
+          "Security controls mapped to threats",
+          "Design flaws identified and mitigated",
+          "Security decisions documented"
+        ],
+        "security_checkpoints": [
+          "Security checkpoints at key project phases",
+          "Go/no-go decisions at checkpoints",
+          "Security review meetings scheduled",
+          "Risk assessment at each phase",
+          "Mitigation plans for identified risks",
+          "Escalation procedure for checkpoint failures"
+        ],
+        "documentation": [
+          "Security requirements documented",
+          "Design decisions documented",
+          "Threat model and risk assessment documented",
+          "Security controls documented",
+          "Checkpoint review records maintained"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.25_REQ_5",
+      "requirement": "Implement Security Testing",
+      "description": "Establish comprehensive security testing throughout development",
+      "details": {
+        "testing_types": [
+          "Unit testing for security of individual components",
+          "Integration testing for security of component interactions",
+          "Functional security testing verifying security features",
+          "Penetration testing attempting to exploit vulnerabilities",
+          "Vulnerability scanning for known vulnerabilities",
+          "Code analysis for common weaknesses",
+          "Regression testing ensuring fixes don't introduce issues",
+          "Performance and load testing for DoS resistance"
+        ],
+        "testing_coverage": [
+          "Authentication mechanisms tested",
+          "Authorization enforcement verified",
+          "Cryptographic implementations tested",
+          "Input validation tested",
+          "Error handling reviewed",
+          "Logging and auditing tested",
+          "Data protection verified",
+          "Session management tested"
+        ],
+        "testing_procedures": [
+          "Test plans developed and approved",
+          "Test cases documented",
+          "Test results recorded and analyzed",
+          "Vulnerabilities tracked and prioritized",
+          "Remediation verified through retesting",
+          "Test evidence retained"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.25_REQ_6",
+      "requirement": "Manage Code Repositories",
+      "description": "Implement secure code repository and version control",
+      "details": {
+        "version_control_systems": [
+          "Centralized version control system implemented",
+          "Access controls restricting repository access",
+          "Code changes tracked with audit trail",
+          "Branch and merge procedures documented",
+          "Tagging for releases and versions",
+          "Code review workflow implemented"
+        ],
+        "code_security": [
+          "Credentials not stored in code repositories",
+          "Secrets management for API keys and passwords",
+          "Code scanning for sensitive data",
+          "Secret detection in commit history",
+          "Rotation of any exposed secrets",
+          "Code obfuscation for sensitive logic if needed"
+        ],
+        "access_controls": [
+          "Access to repositories restricted by role",
+          "Code review required before merge",
+          "Approval workflow for changes",
+          "Segregation between developers",
+          "Protected branches for production code",
+          "Access logging and monitoring"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.25_REQ_7",
+      "requirement": "Ensure Personnel Competency",
+      "description": "Verify development personnel have appropriate knowledge and skills",
+      "details": {
+        "competency_assessment": [
+          "Job descriptions specify required knowledge and experience",
+          "Competency assessment for development roles",
+          "Required certifications and qualifications identified",
+          "Competency matrix for development team",
+          "Regular assessment of staff competency"
+        ],
+        "training_and_development": [
+          "Secure coding training provided to all developers",
+          "Annual refresher training on secure development",
+          "Training on specific frameworks and technologies",
+          "Security awareness training",
+          "Training records maintained",
+          "Training plan for identified competency gaps"
+        ],
+        "experience_requirements": [
+          "Minimum experience requirements for senior roles",
+          "Mentoring of junior developers by experienced staff",
+          "Code review by experienced developers",
+          "Architecture review by senior architects",
+          "Security review by security professionals"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.25_REQ_8",
+      "requirement": "Manage Outsourced Development",
+      "description": "Ensure outsourced development meets security requirements",
+      "details": {
+        "vendor_selection": [
+          "Security capabilities assessed during vendor selection",
+          "Vendor security practices reviewed",
+          "References checked with other clients",
+          "Security certifications and audit reports reviewed"
+        ],
+        "contractual_requirements": [
+          "Security requirements documented in contract",
+          "Secure development practices required",
+          "Security testing requirements specified",
+          "Access control requirements documented",
+          "Intellectual property and confidentiality protection",
+          "Audit and inspection rights included",
+          "Liability for security issues defined"
+        ],
+        "ongoing_management": [
+          "Regular communication with vendor",
+          "Security compliance monitoring",
+          "Code review and testing of deliverables",
+          "Vulnerability scanning of delivered code",
+          "Incident response procedures",
+          "Contingency plans if vendor fails"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.25_REQ_9",
+      "requirement": "Implement Security in Build and Deployment",
+      "description": "Ensure security controls in build and deployment processes",
+      "details": {
+        "build_security": [
+          "Automated build process from version control",
+          "Build process integrity verified",
+          "Build logs captured and retained",
+          "Build artifacts signed or tagged",
+          "Build process tested and verified",
+          "Build system access controlled"
+        ],
+        "artifact_management": [
+          "Build artifacts stored securely",
+          "Artifact integrity verified before deployment",
+          "Artifact versioning and tracking",
+          "Artifact retention and disposal procedures",
+          "Access controls for artifact storage"
+        ],
+        "deployment_security": [
+          "Deployment procedure documented",
+          "Deployment approvals required",
+          "Pre-deployment security checklist",
+          "Deployment testing performed",
+          "Rollback procedures defined",
+          "Post-deployment security verification"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish secure development policy",
+        "detail": "Create and approve topic-specific secure development policy"
+      },
+      {
+        "step": 2,
+        "action": "Define coding guidelines",
+        "detail": "Document coding standards and secure coding practices"
+      },
+      {
+        "step": 3,
+        "action": "Implement environment separation",
+        "detail": "Establish separate development, test and production environments"
+      },
+      {
+        "step": 4,
+        "action": "Integrate security into project management",
+        "detail": "Add security checkpoints to development process"
+      },
+      {
+        "step": 5,
+        "action": "Develop threat models",
+        "detail": "Conduct threat modeling for systems being developed"
+      },
+      {
+        "step": 6,
+        "action": "Establish security testing procedures",
+        "detail": "Define security testing requirements and test cases"
+      },
+      {
+        "step": 7,
+        "action": "Implement code repository controls",
+        "detail": "Deploy version control with access controls and code review"
+      },
+      {
+        "step": 8,
+        "action": "Assess and address personnel competency",
+        "detail": "Identify competency gaps and provide training"
+      },
+      {
+        "step": 9,
+        "action": "Implement automated security tools",
+        "detail": "Deploy code analysis, vulnerability scanning and testing tools"
+      },
+      {
+        "step": 10,
+        "action": "Test and audit compliance",
+        "detail": "Verify secure development procedures are followed"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 8.25",
+    "checklist": [
+      {
+        "item": "Secure development policy established and approved",
+        "status": "required"
+      },
+      {
+        "item": "Coding guidelines documented and communicated",
+        "status": "required"
+      },
+      {
+        "item": "Development, test and production environments separated",
+        "status": "required"
+      },
+      {
+        "item": "Environment promotion procedures documented",
+        "status": "required"
+      },
+      {
+        "item": "Security requirements in specifications and design",
+        "status": "required"
+      },
+      {
+        "item": "Security checkpoints established in development process",
+        "status": "required"
+      },
+      {
+        "item": "Security testing procedures documented and implemented",
+        "status": "required"
+      },
+      {
+        "item": "Code repository with access controls and code review",
+        "status": "required"
+      },
+      {
+        "item": "Personnel competency assessment completed",
+        "status": "required"
+      },
+      {
+        "item": "Training provided for secure development practices",
+        "status": "required"
+      },
+      {
+        "item": "Outsourced development contracts include security requirements",
+        "status": "required"
+      },
+      {
+        "item": "Threat modeling conducted for systems",
+        "status": "required"
+      },
+      {
+        "item": "Automated security tools implemented",
+        "status": "required"
+      },
+      {
+        "item": "Vulnerability tracking and remediation process",
+        "status": "required"
+      },
+      {
+        "item": "Internal audit of secure development compliance conducted",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with secure development",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Security treated as afterthought rather than design consideration",
+        "description": "Security testing and fixes added at end of development rather than throughout lifecycle",
+        "root_cause": [
+          "Pressure to meet development timelines",
+          "Lack of security expertise in development team",
+          "Cost considerations prioritizing speed over security",
+          "No security checkpoints in development process",
+          "No threat modeling during design"
+        ],
+        "impact": "Vulnerabilities discovered late in development requiring expensive fixes, delays in release, security flaws in production",
+        "prevention": [
+          "Integrate security into project planning from start",
+          "Conduct threat modeling during design phase",
+          "Establish security checkpoints in development process",
+          "Perform security testing throughout development",
+          "Include security in definition of done for features"
+        ]
+      },
+      {
+        "rank": 2,
+        "mistake": "No separation between development, test and production environments",
+        "description": "Development code tested and deployed directly to production without proper testing and validation",
+        "root_cause": [
+          "Cost or complexity of maintaining separate environments",
+          "Small team with limited resources",
+          "Lack of understanding of environment separation value",
+          "Pressure to deploy quickly",
+          "Manual processes without automation"
+        ],
+        "impact": "Untested code reaches production, security vulnerabilities not caught, customer impact from defects",
+        "prevention": [
+          "Implement separate development, test and production environments",
+          "Automate promotion between environments",
+          "Require testing and approval before promotion",
+          "Use containerization or cloud services to reduce environment cost",
+          "Document promotion procedures"
+        ]
+      },
+      {
+        "rank": 3,
+        "mistake": "Inadequate or no security testing",
+        "description": "Security testing not performed or limited to automated scans without manual review",
+        "root_cause": [
+          "Lack of security expertise in development team",
+          "Cost of security testing",
+          "Schedule pressure reducing testing time",
+          "No documented security testing requirements",
+          "Reliance on third parties without verification"
+        ],
+        "impact": "Vulnerabilities reach production, exploitation by attackers, regulatory violations, customer data exposure",
+        "prevention": [
+          "Establish security testing requirements for all development",
+          "Include penetration testing in testing plan",
+          "Implement automated vulnerability scanning",
+          "Conduct code review by experienced developers",
+          "Provide security testing training for QA team",
+          "Require security sign-off before production release"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 8.25 audit",
+    "audit_areas": [
+      {
+        "area": "1. Secure Development Policy",
+        "description": "Verify secure development policy is established",
+        "checks": [
+          "Policy document exists and is approved",
+          "Policy addresses all aspects of secure development",
+          "Policy communicated to development team",
+          "Policy reviewed within last 12 months"
+        ]
+      },
+      {
+        "area": "2. Coding Standards and Guidelines",
+        "description": "Verify coding guidelines are documented and followed",
+        "checks": [
+          "Coding guidelines documented",
+          "Guidelines cover secure coding practices",
+          "Guidelines communicated to developers",
+          "Developer training on guidelines provided",
+          "Code review verifying guideline compliance"
+        ]
+      },
+      {
+        "area": "3. Environment Separation",
+        "description": "Verify development, test and production separated",
+        "checks": [
+          "Separate environments exist",
+          "Access controls between environments",
+          "Data sanitization in non-production environments",
+          "Promotion procedures documented and followed",
+          "No customer data in non-production"
+        ]
+      },
+      {
+        "area": "4. Security in Design and Requirements",
+        "description": "Verify security considered in design phase",
+        "checks": [
+          "Threat modeling performed",
+          "Security requirements documented",
+          "Design review includes security",
+          "Security architecture documented",
+          "Risk assessment completed"
+        ]
+      },
+      {
+        "area": "5. Security Testing",
+        "description": "Verify security testing performed",
+        "checks": [
+          "Security testing procedures documented",
+          "Penetration testing or vulnerability scanning performed",
+          "Code analysis for vulnerabilities",
+          "Test results documented",
+          "Vulnerabilities tracked and remediated"
+        ]
+      },
+      {
+        "area": "6. Code Repository Management",
+        "description": "Verify code repositories controlled",
+        "checks": [
+          "Version control system implemented",
+          "Access controls on repository",
+          "Code review process in place",
+          "Audit trail of changes maintained",
+          "No credentials stored in code"
+        ]
+      },
+      {
+        "area": "7. Personnel Competency",
+        "description": "Verify development personnel qualified",
+        "checks": [
+          "Job requirements specify security knowledge",
+          "Training provided on secure development",
+          "Certifications or experience documented",
+          "Competency gaps addressed",
+          "Training records maintained"
+        ]
+      },
+      {
+        "area": "8. Gambling Operator-Specific Development Security",
+        "description": "Verify game and payment systems secure",
+        "checks": [
+          "Game code security testing performed",
+          "RNG implementation reviewed and tested",
+          "Payment integration security tested",
+          "Customer account functionality security verified",
+          "Regulatory compliance built into systems"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, secure development is critical for game integrity, customer data protection and regulatory compliance. UKGC expects that game systems, payment systems and customer data systems are developed with security built in from the start, tested thoroughly and deployed securely.",
+    "specific_requirements": [
+      "Game code developed with security checkpoints and security testing",
+      "RNG systems designed with cryptographic integrity verification",
+      "Payment system integration with secure authentication and encryption",
+      "Customer account systems with secure authentication and authorization",
+      "Transaction logging and audit trail built into systems",
+      "Data protection by design for customer information",
+      "Regulatory compliance requirements incorporated into design",
+      "Security testing including penetration testing before production",
+      "Environment separation for development, test and production",
+      "Code review and security approval before production deployment"
+    ],
+    "compliance_requirement": "Gambling operators must establish secure development lifecycle with policies, coding standards, environment separation, security testing and personnel competency to ensure systems are developed with security by design"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Ensure security is designed and built into software and systems throughout development lifecycle",
+    "enforcement_priority": "Critical - vulnerabilities in development create ongoing security risks in production systems",
+    "key_principles": [
+      "Security by design and default",
+      "Threat modeling in design phase",
+      "Security checkpoints throughout development",
+      "Comprehensive security testing",
+      "Environment separation and controlled promotion",
+      "Code review and version control",
+      "Personnel with appropriate security knowledge",
+      "Secure configuration management",
+      "Vulnerability tracking and remediation"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 8.25 Secure Development Life Cycle, implement",
+    "requirements": [
+      "Topic-specific secure development policy approved by management",
+      "Coding guidelines and standards documented and communicated",
+      "Secure coding practices specified for all development",
+      "Separate development, test and production environments",
+      "Promotion procedures documented and controlled",
+      "Security requirements documented in specifications",
+      "Threat modeling conducted for systems",
+      "Security checkpoints at key development phases",
+      "Security testing performed on all development",
+      "Penetration testing or vulnerability scanning results documented",
+      "Code repository with access controls and code review",
+      "No credentials or secrets stored in code",
+      "Personnel competency in secure development verified",
+      "Training on secure development practices provided",
+      "Outsourced development contracts include security requirements",
+      "Vulnerability tracking and remediation procedures"
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "UK Gambling Commission Remote Technical Standards (RTS) Chapter 4 - Systems and Operational Security",
+    "related_controls": [
+      {
+        "control": "ISO 27001 A 5.8 - Information security in project management",
+        "relationship": "Security integrated into project management and development planning"
+      },
+      {
+        "control": "ISO 27001 A 8.32 - Change management",
+        "relationship": "Development changes managed through change control"
+      },
+      {
+        "control": "ISO 27001 A 8.31 - Separation of development, test and production",
+        "relationship": "Environment separation is implementation detail of secure development"
+      }
+    ]
+  },
+  "best_practices": {
+    "policy_and_process_best_practices": [
+      "Establish comprehensive secure development policy",
+      "Include security in definition of done for features",
+      "Require security review before code commit",
+      "Implement mandatory code review process",
+      "Establish security checkpoints in development process",
+      "Conduct architecture review by security professionals",
+      "Document security decisions and rationale"
+    ],
+    "technical_best_practices": [
+      "Use secure coding standards for development",
+      "Implement static code analysis and scanning",
+      "Deploy dynamic application security testing (DAST)",
+      "Perform regular dependency checking for vulnerabilities",
+      "Implement container security scanning",
+      "Use software composition analysis (SCA) tools",
+      "Implement infrastructure as code security checks"
+    ],
+    "testing_best_practices": [
+      "Require security testing for all new features",
+      "Include penetration testing in release process",
+      "Perform regular security regression testing",
+      "Test error handling and exception scenarios",
+      "Test authentication and authorization",
+      "Perform load and stress testing for DoS resistance",
+      "Test data protection and encryption"
+    ],
+    "personnel_best_practices": [
+      "Hire developers with security awareness",
+      "Provide annual secure coding training",
+      "Assign security champion role",
+      "Encourage security certifications",
+      "Create culture of security responsibility",
+      "Implement peer review of security practices",
+      "Conduct security lunch and learns"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "game_system_security": "Game code must be developed with security testing to verify RNG integrity and prevent exploitation. Game logic should be reviewed for fairness by independent auditors. Game code should undergo penetration testing before production. Code review should verify no hardcoded odds manipulation.",
+    "payment_system_integration": "Payment system integration must be developed with secure authentication and encryption. Payment data should never be stored unencrypted. Communication with payment processors should use secure protocols. Payment logic should be extensively tested for fraud scenarios.",
+    "customer_data_protection": "Customer data systems must be designed to encrypt personal information at rest and in transit. Access controls should limit employee access to customer data. Data deletion capabilities should be built in from design. Systems should support GDPR data subject requests.",
+    "regulatory_compliance_by_design": "Game systems should have regulatory compliance built into design. Transaction logging for audit trails should be implemented in code. Responsible gambling controls should be implemented in application logic. Age verification requirements should be integrated into user registration.",
+    "testing_for_gambling_systems": "Game systems testing should include fairness testing by independent auditors. Payment integration testing should simulate various payment scenarios. Customer account testing should verify security of account data. Penetration testing should attempt to manipulate game outcomes or transactions."
+  },
+  "document_metadata": {
+    "created_date": "2025-01-15",
+    "source": "ISO 27001 Annex A 8.25 Secure Development Life Cycle Source Document - Converted for UKGC Compliance",
+    "ukgc_reference": "Remote Technical Standards (RTS) Chapter 4 - Systems and Operational Security",
+    "format": "JSON",
+    "version": "1.0",
+    "standard_version": "ISO 27001:2022",
+    "file_name": "iso-27001-annex-a-8.25-secure-development-life-cycle.json",
+    "content_coverage": "Comprehensive coverage of ISO 27001 A.8.25 Secure Development Life Cycle control including purpose, definition, implementation requirements, compliance procedures, common mistakes, audit requirements and UKGC-specific application for gambling operators"
+  }
+}

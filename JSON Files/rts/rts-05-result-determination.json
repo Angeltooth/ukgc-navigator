@@ -1,0 +1,129 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Result Determination",
+  "document_reference": "RTS Aim 5",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling",
+  "aim": {
+    "aim_id": "RTS_AIM_5",
+    "aim_number": 5,
+    "aim_title": "Result Determination",
+    "aim_description": "To ensure that the gambling system implements the operator's rules, game rules and betting rules as they are described to the customer"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_5A",
+      "requirement_number": "5A",
+      "title": "Implementation of Rules and Error Handling",
+      "requirement_type": "mandatory",
+      "full_text": "All reasonable steps should be taken to ensure that gambles are accepted, processed and settled in accordance with the operators' published terms and rules, and the rules of the specific game, event, or bet. Where unexpected system flaws, faults, or errors that affect the customer occur, steps are to be taken as soon as practicable to remedy the problem and ensure that the customer is treated fairly according to the circumstances.",
+      "implementation_guidance": {
+        "full_text": "Under normal operation, in the absence of technical faults, the system should act in accordance with the rules. Reasonable steps include testing of systems and new products against the published rules and monitoring the ongoing performance of those products in the live environment. Refer to our testing strategy for more detailed requirements in this area. Customers should be notified when errors that affect them, for example, incorrectly settled bets, have occurred as soon as practicable after the event occurs. Steps should be taken to rectify the error, for example, by manually adjusting the customer's account.",
+        "key_points": [
+          "All reasonable steps must be taken to ensure gambles are accepted, processed, and settled according to published rules",
+          "System must act in accordance with rules under normal operation",
+          "Reasonable steps include testing systems and new products against published rules",
+          "Must monitor ongoing performance of products in live environment",
+          "When errors affecting customers occur, notify as soon as practicable",
+          "Take steps to rectify errors (e.g., manually adjust customer account)",
+          "Customers must be treated fairly when system flaws/faults/errors occur"
+        ],
+        "normal_operation": {
+          "requirement": "System must act in accordance with the rules",
+          "condition": "In the absence of technical faults"
+        },
+        "reasonable_steps_include": [
+          "Testing of systems against published rules",
+          "Testing of new products against published rules",
+          "Monitoring ongoing performance in live environment",
+          "Refer to UKGC testing strategy for detailed requirements"
+        ],
+        "error_handling": {
+          "notification_timing": "As soon as practicable after error occurs",
+          "examples_of_errors": [
+            "Incorrectly settled bets",
+            "System flaws affecting customer",
+            "Technical faults impacting outcomes"
+          ],
+          "rectification_examples": [
+            "Manually adjusting customer account",
+            "Re-settling bets correctly",
+            "Compensating customers fairly"
+          ],
+          "fairness_principle": "Customer must be treated fairly according to circumstances"
+        },
+        "testing_requirements": {
+          "reference": "UKGC Testing Strategy",
+          "scope": [
+            "Pre-launch testing",
+            "New product testing",
+            "Ongoing performance monitoring"
+          ]
+        }
+      },
+      "applies_to": [
+        "all_gambling"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 5A"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure gambling systems operate according to published rules and customers are treated fairly when errors occur",
+    "enforcement_priority": "Critical - fundamental requirement for fair gambling",
+    "testing_requirements": "Must test systems against published rules and monitor live performance",
+    "key_principles": [
+      "Systems must implement rules as described to customers",
+      "Testing required before launch and ongoing",
+      "Errors must be identified and rectified promptly",
+      "Customer fairness is paramount when technical issues occur",
+      "Transparency required when notifying customers of errors"
+    ]
+  },
+  "related_requirements": [
+    "RTS 3 - Rules and Game Descriptions",
+    "RTS 7 - Generation of Random Outcomes",
+    "RTS 10 - Interrupted Gambling",
+    "UKGC Testing Strategy"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 3 - Rules and Game Descriptions",
+      "RTS 7 - Generation of Random Outcomes",
+      "RTS 10 - Interrupted Gambling"
+    ],
+    "external_documents": [
+      "UK Gambling Commission Testing Strategy for Compliance with RTS"
+    ]
+  },
+  "practical_examples": {
+    "normal_operation": [
+      "Bet settled according to stated odds",
+      "Game outcome determined by published rules",
+      "Payout calculated correctly per pay table"
+    ],
+    "error_scenarios": [
+      "Incorrect odds applied to settled bet - notify customer, recalculate, adjust account",
+      "Game malfunction causes incorrect outcome - investigate, void game if necessary, refund stakes",
+      "Payment processing error - identify affected customers, rectify balances, communicate clearly"
+    ],
+    "testing_examples": [
+      "Test new slot game against stated RTP and rules",
+      "Verify betting system applies correct odds",
+      "Monitor live casino games for rule compliance",
+      "Check payout calculations match published pay tables"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

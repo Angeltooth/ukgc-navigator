@@ -1,0 +1,109 @@
+ISO 27001 Information Security Event Reporting is the requirement for organisations to provide a way for people to report observed or suspected information security events in a timely manner. It is also known as ISO27001:2022 Annex A 6.8 Information Security Event Reporting.
+Key Takeaways
+
+The easiest mechanism for reporting information security incidents is via email or an online form
+Incidents should be reported as soon as they are observed or suspected
+People need to be educated on how to report incidents
+Benefits of implementing Information Security Event Reporting
+
+The benefits of implementing ISO 27001 Information Security Event Reporting include:
+Reducing the risk of data breaches by catching events early
+Reduced cost of incidents by catching and managing events early
+Mitigating legal liability by acting and responding
+You cannot get ISO 27001 certification without it
+Protection of confidential information
+Building trust with employees and third parties
+Reputation Protection
+How to implement ISO 27001 Information Security Event Reporting
+
+You are going to have to
+implement a process for reporting information security events
+educate people how to report events
+assign responsibility for managing information security events
+educate people who to report events to
+Reporting Mechanisms
+
+How security events should be reported?
+The process for reporting incidents and events can take many forms and you may choose one, some or all of them. Examples of appropriate channels include reporting via:
+email
+an on line form
+a telephone number
+messenger / chat
+Reporting Timeframe
+
+How quickly should you report suspected or actual events?
+People should report suspected or actual information security events as soon as possible / at the first opportunity. Significantly, there are some laws and regulations that have very specific timelines for reporting and what needs to happen, such as the GDPR so the guidance is to tell people report as soon as they can. This includes out of hours and at weekends.
+Event Reporting
+
+Who are security events are reported to?
+Internal Reporting
+
+Typically incidents will get reported to the information security manager. While in a larger organisation or mature organisation the first point of call is usually a unified help desk or support function that acts as the coordinator and gatekeeper and then allocates that ticket to the information security manager.
+Reporting includes:
+IT Service Desk: The central point for incident reporting and management
+Chief Information Security Officer (CISO): Oversee incidents and incident response
+information security manager: Management of security incidents and usually the first point of contact
+Legal: Management of any legal implications of security incidents
+External Reporting
+
+External reporting is done under the guidance and direction of the legal department or representative and often includes:
+Law enforcement
+Regulators
+Customers
+Suppliers
+Event Definition
+
+What types of events should be reported?
+The guidance should be that if in doubt, report it. Better to air on the side of caution. That said, the kind of information security events that should be reported include but are not limited to:
+Actual or suspect data breach
+Information Security Controls that are not working
+Loss of device
+Emailing the wrong person
+Physical security breach
+Virus infection
+Malware infection
+Systems not working as intended
+Ransomware
+Phishing email / clicking a link
+Event Investigation
+
+Who is responsible for investigating security events?
+The responsibility for investigating security events will depend on the organisation’s specific structure and processes. However, it is typically assigned to a designated security team or individual.
+How to pass the audit
+
+To comply with ISO 27001 Annex A 6.8 and pass the audit you are going to implement the ‘how’ to the ‘what’ the control is expecting. You are going to:
+Implement your information security event reporting process
+Have the process approved by management
+Assign ownership of the process to competent resource
+Tell people about the process
+Include different channels for people to be able to report events
+Plan to review your process at least annually or if significant changes occur
+Keep records of your reported events
+What the auditor will check
+
+The audit is going to check a number of areas for compliance with ISO 27001 Annex A 6.8. Lets go through them
+1. That you have documented your process for event reporting
+
+What this means is that you will have a document that sets out what the process for event reporting is and includes the roles and responsibilities are that are involved. It will cover the different ways in which events can be reported taking into account the culture and set up of the organisation. It will set out what needs doing and what will be done.
+2. That you have allocated your roles and responsibilities
+
+For the roles and responsible that you have defined and documented you are going to allocate people to them to do the work. Has each defined role been allocated to someone and can you say who if asked? In addition it will check that those people are competent to perform the roles.
+3. That events were responded to in a timely manner
+
+The definition of a timely manner will come down to your own circumstances but you are going to consider any legal or regulatory constraints that may be imposed. For example consider requirements for reporting data breaches under GDPR in 72 hours. The audit will check the reporting and response to incidents and that any time requirements were met.
+Top 3 Mistakes People Make
+
+In my experience, the top 3 mistakes people make for ISO 27001 Annex A 6.8 are
+1. You have no evidence that anything actually happened
+
+There needs to be records and minutes of everything. For evidence, you are need a paper trail to show it was done. Make sure you have updated communication plans, records of events, records of how you responded to events and in what timeframe. If it isn’t written down it didn’t happen.
+2. One or more members of your team haven’t done what they should have done
+
+Before the audit check that all members of the team have done what they should have. For example, do they know where the process documents are? Have events been recorded and do you know where that record it. If events led to risks or continual improvement can you show the link and evidence it. Check!
+3. Your document and version control is wrong
+
+The following are good document mark up best practice
+Keeping your document version control up to date
+making sure that version numbers match where used
+having a review evidenced in the last 12 months
+having documents that have no comments in

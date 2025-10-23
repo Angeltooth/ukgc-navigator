@@ -1,0 +1,1203 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 8.27",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements, particularly those conducting systems development or maintaining custom systems",
+  "control_category": "Development and Support Controls",
+  "control": {
+    "control_id": "ISO_27001_A_8.27",
+    "control_number": "A 8.27",
+    "control_title": "Secure Systems Architecture and Engineering Principles",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure information systems are securely designed, implemented and operated throughout the development lifecycle by applying security by design and default principles",
+    "control_objective": "Establish, document, maintain and apply security engineering principles to all information system development activities ensuring security is built into every architecture layer from inception"
+  },
+  "iso_27001_definition": {
+    "official_text": "Principles for engineering secure systems should be established, documented, maintained and applied to any information system development activities.",
+    "key_requirements": [
+      "Security engineering principles established and documented",
+      "Principles applied to all system development activities",
+      "Security designed into all architecture layers",
+      "Principles maintained and reviewed regularly",
+      "Secure design patterns and techniques implemented",
+      "Zero Trust principles considered and applied",
+      "Third-party developers aligned with principles"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control ensuring security is built into systems from design phase rather than added later, following 'security by design and default' approach",
+    "scope": [
+      "New system development",
+      "System modifications and enhancements",
+      "Custom application development",
+      "Infrastructure architecture and design",
+      "Third-party system integration",
+      "Virtualization and cloud architecture",
+      "Network and data architecture"
+    ],
+    "key_outcome": "Security is embedded into every layer of system architecture from initial design through operation, reducing vulnerabilities and enabling secure operation of gambling systems and protection of customer data"
+  },
+  "prerequisites": {
+    "description": "Before implementing secure systems architecture, foundational requirements must be established",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Information Security Policy",
+        "description": "Comprehensive information security policy established",
+        "rationale": "Provides security direction and governance framework for architecture decisions",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      },
+      {
+        "prerequisite": "Risk Assessment Framework",
+        "description": "Information security risk assessment process in place",
+        "rationale": "Architecture principles must be based on identified threats and risks",
+        "reference": "ISO 27001 A 5.2 - Information security risk assessment"
+      },
+      {
+        "prerequisite": "Secure Development Policy",
+        "description": "Secure development policy established for software development activities",
+        "rationale": "Sets security context for development lifecycle",
+        "reference": "ISO 27001 A 8.25 - Secure development lifecycle"
+      },
+      {
+        "prerequisite": "Technical Architecture Framework",
+        "description": "Overall technical and security architecture strategy documented",
+        "rationale": "Principles aligned with enterprise architecture",
+        "reference": "Organization's enterprise architecture framework"
+      },
+      {
+        "prerequisite": "Development Standards and Guidelines",
+        "description": "Development coding standards and security guidelines established",
+        "rationale": "Principles translated into implementable standards",
+        "reference": "Secure coding standards, OWASP guidance"
+      }
+    ]
+  },
+  "secure_systems_architecture_overview": {
+    "definition": "Application of security engineering principles and secure design practices to all layers of system architecture ensuring threats are mitigated by design rather than remediation",
+    "security_by_design_definition": "Approach where security requirements are identified at the beginning of design phase and controls are built into the system architecture from inception rather than bolted on later",
+    "security_by_default_definition": "Principle where systems operate in secure configuration out of the box with security features enabled by default rather than requiring manual activation",
+    "core_concept": "Never trust, always verify - treating every access request, every component, and every connection as potentially hostile regardless of network location",
+    "architecture_layers": [
+      {
+        "layer": "Business Process Layer",
+        "description": "Security requirements derived from business processes",
+        "examples": [
+          "Digital signature for transactions",
+          "Integrity checking for game outcomes",
+          "Audit trail requirements for regulatory compliance",
+          "Payment processing security"
+        ]
+      },
+      {
+        "layer": "Data Layer",
+        "description": "Data security architecture and data protection controls",
+        "examples": [
+          "Data classification and sensitivity levels",
+          "Encryption of data at rest and in transit",
+          "Data access controls and masking",
+          "Database security architecture"
+        ]
+      },
+      {
+        "layer": "Application Layer",
+        "description": "Application design and security implementation",
+        "examples": [
+          "Secure coding practices",
+          "Input validation and output encoding",
+          "Error handling and logging",
+          "Authentication and authorization mechanisms"
+        ]
+      },
+      {
+        "layer": "Network Layer",
+        "description": "Network architecture and communication security",
+        "examples": [
+          "Network segmentation and firewalls",
+          "VPN and secure connections",
+          "DDoS protection",
+          "Intrusion detection and prevention"
+        ]
+      },
+      {
+        "layer": "Technology Infrastructure Layer",
+        "description": "Hardware, operating systems, and infrastructure security",
+        "examples": [
+          "Server hardening",
+          "Operating system security",
+          "Virtualization security",
+          "Physical security"
+        ]
+      }
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_8.27_REQ_1",
+      "requirement": "Establish Security Engineering Principles",
+      "description": "Define and document comprehensive security engineering principles applicable to all system development and infrastructure activities",
+      "details": {
+        "principle_elements": [
+          "Least privilege - grant minimum necessary access and permissions",
+          "Security by design - consider security from initial design phase",
+          "Security by default - secure configuration out of the box",
+          "Defence in depth - multiple layers of security controls",
+          "Fail securely - fail to secure state rather than open state",
+          "Separation of concerns - segregate components and responsibilities",
+          "Single responsibility - each component has single security function",
+          "Zero Trust - never trust, always verify every access",
+          "Principle of economy - security should be simple and understandable",
+          "Open design - security not based on obscurity of design"
+        ],
+        "documentation_requirements": [
+          "Formal security architecture document",
+          "Design principles clearly articulated",
+          "Principles aligned with business requirements",
+          "Technical standards derived from principles",
+          "Examples of principle application",
+          "Exception process and governance",
+          "Approval and sign-off"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_2",
+      "requirement": "Design Security into All Architecture Layers",
+      "description": "Apply security engineering principles to each layer of system architecture ensuring integrated security across business, data, application, network and technology layers",
+      "details": {
+        "business_layer_security": [
+          "Identify security requirements from business processes",
+          "Define authentication and non-repudiation controls",
+          "Specify integrity and confidentiality requirements",
+          "Determine audit and logging requirements",
+          "Address regulatory and compliance requirements"
+        ],
+        "data_layer_security": [
+          "Classify data by sensitivity and criticality",
+          "Specify encryption requirements (at rest and in transit)",
+          "Design data access controls aligned with classification",
+          "Implement data masking for sensitive information",
+          "Design backup and recovery security"
+        ],
+        "application_layer_security": [
+          "Specify secure coding standards",
+          "Design input validation and sanitization",
+          "Implement secure error handling",
+          "Specify logging and monitoring requirements",
+          "Design secure API architecture"
+        ],
+        "network_layer_security": [
+          "Design network segmentation approach",
+          "Specify firewall and intrusion detection",
+          "Implement VPN and secure communications",
+          "Design DMZ architecture if applicable",
+          "Specify monitoring and alerting"
+        ],
+        "technology_layer_security": [
+          "Specify operating system hardening",
+          "Design virtualization security",
+          "Implement vulnerability management",
+          "Specify patch management requirements",
+          "Design physical security controls"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_3",
+      "requirement": "Implement Zero Trust Architecture Principles",
+      "description": "Apply Zero Trust model where all access is validated regardless of network location, implementing never trust always verify principle",
+      "details": {
+        "zero_trust_principles": [
+          "Never rely only on network perimeter security",
+          "Never assume trust based on network location",
+          "Always authenticate and authorize access",
+          "Always encrypt information end-to-end",
+          "Treat everything as if it came from open, hostile network",
+          "Always validate user identity and device security",
+          "Always verify data integrity",
+          "Always apply least privilege access"
+        ],
+        "zero_trust_implementation": [
+          "Implement multi-factor authentication for all access",
+          "Enforce strong authentication on all systems",
+          "Use encryption for all data in transit",
+          "Implement micro-segmentation of network",
+          "Deploy endpoint protection and verification",
+          "Continuous monitoring and verification of access",
+          "Verify every request to information systems",
+          "Segregate sensitive systems from general network"
+        ],
+        "applications": [
+          "RNG and game system access requires verification before granting access",
+          "Customer data access requires multi-factor authentication",
+          "Administrative access requires additional verification",
+          "Third-party access requires identity and device verification",
+          "Remote access requires VPN and additional authentication"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_4",
+      "requirement": "Apply Secure System Engineering Techniques",
+      "description": "Implement specific secure engineering techniques to translate principles into architecture and design",
+      "details": {
+        "security_architecture_techniques": [
+          "Security architecture reviews during design phase",
+          "Threat modeling and attack surface analysis",
+          "Design reviews focused on security",
+          "Security control mapping to threats",
+          "Architecture documentation with security annotations",
+          "Design patterns for common security scenarios"
+        ],
+        "system_hardening": [
+          "Minimize attack surface by disabling unnecessary services",
+          "Remove unnecessary network ports and protocols",
+          "Configure systems for secure operation",
+          "Remove default credentials and accounts",
+          "Apply security patches and updates",
+          "Configure audit logging and monitoring",
+          "Disable unnecessary features and functionality"
+        ],
+        "tamper_resistance": [
+          "Code obfuscation for critical algorithms",
+          "Anti-tampering detection mechanisms",
+          "Integrity checking for critical files",
+          "Monitor for unauthorized modifications",
+          "Alert on tampering attempts"
+        ],
+        "segregation": [
+          "Network segmentation between security zones",
+          "Logical segregation of systems and data",
+          "Segregation of duties in access control",
+          "Isolation of development, test and production",
+          "Segregation of RNG systems from other systems"
+        ],
+        "secure_virtualization": [
+          "Hypervisor security and hardening",
+          "Virtual machine isolation and separation",
+          "Secure container architecture",
+          "Resource isolation between virtual systems",
+          "Secure migration of virtual systems"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_5",
+      "requirement": "Document Security Control Implementation",
+      "description": "Comprehensively document all security controls, their implementation, and how they address identified threats and requirements",
+      "details": {
+        "documentation_requirements": [
+          "Security architecture documentation with diagrams",
+          "For each control: what it does, where it is implemented, how it works",
+          "Mapping of controls to identified threats",
+          "Mapping of controls to security requirements",
+          "Configuration documentation for security-relevant settings",
+          "Evidence of control implementation",
+          "Maintenance and patch history",
+          "Test results demonstrating control effectiveness"
+        ],
+        "documentation_content": [
+          "System architecture diagrams showing security zones",
+          "Data flow diagrams with security controls marked",
+          "Security control checklist for system",
+          "Configuration details for security controls",
+          "Dependency documentation between controls",
+          "Failure mode analysis and mitigation",
+          "Performance impact of security controls"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_6",
+      "requirement": "Document Controls That Do Not Meet Requirements",
+      "description": "Explicitly identify and document any cases where controls do not fully meet security requirements, including compensating controls and risk acceptance",
+      "details": {
+        "gap_documentation": [
+          "Identify any security requirements not met by implemented controls",
+          "Document reasons for gaps (cost, technical limitations, business constraints)",
+          "Specify compensating controls if applicable",
+          "Document risk acceptance decision and approval",
+          "Specify timeline for addressing gaps if remediation planned",
+          "Document management approval of risk acceptance"
+        ],
+        "compensating_controls": [
+          "When full control cannot be implemented, specify alternatives",
+          "Ensure compensating controls provide equivalent protection",
+          "Document why alternatives are equivalent",
+          "Implement monitoring to detect exploitation of gaps",
+          "Document approval of compensating approach"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_7",
+      "requirement": "Consider Integration with Security Architecture",
+      "description": "Ensure system architecture is integrated with overall organizational security architecture and technical architecture",
+      "details": {
+        "integration_elements": [
+          "Alignment with enterprise security architecture",
+          "Consistency with technical architecture standards",
+          "Integration with existing security controls",
+          "Compatibility with centralized security tools",
+          "Integration with monitoring and SIEM",
+          "Alignment with incident response procedures",
+          "Integration with backup and disaster recovery"
+        ],
+        "compatibility_review": [
+          "Verify new systems compatible with existing infrastructure",
+          "Ensure controls can be managed and monitored centrally",
+          "Confirm logging and audit trails can be centralized",
+          "Verify backup and recovery procedures work with system",
+          "Confirm incident response can address system incidents"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_8",
+      "requirement": "Conduct Security Architecture Reviews",
+      "description": "Implement design review process focused specifically on security to validate architecture principles are appropriately applied",
+      "details": {
+        "review_process": [
+          "Security architecture review before development",
+          "Review of design documentation by security team",
+          "Identification of security risks in design",
+          "Validation that principles have been applied",
+          "Identification of missing or inadequate controls",
+          "Recommendations for security improvements",
+          "Sign-off on security design before development"
+        ],
+        "review_criteria": [
+          "All architecture layers have security controls",
+          "Zero Trust principles applied where appropriate",
+          "Defence in depth implemented",
+          "Least privilege enforced in design",
+          "Security by default configured",
+          "Data encryption implemented",
+          "Authentication and authorization designed",
+          "Audit logging and monitoring designed",
+          "Segregation of components",
+          "Resilience and recovery designed"
+        ],
+        "review_frequency": [
+          "Before new system development",
+          "Before significant modifications",
+          "Periodically for existing systems (at least annually)",
+          "When security requirements change",
+          "When threat landscape changes"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_9",
+      "requirement": "Apply Principles to Third-Party Developers and Systems",
+      "description": "Ensure security engineering principles are applied by third-party developers and external systems integrated into organization",
+      "details": {
+        "third_party_requirements": [
+          "Include security architecture requirements in contracts",
+          "Require adherence to organization security principles",
+          "Specify architecture documentation requirements",
+          "Require design reviews before development",
+          "Specify security control implementation requirements",
+          "Require testing and validation of security controls",
+          "Specify documentation and audit trail requirements",
+          "Right to audit third-party security implementation"
+        ],
+        "third_party_integration": [
+          "Review third-party architecture before integration",
+          "Verify compliance with security principles",
+          "Implement additional controls if gaps exist",
+          "Test integration security",
+          "Document assumptions and dependencies",
+          "Establish service level agreements for security",
+          "Monitor third-party security compliance"
+        ],
+        "outsourced_development": [
+          "Require adherence to secure development lifecycle",
+          "Require secure coding standards compliance",
+          "Require security testing before delivery",
+          "Require security documentation",
+          "Right to audit development and testing",
+          "Require vulnerability remediation",
+          "Escrow arrangements for critical code"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_10",
+      "requirement": "Maintain and Review Security Architecture",
+      "description": "Establish processes to maintain, update and review security architecture to ensure principles remain appropriate and effective",
+      "details": {
+        "maintenance_activities": [
+          "Monitor changes in threat landscape",
+          "Track emerging security technologies",
+          "Review security incidents and lessons learned",
+          "Track evolution of compliance requirements",
+          "Monitor effectiveness of security controls",
+          "Evaluate new security techniques and best practices",
+          "Update architecture documentation"
+        ],
+        "review_frequency": [
+          "Annual comprehensive review of architecture",
+          "Review when significant changes occur",
+          "Review after security incidents",
+          "Review when requirements change",
+          "Update for new threats or vulnerabilities"
+        ],
+        "update_process": [
+          "Formal change management for architecture changes",
+          "Review of proposed changes by security team",
+          "Impact analysis of changes",
+          "Testing of changes before implementation",
+          "Documentation updates",
+          "Communication of changes to stakeholders",
+          "Training on new architecture elements"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.27_REQ_11",
+      "requirement": "Consider Organizational Capability and Constraints",
+      "description": "Ensure security architecture principles are practical and implementable given organization's technical capability, capacity, costs and complexity",
+      "details": {
+        "feasibility_factors": [
+          "Organization's technical skills and capability",
+          "Available resources and capacity",
+          "Budget constraints and cost-benefit analysis",
+          "Complexity of implementation",
+          "Timeline for implementation",
+          "Impact on system performance and usability",
+          "Availability of tools and technologies"
+        ],
+        "approach": [
+          "Prioritize controls by risk and criticality",
+          "Phase implementation of controls over time",
+          "Build capability progressively",
+          "Use industry tools and solutions where appropriate",
+          "Identify skills gaps and training needs",
+          "Consider outsourcing or managed services",
+          "Balance security with operational effectiveness"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish security engineering principles framework",
+        "detail": "Document comprehensive security engineering principles derived from risk assessment and compliance requirements"
+      },
+      {
+        "step": 2,
+        "action": "Conduct threat modeling and risk assessment",
+        "detail": "Identify threats, vulnerabilities and risks in system architecture"
+      },
+      {
+        "step": 3,
+        "action": "Design security into each architecture layer",
+        "detail": "Apply principles to business, data, application, network and technology layers"
+      },
+      {
+        "step": 4,
+        "action": "Specify security control architecture",
+        "detail": "Define what controls needed, where they apply, and how they work together"
+      },
+      {
+        "step": 5,
+        "action": "Create security architecture documentation",
+        "detail": "Document architecture with security controls, configurations and implementation details"
+      },
+      {
+        "step": 6,
+        "action": "Implement Zero Trust architecture elements",
+        "detail": "Deploy multi-factor authentication, encryption, and verification mechanisms"
+      },
+      {
+        "step": 7,
+        "action": "Apply hardening and secure configuration techniques",
+        "detail": "Harden systems and remove unnecessary services and ports"
+      },
+      {
+        "step": 8,
+        "action": "Establish security architecture review process",
+        "detail": "Create formal review process for new development and modifications"
+      },
+      {
+        "step": 9,
+        "action": "Implement third-party security requirements",
+        "detail": "Establish contractual requirements and oversight for third-party developers"
+      },
+      {
+        "step": 10,
+        "action": "Establish architecture maintenance and review procedures",
+        "detail": "Create processes for maintaining, updating and reviewing architecture"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 8.27",
+    "checklist": [
+      {
+        "item": "Security engineering principles documented",
+        "status": "required"
+      },
+      {
+        "item": "Principles cover all architecture layers",
+        "status": "required"
+      },
+      {
+        "item": "Zero Trust principles considered and applied",
+        "status": "required"
+      },
+      {
+        "item": "Security architecture design completed",
+        "status": "required"
+      },
+      {
+        "item": "Threat modeling and risk assessment conducted",
+        "status": "required"
+      },
+      {
+        "item": "Security controls mapped to architecture layers",
+        "status": "required"
+      },
+      {
+        "item": "System hardening specifications documented",
+        "status": "required"
+      },
+      {
+        "item": "Encryption requirements specified",
+        "status": "required"
+      },
+      {
+        "item": "Authentication and authorization architecture designed",
+        "status": "required"
+      },
+      {
+        "item": "Segregation and isolation architecture designed",
+        "status": "required"
+      },
+      {
+        "item": "Logging and audit trail architecture designed",
+        "status": "required"
+      },
+      {
+        "item": "Design review process established",
+        "status": "required"
+      },
+      {
+        "item": "Architecture documentation complete and current",
+        "status": "required"
+      },
+      {
+        "item": "Third-party security requirements documented",
+        "status": "required"
+      },
+      {
+        "item": "Gaps and compensating controls documented",
+        "status": "required"
+      },
+      {
+        "item": "Architecture review and maintenance procedures established",
+        "status": "required"
+      },
+      {
+        "item": "Security architecture reviewed and approved",
+        "status": "required"
+      },
+      {
+        "item": "Development team trained on security principles",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with secure systems architecture",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Security added as afterthought rather than designed in from inception",
+        "description": "Systems developed without security architecture, then security bolted on later in development or after deployment resulting in ineffective controls and rework",
+        "root_cause": [
+          "No security requirements defined at design phase",
+          "Development timeline pressures leading to rushing design",
+          "Security team not involved in architecture design",
+          "No design review process",
+          "Misunderstanding of 'security by design' principle",
+          "Development team lacking security knowledge"
+        ],
+        "impact": [
+          "Ineffective security controls",
+          "Costly rework and remediation",
+          "Systems deployed with vulnerabilities",
+          "Compliance violations",
+          "Data breaches and security incidents",
+          "Loss of customer trust and regulatory penalties"
+        ],
+        "prevention": [
+          "Define security requirements at design phase",
+          "Include security team in architecture design from inception",
+          "Conduct threat modeling before development",
+          "Mandatory security architecture review before development",
+          "Train development team on secure design principles",
+          "Establish secure development lifecycle"
+        ],
+        "requirement": "Security must be part of architecture design from inception, not added later"
+      },
+      {
+        "rank": 2,
+        "mistake": "Documentation incomplete, inadequate or not maintained",
+        "description": "Security architecture not properly documented, documentation outdated or does not show how controls work, making it impossible to verify or maintain security",
+        "root_cause": [
+          "Assumption architecture is self-evident",
+          "Documentation burden seen as unnecessary overhead",
+          "No process for maintaining documentation",
+          "Architecture changes made without updating documentation",
+          "Technical team not trained on documentation requirements",
+          "No accountability for maintaining documentation"
+        ],
+        "impact": [
+          "Unable to verify security controls are implemented",
+          "Difficult to identify missing or ineffective controls",
+          "Impossible to maintain or update architecture effectively",
+          "Audit failures due to lack of evidence",
+          "New team members unable to understand architecture",
+          "Security issues go undetected"
+        ],
+        "prevention": [
+          "Create comprehensive architecture documentation as core deliverable",
+          "Document architecture diagrams, data flows, security controls",
+          "Include configuration details for all security-relevant settings",
+          "Establish process for updating documentation with changes",
+          "Document assumptions, dependencies and design decisions",
+          "Make documentation mandatory part of development process",
+          "Regular audit of documentation completeness and accuracy"
+        ]
+      },
+      {
+        "rank": 3,
+        "mistake": "Zero Trust principles not understood or not applied to critical systems",
+        "description": "Systems designed with assumption of trust based on network location or internal network status, leaving them vulnerable when boundary is breached",
+        "root_cause": [
+          "Misunderstanding of Zero Trust model",
+          "Outdated thinking of perimeter security as sufficient",
+          "Perceived complexity of Zero Trust implementation",
+          "Cost and resource constraints",
+          "Lack of management support",
+          "Belief that current security is adequate"
+        ],
+        "impact": [
+          "Lateral movement within network after breach",
+          "Compromised internal systems accessing sensitive data",
+          "RNG or game systems compromised from internal attack",
+          "Customer data breach from internal access",
+          "Compliance violations for inadequate access controls",
+          "Successful targeted attacks against critical systems"
+        ],
+        "prevention": [
+          "Understand and articulate Zero Trust principles",
+          "Apply Zero Trust to all critical systems",
+          "Implement multi-factor authentication on all access",
+          "Encrypt all data in transit",
+          "Segment network to prevent lateral movement",
+          "Verify every access request regardless of source",
+          "Continuous monitoring and verification",
+          "Training on Zero Trust for architects and developers"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 8.27 audit",
+    "audit_areas": [
+      {
+        "area": "1. Security Engineering Principles Documentation",
+        "description": "Verify documented security engineering principles exist and are comprehensive",
+        "checks": [
+          "Security principles formally documented",
+          "Principles cover all architecture layers",
+          "Principles address least privilege, security by design, defence in depth",
+          "Zero Trust principles documented and explained",
+          "Principles approved and communicated",
+          "Process for updating principles established",
+          "Examples showing how principles apply"
+        ]
+      },
+      {
+        "area": "2. Security Architecture Design",
+        "description": "Verify architecture designed with security principles applied to all layers",
+        "checks": [
+          "Security architecture documented with diagrams",
+          "Business layer security controls identified",
+          "Data layer security controls identified",
+          "Application layer security controls identified",
+          "Network layer security controls identified",
+          "Technology layer security controls identified",
+          "Integration of controls across layers shown"
+        ]
+      },
+      {
+        "area": "3. Threat Modeling and Risk Assessment",
+        "description": "Verify threats and risks identified and controls specified to address them",
+        "checks": [
+          "Threat modeling conducted",
+          "Attack surface analysis performed",
+          "Risks identified and documented",
+          "Controls specified to address identified risks",
+          "Mapping between threats and controls evident",
+          "Risk assessment approved",
+          "Updated when threat landscape changes"
+        ]
+      },
+      {
+        "area": "4. Design Review Process",
+        "description": "Verify formal security architecture review process exists and is followed",
+        "checks": [
+          "Design review process documented",
+          "Review checklist or criteria established",
+          "Review conducted before development begins",
+          "Security team involved in reviews",
+          "Review findings documented",
+          "Issues tracked and resolved before development",
+          "Approval and sign-off evidence",
+          "Reviews conducted for modifications"
+        ]
+      },
+      {
+        "area": "5. Security Control Implementation",
+        "description": "Verify security controls implemented according to architecture specification",
+        "checks": [
+          "Controls implemented match architectural design",
+          "Hardening specifications followed",
+          "Encryption implemented as designed",
+          "Authentication and authorization working correctly",
+          "Segregation and isolation implemented",
+          "Logging and audit trails functioning",
+          "Tamper resistance mechanisms in place",
+          "Testing demonstrates controls effective"
+        ]
+      },
+      {
+        "area": "6. Documentation of Controls and Gaps",
+        "description": "Verify controls documented and any gaps identified with compensating controls or risk acceptance",
+        "checks": [
+          "For each control: what it does, where implemented, how it works",
+          "Configuration documentation for security settings",
+          "Test results showing control effectiveness",
+          "Gaps identified and documented",
+          "Compensating controls specified if applicable",
+          "Risk acceptance approved and documented",
+          "Timeline for remediation if gaps to be addressed"
+        ]
+      },
+      {
+        "area": "7. Third-Party Developer and Integration Controls",
+        "description": "Verify third-party developers required to follow security principles",
+        "checks": [
+          "Contracts specify security architecture requirements",
+          "Third parties required to follow secure development lifecycle",
+          "Design reviews conducted for third-party systems",
+          "Security testing requirements specified",
+          "Architecture documentation required",
+          "Audit rights included in contracts",
+          "Third-party compliance verified"
+        ]
+      },
+      {
+        "area": "8. Architecture Maintenance and Review",
+        "description": "Verify architecture maintained and reviewed to ensure ongoing relevance",
+        "checks": [
+          "Process for maintaining architecture established",
+          "Changes to architecture follow formal process",
+          "Architecture reviewed at least annually",
+          "Updates made when threats or requirements change",
+          "Review findings documented",
+          "Updates communicated to stakeholders",
+          "Training provided on architecture changes"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, secure systems architecture is fundamental to protecting RNG integrity, game outcome authenticity, customer data confidentiality, and regulatory compliance. Architecture must ensure no single vulnerability can compromise critical systems.",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Outcome Systems",
+        "architecture_requirements": [
+          "Segregated and isolated from general network",
+          "Zero Trust access control - all access authenticated and authorized",
+          "Multi-factor authentication required for all access",
+          "End-to-end encryption of all communications",
+          "All access logged and auditable",
+          "Tamper resistance and integrity monitoring",
+          "Defence in depth with multiple security layers",
+          "No trust based on internal network location",
+          "Restricted to necessary personnel only",
+          "Security by design and default configuration"
+        ]
+      },
+      {
+        "system": "Customer Data and Payment Processing",
+        "architecture_requirements": [
+          "Encryption of all customer data in transit and at rest",
+          "Segregation of customer data from other systems",
+          "Least privilege access to customer information",
+          "Multi-factor authentication for access",
+          "Audit logging of all customer data access",
+          "Payment processing to PCI DSS standards",
+          "Data masking for sensitive elements",
+          "Secure backup and recovery procedures",
+          "Zero Trust for any remote access",
+          "Compliance with GDPR and data protection"
+        ]
+      },
+      {
+        "system": "Game Integrity and Outcome Recording",
+        "architecture_requirements": [
+          "Immutable recording of all game outcomes",
+          "Integrity checking of recorded outcomes",
+          "Segregated audit trail systems",
+          "Write-once storage for historical records",
+          "Authentication of outcome recording",
+          "Tamper detection for recorded data",
+          "Segregation of outcome recording from operational systems",
+          "Restricted access to modify or delete outcomes",
+          "Time-stamped and cryptographically signed records"
+        ]
+      },
+      {
+        "system": "Regulatory and Compliance Systems",
+        "architecture_requirements": [
+          "Audit trail systems protected and segregated",
+          "Regulatory reporting systems with integrity controls",
+          "Secure archiving of compliance documentation",
+          "Access controls for compliance data",
+          "Non-repudiation of compliance actions",
+          "Secure communication of regulatory reporting",
+          "Backup and recovery for compliance data",
+          "Multi-factor authentication for compliance access"
+        ]
+      },
+      {
+        "system": "Administrative and Operator Access",
+        "architecture_requirements": [
+          "Segregation of administrative networks",
+          "Multi-factor authentication for admin access",
+          "Role-based access control",
+          "Comprehensive logging of administrative actions",
+          "Least privilege for administrative roles",
+          "Remote access via VPN with additional authentication",
+          "Monitoring and alerting on suspicious admin activity"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must demonstrate that systems are securely architected with security principles applied to all architecture layers, Zero Trust implemented for critical systems, and controls effective in protecting RNG integrity, game authenticity, and customer data"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Ensure information systems are securely designed and architected to prevent vulnerabilities and ensure security controls are effective throughout system lifecycle",
+    "enforcement_priority": "Critical - foundation for all other security controls; poor architecture cannot be compensated by operational controls",
+    "key_principles": [
+      "Security by design - built in from inception",
+      "Security by default - secure out of the box",
+      "Defence in depth - multiple security layers",
+      "Least privilege - minimum necessary access",
+      "Zero Trust - never trust, always verify",
+      "Fail securely - fail to secure state",
+      "Separation of concerns - segregation and isolation",
+      "Security principles documented and applied",
+      "Design reviews focused on security",
+      "Third-party developers comply with principles",
+      "Regular architecture review and maintenance"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 8.27, implement",
+    "requirements": [
+      {
+        "requirement": "Document security engineering principles",
+        "detail": "Establish and document comprehensive principles covering all architecture layers"
+      },
+      {
+        "requirement": "Design security into architecture",
+        "detail": "Apply principles to business, data, application, network and technology layers"
+      },
+      {
+        "requirement": "Implement Zero Trust principles",
+        "detail": "Apply never trust always verify to critical systems"
+      },
+      {
+        "requirement": "Conduct threat modeling",
+        "detail": "Identify threats and map controls to address them"
+      },
+      {
+        "requirement": "Create security architecture documentation",
+        "detail": "Document architecture with detailed control specifications"
+      },
+      {
+        "requirement": "Establish design review process",
+        "detail": "Formal security review before development begins"
+      },
+      {
+        "requirement": "Implement security controls",
+        "detail": "Deploy hardening, encryption, authentication, segregation"
+      },
+      {
+        "requirement": "Document control implementation",
+        "detail": "Show how each control implemented and how effective"
+      },
+      {
+        "requirement": "Document gaps and compensating controls",
+        "detail": "Identify any gaps with compensating controls or risk acceptance"
+      },
+      {
+        "requirement": "Apply to third parties",
+        "detail": "Require contractors and external developers follow principles"
+      },
+      {
+        "requirement": "Maintain architecture",
+        "detail": "Keep architecture current and reviewed annually"
+      },
+      {
+        "requirement": "Evidence of effectiveness",
+        "detail": "Testing and validation that controls work as designed"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 5.2 - Information security risk assessment",
+      "ISO 27001 A 5.15 - Access control",
+      "ISO 27001 A 8.1 - User endpoint devices",
+      "ISO 27001 A 8.2 - Privileged access rights",
+      "ISO 27001 A 8.3 - Information access restriction",
+      "ISO 27001 A 8.5 - Secure authentication",
+      "ISO 27001 A 8.24 - Protection from malware",
+      "ISO 27001 A 8.25 - Secure development lifecycle",
+      "ISO 27001 A 8.28 - Secure coding",
+      "ISO 27001 A 13.1 - Network security",
+      "ISO 27001 A 13.2 - Information transfer"
+    ]
+  },
+  "best_practices": {
+    "architecture_design": [
+      "Start security architecture work before design begins",
+      "Involve security specialists in design from inception",
+      "Conduct formal threat modeling and attack surface analysis",
+      "Document security requirements derived from threats",
+      "Design with defence in depth - multiple security layers",
+      "Apply least privilege principle throughout architecture",
+      "Design for segregation and isolation of critical systems",
+      "Specify encryption for data at rest and in transit",
+      "Design for audit logging and monitoring",
+      "Design for secure backup and disaster recovery"
+    ],
+    "zero_trust_implementation": [
+      "Never assume trust based on network location",
+      "Implement multi-factor authentication on all access",
+      "Encrypt all data in transit end-to-end",
+      "Segment network to prevent lateral movement",
+      "Verify every access request regardless of source",
+      "Authenticate and authorize every system interaction",
+      "Implement continuous monitoring and verification",
+      "Log all access for audit and investigation",
+      "Assume breach - design for detection and response",
+      "Isolate critical systems from general network"
+    ],
+    "documentation_practices": [
+      "Document architecture with clear diagrams",
+      "Show security zones and data flows",
+      "Document each control - what, where, how",
+      "Map controls to identified threats",
+      "Document configuration of security controls",
+      "Include assumptions and dependencies",
+      "Document test results validating controls",
+      "Maintain version control and change history",
+      "Keep documentation current and reviewed",
+      "Make documentation accessible to relevant teams"
+    ],
+    "design_review_practices": [
+      "Establish formal design review process",
+      "Create security architecture review checklist",
+      "Include security team in all design reviews",
+      "Review threat modeling and risk assessment",
+      "Verify all architecture layers addressed",
+      "Check for defence in depth",
+      "Verify least privilege implemented",
+      "Confirm Zero Trust applied to critical systems",
+      "Review documentation quality",
+      "Document review findings and resolutions"
+    ],
+    "secure_coding_architecture": [
+      "Specify secure coding standards in architecture",
+      "Design input validation and sanitization",
+      "Specify error handling approach",
+      "Design secure logging and monitoring",
+      "Specify authentication and authorization",
+      "Design for secure configuration management",
+      "Specify API security architecture",
+      "Design for secure communication protocols",
+      "Specify testing requirements for security"
+    ],
+    "testing_and_validation": [
+      "Include security testing in design phase",
+      "Specify security testing requirements",
+      "Test threat modeling scenarios",
+      "Validate defence in depth effectiveness",
+      "Test access control enforcement",
+      "Test encryption implementation",
+      "Test authentication mechanisms",
+      "Penetration test final implementation",
+      "Document test results",
+      "Retest after modifications"
+    ],
+    "third_party_management": [
+      "Define security architecture requirements clearly",
+      "Include security requirements in contracts",
+      "Require design review before development",
+      "Require security testing before delivery",
+      "Audit third-party architecture and code",
+      "Verify compliance with principles",
+      "Integrate third-party systems securely",
+      "Ongoing monitoring of third-party security",
+      "Establish incident response with third parties",
+      "Regular security assessments of third parties"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "rng_system_architecture": [
+      {
+        "principle": "Complete Segregation",
+        "guidance": "RNG systems must be completely segregated from general network and other systems. Design for airgapped operation if possible with secure transfer mechanisms."
+      },
+      {
+        "principle": "Zero Trust Access",
+        "guidance": "Every access to RNG system requires authentication, authorization and verification. No trust based on internal network status."
+      },
+      {
+        "principle": "Tamper Detection",
+        "guidance": "Implement tamper resistance and detection mechanisms to identify any unauthorized modifications."
+      },
+      {
+        "principle": "Audit Trail",
+        "guidance": "All access and modifications to RNG must be logged with non-repudiation. Design for immutable audit logging."
+      },
+      {
+        "principle": "Restricted Access",
+        "guidance": "Limit RNG access to minimal set of people with clear business need. Design segregation of duties."
+      }
+    ],
+    "customer_data_architecture": [
+      {
+        "principle": "End-to-End Encryption",
+        "guidance": "Encrypt all customer data in transit and at rest. Design for strong encryption algorithms and key management."
+      },
+      {
+        "principle": "Data Segregation",
+        "guidance": "Segregate customer data from other systems. Design for data isolation and access control."
+      },
+      {
+        "principle": "Access Control",
+        "guidance": "Design for least privilege access to customer data. Implement role-based access control aligned with job functions."
+      },
+      {
+        "principle": "Audit Logging",
+        "guidance": "Design for comprehensive logging of all customer data access. Ensure logs cannot be modified or deleted."
+      },
+      {
+        "principle": "Payment Data Protection",
+        "guidance": "Payment data requires highest protection. Design for PCI DSS compliance and secure payment processing."
+      }
+    ],
+    "game_integrity_architecture": [
+      {
+        "principle": "Immutable Records",
+        "guidance": "Design game outcome recording for immutability. Use cryptographic signatures and write-once storage."
+      },
+      {
+        "principle": "Integrity Verification",
+        "guidance": "Implement mechanisms to verify integrity of recorded outcomes. Design for detection of tampering."
+      },
+      {
+        "principle": "Segregation",
+        "guidance": "Segregate outcome recording from operational systems. Design for read-only access except during recording."
+      },
+      {
+        "principle": "Authentication",
+        "guidance": "Authenticate all systems submitting game outcomes. Design for non-repudiation of recorded data."
+      },
+      {
+        "principle": "Audit Trail",
+        "guidance": "Maintain detailed audit trail of all outcomes. Design for compliance reporting and regulatory verification."
+      }
+    ],
+    "regulatory_compliance_architecture": [
+      {
+        "principle": "Compliance Data Protection",
+        "guidance": "Protect regulatory and compliance data with highest controls. Design for auditor access and verification."
+      },
+      {
+        "principle": "Audit Trail Integrity",
+        "guidance": "Audit trails must not be modifiable. Design for tamper evidence and detection."
+      },
+      {
+        "principle": "Reporting Accuracy",
+        "guidance": "Design systems to ensure regulatory reporting accuracy. Implement integrity checks and validation."
+      },
+      {
+        "principle": "Record Retention",
+        "guidance": "Design for secure retention of compliance records. Plan for retention periods and secure disposal."
+      },
+      {
+        "principle": "Evidence Preservation",
+        "guidance": "Design for preservation of evidence for regulatory investigations. Plan for data forensics capability."
+      }
+    ],
+    "key_architectural_decisions": [
+      "Determine appropriate level of network segregation",
+      "Specify Zero Trust implementation scope",
+      "Design backup and disaster recovery architecture",
+      "Plan for business continuity",
+      "Design incident response architecture",
+      "Specify monitoring and alerting architecture",
+      "Design secure administration access",
+      "Plan for secure third-party integration",
+      "Specify encryption strategy and key management",
+      "Design for regulatory compliance and auditing"
+    ],
+    "audit_readiness": [
+      "Security architecture documentation reviewed and approved",
+      "Threat modeling completed and documented",
+      "Design review process established and followed",
+      "Security controls designed to address identified threats",
+      "All architecture layers have documented security controls",
+      "Zero Trust principles applied to critical systems",
+      "Third-party requirements specified and enforced",
+      "Security testing completed before deployment",
+      "Gaps and compensating controls documented",
+      "Architecture reviewed annually and updated"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 8.27",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-8.27-secure-systems-architecture-and-engineering-principles.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance including RNG protection, customer data architecture, game integrity, and regulatory compliance considerations"
+  }
+}

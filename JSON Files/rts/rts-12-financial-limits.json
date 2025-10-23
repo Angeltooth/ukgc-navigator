@@ -1,0 +1,193 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Financial Limits",
+  "document_reference": "RTS Aim 12",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling - except subscription lotteries",
+  "aim": {
+    "aim_id": "RTS_AIM_12",
+    "aim_number": 12,
+    "aim_title": "Financial Limits",
+    "aim_description": "To provide customers with facilities that may assist them in sticking to their personal budgets for gambling with the operator. Customers must be also be given the option to set financial limits at an account level"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_12A",
+      "requirement_number": "12A",
+      "title": "Financial Limit Setting Facilities",
+      "requirement_type": "mandatory",
+      "full_text": "The gambling system must provide easily accessible facilities that make it possible for customers to impose their own financial limits. Customers must be given the opportunity to set a limit as part of the registration process (or at the point at which the customer makes the first deposit or payment).",
+      "implementation_guidance": {
+        "full_text": "For telephone gambling (except lotteries), customers should be asked if they would like to set a deposit or spend limit when they register. Customers should be able to request a limit at any point after registration. The limit should be implemented as soon as practicable after the customer's request. The customer should be informed when the limit will come into force. For other access media (including internet, interactive TV and mobile), customers should be offered the opportunity to select a deposit/spend limit from a list which may contain a 'no limit' option or to enter a limit of their choice as part of the registration or first deposit process. The 'no limit' option should not be the default option. Limits could be in the form of: deposit limits: where the amount a customer deposits into their account is limited over a particular duration; spend limits: where the amount a customer spends on gambling (or specific gambling products) is restricted for a given period – this type of limit may be appropriate where the customer does not hold a deposit account with the operator; loss limits: where the amount lost (that is, winnings subtracted from the amount spent) is restricted (for instance when a customer makes a £10 bet and wins £8, the loss is £2). The period/duration of the limits on offer should include: 24 hours and; 7 days and; one month. In addition: limits may be implemented per customer, per account, or other means; limits could also be implemented across all products or channels or for individual products or channels. Where limits are also set across separate products it should be clear to customers using the facility that a limit will need to be set for each individuals product. For example, where a limit has been set for a specific game a customer should not be misled into assuming that the limit automatically applies to other products; financial limit facilities should be provided via a link on the homepage; facilities should be available on deposit pages/screens or via a link on these pages or screens; where a customer sets simultaneous time frames, for example a daily deposit limit and a weekly limit, the lowest limit should always apply. Therefore if a daily deposit limit of £10 and a weekly limit of £100 are both set then the maximum the system should allow to be deposited is £10 per day and £70 per week.",
+        "key_points": [
+          "Must provide easily accessible facilities for customers to set financial limits",
+          "Customers must be given opportunity to set limit during registration or first deposit",
+          "Telephone gambling: ask if customer wants to set deposit/spend limit at registration",
+          "Other media: offer selection from list or enter own limit (no limit option must not be default)",
+          "Limit types: deposit limits, spend limits, loss limits",
+          "Required time periods: 24 hours, 7 days, one month",
+          "Can be per customer, per account, across all products, or per product/channel",
+          "Financial limit facilities should be on homepage link",
+          "Should be available on deposit pages/screens or via link",
+          "When multiple timeframes set, lowest limit always applies"
+        ],
+        "telephone_gambling": {
+          "registration": "Customers should be asked if they would like to set deposit or spend limit when they register",
+          "post_registration": "Should be able to request limit at any point after registration",
+          "implementation_timing": "As soon as practicable after customer request",
+          "customer_notification": "Should be informed when limit will come into force"
+        },
+        "other_access_media": {
+          "includes": ["internet", "interactive TV", "mobile"],
+          "process": "Offer opportunity to select deposit/spend limit from list or enter limit of choice",
+          "timing": "Part of registration or first deposit process",
+          "no_limit_option": "May be included but should NOT be default option"
+        },
+        "limit_types": [
+          {
+            "type": "Deposit limits",
+            "description": "Amount customer deposits into account is limited over particular duration"
+          },
+          {
+            "type": "Spend limits",
+            "description": "Amount customer spends on gambling (or specific products) is restricted for given period",
+            "use_case": "May be appropriate where customer does not hold deposit account with operator"
+          },
+          {
+            "type": "Loss limits",
+            "description": "Amount lost (winnings subtracted from amount spent) is restricted",
+            "example": "Customer makes £10 bet and wins £8, the loss is £2"
+          }
+        ],
+        "required_time_periods": [
+          "24 hours",
+          "7 days",
+          "One month"
+        ],
+        "implementation_options": {
+          "scope_options": [
+            "Per customer",
+            "Per account",
+            "Other means"
+          ],
+          "coverage_options": [
+            "Across all products or channels",
+            "For individual products or channels"
+          ],
+          "cross_product_clarity": "Where limits set across separate products, must be clear to customers that limit needs to be set for each individual product"
+        },
+        "accessibility_requirements": [
+          "Financial limit facilities should be provided via link on homepage",
+          "Facilities should be available on deposit pages/screens or via link on these pages/screens"
+        ],
+        "simultaneous_limits": {
+          "rule": "Lowest limit should always apply",
+          "example": "Daily deposit limit of £10 and weekly limit of £100: maximum allowed is £10 per day and £70 per week"
+        }
+      },
+      "applies_to": [
+        "all_gambling"
+      ],
+      "applies_to_exclusions": [
+        "subscription_lotteries"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 12A"
+    },
+    {
+      "requirement_id": "RTS_12B",
+      "requirement_number": "12B",
+      "title": "Limit Increases and Cooling-Off Period",
+      "requirement_type": "mandatory",
+      "full_text": "All reasonable steps must be taken to ensure that customer-led limits are only increased at the customer's request, only after a cooling-off period of 24 hours has elapsed and only once the customer has taken positive action at the end of the cooling off period to confirm their request.",
+      "implementation_guidance": {
+        "full_text": "Where possible (for instance, unless systems/technical failures prevent it) limit reductions are to be implemented within 24 hours of the request being received. In addition, at the point at which the customer requests a decrease in their limit, they should be informed when the limit reduction will take effect.",
+        "key_points": [
+          "Limit increases: only at customer's request",
+          "Limit increases: only after 24 hour cooling-off period",
+          "Limit increases: only once customer takes positive action to confirm at end of cooling-off period",
+          "Limit reductions: implement within 24 hours where possible",
+          "Limit reductions: inform customer when reduction will take effect"
+        ],
+        "limit_increases": {
+          "request_requirement": "Only at customer's request",
+          "cooling_off_period": "24 hours must elapse",
+          "confirmation_requirement": "Customer must take positive action at end of cooling-off period to confirm request",
+          "purpose": "Prevent impulsive increases during gambling sessions"
+        },
+        "limit_reductions": {
+          "implementation_timing": "Within 24 hours of request being received",
+          "exception": "Unless systems/technical failures prevent it",
+          "customer_notification": "At point of request, inform customer when limit reduction will take effect"
+        }
+      },
+      "applies_to": [
+        "all_gambling"
+      ],
+      "applies_to_exclusions": [
+        "subscription_lotteries"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 12B"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Enable customers to set and maintain personal gambling budgets through accessible limit-setting tools",
+    "enforcement_priority": "Critical - fundamental safer gambling requirement",
+    "testing_requirements": "Must demonstrate easily accessible limit setting, proper cooling-off periods for increases, and rapid implementation of decreases",
+    "key_principles": [
+      "Proactive limit setting during registration",
+      "Multiple limit types available",
+      "Mandatory time period options (24h, 7d, 1m)",
+      "Cooling-off period prevents impulsive increases",
+      "Rapid implementation of decreases",
+      "Clear visibility and accessibility",
+      "Lowest limit always prevails"
+    ]
+  },
+  "related_requirements": [
+    "RTS 13 - Time Requirements and Reality Checks",
+    "RTS 14 - Responsible Product Design",
+    "LCCP Social Responsibility Code",
+    "Customer Interaction Requirements"
+  ],
+  "cross_references": {
+    "lccp": "Social Responsibility Code - Financial Limit Requirements",
+    "other_rts": [
+      "RTS 13 - Reality Checks",
+      "RTS 14 - Responsible Product Design"
+    ]
+  },
+  "practical_examples": {
+    "compliant_implementations": [
+      "Registration process includes mandatory prompt to set deposit limit",
+      "Homepage displays prominent 'Set Limits' link",
+      "Deposit page includes limit-setting option",
+      "Customer requests £500 weekly limit increase: 24 hour cooling-off period, then requires positive confirmation",
+      "Customer requests £200 weekly limit decrease: implemented within hours, customer notified of exact timing"
+    ],
+    "non_compliant_scenarios": [
+      "'No limit' set as default option - NOT ALLOWED",
+      "Limit increase processed immediately without cooling-off - NOT ALLOWED",
+      "Limit reduction delayed beyond 24 hours without system failure - NOT COMPLIANT",
+      "Financial limits hidden in obscure menu - NOT COMPLIANT"
+    ],
+    "simultaneous_limit_example": {
+      "scenario": "Customer sets £10 daily limit and £100 weekly limit",
+      "correct_implementation": "System allows £10/day maximum, and £70/week maximum (not £100)",
+      "reasoning": "Lowest limit prevails"
+    }
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Remote Technical Standards - Live Dealer Studios",
+  "document_reference": "RTS Aim 17",
+  "last_updated": "2025-10-12",
+  "legal_status": "mandatory",
+  "applies_to_note": "Gaming (including bingo)",
+  "aim": {
+    "aim_id": "RTS_AIM_17",
+    "aim_number": 17,
+    "aim_title": "Live Dealer Studios",
+    "aim_description": "To ensure that live dealer operations are fair"
+  },
+  "requirements": [
+    {
+      "requirement_id": "RTS_17A",
+      "requirement_number": "17A",
+      "title": "Fair and Independently Auditable Live Dealer Operations",
+      "requirement_type": "mandatory",
+      "full_text": "Live dealer operations must be fair and independently auditable.",
+      "implementation_guidance": {
+        "full_text": "Equipment and consumables should be of commercial casino quality. Designated staff should be responsible for monitoring the integrity of all operational equipment. Croupiers need to undergo adequate training to provide the gambling in a fair way according to documented procedures and game rules. Evidence of training and refresher training should be maintained. Gambling provision should be supervised by staff responsible to oversee dealer activities and integrity. Video surveillance to record all dealer activity should be in place, enough to cover the predefined gaming areas with sufficient detail to confirm whether dealing procedures and game rules were followed. Secure areas, gambling equipment and consumables shall be protected by appropriate access controls to ensure that only authorised personnel are allowed access. Game logs should be maintained and game events collated into statistics which can be analysed for trends relating to game performance, staff and/or locations in the gaming area.",
+        "key_points": [
+          "Live dealer operations must be fair and independently auditable",
+          "Equipment and consumables must be commercial casino quality",
+          "Designated staff must monitor integrity of operational equipment",
+          "Croupiers must undergo adequate training with documented evidence",
+          "Gambling provision must be supervised by staff overseeing dealer activities and integrity",
+          "Video surveillance must record all dealer activity covering predefined gaming areas",
+          "Video must have sufficient detail to confirm procedures and rules were followed",
+          "Secure areas and equipment protected by appropriate access controls",
+          "Only authorised personnel allowed access",
+          "Game logs must be maintained",
+          "Game events collated into statistics for trend analysis"
+        ],
+        "equipment_standards": {
+          "requirement": "Commercial casino quality",
+          "scope": "Equipment and consumables"
+        },
+        "integrity_monitoring": {
+          "responsibility": "Designated staff",
+          "scope": "Monitor integrity of all operational equipment"
+        },
+        "croupier_training": {
+          "requirement": "Adequate training to provide gambling in fair way",
+          "basis": "According to documented procedures and game rules",
+          "documentation": "Evidence of training and refresher training should be maintained"
+        },
+        "supervision": {
+          "requirement": "Gambling provision should be supervised",
+          "responsibility": "Staff responsible to oversee dealer activities and integrity"
+        },
+        "video_surveillance": {
+          "requirement": "Record all dealer activity",
+          "coverage": "Enough to cover predefined gaming areas",
+          "detail_level": "Sufficient detail to confirm whether dealing procedures and game rules were followed"
+        },
+        "access_control": {
+          "scope": [
+            "Secure areas",
+            "Gambling equipment",
+            "Consumables"
+          ],
+          "requirement": "Protected by appropriate access controls",
+          "authorization": "Only authorised personnel are allowed access"
+        },
+        "game_logging": {
+          "requirement": "Game logs should be maintained",
+          "analysis": "Game events collated into statistics",
+          "purpose": "Can be analysed for trends relating to game performance, staff and/or locations in gaming area"
+        }
+      },
+      "applies_to": [
+        "gaming",
+        "bingo",
+        "live_dealer_casino",
+        "live_roulette",
+        "live_blackjack",
+        "live_baccarat"
+      ],
+      "enforcement": "mandatory",
+      "citation": "UK Gambling Commission - Remote Technical Standards, RTS Requirement 17A"
+    }
+  ],
+  "compliance_notes": {
+    "overall_purpose": "Ensure fairness and auditability of live dealer gambling operations",
+    "enforcement_priority": "High - critical for maintaining integrity of live dealer games",
+    "testing_requirements": "Must demonstrate commercial quality equipment, adequate training, comprehensive surveillance, and proper access controls",
+    "key_principles": [
+      "Commercial casino standards apply",
+      "Comprehensive staff training and documentation",
+      "Active supervision and integrity monitoring",
+      "Full video surveillance with adequate detail",
+      "Secure access controls",
+      "Statistical analysis for trend detection",
+      "Independent auditability"
+    ]
+  },
+  "related_requirements": [
+    "RTS 5 - Result Determination",
+    "RTS 7 - Random Outcomes (for physical devices)",
+    "LCCP Fair Gaming Provisions",
+    "Security Requirements"
+  ],
+  "cross_references": {
+    "other_rts": [
+      "RTS 5 - Implementation of Rules",
+      "RTS 7 - Mechanical RNG Requirements"
+    ],
+    "security_standards": "ISO/IEC 27001 Access Control Requirements"
+  },
+  "practical_implementation": {
+    "equipment_examples": [
+      "Cards and dealing shoes of commercial casino quality",
+      "Roulette wheels meeting casino specifications",
+      "Gaming tables to commercial standards",
+      "Chips and other gaming equipment meeting durability standards"
+    ],
+    "surveillance_requirements": [
+      "Multiple camera angles covering all gaming areas",
+      "High-resolution recording capable of confirming card values, wheel results",
+      "Audio recording where relevant",
+      "Sufficient retention period for investigation purposes"
+    ],
+    "training_documentation": [
+      "Initial training records",
+      "Refresher training schedules and completion records",
+      "Game rules and procedures documentation",
+      "Competency assessments"
+    ],
+    "statistical_analysis_examples": [
+      "Win/loss percentages by dealer",
+      "Game outcome distributions",
+      "Unusual patterns or anomalies",
+      "Performance trends by location or time"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-12",
+    "source": "UK Gambling Commission - Remote Technical Standards",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0"
+  }
+}

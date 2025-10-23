@@ -1,0 +1,1019 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 6.7",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "People Controls",
+  "control": {
+    "control_id": "ISO_27001_A_6.7",
+    "control_number": "A 6.7",
+    "control_title": "Remote Working",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure information security is maintained when personnel work outside organization premises",
+    "control_objective": "Implement appropriate technical, physical, and procedural controls to protect information and systems when accessed and used outside organization facilities"
+  },
+  "iso_27001_definition": {
+    "official_text": "An appropriate policy and procedures for remote working should be implemented taking into account the risks associated with working outside the organization's premises.",
+    "key_requirements": [
+      "Remote working policy established",
+      "Remote working procedures documented",
+      "Risks of remote working assessed",
+      "Controls selected based on risk assessment",
+      "Technical controls implemented",
+      "Physical security controls implemented",
+      "Personnel trained on remote working security",
+      "Compliance with local laws and regulations"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control protecting organization information when accessed outside controlled premises",
+    "scope": [
+      "Work performed from home",
+      "Work performed from public locations (coffee shops, airports)",
+      "Work performed from client premises",
+      "Work performed from co-working spaces",
+      "Any location outside organization facilities"
+    ],
+    "definitions": {
+      "remote_working": "Work arrangement where employees perform duties from location other than traditional office",
+      "related_terms": [
+        "Teleworking",
+        "Telecommuting",
+        "Flexible workplace",
+        "Fully remote",
+        "Virtual work environment",
+        "Hybrid work"
+      ]
+    }
+  },
+  "prerequisites": {
+    "description": "Before implementing remote working controls, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Information Security Risk Assessment",
+        "description": "Completed risk assessment including remote working risks",
+        "rationale": "Controls selected based on identified risks",
+        "reference": "ISO 27001 A 5.2 - Information security risk assessment"
+      },
+      {
+        "prerequisite": "Information Security Policy",
+        "description": "Main information security policy in place",
+        "rationale": "Remote working policy derived from overall security policy",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      },
+      {
+        "prerequisite": "Technical Infrastructure",
+        "description": "IT systems and remote access technology in place",
+        "rationale": "Technical controls need to be deployed",
+        "reference": "Various technical controls"
+      },
+      {
+        "prerequisite": "Training and Awareness Program",
+        "description": "Personnel training program established",
+        "rationale": "Remote workers need security training",
+        "reference": "ISO 27001 A 6.3 - Information security awareness, education and training"
+      }
+    ]
+  },
+  "remote_working_overview": {
+    "definition": "Work arrangement allowing personnel to perform duties from locations outside organization premises with appropriate security controls",
+    "security_challenges": [
+      "Uncontrolled physical environment",
+      "Unauthorized access by family or friends",
+      "Eavesdropping in public spaces",
+      "Loss or theft of devices",
+      "Weak home network security",
+      "Malware on personal devices",
+      "Shoulder surfing",
+      "Unsecured data storage",
+      "Compromised communications",
+      "Compliance and regulatory risks"
+    ],
+    "benefits_of_implementation": [
+      "Reduced data breach risk",
+      "Improved regulatory compliance",
+      "Protection of confidential information",
+      "Employee trust and satisfaction",
+      "Business continuity capability",
+      "Reputation protection",
+      "Reduction of potential breach penalties"
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_6.7_REQ_1",
+      "requirement": "Conduct Remote Working Risk Assessment",
+      "description": "Assess information security risks associated with remote working",
+      "details": {
+        "assessment_elements": [
+          "Identify risks specific to remote working",
+          "Assess impact of uncontrolled environment",
+          "Evaluate data sensitivity of remote workers",
+          "Assess technical risks",
+          "Evaluate physical security risks",
+          "Consider regulatory requirements",
+          "Assess compliance risks"
+        ],
+        "risk_categories": [
+          "Data breach - information accessed in public or by unauthorized persons",
+          "Device loss or theft - equipment compromised or lost",
+          "Eavesdropping - conversations overheard in public",
+          "Weak network security - home WiFi compromised",
+          "Malware - unsecured devices infected",
+          "Unauthorized access - family or roommates access systems",
+          "Regulatory non-compliance - working in prohibited locations"
+        ],
+        "output": "Documented risk assessment with identified risks and proposed controls"
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_2",
+      "requirement": "Develop Remote Working Policy",
+      "description": "Create documented policy addressing remote working security",
+      "details": {
+        "policy_elements": [
+          "Scope - who can work remotely and when",
+          "Objectives - what policy is trying to achieve",
+          "Approved remote working locations",
+          "Technical requirements for devices",
+          "Network security requirements",
+          "Physical security requirements",
+          "Communication security requirements",
+          "Data handling when working remotely",
+          "Device management and patching",
+          "Backup and recovery requirements",
+          "Incident reporting procedures",
+          "Consequences of policy violations",
+          "Review and approval process"
+        ],
+        "policy_considerations": [
+          "Applicable laws and regulations in relevant jurisdictions",
+          "Organization size and complexity",
+          "Types of information accessed remotely",
+          "Types of roles that can work remotely",
+          "Technology and infrastructure available"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_3",
+      "requirement": "Develop Remote Working Procedures",
+      "description": "Create documented procedures for remote working security",
+      "details": {
+        "procedure_elements": [
+          "Approval process for remote working",
+          "Security requirements before remote access",
+          "Device requirements and standards",
+          "VPN or remote access setup",
+          "Firewall and antimalware requirements",
+          "Multi-factor authentication requirements",
+          "Secure communication tools",
+          "Data classification and handling",
+          "Physical security arrangements",
+          "Backup procedures",
+          "Monitoring and compliance checks",
+          "Incident reporting and escalation",
+          "Equipment return procedures"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_4",
+      "requirement": "Implement Technical Controls",
+      "description": "Deploy technology solutions to protect remote access",
+      "details": {
+        "technical_controls": [
+          "VPN (Virtual Private Network) for secure connectivity",
+          "Multi-factor authentication for access",
+          "Firewalls and intrusion detection",
+          "Malware and antivirus protection",
+          "Endpoint Detection and Response (EDR)",
+          "Device encryption",
+          "Hard drive/full disk encryption",
+          "Screen privacy protection and anti-glare screens",
+          "Remote desktop/virtual desktop infrastructure",
+          "Secure file sharing and collaboration tools",
+          "Email security and encryption",
+          "Device management and Mobile Device Management (MDM)",
+          "Automatic patching and updates",
+          "Data Loss Prevention (DLP) tools"
+        ],
+        "implementation_approach": "Work with IT team to select and deploy appropriate technology"
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_5",
+      "requirement": "Implement Physical Security Controls",
+      "description": "Establish physical security measures for remote work environments",
+      "details": {
+        "physical_controls": [
+          "Lockable storage for confidential documents",
+          "Lockable filing cabinets or drawers",
+          "Document shredders for secure disposal",
+          "Secure disposal of sensitive materials",
+          "Clear desk policy when away from workstation",
+          "Privacy screens to prevent shoulder surfing",
+          "Restricted access to home office (locks on doors)",
+          "Secure handling of printed information",
+          "Safe storage of physical media",
+          "Secure transportation of documents"
+        ],
+        "home_office_considerations": [
+          "Assess if home office is appropriate for role",
+          "Provide equipment to mitigate risks",
+          "Consider family members and roommates",
+          "Security arrangements for storage",
+          "Disposal of printed materials"
+        ],
+        "public_location_considerations": [
+          "Use privacy screens in public spaces",
+          "Position away from public view",
+          "Avoid confidential calls in public",
+          "Be aware of shoulder surfing",
+          "Maintain awareness of surroundings",
+          "Do not discuss confidential information"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_6",
+      "requirement": "Establish Communication Security",
+      "description": "Ensure secure communications when working remotely",
+      "details": {
+        "communication_requirements": [
+          "Use approved communication tools",
+          "VPN for all remote access",
+          "Encrypted email for sensitive communications",
+          "Secure messaging platforms",
+          "Avoid unsecured public WiFi",
+          "Disable auto-connect to WiFi",
+          "Use mobile hotspot rather than public WiFi",
+          "Secure passwords for networks",
+          "Do not use personal email for work",
+          "Conference call security when remote"
+        ],
+        "network_security": [
+          "Home network secured with strong password",
+          "WiFi encrypted (WPA2 or WPA3)",
+          "Router firmware updated",
+          "Firewall enabled",
+          "No use of public or open networks",
+          "VPN mandatory for all remote access"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_7",
+      "requirement": "Define Remote Device Requirements",
+      "description": "Establish standards for devices used when working remotely",
+      "details": {
+        "device_standards": [
+          "Approved devices only - company-provided when possible",
+          "Full disk encryption required",
+          "Antivirus and antimalware protection",
+          "Firewall enabled",
+          "Automatic patching enabled",
+          "Strong password/PIN protection",
+          "Multi-factor authentication enabled",
+          "No unauthorized software",
+          "Current operating system and security patches",
+          "Endpoint protection deployed"
+        ],
+        "device_management": [
+          "Mobile Device Management (MDM) for company devices",
+          "Remote wiping capability for lost devices",
+          "Compliance checking before access",
+          "Monitoring for vulnerabilities",
+          "Inventory tracking of devices",
+          "Device retirement procedures"
+        ],
+        "personal_device_policy": [
+          "Bring Your Own Device (BYOD) considerations",
+          "Requirements if personal devices permitted",
+          "Restriction of sensitive data on personal devices",
+          "Enrollment in MDM if permitted",
+          "Separation of work and personal use"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_8",
+      "requirement": "Provide Remote Working Training",
+      "description": "Educate personnel on remote working security",
+      "details": {
+        "training_content": [
+          "Remote working policy overview",
+          "Security risks of remote working",
+          "Secure device use",
+          "Secure network use",
+          "Physical security at home or public locations",
+          "Secure communications",
+          "Data handling when remote",
+          "Password and authentication security",
+          "Malware and phishing awareness",
+          "Incident reporting procedures",
+          "Clear desk policy",
+          "Confidentiality in public spaces",
+          "Device loss and theft prevention"
+        ],
+        "training_delivery": [
+          "Initial training for new remote workers",
+          "Annual refresher training",
+          "Update training when policy changes",
+          "Role-specific training for critical roles",
+          "Targeted awareness campaigns"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_9",
+      "requirement": "Implement Monitoring and Compliance Checks",
+      "description": "Monitor remote working compliance with policy",
+      "details": {
+        "monitoring_activities": [
+          "Technical monitoring of remote access",
+          "Review of access logs",
+          "Compliance checks on device security",
+          "Audit of remote workers",
+          "Visual inspection of home offices",
+          "Assessment of physical security measures",
+          "Verification of policy compliance",
+          "Incident tracking and analysis"
+        ],
+        "audit_approach": [
+          "Remote video interviews and observation",
+          "Visual inspection of work environment",
+          "Assessment of physical security measures",
+          "Verification of device compliance",
+          "At least annual audit of remote workers",
+          "Risk-based frequency for critical roles"
+        ],
+        "reporting": [
+          "Document audit findings",
+          "Track compliance issues",
+          "Report findings to management",
+          "Evidence of corrective actions"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_10",
+      "requirement": "Plan for Backup and Business Continuity",
+      "description": "Address backup and recovery for remote work scenarios",
+      "details": {
+        "considerations": [
+          "Backup of remote devices",
+          "Recovery procedures for remote workers",
+          "Business continuity with remote work",
+          "Incident response in remote setting",
+          "Data recovery procedures",
+          "Testing of recovery procedures"
+        ],
+        "mobile_device_considerations": [
+          "Backup strategy for mobile devices",
+          "Cloud backup options",
+          "Local backup procedures",
+          "Data recovery from devices",
+          "Device wiping procedures"
+        ],
+        "business_continuity": [
+          "Remote work as continuity measure",
+          "Capability to fully operate remotely",
+          "Communication during outages",
+          "Access to critical systems remotely"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_11",
+      "requirement": "Ensure Insurance Coverage",
+      "description": "Obtain appropriate insurance for remote working risks",
+      "details": {
+        "insurance_considerations": [
+          "Cyber liability insurance",
+          "Data breach insurance",
+          "Professional indemnity insurance",
+          "Equipment loss or theft",
+          "Coverage for remote work scenarios",
+          "Coverage for home office",
+          "Review of policy exclusions"
+        ],
+        "verification": [
+          "Confirm remote working covered",
+          "Verify coverage limits adequate",
+          "Annual review with insurance provider",
+          "Update coverage for changes"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_12",
+      "requirement": "Comply with Local Laws and Regulations",
+      "description": "Ensure remote working complies with applicable legislation",
+      "details": {
+        "legal_compliance": [
+          "Health and safety regulations for home offices",
+          "Employment law requirements",
+          "Data protection and privacy laws",
+          "Electrical safety standards",
+          "Duty of care obligations",
+          "Insurance requirements",
+          "Any remote work specific regulations"
+        ],
+        "jurisdictional_considerations": [
+          "Remote work in different countries/regions",
+          "Local laws in worker's location",
+          "Tax and employment implications",
+          "Data residency requirements",
+          "Regulatory reporting obligations"
+        ],
+        "documentation": [
+          "Record of legal compliance review",
+          "Documentation of applicable requirements",
+          "Evidence of compliance measures"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_6.7_REQ_13",
+      "requirement": "Document and Communicate Controls",
+      "description": "Maintain and communicate remote working requirements",
+      "details": {
+        "documentation": [
+          "Remote working policy document",
+          "Remote working procedures",
+          "Risk assessment and controls",
+          "Technology deployment plans",
+          "Training materials and records",
+          "Audit checklists and reports",
+          "Approval records"
+        ],
+        "communication": [
+          "Publish policy to all personnel",
+          "Announce new remote working options",
+          "Explain requirements and expectations",
+          "Provide procedures and guidance",
+          "Deliver training to all remote workers",
+          "Regular reminders and awareness",
+          "Update communications when policy changes"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Conduct remote working risk assessment",
+        "detail": "Identify security risks specific to remote work"
+      },
+      {
+        "step": 2,
+        "action": "Develop remote working policy",
+        "detail": "Create documented policy addressing remote work security"
+      },
+      {
+        "step": 3,
+        "action": "Develop remote working procedures",
+        "detail": "Document procedures for secure remote work"
+      },
+      {
+        "step": 4,
+        "action": "Plan technical controls",
+        "detail": "Identify technology solutions needed"
+      },
+      {
+        "step": 5,
+        "action": "Deploy technical controls",
+        "detail": "Implement VPN, MDM, encryption, and security tools"
+      },
+      {
+        "step": 6,
+        "action": "Plan physical security measures",
+        "detail": "Identify physical security equipment needed"
+      },
+      {
+        "step": 7,
+        "action": "Implement physical security measures",
+        "detail": "Provide lockable storage, shredders, privacy screens, etc."
+      },
+      {
+        "step": 8,
+        "action": "Develop remote working training",
+        "detail": "Create training on remote work security"
+      },
+      {
+        "step": 9,
+        "action": "Deliver training to remote workers",
+        "detail": "Train all personnel who work remotely"
+      },
+      {
+        "step": 10,
+        "action": "Establish monitoring and audit procedures",
+        "detail": "Create procedures for checking remote worker compliance"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 6.7",
+    "checklist": [
+      {
+        "item": "Conduct remote working risk assessment",
+        "status": "required"
+      },
+      {
+        "item": "Develop remote working policy",
+        "status": "required"
+      },
+      {
+        "item": "Develop remote working procedures",
+        "status": "required"
+      },
+      {
+        "item": "Implement technical controls (VPN, MDM, encryption)",
+        "status": "required"
+      },
+      {
+        "item": "Implement physical security measures",
+        "status": "required"
+      },
+      {
+        "item": "Define device requirements and standards",
+        "status": "required"
+      },
+      {
+        "item": "Develop remote working training",
+        "status": "required"
+      },
+      {
+        "item": "Train all remote workers",
+        "status": "required"
+      },
+      {
+        "item": "Establish monitoring and audit procedures",
+        "status": "required"
+      },
+      {
+        "item": "Conduct compliance audits of remote workers",
+        "status": "required"
+      },
+      {
+        "item": "Plan for backup and business continuity",
+        "status": "required"
+      },
+      {
+        "item": "Verify insurance coverage",
+        "status": "required"
+      },
+      {
+        "item": "Ensure compliance with local laws",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with remote working",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No documented evidence of controls or compliance",
+        "description": "Remote working controls implemented but not documented or evidenced",
+        "root_cause": [
+          "No written policy or procedures",
+          "No training records",
+          "No audit or compliance checking",
+          "No monitoring records or reports",
+          "Informal or ad hoc implementation"
+        ],
+        "impact": "Cannot demonstrate compliance, audit findings, regulatory penalties, data breach liability",
+        "prevention": [
+          "Document policy and procedures",
+          "Maintain training records",
+          "Conduct and document audits",
+          "Track compliance metrics",
+          "Maintain monitoring records",
+          "Create audit trail of controls"
+        ],
+        "requirement": "All controls and compliance checking must be documented"
+      },
+      {
+        "rank": 2,
+        "mistake": "Remote workers not compliant with policy",
+        "description": "Policy exists but remote workers not following it or not trained",
+        "root_cause": [
+          "Training not provided or incomplete",
+          "Policy not communicated",
+          "No consequences for non-compliance",
+          "No audit or monitoring",
+          "Lack of management oversight",
+          "Assumption workers understand requirements"
+        ],
+        "impact": "Security gaps, data breaches, policy violations, audit findings",
+        "prevention": [
+          "Deliver comprehensive training to all remote workers",
+          "Conduct regular audits and compliance checks",
+          "Pre-audit verification of compliance",
+          "Establish accountability for non-compliance",
+          "Document all compliance activities"
+        ],
+        "best_practice": "Pre-audit video inspection of remote workers verifying compliance"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control issues",
+        "description": "Policy and procedures not properly maintained or current",
+        "root_cause": [
+          "No version control process",
+          "Outdated policy in use",
+          "Multiple versions in circulation",
+          "No regular review or updates",
+          "Comments left in final documents",
+          "No evidence of approval"
+        ],
+        "impact": "Inconsistent implementation, non-compliance, confusion about requirements",
+        "prevention": [
+          "Implement document version control",
+          "Review and update policy annually",
+          "Update for regulatory or technical changes",
+          "Remove draft comments",
+          "Standardize version numbering",
+          "Document approval and sign-off"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 6.7 audit",
+    "audit_areas": [
+      {
+        "area": "1. Remote Working Policy and Procedures",
+        "description": "Verify documented policy and procedures exist",
+        "checks": [
+          "Remote working policy documented",
+          "Policy addresses approved locations",
+          "Procedures for secure remote access documented",
+          "Technical requirements defined",
+          "Physical security requirements defined",
+          "Device standards documented",
+          "Training requirements specified",
+          "Approval and sign-off documented"
+        ]
+      },
+      {
+        "area": "2. Risk Assessment",
+        "description": "Verify risks assessed and controls selected",
+        "checks": [
+          "Risk assessment conducted",
+          "Risks specific to remote working identified",
+          "Controls selected based on risk",
+          "Control effectiveness assessed",
+          "Residual risks documented"
+        ]
+      },
+      {
+        "area": "3. Technical Controls",
+        "description": "Verify technical controls implemented",
+        "checks": [
+          "VPN deployed for remote access",
+          "Multi-factor authentication in place",
+          "Firewall and antimalware deployed",
+          "Encryption implemented",
+          "Device management in place",
+          "Monitoring and logging active",
+          "Access controls enforced",
+          "Technical controls documented"
+        ]
+      },
+      {
+        "area": "4. Physical Security",
+        "description": "Verify physical security measures in place",
+        "checks": [
+          "Policy addresses physical security",
+          "Equipment provided (shredders, storage, privacy screens)",
+          "Clear desk policy documented",
+          "Remote worker home office assessed",
+          "Security measures appropriate for data sensitivity"
+        ]
+      },
+      {
+        "area": "5. Training and Awareness",
+        "description": "Verify personnel trained on remote working security",
+        "checks": [
+          "Training program developed",
+          "Training delivered to remote workers",
+          "Training records maintained",
+          "Content covers key security topics",
+          "Remote workers understand requirements",
+          "Awareness campaigns conducted",
+          "Regular updates provided"
+        ]
+      },
+      {
+        "area": "6. Compliance Audits",
+        "description": "Verify audits conducted to check compliance",
+        "checks": [
+          "Audit procedures defined",
+          "Audits conducted at least annually",
+          "Remote worker compliance verified",
+          "Audit findings documented",
+          "Issues tracked and resolved",
+          "Corrective actions implemented",
+          "Evidence of audit completion"
+        ]
+      },
+      {
+        "area": "7. Device Management",
+        "description": "Verify devices meet security standards",
+        "checks": [
+          "Device standards documented",
+          "Devices meet encryption requirements",
+          "Antivirus/malware protection active",
+          "Patches current",
+          "Password policies enforced",
+          "Device inventory maintained",
+          "Mobile device management in place"
+        ]
+      },
+      {
+        "area": "8. Compliance with Regulations",
+        "description": "Verify compliance with applicable laws",
+        "checks": [
+          "Local laws reviewed",
+          "Health and safety requirements met",
+          "Data protection compliance verified",
+          "Insurance requirements addressed",
+          "Regulatory requirements incorporated",
+          "Jurisdictional considerations documented"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, remote working poses risks to RNG integrity, customer data, and regulatory compliance that must be carefully controlled",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Systems",
+        "remote_work_restrictions": [
+          "Remote access to RNG systems restricted or prohibited",
+          "Game algorithm access not permitted remotely",
+          "System administration remote access strictly controlled",
+          "VPN with multi-factor authentication required",
+          "Logging and monitoring of all remote access",
+          "Time-limited access for troubleshooting"
+        ]
+      },
+      {
+        "system": "Customer Data and Payment Systems",
+        "remote_work_restrictions": [
+          "Customer data access from approved locations only",
+          "Strong encryption for any remote customer data access",
+          "Clear desk policy for customer information",
+          "Physical security controls for home offices",
+          "No customer data on personal devices",
+          "Secure communication for sensitive information"
+        ]
+      },
+      {
+        "system": "Compliance and Audit Functions",
+        "remote_work_restrictions": [
+          "Audit findings not accessible from public locations",
+          "Regulatory correspondence secured",
+          "Compliance monitoring remote access controlled",
+          "Privacy screen requirements for sensitive work",
+          "Home office security assessment required"
+        ]
+      },
+      {
+        "system": "Administrative and Financial Systems",
+        "remote_work_restrictions": [
+          "Financial data not processed in public locations",
+          "Banking information secured",
+          "Tax and regulatory records protected",
+          "VPN required for administrative access",
+          "Multi-factor authentication for financial systems"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must implement appropriate controls to protect information security when personnel work remotely, with particular restrictions on access to RNG systems, game integrity systems, and customer data"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Protect information security when personnel work outside organization premises through technical, physical, and procedural controls",
+    "enforcement_priority": "High - remote working creates unique risks outside organization control that require specific mitigation",
+    "key_principles": [
+      "Documented policy and procedures",
+      "Risk-based selection of controls",
+      "Technical controls (VPN, MDM, encryption)",
+      "Physical security measures",
+      "Device security standards",
+      "Personnel training and awareness",
+      "Regular compliance audits",
+      "Monitoring of remote access",
+      "Clear desk and data handling policies",
+      "Compliance with local laws",
+      "Insurance coverage"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 6.7 Remote Working, implement",
+    "requirements": [
+      {
+        "requirement": "Conduct risk assessment",
+        "detail": "Identify remote working security risks"
+      },
+      {
+        "requirement": "Develop policy",
+        "detail": "Document remote working policy"
+      },
+      {
+        "requirement": "Develop procedures",
+        "detail": "Document remote working procedures"
+      },
+      {
+        "requirement": "Deploy technical controls",
+        "detail": "Implement VPN, MDM, encryption, firewalls"
+      },
+      {
+        "requirement": "Implement physical security",
+        "detail": "Provide equipment and establish clear desk policy"
+      },
+      {
+        "requirement": "Define device standards",
+        "detail": "Document approved devices and requirements"
+      },
+      {
+        "requirement": "Train remote workers",
+        "detail": "Deliver training on policy and security"
+      },
+      {
+        "requirement": "Establish audits",
+        "detail": "Regular compliance checks of remote workers"
+      },
+      {
+        "requirement": "Document monitoring",
+        "detail": "Maintain technical and compliance monitoring records"
+      },
+      {
+        "requirement": "Plan business continuity",
+        "detail": "Address backup and recovery for remote scenarios"
+      },
+      {
+        "requirement": "Verify insurance",
+        "detail": "Confirm adequate coverage for remote work"
+      },
+      {
+        "requirement": "Ensure legal compliance",
+        "detail": "Comply with applicable laws and regulations"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.15 - Access control",
+      "ISO 27001 A 6.3 - Information security awareness, education and training",
+      "ISO 27001 A 8.1 - User endpoint devices",
+      "ISO 27001 A 8.2 - Privileged access rights",
+      "ISO 27001 A 8.3 - Information access restriction",
+      "ISO 27001 A 8.6 - Access control for change",
+      "ISO 27001 A 13.1 - Network security",
+      "ISO 27001 A 13.2 - Information transfer"
+    ]
+  },
+  "best_practices": {
+    "policy_best_practices": [
+      "Define specific approved remote working locations",
+      "Be clear about roles that can work remotely",
+      "Address both full-time and occasional remote work",
+      "Specify what data can and cannot be accessed remotely",
+      "Include prohibition on public WiFi use",
+      "Address personal device use if allowed",
+      "Clearly state consequences of violations",
+      "Address data handling when working remotely"
+    ],
+    "technical_best_practices": [
+      "Mandate VPN for all remote access",
+      "Require multi-factor authentication",
+      "Implement endpoint detection and response",
+      "Use Mobile Device Management for all remote devices",
+      "Enforce full disk encryption",
+      "Implement endpoint security monitoring",
+      "Automatic patching and updates",
+      "Network segmentation for remote access",
+      "Monitor for policy violations"
+    ],
+    "physical_security_best_practices": [
+      "Assess home office security for sensitive roles",
+      "Provide privacy screens and anti-glare filters",
+      "Provide document shredders for secure disposal",
+      "Provide lockable storage for confidential documents",
+      "Establish clear desk policy when not at desk",
+      "Address storage of physical media",
+      "Consider location security for public work",
+      "Restrict family or roommate access"
+    ],
+    "awareness_best_practices": [
+      "Train all remote workers before granting access",
+      "Cover technical security measures",
+      "Address physical security in home offices",
+      "Explain eavesdropping risks in public",
+      "Cover incident reporting procedures",
+      "Regular awareness campaigns and reminders",
+      "Address new threats as they emerge",
+      "Reinforce policy during onboarding"
+    ],
+    "monitoring_best_practices": [
+      "Conduct annual video inspections of remote workers",
+      "Assess physical security arrangements",
+      "Verify device compliance",
+      "Check for policy violations",
+      "Document findings and corrective actions",
+      "Risk-based approach to audit frequency",
+      "More frequent audits for critical roles",
+      "Track trends and patterns"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_considerations": [
+      {
+        "area": "RNG and Game System Access",
+        "guidance": "Restrict or prohibit remote access to RNG systems and game algorithms. If remote access necessary, implement strict controls including mandatory VPN, multi-factor authentication, and comprehensive logging."
+      },
+      {
+        "area": "Customer Data Protection",
+        "guidance": "Limit remote access to customer data to approved locations with strong authentication. Implement encryption and prohibit access from public WiFi. Customer payment data should have highest restrictions."
+      },
+      {
+        "area": "Regulatory Compliance",
+        "guidance": "Ensure remote working does not compromise compliance monitoring or reporting. Regulatory documents and audit findings should be highly restricted from remote access."
+      },
+      {
+        "area": "Game Integrity Monitoring",
+        "guidance": "Game outcome data and integrity monitoring systems should be tightly controlled. Remote access may be restricted or limited to senior personnel with clear business need."
+      }
+    ],
+    "role_specific_restrictions": [
+      {
+        "role": "RNG Development and Testing",
+        "restriction": "No remote access - must work from secure facility"
+      },
+      {
+        "role": "System Administration",
+        "restriction": "Limited remote access with VPN, MFA, and comprehensive logging"
+      },
+      {
+        "role": "Customer Service",
+        "restriction": "Limited remote access with customer data encryption and clear desk policy"
+      },
+      {
+        "role": "Compliance",
+        "restriction": "Restricted remote access to regulatory documents"
+      },
+      {
+        "role": "Office Administration",
+        "restriction": "Full remote access with standard security controls"
+      }
+    ],
+    "regulatory_expectations": [
+      "Clear policy defining what can and cannot be accessed remotely",
+      "Particular restrictions on access to RNG and game systems",
+      "Strong controls for customer data access",
+      "Risk-based approach to remote work permissions",
+      "Evidence of compliance audits and monitoring",
+      "Documented training on remote working security",
+      "Secure device management",
+      "Compliance with data protection regulations"
+    ],
+    "audit_readiness": [
+      "Policy and procedures documented and approved",
+      "Risk assessment with identified controls",
+      "Evidence of remote worker training",
+      "Records of compliance audits",
+      "Technical controls deployed and monitored",
+      "Physical security measures in place",
+      "Device compliance verification",
+      "Insurance coverage confirmation"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 6.7",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-6.7-remote-working.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}

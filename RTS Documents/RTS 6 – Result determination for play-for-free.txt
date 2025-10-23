@@ -1,0 +1,33 @@
+RTS 6 – Result determination for play-for-
+free games
+Applies to:
+Gaming (including bingo), lotteries and betting on virtual events.
+RTS aim 6
+To minimise the risk that customers are misled about the likelihood of winning due to the behaviour of play-
+for-free games.
+RTS requirement 6A
+Play-for-free games must implement the same game rules as the corresponding play-for-money games
+offered on the same facilities (that is, the same website). Operators must take all reasonable steps to
+ensure that play-for-free games accurately represent the likelihood of winning and prize distribution in the
+play-for-money game. For the purpose of this requirement playing a game includes participating in a lottery
+and/or betting on a virtual event.
+RTS implementation guidance 6A
+a. The play-for-free game should use the same RNG as the corresponding play-for-money games,
+another RNG that fulfils the requirements set out in RTS requirement 7A, or a publicly available
+RNG, (such as those available as standard within operating systems) that may reasonably be
+expected to produce no systematic bias.
+b. Where 6A is not reasonably possible, it should be demonstrated that the method of producing
+outcomes does not introduce a systematic bias, for example:
+i. if tables of random numbers are used, they should be sufficiently long to support a large
+number of games without repeating
+ii. the method should represent game probabilities accurately, that is it should not produce a
+higher than expected proportion of winning outcomes.
+c. The prize distribution should accurately represent the play-for-money game. For example, where
+play-for-free games use virtual cash, the virtual cash payouts should be the same as the
+corresponding play-for-money game, and where tokens are used, the allocation of tokens as prizes
+should be proportionate to the stakes and prizes in the play-for-money game.
+d. Where videos are used to advertise a game’s features it should be made clear to consumers where
+footage has been edited or sped-up for promotional purposes. Similarly, where a non-consumer (for
+example supplier’s) website is demonstrating a game with higher than normal returns (that is, on a
+website that is different to the real money gambling facility websites) it should be made clear that it is
+a demonstration game specifically designed to demonstrate the bonus features.

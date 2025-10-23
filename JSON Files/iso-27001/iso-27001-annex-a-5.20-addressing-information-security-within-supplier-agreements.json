@@ -1,0 +1,942 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.20",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.20",
+    "control_number": "A 5.20",
+    "control_title": "Addressing Information Security Within Supplier Agreements",
+    "control_type": "Preventive control",
+    "control_purpose": "To ensure relevant information security requirements are established and agreed with suppliers based on supplier relationship type",
+    "control_objective": "Establish legal agreements with suppliers defining information security requirements appropriate to the relationship"
+  },
+  "iso_27001_definition": {
+    "official_text": "Relevant information security requirements should be established and agreed with each supplier based on the type of supplier relationship.",
+    "key_requirements": [
+      "Information security requirements established for each supplier",
+      "Requirements agreed with supplier in writing",
+      "Requirements tailored based on relationship type",
+      "Legal mechanism in place documenting requirements",
+      "Requirements documented in supplier agreement or contract"
+    ]
+  },
+  "supplier_agreements_overview": {
+    "definition": "Legal contracts or agreements establishing information security requirements for supplier relationships",
+    "purpose": "Legal mechanism binding both parties to agreed information security standards",
+    "core_concept": "First line of defence - legally binding agreement providing greatest protection",
+    "scope": "Applies to all suppliers providing products or services",
+    "types_of_agreements": [
+      "Master Service Agreement",
+      "Software License Agreement",
+      "Cloud Service Agreement",
+      "Hosting Agreement",
+      "Managed Services Agreement",
+      "Consulting Agreement",
+      "Terms of Business",
+      "Statement of Work"
+    ],
+    "relationship_to_5_19": "Control 5.19 addresses supplier management processes; 5.20 focuses specifically on legal agreements documenting requirements"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.20_REQ_1",
+      "requirement": "Establish Supplier Agreement with Information Security Terms",
+      "description": "All suppliers must have formal agreement in place addressing information security requirements",
+      "details": {
+        "agreement_requirement": "Every supplier engagement must be covered by contract, agreement, or terms of business",
+        "legal_mechanism": "Agreement must be legally binding document",
+        "documentation": "Maintain copy of agreement on file",
+        "status": "Agreement must be in force and current",
+        "coverage": "Agreement must cover services and products actually being used from supplier"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_2",
+      "requirement": "Tailor Requirements Based on Supplier Relationship Type",
+      "description": "Information security requirements must be appropriate to the type of supplier relationship",
+      "details": {
+        "relationship_types": [
+          "Cloud service providers - different from on-premise software vendors",
+          "Managed service providers - different from hardware suppliers",
+          "Data processors - different from service resellers",
+          "System integrators - different from maintenance contractors",
+          "Professional services - different from product vendors"
+        ],
+        "tailoring_factors": [
+          "Type of data accessed by supplier",
+          "Criticality of services provided",
+          "Level of system access required",
+          "Duration of relationship",
+          "Supplier location and jurisdiction",
+          "Regulatory requirements applicable"
+        ],
+        "principle": "One-size-fits-all templates not appropriate - requirements scaled to risk"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_3",
+      "requirement": "Include Clear Scope and Services Definition",
+      "description": "Agreement clearly defines what services will be provided and scope of access",
+      "details": {
+        "scope_elements": [
+          "Services to be provided specified",
+          "Systems to be accessed listed",
+          "Data to be accessed described",
+          "Duration of services specified",
+          "Locations of operations defined",
+          "Limitations and exclusions listed"
+        ],
+        "clarity": "Specific rather than generic - describes actual services not general categories",
+        "purpose": "Prevents scope creep and unauthorized access"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_4",
+      "requirement": "Define Information Security Requirements",
+      "description": "Agreement specifies information security controls and standards supplier must maintain",
+      "details": {
+        "security_requirements": [
+          "Encryption standards required",
+          "Access control requirements",
+          "Audit and monitoring requirements",
+          "Incident response procedures",
+          "Business continuity and disaster recovery",
+          "Data protection and privacy requirements",
+          "Personnel security standards",
+          "Physical security measures",
+          "Vulnerability management",
+          "Change management procedures"
+        ],
+        "standards_reference": "Reference to ISO 27001, specific certifications, or industry standards",
+        "specificity": "Define minimum security levels required, not just general commitments"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_5",
+      "requirement": "Address Legal, Regulatory and Contractual Compliance",
+      "description": "Agreement addresses legal, regulatory and contractual requirements applicable to data",
+      "details": {
+        "compliance_areas": [
+          "Data protection and privacy regulations (GDPR, Data Protection Act)",
+          "Intellectual property rights and ownership",
+          "Copyright and licensing requirements",
+          "Regulatory compliance requirements",
+          "Industry-specific regulations (gambling, financial, etc.)",
+          "Confidentiality obligations",
+          "Conflict of interest disclosures"
+        ],
+        "specification": "Agreement clearly allocates responsibility for compliance"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_6",
+      "requirement": "Document Acceptable and Unacceptable Use of Assets",
+      "description": "Agreement specifies what supplier can and cannot do with organization's assets and data",
+      "details": {
+        "acceptable_use": [
+          "Permitted purposes for data use",
+          "Permitted systems and data access",
+          "Permitted data sharing (or prohibition)",
+          "Permitted subcontracting (or prohibition)",
+          "Permitted retention periods",
+          "Permitted uses of equipment and resources"
+        ],
+        "unacceptable_use": [
+          "Prohibited data sharing",
+          "Prohibited retention after termination",
+          "Prohibited use for competitive purposes",
+          "Prohibited use without authorization",
+          "Prohibited removal of data from specified location",
+          "Prohibited reuse of data for other purposes"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_7",
+      "requirement": "Define Access Control and Management Procedures",
+      "description": "Agreement specifies how access will be granted and removed",
+      "details": {
+        "access_management": [
+          "How access is requested and approved",
+          "Who can approve access grants",
+          "Documentation required",
+          "Access provisioning timeline",
+          "Access removal procedures",
+          "Trigger events for access removal",
+          "Emergency access procedures"
+        ],
+        "segregation": "Defines segregation of duties in access approval process"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_8",
+      "requirement": "Include Personnel Security and Screening Requirements",
+      "description": "Agreement specifies screening and vetting requirements for supplier personnel",
+      "details": {
+        "screening_requirements": [
+          "Background checks required",
+          "Vetting procedures",
+          "Reference checks",
+          "Confidentiality agreements for supplier staff",
+          "Training requirements",
+          "Prohibition on certain criminal histories",
+          "Ongoing verification"
+        ],
+        "legal_enforceability": "Screening requirements must be legally enforceable"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_9",
+      "requirement": "Define Audit and Monitoring Rights",
+      "description": "Agreement grants organization right to audit supplier and verify compliance",
+      "details": {
+        "audit_rights": [
+          "Right to conduct on-site audits",
+          "Right to review audit reports and certifications",
+          "Right to review security assessment results",
+          "Notice periods for audits",
+          "Access to audit logs and records",
+          "Frequency of audits"
+        ],
+        "monitoring_rights": [
+          "Right to monitor supplier performance",
+          "Right to request performance data",
+          "Right to investigate incidents",
+          "Right to review certifications regularly"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_10",
+      "requirement": "Address Evidence and Assurance of Information Security",
+      "description": "Agreement specifies how supplier will provide evidence of information security",
+      "details": {
+        "assurance_mechanisms": [
+          "ISO 27001 certification",
+          "SOC 2 audit reports",
+          "Security assessment reports",
+          "Penetration test results",
+          "Compliance certifications",
+          "Third-party audit reports"
+        ],
+        "frequency": "How often evidence must be provided",
+        "timeliness": "Timeline for providing evidence",
+        "currency": "Evidence must be current and relevant"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_11",
+      "requirement": "Specify Penalties and Remediation for Non-Compliance",
+      "description": "Agreement defines consequences for failure to meet information security requirements",
+      "details": {
+        "penalty_types": [
+          "Financial penalties or fines",
+          "Service credits or discounts",
+          "Right to termination",
+          "Right to suspend services",
+          "Right to audit with increased frequency"
+        ],
+        "indemnity": "Indemnification clauses for losses resulting from supplier failures",
+        "remediation": "Right to require remediation of non-compliance",
+        "liability": "Clear allocation of liability for security failures"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_12",
+      "requirement": "Include Business Continuity and Disaster Recovery",
+      "description": "Agreement specifies supplier's continuity and recovery commitments",
+      "details": {
+        "commitments": [
+          "Service availability targets (SLA uptime)",
+          "Backup procedures and frequency",
+          "Disaster recovery procedures",
+          "Recovery time objectives (RTO)",
+          "Recovery point objectives (RPO)",
+          "Geographic redundancy",
+          "Testing and verification"
+        ],
+        "obligations": "Supplier responsible for maintaining and testing recovery capabilities"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_13",
+      "requirement": "Define Change Management Process",
+      "description": "Agreement specifies how changes to services or infrastructure are managed",
+      "details": {
+        "change_requirements": [
+          "Notification of planned changes",
+          "Advance notice period",
+          "Risk assessment of changes",
+          "Testing requirements",
+          "Approval process",
+          "Rollback procedures",
+          "Impact assessment"
+        ],
+        "critical_changes": "Enhanced controls for changes affecting critical systems or data"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_14",
+      "requirement": "Address Physical Security Standards",
+      "description": "Agreement specifies physical security expectations for supplier facilities",
+      "details": {
+        "physical_security": [
+          "Access control to facilities",
+          "Surveillance and monitoring",
+          "Environmental controls",
+          "Fire protection",
+          "Visitor management",
+          "Secure storage of media",
+          "Equipment disposal"
+        ],
+        "scope": "Where appropriate for supplier services"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_15",
+      "requirement": "Define Information Transfer Processes",
+      "description": "Agreement specifies how information will be transferred securely",
+      "details": {
+        "transfer_controls": [
+          "Encryption in transit required",
+          "Secure transfer methods (SFTP, HTTPS, etc.)",
+          "No clear text transmission",
+          "Data validation and verification",
+          "Integrity checking",
+          "Access logging",
+          "Transfer scheduling"
+        ],
+        "protocols": "Specify which protocols are acceptable"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_16",
+      "requirement": "Include Termination and Exit Clauses",
+      "description": "Agreement specifies procedures for terminating relationship and exiting services",
+      "details": {
+        "termination_procedures": [
+          "Notice periods required",
+          "Cause vs. convenience termination",
+          "Data return or deletion",
+          "System access removal",
+          "Knowledge transfer",
+          "Transition period",
+          "Final payment terms"
+        ],
+        "data_handling": "Clear procedures for secure handling of data upon termination",
+        "exit_verification": "Verification that exit procedures completed successfully"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_17",
+      "requirement": "Specify Data Destruction and Removal Processes",
+      "description": "Agreement defines how data will be destroyed or removed upon termination",
+      "details": {
+        "destruction_requirements": [
+          "Timeframe for data destruction",
+          "Destruction method (secure deletion, physical destruction)",
+          "Certification of destruction",
+          "Verification of destruction",
+          "Retained data purposes (compliance, legal hold)",
+          "Retained data handling"
+        ],
+        "retention": "Specify what data must be retained and for how long"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_18",
+      "requirement": "Define Incident Handling and Notification",
+      "description": "Agreement specifies how security incidents will be handled and reported",
+      "details": {
+        "notification": [
+          "Incidents must be reported promptly",
+          "Timeframe for notification (24-48 hours typical)",
+          "Information to include in notification",
+          "Point of contact for incidents",
+          "Escalation procedures"
+        ],
+        "cooperation": [
+          "Supplier cooperates in investigation",
+          "Supplier provides forensic evidence",
+          "Supplier supports remediation",
+          "Supplier maintains confidentiality"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_19",
+      "requirement": "Include Contact Information",
+      "description": "Agreement provides contact information for managing relationship",
+      "details": {
+        "contacts": [
+          "Primary account manager",
+          "Technical contacts",
+          "Security contacts",
+          "Legal contacts",
+          "Emergency/24-7 contacts",
+          "Alternative contacts"
+        ],
+        "updates": "Contact information kept current"
+      }
+    },
+    {
+      "requirement_id": "A_5.20_REQ_20",
+      "requirement": "Address Conflict Resolution",
+      "description": "Agreement specifies process for resolving disputes",
+      "details": {
+        "resolution_process": [
+          "Escalation procedures",
+          "Dispute resolution mechanism",
+          "Arbitration vs. litigation",
+          "Jurisdiction and governing law",
+          "Timeframe for resolution",
+          "Interim measures"
+        ]
+      }
+    }
+  ],
+  "supplier_agreement_template": {
+    "description": "Typical structure of comprehensive supplier information security agreement",
+    "sections": [
+      {
+        "section": "1. Scope and Services",
+        "content": "Description of services, systems access, data access, duration"
+      },
+      {
+        "section": "2. Information Security Requirements",
+        "content": "Security standards, controls, certifications required"
+      },
+      {
+        "section": "3. Data Protection and Privacy",
+        "content": "GDPR compliance, data subject rights, processing obligations"
+      },
+      {
+        "section": "4. Compliance and Regulatory",
+        "content": "Legal, regulatory, intellectual property requirements"
+      },
+      {
+        "section": "5. Access Control",
+        "content": "How access is granted, managed, and removed"
+      },
+      {
+        "section": "6. Personnel Security",
+        "content": "Background checks, vetting, confidentiality requirements"
+      },
+      {
+        "section": "7. Physical Security",
+        "content": "Facility security standards and controls"
+      },
+      {
+        "section": "8. Incident Management",
+        "content": "Incident reporting, notification, investigation cooperation"
+      },
+      {
+        "section": "9. Audit and Monitoring",
+        "content": "Audit rights, monitoring rights, reporting requirements"
+      },
+      {
+        "section": "10. Business Continuity",
+        "content": "SLA, availability, disaster recovery, backup procedures"
+      },
+      {
+        "section": "11. Change Management",
+        "content": "Change notification, approval, testing procedures"
+      },
+      {
+        "section": "12. Information Transfer",
+        "content": "Encryption, protocols, logging, integrity verification"
+      },
+      {
+        "section": "13. Data Handling on Termination",
+        "content": "Data return, deletion, verification procedures"
+      },
+      {
+        "section": "14. Termination and Exit",
+        "content": "Notice periods, exit procedures, knowledge transfer"
+      },
+      {
+        "section": "15. Liability and Indemnity",
+        "content": "Liability limitations, indemnification for failures"
+      },
+      {
+        "section": "16. Contact Information",
+        "content": "Key contacts for all relationship areas"
+      },
+      {
+        "section": "17. Dispute Resolution",
+        "content": "Escalation and conflict resolution process"
+      },
+      {
+        "section": "18. General Terms",
+        "content": "Effective date, duration, renewal, amendments"
+      }
+    ]
+  },
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Establish Agreement Policy",
+        "detail": "Create policy requiring agreements with all suppliers"
+      },
+      {
+        "step": 2,
+        "action": "Develop Supplier Agreement Template",
+        "detail": "Create standardized template including information security terms"
+      },
+      {
+        "step": 3,
+        "action": "Review Existing Supplier Relationships",
+        "detail": "Identify all suppliers and status of agreements"
+      },
+      {
+        "step": 4,
+        "action": "Negotiate and Execute Agreements",
+        "detail": "Obtain signed agreements with all suppliers"
+      },
+      {
+        "step": 5,
+        "action": "Organize Agreement Repository",
+        "detail": "Centralize storage of all supplier agreements"
+      },
+      {
+        "step": 6,
+        "action": "Implement Agreement Tracking",
+        "detail": "Track agreement status, renewal dates, version control"
+      },
+      {
+        "step": 7,
+        "action": "Obtain Legal Counsel Review",
+        "detail": "Have agreements reviewed by legal professionals"
+      },
+      {
+        "step": 8,
+        "action": "Establish Agreement Review Schedule",
+        "detail": "Plan annual reviews and updates of agreements"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.20",
+    "checklist": [
+      {
+        "item": "Establish policy requiring supplier agreements",
+        "status": "required"
+      },
+      {
+        "item": "Have written agreement with every supplier",
+        "status": "required"
+      },
+      {
+        "item": "Agreements address information security",
+        "status": "required"
+      },
+      {
+        "item": "Agreements tailored to relationship type",
+        "status": "required"
+      },
+      {
+        "item": "Agreements define security requirements",
+        "status": "required"
+      },
+      {
+        "item": "Agreements address data protection",
+        "status": "required"
+      },
+      {
+        "item": "Agreements include audit rights",
+        "status": "required"
+      },
+      {
+        "item": "Agreements include incident notification",
+        "status": "required"
+      },
+      {
+        "item": "Agreements address data handling on termination",
+        "status": "required"
+      },
+      {
+        "item": "Agreements reviewed at least annually",
+        "status": "required"
+      },
+      {
+        "item": "All agreements documented in Supplier Register",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with supplier agreements",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No contracts or legal terms with suppliers",
+        "description": "Operating with suppliers without formal agreements",
+        "root_cause": [
+          "Verbal agreements only",
+          "Informal relationships",
+          "Assumption of standard terms",
+          "Lack of procurement process"
+        ],
+        "impact": "No legal recourse if supplier fails security, no defined obligations",
+        "prevention": "Require written agreement for every supplier engagement",
+        "action": "Ensure copy on file, current, and covering services being used",
+        "audit_risk": "Critical finding - immediate failure"
+      },
+      {
+        "rank": 2,
+        "mistake": "Generic agreements without information security terms",
+        "description": "Supplier agreements lacking specific security requirements",
+        "root_cause": [
+          "Using standard templates without customization",
+          "Security requirements not highlighted",
+          "No specific controls defined",
+          "Vague language about security"
+        ],
+        "impact": "No clear security expectations, no enforcement mechanism",
+        "prevention": "Customize agreements with specific security requirements",
+        "example": "Agreement should specify encryption standard, not just 'appropriate security'",
+        "audit_risk": "High - agreement lacks substance"
+      },
+      {
+        "rank": 3,
+        "mistake": "Document and version control is wrong",
+        "description": "Poor management of supplier agreements",
+        "issues": [
+          "Multiple versions of agreement in circulation",
+          "Expired agreements still in use",
+          "No record of amendment dates",
+          "Version numbers inconsistent",
+          "Comments left in final agreements"
+        ],
+        "prevention": [
+          "Maintain central agreement repository",
+          "Version control all agreements",
+          "Track amendment and renewal dates",
+          "Maintain only current versions"
+        ],
+        "impact": "Confusion about what agreements are in force"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 5.20 audit",
+    "audit_areas": [
+      {
+        "area": "1. Supplier Agreements Verification",
+        "description": "Auditor verifies agreements exist and include security terms",
+        "checks": [
+          "Agreement exists for each supplier",
+          "Agreements are written and signed",
+          "Agreements are in force and current",
+          "Agreements cover information security requirements",
+          "Agreements address data protection",
+          "Agreements include audit rights",
+          "Agreements cover termination and data handling",
+          "Agreements are appropriate for relationship type"
+        ],
+        "easiest_win": "Request list of suppliers and their agreements - missing agreements result in immediate findings"
+      },
+      {
+        "area": "2. Agreement Content Verification",
+        "description": "Verify agreements contain substantive information security terms",
+        "checks": [
+          "Security requirements specifically defined",
+          "Not just generic security language",
+          "Controls appropriate to risk level",
+          "Data protection terms included",
+          "Incident reporting requirements",
+          "Audit and monitoring rights",
+          "Penalties for non-compliance",
+          "Termination procedures defined"
+        ]
+      },
+      {
+        "area": "3. Agreement Status",
+        "description": "Verify agreements are current and reflect actual relationships",
+        "checks": [
+          "Agreements reflect current suppliers",
+          "No expired agreements in use",
+          "New suppliers have agreements in place",
+          "Amendments documented and dated",
+          "Version control maintained"
+        ]
+      },
+      {
+        "area": "4. Supplier Register",
+        "description": "Verify all suppliers documented and tracked",
+        "checks": [
+          "Supplier Register exists",
+          "All suppliers listed",
+          "Agreement status documented",
+          "Agreement dates recorded",
+          "Register current and accurate"
+        ]
+      },
+      {
+        "area": "5. Documentation Quality",
+        "description": "Review documentation completeness and accuracy",
+        "checks": [
+          "All agreements classified appropriately",
+          "Agreements stored securely",
+          "Agreements reviewed annually",
+          "Version control accurate",
+          "Comments removed from final versions"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "Supplier agreements are critical legal mechanism for ensuring all suppliers maintain agreed information security standards for critical gambling systems",
+    "specific_requirements": [
+      {
+        "system": "Payment Processing Services",
+        "agreement_requirements": [
+          "PCI DSS compliance explicitly required",
+          "Regular audit report submission required",
+          "Encryption standards specified",
+          "Incident notification within 24 hours",
+          "Data retention limits clearly defined",
+          "Penalties for non-compliance defined"
+        ]
+      },
+      {
+        "system": "RNG/Game Software",
+        "agreement_requirements": [
+          "RNG certification requirements specified",
+          "Source code review rights included",
+          "Testing and validation procedures defined",
+          "Audit rights for game integrity",
+          "Incident response for game anomalies",
+          "Termination includes code deposit/escrow"
+        ]
+      },
+      {
+        "system": "Cloud/Hosting Infrastructure",
+        "agreement_requirements": [
+          "ISO 27001 certification requirement",
+          "SOC 2 Type II audit report requirement",
+          "Data residency and location specified",
+          "Disaster recovery RTO/RPO defined",
+          "Backup and redundancy procedures",
+          "Incident response procedures"
+        ]
+      },
+      {
+        "system": "Compliance and Reporting",
+        "agreement_requirements": [
+          "Data integrity and non-repudiation",
+          "Audit trail completeness",
+          "Backup and recovery procedures",
+          "Access controls to reporting data",
+          "Incident notification requirements"
+        ]
+      },
+      {
+        "system": "Communication Networks",
+        "agreement_requirements": [
+          "Encryption of data in transit",
+          "Network monitoring and intrusion detection",
+          "DDoS protection where applicable",
+          "Access control procedures",
+          "Incident response capability"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must have comprehensive written agreements with all suppliers addressing information security requirements appropriate to the relationship type and data accessed"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Establish legally binding agreements with suppliers defining information security requirements and ensuring accountability",
+    "enforcement_priority": "Critical - written agreements are primary legal mechanism for supplier security",
+    "key_principles": [
+      "All suppliers must have written agreements",
+      "Requirements tailored to relationship type",
+      "Security requirements specific and substantive",
+      "Audit and monitoring rights included",
+      "Penalties for non-compliance defined",
+      "Data protection and privacy addressed",
+      "Incident notification requirements",
+      "Termination and exit procedures",
+      "Contact information documented",
+      "Agreements kept current and reviewed regularly",
+      "Professional legal counsel recommended"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 5.20 Addressing Information Security Within Supplier Agreements, implement",
+    "requirements": [
+      {
+        "requirement": "Have written agreement with every supplier",
+        "detail": "Contract, agreement, or terms covering information security"
+      },
+      {
+        "requirement": "Tailor requirements to relationship type",
+        "detail": "Agreements reflect the nature and risk of each supplier relationship"
+      },
+      {
+        "requirement": "Include specific security requirements",
+        "detail": "Define controls and standards supplier must maintain"
+      },
+      {
+        "requirement": "Address data protection and privacy",
+        "detail": "Specify GDPR and data protection obligations"
+      },
+      {
+        "requirement": "Include audit and monitoring rights",
+        "detail": "Define ability to verify compliance"
+      },
+      {
+        "requirement": "Define incident notification",
+        "detail": "Specify how incidents will be reported"
+      },
+      {
+        "requirement": "Address termination procedures",
+        "detail": "Define data handling and exit processes"
+      },
+      {
+        "requirement": "Include penalties for non-compliance",
+        "detail": "Specify remedies for security failures"
+      },
+      {
+        "requirement": "Maintain agreement documentation",
+        "detail": "Keep current copies on file"
+      },
+      {
+        "requirement": "Review agreements regularly",
+        "detail": "Annual review at minimum"
+      },
+      {
+        "requirement": "Track in Supplier Register",
+        "detail": "Document all supplier agreements centrally"
+      },
+      {
+        "requirement": "Obtain legal counsel review",
+        "detail": "Have professional legal review of agreements"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "prerequisite_controls": [
+      "ISO 27001 A 5.1 - Policies for information security",
+      "ISO 27001 A 5.19 - Information security in supplier relationships"
+    ],
+    "cross_references": [
+      "Supplier Relationships (A 5.19) - overall supplier management process",
+      "Supplier Service Delivery (A 5.20) - legal mechanism for defining requirements"
+    ]
+  },
+  "best_practices": {
+    "agreement_drafting_practices": [
+      "Obtain professional legal counsel for all agreements",
+      "Use organization's legal team or external counsel",
+      "Start with comprehensive templates tailored to your industry",
+      "Include specific information security requirements",
+      "Define clear scope and access limitations",
+      "Include data protection and privacy terms",
+      "Define audit and monitoring rights explicitly",
+      "Include penalties and remedies for non-compliance"
+    ],
+    "agreement_management_practices": [
+      "Maintain centralized repository of all agreements",
+      "Track agreement status and dates",
+      "Calendar reminders for annual reviews",
+      "Version control all amendments",
+      "Keep current versions only in active use",
+      "Archive executed agreements with amendments",
+      "Document all modifications to agreements",
+      "Maintain list of signatories"
+    ],
+    "negotiation_practices": [
+      "Understand acceptable security standards before negotiation",
+      "Prioritize non-negotiable security requirements",
+      "Be prepared to walk away if supplier unwilling to commit",
+      "Document any exceptions or deviations from standard",
+      "Get executive approval for any security compromises",
+      "Include escalation procedures for disputes"
+    ],
+    "renewal_practices": [
+      "Review agreements 60-90 days before expiration",
+      "Assess supplier performance during term",
+      "Update security requirements if standards changed",
+      "Verify supplier certifications remain current",
+      "Negotiate any improvements needed",
+      "Execute renewal well before expiration"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_agreement_areas": [
+      {
+        "area": "PCI DSS Compliance Terms",
+        "importance": "Essential for payment processors",
+        "requirements": [
+          "PCI DSS compliance explicitly required",
+          "Regular PCI audit reports (annual minimum)",
+          "Encryption standards for payment data",
+          "Data minimization principles",
+          "Incident notification within 24 hours",
+          "Data retention limits",
+          "Access control requirements"
+        ]
+      },
+      {
+        "area": "RNG and Game Integrity Terms",
+        "importance": "Critical for game fairness verification",
+        "requirements": [
+          "RNG certification requirements specified",
+          "Independent test laboratory verification",
+          "Source code review and escrow",
+          "Game testing documentation",
+          "Mathematical validation procedures",
+          "Audit trail of game outcomes",
+          "Access controls to RNG systems",
+          "Incident response for integrity issues"
+        ]
+      },
+      {
+        "area": "Data Residency and Location",
+        "importance": "Regulatory compliance with UKGC",
+        "requirements": [
+          "Data stored within specified jurisdictions",
+          "No unauthorized transfer to third countries",
+          "Customer data UK residency requirement",
+          "Backup location specification",
+          "Notification if location changes"
+        ]
+      }
+    ],
+    "regulatory_expectations": [
+      "UKGC expects comprehensive supplier agreements for all critical services",
+      "Written evidence of supplier security commitments mandatory",
+      "Particular emphasis on payment processor agreements",
+      "RNG supplier agreements must address game integrity",
+      "Data protection terms must comply with GDPR",
+      "Compliance approach should document key agreement terms for each critical supplier",
+      "Agreements must be enforced and monitored"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.20",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.20-addressing-information-security-within-supplier-agreements.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

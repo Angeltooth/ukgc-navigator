@@ -1,0 +1,56 @@
+ISO 27001 Storage Media
+
+The focus for this ISO 27001 Control is the lifecycle of storage media. As one of the ISO 27001 controls this is about managing media based on classification through to its final destruction.
+ISO 27001 Annex A 7.10 Storage Media is an ISO 27001 control that looks to protect storage media.
+Purpose
+
+The purpose of ISO 27001 Storage Media is to ensure only authorised disclosure, modification, removal or destruction of information on storage media.
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 7.10 as:
+Storage media should be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organisations classification scheme and handling requirements.
+Implementation Guide
+
+General Guidance
+
+There is one thing that people don’t really trust like they used to, and that is external storage media. This control is looking at all types of storage media with a particular focus on removable / external storage media.
+Let us first look in general terms before we give some attention to removable media and its particular challenges.
+ISO 27001 Information Security Classification and Handling Policy
+
+You will want a policy in place on Data Classification and Handling that will cover storage media, for example the Information Security Classification and Handling Policy. This is to set out and communicate what the expectations are that you have of people.
+Lifecycle Management Process
+
+Then you are going to put in full lifecycle management of the storage media. Even if it comes bundled as part of other devices.
+What this means in real terms is having a process for:
+How you acquire storage media, where you acquire it from, how you configure it, if and how you encrypt it, how you use it, where you use it, who is responsible for it, how you monitor it, and at its end of life how you destroy it.
+To all intents and purposes, storage media is an asset under asset management.
+Reuse and destruction of storage media has its own requirements. Let’s not be just deleting stuff and then popping it on eBay. If you have to reuse it then securely destroy the data on it in a proper and professional way. If you have to destroy it, whilst hitting with a FBH ( fking big hammer ) can work wonders, ideally use a reputable outsourced destruction company that provides all the required paperwork and audit trails.
+Removable Storage Media
+
+In general terms you are going to implement a topic specific policy on the use and management of removable media. What this means is addressing it in one of your other policies. As long as it is covered you are fine.
+Think here about what kind of media you will allow. What the process is for allowing it. That can be both a technical processes such as port lockdowns and / or administrative process such as approval and checking.
+Physical security of removable storage is paramount. A no brainer when you think about it. It is harder to steal. Harder to track. Easier to lose. Implement controls based on risk and the classification of what the storage media contains.
+One thing people often overlook is that media has life span and will degrade over time. There are approaches to having multiple copies and / or multiple storage technologies. All of this will really be driven by your data retention requirements but worth thinking about.
+Paper
+
+Finally paper is storage media. If you have it, risk assess it and control it based on risk and business need. Fewer and fewer organisations rely on paper these days but it is still out there. Usually in regulated industries. If you have it, don’t over look it.
+How to comply
+
+To comply with ISO 27001 Annex A 7.10 Storage Media you are going to
+Train, educate, tell and communicate to people what is expected of them
+Have policies and procedures in place
+Assess your assets and perform a risk assessment
+Implement controls proportionate to the risk posed
+Test the controls that you have to make sure they are working
+Top 3 Mistakes People Make
+
+The top 3 mistakes people make for ISO 27001 Annex A 7.10 Storage Media are
+1. You have loads of hard drives in a cupboard
+
+This is the number one mistake. Having computers, hard drives, old devices, paper archives that no one knows what they are, what is on them or why you have them either in a store room or worse case on someones desk. Get your asset management sorted. Get your house in order. Do your house keeping.
+2. One or more members of your team haven’t done what they should have done
+
+Prior to the audit check that all members of the team have done what they should have. Do they know where the policies are? Have they acknowledged them? Do you have an inventory of storage media? Is removable media managed, tracked and checked? Check!
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

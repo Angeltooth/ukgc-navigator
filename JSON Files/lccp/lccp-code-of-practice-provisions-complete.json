@@ -1,0 +1,1833 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "document_type": "Licence Conditions and Codes of Practice (LCCP) - Code of Practice Provisions",
+  "document_reference": "LCCP-CoP-2024",
+  "last_updated": "2025-10-21",
+  "jurisdiction_scope": "Great Britain (England, Scotland, Wales)",
+  
+  "document_overview": {
+    "purpose": "Sets out codes of practice and best practice guidance for gambling operators licensed by the UK Gambling Commission",
+    "structure": "Guidance provisions organized in sections covering cooperation, financial requirements, and protection of vulnerable persons",
+    "application_basis": "Gambling Act 2005 and subordinate legislation",
+    "compliance_obligation": "Varies by provision type - mandatory conditions (SR Code), guidance (Ordinary Code), or standard practice",
+    "enforcement": "SR Code breach = license review, suspension, revocation, or financial penalties. Ordinary Code breach may be considered in license review but cannot result in financial penalties"
+  },
+
+  "provision_types": [
+    {
+      "type_id": "social_responsibility_code",
+      "type_name": "Social Responsibility Code",
+      "abbreviation": "SR Code",
+      "legal_status": "mandatory_condition",
+      "compliance_status": "Condition of licence",
+      "breach_consequence": "Breach may lead to: licence review with view to suspension/revocation, imposition of financial penalty, criminal prosecution, consideration of suitability to be licensee",
+      "enforcement_discretion": "Commission exercises full discretion in enforcement"
+    },
+    {
+      "type_id": "ordinary_code",
+      "type_name": "Ordinary Code",
+      "abbreviation": "OC",
+      "legal_status": "guidance",
+      "compliance_status": "Best practice guidance - not a condition of licence",
+      "alternative_approach": "Operators may adopt alternative approaches if they: (a) actively take account of the provision, and (b) demonstrate alternative is reasonable in their circumstances OR equally effective",
+      "breach_consequence": "Breach does NOT lead to financial penalty. May be considered by Commission in licence review and admitted as evidence in court proceedings",
+      "admissibility": "Admissible in civil and criminal proceedings; must be considered relevant by courts and Commission"
+    }
+  ],
+
+  "sections": [
+    {
+      "section_id": 1,
+      "section_title": "General",
+      "section_overview": "Cooperation with Commission and responsibility for third parties",
+      
+      "subsections": [
+        {
+          "subsection_id": "1.1",
+          "subsection_title": "Cooperation and responsibility for third parties",
+          
+          "provisions": [
+            {
+              "provision_id": "1.1.1",
+              "provision_number": "1.1.1",
+              "provision_title": "Cooperation with the Commission",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All licences"],
+              
+              "provision_summary": "Licensees must conduct gambling operations without putting licensing objectives at risk, work openly with Commission, and disclose material information",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Conduct operations to protect licensing objectives",
+                  "detail": "Licensees must conduct gambling operations in a way that does not put the licensing objectives at risk",
+                  "compliance_action": "Implement policies ensuring compliance with all three licensing objectives: consumer protection, crime prevention, young persons protection"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Open and cooperative engagement with Commission",
+                  "detail": "Work with Commission in open and cooperative manner",
+                  "compliance_action": "Respond promptly to Commission requests; proactively disclose relevant information"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Disclose material information",
+                  "detail": "Disclose anything Commission would reasonably need to be aware of in exercising its regulatory functions, including anything likely to have material impact on licensee's business or ability to conduct activities compliantly",
+                  "compliance_action": "Establish procedures for identifying and escalating material issues to Commission"
+                }
+              ],
+              
+              "guidance_note": "This principle applies to compliance with all licence conditions and codes of practice provisions"
+            },
+
+            {
+              "provision_id": "1.1.2",
+              "provision_number": "1.1.2",
+              "provision_title": "Responsibility for third parties - all licences",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All licences"],
+              
+              "provision_summary": "Licensees are responsible for actions of contracted third parties and must ensure contractual terms protect licensing objectives",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Licensee responsibility for third party actions",
+                  "detail": "Licensees are responsible for the actions of third parties with whom they contract for provision of any aspect of licensed activities",
+                  "compliance_action": "Conduct due diligence on all third party suppliers; maintain oversight"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Contractual terms must require third parties to comply",
+                  "subsections": [
+                    {
+                      "letter": "a",
+                      "detail": "Require third party to conduct themselves as if bound by same licence conditions and subject to same codes of practice as licensee"
+                    },
+                    {
+                      "letter": "b",
+                      "detail": "Oblige third party to provide information reasonably required by licensee to enable compliance with information reporting and regulatory obligations to Commission"
+                    },
+                    {
+                      "letter": "c",
+                      "detail": "Enable licensee, subject to dispute resolution provisions, to terminate third party's contract promptly if: (i) third party in breach of contract, or (ii) third party acted inconsistently with licensing objectives, including breach of advertising code of practice by affiliates"
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "provision_id": "1.1.3",
+              "provision_number": "1.1.3",
+              "provision_title": "Responsibility for third parties - remote",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All remote licences"],
+              
+              "provision_summary": "Remote licensees must ensure user interface third parties comply with technical standards and enable contract termination",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "User interface technical compliance",
+                  "detail": "Remote licensees must ensure third parties providing user interfaces enabling customer access comply with Commission technical standards for remote gambling systems",
+                  "compliance_action": "Include term requiring RTS compliance in contracts; verify through testing"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Termination rights for technical breach",
+                  "detail": "Enable termination of user interface provider's contract if in breach of technical standards term",
+                  "compliance_action": "Include termination right in contracts; monitor compliance"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 2,
+      "section_title": "Financial Requirements",
+      "section_overview": "Anti-money laundering and financial compliance",
+      
+      "subsections": [
+        {
+          "subsection_id": "2.1",
+          "subsection_title": "Anti-money laundering",
+          
+          "provisions": [
+            {
+              "provision_id": "2.1.1",
+              "provision_number": "2.1.1",
+              "provision_title": "Anti-money laundering - casinos",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All remote and non-remote casino licences"],
+              
+              "provision_summary": "Licensees should follow Commission guidance on AML/CFT for casinos",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Comply with Commission AML guidance",
+                  "detail": "Act in accordance with Commission's guidance on anti-money laundering: 'The Prevention of Money Laundering and Combating the Financing of Terrorism - Guidance for remote and non-remote casinos'",
+                  "compliance_action": "Review and implement Commission AML/CFT guidance; maintain procedures documentation"
+                }
+              ],
+              
+              "referenced_guidance": "Commission publication: 'The Prevention of Money Laundering and Combating the Financing of Terrorism - Guidance for remote and non-remote casinos'"
+            },
+
+            {
+              "provision_id": "2.1.2",
+              "provision_number": "2.1.2",
+              "provision_title": "Anti-money laundering - other than casino",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All licences except casino licences"],
+              
+              "provision_summary": "Non-casino operators should follow Commission advice on PoCA 2002 and TA 2000 compliance",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Comply with PoCA 2002 and TA 2000 procedures",
+                  "detail": "As part of procedures for compliance with requirements in Proceeds of Crime Act 2002 and Terrorism Act 2000, take into account Commission's advice",
+                  "compliance_action": "Review and implement Commission guidance on PoCA 2002 compliance; establish reporting procedures"
+                }
+              ],
+              
+              "legal_basis": ["Proceeds of Crime Act 2002", "Terrorism Act 2000"],
+              "referenced_guidance": "Commission publication: 'Duties and responsibilities under the Proceeds of Crime Act 2002 – Advice for operators (excluding casino operators)'"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 3,
+      "section_title": "Protection of Children and Other Vulnerable Persons",
+      "section_overview": "Requirements for combating problem gambling, preventing underage access, and customer protection",
+      
+      "subsections": [
+        {
+          "subsection_id": "3.1",
+          "subsection_title": "Combating problem gambling",
+          
+          "provisions": [
+            {
+              "provision_id": "3.1.1",
+              "provision_number": "3.1.1",
+              "provision_title": "Combating problem gambling",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All licences"],
+              
+              "provision_summary": "Licensees must have and implement policies and procedures promoting socially responsible gambling",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Establish SR gambling policies and procedures",
+                  "detail": "Licensees must have and put into effect policies and procedures intended to promote socially responsible gambling including all specific policies required by provisions in section 3 of this code",
+                  "compliance_action": "Document comprehensive SR policies covering all section 3 requirements; implement with staff training"
+                }
+              ],
+              
+              "enforcement_consequence": "Breach of SR Code = Commission may review licence with view to suspension/revocation or impose financial penalty"
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "3.2",
+          "subsection_title": "Access to gambling by children and young persons",
+          
+          "provisions": [
+            {
+              "provision_id": "3.2.1",
+              "provision_number": "3.2.1",
+              "provision_title": "Casinos SR code - Preventing underage gambling",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All non-remote casino licences"],
+              
+              "provision_summary": "Casinos must prevent underage gambling through policies, designated supervisors, and staff training",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Policies and procedures for age verification",
+                  "detail": "Must have and put into effect policies and procedures designed to prevent underage gambling, and monitor the effectiveness of these"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Account for premises structure and layout",
+                  "detail": "Policies and procedures must take account of structure and layout of gambling premises"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Designate entrance supervisors",
+                  "detail": "Must designate one or more supervisors for each casino entrance"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Supervisor responsibilities",
+                  "detail": "Supervisor's responsibilities include ensuring compliance with this section of code"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Supervisor age verification procedures",
+                  "subsections": [
+                    {
+                      "letter": "a",
+                      "detail": "Check age of customers who appear to be or are suspected of being underage"
+                    },
+                    {
+                      "letter": "b",
+                      "detail": "Refuse entry to anyone unable to produce acceptable form of identification (containing photograph, date of birth, valid, legible, no signs of tampering)"
+                    },
+                    {
+                      "letter": "c",
+                      "detail": "Take action on unlawful attempts to enter premises, including removing anyone who appears underage without acceptable ID"
+                    }
+                  ]
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "No youth-appeal facilities",
+                  "detail": "Must not deliberately provide facilities for gambling in way that appeals particularly to children or young people, for example by reflecting or being associated with youth culture"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Refuse service to accompanied minors",
+                  "detail": "In premises restricted to adults, service must be refused where any adult is accompanied by child or young person"
+                },
+                {
+                  "requirement_number": 8,
+                  "requirement": "Staff training on underage gambling prevention",
+                  "detail": "Must take all reasonable steps to ensure all staff understand responsibilities for preventing underage gambling, including appropriate training covering relevant prohibitions and legal requirements on returning stakes and not paying prizes to underage customers"
+                },
+                {
+                  "requirement_number": 9,
+                  "requirement": "Test purchasing program",
+                  "detail": "Must conduct test purchasing or take part in collective test purchasing programmes to provide reasonable assurance of effective underage prevention policies and procedures; must provide test purchase results to Commission in specified form"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "3.2.2",
+              "provision_number": "3.2.2",
+              "provision_title": "Casinos ordinary code - Age verification best practice",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All non-remote casino licences"],
+              
+              "provision_summary": "Best practice guidance for casino age verification and supervision",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Adequate supervisor numbers at entrances",
+                  "detail": "Sufficient number of supervisors to enable considered judgement about everyone's age and appropriate action whilst not allowing unsupervised entry; cannot be accomplished solely through CCTV - requires physical presence; heavily used entrances may require more than one supervisor"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Supervisor assistance and responsibility",
+                  "detail": "Supervisors may be assisted by door keepers, but supervisor retains responsibility for compliance and must personally deal with any doubt or dispute about eligibility"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Acceptable identification forms",
+                  "detail": "Commission considers acceptable: PASS logo identification (Citizencard, Validate), military ID, driving licence (including provisional) with photocard, passport"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Age checking threshold",
+                  "detail": "Staff should check age of any customer appearing to be under 25"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Repeated offender exclusion",
+                  "detail": "Consider permanent exclusion of any adult accompanied by child/young person on more than one occasion to adult-only premises, or if evidence suggests knowing or reckless offence"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Procedures for repeated underage attempts",
+                  "detail": "Procedures for dealing with cases where child/young person repeatedly attempts to gamble on adult premises, including oral warnings, reporting to Commission and police, and making available problem gambling information"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Staff training policies",
+                  "detail": "Staff training should include, at minimum, policies for induction training and refresher training"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "3.2.3",
+              "provision_number": "3.2.3",
+              "provision_title": "Adult Gaming Centres SR code - Preventing underage gambling",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All adult gaming centre licences"],
+              
+              "provision_summary": "AGCs must prevent underage gambling through age checking, premises monitoring, and staff training",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Policies and procedures for age verification",
+                  "detail": "Must have and put into effect policies and procedures designed to prevent underage gambling, and monitor the effectiveness of these"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Age verification procedures",
+                  "subsections": [
+                    {
+                      "letter": "a",
+                      "detail": "Check age of apparently underage customers"
+                    },
+                    {
+                      "letter": "b",
+                      "detail": "Remove anyone appearing underage without acceptable identification"
+                    },
+                    {
+                      "letter": "c",
+                      "detail": "Take action when under-18s attempt to enter"
+                    }
+                  ]
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Account for premises layout",
+                  "detail": "Policies and procedures must take account of structure and layout of gambling premises"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "No youth-appeal facilities",
+                  "detail": "Must not deliberately provide facilities in way appealing particularly to children or young people"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Refuse service to accompanied minors",
+                  "detail": "In premises restricted to adults, service must be refused where any adult is accompanied by child or young person"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Staff training",
+                  "detail": "Take all reasonable steps to ensure all staff understand responsibilities for preventing underage gambling, including appropriate training"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Acceptable identification standards",
+                  "subsections": [
+                    {
+                      "letter": "a",
+                      "detail": "Contains photograph from which individual can be identified"
+                    },
+                    {
+                      "letter": "b",
+                      "detail": "States individual's date of birth"
+                    },
+                    {
+                      "letter": "c",
+                      "detail": "Is valid"
+                    },
+                    {
+                      "letter": "d",
+                      "detail": "Is legible and has no visible signs of tampering or reproduction"
+                    }
+                  ]
+                },
+                {
+                  "requirement_number": 8,
+                  "requirement": "Test purchasing program",
+                  "detail": "All licensees must conduct test purchasing or take part in collective test purchasing programmes; provide results to Commission in specified form"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "3.2.11",
+              "provision_number": "3.2.11",
+              "provision_title": "Remote SR code - Preventing underage gambling",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All remote licences except lottery, gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino"],
+              
+              "provision_summary": "Remote operators must prevent underage gambling through age verification before funds/access, staff training, and filtering software",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Policies and procedures for age verification",
+                  "detail": "Must have and put into effect policies and procedures designed to prevent underage gambling and monitor the effectiveness of these"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Age verification procedures",
+                  "subsections": [
+                    {
+                      "letter": "a",
+                      "detail": "Verify age of customer BEFORE customer is able to: (i) deposit any funds into account, (ii) access any free-to-play versions of gambling games, or (iii) gamble using own money or free bet/bonus"
+                    },
+                    {
+                      "letter": "b",
+                      "detail": "Warn potential customers that underage gambling is an offence"
+                    },
+                    {
+                      "letter": "c",
+                      "detail": "Regularly review age verification systems and implement all reasonable improvements as technology advances and information improves"
+                    },
+                    {
+                      "letter": "d",
+                      "detail": "Ensure relevant staff properly trained in age verification procedures, particularly customer services staff on secondary identification when initial verification fails"
+                    },
+                    {
+                      "letter": "e",
+                      "detail": "Enable gambling websites to permit filtering software (e.g. parental controls in schools) to restrict access to relevant site pages"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "3.3",
+          "subsection_title": "Gambling management tools and responsible gambling information",
+          
+          "provisions": [
+            {
+              "provision_id": "3.3.1",
+              "provision_number": "3.3.1",
+              "provision_title": "Responsible gambling information",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All licences except gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, remote betting (remote platform)"],
+              
+              "provision_summary": "Licensees must make responsible gambling information readily available to all customers",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Make RG information readily available",
+                  "detail": "Must make information readily available to customers on how to gamble responsibly and how to access information about and help for problem gambling"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Information must cover",
+                  "subsections": [
+                    {
+                      "letter": "a",
+                      "detail": "Any measures provided by licensee to monitor or control gambling (e.g. restricting session duration or spending)"
+                    },
+                    {
+                      "letter": "b",
+                      "detail": "Timers or reminders or 'reality checks' where available"
+                    },
+                    {
+                      "letter": "c",
+                      "detail": "Self-exclusion options"
+                    },
+                    {
+                      "letter": "d",
+                      "detail": "Information about availability of further help or advice"
+                    }
+                  ]
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Information directed at all customers",
+                  "detail": "Information must be directed to all customers whether or not licensee also makes available material specifically directed at problem gamblers"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Premises-based availability",
+                  "detail": "For gambling premises: information must be available in all areas where gambling facilities provided and adjacent to ATMs, displayed prominently using methods appropriate to premises size/layout, may include posters/product information/screens/other facilities, must be available in form that may be taken away, may be made available through online links or smart technology, licensee must take all reasonable steps to ensure accessible discreetly"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "3.4",
+          "subsection_title": "Customer interaction",
+          
+          "provisions": [
+            {
+              "provision_id": "3.4.3",
+              "provision_number": "3.4.3",
+              "provision_title": "Remote customer interaction",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All remote licences except lottery (non-instant win), gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, ancillary remote betting, remote betting intermediary (trading rooms), remote general betting (limited)"],
+              
+              "provision_summary": "Remote operators must implement effective customer interaction systems to identify and act on harm indicators with appropriate and timely interventions",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Implement effective customer interaction systems",
+                  "detail": "Implement effective customer interaction systems and processes minimizing risk of customers experiencing gambling harms; must embed three elements: identify, act, evaluate, and reflect that CI is ongoing process per Commission guidance"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Consider Commission guidance",
+                  "detail": "Take into account Commission's guidance on customer interaction for remote operators as published and revised from time to time"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Identify vulnerability factors",
+                  "detail": "Consider factors making customers more vulnerable to gambling harms; implement systems and processes to take appropriate and timely action when vulnerability indicators identified, taking account of Commission's approach to vulnerability"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Monitor customer activity from account opening",
+                  "detail": "Have in place effective systems and processes to monitor customer activity from point when account is opened to identify harm or potential harm"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Use range of harm indicators",
+                  "detail": "Use range of indicators relevant to customer and gambling facilities to identify harm. Must include: (a) customer spend, (b) patterns of spend, (c) time spent gambling, (d) gambling behaviour indicators, (e) customer-led contact, (f) use of gambling management tools, (g) account indicators",
+                  "compliance_action": "Implement monitoring systems capturing all indicator types; configure automated alerts"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Responsibility for third party compliance",
+                  "detail": "If contracting with third party B2B providers for any aspect of licensed activities, licensee is responsible for ensuring systems and processes are in place to monitor customer activity for each indicator in paragraph 5(a-g) in timely way"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Timely flagging of risk indicators",
+                  "detail": "Systems and processes for customer interaction must flag indicators of risk of harm in timely manner for manual intervention and feed into automated processes"
+                },
+                {
+                  "requirement_number": 8,
+                  "requirement": "Appropriate action in timely manner",
+                  "detail": "Take appropriate action in timely manner when identified risk of harm"
+                },
+                {
+                  "requirement_number": 9,
+                  "requirement": "Tailored action based on harm level",
+                  "detail": "Tailor type of action based on number and level of indicators of harm, including: (a) tailored action at lower levels seeking to minimize future harm, (b) increasing action where earlier stages not effective, (c) strong/stronger action as immediate next step where appropriate rather than increasing gradually, (d) reducing/preventing marketing or bonus take-up where appropriate, (e) ending business relationship where necessary"
+                },
+                {
+                  "requirement_number": 10,
+                  "requirement": "Prevent marketing where strong harm indicators present",
+                  "detail": "Prevent marketing and take up of new bonus offers where strong indicators of harm (as defined within licensee's processes) have been identified"
+                },
+                {
+                  "requirement_number": 11,
+                  "requirement": "Automated processes for strong harm indicators",
+                  "detail": "Ensure strong indicators of harm are acted on in timely manner by implementing automated processes; where applied, must manually review operation in each individual customer case and allow customer opportunity to contest automated decision"
+                },
+                {
+                  "requirement_number": 12,
+                  "requirement": "Understand impact of interactions",
+                  "detail": "Implement processes to understand impact of individual interactions and actions on customer behaviour, continued risk of harm, and whether further action needed"
+                },
+                {
+                  "requirement_number": 13,
+                  "requirement": "Evaluate overall approach effectiveness",
+                  "detail": "Take all reasonable steps to evaluate effectiveness of overall approach, for example by trialling and measuring impact, and be able to demonstrate to Commission the outcomes"
+                },
+                {
+                  "requirement_number": 14,
+                  "requirement": "Align with published problem gambling rates",
+                  "detail": "Take account of problem gambling rates for relevant gambling activity as published by Commission to check whether number of customer interactions is at minimum in line with this level"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "3.4.4",
+              "provision_number": "3.4.4",
+              "provision_title": "Financial vulnerability check",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All remote licences except lottery (non-instant win), gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, ancillary remote betting, remote betting intermediary (trading rooms), remote general betting (limited)"],
+              "effective_date": "28 February 2025",
+              
+              "provision_summary": "Remote operators must undertake financial vulnerability checks for customers exceeding spending thresholds and take proportionate action",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Undertake financial vulnerability check",
+                  "detail": "Undertake financial vulnerability check for customers that meet the relevant threshold"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Check content and scope",
+                  "detail": "Financial vulnerability check must include customer-specific public record information check for significant indicators of potential financial vulnerability, including whether customer is subject to: (a) bankruptcy order or equivalent, or (b) county court judgment, individual voluntary arrangement, high court judgment, administration order, decree, Debt Relief Order, or equivalent"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Assess and act on financial vulnerability",
+                  "subsections": [
+                    {
+                      "letter": "a",
+                      "detail": "Consider financial vulnerability information obtained together with all other customer information permitted to use to assess risk"
+                    },
+                    {
+                      "letter": "b",
+                      "detail": "Take proportionate action when risk identified"
+                    },
+                    {
+                      "letter": "c",
+                      "detail": "Record rationale for decision on proportionate action"
+                    }
+                  ]
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Policies on proportionate action decisions",
+                  "detail": "Have and put into effect policies and procedures on: (a) whether it appropriate for decision on proportionate action to be manual, fully automated (with customer opportunity for manual review), or combination, (b) circumstances in which immediate action necessary to limit harm where significant risk identified"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Check frequency",
+                  "detail": "Not required to conduct check at relevant threshold if previously conducted check or financial risk assessment within previous 12 months"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Relevant threshold from 28 February 2025",
+                  "detail": "Where customer's deposits minus withdrawals exceeds £150 in rolling 30-day period"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Transitional threshold 30 August 2024 - 27 February 2025",
+                  "detail": "Where customer's deposits minus withdrawals exceeds £500 in rolling 30-day period"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "3.5",
+          "subsection_title": "Self-exclusion",
+          
+          "provisions": [
+            {
+              "provision_id": "3.5.1",
+              "provision_number": "3.5.1",
+              "provision_title": "Self-exclusion - Non-remote and trading rooms SR code",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All non-remote licences (except lottery, gaming machine technical, gambling software) and remote betting intermediary (trading rooms only)"],
+              
+              "provision_summary": "Non-remote operators must establish self-exclusion procedures, prevent marketing to excluded individuals, and remove from marketing databases",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Have self-exclusion procedures in place",
+                  "detail": "Have and put into effect procedures for self-exclusion and take all reasonable steps to refuse service or prevent individual who has entered self-exclusion agreement from participating in gambling"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Prevent marketing material",
+                  "detail": "As soon as practicable, take all reasonable steps to prevent any marketing material being sent to self-excluded customer"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Remove from marketing databases",
+                  "detail": "Take steps to remove name and details of self-excluded individual from any marketing databases used by company or group (or otherwise flag) within two days of receiving completed self-exclusion notification"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Marketing scope",
+                  "detail": "Covers any marketing material relating to gambling or other activities on premises where gambling may take place; does not extend to blanket geographical marketing where excluded individual not knowingly included"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Close customer accounts",
+                  "detail": "Close any customer accounts of individual who has entered self-exclusion agreement and return any funds held in account; not sufficient merely to prevent withdrawal whilst still accepting wagers; where credit is permitted, may retain details of amount owed but account must not be active"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Prevent access procedures",
+                  "detail": "Put into effect procedures designed to ensure self-excluded individual cannot gain access to gambling, including: (a) register of excluded with appropriate records, (b) photo identification (except where alternative means at least as effective), (c) staff training for effective administration, (d) removal of persons found gambling or attempting to gamble"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Account for premises layout",
+                  "detail": "Ensure procedures take account of structure and layout of gambling premises"
+                },
+                {
+                  "requirement_number": 8,
+                  "requirement": "Signpost to support services",
+                  "detail": "When administering self-exclusion agreement, signpost individual to counselling and support services"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "3.5.3",
+              "provision_number": "3.5.3",
+              "provision_title": "Self-exclusion - Remote SR code",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All remote licences except gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, betting intermediary (trading room), remote betting (standard) (remote platform)"],
+              
+              "provision_summary": "Remote operators must establish self-exclusion procedures, prevent marketing, close accounts, and allow self-exclusion via customer services and automated process",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Have self-exclusion procedures",
+                  "detail": "Have and put into effect procedures for self-exclusion and take all reasonable steps to refuse service or prevent individual from participating in gambling"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Prevent marketing to excluded customers",
+                  "detail": "As soon as practicable, take all reasonable steps to prevent any marketing material being sent to self-excluded customer"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Remove from marketing databases",
+                  "detail": "Take steps to remove name and details from any marketing databases (or otherwise flag) within two days of receiving completed self-exclusion notification"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Marketing scope for remote",
+                  "detail": "Covers any marketing material relating to gambling; does not extend to blanket geographical marketing where excluded individual not knowingly included"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Close accounts and return funds",
+                  "detail": "Close any customer accounts of individual who has entered self-exclusion agreement and return any funds held in account; where credit permitted, may retain details of amount owed but account must not be active"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Prevent access procedures",
+                  "detail": "Put into effect procedures to ensure self-excluded individual cannot gain access to gambling, including: (a) register of excluded with appropriate records, (b) record of card numbers to be excluded, (c) staff training, (d) removal of access from persons found to have gambled or attempted to gamble"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Signpost to support services",
+                  "detail": "When administering self-exclusion, signpost individual to counselling and support services"
+                },
+                {
+                  "requirement_number": 8,
+                  "requirement": "Multiple self-exclusion methods",
+                  "detail": "Customers given opportunity to self-exclude by: (a) contacting customer services, (b) entering automated process via remote communication; acceptable to include additional confirmation step to avoid inadvertent exclusion; ensure all customer service staff aware of self-exclusion system and able to direct to immediate contact point"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "3.5.5",
+              "provision_number": "3.5.5",
+              "provision_title": "Remote multi-operator self-exclusion SR code",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All remote licences except lottery (non-instant win), ancillary remote betting (certain circumstances), remote general betting (remote platform), remote betting intermediary (trading room), gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino"],
+              
+              "provision_summary": "Remote operators must participate in national multi-operator self-exclusion scheme",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Participate in national scheme",
+                  "detail": "Licensees must participate in the national multi-operator self-exclusion scheme"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "3.5.6",
+              "provision_number": "3.5.6",
+              "provision_title": "Multi-operator non-remote self-exclusion SR code",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All non-remote casino, bingo, betting licences (except track premises betting) and gaming machine general operating licences for adult gaming centres"],
+              
+              "provision_summary": "Non-remote operators must offer customers ability to self-exclude from same gambling type across other local operators",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Offer multi-operator self-exclusion",
+                  "detail": "Licensees must offer customers ability to self-exclude from same kind of gambling offered in their locality by other holders of operating licences by participating in one or more available multi-operator self-exclusion schemes"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "3.6",
+          "subsection_title": "Employment of children and young persons",
+          
+          "provisions": [
+            {
+              "provision_id": "3.6.2",
+              "provision_number": "3.6.2",
+              "provision_title": "Employment of children and young persons - Bingo",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All non-remote bingo licences"],
+              
+              "provision_summary": "Bingo operators should be aware of legal prohibitions on employing children and young persons in various capacities",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Understand legal prohibitions",
+                  "detail": "Licensees who employ children (under-16) and young persons (16-17) should be aware that it is an offence to: (a) employ them to provide bingo facilities, (b) require them to perform gaming machine functions, (c) employ child to perform any function on premises where/when bingo facilities being provided"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Gaming machine function definition",
+                  "detail": "Commission view: relevant provision applies to ANY function in connection with gaming machine, including servicing or cleaning"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Policies to ensure compliance",
+                  "detail": "Have and put into effect policies and procedures to ensure: (a) children and young persons never asked to perform prohibited tasks, (b) all staff instructed about laws relating to children and young persons access to gambling"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Consider employment policies",
+                  "detail": "Consider adopting policy that: (a) children not employed on bingo premises when open for business, (b) neither children nor young persons asked to work in areas where gaming machines situated"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "3.6.7",
+              "provision_number": "3.6.7",
+              "provision_title": "Employment of children and young persons - Remote",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All remote licences except lottery, pool betting, gaming machine technical, gambling software, ancillary remote bingo, ancillary remote casino, remote betting intermediary (trading room)"],
+              
+              "provision_summary": "Remote operators should be aware of legal prohibition on employing children and young persons to provide gambling facilities",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Understand employment prohibition",
+                  "detail": "Licensees who employ children (under-16) and young persons (16-17) should be aware that it is an offence to employ them to provide facilities for gambling"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "3.7",
+          "subsection_title": "Provision of credit",
+          
+          "provisions": [
+            {
+              "provision_id": "3.7.1",
+              "provision_number": "3.7.1",
+              "provision_title": "Provision of credit",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All non-remote general betting licences (except casino premises), pool betting licences, and all remote licences (including ancillary remote betting) except gaming machine technical, gambling software, host, ancillary remote casino, ancillary remote bingo, remote betting intermediary (trading room)"],
+              
+              "provision_summary": "Operators who offer credit must implement strict controls on credit checking, limits, and prohibited marketing to vulnerable persons",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Credit must be optional",
+                  "detail": "Licensees who choose to offer credit to members of public who are not themselves gambling operators must also:"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Procedures for credit assessment",
+                  "subsections": [
+                    {
+                      "letter": "a",
+                      "detail": "Have procedures for checking and scoring applications for credit, for setting and for increasing credit limits"
+                    },
+                    {
+                      "letter": "b",
+                      "detail": "Explain these procedures to customers"
+                    },
+                    {
+                      "letter": "c",
+                      "detail": "Set maximum credit limit for each customer and not permit customers to exceed without further application"
+                    },
+                    {
+                      "letter": "d",
+                      "detail": "Apply 24-hour delay between receiving request for limit increase and granting where limit exceeds previously set level"
+                    },
+                    {
+                      "letter": "e",
+                      "detail": "Not require minimum spend within set time period"
+                    },
+                    {
+                      "letter": "f",
+                      "detail": "Take all reasonable steps to ensure credit offers not sent to vulnerable persons including those who have self-excluded"
+                    },
+                    {
+                      "letter": "g",
+                      "detail": "Ensure credit offers include risk warning of what may happen in event of default"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "3.8",
+          "subsection_title": "Money-lending",
+          
+          "provisions": [
+            {
+              "provision_id": "3.8.1",
+              "provision_number": "3.8.1",
+              "provision_title": "Money-lending - Casinos",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All non-remote casino licences"],
+              
+              "provision_summary": "Casinos should take steps to prevent systematic or organized money lending between customers on premises",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Prevent systematic money lending",
+                  "detail": "Licensees should take steps to prevent systematic or organized money lending between customers on their premises"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Monitoring and staff procedures",
+                  "detail": "Nature of steps depends on premises layout/size but should cover: (a) systems for monitoring for such activity, (b) instructions to staff on what to do if they spot significant money lending and to managers on handling, (c) excluding from premises any person involved in organized/systematic money lending"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Report suspicious activity",
+                  "detail": "Appropriate arrangements for cases where lending appears commercial in nature or may involve money laundering; if latter, follow suspicious transaction reporting requirements; in all cases where systematic/organized money lending encountered, make report to Commission"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "3.9",
+          "subsection_title": "Identification of individual customers",
+          
+          "provisions": [
+            {
+              "provision_id": "3.9.1",
+              "provision_number": "3.9.1",
+              "provision_title": "Identification of individual customers - Remote",
+              "provision_type": "social_responsibility_code",
+              "applies_to": ["All remote licences (including ancillary remote betting) except gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino, remote betting intermediary (trading room)"],
+              
+              "provision_summary": "Remote operators must identify separate accounts held by same individual and apply limits on aggregate basis across all accounts",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Identify multiple accounts by same individual",
+                  "detail": "Licensees must have and put into effect policies and procedures designed to identify separate accounts which are held by same individual"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Account linking and monitoring controls",
+                  "detail": "Where licensees allow customers to hold more than one account, must have procedures to relate each of customer's accounts to each other and ensure: (a) if customer opts to self-exclude effectively excluded from all gambling unless request relates only to some forms or some accounts, (b) all customer accounts monitored and CI decisions based on observed behaviour across all accounts, (c) where credit offered maximum limit applied on aggregate basis across all accounts, (d) individual financial limits can be implemented across all accounts"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Group company compliance",
+                  "detail": "Companies/bodies corporate must take all reasonable steps to comply as if reference to customer holding more than one account with them included reference to customer holding one or more accounts with them and one or more accounts with group company"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Group company definition",
+                  "detail": "Group company = holding company, subsidiary, or shares common holding company with licensee per Companies Act 2006 or statutory modification"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 4,
+      "section_title": "Protection of Customer Funds",
+      "section_overview": "Requirements for segregation and protection of customer funds held by operators",
+      
+      "subsections": [
+        {
+          "subsection_id": "4.1",
+          "subsection_title": "Segregation of funds",
+          
+          "provisions": [
+            {
+              "provision_id": "4.1.1",
+              "provision_number": "4.1.1",
+              "provision_title": "Segregation of customer funds",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All operating licences except gaming machine technical, gambling software, host, ancillary remote bingo, ancillary remote casino"],
+              
+              "provision_summary": "Operators should ensure customer funds are held separately and protected in event of insolvency",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Hold funds in separate accounts",
+                  "detail": "Customer funds should be held in separate client bank accounts segregated from operator's own funds",
+                  "compliance_action": "Establish dedicated client segregated account(s); audit quarterly to verify segregation"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Maintain proper accounting records",
+                  "detail": "Keep accurate records of all customer funds held",
+                  "compliance_action": "Implement accounting systems tracking customer fund balances"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 5,
+      "section_title": "Payment",
+      "section_overview": "Requirements for payment methods and handling of payments",
+      
+      "subsections": [
+        {
+          "subsection_id": "5.1",
+          "subsection_title": "Payment methods and cash handling",
+          
+          "provisions": [
+            {
+              "provision_id": "5.1.1",
+              "provision_number": "5.1.1",
+              "provision_title": "Cash and cash equivalents policies",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All operating licences except gaming machine technical, gambling software, host"],
+              
+              "provision_summary": "Operators should implement policies on cash and cash equivalents to minimize money laundering risk",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Establish cash policies",
+                  "detail": "Have policies and procedures concerning cash and cash equivalents (drafts, cheques, debit cards, digital currencies) to minimize money laundering risk, avoid illicit credit, and promote licensing objectives",
+                  "compliance_action": "Document detailed cash handling policies; communicate to all staff"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Effective implementation and review",
+                  "detail": "Policies must be implemented effectively, kept under review, revised appropriately to remain effective, and take account of Commission guidance",
+                  "compliance_action": "Conduct annual policy reviews; update based on regulatory changes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 6,
+      "section_title": "Provision of Credit by Licensees",
+      "section_overview": "Requirements and prohibitions relating to credit provision",
+      
+      "subsections": [
+        {
+          "subsection_id": "6.1",
+          "subsection_title": "Credit provision and card use restrictions",
+          
+          "provisions": [
+            {
+              "provision_id": "6.1.1",
+              "provision_number": "6.1.1",
+              "provision_title": "Credit prohibition - Adult Gaming Centres and Family Entertainment Centres",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All gaming machine general operating licences for adult gaming centres and family entertainment centres"],
+              
+              "provision_summary": "AGC and FEC operators must not provide or facilitate credit in connection with gambling",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Prohibition on direct credit provision",
+                  "detail": "Licensee must not provide credit themselves in connection with gambling",
+                  "compliance_action": "Ensure payment systems cannot process credit transactions"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Prohibition on facilitating third-party credit",
+                  "detail": "Licensee must not participate in, arrange, permit or knowingly facilitate giving of credit in connection with gambling",
+                  "compliance_action": "Monitor premises and staff to prevent informal credit arrangements"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "6.1.2",
+              "provision_number": "6.1.2",
+              "provision_title": "Credit card payment prohibition",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All non-remote general betting, pool betting, betting intermediary licences, and all remote licences (including ancillary remote betting, ancillary remote lottery) except gaming machine technical, gambling software, host"],
+              
+              "provision_summary": "Operators must not accept credit card payments for gambling",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Prohibit credit card payments",
+                  "detail": "Licensee must not accept payment for gambling by credit card, including credit card payments through money service business",
+                  "compliance_action": "Configure payment processors to block credit card transactions; communicate policy to customers"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 7,
+      "section_title": "General Fair and Open Provisions",
+      "section_overview": "Requirements for fair and transparent terms and practices",
+      
+      "subsections": [
+        {
+          "subsection_id": "7.1",
+          "subsection_title": "Fair and transparent terms",
+          
+          "provisions": [
+            {
+              "provision_id": "7.1.1",
+              "provision_number": "7.1.1",
+              "provision_title": "Fair and transparent contractual terms",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All operating licences except gaming machine technical, gambling software"],
+              
+              "provision_summary": "Operators must ensure terms and practices are fair, transparent, and comply with consumer protection laws",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Terms must not be unfair",
+                  "detail": "Terms and consumer notices must not be unfair under Consumer Rights Act 2015; licensee must comply with terms",
+                  "compliance_action": "Review all terms against CRA 2015 fairness test; obtain legal review"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Terms must be transparent",
+                  "detail": "Contractual terms and consumer notices must be transparent under CRA 2015 and readily accessible to customers",
+                  "compliance_action": "Use plain language; ensure easy online access; test readability"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Fair changes to terms",
+                  "detail": "Changes must comply with fairness/transparency requirements; material changes must be notified before effective date",
+                  "compliance_action": "Notify customers of material changes; obtain confirmation where required"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "No unfair commercial practices",
+                  "detail": "Must not commit unfair commercial practices under Consumer Protection from Unfair Trading Regulations 2008",
+                  "compliance_action": "Train staff on CMA guidance; monitor for unfair practices; document decisions"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 8,
+      "section_title": "Licensed Status Display",
+      "section_overview": "Requirements to display licensing information to customers",
+      
+      "subsections": [
+        {
+          "subsection_id": "8.1",
+          "subsection_title": "Display of UKGC licensed status",
+          
+          "provisions": [
+            {
+              "provision_id": "8.1.1",
+              "provision_number": "8.1.1",
+              "provision_title": "Remote B2C licensing display",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All remote casino, bingo, betting licences except ancillary, host, remote betting intermediary (trading room), remote general betting (limited), remote general betting (remote platform)"],
+              
+              "provision_summary": "Remote B2C operators must display licensing information on all customer-facing screens",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Display on every accessible screen",
+                  "detail": "Must display on every screen from which customers can access gambling facilities"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Required information content",
+                  "detail": "Must display: (a) statement that licensed and regulated by UKGC, (b) UKGC account number, (c) link to UKGC website showing current licensed status"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Format specification",
+                  "detail": "Information in format specified by Commission in technical standards"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Other jurisdictions disclosure",
+                  "detail": "May display other licences if clearly marked as relying on UKGC licence for GB provision"
+                }
+              ]
+            },
+
+            {
+              "provision_id": "8.1.2",
+              "provision_number": "8.1.2",
+              "provision_title": "B2B licensing display",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All gaming machine technical, gambling software, host licences"],
+              
+              "provision_summary": "B2B operators must display licensing information on website and product pages",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Display on website first page",
+                  "detail": "First page offering gaming machines or gambling software must display licensing information"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Display on product pages",
+                  "detail": "At least minimal information on each page offering products in reliance on licence"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Distinguish regulated products",
+                  "detail": "If offering products not regulated by Commission, clearly distinguish UKGC-regulated products"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 9,
+      "section_title": "Types and Rules of Games",
+      "section_overview": "Requirements regarding permitted games and game rules",
+      
+      "subsections": [
+        {
+          "subsection_id": "9.1",
+          "subsection_title": "Game types and rules",
+          
+          "provisions": [
+            {
+              "provision_id": "9.1.1",
+              "provision_number": "9.1.1",
+              "provision_title": "Casino games rules",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All non-remote casino operating licences"],
+              
+              "provision_summary": "Casinos must follow Commission rules on permitted games but are generally free to offer new games",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Only offer non-prohibited games",
+                  "detail": "Must not offer or permit prohibited casino games per Commission published list"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Freedom to offer new games",
+                  "detail": "Casino businesses free to offer new casino games and variants without Commission approval"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 10,
+      "section_title": "Tipping of Casino Employees",
+      "section_overview": "Requirements for tipping arrangements in casinos",
+      
+      "subsections": [
+        {
+          "subsection_id": "10.1",
+          "subsection_title": "Tipping arrangements",
+          
+          "provisions": [
+            {
+              "provision_id": "10.1.1",
+              "provision_number": "10.1.1",
+              "provision_title": "Tipping through tronc system",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All non-remote casino operating licences"],
+              
+              "provision_summary": "Casino tips must be managed through tronc system for fair distribution",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Mandatory tronc system",
+                  "detail": "Tips permitted only through tronc system where all tips pooled and distributed amongst employees"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Separate troncs permitted",
+                  "detail": "Separate tronc may operate for each category of licensed staff"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 11,
+      "section_title": "Lotteries",
+      "section_overview": "Requirements for lottery operations by societies and external lottery managers",
+      
+      "subsections": [
+        {
+          "subsection_id": "11.1",
+          "subsection_title": "Society and local authority lotteries",
+          
+          "provisions": [
+            {
+              "provision_id": "11.1.1",
+              "provision_number": "11.1.1",
+              "provision_title": "Society and local authority lottery requirements",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All lottery operating licences issued to non-commercial societies or local authorities"],
+              
+              "provision_summary": "Society and LA lotteries must meet minimum proceeds requirements, limits, and accounting standards",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Minimum proceeds to purpose",
+                  "detail": "At least 20% of lottery proceeds must be applied to society's purpose or LA's statutory power"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Proceeds limits",
+                  "detail": "Single lottery max proceeds £5,000,000; aggregate annual proceeds max £50,000,000"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Prize limits",
+                  "detail": "Individual ticket maximum win: £25,000 or 10% of proceeds (whichever greater)"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Non-linked requirements",
+                  "detail": "Cannot link to other lotteries unless max aggregate win under £500,000"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Ticket document requirements",
+                  "detail": "Each ticket must identify: promoting society, designated member name/address, draw date(s), 'licensed by Gambling Commission', Commission website"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Uniform ticket price",
+                  "detail": "Ticket price must be: uniform, shown on ticket, paid before issue"
+                },
+                {
+                  "requirement_number": 7,
+                  "requirement": "Pre-sale notification",
+                  "detail": "Lodge description and rules with Commission at least 28 days before sale"
+                },
+                {
+                  "requirement_number": 8,
+                  "requirement": "Street sale restrictions",
+                  "detail": "Cannot sell in street except from static structures (kiosk) or door-to-door (requires local authority permission)"
+                },
+                {
+                  "requirement_number": 9,
+                  "requirement": "Accurate accounting",
+                  "detail": "Records must show: total proceeds, prize allocation, expenses, amount to purpose, sold/unsold ticket count"
+                },
+                {
+                  "requirement_number": 10,
+                  "requirement": "Commission submission",
+                  "detail": "Within 3 months of draw, submit lottery submission with accounting and qualified person approval"
+                },
+                {
+                  "requirement_number": 11,
+                  "requirement": "Auditor confirmation",
+                  "detail": "If annual proceeds exceed £1,000,000, provide auditor confirmation proceeds fully accounted for"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "subsection_id": "11.2",
+          "subsection_title": "External lottery manager requirements",
+          
+          "provisions": [
+            {
+              "provision_id": "11.2.1",
+              "provision_number": "11.2.1",
+              "provision_title": "External lottery manager lottery requirements",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All lottery operating licences issued to external lottery managers"],
+              
+              "provision_summary": "ELMs must ensure minimum proceeds to society, segregate funds in trustee accounts, and maintain proper accounting",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Minimum proceeds to society",
+                  "detail": "At least 20% of proceeds paid to promoting society/LA for qualifying purpose"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Proceeds limits per society",
+                  "detail": "Single lottery max £5,000,000; aggregate per society/LA max £50,000,000"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Prize limits",
+                  "detail": "Individual maximum: £25,000 or 10% of proceeds"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Fund segregation in trustee accounts",
+                  "detail": "Lottery proceeds segregated from trading income; held in trustee bank account for each society/LA; protected in event of ELM insolvency"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Timely profit allocation",
+                  "detail": "Procedures to ensure lottery profits properly allocated and accounted to society/LA promptly"
+                },
+                {
+                  "requirement_number": 6,
+                  "requirement": "Other requirements apply",
+                  "detail": "All other society lottery requirements apply (non-linked, documentation, street sales restrictions, accounting, submission, auditor confirmation)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 12,
+      "section_title": "Pool Betting",
+      "section_overview": "Requirements for pool betting operations",
+      
+      "subsections": [
+        {
+          "subsection_id": "12.1",
+          "subsection_title": "Pool betting operations",
+          
+          "provisions": [
+            {
+              "provision_id": "12.1.1",
+              "provision_number": "12.1.1",
+              "provision_title": "Pool betting best practice",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All pool betting licences"],
+              
+              "provision_summary": "Pool betting operators should maintain fair and transparent pool operations",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Fair pool management",
+                  "detail": "Implement fair and transparent procedures for pool operation"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Customer information",
+                  "detail": "Provide clear information to customers about how pools operate and odds calculation"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 13,
+      "section_title": "Premises Access and Supervision",
+      "section_overview": "Requirements for managing access to gambling premises",
+      
+      "subsections": [
+        {
+          "subsection_id": "13.1",
+          "subsection_title": "Premises access and supervision",
+          
+          "provisions": [
+            {
+              "provision_id": "13.1.1",
+              "provision_number": "13.1.1",
+              "provision_title": "Premises access procedures",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All non-remote casino, bingo, betting, adult gaming centre licences"],
+              
+              "provision_summary": "Operators should maintain effective supervision and access procedures",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Effective supervision",
+                  "detail": "Maintain effective supervision of premises to prevent unauthorized gambling activities"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Access control procedures",
+                  "detail": "Implement procedures controlling access to gambling areas, particularly age-restricted areas"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 14,
+      "section_title": "Reporting",
+      "section_overview": "Requirements for regulatory reporting and returns",
+      
+      "subsections": [
+        {
+          "subsection_id": "14.1",
+          "subsection_title": "Regulatory reporting obligations",
+          
+          "provisions": [
+            {
+              "provision_id": "14.1.1",
+              "provision_number": "14.1.1",
+              "provision_title": "Returns and reporting best practice",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All operating licences"],
+              
+              "provision_summary": "Operators should maintain accurate records and provide timely reporting to Commission",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Accurate record-keeping",
+                  "detail": "Maintain accurate records of all gambling operations required by Commission"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Timely submission",
+                  "detail": "Submit required returns and reports to Commission within specified deadlines"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Document retention",
+                  "detail": "Retain records for minimum periods specified by Commission guidance"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 15,
+      "section_title": "Advertising",
+      "section_overview": "Requirements for gambling advertising and marketing",
+      
+      "subsections": [
+        {
+          "subsection_id": "15.1",
+          "subsection_title": "Advertising standards and restrictions",
+          
+          "provisions": [
+            {
+              "provision_id": "15.1.1",
+              "provision_number": "15.1.1",
+              "provision_title": "Responsible advertising",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All operating licences except gaming machine technical and gambling software"],
+              
+              "provision_summary": "Operators should ensure advertising is responsible and complies with codes of practice",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Comply with advertising codes",
+                  "detail": "Advertising must comply with relevant advertising codes of practice"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Protect vulnerable persons",
+                  "detail": "Ensure advertising does not target or appeal particularly to children or vulnerable persons"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Clear information",
+                  "detail": "Advertising must contain clear information about terms, odds, and nature of gambling products"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 16,
+      "section_title": "Complaints and Dispute Resolution",
+      "section_overview": "Requirements for handling customer complaints and disputes",
+      
+      "subsections": [
+        {
+          "subsection_id": "16.1",
+          "subsection_title": "Complaint handling procedures",
+          
+          "provisions": [
+            {
+              "provision_id": "16.1.1",
+              "provision_number": "16.1.1",
+              "provision_title": "Internal dispute resolution",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All operating licences except gaming machine technical and gambling software"],
+              
+              "provision_summary": "Operators should have fair and accessible procedures for handling customer complaints",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Accessible complaint procedures",
+                  "detail": "Establish fair and accessible procedures for customers to make complaints"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Timely resolution",
+                  "detail": "Investigate and resolve complaints in timely manner"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Clear information",
+                  "detail": "Provide clear information about complaint procedures and alternative dispute resolution"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "section_id": 17,
+      "section_title": "Identity Verification and Customer Due Diligence",
+      "section_overview": "Requirements for identity verification and customer due diligence",
+      
+      "subsections": [
+        {
+          "subsection_id": "17.1",
+          "subsection_title": "Identity verification standards",
+          
+          "provisions": [
+            {
+              "provision_id": "17.1.1",
+              "provision_number": "17.1.1",
+              "provision_title": "Customer identity verification",
+              "provision_type": "ordinary_code",
+              "applies_to": ["All operating licences except host, ancillary remote bingo, ancillary remote casino"],
+              
+              "provision_summary": "Operators should implement robust identity verification and customer due diligence procedures",
+              
+              "key_requirements": [
+                {
+                  "requirement_number": 1,
+                  "requirement": "Verify customer identity",
+                  "detail": "Implement robust procedures to verify customer identity before gambling commences"
+                },
+                {
+                  "requirement_number": 2,
+                  "requirement": "Use reliable methods",
+                  "detail": "Use reliable, independent methods to verify customer identity"
+                },
+                {
+                  "requirement_number": 3,
+                  "requirement": "Money laundering due diligence",
+                  "detail": "Conduct appropriate customer due diligence to comply with money laundering and terrorism financing prevention requirements"
+                },
+                {
+                  "requirement_number": 4,
+                  "requirement": "Enhanced due diligence",
+                  "detail": "Apply enhanced due diligence procedures where higher risk customers identified"
+                },
+                {
+                  "requirement_number": 5,
+                  "requirement": "Ongoing monitoring",
+                  "detail": "Monitor customer transactions and behaviour on ongoing basis to identify suspicious activity"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "compliance_framework": {
+    "key_principles": [
+      "Social Responsibility Code provisions are mandatory conditions of licence",
+      "Ordinary Code provisions are best practice guidance with alternative approaches permitted",
+      "Licensees must interpret all provisions consistently with promotion of three licensing objectives",
+      "Commission expects cooperative engagement and proactive disclosure of material information",
+      "Breaches of SR Code may result in financial penalties; breaches of Ordinary Code cannot"
+    ],
+    
+    "implementation_approach": [
+      "Establish documented policies and procedures for each applicable provision",
+      "Provide staff training and ensure understanding of requirements",
+      "Implement monitoring and review processes",
+      "Maintain records and audit trails for compliance",
+      "Regularly review and update policies to remain current with regulatory changes",
+      "Engage proactively with Commission on compliance queries"
+    ]
+  },
+
+  "references_and_guidance": {
+    "external_legislation": [
+      "Gambling Act 2005",
+      "Proceeds of Crime Act 2002",
+      "Terrorism Act 2000",
+      "Consumer Rights Act 2015",
+      "Consumer Protection from Unfair Trading Regulations 2008",
+      "Payment Services Regulations 2017",
+      "Companies Act 2006"
+    ],
+    
+    "commission_publications": [
+      "The Prevention of Money Laundering and Combating the Financing of Terrorism - Guidance for remote and non-remote casinos",
+      "Duties and responsibilities under the Proceeds of Crime Act 2002 – Advice for operators (excluding casino operators)",
+      "Statement of principles for licensing and regulation",
+      "Commission guidance on customer interaction for remote operators",
+      "Commission approach to vulnerability",
+      "Technical standards (RTS-01 to RTS-17)",
+      "Problem gambling prevalence data"
+    ]
+  },
+
+  "usage_notes": {
+    "mcp_integration": "This JSON is designed to enable MCP queries such as: 'What are my social responsibility code obligations?', 'Which provisions apply to remote betting operators?', 'What are best practice requirements for age verification?', 'How should I structure customer interaction systems?'",
+    "filter_capabilities": "Query by: provision type (SR Code vs Ordinary Code), license type, operational area (age verification, customer interaction, self-exclusion, etc.), enforcement consequence",
+    "compliance_support": "Supports compliance planning, staff training, audit preparation, and regulatory engagement"
+  }
+}

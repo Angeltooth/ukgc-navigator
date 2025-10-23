@@ -1,0 +1,496 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 5.28",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Organizational Controls",
+  "control": {
+    "control_id": "ISO_27001_A_5.28",
+    "control_number": "A 5.28",
+    "control_title": "Collection of Evidence",
+    "control_type": "Corrective control",
+    "control_purpose": "To ensure consistent and effective management of evidence related to information security incidents for disciplinary and legal actions",
+    "control_objective": "Establish and implement procedures for identification, collection, acquisition and preservation of evidence related to information security events"
+  },
+  "iso_27001_definition": {
+    "official_text": "The organisation should establish and implement procedures for the identification, collection, acquisition and preservation of evidence related to information security events.",
+    "key_requirements": [
+      "Evidence collection procedures documented",
+      "Procedures follow applicable legal requirements",
+      "Evidence identification process defined",
+      "Evidence collection process defined",
+      "Evidence preservation procedures defined",
+      "Evidence integrity maintained",
+      "Trained and qualified personnel involved",
+      "Professional standards followed"
+    ]
+  },
+  "evidence_collection_overview": {
+    "definition": "Forensic collection and preservation of digital evidence to support investigations, disciplinary actions, or legal proceedings",
+    "purpose": "Ensure evidence admissibility in legal/disciplinary proceedings and maintain chain of custody",
+    "scope": [
+      "Identification of relevant evidence",
+      "Collection of digital artifacts",
+      "Acquisition of system logs and data",
+      "Preservation of evidence integrity",
+      "Chain of custody documentation",
+      "Forensic analysis support"
+    ],
+    "key_principle": "Use trained professionals to ensure evidence is collected properly for legal admissibility",
+    "best_practice": "Outsource to qualified forensic specialists for legal/disciplinary cases"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_5.28_REQ_1",
+      "requirement": "Establish Evidence Collection Policy",
+      "description": "Develop policy for identifying and collecting evidence",
+      "details": {
+        "policy_scope": [
+          "When evidence collection required",
+          "Types of evidence to collect",
+          "Legal and regulatory requirements",
+          "Professional standards to follow",
+          "Personnel qualifications required",
+          "Chain of custody procedures"
+        ],
+        "legal_consideration": "Policy must comply with applicable laws and jurisdictions"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_2",
+      "requirement": "Identify Applicable Legal and Regulatory Requirements",
+      "description": "Understand laws governing evidence collection in relevant jurisdictions",
+      "details": {
+        "requirements": [
+          "Criminal law requirements",
+          "Civil law requirements",
+          "Regulatory requirements (UKGC, ICO)",
+          "Admissibility standards",
+          "Chain of custody requirements",
+          "Preservation requirements",
+          "Data protection implications"
+        ],
+        "purpose": "Ensure evidence collected meets legal standards for admissibility",
+        "consideration": "Different jurisdictions may have different requirements"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_3",
+      "requirement": "Define Evidence Identification Process",
+      "description": "Establish process for identifying what evidence needs to be collected",
+      "details": {
+        "identification": [
+          "What systems affected",
+          "What data potentially compromised",
+          "What events occurred",
+          "What timeline of interest",
+          "What potential legal implications"
+        ],
+        "decision_point": "When it becomes apparent evidence will be needed for legal/disciplinary action",
+        "timing": "Identify at earliest opportunity to prevent data loss"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_4",
+      "requirement": "Implement Professional Evidence Collection",
+      "description": "Use trained and qualified professionals for evidence collection",
+      "details": {
+        "professional_requirement": "Engage forensic professionals at earliest opportunity",
+        "qualifications": [
+          "Formal forensic training and certification",
+          "Experience with similar evidence types",
+          "Understanding of chain of custody",
+          "Knowledge of legal admissibility standards",
+          "Current industry certifications"
+        ],
+        "approach": [
+          "In-house qualified forensic team, OR",
+          "External forensic specialist firm"
+        ],
+        "recommendation": "Outsource for legal/disciplinary cases to external professionals"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_5",
+      "requirement": "Establish Collection Procedures",
+      "description": "Define how evidence will be collected",
+      "details": {
+        "collection_steps": [
+          "Isolate systems to prevent data loss",
+          "Document system configuration",
+          "Create forensic image of storage media",
+          "Collect system logs and volatile data",
+          "Photograph physical systems",
+          "Document collection process",
+          "Label and package evidence"
+        ],
+        "tools": "Use forensically sound, validated tools",
+        "documentation": "Document all collection activities"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_6",
+      "requirement": "Establish Acquisition Procedures",
+      "description": "Procedures for acquiring evidence from sources",
+      "details": {
+        "acquisition_methods": [
+          "Forensic imaging of systems",
+          "Log export and preservation",
+          "Third party data requests",
+          "Backup media retrieval",
+          "Secure evidence transfer",
+          "Documentation of acquisition"
+        ],
+        "chain_of_custody": "Document every person who handles evidence"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_7",
+      "requirement": "Implement Evidence Preservation Procedures",
+      "description": "Ensure evidence integrity and preservation",
+      "details": {
+        "preservation_requirements": [
+          "Evidence stored securely",
+          "Prevent unauthorized access",
+          "Prevent tampering or modification",
+          "Prevent data loss or corruption",
+          "Document storage location",
+          "Control temperature and humidity",
+          "Maintain chain of custody"
+        ],
+        "integrity_verification": [
+          "Use cryptographic hashing",
+          "Document hash values",
+          "Verify hashes periodically",
+          "Detect any modifications"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_8",
+      "requirement": "Maintain Chain of Custody",
+      "description": "Document and control evidence handling throughout process",
+      "details": {
+        "chain_of_custody": [
+          "Record who handles evidence",
+          "Date and time of handling",
+          "Purpose of access",
+          "Transfer documentation",
+          "Condition at each point",
+          "Secure storage location"
+        ],
+        "documentation": "Complete chain of custody log maintained",
+        "purpose": "Prove evidence integrity for legal admissibility"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_9",
+      "requirement": "Ensure Evidence Completeness",
+      "description": "Verify evidence collected is complete and not tampered with",
+      "details": {
+        "completeness_verification": [
+          "All relevant logs collected",
+          "All relevant data collected",
+          "No missing time periods",
+          "No gaps in evidence"
+        ],
+        "integrity_verification": [
+          "Evidence matches originals",
+          "Copies are bit-for-bit identical",
+          "Hashes verified",
+          "No tampering detected"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_10",
+      "requirement": "Verify Systems Operating as Intended",
+      "description": "Ensure evidence came from systems functioning normally",
+      "details": {
+        "system_verification": [
+          "Document system configuration",
+          "Verify operating system version",
+          "Verify software versions",
+          "Confirm no malware interference",
+          "Verify logging was active",
+          "Document any system issues"
+        ],
+        "purpose": "Prove evidence reliability and validity"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_11",
+      "requirement": "Document Evidence Collection Process",
+      "description": "Maintain documentation of entire collection process",
+      "details": {
+        "documentation": [
+          "What evidence identified",
+          "When collection occurred",
+          "Who collected evidence",
+          "How evidence collected",
+          "Tools used",
+          "Systems involved",
+          "Evidence received from",
+          "Chain of custody log",
+          "Storage location",
+          "Access controls"
+        ],
+        "retention": "Maintain documentation as long as evidence retained"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_12",
+      "requirement": "Pre-vet Forensic Service Providers",
+      "description": "Identify and vet professional evidence collectors before need",
+      "details": {
+        "pre_vetting": [
+          "Identify qualified forensic firms",
+          "Verify certifications and experience",
+          "Check references",
+          "Confirm cost structure",
+          "Establish relationship",
+          "Document contact information",
+          "Prepare contracts or agreements"
+        ],
+        "timing": "Pre-vet before incident occurs",
+        "benefit": "Enables rapid engagement when needed"
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_13",
+      "requirement": "Integrate into Incident Management Process",
+      "description": "Incorporate evidence collection into incident response procedures",
+      "details": {
+        "integration": [
+          "Decision point to engage forensic team",
+          "When to activate evidence collection",
+          "Contact procedures for forensic firm",
+          "Emergency contact information",
+          "Cost and billing procedures",
+          "Expected timeline"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_5.28_REQ_14",
+      "requirement": "Monitor Effectiveness of Evidence Collection",
+      "description": "Assess and improve evidence collection process",
+      "details": {
+        "monitoring": [
+          "Review evidence collection when conducted",
+          "Verify chain of custody maintained",
+          "Assess completeness of evidence",
+          "Evaluate professional service quality",
+          "Identify process improvements",
+          "Update procedures as needed"
+        ],
+        "lessons_learned": "Document lessons from actual collections"
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Research Applicable Legal Requirements",
+        "detail": "Understand laws governing evidence collection in relevant jurisdictions"
+      },
+      {
+        "step": 2,
+        "action": "Develop Evidence Collection Policy",
+        "detail": "Document policy complying with legal requirements"
+      },
+      {
+        "step": 3,
+        "action": "Identify and Pre-vet Forensic Providers",
+        "detail": "Find qualified firms and establish relationships"
+      },
+      {
+        "step": 4,
+        "action": "Document Collection Procedures",
+        "detail": "Create detailed procedures for evidence collection"
+      },
+      {
+        "step": 5,
+        "action": "Create Chain of Custody Forms",
+        "detail": "Develop templates for tracking evidence"
+      },
+      {
+        "step": 6,
+        "action": "Establish Storage Procedures",
+        "detail": "Define secure storage and preservation"
+      },
+      {
+        "step": 7,
+        "action": "Integrate into Incident Management",
+        "detail": "Include evidence collection in incident procedures"
+      },
+      {
+        "step": 8,
+        "action": "Train Personnel",
+        "detail": "Educate staff on evidence preservation"
+      },
+      {
+        "step": 9,
+        "action": "Document Forensic Provider Contacts",
+        "detail": "Maintain current contact information"
+      },
+      {
+        "step": 10,
+        "action": "Review and Update",
+        "detail": "Periodic review of procedures and relationships"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 5.28",
+    "checklist": [
+      {
+        "item": "Document evidence collection policy",
+        "status": "required"
+      },
+      {
+        "item": "Research applicable legal requirements",
+        "status": "required"
+      },
+      {
+        "item": "Identify forensic service providers",
+        "status": "required"
+      },
+      {
+        "item": "Pre-vet forensic providers",
+        "status": "required"
+      },
+      {
+        "item": "Define evidence identification process",
+        "status": "required"
+      },
+      {
+        "item": "Document collection procedures",
+        "status": "required"
+      },
+      {
+        "item": "Document acquisition procedures",
+        "status": "required"
+      },
+      {
+        "item": "Document preservation procedures",
+        "status": "required"
+      },
+      {
+        "item": "Create chain of custody forms",
+        "status": "required"
+      },
+      {
+        "item": "Establish secure storage",
+        "status": "required"
+      },
+      {
+        "item": "Integrate into incident process",
+        "status": "required"
+      },
+      {
+        "item": "Document forensic contacts",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes with evidence collection",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "No documented evidence collection process",
+        "description": "No policy or procedures for collecting evidence",
+        "impact": "Evidence collected improperly, not admissible in legal proceedings",
+        "prevention": "Document comprehensive evidence collection policy and procedures"
+      },
+      {
+        "rank": 2,
+        "mistake": "Evidence collected by unqualified personnel",
+        "description": "In-house staff collect evidence without forensic training",
+        "impact": "Evidence contaminated, chain of custody broken, inadmissible",
+        "prevention": "Use trained forensic professionals for legal/disciplinary cases"
+      },
+      {
+        "rank": 3,
+        "mistake": "No monitoring of effectiveness",
+        "description": "Process implemented but not reviewed",
+        "impact": "Process ineffective, improvements not made",
+        "prevention": "Review and audit evidence collection process regularly"
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "Auditor checks for ISO 27001 A 5.28",
+    "checks": [
+      "Evidence collection policy documented",
+      "Procedures documented",
+      "Forensic providers identified",
+      "Pre-vetting documented",
+      "Legal requirements identified",
+      "Chain of custody procedures defined",
+      "Evidence preservation procedures defined",
+      "If evidence collected: procedures followed",
+      "If evidence collected: chain of custody maintained",
+      "If evidence collected: integrity preserved",
+      "Process reviewed for effectiveness"
+    ]
+  },
+  "ukgc_application": {
+    "critical_evidence_needs": [
+      {
+        "scenario": "Suspected Fraud",
+        "evidence": "Transaction logs, system access, user actions"
+      },
+      {
+        "scenario": "RNG Compromise",
+        "evidence": "Game outcomes, system logs, algorithm changes"
+      },
+      {
+        "scenario": "Data Breach",
+        "evidence": "Access logs, data transfer logs, system artifacts"
+      },
+      {
+        "scenario": "Insider Threat",
+        "evidence": "User actions, file access, communication logs"
+      }
+    ]
+  },
+  "compliance_notes": {
+    "overall_purpose": "Ensure evidence properly collected and preserved for legal admissibility",
+    "enforcement_priority": "High - legal cases depend on evidence integrity",
+    "key_principles": [
+      "Use trained forensic professionals",
+      "Maintain chain of custody",
+      "Preserve evidence integrity",
+      "Follow legal requirements",
+      "Document all procedures",
+      "Pre-vet service providers",
+      "Integrate into incident response",
+      "Monitor effectiveness"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 5.28",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-5.28-collection-of-evidence.json",
+    "content_coverage": "Complete - all source document content extracted and structured"
+  }
+}

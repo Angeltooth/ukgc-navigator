@@ -1,0 +1,747 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 8.22",
+  "last_updated": "2025-01-15",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_8.22",
+    "control_number": "A 8.22",
+    "control_title": "Segmentation of Networks",
+    "control_type": "Preventive control",
+    "control_purpose": "To segregate groups of information services, users and information systems in separate networks based on security boundaries and business needs",
+    "control_objective": "Divide networks into separate security domains to prevent lateral movement, limit access to critical systems and control information flow between network segments"
+  },
+  "iso_27001_definition": {
+    "official_text": "Groups of information services, users and information systems should be segregated in the organisation's networks.",
+    "key_requirements": [
+      "Information services segregated into groups",
+      "Users segregated by role and access requirements",
+      "Information systems segregated by function and criticality",
+      "Separate networks created for different security domains",
+      "Access control between network segments",
+      "Firewall rules enforcing network boundaries",
+      "Wireless networks segregated from main networks",
+      "Documentation of network segmentation"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control limiting lateral movement, preventing unauthorized access to critical systems and controlling information flow between network segments",
+    "scope": [
+      "Physical networks and network segments",
+      "Virtual networks and cloud environments",
+      "Wireless networks",
+      "Remote access networks",
+      "Third-party network connections",
+      "Information services segregation",
+      "User group segregation",
+      "System segregation by criticality"
+    ],
+    "key_outcome": "Network divided into security domains with controlled access between segments preventing breach from spreading across entire network"
+  },
+  "prerequisites": {
+    "description": "Before implementing network segmentation, foundational requirements must be met",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Network Architecture",
+        "description": "Documented network architecture and topology",
+        "rationale": "Must understand current network to design segmentation",
+        "reference": "ISO 27001 A 8.20 - Network security"
+      },
+      {
+        "prerequisite": "Information Classification",
+        "description": "Classification of information by sensitivity level",
+        "rationale": "Segmentation requirements determined by data sensitivity",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "Risk Assessment",
+        "description": "Risk assessment identifying segmentation requirements",
+        "rationale": "Segmentation strategy aligned with identified risks",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      },
+      {
+        "prerequisite": "Access Control Policy",
+        "description": "Access control framework and policy",
+        "rationale": "Segmentation implements and enforces access control",
+        "reference": "ISO 27001 A 5.15 - Access control"
+      }
+    ]
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_8.22_REQ_1",
+      "requirement": "Design Network Segmentation Strategy",
+      "description": "Plan network segmentation based on business needs and security risks",
+      "details": {
+        "segmentation_planning": [
+          "Identify information services to be grouped",
+          "Identify user groups by role and access needs",
+          "Identify information systems by function and criticality",
+          "Determine security boundaries and domains needed",
+          "Balance security benefits against management overhead"
+        ],
+        "domain_selection_criteria": [
+          "Trust levels - segregate untrusted from trusted systems",
+          "Criticality - segregate critical systems from standard systems",
+          "Function - segregate by business function or department",
+          "Geography - segregate geographically remote locations",
+          "Data sensitivity - segregate based on data classification",
+          "Access requirements - segregate by access patterns"
+        ],
+        "network_domain_types": [
+          "Perimeter or DMZ domain for external access",
+          "Game systems domain for gambling operations",
+          "Payment processing domain for financial transactions",
+          "Customer data domain for personal information",
+          "Administration domain for management access",
+          "User domain for general access",
+          "Development domain for testing and development",
+          "Public or guest domain for external users",
+          "Partner or third-party domain for external connections"
+        ],
+        "design_principles": [
+          "Principle of least privilege - minimize inter-segment traffic",
+          "Defense in depth - multiple layers of protection",
+          "Fail-safe defaults - block unless explicitly allowed",
+          "Separation of concerns - segregate by responsibility"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.22_REQ_2",
+      "requirement": "Establish Network Perimeter Security",
+      "description": "Secure the boundary between network segments and external networks",
+      "details": {
+        "perimeter_security_elements": [
+          "Firewall at network perimeter between internal and external",
+          "Firewall between network segments internally",
+          "Access control lists enforcing segment boundaries",
+          "Routing configuration preventing unauthorized paths",
+          "Intrusion detection and prevention systems",
+          "Traffic filtering and inspection",
+          "VPN gateways for remote and external access"
+        ],
+        "perimeter_protection": [
+          "Well-defined network boundary documented",
+          "Firewall rules enforcing boundary controls",
+          "All traffic evaluated at boundary",
+          "Default-deny policy - only allow necessary traffic",
+          "Monitoring of traffic crossing boundaries",
+          "Alerting on unauthorized access attempts"
+        ],
+        "access_control_enforcement": [
+          "Firewall rules based on access control policy",
+          "Only approved traffic allowed between segments",
+          "Specific source, destination and port requirements",
+          "Protocols restricted to necessary ones only",
+          "Rules documented and reviewed regularly",
+          "Unused rules removed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.22_REQ_3",
+      "requirement": "Implement Virtual Network Isolation",
+      "description": "Deploy VLANs and virtual network controls for segmentation",
+      "details": {
+        "vlan_implementation": [
+          "VLANs created for different network segments",
+          "Trunk ports configured between switches",
+          "VLAN access control lists enforced",
+          "Native VLAN configured appropriately",
+          "Management VLAN segregated from user VLANs",
+          "VLAN hopping prevention configured"
+        ],
+        "virtual_network_controls": [
+          "Cloud virtual networks or VPCs created for logical separation",
+          "Virtual subnetting implemented",
+          "Virtual network security groups/ACLs enforced",
+          "Network segmentation in cloud environments",
+          "Virtual firewall or security groups deployed"
+        ],
+        "network_layer_security": [
+          "Layer 3 routing enforced at segment boundaries",
+          "Multilayer protocol inspection",
+          "Quality of service (QoS) for traffic management"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.22_REQ_4",
+      "requirement": "Segregate Wireless Networks",
+      "description": "Isolate wireless networks from main network infrastructure",
+      "details": {
+        "wireless_network_separation": [
+          "Wireless networks physically or logically separated",
+          "Guest wireless network for external users",
+          "Corporate wireless network for employee access",
+          "Public wireless network for customer access",
+          "Wireless traffic isolated from wired networks"
+        ],
+        "wireless_security_controls": [
+          "WPA2 or WPA3 encryption required",
+          "Strong wireless authentication",
+          "RADIUS authentication for corporate wireless",
+          "VPN required for access to internal resources from wireless",
+          "Rogue access point detection",
+          "Wireless monitoring and intrusion detection"
+        ],
+        "wireless_access_restrictions": [
+          "Limited functionality on public wireless networks",
+          "No critical system access from public wireless",
+          "No direct access to customer data from wireless",
+          "VPN or encryption for sensitive data from wireless",
+          "Time-limited or usage-limited access"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.22_REQ_5",
+      "requirement": "Control Inter-Segment Traffic",
+      "description": "Establish controls for traffic flowing between network segments",
+      "details": {
+        "inter_segment_communication": [
+          "Identify legitimate inter-segment traffic requirements",
+          "Allow only necessary inter-segment communication",
+          "Block inter-segment traffic by default",
+          "Log all inter-segment traffic for monitoring",
+          "Alert on suspicious inter-segment patterns"
+        ],
+        "firewall_rules": [
+          "Firewall rules between all segments",
+          "Rules define source, destination, protocol and port",
+          "Rules documented with business justification",
+          "Rules reviewed regularly and cleaned up",
+          "Rules tested to verify function"
+        ],
+        "monitoring_between_segments": [
+          "Traffic analysis between segments",
+          "Detection of unauthorized access attempts",
+          "Alerting on policy violations",
+          "Investigation of anomalous traffic patterns",
+          "Correlation of segment traffic with incidents"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.22_REQ_6",
+      "requirement": "Implement Access Control Between Segments",
+      "description": "Enforce access control policies across network segment boundaries",
+      "details": {
+        "access_control_implementation": [
+          "Authentication required for inter-segment access",
+          "Authorization verified before allowing access",
+          "Multi-factor authentication for critical segment access",
+          "Principles of least privilege applied",
+          "Access logging at segment boundaries"
+        ],
+        "segment_specific_controls": [
+          "Game systems segment - restricted to authorized personnel only",
+          "Payment segment - limited to payment processors and authorized staff",
+          "Customer data segment - restricted to staff with need-to-know",
+          "Admin segment - segregated from user access",
+          "Development segment - isolated from production systems"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.22_REQ_7",
+      "requirement": "Document Network Segmentation",
+      "description": "Maintain comprehensive documentation of network segmentation",
+      "details": {
+        "segmentation_documentation": [
+          "Network diagrams showing all segments",
+          "Physical and logical network topology",
+          "VLAN and subnet assignments documented",
+          "Firewall rules documented",
+          "Access control lists documented",
+          "Routing policies documented",
+          "Documentation version controlled"
+        ],
+        "segment_descriptions": [
+          "Purpose of each segment documented",
+          "Systems and services in each segment",
+          "Users and user groups accessing each segment",
+          "Data classification of information on segment",
+          "Security requirements for segment",
+          "Inter-segment communication requirements"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.22_REQ_8",
+      "requirement": "Monitor Network Segmentation",
+      "description": "Establish monitoring to verify segmentation is operating effectively",
+      "details": {
+        "segmentation_monitoring": [
+          "Firewall logs monitoring segment traffic",
+          "Intrusion detection on segment boundaries",
+          "Configuration monitoring for unauthorized changes",
+          "Regular verification of firewall rules",
+          "Testing of segment isolation"
+        ],
+        "alerting_and_response": [
+          "Alerts for unauthorized segment access attempts",
+          "Alerts for policy violations",
+          "Alerts for unusual traffic patterns",
+          "Incident procedures for detected violations",
+          "Investigation of blocked traffic"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_8.22_REQ_9",
+      "requirement": "Test Network Segmentation",
+      "description": "Conduct testing to verify network segmentation is functioning",
+      "details": {
+        "testing_activities": [
+          "Verify firewall rules are functioning",
+          "Test inter-segment access restrictions",
+          "Verify segment isolation from lateral movement",
+          "Test wireless network separation",
+          "Verify authentication between segments",
+          "Test backup communication paths"
+        ],
+        "testing_approaches": [
+          "Firewall rule testing - verify expected allow/deny behavior",
+          "Network segmentation testing - attempt unauthorized access",
+          "Penetration testing of segment boundaries",
+          "Configuration testing - verify configuration matches policy",
+          "Failover testing - verify backup paths work"
+        ],
+        "testing_frequency": [
+          "Initial testing after implementation",
+          "Testing after network changes",
+          "Regular periodic testing (quarterly)",
+          "Testing as part of internal audits",
+          "Annual penetration testing"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Assess current network architecture",
+        "detail": "Document existing network configuration and identify segmentation opportunities"
+      },
+      {
+        "step": 2,
+        "action": "Design segmentation strategy",
+        "detail": "Plan network segments based on business needs, criticality and security requirements"
+      },
+      {
+        "step": 3,
+        "action": "Create segmentation documentation",
+        "detail": "Document network segments, boundaries, firewall rules and access controls"
+      },
+      {
+        "step": 4,
+        "action": "Implement VLANs and virtual networks",
+        "detail": "Deploy VLANs and logical network segregation"
+      },
+      {
+        "step": 5,
+        "action": "Configure firewall rules",
+        "detail": "Implement firewall policies enforcing segment boundaries"
+      },
+      {
+        "step": 6,
+        "action": "Segregate wireless networks",
+        "detail": "Isolate wireless networks from main infrastructure"
+      },
+      {
+        "step": 7,
+        "action": "Implement access controls",
+        "detail": "Deploy authentication and authorization between segments"
+      },
+      {
+        "step": 8,
+        "action": "Configure monitoring and logging",
+        "detail": "Deploy monitoring of inter-segment traffic and alerting"
+      },
+      {
+        "step": 9,
+        "action": "Test segmentation",
+        "detail": "Conduct testing to verify segment isolation and access controls"
+      },
+      {
+        "step": 10,
+        "action": "Document and audit",
+        "detail": "Complete documentation and conduct internal audit"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 8.22",
+    "checklist": [
+      {
+        "item": "Network segmentation strategy documented",
+        "status": "required"
+      },
+      {
+        "item": "Network segments defined by function, criticality and access requirements",
+        "status": "required"
+      },
+      {
+        "item": "Network diagrams showing all segments and boundaries created",
+        "status": "required"
+      },
+      {
+        "item": "VLANs created for each network segment",
+        "status": "required"
+      },
+      {
+        "item": "Firewall rules implemented between all segments",
+        "status": "required"
+      },
+      {
+        "item": "Wireless networks segregated from main network",
+        "status": "required"
+      },
+      {
+        "item": "Access control lists configured at segment boundaries",
+        "status": "required"
+      },
+      {
+        "item": "Perimeter firewalls protecting external boundaries",
+        "status": "required"
+      },
+      {
+        "item": "Inter-segment traffic monitoring and logging implemented",
+        "status": "required"
+      },
+      {
+        "item": "Firewall rules documented and reviewed",
+        "status": "required"
+      },
+      {
+        "item": "Network segmentation tested and verified working",
+        "status": "required"
+      },
+      {
+        "item": "Unauthorized segment access attempts detected and investigated",
+        "status": "required"
+      },
+      {
+        "item": "Regular testing of segment boundaries performed",
+        "status": "required"
+      },
+      {
+        "item": "Penetration testing of segmentation conducted",
+        "status": "required"
+      },
+      {
+        "item": "Internal audit of network segmentation performed",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with network segmentation",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Flat network without segmentation",
+        "description": "All systems on same network segment allowing compromise of one system to spread across entire network",
+        "root_cause": [
+          "Complexity perception discouraging segmentation",
+          "Lack of understanding of segmentation benefits",
+          "Cost and effort concerns",
+          "Assumption that perimeter security is sufficient",
+          "Small network size perceived as not needing segmentation"
+        ],
+        "impact": "Breach in one system exposes entire network, lateral movement enables compromise of critical systems, customer data exposure",
+        "prevention": [
+          "Implement segmentation as part of network design",
+          "Segregate critical systems from general network",
+          "Use VLANs for logical segmentation if physical separation not possible",
+          "Implement firewall rules enforcing segment boundaries",
+          "Start with basic segmentation and expand as needed"
+        ]
+      },
+      {
+        "rank": 2,
+        "mistake": "Wireless network on same security level as wired network",
+        "description": "Wireless network not segregated from main network allowing wireless compromise to affect entire network",
+        "root_cause": [
+          "Wireless treated as convenience rather than security concern",
+          "Lack of understanding of wireless vulnerabilities",
+          "Difficulty of wireless security implementation",
+          "User expectations for full wireless access",
+          "Cost of separate wireless infrastructure"
+        ],
+        "impact": "Wireless compromise exposes network, guest access allows internal resource access, data interception",
+        "prevention": [
+          "Segregate wireless networks from wired networks",
+          "Use separate VLANs for wireless and wired",
+          "Limit wireless access to non-critical resources",
+          "Require VPN for wireless access to internal resources",
+          "Implement strong wireless authentication and encryption"
+        ]
+      },
+      {
+        "rank": 3,
+        "mistake": "Firewall rules not documented or tested",
+        "description": "Firewall rules configured but not documented or tested creating uncertainty about actual network segmentation",
+        "root_cause": [
+          "Focus on implementation over documentation",
+          "No testing process for firewall rules",
+          "Rules accumulate over time without cleanup",
+          "Configuration drift from intended design",
+          "Lack of change management for rules"
+        ],
+        "impact": "Unintended access allowed, audit failures, inability to troubleshoot issues, configuration inconsistencies",
+        "prevention": [
+          "Document all firewall rules with business justification",
+          "Test firewall rules after implementation",
+          "Regular review and cleanup of unused rules",
+          "Change management process for rule changes",
+          "Version control of firewall configuration",
+          "Annual firewall rule audit"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 8.22 audit",
+    "audit_areas": [
+      {
+        "area": "1. Segmentation Design and Documentation",
+        "description": "Verify network segmentation strategy is documented",
+        "checks": [
+          "Network segmentation policy exists",
+          "Network segments defined and documented",
+          "Segmentation strategy justified by business needs",
+          "Network diagrams showing segments and boundaries",
+          "Firewall rules documented"
+        ]
+      },
+      {
+        "area": "2. Network Segment Implementation",
+        "description": "Verify network segments are implemented and isolated",
+        "checks": [
+          "VLANs configured for network segments",
+          "Firewall rules enforcing segment boundaries",
+          "Inter-segment traffic restricted appropriately",
+          "Access controls preventing unauthorized segment access",
+          "Configuration verified against documentation"
+        ]
+      },
+      {
+        "area": "3. Perimeter Security",
+        "description": "Verify network perimeter is secured",
+        "checks": [
+          "Firewall at network perimeter",
+          "Perimeter firewall rules documented",
+          "Inbound and outbound traffic controlled",
+          "External access restricted to authorized paths",
+          "DMZ or perimeter network for external services"
+        ]
+      },
+      {
+        "area": "4. Wireless Network Segregation",
+        "description": "Verify wireless networks segregated from main network",
+        "checks": [
+          "Wireless networks on separate VLANs or networks",
+          "Wireless access restricted to non-critical resources",
+          "Wireless encryption and authentication strong",
+          "Wireless traffic monitored for anomalies",
+          "Guest wireless isolated from corporate"
+        ]
+      },
+      {
+        "area": "5. Access Control Between Segments",
+        "description": "Verify access controls enforced between segments",
+        "checks": [
+          "Authentication required for inter-segment access",
+          "Authorization verified at segment boundaries",
+          "Multi-factor authentication for critical segments",
+          "Access logging at boundaries",
+          "Least privilege principle applied"
+        ]
+      },
+      {
+        "area": "6. Monitoring and Logging",
+        "description": "Verify inter-segment traffic is monitored",
+        "checks": [
+          "Firewall logs capturing inter-segment traffic",
+          "Intrusion detection on segment boundaries",
+          "Alerts configured for unauthorized access",
+          "Regular monitoring and log review",
+          "Incidents documented and investigated"
+        ]
+      },
+      {
+        "area": "7. Testing and Verification",
+        "description": "Verify segmentation testing performed",
+        "checks": [
+          "Firewall rules tested and verified working",
+          "Segment isolation tested",
+          "Penetration testing of boundaries conducted",
+          "Test results documented",
+          "Issues identified and remediated"
+        ]
+      },
+      {
+        "area": "8. Gambling Operator-Specific Segmentation",
+        "description": "Verify critical gambling systems appropriately segregated",
+        "checks": [
+          "Game servers on dedicated segment",
+          "Payment systems on segregated network",
+          "Customer data on segregated segment",
+          "RNG systems isolated from external networks",
+          "Admin access segregated from user access"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, network segmentation is critical for protecting game integrity, customer data and payment processing. UKGC expects network segmentation preventing breach in one system from affecting critical systems. Game servers, payment systems and customer data must be segregated with controlled access.",
+    "specific_requirements": [
+      "Game servers on dedicated network segment with restricted access",
+      "Payment processing systems on segregated network segment",
+      "Customer data systems segregated from operational networks",
+      "RNG systems isolated on separate network segment",
+      "Customer account systems segregated from public-facing systems",
+      "Administrative access segregated from user networks",
+      "Wireless networks segregated from main infrastructure",
+      "External connections (payment processors, third parties) on separate segments",
+      "DMZ for external-facing systems",
+      "Firewall rules preventing unauthorized inter-segment traffic",
+      "Monitoring of segment boundaries for unauthorized access",
+      "Regular testing of segment isolation"
+    ],
+    "compliance_requirement": "Gambling operators must implement network segmentation with segregated network segments for critical systems, documented firewall rules, and monitoring of inter-segment traffic to prevent lateral movement and protect customer data and game integrity"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Divide networks into separate security domains to prevent lateral movement after breach and limit access to critical systems",
+    "enforcement_priority": "Critical - network segmentation is foundational for preventing breach from spreading across entire network",
+    "key_principles": [
+      "Networks divided into security domains by function and criticality",
+      "Critical systems segregated from standard systems",
+      "Clear network boundaries with firewall enforcement",
+      "Access control between segments",
+      "Wireless networks segregated",
+      "Default-deny between segments",
+      "Logging and monitoring of inter-segment traffic",
+      "Regular testing of segment isolation",
+      "Documentation of segmentation strategy and rules"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 8.22 Segmentation of Networks, implement",
+    "requirements": [
+      "Documented network segmentation strategy approved by management",
+      "Network segments defined by function, criticality and access requirements",
+      "Network diagrams showing all segments and boundaries",
+      "VLANs created for each network segment",
+      "Firewall rules implemented between all segments",
+      "Firewall rules documented with business justification",
+      "Default-deny firewall policy between segments",
+      "Wireless networks segregated from main network",
+      "Guest wireless segregated from corporate wireless",
+      "Perimeter firewall protecting external boundaries",
+      "Access control lists configured at segment boundaries",
+      "Authentication and authorization enforced between segments",
+      "Multi-factor authentication for critical segment access",
+      "Firewall logs capturing inter-segment traffic",
+      "Intrusion detection on segment boundaries",
+      "Alerting for unauthorized segment access attempts",
+      "Regular monitoring of segment traffic",
+      "Firewall rules tested and verified working",
+      "Penetration testing of segment boundaries",
+      "Regular review and cleanup of firewall rules"
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "UK Gambling Commission Remote Technical Standards (RTS) Chapter 4 - Systems and Operational Security",
+    "related_controls": [
+      {
+        "control": "ISO 27001 A 5.15 - Access control",
+        "relationship": "Network segmentation enforces access control between segments"
+      },
+      {
+        "control": "ISO 27001 A 8.20 - Network security",
+        "relationship": "Network segmentation is specific implementation of network security"
+      },
+      {
+        "control": "ISO 27001 A 8.21 - Security of network services",
+        "relationship": "Network service security built on segmented network architecture"
+      }
+    ]
+  },
+  "best_practices": {
+    "segmentation_design_best_practices": [
+      "Start with high-level segmentation plan",
+      "Identify critical systems requiring isolation",
+      "Group systems by function and access patterns",
+      "Consider scalability in design",
+      "Document segmentation strategy thoroughly",
+      "Consult network security professionals",
+      "Review design with business stakeholders",
+      "Plan for future growth and changes"
+    ],
+    "firewall_implementation_best_practices": [
+      "Implement firewall at network perimeter",
+      "Implement firewall between all network segments",
+      "Use default-deny rule set",
+      "Document rules with clear business purpose",
+      "Use meaningful rule names and descriptions",
+      "Organize rules logically",
+      "Review and clean up rules regularly",
+      "Version control firewall configuration"
+    ],
+    "vlan_implementation_best_practices": [
+      "Use VLANs for logical network segregation",
+      "Configure trunk ports for inter-switch traffic",
+      "Protect VLAN hopping vulnerabilities",
+      "Segregate management VLAN",
+      "Use native VLAN appropriately",
+      "Tag guest VLAN explicitly",
+      "Monitor VLAN configuration changes",
+      "Document VLAN assignments"
+    ],
+    "wireless_best_practices": [
+      "Segregate wireless from wired networks",
+      "Use separate SSIDs for corporate and guest",
+      "Implement WPA2 or WPA3 encryption",
+      "Use RADIUS authentication for corporate wireless",
+      "Enable rogue access point detection",
+      "Implement wireless intrusion detection",
+      "Disable wireless on guest network",
+      "Monitor wireless traffic for anomalies"
+    ]
+  },
+  "gambling_operator_specific_guidance": {
+    "critical_system_segregation": "Game servers, payment systems and customer data systems must each be on separate network segments. RNG systems should be isolated on their own segment with restricted access. Each critical segment should have dedicated firewall rules controlling access. Access to each segment should be audited and monitored.",
+    "payment_system_protection": "Payment processing systems must be on dedicated network segment separate from game operations and customer-facing systems. Connections to external payment processors should route through dedicated path. Firewall rules should restrict payment segment access to authorized systems only. All payment segment traffic should be logged and monitored.",
+    "customer_data_protection": "Customer data systems should be on segregated network segment. Access from other segments should be restricted and authenticated. Direct user access to customer data segment should be prevented. Any inter-segment traffic involving customer data should be logged and monitored for anomalies.",
+    "wireless_network_handling": "Guest wireless should be segregated from corporate network and provide no access to internal systems or customer data. Corporate wireless should have strong authentication and encryption. Wireless traffic should be monitored for security events. Rogue access point detection should be implemented.",
+    "audit_readiness": "To be audit-ready: provide network diagrams showing segments; provide firewall rule documentation; demonstrate inter-segment traffic restrictions; provide firewall and intrusion detection logs; demonstrate monitoring of segment boundaries; show testing evidence of segment isolation; provide incident investigation records."
+  },
+  "document_metadata": {
+    "created_date": "2025-01-15",
+    "source": "ISO 27001 Annex A 8.22 Segmentation of Networks Source Document - Converted for UKGC Compliance",
+    "ukgc_reference": "Remote Technical Standards (RTS) Chapter 4 - Systems and Operational Security",
+    "format": "JSON",
+    "version": "1.0",
+    "standard_version": "ISO 27001:2022",
+    "file_name": "iso-27001-annex-a-8.22-segmentation-of-networks.json",
+    "content_coverage": "Comprehensive coverage of ISO 27001 A.8.22 Segmentation of Networks control including purpose, definition, implementation requirements, compliance procedures, common mistakes, audit requirements and UKGC-specific application for gambling operators"
+  }
+}

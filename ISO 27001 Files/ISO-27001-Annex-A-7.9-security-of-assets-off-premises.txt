@@ -1,0 +1,50 @@
+ISO 27001 Security of Assets off Premises
+
+The focus for this ISO 27001 Control is your assets. As one of the ISO 27001 controls this is about the protection of those assets when not in an environment you control.
+You will learn what the ISO 27001 control 7.9 is, how to simply and easily implement it for ISO 27001 certification and I will show you some common gotchas so you can avoid them.
+What is ISO 27001 Annex A 7.9 Security Of Assets Off-Premises?
+
+ISO 27001 Annex A 7.9 Security of assets off-premises is an ISO 27001 control that looks to protect equipment by siting it securely and protecting it.
+Purpose
+
+The purpose of ISO 27001 Security Of Assets Off-Premises is to prevent loss, damage, theft or compromise of off-site devices and interruption to the organisations operations..
+Definition
+
+The ISO 27001 standard defines ISO 27001 Annex A 7.9 as:
+Off-site assets should be protected.
+Implementation Guide
+
+General Guidance
+
+Well in this modern world people take their equipment of site. This used to be a massive thing a few years ago when everyone was chained to an office and all the equipment stayed at the office. Taking things off site was such a palaver, with forms and authorisation and massive forklift trucks to move those ‘laptops’. Things have moved on but the control remains now with a more general focus on the protection of assets off site. Rather than the process of authorising it.
+Education and Training
+
+Like much of the standard we are looking at common sense really when it comes to this control. There is a combination of telling people what is expected, training them, educating them and also where possible putting some technical controls in place if they help reduce risk.
+Off Site Protection
+
+We always want to protect what is important to us so in this situation we are looking at what are the threats that can be posed by having assets in an environment that we do not control and therefore what are things we can do to address those threats.
+Public Areas
+
+Simple things like not having assets left unattended in public areas. Seems to make sense but we have all seen people leave laptops open in bars, restaurants and on trains whilst they go and ‘use the facilities’.
+Shoulder Surfing
+
+There is a lot of shoulder surfing that goes on as well. People reading over your shoulder or between the gaps in train and aeroplane seats. We all like to be nosey, am I right? We can do things like be conscious of it and position ourselves so as not to facilitate it and we can consider the use of privacy screens and screen protectors. What ever works for you.
+How to comply
+
+To comply with ISO 27001 Annex A 7.9 Security Of Assets Off-Premises you are going to
+Train, educate, tell and communicate to people what is expected of them
+Assess you assets and perform a risk assessment
+Implement controls proportionate to the risk posed
+Test the controls that you have to make sure they are working
+Top 3 Mistakes People Make
+
+The top 3 mistakes people make for ISO 27001 Annex A 7.9 Security Of Assets Off-Premises are
+1. You haven’t told people what is expected
+
+It is really hard to control assets when you don’t control the environment that they are in. You cannot account for every situation and variable but you can equip people with the knowledge to make the right choices and the tools to reduce the risks. If you don’t communicate and educate and inform then this control will fail.
+2. One or more members of your team haven’t done what they should have done
+
+Prior to the audit check that all members of the team have done what they should have. Do they know where the policies are? Have they acknowledged them? Have you checked a sample of off site workers and offsite workers to see if the controls are being followed? Check!
+3. Your document and version control is wrong
+
+Keeping your document version control up to date, making sure that version numbers match where used, having a review evidenced in the last 12 months, having documents that have no comments in are all good practices.

@@ -1,0 +1,961 @@
+{
+  "jurisdiction": "United Kingdom",
+  "regulatory_authority": {
+    "name": "UK Gambling Commission",
+    "abbreviation": "UKGC",
+    "website": "https://www.gamblingcommission.gov.uk"
+  },
+  "standard_authority": {
+    "name": "International Organization for Standardization",
+    "abbreviation": "ISO",
+    "standard": "ISO/IEC 27001:2022"
+  },
+  "document_type": "ISO 27001 Security Requirements - Annex A Control",
+  "document_reference": "ISO 27001 Annex A 7.10",
+  "last_updated": "2025-10-17",
+  "legal_status": "mandatory",
+  "applies_to_note": "All gambling operators subject to RTS Chapter 4 - Security Requirements",
+  "control_category": "Technical Controls",
+  "control": {
+    "control_id": "ISO_27001_A_7.10",
+    "control_number": "A 7.10",
+    "control_title": "Storage Media",
+    "control_type": "Preventive control",
+    "control_purpose": "To protect storage media and information throughout its lifecycle to prevent unauthorized disclosure, modification, removal, or destruction",
+    "control_objective": "Manage storage media through acquisition, use, transportation, and disposal in accordance with classification and handling requirements"
+  },
+  "iso_27001_definition": {
+    "official_text": "Storage media should be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organisation's classification scheme and handling requirements.",
+    "key_requirements": [
+      "Storage media lifecycle managed",
+      "Acquisition controls in place",
+      "Use controls implemented",
+      "Transportation security",
+      "Disposal procedures",
+      "Classification alignment",
+      "Handling requirements defined",
+      "Access controls enforced",
+      "Removal controls",
+      "Destruction procedures"
+    ]
+  },
+  "control_purpose_detail": {
+    "purpose": "Preventive control protecting information on storage media throughout its entire lifecycle",
+    "scope": [
+      "Internal hard drives",
+      "External hard drives and portable storage",
+      "USB drives and memory sticks",
+      "Optical media (CDs, DVDs, Blu-ray)",
+      "Magnetic tape for backups",
+      "Mobile device storage",
+      "Cloud storage services",
+      "Paper records and documents",
+      "Removable storage media",
+      "Data center storage infrastructure"
+    ],
+    "lifecycle_stages": [
+      "Acquisition and procurement",
+      "Configuration and initialization",
+      "Use and operation",
+      "Transportation and transfer",
+      "Storage and archival",
+      "Reuse preparation",
+      "Destruction and disposal"
+    ]
+  },
+  "prerequisites": {
+    "description": "Before implementing storage media management, foundational elements must be in place",
+    "required_prerequisites": [
+      {
+        "prerequisite": "Information Classification Policy",
+        "description": "Documented information classification scheme",
+        "rationale": "Storage media protection level based on data classification",
+        "reference": "ISO 27001 A 5.12 - Classification of information"
+      },
+      {
+        "prerequisite": "Data Handling Policy",
+        "description": "Documented policy on data handling and requirements",
+        "rationale": "Storage media management aligned with handling requirements",
+        "reference": "ISO 27001 A 5.1 - Policies for information security"
+      },
+      {
+        "prerequisite": "Asset Inventory",
+        "description": "Complete inventory of storage media assets",
+        "rationale": "Cannot manage what you don't know exists",
+        "reference": "ISO 27001 A 5.9 - Inventory of information and other associated assets"
+      },
+      {
+        "prerequisite": "Risk Assessment",
+        "description": "Assessment of risks to storage media",
+        "rationale": "Controls selected based on identified risks",
+        "reference": "ISO 27001 A 5.2 - Information security risk assessment"
+      }
+    ]
+  },
+  "storage_media_overview": {
+    "definition": "All types of physical and logical storage used to hold organizational information requiring protection and lifecycle management",
+    "challenges": [
+      "Storage media degradation over time",
+      "Data recovery from discarded media",
+      "Loss or theft of portable media",
+      "Unauthorized access to stored data",
+      "Encryption key management",
+      "Backup and recovery procedures",
+      "Compliance with retention requirements",
+      "Proper destruction procedures",
+      "Inventory and tracking"
+    ],
+    "protection_principle": "Protection proportionate to data sensitivity throughout entire lifecycle"
+  },
+  "implementation_requirements": [
+    {
+      "requirement_id": "A_7.10_REQ_1",
+      "requirement": "Develop Storage Media Management Policy",
+      "description": "Create documented policy for storage media lifecycle management",
+      "details": {
+        "policy_elements": [
+          "Scope - what storage media covered",
+          "Classification alignment - protection level by classification",
+          "Acquisition requirements - approved vendors and procurement",
+          "Configuration standards - encryption, initialization",
+          "Use restrictions - approved uses and locations",
+          "Access controls - who can access media",
+          "Removal controls - authorization for removal",
+          "Transportation procedures - secure transport",
+          "Handling requirements - physical security",
+          "Reuse procedures - data destruction before reuse",
+          "Retention requirements - how long to keep",
+          "Disposal procedures - destruction method",
+          "Backup and recovery",
+          "Encryption requirements",
+          "Inventory and tracking",
+          "Roles and responsibilities",
+          "Audit and monitoring"
+        ],
+        "related_procedures": [
+          "Removable media procedure",
+          "Backup and archival procedure",
+          "Media destruction procedure",
+          "Media transportation procedure"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_2",
+      "requirement": "Manage Storage Media Acquisition",
+      "description": "Control procurement and initialization of storage media",
+      "details": {
+        "acquisition_controls": [
+          "Approved vendors and suppliers",
+          "Security requirements for new media",
+          "Configuration before use",
+          "Verification of media integrity",
+          "Initialization and formatting",
+          "Encryption activation if required",
+          "Testing before deployment",
+          "Inventory recording upon receipt"
+        ],
+        "procurement_process": [
+          "Purchase orders specify security requirements",
+          "Delivery verification",
+          "Initial security assessment",
+          "Testing for functionality",
+          "Integration into asset management"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_3",
+      "requirement": "Control Removable Storage Media",
+      "description": "Manage use of removable and external storage",
+      "details": {
+        "removable_media_types": [
+          "USB drives and memory sticks",
+          "External hard drives",
+          "Optical media (CDs, DVDs)",
+          "Memory cards",
+          "Portable SSDs",
+          "Tape cartridges"
+        ],
+        "control_approaches": [
+          "Technical controls - port lockdowns, USB restrictions",
+          "Administrative controls - approval process, tracking",
+          "Physical controls - encryption on media",
+          "Access controls - restrictions on who uses",
+          "Encryption mandate - all removable media encrypted",
+          "Classification labeling - clear identification"
+        ],
+        "approval_process": [
+          "Business case for removable media use",
+          "Manager approval required",
+          "Security assessment",
+          "Encryption verification",
+          "Time-limited approval where appropriate"
+        ],
+        "monitoring": [
+          "Track removable media usage",
+          "Audit removable media access",
+          "Investigate unauthorized removal",
+          "Monitor compliance with policy"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_4",
+      "requirement": "Implement Access and Removal Controls",
+      "description": "Prevent unauthorized access or removal of storage media",
+      "details": {
+        "access_controls": [
+          "Access restricted to authorized personnel",
+          "Role-based access to media",
+          "Sensitive media in secured storage",
+          "Audit logging of access",
+          "No casual access to critical media"
+        ],
+        "removal_controls": [
+          "Authorization required for removal",
+          "Tracking of removed media",
+          "Chain of custody documentation",
+          "Secure transportation procedures",
+          "Return and verification",
+          "Incident reporting for unauthorized removal"
+        ],
+        "physical_security": [
+          "Locked storage for media",
+          "Restricted access areas",
+          "Surveillance where appropriate",
+          "Inventory checks",
+          "Detection of unauthorized removal"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_5",
+      "requirement": "Implement Encryption of Storage Media",
+      "description": "Protect data on storage media through encryption",
+      "details": {
+        "encryption_requirements": [
+          "All removable media encrypted",
+          "Portable devices encrypted",
+          "Sensitive data encryption mandatory",
+          "Encryption standards defined",
+          "Encryption key management",
+          "Strong encryption algorithms",
+          "Encryption verification",
+          "No unencrypted sensitive data"
+        ],
+        "encryption_approach": [
+          "Full disk/volume encryption",
+          "File-level encryption for sensitive data",
+          "Transparent encryption if possible",
+          "User-friendly implementation",
+          "Key recovery procedures",
+          "Backup of encryption keys"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_6",
+      "requirement": "Manage Storage Media Transportation",
+      "description": "Protect media during transport and transfer",
+      "details": {
+        "transportation_controls": [
+          "Secure packaging",
+          "Courier services for valuable media",
+          "Insurance for transported media",
+          "Tracking during transport",
+          "Signature requirements on delivery",
+          "Chain of custody documentation",
+          "Secure routing to destinations",
+          "Protection from environmental damage"
+        ],
+        "courier_selection": [
+          "Reputable courier services",
+          "Insurance requirements",
+          "Security requirements in contracts",
+          "Training on secure handling",
+          "Verification of delivery"
+        ],
+        "remote_locations": [
+          "Secure packing for shipping",
+          "Insurance coverage",
+          "Signature on delivery",
+          "Delivery confirmation",
+          "Loss reporting procedures"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_7",
+      "requirement": "Manage Storage Media Reuse",
+      "description": "Securely prepare media for reuse if applicable",
+      "details": {
+        "reuse_considerations": [
+          "Cost savings vs security risk",
+          "Repurposing to lower classification levels",
+          "Secure data destruction required",
+          "Verification of data removal",
+          "Documentation of reuse",
+          "Recertification if necessary"
+        ],
+        "data_destruction_for_reuse": [
+          "Secure erasure tools",
+          "Multiple pass overwrite",
+          "Verification of erasure",
+          "Certification from destruction vendor",
+          "Documentation and records",
+          "Audit trail of process"
+        ],
+        "reuse_process": [
+          "Assessment of media condition",
+          "Determination of acceptable use",
+          "Secure data destruction",
+          "Verification and testing",
+          "Re-deployment to new purpose",
+          "Updated asset records"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_8",
+      "requirement": "Implement Storage Media Disposal",
+      "description": "Securely destroy media at end of life",
+      "details": {
+        "disposal_methods": [
+          "Physical destruction - shredding, crushing",
+          "Degaussing - magnetic field erasure",
+          "Incineration - for sensitive media",
+          "Certified destruction services",
+          "Professional disposal companies",
+          "Chain of custody throughout"
+        ],
+        "disposal_process": [
+          "Identification of media for disposal",
+          "Data assessment before destruction",
+          "Selection of appropriate method",
+          "Professional destruction service",
+          "Witnessed destruction if high sensitivity",
+          "Certificate of destruction",
+          "Documentation and records"
+        ],
+        "outsourced_destruction": [
+          "Reputable destruction vendors",
+          "Security clearances where required",
+          "Insurance and liability",
+          "Certification of destruction",
+          "Chain of custody documentation",
+          "Audit trail of process",
+          "No unauthorized data recovery"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_9",
+      "requirement": "Maintain Storage Media Inventory",
+      "description": "Track all storage media and its location",
+      "details": {
+        "inventory_elements": [
+          "Unique identification",
+          "Current location",
+          "Owner or custodian",
+          "Classification level",
+          "Status (active, archived, for disposal)",
+          "Acquisition date",
+          "Expected retention period",
+          "Encryption status",
+          "Backup copies if applicable"
+        ],
+        "inventory_management": [
+          "Centralized inventory system",
+          "Regular inventory verification",
+          "Discrepancy investigations",
+          "Updates to inventory",
+          "Retention compliance verification",
+          "Audit trail of changes"
+        ],
+        "inventory_challenges": [
+          "Unknown media in storage",
+          "Undocumented copies",
+          "Media degradation over time",
+          "Lost or misplaced media",
+          "Backup media tracking",
+          "Archival media identification"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_10",
+      "requirement": "Address Paper Records as Storage Media",
+      "description": "Manage paper documents as classified storage media",
+      "details": {
+        "paper_considerations": [
+          "Paper is storage media",
+          "Classify based on content",
+          "Protect based on classification",
+          "Secure storage required",
+          "Controlled access",
+          "Secure disposal",
+          "Retention per requirements"
+        ],
+        "paper_management": [
+          "Sensitive paper in locked storage",
+          "Restricted access",
+          "Monitoring of access",
+          "Secure disposal via shredding",
+          "No casual discarding",
+          "Tracking of sensitive documents"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_11",
+      "requirement": "Implement Backup and Recovery Procedures",
+      "description": "Manage backup media and recovery capability",
+      "details": {
+        "backup_strategy": [
+          "Regular backup schedule",
+          "Multiple backup copies",
+          "Geographic separation of backups",
+          "Encryption of backups",
+          "Offline copies for critical data",
+          "Testing of recovery procedures",
+          "Retention of backups"
+        ],
+        "backup_media_protection": [
+          "Backup media secured",
+          "Access restricted",
+          "Environmental protection",
+          "Inventory and tracking",
+          "Testing for integrity",
+          "Periodic verification"
+        ],
+        "recovery_procedures": [
+          "Documented recovery process",
+          "Testing of recovery capability",
+          "Time to restore documented",
+          "Verification of recovered data",
+          "Regular drills and testing",
+          "Update procedures as needed"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_12",
+      "requirement": "Communicate Storage Media Requirements",
+      "description": "Educate personnel on storage media handling",
+      "details": {
+        "training_content": [
+          "Storage media policy overview",
+          "Classification and handling requirements",
+          "Approved storage media types",
+          "Encryption requirements",
+          "Transportation procedures",
+          "Removal authorization process",
+          "Access and custody procedures",
+          "Disposal and destruction",
+          "Backup and recovery",
+          "Incident reporting"
+        ],
+        "communication_methods": [
+          "Initial training for new staff",
+          "Annual awareness campaigns",
+          "Department-specific training",
+          "Posters and reminders",
+          "Updates when policy changes",
+          "Email notifications"
+        ]
+      }
+    },
+    {
+      "requirement_id": "A_7.10_REQ_13",
+      "requirement": "Monitor and Verify Compliance",
+      "description": "Verify storage media management effectiveness",
+      "details": {
+        "monitoring_activities": [
+          "Inventory verification",
+          "Physical inspection of storage areas",
+          "Audit of removable media usage",
+          "Encryption verification",
+          "Access log review",
+          "Incident tracking",
+          "Policy compliance checks",
+          "Destruction audit trails"
+        ],
+        "audit_procedures": [
+          "Physical audit of stored media",
+          "Verification against inventory",
+          "Assessment of physical security",
+          "Encryption status verification",
+          "Access control audit",
+          "Incident investigation"
+        ],
+        "issue_tracking": [
+          "Document deviations",
+          "Track unauthorized media",
+          "Monitor for data breaches",
+          "Assess compliance gaps",
+          "Implement corrective actions"
+        ]
+      }
+    }
+  ],
+  "implementation_steps": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Develop storage media policy",
+        "detail": "Document lifecycle management requirements"
+      },
+      {
+        "step": 2,
+        "action": "Conduct storage media inventory",
+        "detail": "Identify and document all storage media"
+      },
+      {
+        "step": 3,
+        "action": "Assess risks and classify media",
+        "detail": "Classify media based on data sensitivity"
+      },
+      {
+        "step": 4,
+        "action": "Develop acquisition procedure",
+        "detail": "Controls for procuring storage media"
+      },
+      {
+        "step": 5,
+        "action": "Develop removal/access procedure",
+        "detail": "Controls for accessing and removing media"
+      },
+      {
+        "step": 6,
+        "action": "Develop transportation procedure",
+        "detail": "Secure transport of media"
+      },
+      {
+        "step": 7,
+        "action": "Develop reuse procedure",
+        "detail": "Secure data destruction for media reuse"
+      },
+      {
+        "step": 8,
+        "action": "Develop disposal procedure",
+        "detail": "Secure destruction at end of life"
+      },
+      {
+        "step": 9,
+        "action": "Train personnel",
+        "detail": "Education on policy and procedures"
+      },
+      {
+        "step": 10,
+        "action": "Implement encryption",
+        "detail": "Encrypt sensitive storage media"
+      }
+    ]
+  },
+  "compliance_checklist": {
+    "description": "Steps to comply with ISO 27001 Annex A 7.10",
+    "checklist": [
+      {
+        "item": "Develop storage media policy",
+        "status": "required"
+      },
+      {
+        "item": "Develop information classification policy",
+        "status": "required"
+      },
+      {
+        "item": "Conduct storage media inventory",
+        "status": "required"
+      },
+      {
+        "item": "Assess risks to storage media",
+        "status": "required"
+      },
+      {
+        "item": "Develop acquisition procedure",
+        "status": "required"
+      },
+      {
+        "item": "Develop access and removal procedure",
+        "status": "required"
+      },
+      {
+        "item": "Develop transportation procedure",
+        "status": "required"
+      },
+      {
+        "item": "Develop reuse procedure",
+        "status": "required"
+      },
+      {
+        "item": "Develop disposal/destruction procedure",
+        "status": "required"
+      },
+      {
+        "item": "Implement encryption on media",
+        "status": "required"
+      },
+      {
+        "item": "Train personnel on procedures",
+        "status": "required"
+      },
+      {
+        "item": "Establish inventory tracking",
+        "status": "required"
+      },
+      {
+        "item": "Monitor and audit compliance",
+        "status": "required"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "description": "Top 3 mistakes organizations make with storage media management",
+    "mistakes": [
+      {
+        "rank": 1,
+        "mistake": "Unknown storage media accumulating in storage areas",
+        "description": "Hard drives, media, and devices in storage with no documentation or inventory",
+        "root_cause": [
+          "No asset management process",
+          "No inventory tracking",
+          "Old equipment not disposed of",
+          "Backup media accumulated",
+          "Archive materials forgotten",
+          "No cleanup or housekeeping"
+        ],
+        "impact": "Data breach risk, regulatory violations, loss of data, inability to retrieve needed information",
+        "prevention": [
+          "Conduct complete inventory",
+          "Establish asset tracking",
+          "Regular cleanup and disposal",
+          "Proper archival procedures",
+          "Periodic audit of storage areas",
+          "Documented retention and destruction"
+        ],
+        "requirement": "Get your storage media house in order - inventory everything"
+      },
+      {
+        "rank": 2,
+        "mistake": "No secure destruction procedures",
+        "description": "Old media discarded without secure destruction",
+        "root_cause": [
+          "No disposal procedures",
+          "Assumption data is gone when deleted",
+          "Cost avoidance of destruction services",
+          "Lack of awareness of data recovery",
+          "No audit trail of destruction"
+        ],
+        "impact": "Data breach from recovered destroyed media, regulatory violations, sensitive data exposure",
+        "prevention": [
+          "Establish destruction procedures",
+          "Use certified destruction services",
+          "Document destruction with certificates",
+          "No casual discarding of media",
+          "Audit trail of all disposals"
+        ],
+        "best_practice": "Use professional destruction service with certificate of destruction"
+      },
+      {
+        "rank": 3,
+        "mistake": "Removable media used without encryption",
+        "description": "USB drives and portable media used unencrypted",
+        "root_cause": [
+          "No encryption requirement",
+          "User resistance to encryption",
+          "Perceived complexity",
+          "No technical controls",
+          "No monitoring of removable media"
+        ],
+        "impact": "Loss of portable media exposes all data, no recovery capability, regulatory breach",
+        "prevention": [
+          "Mandate encryption on all removable media",
+          "Technical enforcement where possible",
+          "User training on encryption",
+          "Audit encryption compliance",
+          "Monitor removable media use"
+        ]
+      }
+    ]
+  },
+  "audit_requirements": {
+    "description": "What auditors will check during ISO 27001 A 7.10 audit",
+    "audit_areas": [
+      {
+        "area": "1. Storage Media Policy",
+        "description": "Verify documented policy exists",
+        "checks": [
+          "Policy document current and approved",
+          "Lifecycle management addressed",
+          "Acquisition requirements specified",
+          "Encryption requirements",
+          "Removal and transportation procedures",
+          "Reuse and disposal procedures",
+          "Retention requirements",
+          "Classification alignment"
+        ]
+      },
+      {
+        "area": "2. Storage Media Inventory",
+        "description": "Verify all media documented",
+        "checks": [
+          "Inventory system in place",
+          "All storage media identified",
+          "Location tracking",
+          "Classification recorded",
+          "Owner identified",
+          "Status tracked",
+          "Verification against physical locations",
+          "Regular inventory updates"
+        ]
+      },
+      {
+        "area": "3. Risk Assessment",
+        "description": "Verify risks identified",
+        "checks": [
+          "Risk assessment documented",
+          "Risks to media identified",
+          "Mitigation controls selected",
+          "Proportionate controls",
+          "Residual risks documented"
+        ]
+      },
+      {
+        "area": "4. Acquisition Controls",
+        "description": "Verify procurement controls",
+        "checks": [
+          "Approved vendors",
+          "Security specifications",
+          "Configuration requirements",
+          "Testing before use",
+          "Inventory recording",
+          "Documentation"
+        ]
+      },
+      {
+        "area": "5. Access and Removal Controls",
+        "description": "Verify authorization procedures",
+        "checks": [
+          "Access restricted",
+          "Removal authorization required",
+          "Chain of custody",
+          "Audit trail of access",
+          "Logging of removals",
+          "Verification on return"
+        ]
+      },
+      {
+        "area": "6. Encryption Implementation",
+        "description": "Verify encryption on media",
+        "checks": [
+          "Removable media encrypted",
+          "Sensitive data encrypted",
+          "Encryption standards met",
+          "Key management procedures",
+          "Backup of encryption keys",
+          "Encryption verification"
+        ]
+      },
+      {
+        "area": "7. Transportation Controls",
+        "description": "Verify secure transport",
+        "checks": [
+          "Procedures documented",
+          "Courier selection criteria",
+          "Secure packaging",
+          "Tracking during transport",
+          "Insurance coverage",
+          "Delivery verification"
+        ]
+      },
+      {
+        "area": "8. Reuse and Disposal",
+        "description": "Verify secure handling at end of life",
+        "checks": [
+          "Reuse procedures if applicable",
+          "Secure data destruction for reuse",
+          "Disposal procedures documented",
+          "Destruction method appropriate",
+          "Certificate of destruction",
+          "Chain of custody",
+          "No unauthorized recovery"
+        ]
+      },
+      {
+        "area": "9. Backup and Recovery",
+        "description": "Verify backup procedures",
+        "checks": [
+          "Backup schedule",
+          "Multiple copies",
+          "Geographic separation",
+          "Encryption of backups",
+          "Testing of recovery",
+          "Retention compliance"
+        ]
+      }
+    ]
+  },
+  "ukgc_application": {
+    "critical_systems_context": "For gambling operators, storage media containing RNG algorithms, game code, and customer data requires strict lifecycle management",
+    "specific_requirements": [
+      {
+        "system": "RNG and Game Systems",
+        "media_requirements": [
+          "RNG algorithms stored securely",
+          "Game code encrypted on all media",
+          "Backup copies secured",
+          "No unsecured removable media",
+          "Disposal via certified destruction only"
+        ]
+      },
+      {
+        "system": "Customer Data",
+        "media_requirements": [
+          "All removable media encrypted",
+          "Customer data backups secured",
+          "Restricted access to media",
+          "Secure destruction at end of life",
+          "Retention compliance"
+        ]
+      },
+      {
+        "system": "Regulatory Information",
+        "media_requirements": [
+          "Audit documentation secured",
+          "Compliance records protected",
+          "Regulatory correspondence secured",
+          "Archive media properly managed",
+          "Disposal per retention requirements"
+        ]
+      }
+    ],
+    "compliance_requirement": "Operators must maintain complete inventory of storage media and implement lifecycle management including secure procurement, use, transportation, and destruction"
+  },
+  "compliance_notes": {
+    "overall_purpose": "Protect information on storage media throughout lifecycle from acquisition to destruction",
+    "enforcement_priority": "High - poor storage media management major source of data breaches",
+    "key_principles": [
+      "Complete inventory of all storage media",
+      "Lifecycle management throughout",
+      "Classification-based protection",
+      "Encryption of removable media",
+      "Authorized access and removal",
+      "Secure transportation",
+      "Secure disposal at end of life",
+      "No unencrypted sensitive data",
+      "Backup and recovery procedures",
+      "Regular monitoring and verification",
+      "Certified destruction services"
+    ]
+  },
+  "to_pass_the_audit": {
+    "description": "To comply with ISO 27001 Annex A 7.10 Storage Media, implement",
+    "requirements": [
+      {
+        "requirement": "Develop policy",
+        "detail": "Storage media lifecycle management policy"
+      },
+      {
+        "requirement": "Conduct inventory",
+        "detail": "Complete inventory of all storage media"
+      },
+      {
+        "requirement": "Assess risks",
+        "detail": "Risk assessment with classified media"
+      },
+      {
+        "requirement": "Develop acquisition procedure",
+        "detail": "Controls for procurement"
+      },
+      {
+        "requirement": "Implement encryption",
+        "detail": "Encrypt all sensitive media"
+      },
+      {
+        "requirement": "Develop access controls",
+        "detail": "Authorization for access and removal"
+      },
+      {
+        "requirement": "Develop transportation procedure",
+        "detail": "Secure transport of media"
+      },
+      {
+        "requirement": "Develop reuse procedure",
+        "detail": "Secure data destruction for reuse"
+      },
+      {
+        "requirement": "Develop disposal procedure",
+        "detail": "Secure destruction at end of life"
+      },
+      {
+        "requirement": "Train personnel",
+        "detail": "Education on procedures"
+      },
+      {
+        "requirement": "Establish monitoring",
+        "detail": "Verify compliance"
+      },
+      {
+        "requirement": "Document all procedures",
+        "detail": "Complete audit trail"
+      }
+    ]
+  },
+  "related_requirements": {
+    "rts_reference": "RTS Chapter 4 - Security Requirements",
+    "related_iso_controls": [
+      "ISO 27001 A 5.9 - Inventory of information and other associated assets",
+      "ISO 27001 A 5.12 - Classification of information",
+      "ISO 27001 A 8.1 - User endpoint devices",
+      "ISO 27001 A 8.3 - Information access restriction",
+      "ISO 27001 A 8.10 - Encryption",
+      "ISO 27001 A 13.3 - Segregation of networks"
+    ]
+  },
+  "best_practices": {
+    "inventory_best_practices": [
+      "Complete physical audit of all storage areas",
+      "Document every piece of storage media",
+      "Classify based on data content",
+      "Track location and owner",
+      "Regular verification against inventory",
+      "Investigate discrepancies",
+      "Clear out unknown or unneeded media"
+    ],
+    "encryption_best_practices": [
+      "Mandate encryption on all removable media",
+      "Use full disk encryption",
+      "Strong encryption algorithms",
+      "Automatic encryption where possible",
+      "Key management procedures",
+      "No unencrypted sensitive data"
+    ],
+    "acquisition_best_practices": [
+      "Approved vendor list",
+      "Security specifications in purchase orders",
+      "Pre-deployment testing",
+      "Configuration verification",
+      "Integration into asset management",
+      "Documentation of receipt"
+    ],
+    "disposal_best_practices": [
+      "Use certified destruction companies",
+      "Obtain certificate of destruction",
+      "Witnessed destruction for highly sensitive media",
+      "Chain of custody documentation",
+      "No unauthorized data recovery",
+      "Audit trail of all disposals"
+    ]
+  },
+  "document_metadata": {
+    "created_date": "2025-10-17",
+    "source": "ISO/IEC 27001:2022 Annex A Control 7.10",
+    "ukgc_reference": "RTS Chapter 4 - Security Requirements",
+    "format": "Structured JSON for MCP integration",
+    "version": "1.0",
+    "standard_version": "ISO/IEC 27001:2022",
+    "file_name": "iso-27001-annex-a-7.10-storage-media.json",
+    "content_coverage": "Complete - all source document content extracted and structured with comprehensive gambling-specific guidance"
+  }
+}
