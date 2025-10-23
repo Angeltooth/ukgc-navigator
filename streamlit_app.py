@@ -144,7 +144,7 @@ def load_documents():
 @st.cache_resource
 def load_url_mapping():
     """Load URL mapping for hyperlinks"""
-    base_path = Path(os.path.expanduser("~/UKGC_Project/JSON Files"))
+    base_path = Path(__file__).parent / "JSON Files"
     url_mapping_path = base_path / "index" / "url_mapping.json"
     
     if url_mapping_path.exists():
