@@ -63,7 +63,8 @@ st.markdown("""
 @st.cache_resource
 def load_documents():
     """Load all regulatory documents from JSON files"""
-    base_path = Path(os.path.expanduser("~/UKGC_Project/JSON Files"))
+    # Use relative path for Streamlit Cloud compatibility
+    base_path = Path(__file__).parent / "JSON Files"
     documents = {
         "lccp": [],
         "iso27001": [],
