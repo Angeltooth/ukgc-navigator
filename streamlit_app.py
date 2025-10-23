@@ -141,7 +141,7 @@ def load_documents():
     return documents
 
 
-@st.cache_resource
+
 def load_url_mapping():
     """Load URL mapping for hyperlinks"""
     base_path = Path(__file__).parent / "JSON Files"
