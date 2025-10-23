@@ -60,7 +60,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-@st.cache_resource
+
 def load_documents():
     """Load all regulatory documents from JSON files"""
     # Use relative path for Streamlit Cloud compatibility
