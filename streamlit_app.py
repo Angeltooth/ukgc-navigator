@@ -19,7 +19,7 @@ from anthropic import Anthropic
 load_dotenv()
 
 # Initialize Anthropic client
-@st.cache_resource
+
 def get_anthropic_client():
     """Get Anthropic client"""
     api_key = os.getenv("ANTHROPIC_API_KEY")
