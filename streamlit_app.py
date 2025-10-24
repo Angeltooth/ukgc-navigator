@@ -19,7 +19,6 @@ from anthropic import Anthropic
 load_dotenv()
 
 # Initialize Anthropic client
-
 def get_anthropic_client():
     """Get Anthropic client"""
     api_key = os.getenv("ANTHROPIC_API_KEY")
@@ -58,7 +57,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
 
 
 def load_documents():
@@ -139,7 +137,6 @@ def load_documents():
         st.error(f"Error loading documents: {str(e)}")
     
     return documents
-
 
 
 def load_url_mapping():
