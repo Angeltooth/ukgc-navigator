@@ -1,8 +1,6 @@
 """
 UKGC Regulatory Framework - Streamlit Web Interface
-Multi-framework compliance querying and guidance
-WITH CLAUDE AI - Natural language question answering
-WITH HYPERLINKS - URL mapping for clickable regulations
+FIXED VERSION - Proper LCCP extraction
 """
 
 import streamlit as st
@@ -14,10 +12,8 @@ from typing import Optional, Dict, List, Any
 from dotenv import load_dotenv
 from anthropic import Anthropic
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Initialize Anthropic client
 def get_anthropic_client():
     """Get Anthropic client"""
     api_key = os.getenv("ANTHROPIC_API_KEY")
@@ -25,7 +21,6 @@ def get_anthropic_client():
         return None
     return Anthropic()
 
-# Page configuration
 st.set_page_config(
     page_title="UKGC Regulatory Framework",
     page_icon="🎲",
@@ -33,26 +28,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
 st.markdown("""
 <style>
-    .main {
-        padding: 2rem;
-    }
+    .main { padding: 2rem; }
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
         font-size: 1.1rem;
         font-weight: 600;
-    }
-    .framework-lccp { color: #1f77b4; }
-    .framework-iso { color: #ff7f0e; }
-    .framework-rts { color: #2ca02c; }
-    .regulation-link {
-        color: #0066cc;
-        text-decoration: none;
-        font-weight: 600;
-    }
-    .regulation-link:hover {
-        text-decoration: underline;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -70,7 +51,6 @@ def load_documents():
     
     if not base_path.exists():
         st.error(f"❌ Base path not found: {base_path}")
-        st.info("Please ensure your project folder exists at: ~/UKGC_Project/JSON Files")
         return documents
     
     try:
@@ -84,8 +64,6 @@ def load_documents():
                             "filename": file.name,
                             "content": json.load(f)
                         })
-                except json.JSONDecodeError as e:
-                    st.warning(f"Invalid JSON in {file.name}: {str(e)}")
                 except Exception as e:
                     st.warning(f"Error loading LCCP {file.name}: {str(e)}")
         
@@ -99,8 +77,6 @@ def load_documents():
                             "filename": file.name,
                             "content": json.load(f)
                         })
-                except json.JSONDecodeError as e:
-                    st.warning(f"Invalid JSON in {file.name}: {str(e)}")
                 except Exception as e:
                     st.warning(f"Error loading ISO27001 {file.name}: {str(e)}")
         
@@ -114,8 +90,6 @@ def load_documents():
                             "filename": file.name,
                             "content": json.load(f)
                         })
-                except json.JSONDecodeError as e:
-                    st.warning(f"Invalid JSON in {file.name}: {str(e)}")
                 except Exception as e:
                     st.warning(f"Error loading RTS {file.name}: {str(e)}")
         
@@ -126,8 +100,6 @@ def load_documents():
                 try:
                     with open(file, encoding='utf-8') as f:
                         documents["indexes"][file.stem] = json.load(f)
-                except json.JSONDecodeError as e:
-                    st.warning(f"Invalid JSON in {file.name}: {str(e)}")
                 except Exception as e:
                     st.warning(f"Error loading index {file.name}: {str(e)}")
     
@@ -146,15 +118,10 @@ def load_url_mapping():
         try:
             with open(url_mapping_path, encoding='utf-8') as f:
                 return json.load(f)
-        except json.JSONDecodeError as e:
-            st.warning(f"Invalid JSON in url_mapping.json: {str(e)}")
-            return None
         except Exception as e:
             st.warning(f"Error loading url_mapping.json: {str(e)}")
             return None
-    else:
-        st.warning(f"url_mapping.json not found at {url_mapping_path}")
-        return None
+    return None
 
 
 def get_regulation_url(framework: str, regulation_id: str) -> Optional[str]:
@@ -210,12 +177,16 @@ def format_regulation_with_link(framework: str, doc_id: str, title: str) -> str:
 def extract_document_ids_from_lccp(content: Dict) -> List[tuple]:
     """Extract LCCP condition IDs and titles"""
     ids = []
-    if "conditions" in content:
+    
+    # Handle direct conditions array
+    if "conditions" in content and isinstance(content["conditions"], list):
         for condition in content["conditions"]:
-            condition_id = condition.get('condition_id', '')
-            condition_title = condition.get('condition_title', 'Untitled')
-            if condition_id:
-                ids.append((condition_id, condition_title))
+            if isinstance(condition, dict):
+                condition_id = condition.get('condition_id', '')
+                condition_title = condition.get('condition_title', '')
+                if condition_id and condition_title:  # Only add if both exist
+                    ids.append((condition_id, condition_title))
+    
     return ids
 
 
@@ -224,8 +195,8 @@ def extract_document_ids_from_rts(content: Dict) -> List[tuple]:
     ids = []
     if "aim" in content:
         aim_id = content["aim"].get('aim_id', '')
-        aim_desc = content["aim"].get('aim_description', 'Untitled')
-        if aim_id:
+        aim_desc = content["aim"].get('aim_description', '')
+        if aim_id and aim_desc:
             ids.append((aim_id, aim_desc))
     return ids
 
@@ -299,36 +270,11 @@ def answer_with_ai(question: str, client) -> tuple:
         context = "Relevant regulatory documents:\n\n"
         for doc in search_results[:10]:
             relevant_docs.append(doc)
-            content = None
-            
-            if doc['framework'] == 'iso27001':
-                for d in st.session_state.documents['iso27001']:
-                    if d['content'].get('control', {}).get('control_id') == doc['id']:
-                        content = d['content'].get('control', {})
-                        break
-                if content:
-                    context += f"ISO 27001 {doc['id']}: {doc['title']}\n"
-                    context += f"   Objective: {content.get('control_objective', '')}\n"
-                    context += f"   Purpose: {content.get('control_purpose', '')}\n"
-            elif doc['framework'] == 'lccp':
-                if "document_overview" in content:
-                    context += f"   Overview: {content.get('document_overview', '')}\n"
-            elif doc['framework'] == 'rts':
-                if "aim" in content:
-                    aim_desc = content.get('aim', {}).get('aim_description', '')
-                    context += f"   Description: {aim_desc}\n"
-            context += "\n"
+            context += f"{doc['framework'].upper()} {doc['id']}: {doc['title']}\n"
     else:
-        context = "Available regulatory frameworks: LCCP (Licence Conditions), RTS (Remote Technical Standards), ISO 27001 (Security)."
+        context = "Available regulatory frameworks: LCCP, RTS, ISO 27001"
     
-    system_prompt = """You are an expert on UK Gambling Commission (UKGC) regulations. 
-You help operators understand compliance requirements across three frameworks:
-1. LCCP (Licence Conditions and Codes of Practice) - Business requirements
-2. ISO 27001 - Information security implementation  
-3. RTS (Remote Technical Standards) - Gambling-specific technical specifications
-
-When answering questions, cite specific regulatory provisions and explain what operators need to do.
-Be clear, practical, and focused on compliance requirements."""
+    system_prompt = """You are an expert on UK Gambling Commission (UKGC) regulations."""
     
     user_prompt = f"""Based on the following regulatory documents, please answer this question:
 
@@ -337,25 +283,18 @@ QUESTION: {question}
 REGULATORY CONTEXT:
 {context}
 
-Please provide:
-1. A direct answer to the question
-2. Which frameworks this relates to (LCCP, ISO 27001, RTS)
-3. Specific provisions or requirements to follow
-4. Any practical steps the operator should take"""
+Please provide a clear answer."""
     
     try:
         response = client.messages.create(
             model="claude-3-5-sonnet-20241022",
             max_tokens=2048,
             system=system_prompt,
-            messages=[
-                {"role": "user", "content": user_prompt}
-            ]
+            messages=[{"role": "user", "content": user_prompt}]
         )
-        
         return response.content[0].text, relevant_docs
     except Exception as e:
-        return f"Error generating answer: {str(e)}", relevant_docs
+        return f"Error: {str(e)}", relevant_docs
 
 
 # Initialize session state
@@ -402,17 +341,13 @@ with tab1:
     
     if not client:
         st.error("AI features not available. Please set ANTHROPIC_API_KEY in ~/.env file")
-        st.info("Example questions:\n- How do I prevent underage gambling?\n- What are customer fund protection requirements?\n- How should I implement secure authentication?")
     else:
-        st.write("Examples:\n- How do I prevent underage gambling?\n- What are my customer fund protection obligations?\n- How should I implement secure authentication?")
-        
         question = st.text_area("Your question:", placeholder="e.g., How do I prevent underage gambling?", height=100)
         
         if st.button("Ask", type="primary"):
             if question:
                 with st.spinner("🤔 Analyzing regulatory requirements..."):
                     answer, relevant_docs = answer_with_ai(question, client)
-                    
                     st.markdown("### 📖 Answer:")
                     st.markdown(answer)
                     
@@ -455,12 +390,16 @@ with tab3:
     with col1:
         st.markdown("### 🎲 LCCP")
         if st.checkbox("Show LCCP Documents"):
+            lccp_count = 0
             for doc in st.session_state.documents["lccp"]:
                 content = doc['content']
                 lccp_ids = extract_document_ids_from_lccp(content)
+                st.write(f"*File: {doc['filename']} - {len(lccp_ids)} conditions*")
                 for condition_id, condition_title in lccp_ids:
                     regulation_link = format_regulation_with_link("LCCP", condition_id, condition_title)
                     st.markdown(regulation_link)
+                    lccp_count += len(lccp_ids)
+            st.info(f"Total LCCP conditions extracted: {lccp_count}")
     
     with col2:
         st.markdown("### 🔒 ISO 27001")
@@ -507,13 +446,12 @@ if st.session_state.url_mapping:
         for key in rts_urls[:5]:
             st.write(f"- {key}")
 else:
-    st.error("❌ URL mapping not loaded. Hyperlinks will not be available.")
-    st.info("Make sure url_mapping.json exists at: JSON Files/index/url_mapping.json")
+    st.error("❌ URL mapping not loaded.")
 
 # Footer
 st.divider()
 st.markdown("""
 <div style='text-align: center; color: gray; font-size: 0.9em;'>
-    UKGC Regulatory Framework Navigator | Powered by Claude AI | Hyperlinks to Official UKGC Regulations
+    UKGC Regulatory Framework Navigator | Powered by Claude AI
 </div>
 """, unsafe_allow_html=True)
