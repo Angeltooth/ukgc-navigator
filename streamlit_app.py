@@ -647,31 +647,25 @@ with tab3:
                     st.markdown(regulation_link)
 
 # ============ URL MAPPING STATUS ============
-with st.expander("📋 URL Mapping Status"):
-    if st.session_state.url_mapping:
-        mappings = st.session_state.url_mapping.get('mappings', {})
-        
-        lccp_urls = [k for k in mappings.keys() if k.startswith('LCCP_')]
-        rts_urls = [k for k in mappings.keys() if k.startswith('RTS_')]
-        
-        col1, col2 = st.columns(2)
-        with col1:
-            st.metric("LCCP URLs Mapped", len(lccp_urls))
-        with col2:
-            st.metric("RTS URLs Mapped", len(rts_urls))
-        
-        st.info("✅ URL mapping loaded successfully. Hyperlinks are active in search results and browse sections.")
-    else:
-        st.error("❌ URL mapping not loaded. Hyperlinks will not be available.")
-        st.info("Make sure url_mapping.json exists at: JSON Files/index/url_mapping.json")
+st.divider()
+st.markdown("### 📋 URL Mapping Status")
 
-# Debug info for troubleshooting - MOVED OUTSIDE TO PREVENT NESTING
 if st.session_state.url_mapping:
+    mappings = st.session_state.url_mapping.get('mappings', {})
+    
+    lccp_urls = [k for k in mappings.keys() if k.startswith('LCCP_')]
+    rts_urls = [k for k in mappings.keys() if k.startswith('RTS_')]
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric("LCCP URLs Mapped", len(lccp_urls))
+    with col2:
+        st.metric("RTS URLs Mapped", len(rts_urls))
+    
+    st.info("✅ URL mapping loaded successfully. Hyperlinks are active in search results and browse sections.")
+    
+    # Debug info displayed directly (no nested expander)
     with st.expander("🔍 Debug: Sample URL Mappings"):
-        mappings = st.session_state.url_mapping.get('mappings', {})
-        lccp_urls = [k for k in mappings.keys() if k.startswith('LCCP_')]
-        rts_urls = [k for k in mappings.keys() if k.startswith('RTS_')]
-        
         st.write("**Sample LCCP URLs:**")
         for key in lccp_urls[:5]:
             st.write(f"- {key}")
@@ -679,6 +673,9 @@ if st.session_state.url_mapping:
         st.write("**Sample RTS URLs:**")
         for key in rts_urls[:5]:
             st.write(f"- {key}")
+else:
+    st.error("❌ URL mapping not loaded. Hyperlinks will not be available.")
+    st.info("Make sure url_mapping.json exists at: JSON Files/index/url_mapping.json")
 
 # Footer
 st.divider()
