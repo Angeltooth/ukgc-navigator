@@ -53,6 +53,12 @@
       "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/1/2",
       "source": "UKGC"
     },
+    "LCCP_2.1.1": {
+      "framework": "LCCP",
+      "title": "Access to (and provision of data from) key equipment",
+      "url": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/2-1-1-access-to-and-provision-of-data-from-key-equipment",
+      "source": "UKGC"
+    },
     "LCCP_2.2.1": {
       "framework": "LCCP",
       "title": "Gambling Software",
@@ -469,4 +475,3 @@
     }
   },
   "last_updated": "2025-10-23"
-}
