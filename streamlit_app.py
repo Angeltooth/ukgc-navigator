@@ -341,16 +341,19 @@ with tab4:
             # Determine prefix from filename
             if "operating" in filename.lower():
                 prefix = "OLC"
-                file_type = "Operating Licence Conditions"
+                file_type = "📋 Operating Licence Conditions (OLC)"
             elif "code" in filename.lower():
                 prefix = "CoP"
-                file_type = "Code of Practice"
+                file_type = "📝 Code of Practice (CoP)"
             elif "personal" in filename.lower():
                 prefix = "PLC"
-                file_type = "Personal Licence Conditions"
+                file_type = "👤 Personal Licence Conditions (PLC)"
             else:
                 prefix = "OLC"
                 file_type = "Licence Conditions"
+            
+            # Display document type header
+            st.markdown(f"#### {file_type}")
             
             if "sections" in doc_data:
                 for section in doc_data["sections"]:
@@ -366,6 +369,8 @@ with tab4:
                                 full_id = f"{prefix}_{condition_id}"
                                 regulation_link = format_regulation_with_link("LCCP", full_id, condition_title)
                                 st.markdown(regulation_link)
+            
+            st.divider()
     
     elif browse_option == "ISO 27001" and st.session_state.documents["iso27001"]:
         st.markdown("### ISO 27001 - Information Security Management")
