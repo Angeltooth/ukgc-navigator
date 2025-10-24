@@ -661,19 +661,24 @@ with st.expander("📋 URL Mapping Status"):
             st.metric("RTS URLs Mapped", len(rts_urls))
         
         st.info("✅ URL mapping loaded successfully. Hyperlinks are active in search results and browse sections.")
-        
-        # Debug info for troubleshooting
-        with st.expander("🔍 Debug: Sample URL Mappings"):
-            st.write("**Sample LCCP URLs:**")
-            for key in lccp_urls[:5]:
-                st.write(f"- {key}")
-            
-            st.write("**Sample RTS URLs:**")
-            for key in rts_urls[:5]:
-                st.write(f"- {key}")
     else:
         st.error("❌ URL mapping not loaded. Hyperlinks will not be available.")
         st.info("Make sure url_mapping.json exists at: JSON Files/index/url_mapping.json")
+
+# Debug info for troubleshooting - MOVED OUTSIDE TO PREVENT NESTING
+if st.session_state.url_mapping:
+    with st.expander("🔍 Debug: Sample URL Mappings"):
+        mappings = st.session_state.url_mapping.get('mappings', {})
+        lccp_urls = [k for k in mappings.keys() if k.startswith('LCCP_')]
+        rts_urls = [k for k in mappings.keys() if k.startswith('RTS_')]
+        
+        st.write("**Sample LCCP URLs:**")
+        for key in lccp_urls[:5]:
+            st.write(f"- {key}")
+        
+        st.write("**Sample RTS URLs:**")
+        for key in rts_urls[:5]:
+            st.write(f"- {key}")
 
 # Footer
 st.divider()
