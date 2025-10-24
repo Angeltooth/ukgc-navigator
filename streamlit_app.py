@@ -361,6 +361,7 @@ with tab4:
                     section_title = section.get("section_title", "")
                     
                     with st.expander(f"**Section {section_id}: {section_title}**"):
+                        # Handle OLC structure: sections → conditions
                         if "conditions" in section:
                             for condition in section["conditions"]:
                                 condition_id = condition.get("condition_id", "")
@@ -369,6 +370,23 @@ with tab4:
                                 full_id = f"{prefix}_{condition_id}"
                                 regulation_link = format_regulation_with_link("LCCP", full_id, condition_title)
                                 st.markdown(regulation_link)
+                        
+                        # Handle CoP/PLC structure: sections → subsections → provisions
+                        elif "subsections" in section:
+                            for subsection in section["subsections"]:
+                                subsection_title = subsection.get("subsection_title", "")
+                                
+                                if subsection_title:
+                                    st.markdown(f"**{subsection_title}**")
+                                
+                                if "provisions" in subsection:
+                                    for provision in subsection["provisions"]:
+                                        provision_id = provision.get("provision_id", "")
+                                        provision_title = provision.get("provision_title", "")
+                                        
+                                        full_id = f"{prefix}_{provision_id}"
+                                        regulation_link = format_regulation_with_link("LCCP", full_id, provision_title)
+                                        st.markdown(regulation_link)
             
             st.divider()
     
