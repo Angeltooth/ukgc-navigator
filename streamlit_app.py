@@ -360,10 +360,10 @@ with tab4:
                     section_id = section.get("section_id", "")
                     section_title = section.get("section_title", "")
                     
-                    # Create unique key for expander based on document type and section ID
-                    expander_key = f"{prefix}_{section_id}"
+                    # Create unique label including prefix to separate OLC/CoP/PLC sections
+                    expander_label = f"**{prefix} Section {section_id}: {section_title}**"
                     
-                    with st.expander(f"**Section {section_id}: {section_title}**", key=expander_key):
+                    with st.expander(expander_label):
                         # Handle OLC structure: sections → conditions
                         if "conditions" in section:
                             for condition in section["conditions"]:
