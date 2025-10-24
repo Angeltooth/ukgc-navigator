@@ -214,133 +214,259 @@ def get_regulation_url(framework: str, regulation_id: str) -> Optional[str]:
     return None
 
 
-def format_regulation_with_link(framework: str, doc_id: str, title: str) -> str:
-    """Format a regulation as a clickable markdown link using URL mapping"""
-    url = get_regulation_url(framework, doc_id)
-    
-    if url:
-        # Create clickable link
-        return f"📎 [{framework} {doc_id}: {title}]({url})"
-    else:
-        # Fallback if no URL found
-        return f"📋 {framework} {doc_id}: {title}"
-
-
-def extract_document_ids_from_lccp(content: Dict) -> List[tuple]:
-    """Extract LCCP condition IDs and titles from document"""
-    ids = []
-    
-    if "conditions" in content:
-        for condition in content["conditions"]:
-            condition_id = condition.get('condition_id', '')
-            condition_title = condition.get('condition_title', 'Untitled')
-            if condition_id:
-                ids.append((condition_id, condition_title))
-    
-    return ids
-
-
-def extract_document_ids_from_rts(content: Dict) -> List[tuple]:
-    """Extract RTS Aim IDs and descriptions from document"""
-    ids = []
-    
-    if "aim" in content:
-        aim_id = content["aim"].get('aim_id', '')
-        aim_desc = content["aim"].get('aim_description', 'Untitled')
-        if aim_id:
-            ids.append((aim_id, aim_desc))
-    
-    return ids
-
-
-def search_documents(query: str) -> List[Dict]:
-    """Search all documents for a keyword"""
+def extract_document_ids_from_lccp(lccp_content: dict) -> List[tuple]:
+    """
+    Extract document IDs and titles from LCCP document.
+    Returns list of (id, title) tuples
+    """
     results = []
-    query_lower = query.lower()
     
-    # Search LCCP
-    for doc in st.session_state.documents["lccp"]:
-        content = doc['content']
-        for condition in content.get("conditions", []):
-            condition_id = condition.get('condition_id', '')
-            condition_title = condition.get('condition_title', '')
-            condition_text = condition.get('condition_text', '')
-            
-            if (query_lower in condition_id.lower() or 
-                query_lower in condition_title.lower() or 
-                query_lower in condition_text.lower()):
-                results.append({
-                    'framework': 'lccp',
-                    'id': condition_id,
-                    'title': condition_title,
-                    'relevance': 'high' if query_lower in condition_title.lower() else 'medium'
-                })
+    # Navigate through sections and conditions
+    if 'sections' in lccp_content:
+        for section in lccp_content['sections']:
+            if 'conditions' in section:
+                for condition in section['conditions']:
+                    condition_id = condition.get('condition_id', 'Unknown')
+                    condition_title = condition.get('condition_title', 'Untitled')
+                    results.append((condition_id, condition_title))
     
-    # Search ISO 27001
-    for doc in st.session_state.documents["iso27001"]:
-        control = doc["content"].get("control", {})
-        control_id = control.get('control_id', '')
-        control_title = control.get('control_title', '')
-        control_text = control.get('control_objective', '')
-        
-        if (query_lower in control_id.lower() or 
-            query_lower in control_title.lower() or 
-            query_lower in control_text.lower()):
-            results.append({
-                'framework': 'iso27001',
-                'id': control_id,
-                'title': control_title,
-                'relevance': 'high' if query_lower in control_title.lower() else 'medium'
-            })
-    
-    # Search RTS
-    for doc in st.session_state.documents["rts"]:
-        content = doc['content']
-        aim_data = content.get('aim', {})
-        aim_id = aim_data.get('aim_id', '')
-        aim_desc = aim_data.get('aim_description', '')
-        aim_text = aim_data.get('aim_details', '')
-        
-        if (query_lower in aim_id.lower() or 
-            query_lower in aim_desc.lower() or 
-            query_lower in aim_text.lower()):
-            results.append({
-                'framework': 'rts',
-                'id': aim_id,
-                'title': aim_desc,
-                'relevance': 'high' if query_lower in aim_desc.lower() else 'medium'
-            })
-    
-    # Sort by relevance
-    results.sort(key=lambda x: x['relevance'], reverse=True)
     return results
 
 
-def answer_with_ai(question: str, client) -> tuple:
-    """Use Claude AI to answer a question about regulations"""
+def extract_document_ids_from_rts(rts_content: dict) -> List[tuple]:
+    """
+    Extract document IDs and titles from RTS document.
+    Returns list of (id, title) tuples
+    """
+    results = []
     
-    # Search for relevant documents
-    search_results = search_documents(question)
+    # RTS format: aim_id or requirement_id
+    aim = rts_content.get('aim', {})
+    if aim:
+        aim_id = aim.get('aim_id', 'Unknown')
+        aim_number = aim.get('aim_number', 'Unknown')
+        aim_title = aim.get('aim_title', 'Untitled')
+        # Use just the number for URL lookup
+        results.append((f"RTS Aim {aim_number}", aim_title))
+    
+    return results
+
+
+def format_regulation_with_link(framework: str, regulation_id: str, title: str) -> str:
+    """Format regulation as markdown link if URL exists, otherwise as plain text"""
+    url = get_regulation_url(framework, regulation_id)
+    
+    if url:
+        return f"🔗 [{framework} {regulation_id}: {title}]({url})"
+    else:
+        return f"📄 {framework} {regulation_id}: {title}"
+
+
+def search_documents(query: str, framework: Optional[str] = None) -> list:
+    """Search across documents"""
+    results = []
+    query_lower = query.lower()
+    
+    frameworks_to_search = [framework] if framework else ["lccp", "iso27001", "rts"]
+    
+    for fw in frameworks_to_search:
+        if fw not in st.session_state.documents:
+            continue
+            
+        for doc in st.session_state.documents[fw]:
+            content_str = json.dumps(doc["content"]).lower()
+            
+            if query_lower in content_str:
+                if fw == "iso27001":
+                    control = doc["content"].get("control", {})
+                    doc_id = control.get("control_id", "Unknown")
+                    doc_title = control.get("control_title", "Untitled")
+                    results.append({
+                        "framework": fw,
+                        "filename": doc["filename"],
+                        "title": doc_title,
+                        "id": doc_id,
+                        "content": doc["content"],
+                        "relevance": content_str.count(query_lower)
+                    })
+                elif fw == "lccp":
+                    # For LCCP, extract condition IDs from sections
+                    lccp_ids = extract_document_ids_from_lccp(doc["content"])
+                    for cond_id, cond_title in lccp_ids:
+                        results.append({
+                            "framework": fw,
+                            "filename": doc["filename"],
+                            "title": cond_title,
+                            "id": cond_id,
+                            "content": doc["content"],
+                            "relevance": content_str.count(query_lower)
+                        })
+                else:  # rts
+                    # For RTS, extract aim IDs
+                    rts_ids = extract_document_ids_from_rts(doc["content"])
+                    for rts_id, rts_title in rts_ids:
+                        results.append({
+                            "framework": fw,
+                            "filename": doc["filename"],
+                            "title": rts_title,
+                            "id": rts_id,
+                            "content": doc["content"],
+                            "relevance": content_str.count(query_lower)
+                        })
+    
+    results.sort(key=lambda x: x["relevance"], reverse=True)
+    return results[:20]
+
+
+def answer_with_ai(question: str, client: Any) -> tuple:
+    """Answer question using Claude AI with intelligent document selection"""
+    
+    # Build summary of all available documents
+    summary = "LCCP CONDITIONS:\n"
+    if st.session_state.documents.get('lccp'):
+        for doc in st.session_state.documents['lccp']:
+            lccp_ids = extract_document_ids_from_lccp(doc['content'])
+            for cond_id, cond_title in lccp_ids:
+                summary += f"  - LCCP {cond_id}: {cond_title}\n"
+    
+    summary += "\nRTS AIMS:\n"
+    if st.session_state.documents.get('rts'):
+        for doc in st.session_state.documents['rts']:
+            rts_ids = extract_document_ids_from_rts(doc['content'])
+            for rts_id, rts_title in rts_ids:
+                summary += f"  - {rts_id}: {rts_title}\n"
+    
+    summary += "\nISO 27001 CONTROLS:\n"
+    if st.session_state.documents.get('iso27001'):
+        for doc in st.session_state.documents['iso27001']:
+            control = doc['content'].get('control', {})
+            control_id = control.get('control_id', '')
+            control_title = control.get('control_title', '')
+            summary += f"  - ISO 27001 {control_id}: {control_title}\n"
+    
+    # Ask Claude to select relevant documents
+    selection_prompt = f"""You are an expert on UKGC regulations. A user has asked a compliance question.
+
+Here are all available regulatory documents:
+
+{summary}
+
+USER QUESTION: {question}
+
+Based on this question, identify which regulatory documents are MOST RELEVANT. Return ONLY a comma-separated list of the document IDs (like "LCCP 1.1.1", "RTS Aim 12", etc.) that would help answer this question. List 3-5 of the most relevant ones. Return ONLY the IDs, nothing else."""
+    
     relevant_docs = []
     
-    # Build context from search results
-    context = ""
-    if search_results:
-        context = "Relevant regulatory documents:\n\n"
-        for doc in search_results[:10]:
-            relevant_docs.append(doc)
-            content = None
+    try:
+        # Get Claude's selection
+        selection_response = client.messages.create(
+            model="claude-3-5-sonnet-20241022",
+            max_tokens=500,
+            messages=[
+                {"role": "user", "content": selection_prompt}
+            ]
+        )
+        
+        selected_ids_text = selection_response.content[0].text.strip()
+        selected_ids = [id.strip() for id in selected_ids_text.split(',')]
+        
+        # Find the actual documents matching these IDs
+        for fw in ["lccp", "rts", "iso27001"]:
+            if fw not in st.session_state.documents:
+                continue
             
-            # Get full document content
+            for doc in st.session_state.documents[fw]:
+                if fw == "lccp":
+                    lccp_ids = extract_document_ids_from_lccp(doc['content'])
+                    for cond_id, cond_title in lccp_ids:
+                        for sel_id in selected_ids:
+                            if cond_id in sel_id or sel_id in f"LCCP {cond_id}":
+                                relevant_docs.append({
+                                    "framework": fw,
+                                    "id": cond_id,
+                                    "title": cond_title,
+                                    "content": doc['content']
+                                })
+                
+                elif fw == "rts":
+                    rts_ids = extract_document_ids_from_rts(doc['content'])
+                    for rts_id, rts_title in rts_ids:
+                        for sel_id in selected_ids:
+                            if str(rts_id).lower() in sel_id.lower() or sel_id.lower() in str(rts_id).lower():
+                                relevant_docs.append({
+                                    "framework": fw,
+                                    "id": rts_id,
+                                    "title": rts_title,
+                                    "content": doc['content']
+                                })
+                
+                elif fw == "iso27001":
+                    control = doc['content'].get('control', {})
+                    control_id = control.get('control_id', '')
+                    control_title = control.get('control_title', '')
+                    for sel_id in selected_ids:
+                        if control_id and (control_id in sel_id or sel_id in control_id):
+                            relevant_docs.append({
+                                "framework": fw,
+                                "id": control_id,
+                                "title": control_title,
+                                "content": doc['content']
+                            })
+        
+        # Fallback: if no matches found, get first of each type
+        if not relevant_docs:
+            if st.session_state.documents.get('lccp'):
+                doc = st.session_state.documents['lccp'][0]
+                lccp_ids = extract_document_ids_from_lccp(doc['content'])
+                if lccp_ids:
+                    cond_id, cond_title = lccp_ids[0]
+                    relevant_docs.append({
+                        "framework": "lccp",
+                        "id": cond_id,
+                        "title": cond_title,
+                        "content": doc['content']
+                    })
+            
+            if st.session_state.documents.get('rts'):
+                doc = st.session_state.documents['rts'][0]
+                rts_ids = extract_document_ids_from_rts(doc['content'])
+                if rts_ids:
+                    rts_id, rts_title = rts_ids[0]
+                    relevant_docs.append({
+                        "framework": "rts",
+                        "id": rts_id,
+                        "title": rts_title,
+                        "content": doc['content']
+                    })
+            
+            if st.session_state.documents.get('iso27001'):
+                doc = st.session_state.documents['iso27001'][0]
+                control = doc['content'].get('control', {})
+                control_id = control.get('control_id', '')
+                control_title = control.get('control_title', '')
+                if control_id:
+                    relevant_docs.append({
+                        "framework": "iso27001",
+                        "id": control_id,
+                        "title": control_title,
+                        "content": doc['content']
+                    })
+    
+    except Exception as e:
+        st.warning(f"Issue selecting documents: {str(e)}")
+    
+    # Build context from selected documents
+    context = ""
+    if relevant_docs:
+        context = "Here are the relevant regulatory documents for this question:\n\n"
+        for i, doc in enumerate(relevant_docs[:5], 1):
+            context += f"{i}. **{doc['framework'].upper()} - {doc['id']}: {doc['title']}**\n"
+            
+            content = doc['content']
             if doc['framework'] == 'iso27001':
-                for d in st.session_state.documents['iso27001']:
-                    if d['content'].get('control', {}).get('control_id') == doc['id']:
-                        content = d['content'].get('control', {})
-                        break
-                if content:
-                    context += f"ISO 27001 {doc['id']}: {doc['title']}\n"
-                    context += f"   Objective: {content.get('control_objective', '')}\n"
-                    context += f"   Purpose: {content.get('control_purpose', '')}\n"
+                control = content.get("control", {})
+                if "control_purpose" in control:
+                    context += f"   Purpose: {control.get('control_purpose', '')}\n"
             elif doc['framework'] == 'lccp':
                 if "document_overview" in content:
                     context += f"   Overview: {content.get('document_overview', '')}\n"
@@ -520,11 +646,9 @@ with tab3:
                     regulation_link = format_regulation_with_link("RTS", rts_id, rts_title)
                     st.markdown(regulation_link)
 
-# ============ URL MAPPING STATUS - NO NESTED EXPANDERS ============
-st.divider()
-st.markdown("### 📋 URL Mapping Status")
-
+# ============ URL MAPPING STATUS ============
 if st.session_state.url_mapping:
+    st.markdown("### 📋 URL Mapping Status")
     mappings = st.session_state.url_mapping.get('mappings', {})
     
     lccp_urls = [k for k in mappings.keys() if k.startswith('LCCP_')]
@@ -538,7 +662,7 @@ if st.session_state.url_mapping:
     
     st.info("✅ URL mapping loaded successfully. Hyperlinks are active in search results and browse sections.")
     
-    # Debug expander - NOW AT TOP LEVEL, NOT NESTED
+    # Debug info for troubleshooting - NOW AT TOP LEVEL
     with st.expander("🔍 Debug: Sample URL Mappings"):
         st.write("**Sample LCCP URLs:**")
         for key in lccp_urls[:5]:
