@@ -180,7 +180,7 @@ def extract_document_ids_from_lccp(content: Dict) -> List[tuple]:
     """Extract LCCP condition IDs and titles"""
     ids = []
     
-    # Handle direct conditions array (for some LCCP files)
+    # Handle direct conditions array at top level
     if "conditions" in content and isinstance(content["conditions"], list):
         for condition in content["conditions"]:
             if isinstance(condition, dict):
@@ -189,18 +189,29 @@ def extract_document_ids_from_lccp(content: Dict) -> List[tuple]:
                 if condition_id and condition_title:
                     ids.append((condition_id, condition_title))
     
-    # Handle sections/subsections/provisions structure (for Code of Practice files)
+    # Handle sections/conditions structure (Operating Licence Conditions file)
     if "sections" in content and isinstance(content["sections"], list):
         for section in content["sections"]:
-            if isinstance(section, dict) and "subsections" in section:
-                for subsection in section["subsections"]:
-                    if isinstance(subsection, dict) and "provisions" in subsection:
-                        for provision in subsection["provisions"]:
-                            if isinstance(provision, dict):
-                                provision_id = provision.get('provision_id', '')
-                                provision_title = provision.get('provision_title', '')
-                                if provision_id and provision_title:
-                                    ids.append((provision_id, provision_title))
+            if isinstance(section, dict):
+                # Check for conditions directly under section
+                if "conditions" in section and isinstance(section["conditions"], list):
+                    for condition in section["conditions"]:
+                        if isinstance(condition, dict):
+                            condition_id = condition.get('condition_id', '')
+                            condition_title = condition.get('condition_title', '')
+                            if condition_id and condition_title:
+                                ids.append((condition_id, condition_title))
+                
+                # Check for subsections/provisions structure (Code of Practice files)
+                if "subsections" in section:
+                    for subsection in section["subsections"]:
+                        if isinstance(subsection, dict) and "provisions" in subsection:
+                            for provision in subsection["provisions"]:
+                                if isinstance(provision, dict):
+                                    provision_id = provision.get('provision_id', '')
+                                    provision_title = provision.get('provision_title', '')
+                                    if provision_id and provision_title:
+                                        ids.append((provision_id, provision_title))
     
     return ids
 
