@@ -146,9 +146,10 @@ def get_regulation_url(framework: str, regulation_id: str) -> Optional[str]:
                 regulation_id,
             ])
     elif fw_upper == "LCCP":
+        # For LCCP, try with underscore first (e.g., LCCP_1.1.1), then without
         lookup_attempts.extend([
-            f"LCCP_{regulation_id}",
-            regulation_id,
+            f"LCCP_{regulation_id}",  # LCCP_1.1.1 format
+            regulation_id,             # Original format
         ])
     else:
         lookup_attempts.extend([
@@ -156,6 +157,7 @@ def get_regulation_url(framework: str, regulation_id: str) -> Optional[str]:
             regulation_id,
         ])
     
+    # Try each lookup attempt
     for lookup_key in lookup_attempts:
         if lookup_key in mappings:
             url = mappings[lookup_key].get('url')
