@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 import os
+import re
 from pathlib import Path
 from anthropic import Anthropic
 
@@ -416,21 +417,69 @@ with tab4:
         
         for doc in st.session_state.documents["rts"]:
             doc_data = doc["data"]
-            
-            # Extract chapter number
             filename = doc["filename"]
-            parts = filename.replace(".json", "").split("-")
-            chapter_id = parts[-1] if parts[-1].isdigit() else "Unknown"
             
-            title = doc_data.get("title", f"RTS Chapter {chapter_id}")
-            description = doc_data.get("description", "")
+            # FIXED: Extract chapter number correctly from filename
+            # Example: rts-01-customer-account-information.json → chapter_id = "01"
+            chapter_match = re.search(r'rts-(\d+)', filename, re.IGNORECASE)
+            chapter_id = chapter_match.group(1) if chapter_match else "Unknown"
             
-            with st.expander(f"**RTS-{chapter_id}: {title}**"):
-                if description:
-                    st.write(description)
+            # Get aim information from the data structure
+            aim = doc_data.get("aim", {})
+            aim_title = aim.get("aim_title", f"RTS Chapter {chapter_id}")
+            aim_description = aim.get("aim_description", "")
+            
+            # Create main expander for this RTS chapter
+            with st.expander(f"**RTS-{chapter_id}: {aim_title}**", expanded=False):
+                # Display aim description
+                if aim_description:
+                    st.markdown("**Aim:**")
+                    st.write(aim_description)
                 
-                regulation_link = format_regulation_with_link("RTS", chapter_id, title)
-                st.markdown(regulation_link)
+                # Display the UKGC hyperlink for this RTS section
+                regulation_link = format_regulation_with_link("RTS", chapter_id, aim_title)
+                st.markdown(f"**Official Documentation:** {regulation_link}")
+                
+                st.divider()
+                
+                # Display all requirements under this aim
+                if "requirements" in doc_data and doc_data["requirements"]:
+                    st.markdown("**Requirements:**")
+                    
+                    for req in doc_data["requirements"]:
+                        req_id = req.get("requirement_id", "Unknown")
+                        req_title = req.get("title", "")
+                        req_type = req.get("requirement_type", "")
+                        
+                        # Create sub-expander for each requirement
+                        req_expander_label = f"**{req_id}**: {req_title} ({req_type})"
+                        with st.expander(req_expander_label, expanded=False):
+                            # Display requirement full text
+                            full_text = req.get("full_text", "")
+                            if full_text:
+                                st.markdown("**Requirement:**")
+                                st.write(full_text)
+                            
+                            # Display implementation guidance if available
+                            impl_guidance = req.get("implementation_guidance", {})
+                            if impl_guidance:
+                                st.markdown("**Implementation Guidance:**")
+                                
+                                # Display key points if available
+                                key_points = impl_guidance.get("key_points", [])
+                                if key_points:
+                                    st.markdown("*Key Points:*")
+                                    for point in key_points:
+                                        st.write(f"- {point}")
+                                
+                                # Display any structured guidance
+                                guidance_text = impl_guidance.get("full_text", "")
+                                if guidance_text:
+                                    st.write(guidance_text)
+                else:
+                    st.info("No requirements found for this RTS section.")
+            
+            st.divider()
 
 # Sidebar
 with st.sidebar:
