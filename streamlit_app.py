@@ -347,8 +347,8 @@ with tab4:
                 prefix = "CoP"
                 file_type = "📝 Code of Practice (CoP)"
             elif "personal" in filename.lower():
-                prefix = "PLC"
-                file_type = "👤 Personal Licence Conditions (PLC)"
+                # Skip Personal Licence Conditions for now
+                continue
             else:
                 prefix = "OLC"
                 file_type = "Licence Conditions"
