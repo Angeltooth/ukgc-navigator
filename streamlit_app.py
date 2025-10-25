@@ -397,20 +397,50 @@ with tab4:
     elif browse_option == "ISO 27001" and st.session_state.documents["iso27001"]:
         st.markdown("### ISO 27001 - Information Security Management")
         
-        for doc in st.session_state.documents["iso27001"]:
+        # Sort ISO 27001 documents by control number (A.5.1, A.5.2, A.8.1, etc.)
+        def get_iso_control_number(doc):
+            """Extract control number for sorting (e.g., 5.1 from A 5.1)"""
+            doc_data = doc["data"]
+            control = doc_data.get("control", {})
+            control_number = control.get("control_number", "")
+            # Parse "A 5.35" to (5, 35) for sorting
+            if "A " in control_number:
+                parts = control_number.replace("A ", "").split(".")
+                try:
+                    return (int(parts[0]), int(parts[1]) if len(parts) > 1 else 0)
+                except (ValueError, IndexError):
+                    return (999, 999)
+            return (999, 999)
+        
+        sorted_iso_docs = sorted(st.session_state.documents["iso27001"], key=get_iso_control_number)
+        
+        for doc in sorted_iso_docs:
             doc_data = doc["data"]
             
-            if "control_id" in doc_data:
-                control_id = doc_data["control_id"]
-                control_title = doc_data.get("control_title", "")
-                description = doc_data.get("description", "")
+            if "control" in doc_data:
+                control = doc_data["control"]
+                control_id = control.get("control_id", "")
+                control_number = control.get("control_number", "")
+                control_title = control.get("control_title", "")
+                control_category = doc_data.get("control_category", "")
                 
-                with st.expander(f"**{control_id}: {control_title}**"):
-                    if description:
-                        st.write(description)
+                with st.expander(f"**{control_number}: {control_title}**", expanded=False):
+                    # Display control category
+                    if control_category:
+                        st.markdown(f"**Category:** {control_category}")
                     
-                    regulation_link = format_regulation_with_link("ISO27001", control_id, control_title)
-                    st.markdown(regulation_link)
+                    # Display control purpose
+                    control_purpose = control.get("control_purpose", "")
+                    if control_purpose:
+                        st.markdown(f"**Purpose:** {control_purpose}")
+                    
+                    # Display key requirements if available
+                    iso_def = doc_data.get("iso_27001_definition", {})
+                    key_reqs = iso_def.get("key_requirements", [])
+                    if key_reqs:
+                        st.markdown("**Key Requirements:**")
+                        for req in key_reqs:
+                            st.write(f"• {req}")
     
     elif browse_option == "RTS" and st.session_state.documents["rts"]:
         st.markdown("### RTS - Remote Technical Standards")
