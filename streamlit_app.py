@@ -415,7 +415,18 @@ with tab4:
     elif browse_option == "RTS" and st.session_state.documents["rts"]:
         st.markdown("### RTS - Remote Technical Standards")
         
-        for doc in st.session_state.documents["rts"]:
+        # Sort RTS documents by chapter number
+        def get_rts_chapter_number(doc):
+            """Extract chapter number for sorting"""
+            filename = doc["filename"]
+            chapter_match = re.search(r'rts-(\d+)', filename, re.IGNORECASE)
+            if chapter_match:
+                return int(chapter_match.group(1))
+            return 999  # Put unsorted items at the end
+        
+        sorted_rts_docs = sorted(st.session_state.documents["rts"], key=get_rts_chapter_number)
+        
+        for doc in sorted_rts_docs:
             doc_data = doc["data"]
             filename = doc["filename"]
             
