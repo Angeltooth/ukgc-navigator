@@ -460,6 +460,10 @@ with tab4:
             doc_data = doc["data"]
             filename = doc["filename"]
             
+            # Skip chapter-4 security requirements for now
+            if "chapter-4" in filename.lower():
+                continue
+            
             # FIXED: Extract chapter number correctly from filename
             # Example: rts-01-customer-account-information.json → chapter_id = "01"
             chapter_match = re.search(r'rts-(\d+)', filename, re.IGNORECASE)
