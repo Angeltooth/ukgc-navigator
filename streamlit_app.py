@@ -4,6 +4,7 @@ import os
 import re
 from pathlib import Path
 from anthropic import Anthropic
+from cross_framework_index import build_framework_context, get_enhanced_system_prompt
 
 # Page configuration
 st.set_page_config(
@@ -201,29 +202,16 @@ with tab2:
                     "content": user_question
                 })
                 
-                # Prepare context from documents
-                doc_context = "Available LCCP provisions:\n"
-                for doc in st.session_state.documents["lccp"]:
-                    doc_context += f"- {doc['filename']}\n"
-                
-                doc_context += "\nAvailable ISO 27001 controls:\n"
-                for doc in st.session_state.documents["iso27001"]:
-                    doc_context += f"- {doc['filename']}\n"
-                
-                doc_context += "\nAvailable RTS standards:\n"
-                for doc in st.session_state.documents["rts"]:
-                    doc_context += f"- {doc['filename']}\n"
+                # Build rich framework context
+                framework_context = build_framework_context(st.session_state.documents)
+                system_prompt = get_enhanced_system_prompt(framework_context)
                 
                 # Get response from Claude
                 try:
                     response = client.messages.create(
                         model="claude-3-5-sonnet-20241022",
                         max_tokens=2000,
-                        system=f"""You are an expert in UK gambling regulation, specifically LCCP (Licence Conditions and Codes of Practice), ISO 27001 (Information Security), and RTS (Remote Technical Standards).
-
-{doc_context}
-
-Provide accurate, cited answers to gambling compliance questions. Reference specific provisions and standards when applicable.""",
+                        system=system_prompt,
                         messages=st.session_state.conversation_history
                     )
                     
