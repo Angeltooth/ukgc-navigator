@@ -132,7 +132,7 @@ with col1:
 with col2:
     st.metric("ISO 27001 Controls", len(st.session_state.documents["iso27001"]))
 with col3:
-    st.metric("RTS Chapters", len(st.session_state.documents["rts"]))
+    st.metric("RTS Chapters", len([d for d in st.session_state.documents["rts"] if "chapter-4" not in d["filename"].lower()]))
 with col4:
     st.metric("URL Mappings", len(st.session_state.url_mapping.get("mappings", {})))
 
