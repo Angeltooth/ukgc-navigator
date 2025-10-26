@@ -31,7 +31,7 @@ if "url_mapping" not in st.session_state:
 
 # Initialize Anthropic client
 
-client = Anthropic(api_key=st.secrets.get("ANTHROPIC_API_KEY"))
+# client = Anthropic(api_key=st.secrets.get("ANTHROPIC_API_KEY"))
 
 # Helper function to load JSON files
 def load_json_file(filepath):
