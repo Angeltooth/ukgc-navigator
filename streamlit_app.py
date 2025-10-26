@@ -1,684 +1,559 @@
-"""
-UKGC Regulatory Framework - Streamlit Web Interface
-Multi-framework compliance querying and guidance
-WITH CLAUDE AI - Natural language question answering
-WITH HYPERLINKS - URL mapping for clickable regulations
-FIXED - Proper document ID and URL mapping matching
-"""
-
 import streamlit as st
 import json
 import os
 import re
 from pathlib import Path
-from typing import Optional, Dict, List, Any
-from dotenv import load_dotenv
 from anthropic import Anthropic
-
-# Load environment variables from .env file
-load_dotenv()
-
-# Initialize Anthropic client
-def get_anthropic_client():
-    """Get Anthropic client"""
-    api_key = os.getenv("ANTHROPIC_API_KEY")
-    if not api_key:
-        return None
-    return Anthropic()
+from cross_framework_index import build_framework_context, get_enhanced_system_prompt
 
 # Page configuration
 st.set_page_config(
-    page_title="UKGC Regulatory Framework",
+    page_title="🎲 UKGC Regulatory Framework Navigator",
     page_icon="🎲",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
-st.markdown("""
-<style>
-    .main {
-        padding: 2rem;
-    }
-    .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-        font-size: 1.1rem;
-        font-weight: 600;
-    }
-    .framework-lccp { color: #1f77b4; }
-    .framework-iso { color: #ff7f0e; }
-    .framework-rts { color: #2ca02c; }
-    .regulation-link {
-        color: #0066cc;
-        text-decoration: none;
-        font-weight: 600;
-    }
-    .regulation-link:hover {
-        text-decoration: underline;
-    }
-</style>
-""", unsafe_allow_html=True)
+# Initialize session state
+if "conversation_history" not in st.session_state:
+    st.session_state.conversation_history = []
 
-
-def load_documents():
-    """Load all regulatory documents from JSON files"""
-    # Use relative path for Streamlit Cloud compatibility
-    base_path = Path(__file__).parent / "JSON Files"
-    documents = {
+if "documents" not in st.session_state:
+    st.session_state.documents = {
         "lccp": [],
         "iso27001": [],
-        "rts": [],
-        "indexes": {}
+        "rts": []
     }
-    
-    if not base_path.exists():
-        st.error(f"❌ Base path not found: {base_path}")
-        st.info("Please ensure your project folder exists at: ~/UKGC_Project/JSON Files")
-        return documents
-    
+
+if "url_mapping" not in st.session_state:
+    st.session_state.url_mapping = {}
+
+ #Initialize Anthropic client
+#@st.cache_resource
+def init_client():
+    return Anthropic(api_key=st.secrets.get("ANTHROPIC_API_KEY"))
+
+client = init_client()
+
+# Helper function to load JSON files
+def load_json_file(filepath):
+    """Load and parse a JSON file"""
     try:
-        # Load LCCP documents
-        lccp_path = base_path / "lccp"
-        if lccp_path.exists():
-            for file in lccp_path.glob("*.json"):
-                try:
-                    with open(file, encoding='utf-8') as f:
-                        documents["lccp"].append({
-                            "filename": file.name,
-                            "content": json.load(f)
-                        })
-                except json.JSONDecodeError as e:
-                    st.warning(f"Invalid JSON in {file.name}: {str(e)}")
-                except Exception as e:
-                    st.warning(f"Error loading LCCP {file.name}: {str(e)}")
-        
-        # Load ISO 27001 documents
-        iso_path = base_path / "iso-27001"
-        if iso_path.exists():
-            for file in iso_path.glob("*.json"):
-                try:
-                    with open(file, encoding='utf-8') as f:
-                        documents["iso27001"].append({
-                            "filename": file.name,
-                            "content": json.load(f)
-                        })
-                except json.JSONDecodeError as e:
-                    st.warning(f"Invalid JSON in {file.name}: {str(e)}")
-                except Exception as e:
-                    st.warning(f"Error loading ISO27001 {file.name}: {str(e)}")
-        
-        # Load RTS documents
-        rts_path = base_path / "rts"
-        if rts_path.exists():
-            for file in rts_path.glob("*.json"):
-                try:
-                    with open(file, encoding='utf-8') as f:
-                        documents["rts"].append({
-                            "filename": file.name,
-                            "content": json.load(f)
-                        })
-                except json.JSONDecodeError as e:
-                    st.warning(f"Invalid JSON in {file.name}: {str(e)}")
-                except Exception as e:
-                    st.warning(f"Error loading RTS {file.name}: {str(e)}")
-        
-        # Load index documents
-        index_path = base_path / "index"
-        if index_path.exists():
-            for file in index_path.glob("*.json"):
-                try:
-                    with open(file, encoding='utf-8') as f:
-                        documents["indexes"][file.stem] = json.load(f)
-                except json.JSONDecodeError as e:
-                    st.warning(f"Invalid JSON in {file.name}: {str(e)}")
-                except Exception as e:
-                    st.warning(f"Error loading index {file.name}: {str(e)}")
-    
-    except Exception as e:
-        st.error(f"Error loading documents: {str(e)}")
-    
-    return documents
-
-
-def load_url_mapping():
-    """Load URL mapping for hyperlinks"""
-    base_path = Path(__file__).parent / "JSON Files"
-    url_mapping_path = base_path / "index" / "url_mapping.json"
-    
-    if url_mapping_path.exists():
-        try:
-            with open(url_mapping_path, encoding='utf-8') as f:
-                return json.load(f)
-        except json.JSONDecodeError as e:
-            st.warning(f"Invalid JSON in url_mapping.json: {str(e)}")
-            return None
-        except Exception as e:
-            st.warning(f"Error loading url_mapping.json: {str(e)}")
-            return None
-    else:
-        st.warning(f"url_mapping.json not found at {url_mapping_path}")
+        with open(filepath, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        st.warning(f"Could not load {filepath}: {e}")
         return None
 
-
-def get_regulation_url(framework: str, regulation_id: str) -> Optional[str]:
-    """
-    Get URL for a regulation from the URL mapping.
-    Handles various document ID formats and frameworks.
-    """
+# Helper function to get regulation URL
+def get_regulation_url(framework: str, doc_id: str) -> str:
+    """Get URL for a regulation from the mapping"""
     if not st.session_state.url_mapping:
         return None
     
-    mappings = st.session_state.url_mapping.get('mappings', {})
-    if not mappings:
-        return None
+    # Build the lookup key based on framework and doc_id
+    lookup_key = f"{framework}_{doc_id}"
     
-    # Normalize framework name
-    fw_upper = framework.upper().replace(" ", "").strip()
-    
-    # Build lookup attempts - prioritize most specific formats
-    lookup_attempts = []
-    
-    # For RTS: "RTS Aim 12" or "RTS_AIM_12" should lookup "RTS_12"
-    if fw_upper == "RTS":
-        # Extract number from formats like "RTS Aim 12", "RTS_AIM_12", "RTS_12A", etc
-        match = re.search(r'(\d+)', regulation_id)
-        if match:
-            aim_number = match.group(1)
-            # Try common RTS formats
-            lookup_attempts.extend([
-                f"RTS_{aim_number.zfill(2)}",  # RTS_12
-                f"RTS_{aim_number}",            # RTS_12 (without zero-padding)
-                regulation_id,                  # Original ID
-            ])
-    
-    # For LCCP: use format like "LCCP_1.1.1"
-    elif fw_upper == "LCCP":
-        lookup_attempts.extend([
-            f"LCCP_{regulation_id}",  # LCCP_1.1.1
-            regulation_id,             # Original ID
-        ])
-    
-    # General fallback
-    else:
-        lookup_attempts.extend([
-            f"{fw_upper}_{regulation_id}",
-            regulation_id,
-        ])
-    
-    # Try each lookup attempt
-    for lookup_key in lookup_attempts:
-        if lookup_key in mappings:
-            url = mappings[lookup_key].get('url')
-            if url:
-                return url
+    if lookup_key in st.session_state.url_mapping.get("mappings", {}):
+        return st.session_state.url_mapping["mappings"][lookup_key].get("url", "")
     
     return None
 
-
-def extract_document_ids_from_lccp(lccp_content: dict) -> List[tuple]:
-    """
-    Extract document IDs and titles from LCCP document.
-    Returns list of (id, title) tuples
-    """
-    results = []
-    
-    # Navigate through sections and conditions
-    if 'sections' in lccp_content:
-        for section in lccp_content['sections']:
-            if 'conditions' in section:
-                for condition in section['conditions']:
-                    condition_id = condition.get('condition_id', 'Unknown')
-                    condition_title = condition.get('condition_title', 'Untitled')
-                    results.append((condition_id, condition_title))
-    
-    return results
-
-
-def extract_document_ids_from_rts(rts_content: dict) -> List[tuple]:
-    """
-    Extract document IDs and titles from RTS document.
-    Returns list of (id, title) tuples
-    """
-    results = []
-    
-    # RTS format: aim_id or requirement_id
-    aim = rts_content.get('aim', {})
-    if aim:
-        aim_id = aim.get('aim_id', 'Unknown')
-        aim_number = aim.get('aim_number', 'Unknown')
-        aim_title = aim.get('aim_title', 'Untitled')
-        # Use just the number for URL lookup
-        results.append((f"RTS Aim {aim_number}", aim_title))
-    
-    return results
-
-
-def format_regulation_with_link(framework: str, regulation_id: str, title: str) -> str:
-    """Format regulation as markdown link if URL exists, otherwise as plain text"""
-    url = get_regulation_url(framework, regulation_id)
-    
+# Helper function to format regulation as a clickable link
+def format_regulation_with_link(framework: str, doc_id: str, title: str) -> str:
+    """Format a regulation as a clickable markdown link"""
+    url = get_regulation_url(framework, doc_id)
     if url:
-        return f"🔗 [{framework} {regulation_id}: {title}]({url})"
+        return f"📎 [{framework} {doc_id}: {title}]({url})"
     else:
-        return f"📄 {framework} {regulation_id}: {title}"
+        return f"📋 {framework} {doc_id}: {title}"
 
-
-def search_documents(query: str, framework: Optional[str] = None) -> list:
-    """Search across documents"""
-    results = []
-    query_lower = query.lower()
+# Load data files on app startup
+#@st.cache_resource
+def load_all_data():
+    """Load all JSON files from the JSON Files directory"""
+    base_path = Path("JSON Files")
     
-    frameworks_to_search = [framework] if framework else ["lccp", "iso27001", "rts"]
+    documents = {
+        "lccp": [],
+        "iso27001": [],
+        "rts": []
+    }
     
-    for fw in frameworks_to_search:
-        if fw not in st.session_state.documents:
-            continue
-            
-        for doc in st.session_state.documents[fw]:
-            content_str = json.dumps(doc["content"]).lower()
-            
-            if query_lower in content_str:
-                if fw == "iso27001":
-                    control = doc["content"].get("control", {})
-                    doc_id = control.get("control_id", "Unknown")
-                    doc_title = control.get("control_title", "Untitled")
-                    results.append({
-                        "framework": fw,
-                        "filename": doc["filename"],
-                        "title": doc_title,
-                        "id": doc_id,
-                        "content": doc["content"],
-                        "relevance": content_str.count(query_lower)
-                    })
-                elif fw == "lccp":
-                    # For LCCP, extract condition IDs from sections
-                    lccp_ids = extract_document_ids_from_lccp(doc["content"])
-                    for cond_id, cond_title in lccp_ids:
-                        results.append({
-                            "framework": fw,
-                            "filename": doc["filename"],
-                            "title": cond_title,
-                            "id": cond_id,
-                            "content": doc["content"],
-                            "relevance": content_str.count(query_lower)
-                        })
-                else:  # rts
-                    # For RTS, extract aim IDs
-                    rts_ids = extract_document_ids_from_rts(doc["content"])
-                    for rts_id, rts_title in rts_ids:
-                        results.append({
-                            "framework": fw,
-                            "filename": doc["filename"],
-                            "title": rts_title,
-                            "id": rts_id,
-                            "content": doc["content"],
-                            "relevance": content_str.count(query_lower)
-                        })
+    # Load LCCP files
+    lccp_path = base_path / "lccp"
+    if lccp_path.exists():
+        for file in lccp_path.glob("*.json"):
+            data = load_json_file(file)
+            if data:
+                documents["lccp"].append({
+                    "filename": file.name,
+                    "data": data
+                })
     
-    results.sort(key=lambda x: x["relevance"], reverse=True)
-    return results[:20]
-
-
-def answer_with_ai(question: str, client: Any) -> tuple:
-    """Answer question using Claude AI with intelligent document selection"""
+    # Load ISO 27001 files
+    iso_path = base_path / "iso-27001"
+    if iso_path.exists():
+        for file in iso_path.glob("*.json"):
+            data = load_json_file(file)
+            if data:
+                documents["iso27001"].append({
+                    "filename": file.name,
+                    "data": data
+                })
     
-    # Build summary of all available documents
-    summary = "LCCP CONDITIONS:\n"
-    if st.session_state.documents.get('lccp'):
-        for doc in st.session_state.documents['lccp']:
-            lccp_ids = extract_document_ids_from_lccp(doc['content'])
-            for cond_id, cond_title in lccp_ids:
-                summary += f"  - LCCP {cond_id}: {cond_title}\n"
+    # Load RTS files
+    rts_path = base_path / "rts"
+    if rts_path.exists():
+        for file in rts_path.glob("*.json"):
+            data = load_json_file(file)
+            if data:
+                documents["rts"].append({
+                    "filename": file.name,
+                    "data": data
+                })
     
-    summary += "\nRTS AIMS:\n"
-    if st.session_state.documents.get('rts'):
-        for doc in st.session_state.documents['rts']:
-            rts_ids = extract_document_ids_from_rts(doc['content'])
-            for rts_id, rts_title in rts_ids:
-                summary += f"  - {rts_id}: {rts_title}\n"
+    # Load URL mapping
+    url_mapping_path = base_path / "index" / "url_mapping.json"
+    url_mapping = {}
+    if url_mapping_path.exists():
+        url_mapping = load_json_file(url_mapping_path) or {}
     
-    summary += "\nISO 27001 CONTROLS:\n"
-    if st.session_state.documents.get('iso27001'):
-        for doc in st.session_state.documents['iso27001']:
-            control = doc['content'].get('control', {})
-            control_id = control.get('control_id', '')
-            control_title = control.get('control_title', '')
-            summary += f"  - ISO 27001 {control_id}: {control_title}\n"
-    
-    # Ask Claude to select relevant documents
-    selection_prompt = f"""You are an expert on UKGC regulations. A user has asked a compliance question.
+    return documents, url_mapping
 
-Here are all available regulatory documents:
-
-{summary}
-
-USER QUESTION: {question}
-
-Based on this question, identify which regulatory documents are MOST RELEVANT. Return ONLY a comma-separated list of the document IDs (like "LCCP 1.1.1", "RTS Aim 12", etc.) that would help answer this question. List 3-5 of the most relevant ones. Return ONLY the IDs, nothing else."""
-    
-    relevant_docs = []
-    
-    try:
-        # Get Claude's selection
-        selection_response = client.messages.create(
-            model="claude-3-5-sonnet-20241022",
-            max_tokens=500,
-            messages=[
-                {"role": "user", "content": selection_prompt}
-            ]
-        )
-        
-        selected_ids_text = selection_response.content[0].text.strip()
-        selected_ids = [id.strip() for id in selected_ids_text.split(',')]
-        
-        # Find the actual documents matching these IDs
-        for fw in ["lccp", "rts", "iso27001"]:
-            if fw not in st.session_state.documents:
-                continue
-            
-            for doc in st.session_state.documents[fw]:
-                if fw == "lccp":
-                    lccp_ids = extract_document_ids_from_lccp(doc['content'])
-                    for cond_id, cond_title in lccp_ids:
-                        for sel_id in selected_ids:
-                            if cond_id in sel_id or sel_id in f"LCCP {cond_id}":
-                                relevant_docs.append({
-                                    "framework": fw,
-                                    "id": cond_id,
-                                    "title": cond_title,
-                                    "content": doc['content']
-                                })
-                
-                elif fw == "rts":
-                    rts_ids = extract_document_ids_from_rts(doc['content'])
-                    for rts_id, rts_title in rts_ids:
-                        for sel_id in selected_ids:
-                            if str(rts_id).lower() in sel_id.lower() or sel_id.lower() in str(rts_id).lower():
-                                relevant_docs.append({
-                                    "framework": fw,
-                                    "id": rts_id,
-                                    "title": rts_title,
-                                    "content": doc['content']
-                                })
-                
-                elif fw == "iso27001":
-                    control = doc['content'].get('control', {})
-                    control_id = control.get('control_id', '')
-                    control_title = control.get('control_title', '')
-                    for sel_id in selected_ids:
-                        if control_id and (control_id in sel_id or sel_id in control_id):
-                            relevant_docs.append({
-                                "framework": fw,
-                                "id": control_id,
-                                "title": control_title,
-                                "content": doc['content']
-                            })
-        
-        # Fallback: if no matches found, get first of each type
-        if not relevant_docs:
-            if st.session_state.documents.get('lccp'):
-                doc = st.session_state.documents['lccp'][0]
-                lccp_ids = extract_document_ids_from_lccp(doc['content'])
-                if lccp_ids:
-                    cond_id, cond_title = lccp_ids[0]
-                    relevant_docs.append({
-                        "framework": "lccp",
-                        "id": cond_id,
-                        "title": cond_title,
-                        "content": doc['content']
-                    })
-            
-            if st.session_state.documents.get('rts'):
-                doc = st.session_state.documents['rts'][0]
-                rts_ids = extract_document_ids_from_rts(doc['content'])
-                if rts_ids:
-                    rts_id, rts_title = rts_ids[0]
-                    relevant_docs.append({
-                        "framework": "rts",
-                        "id": rts_id,
-                        "title": rts_title,
-                        "content": doc['content']
-                    })
-            
-            if st.session_state.documents.get('iso27001'):
-                doc = st.session_state.documents['iso27001'][0]
-                control = doc['content'].get('control', {})
-                control_id = control.get('control_id', '')
-                control_title = control.get('control_title', '')
-                if control_id:
-                    relevant_docs.append({
-                        "framework": "iso27001",
-                        "id": control_id,
-                        "title": control_title,
-                        "content": doc['content']
-                    })
-    
-    except Exception as e:
-        st.warning(f"Issue selecting documents: {str(e)}")
-    
-    # Build context from selected documents
-    context = ""
-    if relevant_docs:
-        context = "Here are the relevant regulatory documents for this question:\n\n"
-        for i, doc in enumerate(relevant_docs[:5], 1):
-            context += f"{i}. **{doc['framework'].upper()} - {doc['id']}: {doc['title']}**\n"
-            
-            content = doc['content']
-            if doc['framework'] == 'iso27001':
-                control = content.get("control", {})
-                if "control_purpose" in control:
-                    context += f"   Purpose: {control.get('control_purpose', '')}\n"
-            elif doc['framework'] == 'lccp':
-                if "document_overview" in content:
-                    context += f"   Overview: {content.get('document_overview', '')}\n"
-            elif doc['framework'] == 'rts':
-                if "aim" in content:
-                    aim_desc = content.get('aim', {}).get('aim_description', '')
-                    context += f"   Description: {aim_desc}\n"
-            context += "\n"
-    else:
-        context = "Available regulatory frameworks: LCCP (Licence Conditions), RTS (Remote Technical Standards), ISO 27001 (Security)."
-    
-    system_prompt = """You are an expert on UK Gambling Commission (UKGC) regulations. 
-You help operators understand compliance requirements across three frameworks:
-1. LCCP (Licence Conditions and Codes of Practice) - Business requirements
-2. ISO 27001 - Information security implementation  
-3. RTS (Remote Technical Standards) - Gambling-specific technical specifications
-
-When answering questions, cite specific regulatory provisions and explain what operators need to do.
-Be clear, practical, and focused on compliance requirements."""
-    
-    user_prompt = f"""Based on the following regulatory documents, please answer this question:
-
-QUESTION: {question}
-
-REGULATORY CONTEXT:
-{context}
-
-Please provide:
-1. A direct answer to the question
-2. Which frameworks this relates to (LCCP, ISO 27001, RTS)
-3. Specific provisions or requirements to follow
-4. Any practical steps the operator should take"""
-    
-    try:
-        response = client.messages.create(
-            model="claude-3-5-sonnet-20241022",
-            max_tokens=2048,
-            system=system_prompt,
-            messages=[
-                {"role": "user", "content": user_prompt}
-            ]
-        )
-        
-        return response.content[0].text, relevant_docs
-    except Exception as e:
-        return f"Error generating answer: {str(e)}", relevant_docs
-
-
-# Initialize session state
-if "documents" not in st.session_state:
-    st.session_state.documents = load_documents()
-
-if "url_mapping" not in st.session_state:
-    st.session_state.url_mapping = load_url_mapping()
+# Load data
+documents, url_mapping = load_all_data()
+st.session_state.documents = documents
+st.session_state.url_mapping = url_mapping
 
 # Header
 st.title("🎲 UKGC Regulatory Framework Navigator")
-st.markdown("AI-Powered Compliance Tool with Hyperlinks to Official Regulations")
+st.markdown("Integrated compliance tool for LCCP, ISO 27001, and RTS frameworks")
 
-# Check for API key
-client = get_anthropic_client()
-if not client:
-    st.warning("⚠️ To enable AI answers, create ~/.env file with: ANTHROPIC_API_KEY=your_key")
-else:
-    st.success("✅ AI-powered natural language queries enabled!")
+# Metrics
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.metric("LCCP Documents", len(st.session_state.documents["lccp"]))
+with col2:
+    st.metric("ISO 27001 Controls", len(st.session_state.documents["iso27001"]))
+with col3:
+    st.metric("RTS Chapters", len([d for d in st.session_state.documents["rts"] if "chapter-4" not in d["filename"].lower()]))
+with col4:
+    st.metric("URL Mappings", len(st.session_state.url_mapping.get("mappings", {})))
 
-# Show stats
-total_docs = (len(st.session_state.documents['lccp']) + 
-              len(st.session_state.documents['iso27001']) + 
-              len(st.session_state.documents['rts']))
+st.divider()
 
-if total_docs > 0:
-    col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        st.metric("LCCP", len(st.session_state.documents['lccp']))
-    with col2:
-        st.metric("ISO 27001", len(st.session_state.documents['iso27001']))
-    with col3:
-        st.metric("RTS", len(st.session_state.documents['rts']))
-    with col4:
-        url_count = len([k for k in st.session_state.url_mapping.get('mappings', {}).keys()]) if st.session_state.url_mapping else 0
-        st.metric("URLs Mapped", url_count)
+# Main tabs
+tab1, tab2, tab3, tab4 = st.tabs(["📊 Dashboard", "❓ Ask a Question", "🔍 Keyword Search", "📚 Browse"])
 
-# Tabs
-tab1, tab2, tab3 = st.tabs(["🤖 Ask a Question", "🔍 Keyword Search", "📚 Browse"])
-
-# ============ TAB 1: AI Q&A ============
+# Tab 1: Dashboard
 with tab1:
-    st.subheader("Ask a Compliance Question")
+    st.subheader("Framework Overview")
     
-    if not client:
-        st.error("AI features not available. Please set ANTHROPIC_API_KEY in ~/.env file")
-        st.info("Example questions:\n- How do I prevent underage gambling?\n- What are customer fund protection requirements?\n- How should I implement secure authentication?")
-    else:
-        st.write("Examples:\n- How do I prevent underage gambling?\n- What are my customer fund protection obligations?\n- How should I implement secure authentication?")
-        
-        question = st.text_area("Your question:", placeholder="e.g., How do I prevent underage gambling?", height=100)
-        
-        if st.button("Ask", type="primary"):
-            if question:
-                with st.spinner("🤔 Analyzing regulatory requirements..."):
-                    answer, relevant_docs = answer_with_ai(question, client)
-                    
-                    st.markdown("### 📖 Answer:")
-                    st.markdown(answer)
-                    
-                    if relevant_docs:
-                        st.divider()
-                        st.markdown("### 📚 Related Documents:")
-                        for doc in relevant_docs[:5]:
-                            framework = doc['framework'].upper()
-                            doc_id = doc['id']
-                            title = doc['title']
-                            
-                            # Format with hyperlink
-                            regulation_link = format_regulation_with_link(framework, doc_id, title)
-                            st.markdown(regulation_link)
+    st.markdown("""
+    ## How the Three Frameworks Work Together
+    
+    ### 🏛️ LCCP (Licence Conditions and Codes of Practice)
+    - **What:** Business and regulatory requirements
+    - **Authority:** UK Gambling Commission
+    - **Role:** Top-level compliance obligations
+    - **Example:** "Operators must prevent underage gambling"
+    
+    ### 🔒 ISO 27001 (Information Security Management)
+    - **What:** Security implementation framework
+    - **Authority:** International Organization for Standardization
+    - **Role:** How to implement requirements securely
+    - **Example:** "Use A_8.5 (Secure Authentication) for age verification"
+    
+    ### ⚙️ RTS (Remote Technical Standards)
+    - **What:** Gambling-specific technical specifications
+    - **Authority:** UK Gambling Commission
+    - **Role:** Detailed technical how-to
+    - **Example:** "RTS-01 specifies exact age verification data format"
+    
+    ## Compliance Flow
+    
+    1. **Identify** what you must do (LCCP)
+    2. **Design** how to do it securely (ISO 27001)
+    3. **Implement** technical specifications (RTS)
+    4. **Verify** compliance across all three
+    
+    ## Key Principles
+    
+    - All three frameworks are **mandatory** for operators
+    - They are **complementary**, not redundant
+    - **LCCP** takes precedence over framework guidance
+    - **RTS** provides gambling-specific technical detail
+    - **ISO 27001** provides international best practices
+    """)
 
-# ============ TAB 2: Keyword Search ============
+# Tab 2: Ask a Question
 with tab2:
-    st.subheader("Keyword Search")
+    st.subheader("Ask a Regulatory Question")
+    st.markdown("Ask any question about LCCP, ISO 27001, or RTS compliance requirements")
     
-    search_query = st.text_input("Search term:", placeholder="e.g., 'customer funds', 'authentication'")
+    user_question = st.text_area(
+        "Your question:",
+        placeholder="e.g., 'What are my customer fund obligations?' or 'How do I implement age verification?'"
+    )
     
-    if search_query:
-        results = search_documents(search_query)
-        
-        if results:
-            st.success(f"Found {len(results)} results")
-            for result in results:
-                framework = result['framework'].upper()
-                doc_id = result['id']
-                title = result['title']
+    if st.button("Get Answer", key="ask_button"):
+        if user_question:
+            with st.spinner("Searching regulatory documents and formulating answer..."):
+                # Add user message to history
+                st.session_state.conversation_history.append({
+                    "role": "user",
+                    "content": user_question
+                })
                 
-                # Format with hyperlink
-                regulation_link = format_regulation_with_link(framework, doc_id, title)
-                st.markdown(regulation_link)
+                # Build rich framework context
+                framework_context = build_framework_context(st.session_state.documents)
+                system_prompt = get_enhanced_system_prompt(framework_context)
+                
+                # Get response from Claude
+                try:
+                    response = client.messages.create(
+                        model="claude-sonnet-4-20250514",
+                        max_tokens=2000,
+                        system=system_prompt,
+                        messages=st.session_state.conversation_history
+                    )
+                    
+                    assistant_message = response.content[0].text
+                    st.session_state.conversation_history.append({
+                        "role": "assistant",
+                        "content": assistant_message
+                    })
+                    
+                    st.markdown("### Answer")
+                    st.markdown(assistant_message)
+                    
+                except Exception as e:
+                    st.error(f"Error getting response: {str(e)}")
         else:
-            st.warning("No results found")
+            st.warning("Please enter a question")
 
-# ============ TAB 3: Browse ============
+# Tab 3: Keyword Search
 with tab3:
-    st.subheader("Browse Documents")
+    st.subheader("Search by Keyword")
     
-    col1, col2, col3 = st.columns(3)
+    search_term = st.text_input("Enter keyword to search:", placeholder="e.g., 'customer funds', 'age verification'")
     
-    with col1:
-        st.markdown("### 🎲 LCCP")
-        if st.checkbox("Show LCCP Documents"):
-            for doc in st.session_state.documents["lccp"]:
-                content = doc['content']
-                
-                # Extract conditions from LCCP
-                lccp_ids = extract_document_ids_from_lccp(content)
-                for condition_id, condition_title in lccp_ids:
-                    regulation_link = format_regulation_with_link("LCCP", condition_id, condition_title)
-                    st.markdown(regulation_link)
-    
-    with col2:
-        st.markdown("### 🔒 ISO 27001")
-        if st.checkbox("Show ISO 27001 Documents"):
-            for doc in st.session_state.documents["iso27001"]:
-                control = doc["content"].get("control", {})
-                control_id = control.get('control_id', '')
-                control_title = control.get('control_title', 'Untitled')
-                st.write(f"📄 ISO 27001 {control_id}: {control_title}")
-    
-    with col3:
-        st.markdown("### ⚙️ RTS")
-        if st.checkbox("Show RTS Documents"):
-            for doc in st.session_state.documents["rts"]:
-                content = doc['content']
-                
-                # Extract RTS aim IDs
-                rts_ids = extract_document_ids_from_rts(content)
-                for rts_id, rts_title in rts_ids:
-                    regulation_link = format_regulation_with_link("RTS", rts_id, rts_title)
-                    st.markdown(regulation_link)
+    if search_term:
+        st.markdown("### Search Results")
+        
+        results_found = False
+        
+        # Search LCCP
+        if st.session_state.documents["lccp"]:
+            with st.expander("📋 LCCP Results", expanded=True):
+                for doc in st.session_state.documents["lccp"]:
+                    doc_data = doc["data"]
+                    
+                    # Search in sections
+                    if "sections" in doc_data:
+                        for section in doc_data["sections"]:
+                            if search_term.lower() in str(section).lower():
+                                results_found = True
+                                section_id = section.get("section_id", "")
+                                section_title = section.get("section_title", "")
+                                
+                                st.write(f"**Section {section_id}: {section_title}**")
+                                
+                                # Search in conditions
+                                if "conditions" in section:
+                                    for condition in section["conditions"]:
+                                        if search_term.lower() in str(condition).lower():
+                                            condition_id = condition.get("condition_id", "")
+                                            condition_title = condition.get("condition_title", "")
+                                            
+                                            # Determine the prefix based on filename
+                                            if "operating" in doc["filename"].lower():
+                                                prefix = "OLC"
+                                            elif "code" in doc["filename"].lower():
+                                                prefix = "CoP"
+                                            elif "personal" in doc["filename"].lower():
+                                                prefix = "PLC"
+                                            else:
+                                                prefix = "OLC"
+                                            
+                                            full_id = f"{prefix}_{condition_id}"
+                                            regulation_link = format_regulation_with_link("LCCP", full_id, condition_title)
+                                            st.markdown(regulation_link)
+        
+        # Search ISO 27001
+        if st.session_state.documents["iso27001"]:
+            with st.expander("🔒 ISO 27001 Results", expanded=True):
+                for doc in st.session_state.documents["iso27001"]:
+                    doc_data = doc["data"]
+                    
+                    if search_term.lower() in str(doc_data).lower():
+                        results_found = True
+                        
+                        if "control_id" in doc_data:
+                            control_id = doc_data["control_id"]
+                            control_title = doc_data.get("control_title", "")
+                            regulation_link = format_regulation_with_link("ISO27001", control_id, control_title)
+                            st.markdown(regulation_link)
+        
+        # Search RTS
+        if st.session_state.documents["rts"]:
+            with st.expander("⚙️ RTS Results", expanded=True):
+                for doc in st.session_state.documents["rts"]:
+                    doc_data = doc["data"]
+                    
+                    if search_term.lower() in str(doc_data).lower():
+                        results_found = True
+                        
+                        # Extract chapter number from filename or data
+                        filename = doc["filename"]
+                        if "rts" in filename.lower():
+                            # Try to extract chapter number
+                            parts = filename.replace(".json", "").split("-")
+                            chapter_id = parts[-1] if parts[-1].isdigit() else "Unknown"
+                            title = doc_data.get("title", "RTS Chapter")
+                            regulation_link = format_regulation_with_link("RTS", chapter_id, title)
+                            st.markdown(regulation_link)
+        
+        if not results_found:
+            st.info(f"No results found for '{search_term}'")
 
-# ============ URL MAPPING STATUS ============
-with st.expander("📋 URL Mapping Status"):
-    if st.session_state.url_mapping:
-        mappings = st.session_state.url_mapping.get('mappings', {})
+# Tab 4: Browse
+with tab4:
+    st.subheader("Browse Regulatory Documents")
+    
+    browse_option = st.radio("Select framework:", ["LCCP", "ISO 27001", "RTS"], horizontal=True)
+    
+    if browse_option == "LCCP" and st.session_state.documents["lccp"]:
+        st.markdown("### LCCP - Licence Conditions and Codes of Practice")
         
-        lccp_urls = [k for k in mappings.keys() if k.startswith('LCCP_')]
-        rts_urls = [k for k in mappings.keys() if k.startswith('RTS_')]
-        
-        col1, col2 = st.columns(2)
-        with col1:
-            st.metric("LCCP URLs Mapped", len(lccp_urls))
-        with col2:
-            st.metric("RTS URLs Mapped", len(rts_urls))
-        
-        st.info("✅ URL mapping loaded successfully. Hyperlinks are active in search results and browse sections.")
-        
-        # Debug info for troubleshooting
-        with st.expander("🔍 Debug: Sample URL Mappings"):
-            st.write("**Sample LCCP URLs:**")
-            for key in lccp_urls[:5]:
-                st.write(f"- {key}")
+        for doc in st.session_state.documents["lccp"]:
+            doc_data = doc["data"]
+            filename = doc["filename"]
             
-            st.write("**Sample RTS URLs:**")
-            for key in rts_urls[:5]:
-                st.write(f"- {key}")
+            # Determine prefix from filename
+            if "operating" in filename.lower():
+                prefix = "OLC"
+                file_type = "📋 Operating Licence Conditions (OLC)"
+            elif "code" in filename.lower():
+                prefix = "CoP"
+                file_type = "📝 Code of Practice (CoP)"
+            elif "personal" in filename.lower():
+                # Skip Personal Licence Conditions for now
+                continue
+            else:
+                prefix = "OLC"
+                file_type = "Licence Conditions"
+            
+            # Display document type header
+            st.markdown(f"#### {file_type}")
+            
+            if "sections" in doc_data:
+                for section in doc_data["sections"]:
+                    section_id = section.get("section_id", "")
+                    section_title = section.get("section_title", "")
+                    
+                    # Create unique label including prefix to separate OLC/CoP/PLC sections
+                    expander_label = f"**{prefix} Section {section_id}: {section_title}**"
+                    
+                    with st.expander(expander_label):
+                        # Handle OLC structure: sections → conditions
+                        if "conditions" in section:
+                            for condition in section["conditions"]:
+                                condition_id = condition.get("condition_id", "")
+                                condition_title = condition.get("condition_title", "")
+                                
+                                full_id = f"{prefix}_{condition_id}"
+                                regulation_link = format_regulation_with_link("LCCP", full_id, condition_title)
+                                st.markdown(regulation_link)
+                        
+                        # Handle CoP/PLC structure: sections → subsections → provisions
+                        elif "subsections" in section:
+                            for subsection in section["subsections"]:
+                                subsection_title = subsection.get("subsection_title", "")
+                                
+                                if subsection_title:
+                                    st.markdown(f"**{subsection_title}**")
+                                
+                                if "provisions" in subsection:
+                                    for provision in subsection["provisions"]:
+                                        provision_id = provision.get("provision_id", "")
+                                        provision_title = provision.get("provision_title", "")
+                                        
+                                        full_id = f"{prefix}_{provision_id}"
+                                        regulation_link = format_regulation_with_link("LCCP", full_id, provision_title)
+                                        st.markdown(regulation_link)
+            
+            st.divider()
+    
+    elif browse_option == "ISO 27001" and st.session_state.documents["iso27001"]:
+        st.markdown("### ISO 27001 - Information Security Management")
+        
+        # Sort ISO 27001 documents by control number (A.5.1, A.5.2, A.8.1, etc.)
+        def get_iso_control_number(doc):
+            """Extract control number for sorting (e.g., 5.1 from A 5.1)"""
+            doc_data = doc["data"]
+            control = doc_data.get("control", {})
+            control_number = control.get("control_number", "")
+            # Parse "A 5.35" to (5, 35) for sorting
+            if "A " in control_number:
+                parts = control_number.replace("A ", "").split(".")
+                try:
+                    return (int(parts[0]), int(parts[1]) if len(parts) > 1 else 0)
+                except (ValueError, IndexError):
+                    return (999, 999)
+            return (999, 999)
+        
+        sorted_iso_docs = sorted(st.session_state.documents["iso27001"], key=get_iso_control_number)
+        
+        for doc in sorted_iso_docs:
+            doc_data = doc["data"]
+            
+            if "control" in doc_data:
+                control = doc_data["control"]
+                control_id = control.get("control_id", "")
+                control_number = control.get("control_number", "")
+                control_title = control.get("control_title", "")
+                control_category = doc_data.get("control_category", "")
+                
+                with st.expander(f"**{control_number}: {control_title}**", expanded=False):
+                    # Display control category
+                    if control_category:
+                        st.markdown(f"**Category:** {control_category}")
+                    
+                    # Display control purpose
+                    control_purpose = control.get("control_purpose", "")
+                    if control_purpose:
+                        st.markdown(f"**Purpose:** {control_purpose}")
+                    
+                    # Display key requirements if available
+                    iso_def = doc_data.get("iso_27001_definition", {})
+                    key_reqs = iso_def.get("key_requirements", [])
+                    if key_reqs:
+                        st.markdown("**Key Requirements:**")
+                        for req in key_reqs:
+                            st.write(f"• {req}")
+    
+    elif browse_option == "RTS" and st.session_state.documents["rts"]:
+        st.markdown("### RTS - Remote Technical Standards")
+        
+        # Sort RTS documents by chapter number
+        def get_rts_chapter_number(doc):
+            """Extract chapter number for sorting"""
+            filename = doc["filename"]
+            chapter_match = re.search(r'rts-(\d+)', filename, re.IGNORECASE)
+            if chapter_match:
+                return int(chapter_match.group(1))
+            return 999  # Put unsorted items at the end
+        
+        sorted_rts_docs = sorted(st.session_state.documents["rts"], key=get_rts_chapter_number)
+        
+        for doc in sorted_rts_docs:
+            doc_data = doc["data"]
+            filename = doc["filename"]
+            
+            # Skip chapter-4 security requirements for now
+            if "chapter-4" in filename.lower():
+                continue
+            
+            # FIXED: Extract chapter number correctly from filename
+            # Example: rts-01-customer-account-information.json → chapter_id = "01"
+            chapter_match = re.search(r'rts-(\d+)', filename, re.IGNORECASE)
+            chapter_id = chapter_match.group(1) if chapter_match else "Unknown"
+            
+            # Get aim information from the data structure
+            aim = doc_data.get("aim", {})
+            aim_title = aim.get("aim_title", f"RTS Chapter {chapter_id}")
+            aim_description = aim.get("aim_description", "")
+            
+            # Create main expander for this RTS chapter
+            with st.expander(f"**RTS-{chapter_id}: {aim_title}**", expanded=False):
+                # Display aim description
+                if aim_description:
+                    st.markdown("**Aim:**")
+                    st.write(aim_description)
+                
+                # Display the UKGC hyperlink for this RTS section
+                regulation_link = format_regulation_with_link("RTS", chapter_id, aim_title)
+                st.markdown(f"**Official Documentation:** {regulation_link}")
+                
+                st.divider()
+                
+                # Display all requirements under this aim
+                if "requirements" in doc_data and doc_data["requirements"]:
+                    st.markdown("**Requirements:**")
+                    
+                    for req in doc_data["requirements"]:
+                        req_id = req.get("requirement_id", "Unknown")
+                        req_title = req.get("title", "")
+                        req_type = req.get("requirement_type", "")
+                        
+                        # Create sub-expander for each requirement
+                        req_expander_label = f"**{req_id}**: {req_title} ({req_type})"
+                        with st.expander(req_expander_label, expanded=False):
+                            # Display requirement full text
+                            full_text = req.get("full_text", "")
+                            if full_text:
+                                st.markdown("**Requirement:**")
+                                st.write(full_text)
+                            
+                            # Display implementation guidance if available
+                            impl_guidance = req.get("implementation_guidance", {})
+                            if impl_guidance:
+                                st.markdown("**Implementation Guidance:**")
+                                
+                                # Display key points if available
+                                key_points = impl_guidance.get("key_points", [])
+                                if key_points:
+                                    st.markdown("*Key Points:*")
+                                    for point in key_points:
+                                        st.write(f"- {point}")
+                                
+                                # Display any structured guidance
+                                guidance_text = impl_guidance.get("full_text", "")
+                                if guidance_text:
+                                    st.write(guidance_text)
+                else:
+                    st.info("No requirements found for this RTS section.")
+            
+            st.divider()
+
+# Sidebar
+with st.sidebar:
+    st.markdown("---")
+    st.markdown("### 📋 URL Mapping Status")
+    
+    if st.session_state.url_mapping:
+        mappings = st.session_state.url_mapping.get("mappings", {})
+        
+        lccp_urls = sum(1 for k in mappings if k.startswith("LCCP_"))
+        rts_urls = sum(1 for k in mappings if k.startswith("RTS_"))
+        
+        st.write(f"**LCCP URLs:** {lccp_urls}")
+        st.write(f"**RTS URLs:** {rts_urls}")
+        st.write(f"**Total Mappings:** {len(mappings)}")
+        
+        with st.expander("View All Mappings"):
+            for key, value in sorted(mappings.items()):
+                st.write(f"- **{key}**: {value.get('title', 'N/A')}")
     else:
-        st.error("❌ URL mapping not loaded. Hyperlinks will not be available.")
-        st.info("Make sure url_mapping.json exists at: JSON Files/index/url_mapping.json")
+        st.warning("URL mapping file not loaded")
+    
+    st.markdown("---")
+    st.markdown("### ℹ️ About")
+    st.markdown("""
+    This navigator integrates:
+    - **LCCP**: Operating Licence Conditions & Code of Practice
+    - **ISO 27001**: Information Security Management
+    - **RTS**: Remote Technical Standards
+    
+    All maintained by the UK Gambling Commission.
+    """)
 
 # Footer
 st.divider()
 st.markdown("""
 <div style='text-align: center; color: gray; font-size: 0.9em;'>
-    UKGC Regulatory Framework Navigator | Powered by Claude AI | Hyperlinks to Official UKGC Regulations
+    UKGC Regulatory Framework Navigator | Integrated LCCP, ISO 27001, and RTS Compliance Tool
 </div>
 """, unsafe_allow_html=True)
