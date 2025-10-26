@@ -31,10 +31,7 @@ if "url_mapping" not in st.session_state:
 
 # Initialize Anthropic client
 
-def init_client():
-    return Anthropic(api_key=st.secrets.get("ANTHROPIC_API_KEY"))
-
-client = init_client()
+client = Anthropic(api_key=st.secrets.get("ANTHROPIC_API_KEY"))
 
 # Helper function to load JSON files
 def load_json_file(filepath):
@@ -70,7 +67,7 @@ def format_regulation_with_link(framework: str, doc_id: str, title: str) -> str:
         return f"📋 {framework} {doc_id}: {title}"
 
 # Load data files on app startup
-#@st.cache_resource
+
 def load_all_data():
     """Load all JSON files from the JSON Files directory"""
     base_path = Path("JSON Files")
