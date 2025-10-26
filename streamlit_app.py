@@ -28,12 +28,9 @@ if "documents" not in st.session_state:
 if "url_mapping" not in st.session_state:
     st.session_state.url_mapping = {}
 
-<<<<<<< HEAD
- #Initialize Anthropic client
-=======
+
 # Initialize Anthropic client
->>>>>>> 074aa2e6184f034a37b5bb36c315d2cb6e71d0fe
-#@st.cache_resource
+
 def init_client():
     return Anthropic(api_key=st.secrets.get("ANTHROPIC_API_KEY"))
 

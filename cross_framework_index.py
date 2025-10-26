@@ -146,8 +146,6 @@ def extract_search_terms(user_question):
 # Example usage:
 if __name__ == "__main__":
     print("Cross-Framework Index Builder Loaded")
-<<<<<<< HEAD
+
     print("Ready to build searchable regulatory framework context")
-=======
-    print("Ready to build searchable regulatory framework context")
->>>>>>> 074aa2e6184f034a37b5bb36c315d2cb6e71d0fe
+
