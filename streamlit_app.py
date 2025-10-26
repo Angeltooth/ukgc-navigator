@@ -28,11 +28,17 @@ if "documents" not in st.session_state:
 if "url_mapping" not in st.session_state:
     st.session_state.url_mapping = {}
 
-
-# Initialize Anthropic client
-
-# client = Anthropic(api_key=st.secrets.get("ANTHROPIC_API_KEY"))
-
+# Initialize Anthropic client lazily
+def get_client():
+    try:
+        api_key = st.secrets.get("ANTHROPIC_API_KEY")
+        if api_key is None:
+            raise ValueError("ANTHROPIC_API_KEY not found in secrets")
+        return Anthropic(api_key=api_key)
+    except Exception as e:
+        st.error(f"Failed to initialize Anthropic client: {str(e)}")
+        return None
+    
 # Helper function to load JSON files
 def load_json_file(filepath):
     """Load and parse a JSON file"""
@@ -210,7 +216,7 @@ with tab2:
                 
                 # Get response from Claude
                 try:
-                    response = client.messages.create(
+                    response = get_client().messages.create(
                         model="claude-sonnet-4-20250514",
                         max_tokens=2000,
                         system=system_prompt,
